@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.objekts.mcp/production-desk",
   "title": "objekts Production Desk",
-  "description": "Commercial visual-production planning and estimates by objekts, with optional human review.",
+  "description": "Professional visual-production diagnosis and preflight by objekts: reference authority, hard locks, route safety, asset fitness, continuity, versioning and PoC selection, with optional estimates and human review.",
   "version": "0.1.0",
   "websiteUrl": "https://objekts.ai/",
   "remotes": [
