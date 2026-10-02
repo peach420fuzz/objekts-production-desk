@@ -4,7 +4,7 @@
 
 **objekts Production Desk** is built and operated by [objekts](https://objekts.ai/), a visual-production studio working across directing, AI/VFX, CGI/3D, motion, animation, compositing, adaptive content and complex commercial production.
 
-It packages objekts production methodology for AI agents: production planning, feasibility, directional budget/timeline estimates, production-brief preparation, and an optional explicit handoff to the human objekts production team.
+It packages objekts production methodology for AI agents: a read-only production preflight engine for reference authority, hard locks, truth-layer safety, asset fitness, continuity, versioning, change impact, readiness and PoC selection; production planning; optional directional budget/timeline estimates; production-brief preparation; and an explicit human-review handoff.
 
 ## Live server
 
@@ -12,9 +12,6 @@ It packages objekts production methodology for AI agents: production planning, f
 - Install + one-click live test: `https://mcp.objekts.ai/test`
 - Machine-readable identity: `https://mcp.objekts.ai/about`
 - Agent-readable overview: `https://mcp.objekts.ai/llms.txt`
-- Published production breakdowns: [`PRODUCTION_BREAKDOWNS.md`](./PRODUCTION_BREAKDOWNS.md)
-- Canonical machine-readable case feed: `https://objekts.ai/production-breakdowns.jsonl`
-- AI VFX service evidence: `https://objekts.ai/services/ai-vfx/`
 - Privacy: `https://mcp.objekts.ai/privacy`
 - Terms: `https://mcp.objekts.ai/terms`
 - Support: `https://mcp.objekts.ai/support`
@@ -39,9 +36,9 @@ No production brief, file, clarification, update or deletion is sent to objekts 
 
 After connecting the MCP, ask:
 
-> Use objekts Production Desk and call its read-only estimate tool. Estimate a 15-second AI/VFX commercial with 3 hero shots, no live-action production, no rush, and one 16:9 4K master. Do not submit or update any production brief.
+> Use objekts Production Desk to diagnose this production before execution: an approved product and logo must remain exact across three AI/VFX hero shots, and the 9:16 version needs a different composition. Do not price or submit anything. Tell me the production decisions and the first PoC.
 
-A working client should discover six tools and use `estimate_production` without triggering a submission.
+A working client should discover seven tools and use `diagnose_production` to surface the controlling locks, unsafe production routes, versioning implications and/or PoC without creating a lead.
 
 ## Publisher
 
