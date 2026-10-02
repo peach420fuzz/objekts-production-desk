@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "objekts-production-desk",
+  "version": "0.1.0",
+  "description": "objekts Production Desk by objekts: production planning, feasibility and directional estimates for commercial visual work, with an optional explicit handoff to the human objekts production team.",
+  "author": {
+    "name": "objekts",
+    "email": "salute@objekts.ai",
+    "url": "https://objekts.ai/"
+  },
+  "homepage": "https://mcp.objekts.ai/install",
+  "keywords": [
+    "visual-production",
+    "ai-vfx",
+    "cgi",
+    "motion",
+    "commercial-production",
+    "production-planning",
+    "production-estimate"
+  ]
+}
