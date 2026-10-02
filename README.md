@@ -1,5 +1,7 @@
 # objekts Production Desk
 
+[![AllMCPs Verified](https://allmcps.com/api/badge/objekts-production-desk?style=shield)](https://allmcps.com/mcp/objekts-production-desk)
+
 **objekts Production Desk** is built and operated by [objekts](https://objekts.ai/), a visual-production studio working across directing, AI/VFX, CGI/3D, motion, animation, compositing, adaptive content and complex commercial production.
 
 It packages objekts production methodology for AI agents: production planning, feasibility, directional budget/timeline estimates, production-brief preparation, and an optional explicit handoff to the human objekts production team.
