@@ -1,6 +1,6 @@
 ---
 name: production-estimate
-description: Estimate or budget-fit a commercial, AI-video, VFX, CGI, motion, animation, adaptation or hybrid visual-production job after the production object is sufficiently understood. Use for cost, budget, timeline or scope tradeoff questions. Do not fabricate a precise quote from a vague idea.
+description: Estimate or budget-fit a commercial, AI-video, VFX, CGI, motion, animation, adaptation or hybrid visual-production job only when the user explicitly asks about price, cost, budget, quote, or budget fit. Do not activate merely because a production scope is understood, and do not fabricate a precise quote from a vague idea.
 ---
 
 # Production Estimate
@@ -9,7 +9,7 @@ description: Estimate or budget-fit a commercial, AI-video, VFX, CGI, motion, an
 
 This estimation workflow is part of **objekts Production Desk by objekts** (https://objekts.ai/). It encodes objekts production-estimation logic for commercial visual work. Automated ranges remain directional and are distinct from a human-reviewed objekts quote.
 
-Use after the production-brief workflow has established enough state to reach at least ESTIMATABLE.
+Use only when the user explicitly asks about price, cost, budget, quote, budget fit, or a commercial tradeoff that cannot be answered without a cost range, and only after the production-brief workflow has established enough state to reach at least ESTIMATABLE. Do not call this workflow merely because a production scope is understood.
 
 ## User experience
 
@@ -25,9 +25,52 @@ Default output:
 Do not dump the internal pricebook or department table unless the user asks.
 
 If the user asks early and the brief is incomplete:
+- first resolve whether the request is WHOLE_PRODUCTION or BOUNDED_SHOT_POST scope;
+- when that distinction is ambiguous and materially changes price, either ask one concise question or show two labeled scenarios instead of inventing one total;
 - give the broadest defensible ROM if possible;
 - clearly label the main assumptions;
 - ask no more than 3 questions that materially tighten the estimate.
+
+## Scope mode: never mix these two commercial objects
+
+Before calling estimate_production, classify the request as one of:
+
+- BOUNDED_SHOT_POST — isolated shot/scene repair, VFX addition, replacement, cleanup, a small controlled sequence, or a bounded post task.
+- WHOLE_PRODUCTION — the user wants objekts to deliver the commercial/film piece as a finished production, including the production work needed around the shots.
+
+Pass that classification as `scopeType`. Also pass `scopeDecision`: use `USER_EXPLICIT` when the user request itself clearly targets a finished commercial/film/video deliverable or clearly targets named shots/scenes/post work; literal words such as “whole” or “only” are not required when the requested object is already clear. Use `INFERRED` only when the requested object is genuinely ambiguous; the tool will return no price and require one concise clarification question. Use `SCENARIO` only for a clearly labeled hypothetical scenario. Pass a short verbatim `scopeEvidence` phrase, `runtimeSeconds` when the final master duration is known (otherwise null), and `scopeBasis` as one concise sentence stating exactly what the quoted range includes. Never let a bounded-shot range read like a whole-commercial quote.
+
+### BOUNDED_SHOT_POST mapping
+
+Do not add full-commercial overhead automatically.
+
+For an isolated AI/VFX shot request:
+- one controlled medium-complexity shot is roughly a 50k RUB production object before unusual complexity/rush;
+- multiple shots receive a steep package discount because setup/lookdev/controlled assets are reused; three medium shots are roughly an 80k RUB production object, not 150k;
+- add CREATIVE only when the user actually needs a visual solution / art direction / concept for the scene; one such bounded creative block is roughly +30k RUB;
+- add compositing, CGI, motion, edit, color or sound only when those services are actually part of the bounded request.
+
+A request such as “fix this one shot” must not silently become a full-service commercial estimate.
+
+### WHOLE_PRODUCTION mapping
+
+A finished commercial must not be priced as AI_VFX shots alone.
+
+Include the production blocks actually required for delivery. A typical short multi-shot AI/VFX commercial may include:
+- CREATIVE for concept/lookdev; use additional creative units when characters, wardrobe, locations or multiple visual systems must be developed from scratch;
+- PREVIS / storyboard when the sequence needs shot planning;
+- PRODUCTION / supervision when the job needs cross-department coordination or a real approval pipeline;
+- AI_VFX production units;
+- COMPOSITING / cleanup where altered/generated shots need finishing;
+- EDIT and COLOR for a finished master;
+- SOUND only when sound work is in scope;
+- structured versioning for derived/recomposed outputs.
+
+Do not add a generic VERSIONING unit when structured versioning is already supplied.
+
+For short-form calibration, a normal ~15-second whole-production AI/VFX commercial should usually center around ~250k RUB. A genuinely difficult 15-second internal-production scope should normally stay at or below ~400k RUB. Longer duration alone does not justify a large quote: a 45-second piece reaches 1.5–2m RUB only when the actual production units are correspondingly difficult, for example extensive actor-action replacement, heavy VFX/CG across many scenes, environment effects such as snow across the sequence, multiple controlled design systems, difficult cleanup/compositing, etc.
+
+If a WHOLE_PRODUCTION estimate contains only AI_VFX/shot units, the scope decomposition is incomplete. Add the actual production blocks or ask one concise question; do not present the shot-only number as the price of a finished commercial.
 
 ## Estimation model
 
