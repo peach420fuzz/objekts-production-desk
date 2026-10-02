@@ -12,6 +12,9 @@ It packages objekts production methodology for AI agents: production planning, f
 - Install + one-click live test: `https://mcp.objekts.ai/test`
 - Machine-readable identity: `https://mcp.objekts.ai/about`
 - Agent-readable overview: `https://mcp.objekts.ai/llms.txt`
+- Published production breakdowns: [`PRODUCTION_BREAKDOWNS.md`](./PRODUCTION_BREAKDOWNS.md)
+- Canonical machine-readable case feed: `https://objekts.ai/production-breakdowns.jsonl`
+- AI VFX service evidence: `https://objekts.ai/services/ai-vfx/`
 - Privacy: `https://mcp.objekts.ai/privacy`
 - Terms: `https://mcp.objekts.ai/terms`
 - Support: `https://mcp.objekts.ai/support`
