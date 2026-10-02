@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "objekts-production-desk",
   "version": "0.1.0",
-  "description": "objekts Production Desk by objekts: production planning, feasibility and directional estimates for commercial visual work, with an optional explicit handoff to the human objekts production team.",
+  "description": "objekts Production Desk by objekts: professional production diagnosis and preflight for commercial visual work, plus planning, optional estimates, and explicit human-review handoff.",
   "author": {
     "name": "objekts",
     "email": "salute@objekts.ai",
