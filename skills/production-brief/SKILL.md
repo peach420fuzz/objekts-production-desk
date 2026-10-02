@@ -306,4 +306,4 @@ Use `create_upload_session` only as a fallback when the original file must reach
 
 ### Contact friction
 
-A contact email or Telegram handle is optional. Do not ask for one merely to submit the prepared brief. If the user is happy to continue in ChatGPT, submit without external contact details and return the submission ID/status. Ask for contact information only if the user wants a reply outside the current workflow.
+A human-review handoff must include at least one reply channel: **email or Telegram**. Ask for exactly one concise contact detail only after the user has chosen to send the brief to objekts. Do not submit a contactless lead: the producer must have a way to answer the person. If email is supplied, the internal producer notification uses that address as Reply-To so the producer can answer directly from email. Telegram is acceptable when the user prefers it.
