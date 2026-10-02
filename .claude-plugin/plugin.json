@@ -1,0 +1,15 @@
+{
+  "name": "objekts-production-desk",
+  "version": "0.1.0",
+  "displayName": "objekts Production Desk",
+  "description": "objekts Production Desk is built by objekts for planning and estimating commercial visual production, identifying feasibility risks, and optionally handing a prepared brief to the human objekts production team. The plugin packages objekts production methodology for agent use and does not itself generate image, video, or audio media.",
+  "author": {
+    "name": "objekts",
+    "email": "salute@objekts.ai",
+    "url": "https://objekts.ai/"
+  },
+  "homepage": "https://objekts.ai/",
+  "privacy": "https://mcp.objekts.ai/privacy",
+  "terms": "https://mcp.objekts.ai/terms",
+  "support": "https://mcp.objekts.ai/support"
+}
