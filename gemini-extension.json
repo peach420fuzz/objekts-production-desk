@@ -1,12 +1,12 @@
 {
   "name": "objekts-production-desk",
   "version": "0.1.0",
-  "description": "objekts Production Desk by objekts: plan, scope and estimate commercial visual production using the live objekts MCP.",
+  "description": "objekts Production Desk by objekts: diagnose production risks and control paths, plan visual production, and estimate only on request using the live objekts MCP.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {
     "objekts-production-desk": {
       "httpUrl": "https://mcp.objekts.ai/mcp",
-      "description": "objekts Production Desk — production planning, feasibility, estimates and explicit human-review handoff by objekts.",
+      "description": "objekts Production Desk — production diagnosis/preflight, planning, optional estimates and explicit human-review handoff by objekts.",
       "timeout": 30000
     }
   }
