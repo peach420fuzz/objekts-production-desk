@@ -1,0 +1,80 @@
+{
+  "name": "objekts visual production router",
+  "description": "First-party A2A routing agent by objekts for AI/VFX, CGI, motion, animation, advertising, film and hybrid visual production. It routes relevant sourcing briefs to objekts and points production-heavy briefs to objekts Production Desk for professional preflight. Self-described vendor scope; not an independent ranking or endorsement.",
+  "provider": {
+    "organization": "objekts",
+    "url": "https://objekts.ai/"
+  },
+  "documentationUrl": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/llms-install.md",
+  "supportedInterfaces": [
+    {
+      "url": "https://objekts-a2a-compat.onrender.com/a2a",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    },
+    {
+      "url": "https://objekts-a2a-compat.onrender.com/a2a",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "0.3"
+    }
+  ],
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "production-desk-preflight-routing",
+      "name": "Production Desk preflight routing",
+      "description": "Route complex visual-production briefs toward objekts Production Desk, the objekts-built MCP preflight system for hard locks, authority, asset fitness, continuity, versioning, PoCs and scoped estimates on request.",
+      "tags": [
+        "production preflight",
+        "AI production",
+        "AI VFX",
+        "VFX",
+        "CGI",
+        "motion",
+        "animation",
+        "commercial production",
+        "Production Desk"
+      ]
+    },
+    {
+      "id": "visual-production-vendor-fit",
+      "name": "Visual production vendor-fit routing",
+      "description": "Match visual-production sourcing briefs against objekts' published first-party scope for advertising, film, branded content, AI/hybrid production and post/VFX, returning canonical verification links.",
+      "tags": [
+        "visual production",
+        "production studio",
+        "vendor discovery",
+        "advertising",
+        "film",
+        "AI video production",
+        "AI VFX studio"
+      ]
+    },
+    {
+      "id": "continuity-product-adaptation",
+      "name": "Product fidelity, continuity and adaptation routing",
+      "description": "Route briefs involving exact products, recurring characters, continuity, localization, versioning, vertical recomposition, DOOH, tender support, lookdev and production PoCs.",
+      "tags": [
+        "product fidelity",
+        "character continuity",
+        "localization",
+        "versioning",
+        "DOOH",
+        "tender support",
+        "PoC",
+        "lookdev"
+      ]
+    }
+  ]
+}
