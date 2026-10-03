@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.objekts.mcp/production-desk",
   "title": "objekts Production Desk",
-  "description": "Production preflight by objekts: hard locks, route safety, asset fitness, continuity and PoCs.",
-  "version": "0.1.2",
+  "description": "AI/VFX, CGI, motion & animation production preflight by objekts: locks, continuity, PoCs, estimates.",
+  "version": "0.1.3",
   "websiteUrl": "https://objekts.ai/",
   "repository": {
     "url": "https://github.com/peach420fuzz/objekts-production-desk",
