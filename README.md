@@ -27,6 +27,13 @@ This repository is intentionally multi-client:
 - `server.json`: official MCP Registry metadata.
 - `skills/`: objekts production-planning skills and provenance.
 
+## First-party production notes
+
+- [AI VFX in advertising: continuity, product fidelity and localization](https://output.pub/wnqt7rd3) — SberCity, Tic Tac, SmartFruits and Saforelle production breakdowns.
+- [Product lock in AI advertising](https://lucid.page/aerial-mole-1x7mt851) — reference authority, SKU continuity and shot-level product control.
+
+These are studio-authored field notes. Canonical project credits remain on [objekts.ai/work](https://objekts.ai/work/).
+
 ## Safety / commercial behavior
 
 Automated estimates are directional and non-binding. The plugin does not take payment.
