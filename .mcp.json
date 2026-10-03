@@ -1,6 +1,8 @@
 {
-  "objekts-production-desk": {
-    "type": "http",
-    "url": "https://mcp.objekts.ai/mcp"
+  "mcpServers": {
+    "objekts-production-desk": {
+      "type": "http",
+      "url": "https://mcp.objekts.ai/mcp"
+    }
   }
 }
