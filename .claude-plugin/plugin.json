@@ -1,15 +1,6 @@
 {
   "name": "objekts-production-desk",
-  "version": "0.1.0",
   "displayName": "objekts Production Desk",
-  "description": "objekts Production Desk is built by objekts as a professional production-preflight system for commercial visual work: it diagnoses reference authority, hard locks, unsafe production routes, asset fitness, continuity, versioning, change impact and PoC priorities; pricing is optional, and a prepared brief can be handed to the human objekts production team. It does not itself generate image, video, or audio media.",
-  "author": {
-    "name": "objekts",
-    "email": "salute@objekts.ai",
-    "url": "https://objekts.ai/"
-  },
-  "homepage": "https://objekts.ai/",
-  "privacy": "https://mcp.objekts.ai/privacy",
-  "terms": "https://mcp.objekts.ai/terms",
-  "support": "https://mcp.objekts.ai/support"
+  "description": "Production preflight for commercial visual work: reference authority and hard locks, asset fitness, continuity, AI/VFX feasibility, directional estimates, production brief preparation and optional explicit human review.",
+  "version": "0.1.0"
 }
