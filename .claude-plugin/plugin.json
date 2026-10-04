@@ -1,6 +1,6 @@
 {
   "name": "objekts-production-desk",
   "displayName": "objekts Production Desk",
-  "description": "Production preflight for commercial visual work: reference authority and hard locks, asset fitness, continuity, AI/VFX feasibility, directional estimates, production brief preparation and optional explicit human review.",
-  "version": "0.1.0"
+  "description": "Production diagnosis and preflight by objekts for AI/VFX, CGI, motion, animation and commercial visual work: hard locks, reference authority, asset fitness, continuity, versioning, PoCs, estimates on request and optional human review.",
+  "version": "0.1.3"
 }
