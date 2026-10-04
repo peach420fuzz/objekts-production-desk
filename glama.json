@@ -1,6 +1,28 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/server.json",
-  "maintainers": [
-    "peach420fuzz"
+  "maintainers": ["peach420fuzz"],
+  "name": "objekts Production Desk",
+  "description": "Production preflight by objekts for AI/VFX, CGI, motion, animation and commercial visual production.",
+  "type": "mcp_server",
+  "status": "production",
+  "transport": ["streamable-http"],
+  "keywords": [
+    "objekts",
+    "visual-production",
+    "production-studio",
+    "ai-production",
+    "ai-video",
+    "ai-vfx",
+    "vfx",
+    "cgi",
+    "3d",
+    "motion-design",
+    "animation",
+    "commercial-production",
+    "advertising",
+    "film-vfx",
+    "agency-production",
+    "production-preflight",
+    "poc"
   ]
 }
