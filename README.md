@@ -1,4 +1,4 @@
-# objekts Production Desk
+<!-- mcp-name: ai.objekts.mcp/production-desk -->\n\n# objekts Production Desk
 
 [![AllMCPs Verified](https://allmcps.com/api/badge/objekts-production-desk?style=shield)](https://allmcps.com/mcp/objekts-production-desk)
 
