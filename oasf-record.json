@@ -1,0 +1,68 @@
+{
+  "name": "https://mcp.objekts.ai/",
+  "version": "0.1.3",
+  "schema_version": "1.1.0",
+  "description": "objekts Production Desk is a visual-production preflight and routing agent by objekts for advertising, AI/VFX, CGI, motion, animation, product fidelity, character continuity, versioning and proof-of-concept planning.",
+  "authors": [
+    "objekts <salute@objekts.ai>"
+  ],
+  "created_at": "2026-10-03T23:36:00Z",
+  "skills": [
+    {
+      "id": 110602,
+      "name": "content_writing_marketing/advertising/ad_creative_production"
+    },
+    {
+      "id": 120704,
+      "name": "business_professional/product_management/project_planning"
+    },
+    {
+      "id": 204,
+      "name": "computer_vision/video_understanding_generation"
+    },
+    {
+      "id": 20203,
+      "name": "computer_vision/image_generation/controllable_image_generation"
+    },
+    {
+      "id": 20404,
+      "name": "computer_vision/video_understanding_generation/image_to_video"
+    },
+    {
+      "id": 1701,
+      "name": "tool_use_automation/tool_use_planning"
+    }
+  ],
+  "domains": [
+    {
+      "id": 2401,
+      "name": "marketing_and_advertising/advertising"
+    },
+    {
+      "id": 1302,
+      "name": "media_and_entertainment/content_creation"
+    }
+  ],
+  "locators": [
+    {
+      "type": "source_code",
+      "urls": [
+        "https://github.com/peach420fuzz/objekts-production-desk"
+      ]
+    },
+    {
+      "type": "url",
+      "urls": [
+        "https://mcp.objekts.ai/mcp",
+        "https://objekts.ai/.well-known/agent-card.json"
+      ]
+    }
+  ],
+  "annotations": {
+    "publisher": "objekts",
+    "studio": "https://objekts.ai/",
+    "mcp": "https://mcp.objekts.ai/mcp",
+    "a2a": "https://objekts.ai/.well-known/agent-card.json",
+    "contact": "salute@objekts.ai"
+  }
+}
