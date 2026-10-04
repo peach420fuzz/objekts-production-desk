@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.30/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.30",
+  "version": "0.1.3",
+  "id": "db6bf501-c266-5ab4-b762-25267ddd8274",
+  "packageName": "ai.objekts.productiondesk",
+  "developer": {
+    "name": "objekts",
+    "websiteUrl": "https://objekts.ai/",
+    "privacyUrl": "https://mcp.objekts.ai/privacy",
+    "termsOfUseUrl": "https://mcp.objekts.ai/terms"
+  },
+  "name": {
+    "short": "objekts Production Desk",
+    "full": "objekts Production Desk — Visual Production Preflight"
+  },
+  "description": {
+    "short": "AI/VFX, CGI, motion and animation production preflight by objekts.",
+    "full": "objekts Production Desk is an agent-native production preflight system built by objekts, a visual-production studio working across AI/VFX, CGI/3D, motion, animation and commercial production. It helps Microsoft 365 agents diagnose hard visual locks, reference authority, asset fitness, continuity, versioning and change impact; select the first useful proof-of-concept; calculate scoped estimates only when explicitly requested; and optionally hand a prepared brief to the human objekts production team."
+  },
+  "icons": {
+    "outline": "assets/outline.png",
+    "color": "assets/color.png"
+  },
+  "accentColor": "#0018A8",
+  "agentConnectors": [
+    {
+      "id": "objekts-production-desk",
+      "displayName": "objekts Production Desk",
+      "description": "Production preflight and routing for AI/VFX, CGI, motion, animation and commercial visual production by objekts.",
+      "toolSource": {
+        "remoteMcpServer": {
+          "mcpServerUrl": "https://mcp.objekts.ai/mcp",
+          "authorization": {
+            "type": "None"
+          }
+        }
+      }
+    }
+  ],
+  "validDomains": [
+    "mcp.objekts.ai",
+    "objekts.ai"
+  ]
+}
