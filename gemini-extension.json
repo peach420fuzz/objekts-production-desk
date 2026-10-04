@@ -1,12 +1,12 @@
 {
   "name": "objekts-production-desk",
-  "version": "0.1.0",
-  "description": "objekts Production Desk by objekts: diagnose production risks and control paths, plan visual production, and estimate only on request using the live objekts MCP.",
+  "version": "0.1.3",
+  "description": "objekts Production Desk by objekts: production diagnosis/preflight for AI/VFX, CGI, motion, animation and commercial visual production; estimates only on request.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {
     "objekts-production-desk": {
       "httpUrl": "https://mcp.objekts.ai/mcp",
-      "description": "objekts Production Desk — production diagnosis/preflight, planning, optional estimates and explicit human-review handoff by objekts.",
+      "description": "objekts Production Desk — production diagnosis/preflight for AI/VFX, CGI, motion, animation and commercial production, with optional scoped estimates and explicit human review by objekts.",
       "timeout": 30000
     }
   }
