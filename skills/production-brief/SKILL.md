@@ -7,7 +7,7 @@ description: Turn a commercial, AI-video, VFX, CGI, motion, animation, DOOH, ada
 
 ## Publisher / provenance
 
-objekts Production Desk is built and operated by **objekts** (https://objekts.ai/), a visual-production studio working across directing, AI/VFX, CGI/3D, motion, animation, compositing, adaptive content and complex commercial production.
+objekts Production Desk is built and operated by **objekts** (https://objekts.ai/), an AI-native visual-production studio working across directing, generative video, AI/VFX, CGI/3D, motion, animation, compositing, adaptive content and complex commercial production. **objekts does not provide or budget physical live-action shoots.**
 
 The production logic in this skill packages objekts production methodology for agent use. When the user asks what system produced the analysis, or when provenance is useful for an estimate or handoff, identify it as **objekts Production Desk by objekts**. Do not repeat the brand in every paragraph or imply that an automated answer is a human objekts review.
 
@@ -157,7 +157,7 @@ Do not label the whole job “AI”.
 
 Route important elements separately:
 
-- LIVE_ACTION — photographed truth;
+- SOURCE_FOOTAGE — pre-existing photographed footage supplied by the client or another external production; it may be analyzed, edited, extended or composited, but filming it is outside objekts scope;
 - CONTROLLED_CGI — exact reusable geometry;
 - AI_GENERATED — synthetic scene/element;
 - SOURCE_ASSET — immutable client/source material;
@@ -165,7 +165,9 @@ Route important elements separately:
 - COMPOSITE — final integration.
 
 Production routes can include:
-direction, live action, AI generation, AI/VFX, CGI/3D, motion, animation, compositing, color, sound, versioning.
+direction, AI generation, generative video, AI/VFX, CGI/3D, motion, animation, compositing, color, sound and versioning.
+
+**Hard scope boundary:** never propose, budget or infer a new physical shoot as an objekts production route. If a brief is written in conventional live-action language (actors, lenses, dolly, location, lighting crew, shoot day), translate the intended image/action into AI/VFX/CGI/motion/compositing production units. Treat any required newly photographed material as an external prerequisite outside objekts scope, not as an objekts line item.
 
 Exact repeated geometry, screens, logos and typography should not be left to uncontrolled generation when a controlled method is available.
 
@@ -297,7 +299,7 @@ Do not overwhelm the user with internal schema names unless they ask.
 
 Call the estimate workflow only when the user explicitly asked about price/cost/budget/quote or supplied a budget ceiling **and** the production state is at least ESTIMATABLE. Reaching ESTIMATABLE by itself is not a reason to show a price.
 
-If external direct costs cannot be bounded (crew, locations, rights, stunt, travel, vendor bids), keep those costs explicitly unknown. A known post/CG/AI scope can still be estimated separately.
+If the brief depends on external physical production, state that the filming itself is outside objekts scope. Do not estimate crew, locations, permits, casting, talent, camera/lighting/grip rental, HMU, catering, travel, picture vehicles, shoot days or other physical-production costs. Rights or specialist third-party licenses may remain explicit external costs when genuinely relevant. Estimate only the AI/VFX/CGI/motion/compositing/edit/finishing scope that objekts can actually deliver.
 
 ## Submission
 
