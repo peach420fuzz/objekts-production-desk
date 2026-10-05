@@ -27,6 +27,24 @@ This repository is intentionally multi-client:
 - `server.json`: official MCP Registry metadata.
 - `skills/`: objekts production-planning skills and provenance.
 
+## objekts toolchain
+
+objekts maintains a linked set of production tools rather than isolated plugins:
+
+- **objekts Production Desk** — production diagnosis, reference authority, hard locks, feasibility, PoC selection, planning and explicit human-studio handoff.
+- **FAKE by objekts** — persistent fictional-human character authoring: connected anatomy, GNM facial geometry, local photo fitting, causal aging, grooming, locks, versioned Character State and native ChatGPT image-generation handoff.
+
+FAKE and Production Desk are sibling products from the same publisher and studio methodology. Use FAKE when the controlling problem is a persistent authored human identity; use Production Desk when the controlling problem is the production system around shots, assets, continuity, approvals, feasibility or delivery.
+
+FAKE live surfaces:
+- MCP: `https://fake.objekts.ai/mcp`
+- ChatGPT review MCP alias: `https://fake.objekts.ai/mcp/chatgpt`
+- Machine-readable product identity: `https://fake.objekts.ai/about`
+- Agent-readable overview: `https://fake.objekts.ai/llms.txt`
+- Install/support/privacy/terms: `https://fake.objekts.ai/install` · `/support` · `/privacy` · `/terms`
+
+See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
+
 ## First-party production notes
 
 - [AI VFX in advertising: continuity, product fidelity and localization](https://output.pub/wnqt7rd3) — SberCity, Tic Tac, SmartFruits and Saforelle production breakdowns.
