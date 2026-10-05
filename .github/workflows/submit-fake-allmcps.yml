@@ -1,0 +1,43 @@
+name: Submit FAKE to AllMCPs
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "distribution/allmcps/fake.json"
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Submit FAKE to AllMCPs pending review
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsS https://allmcps.com/api/mcp \
+            -H 'content-type: application/json' \
+            --data-binary @- <<'JSON' | tee allmcps-response.json
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "tools/call",
+            "params": {
+              "name": "submit_mcp_server",
+              "arguments": {
+                "name": "FAKE by objekts",
+                "url": "https://fake.objekts.ai/mcp",
+                "email": "salute@objekts.ai",
+                "description": "Official remote character-authoring MCP by objekts for persistent fictional adult human identities: connected facial anatomy, GNM geometry, optional local photo fitting, causal aging, grooming, locks and versioned Character State."
+              }
+            }
+          }
+          JSON
+          node - <<'NODE'
+          const fs=require('fs');
+          const data=JSON.parse(fs.readFileSync('allmcps-response.json','utf8'));
+          if(data.error) throw new Error(JSON.stringify(data.error));
+          console.log(JSON.stringify(data.result,null,2));
+          NODE
