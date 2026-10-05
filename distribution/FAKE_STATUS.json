@@ -53,6 +53,23 @@
       "surface": "GitHub public toolchain docs",
       "status": "LIVE",
       "repo": "peach420fuzz/objekts-production-desk"
+    },
+    {
+      "surface": "mcpub",
+      "status": "BLOCKED_ON_WELL_KNOWN_ROUTE",
+      "requirement": "https://fake.objekts.ai/.well-known/mcp.json",
+      "detail": "submit API returned well_known_missing; resubmit after route exists"
+    },
+    {
+      "surface": "AgentNDX",
+      "status": "SUBMITTED_NOT_YET_INDEXED",
+      "endpoint": "https://agentndx.ai/api/submit",
+      "detail": "submission returned HTTP success; public search has not indexed FAKE yet"
+    },
+    {
+      "surface": "MCP.so",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "reason": "official free route is GitHub issue; current GitHub App cannot create issues in chatmcp/mcpso (403)"
     }
   ],
   "qa": {
@@ -77,5 +94,12 @@
     "MCP.Directory": [
       "Official MCP Registry publication (preferred canonical route)"
     ]
+  },
+  "cross_client": {
+    "docs": "ecosystem/fake/CLIENTS.md",
+    "claude_code": "READY_DIRECT_HTTP",
+    "gemini_cli": "READY_HTTPURL",
+    "vscode_copilot": "READY_PORTABLE_MCP_JSON",
+    "generic_mcp": "READY_STREAMABLE_HTTP"
   }
 }
