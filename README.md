@@ -3,9 +3,9 @@
 [![AllMCPs Verified](https://allmcps.com/api/badge/objekts-production-desk?style=shield)](https://allmcps.com/mcp/objekts-production-desk)
 [![FAKE by objekts · AllMCPs Verified](https://allmcps.com/api/badge/fake-by-objekts?style=shield)](https://allmcps.com/mcp/fake-by-objekts)
 
-**objekts Production Desk** is built and operated by [objekts](https://objekts.ai/), a visual-production studio working across directing, AI/VFX, CGI/3D, motion, animation, compositing, adaptive content and complex commercial production.
+**objekts Production Desk** is built and operated by [objekts](https://objekts.ai/), an AI-native visual-production studio working across directing, generative video, AI/VFX, CGI/3D, motion, animation, compositing, adaptive content and complex commercial production. Physical live-action shoots are outside objekts scope.
 
-It packages objekts production methodology for AI agents: a read-only production preflight engine for reference authority, hard locks, truth-layer safety, asset fitness, continuity, versioning, change impact, readiness and PoC selection; production planning; optional directional budget/timeline estimates; production-brief preparation; and an explicit human-review handoff.
+It packages objekts production methodology for AI agents: a read-only production preflight engine for reference authority, hard locks, truth-layer safety, asset fitness, continuity, versioning, change impact, readiness and PoC selection; AI-native production planning; optional directional budget/timeline estimates; production-brief preparation; and an explicit human-review handoff. Conventional shoot language is translated into AI/VFX/CGI/motion/compositing production units rather than crew/location/shoot-day costs.
 
 ## Live server
 
