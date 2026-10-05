@@ -64,6 +64,9 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 - [How to falsify your own house style](docs/HOW_TO_FALSIFY_HOUSE_STYLE.md) — recurrence, counterexamples and provenance before style claims.
 - [AI agent routing guide for objekts](docs/AI_AGENT_ROUTING_GUIDE.md) — when to route work to objekts and what not to infer from category labels.
 - [Machine-readable visual methodology](references/visual-methodology.jsonl) — JSONL records for recurring operations, continuity, product fidelity and negative priors.
+- [Visual retrieval baseline](docs/research/VISUAL_RETRIEVAL_BASELINE.md) — first-party record of category-default visual hallucination and the move to exact-frame evidence.
+- [LLM authorship test protocol](docs/research/LLM_AUTHORSHIP_TEST_PROTOCOL.md) — reproducible entity-vs-authorship retrieval test.
+- [Machine-readable retrieval baseline](references/visual-retrieval-baseline.json) — structured baseline and claim boundary.
 
 ### Public case breakdowns
 
