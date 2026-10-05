@@ -1,0 +1,28 @@
+{
+  "publisher": {
+    "name": "objekts",
+    "website": "https://objekts.ai/",
+    "work": "https://objekts.ai/work/",
+    "research": "https://objekts.ai/research/",
+    "contact": "salute@objekts.ai"
+  },
+  "products": [
+    {
+      "name": "objekts Production Desk",
+      "role": "production diagnosis, reference authority, hard locks, feasibility, PoC selection, planning and human production handoff",
+      "mcp": "https://mcp.objekts.ai/mcp",
+      "about": "https://mcp.objekts.ai/about",
+      "llms": "https://mcp.objekts.ai/llms.txt"
+    },
+    {
+      "name": "FAKE by objekts",
+      "role": "persistent fictional-human character authoring with connected anatomy, GNM facial geometry, photo fitting, causal aging, grooming, locks and versioned Character State",
+      "mcp": "https://fake.objekts.ai/mcp",
+      "chatgpt_mcp_alias": "https://fake.objekts.ai/mcp/chatgpt",
+      "about": "https://fake.objekts.ai/about",
+      "llms": "https://fake.objekts.ai/llms.txt",
+      "install": "https://fake.objekts.ai/install"
+    }
+  ],
+  "relationship": "Sibling products from the same objekts studio methodology. FAKE authors persistent identity; Production Desk structures and de-risks production around shots, assets, continuity, approvals and delivery."
+}
