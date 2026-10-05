@@ -80,6 +80,7 @@ Typical independent cost blocks:
 - creative development / treatment;
 - storyboard / previs;
 - production management / VFX supervision;
+- AI generation / generative video;
 - AI/VFX;
 - CGI / 3D;
 - motion / graphics / UI;
@@ -89,25 +90,23 @@ Typical independent cost blocks:
 - sound;
 - versioning / localization;
 - KV / stills / photo post;
-- direct production / external bids;
-- rights / travel where relevant.
+- rights / specialist third-party licenses where genuinely relevant.
+
+**Forbidden estimate categories:** physical shoot days, film crew, director of photography, camera/grip/lighting rental, studio/location hire, permits, casting, talent fees for a new shoot, HMU, wardrobe department for a new shoot, catering, production transport, travel for a shoot, picture vehicles, stunt crew or any other on-set physical-production line. objekts is AI-native; these are outside scope.
 
 A reused approved shot in multiple edits is not automatically a new shot.
 A new camera, mise-en-scène, action, major composition, character, CG concept or independent vertical composition may become a new production unit.
 
-## Unknown direct costs
+## External prerequisites and unknown costs
 
-Never hide unknown direct production costs inside the known post estimate.
+Never convert a conventional live-action brief into a physical-production quote. If the concept would normally imply actors, locations, lenses, lighting or camera movement, reinterpret those as visual requirements to be produced through AI/VFX/CGI/motion/compositing unless the user explicitly states that source footage already exists.
 
-Examples:
-crew, locations, permits, talent, rights, stunt, travel, picture vehicles, specialist vendors.
+If newly photographed material is genuinely indispensable, label it **EXTERNAL PHYSICAL PRODUCTION — OUTSIDE OBJEKTS SCOPE** and exclude it from the objekts total. Do not provide a crew/location/talent/shoot-day estimate.
 
-Return:
-- known range;
-- unknown-cost exposure;
-- what requires external bids.
-
-If external costs are unbounded, say so plainly.
+Return only:
+- the objekts AI/VFX/CGI/motion/compositing range;
+- any non-shoot external rights/licensing exposure;
+- any source-footage prerequisite.
 
 ## Complexity
 
