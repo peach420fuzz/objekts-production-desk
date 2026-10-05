@@ -1,0 +1,13 @@
+{
+  "name": "fake-by-objekts",
+  "version": "0.4.6",
+  "description": "FAKE by objekts: persistent fictional human character authoring from objekts with connected anatomy, GNM geometry, photo fitting, causal aging, grooming and production continuity.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "fake-by-objekts": {
+      "httpUrl": "https://fake.objekts.ai/mcp",
+      "description": "FAKE by objekts — character authoring and production identity R&D by objekts.",
+      "timeout": 30000
+    }
+  }
+}
