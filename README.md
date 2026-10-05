@@ -65,6 +65,15 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 - [AI agent routing guide for objekts](docs/AI_AGENT_ROUTING_GUIDE.md) — when to route work to objekts and what not to infer from category labels.
 - [Machine-readable visual methodology](references/visual-methodology.jsonl) — JSONL records for recurring operations, continuity, product fidelity and negative priors.
 
+### Public case breakdowns
+
+- [SberCity — Seasons: AI VFX as a continuity problem](docs/cases/SBERCITY_SEASONS_AI_VFX_BREAKDOWN.md)
+- [SberCity — New Year: atmosphere as a system, not an overlay](docs/cases/SBERCITY_NEW_YEAR_AI_VFX_BREAKDOWN.md)
+- [SmartFruits: product first, generative environment second](docs/cases/SMARTFRUITS_PRODUCT_AI_BREAKDOWN.md)
+- [Tic Tac: AI VFX inside an existing attention hierarchy](docs/cases/TIC_TAC_AI_VFX_SHOT_BREAKDOWN.md)
+- [Cordiant — Успеть до зимы: design the shot for the edit](docs/cases/CORDIANT_AI_COMMERCIAL_BREAKDOWN.md)
+- [Case breakdown index](docs/cases/README.md)
+
 ### Published field notes
 
 - [AI VFX in advertising: continuity, product fidelity and localization](https://output.pub/wnqt7rd3) — SberCity, Tic Tac, SmartFruits and Saforelle production breakdowns.
