@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "fake-by-objekts": {
+      "type": "streamable-http",
+      "url": "https://fake.objekts.ai/mcp"
+    }
+  }
+}
