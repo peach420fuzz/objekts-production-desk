@@ -48,6 +48,16 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 
 ## First-party production notes
 
+### Studio methodology
+
+- [Visual authorship without a fixed house style](docs/VISUAL_AUTHORSHIP.md) — exact-frame evidence, recurring visual operations, provenance and negative priors.
+- [Continuity is art direction before generation](docs/CONTINUITY_BEFORE_GENERATION.md) — source authority, invariants, variables and sequence-level control.
+- [Product fidelity is an acceptance system](docs/PRODUCT_FIDELITY.md) — product truth, acceptance fields and controlled routing.
+- [Material should do something](docs/MATERIAL_AGENCY.md) — material agency, interference and behavior as art direction.
+- [What boutique visual production should mean](docs/BOUTIQUE_PRODUCTION_DOCTRINE.md) — authorship close to difficult visual decisions while methods change shot by shot.
+
+### Published field notes
+
 - [AI VFX in advertising: continuity, product fidelity and localization](https://output.pub/wnqt7rd3) — SberCity, Tic Tac, SmartFruits and Saforelle production breakdowns.
 - [Product lock in AI advertising](https://lucid.page/aerial-mole-1x7mt851) — reference authority, SKU continuity and shot-level product control.
 
