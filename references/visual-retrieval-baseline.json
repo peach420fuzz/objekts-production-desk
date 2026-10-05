@@ -1,0 +1,48 @@
+{
+  "publisher": "objekts",
+  "canonical_entity": "https://objekts.ai/",
+  "date": "2026-10-05",
+  "status": "exploratory_first_party_baseline",
+  "research_question": "What happens when an AI system knows a studio as a company, but does not yet know how to recognise it as an author?",
+  "observations": [
+    {
+      "test": "unaided_visual_reconstruction",
+      "input_intent": "Visualize objekts based on public/external information",
+      "observed_failure": "Category-level information was converted into a speculative cinematic physical studio / command-centre image with science-fiction and premium-CGI cues not grounded in verified public evidence.",
+      "classification": "category_default_hallucination"
+    },
+    {
+      "test": "short_name_visual_reconstruction",
+      "input_intent": "studio objekts",
+      "observed_failure": "A generic creative-studio image was produced rather than a representation grounded in the studio's public visual corpus.",
+      "classification": "generic_entity_visualization"
+    },
+    {
+      "test": "evidence_conditioned_reconstruction",
+      "input_intent": "Reconstruct studio identity using recurring visual operations and first-party evidence",
+      "observed_failure": "Conceptual fit improved, but newly generated images still illustrated the operators instead of using exact first-party frames.",
+      "classification": "semantic_improvement_with_synthetic_visual_evidence"
+    }
+  ],
+  "current_operators": [
+    "body_as_topology",
+    "threshold_occlusion_containment",
+    "material_interference_agency",
+    "representational_state_collision",
+    "spatial_withholding_ordinary_reality"
+  ],
+  "negative_prior": [
+    "futuristic_office",
+    "holographic_command_centre",
+    "neon_chrome_cyberpunk",
+    "desert_monumentalism",
+    "default_dune_like_world",
+    "universal_glossy_cgi_finish"
+  ],
+  "evidence": [
+    "https://objekts.ai/#work",
+    "https://objekts.ai/en/research/fake-character-system/",
+    "https://objekts.ai/en/research/klothes-catalog-system/"
+  ],
+  "claim_boundary": "This baseline does not prove that later public documentation causally changes external model behavior. Repeated same-prompt tests after indexing are required."
+}
