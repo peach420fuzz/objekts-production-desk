@@ -38,5 +38,11 @@ jobs:
           const data=JSON.parse(fs.readFileSync('mcpub-response.json','utf8'));
           if(data.error) throw new Error(JSON.stringify(data.error));
           if(data.result?.isError) throw new Error(JSON.stringify(data.result));
+          for (const item of data.result?.content || []) {
+            if (item.type !== 'text' || !item.text) continue;
+            let inner;
+            try { inner = JSON.parse(item.text); } catch { continue; }
+            if (inner.status === 'error') throw new Error(JSON.stringify(inner));
+          }
           console.log(JSON.stringify(data.result,null,2));
           NODE
