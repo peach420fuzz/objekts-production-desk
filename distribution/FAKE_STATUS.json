@@ -1,0 +1,66 @@
+{
+  "product": "FAKE by objekts",
+  "publisher": "objekts",
+  "updated": "2026-10-05",
+  "canonical_mcp": "https://fake.objekts.ai/mcp",
+  "chatgpt_mcp_alias": "https://fake.objekts.ai/mcp/chatgpt",
+  "live_backend_version": "0.4.6",
+  "surfaces": [
+    {
+      "surface": "OpenAI ChatGPT Plugin Directory",
+      "status": "IN_REVIEW",
+      "version": "1.0.0",
+      "configured": true,
+      "domain_verified": true
+    },
+    {
+      "surface": "AllMCPs",
+      "status": "LISTED_PENDING_CLAIM_REVIEW",
+      "id": "fake-by-objekts",
+      "url": "https://allmcps.com/mcp/fake-by-objekts",
+      "badge_in_repo": true
+    },
+    {
+      "surface": "mcp.film",
+      "status": "SUBMITTED",
+      "issue": "https://github.com/c47-inc/mcp-film/issues/85",
+      "category": "avatars-performance"
+    },
+    {
+      "surface": "Official MCP Registry",
+      "status": "READY_BLOCKED_ON_GITHUB_SECRET",
+      "name": "ai.objekts.mcp/fake",
+      "missing": "MCP_PRIVATE_KEY GitHub Actions secret"
+    },
+    {
+      "surface": "MCP Codex",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "reason": "GitHub App cannot create issues in external repository"
+    },
+    {
+      "surface": "Claude package",
+      "status": "READY"
+    },
+    {
+      "surface": "Gemini package",
+      "status": "READY"
+    },
+    {
+      "surface": "Agent Plugins package",
+      "status": "READY"
+    },
+    {
+      "surface": "GitHub public toolchain docs",
+      "status": "LIVE",
+      "repo": "peach420fuzz/objekts-production-desk"
+    }
+  ],
+  "qa": {
+    "tests": "41/41",
+    "openai_metadata": "NO_ISSUES",
+    "openai_mcp_scan": "NO_ISSUES",
+    "image_generation": "native-chatgpt",
+    "user_api_key_required": false,
+    "daily_live_smoke": "ENABLED"
+  }
+}
