@@ -1,0 +1,40 @@
+name: Verify FAKE on AllMCPs
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "distribution/allmcps/verify-fake.json"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify FAKE listing from GitHub badge
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsS https://allmcps.com/api/mcp \
+            -H 'content-type: application/json' \
+            --data-binary @- <<'JSON' | tee verify-response.json
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "tools/call",
+            "params": {
+              "name": "verify_mcp_claim",
+              "arguments": {
+                "id": "fake-by-objekts"
+              }
+            }
+          }
+          JSON
+          node - <<'NODE'
+          const fs=require('fs');
+          const data=JSON.parse(fs.readFileSync('verify-response.json','utf8'));
+          if(data.error) throw new Error(JSON.stringify(data.error));
+          console.log(JSON.stringify(data.result,null,2));
+          NODE
