@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.objekts.mcp/fake",
+  "title": "FAKE by objekts",
+  "description": "Character authoring by objekts: GNM geometry, photo fitting, aging, grooming and continuity.",
+  "version": "0.4.6",
+  "websiteUrl": "https://objekts.ai/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://fake.objekts.ai/mcp"
+    }
+  ]
+}
