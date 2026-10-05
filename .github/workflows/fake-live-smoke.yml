@@ -1,0 +1,76 @@
+name: FAKE live smoke
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 7 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check public pages and health
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="https://fake.objekts.ai"
+
+          for path in /health /about /llms.txt /privacy /terms /support /install /server.json /.well-known/agent-card.json; do
+            code="$(curl -sS -o /tmp/body -w '%{http_code}' "$BASE$path")"
+            test "$code" = "200"
+            test -s /tmp/body
+            echo "OK $path"
+          done
+
+          curl -fsS "$BASE/health" > /tmp/health.json
+          node - <<'NODE'
+          const h=require('/tmp/health.json');
+          if(h.ok!==true) throw new Error('health.ok');
+          if(h.service!=='fake-by-objekts') throw new Error('health.service');
+          if(h.imageGeneration!=='native-chatgpt') throw new Error('imageGeneration');
+          if(h.userApiKeyRequired!==false) throw new Error('userApiKeyRequired');
+          console.log('health contract OK', h.version);
+          NODE
+
+      - name: Check canonical and ChatGPT MCP aliases
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="https://fake.objekts.ai"
+          for endpoint in /mcp /mcp/chatgpt; do
+            curl -fsS -X POST "$BASE$endpoint"               -H 'content-type: application/json'               -H 'accept: application/json, text/event-stream'               --data '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"objekts-ci-smoke","version":"1"}}}'               > /tmp/init.json
+
+            curl -fsS -X POST "$BASE$endpoint"               -H 'content-type: application/json'               -H 'accept: application/json, text/event-stream'               --data '{"jsonrpc":"2.0","id":2,"method":"tools/list","params":{}}'               > /tmp/tools.json
+
+            ENDPOINT="$endpoint" node - <<'NODE'
+            const fs=require('fs');
+            const init=JSON.parse(fs.readFileSync('/tmp/init.json','utf8'));
+            const tools=JSON.parse(fs.readFileSync('/tmp/tools.json','utf8'));
+            if(init.result?.serverInfo?.name!=='fake-by-objekts') throw new Error('serverInfo.name');
+            const list=tools.result?.tools || [];
+            const names=list.map(t=>t.name);
+            for(const required of ['open_character_studio','about_objekts','get_character_project','update_character_state','upload_reference_photo']) {
+              if(!names.includes(required)) throw new Error('missing '+required);
+            }
+            for(const forbidden of ['request_identity_candidates','get_generation_job','select_identity_master']) {
+              if(names.includes(forbidden)) throw new Error('legacy tool visible: '+forbidden);
+            }
+            const modelVisible=list.filter(t=>(t._meta?.ui?.visibility||[]).includes('model')).map(t=>t.name).sort();
+            const expected=['about_objekts','open_character_studio'];
+            if(JSON.stringify(modelVisible)!==JSON.stringify(expected)) throw new Error('model visibility drift: '+JSON.stringify(modelVisible));
+            console.log(process.env.ENDPOINT, 'MCP contract OK');
+            NODE
+          done
+
+      - name: Check studio and review assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="https://fake.objekts.ai"
+          curl -fsS "$BASE/studio/" >/dev/null
+          curl -fsS "$BASE/studio/studio.js" | grep -q 'native image generation'
+          curl -fsSI "$BASE/review/demo.mp4" | grep -Eq '^HTTP/.* 200|^HTTP/.* 206'
+          echo "studio + review assets OK"
