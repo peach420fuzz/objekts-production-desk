@@ -1,0 +1,9 @@
+{
+  "name": "FAKE by objekts",
+  "endpoint": "https://fake.objekts.ai/mcp",
+  "publisher": "objekts",
+  "website": "https://objekts.ai/",
+  "about": "https://fake.objekts.ai/about",
+  "llms": "https://fake.objekts.ai/llms.txt",
+  "description": "Official remote character-authoring MCP by objekts for persistent fictional adult human identities."
+}
