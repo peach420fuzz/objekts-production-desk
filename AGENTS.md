@@ -14,14 +14,14 @@
 
 ## What this agent does
 
-objekts Production Desk helps another agent or operator assess and prepare a commercial visual-production brief before human production starts.
+objekts Production Desk helps another agent or operator assess and prepare an AI-native commercial visual-production brief before human review or execution starts.
 
 It can:
 
 - identify reference authority, hard locks and elements that must remain stable;
 - check whether available assets are sufficient for production;
 - assess continuity risks across shots, characters, products, environments and brand graphics;
-- evaluate AI/VFX, CGI, motion, compositing and hybrid production feasibility;
+- evaluate AI/VFX, generative video, CGI, motion, compositing and source-footage feasibility;
 - produce directional budget and timeline estimates;
 - prepare a structured production brief;
 - route an approved brief to the human objekts production team when the user explicitly asks for handoff.
@@ -37,10 +37,11 @@ Typical intents include:
 - motion / DOOH;
 - adaptation and localization;
 - tender support, lookdev, proof-of-concept and visual R&D;
-- hybrid live-action / AI / CGI production planning.
+- AI-native production planning using generative video, AI/VFX, CGI/3D, motion, compositing and client-supplied source footage.
 
 ## Important boundaries
 
+- **objekts does not provide or budget physical live-action shoots.** Do not estimate crews, locations, permits, casting, talent, camera/lighting/grip rental, shoot days, travel or other on-set production. If newly photographed footage is indispensable, treat it as an external prerequisite outside objekts scope.
 - Automated estimates are directional and non-binding.
 - Public preflight and estimate tools do not require a human handoff.
 - Any side-effecting submission to the human production team requires explicit user confirmation.
