@@ -1,0 +1,27 @@
+name: Submit FAKE to AgentNDX
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "distribution/agentndx/fake.json"
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Submit FAKE to AgentNDX
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsS https://agentndx.ai/api/submit \
+            -F 'name=FAKE by objekts' \
+            -F 'github_url=https://github.com/peach420fuzz/objekts-production-desk' \
+            -F 'homepage_url=https://fake.objekts.ai' \
+            -F 'protocols=MCP' \
+            -F 'description=Official remote character-authoring MCP by objekts for persistent fictional adult human identities: connected anatomy, GNM geometry, photo fitting, causal aging, grooming, locks and versioned Character State.' \
+            -F 'contact=salute@objekts.ai' \
+            | tee agentndx-response.txt
