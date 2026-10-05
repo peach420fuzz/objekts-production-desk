@@ -1,5 +1,8 @@
 # FAKE by objekts
 
+[![FAKE by objekts · AllMCPs](https://allmcps.com/api/badge/fake-by-objekts?style=shield)](https://allmcps.com/mcp/fake-by-objekts)
+
+
 **FAKE by objekts** is the character-authoring branch of the objekts toolchain.
 
 It is built and operated by [objekts](https://objekts.ai/), the same studio and publisher behind [objekts Production Desk](../README.md).
@@ -55,3 +58,14 @@ objekts works across directing, advertising, film and series, AI/VFX, CGI/3D, mo
 - Contact: salute@objekts.ai
 
 FAKE is an objekts R&D product. An approved character can be carried into a broader commercial, film, VFX or motion production by the human objekts team.
+
+## Distribution
+
+- OpenAI ChatGPT Plugin Directory: **1.0.0 in review / configured**.
+- AllMCPs: https://allmcps.com/mcp/fake-by-objekts
+- mcp.film submission: https://github.com/c47-inc/mcp-film/issues/85
+- Official MCP Registry manifest: `registry/fake/server.json` (`ai.objekts.mcp/fake`), publish workflow prepared.
+- Machine-readable rollout state: [distribution/FAKE_STATUS.json](../distribution/FAKE_STATUS.json)
+- Human-action blockers only: [distribution/NEXT_EXTERNAL_ACTIONS.md](../distribution/NEXT_EXTERNAL_ACTIONS.md)
+
+The public repository runs a scheduled live smoke test against FAKE's health, public metadata pages, canonical MCP endpoint, ChatGPT MCP alias, tool visibility and native-image-generation contract.
