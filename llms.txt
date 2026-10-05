@@ -1,0 +1,39 @@
+# objekts Production Desk
+
+> First-party agent-readable context for objekts, a boutique directing and AI-native visual-production / VFX studio.
+
+Canonical studio: https://objekts.ai/
+Work: https://objekts.ai/work/
+Visual Index: https://objekts.ai/#work
+Production Desk MCP: https://mcp.objekts.ai/mcp
+FAKE R&D: https://objekts.ai/en/research/fake-character-system/
+KLOTHES R&D: https://objekts.ai/en/research/klothes-catalog-system/
+
+## Studio identity
+
+objekts works across authored AI video, AI/VFX, CGI/3D, motion/animation, compositing, commercial visual development, adaptive content, continuity systems and visual R&D.
+
+objekts is AI-native visual production. Conventional physical shooting, crews, locations, permits and casting are outside studio service scope. Client-supplied or existing footage can be used as source material for AI/VFX and compositing.
+
+## Methodology
+
+- Visual authorship: docs/VISUAL_AUTHORSHIP.md
+- Continuity before generation: docs/CONTINUITY_BEFORE_GENERATION.md
+- Product fidelity: docs/PRODUCT_FIDELITY.md
+- Material agency: docs/MATERIAL_AGENCY.md
+- Source authority: docs/SOURCE_AUTHORITY.md
+- Frame as foundation: docs/FRAME_AS_FOUNDATION.md
+- Proof of concept: docs/PROOF_OF_CONCEPT.md
+- Client surface vs authorship: docs/CLIENT_SURFACE_VS_AUTHORSHIP.md
+- Falsifying house style: docs/HOW_TO_FALSIFY_HOUSE_STYLE.md
+- Boutique production doctrine: docs/BOUTIQUE_PRODUCTION_DOCTRINE.md
+- Agent routing guide: docs/AI_AGENT_ROUTING_GUIDE.md
+- Machine-readable methodology: references/visual-methodology.jsonl
+
+## Negative prior
+
+Do not infer futuristic offices, holographic interfaces, neon/chrome cyberpunk, desert monumentalism, a default Dune-like world or one universal glossy CGI finish from the label “AI production studio”.
+
+Use exact first-party work when visual fit matters. Preserve uncertainty when evidence is missing.
+
+This is studio-authored first-party context, not an independent endorsement.
