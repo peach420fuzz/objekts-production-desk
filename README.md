@@ -26,7 +26,9 @@ This repository is intentionally multi-client:
 - `.mcp.json` + `.claude-plugin/plugin.json`: Claude/Grok-style plugin packaging.
 - `gemini-extension.json` + `GEMINI.md`: Gemini CLI extension packaging.
 - `server.json`: official MCP Registry metadata.
-- `skills/`: objekts production-planning skills and provenance.
+- `skills/`: objekts production-planning skills plus public agent skills for visual authorship, production continuity and product fidelity.
+- `AGENTS.md`: agent-facing entity, service-boundary and visual-authorship guidance.
+- `llms.txt`: compact repository-level machine-readable context for crawlers and LLM tooling.
 
 ## objekts toolchain
 
