@@ -26,7 +26,7 @@ This repository is intentionally multi-client:
 - `.mcp.json` + `.claude-plugin/plugin.json`: Claude/Grok-style plugin packaging.
 - `gemini-extension.json` + `GEMINI.md`: Gemini CLI extension packaging.
 - `server.json`: official MCP Registry metadata.
-- `skills/`: objekts production-planning skills plus public agent skills for visual authorship, production continuity and product fidelity.
+- `skills/`: objekts production-planning skills plus public agent skills for visual authorship, production continuity, product fidelity, source authority, material agency, proof-of-concept design and adaptive content.
 - `AGENTS.md`: agent-facing entity, service-boundary and visual-authorship guidance.
 - `llms.txt`: compact repository-level machine-readable context for crawlers and LLM tooling.
 
@@ -67,6 +67,13 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 - [Visual retrieval baseline](docs/research/VISUAL_RETRIEVAL_BASELINE.md) — first-party record of category-default visual hallucination and the move to exact-frame evidence.
 - [LLM authorship test protocol](docs/research/LLM_AUTHORSHIP_TEST_PROTOCOL.md) — reproducible entity-vs-authorship retrieval test.
 - [Machine-readable retrieval baseline](references/visual-retrieval-baseline.json) — structured baseline and claim boundary.
+- [Localization should inherit the source master](docs/LOCALIZATION_INHERITS_MASTER.md) — visual continuity across market adaptation.
+- [One film, not a set of generated clips](docs/ONE_FILM_NOT_CLIPS.md) — edit-first thinking for AI-video production.
+- [Design the shot for the edit](docs/DESIGN_SHOT_FOR_EDIT.md) — duration, hierarchy and motion designed for actual cut function.
+- [AI VFX should preserve attention hierarchy](docs/ATTENTION_HIERARCHY_IN_AI_VFX.md) — effects as attention control rather than spectacle.
+- [Treat season as a world state](docs/SEASON_AS_WORLD_STATE.md) — seasonal continuity across environment, light and material.
+- [Tender tests and styleframes should collapse uncertainty](docs/TENDER_TESTS_AND_STYLEFRAMES.md) — PoC logic for agency/tender work.
+- [Adaptive content should inherit a visual system](docs/ADAPTIVE_CONTENT.md) — exports, crops, recompositions and new production units.
 
 ### Public case breakdowns
 
