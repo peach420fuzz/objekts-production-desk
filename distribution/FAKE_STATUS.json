@@ -15,7 +15,7 @@
     },
     {
       "surface": "AllMCPs",
-      "status": "LISTED_PENDING_CLAIM_REVIEW",
+      "status": "LIVE",
       "id": "fake-by-objekts",
       "url": "https://allmcps.com/mcp/fake-by-objekts",
       "badge_in_repo": true
@@ -28,9 +28,9 @@
     },
     {
       "surface": "Official MCP Registry",
-      "status": "READY_BLOCKED_ON_GITHUB_SECRET",
+      "status": "READY_BLOCKED_ON_ONE_SECRET",
       "name": "ai.objekts.mcp/fake",
-      "missing": "MCP_PRIVATE_KEY GitHub Actions secret"
+      "missing": "GitHub Actions secret MCP_PRIVATE_KEY"
     },
     {
       "surface": "MCP Codex",
@@ -61,6 +61,21 @@
     "openai_mcp_scan": "NO_ISSUES",
     "image_generation": "native-chatgpt",
     "user_api_key_required": false,
-    "daily_live_smoke": "ENABLED"
+    "daily_live_smoke": "PASSING",
+    "last_live_smoke_run": "37344830637"
+  },
+  "dependencies": {
+    "Official MCP Registry": [
+      "MCP_PRIVATE_KEY GitHub Actions secret"
+    ],
+    "Glama connector": [
+      "Official MCP Registry publication"
+    ],
+    "awesome-remote-mcp-servers": [
+      "Glama connector badge"
+    ],
+    "MCP.Directory": [
+      "Official MCP Registry publication (preferred canonical route)"
+    ]
   }
 }
