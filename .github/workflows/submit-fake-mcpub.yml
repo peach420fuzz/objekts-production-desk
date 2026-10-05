@@ -1,0 +1,42 @@
+name: Submit FAKE to mcpub
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "distribution/mcpub/fake.json"
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Submit FAKE remote MCP to mcpub
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsS https://mcpub.dev/mcp \
+            -H 'content-type: application/json' \
+            --data-binary @- <<'JSON' | tee mcpub-response.json
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "tools/call",
+            "params": {
+              "name": "submit",
+              "arguments": {
+                "url": "https://fake.objekts.ai/mcp",
+                "description": "FAKE by objekts — official remote character-authoring MCP for persistent fictional adult human identities with connected anatomy, GNM geometry, photo fitting, causal aging, grooming, locks and versioned Character State."
+              }
+            }
+          }
+          JSON
+          node - <<'NODE'
+          const fs=require('fs');
+          const data=JSON.parse(fs.readFileSync('mcpub-response.json','utf8'));
+          if(data.error) throw new Error(JSON.stringify(data.error));
+          if(data.result?.isError) throw new Error(JSON.stringify(data.result));
+          console.log(JSON.stringify(data.result,null,2));
+          NODE
