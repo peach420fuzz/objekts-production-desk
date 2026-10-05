@@ -1,0 +1,35 @@
+name: Publish FAKE to MCP Registry
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "registry/fake/server.json"
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Install mcp-publisher
+        run: |
+          curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" | tar xz mcp-publisher
+          ./mcp-publisher --help >/dev/null
+
+      - name: Authenticate as objekts MCP publisher
+        env:
+          MCP_PRIVATE_KEY: ${{ secrets.MCP_PRIVATE_KEY }}
+        run: |
+          test -n "$MCP_PRIVATE_KEY"
+          ./mcp-publisher login http --domain=mcp.objekts.ai --private-key="$MCP_PRIVATE_KEY"
+
+      - name: Validate FAKE registry manifest
+        run: ./mcp-publisher validate registry/fake/server.json
+
+      - name: Publish FAKE to official MCP Registry
+        run: ./mcp-publisher publish registry/fake/server.json
