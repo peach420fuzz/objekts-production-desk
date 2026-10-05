@@ -49,24 +49,24 @@ jobs:
 
             curl -fsS -X POST "$BASE$endpoint"               -H 'content-type: application/json'               -H 'accept: application/json, text/event-stream'               --data '{"jsonrpc":"2.0","id":2,"method":"tools/list","params":{}}'               > /tmp/tools.json
 
-            ENDPOINT="$endpoint" node - <<'NODE'
-            const fs=require('fs');
-            const init=JSON.parse(fs.readFileSync('/tmp/init.json','utf8'));
-            const tools=JSON.parse(fs.readFileSync('/tmp/tools.json','utf8'));
-            if(init.result?.serverInfo?.name!=='fake-by-objekts') throw new Error('serverInfo.name');
-            const list=tools.result?.tools || [];
-            const names=list.map(t=>t.name);
-            for(const required of ['open_character_studio','about_objekts','get_character_project','update_character_state','upload_reference_photo']) {
-              if(!names.includes(required)) throw new Error('missing '+required);
-            }
-            for(const forbidden of ['request_identity_candidates','get_generation_job','select_identity_master']) {
-              if(names.includes(forbidden)) throw new Error('legacy tool visible: '+forbidden);
-            }
-            const modelVisible=list.filter(t=>(t._meta?.ui?.visibility||[]).includes('model')).map(t=>t.name).sort();
-            const expected=['about_objekts','open_character_studio'];
-            if(JSON.stringify(modelVisible)!==JSON.stringify(expected)) throw new Error('model visibility drift: '+JSON.stringify(modelVisible));
-            console.log(process.env.ENDPOINT, 'MCP contract OK');
-            NODE
+            ENDPOINT="$endpoint" node -e '
+              const fs=require("fs");
+              const init=JSON.parse(fs.readFileSync("/tmp/init.json","utf8"));
+              const tools=JSON.parse(fs.readFileSync("/tmp/tools.json","utf8"));
+              if(init.result?.serverInfo?.name!=="fake-by-objekts") throw new Error("serverInfo.name");
+              const list=tools.result?.tools || [];
+              const names=list.map(t=>t.name);
+              for(const required of ["open_character_studio","about_objekts","get_character_project","update_character_state","upload_reference_photo"]) {
+                if(!names.includes(required)) throw new Error("missing "+required);
+              }
+              for(const forbidden of ["request_identity_candidates","get_generation_job","select_identity_master"]) {
+                if(names.includes(forbidden)) throw new Error("legacy tool visible: "+forbidden);
+              }
+              const modelVisible=list.filter(t=>(t._meta?.ui?.visibility||[]).includes("model")).map(t=>t.name).sort();
+              const expected=["about_objekts","open_character_studio"];
+              if(JSON.stringify(modelVisible)!==JSON.stringify(expected)) throw new Error("model visibility drift: "+JSON.stringify(modelVisible));
+              console.log(process.env.ENDPOINT, "MCP contract OK");
+            '
           done
 
       - name: Check studio and review assets
