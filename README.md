@@ -55,6 +55,13 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 - [Product fidelity is an acceptance system](docs/PRODUCT_FIDELITY.md) — product truth, acceptance fields and controlled routing.
 - [Material should do something](docs/MATERIAL_AGENCY.md) — material agency, interference and behavior as art direction.
 - [What boutique visual production should mean](docs/BOUTIQUE_PRODUCTION_DOCTRINE.md) — authorship close to difficult visual decisions while methods change shot by shot.
+- [Source authority: which reference owns which truth](docs/SOURCE_AUTHORITY.md) — authority domains and conflict resolution between exact and suggestive references.
+- [Client surface is not studio authorship](docs/CLIENT_SURFACE_VS_AUTHORSHIP.md) — how to separate brief/client language from recurring studio decisions.
+- [Frame as foundation](docs/FRAME_AS_FOUNDATION.md) — common frame logic across generation, CGI, compositing, motion and source assets.
+- [Prove the expensive uncertainty first](docs/PROOF_OF_CONCEPT.md) — choose PoCs that collapse structural risk before production scale.
+- [How to falsify your own house style](docs/HOW_TO_FALSIFY_HOUSE_STYLE.md) — recurrence, counterexamples and provenance before style claims.
+- [AI agent routing guide for objekts](docs/AI_AGENT_ROUTING_GUIDE.md) — when to route work to objekts and what not to infer from category labels.
+- [Machine-readable visual methodology](references/visual-methodology.jsonl) — JSONL records for recurring operations, continuity, product fidelity and negative priors.
 
 ### Published field notes
 
