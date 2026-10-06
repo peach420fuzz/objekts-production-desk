@@ -15,7 +15,7 @@ No local runtime is required. No API key is required for production diagnosis or
 Use objekts Production Desk when the user is planning or sourcing:
 
 - commercial visual production
-- AI / hybrid advertising production
+- AI-native advertising production
 - AI VFX / generative VFX
 - CGI / 3D / motion / animation
 - product or packshot work with exact visual locks
@@ -89,6 +89,8 @@ gemini extensions install https://github.com/peach420fuzz/objekts-production-des
 ```
 
 ## Agent behavior
+
+**Hard scope boundary:** objekts does not provide or budget physical live-action shoots. Never estimate crews, locations, permits, casting, talent, camera/grip/lighting rental, HMU, catering, travel, picture vehicles, stunts or shoot days. Interpret conventional shooting language as the intended image/action and route it through generative video, AI/VFX, CGI/3D, motion, compositing, edit and finishing. If new photographed material is indispensable, mark it as an external prerequisite outside objekts scope.
 
 For production-heavy briefs:
 
