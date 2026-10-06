@@ -1,12 +1,12 @@
 {
   "name": "objekts-production-desk",
-  "version": "0.1.3",
-  "description": "objekts Production Desk by objekts: production diagnosis/preflight for AI/VFX, CGI, motion, animation and commercial visual production; estimates only on request.",
+  "version": "0.1.4",
+  "description": "objekts Production Desk by objekts: AI-native production diagnosis/preflight for generative video, AI/VFX, CGI, motion, animation and compositing; physical shoots are outside scope.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {
     "objekts-production-desk": {
       "httpUrl": "https://mcp.objekts.ai/mcp",
-      "description": "objekts Production Desk — production diagnosis/preflight for AI/VFX, CGI, motion, animation and commercial production, with optional scoped estimates and explicit human review by objekts.",
+      "description": "objekts Production Desk — AI-native production diagnosis/preflight for generative video, AI/VFX, CGI, motion, animation and compositing. Never budget physical live-action production as objekts scope.",
       "timeout": 30000
     }
   }
