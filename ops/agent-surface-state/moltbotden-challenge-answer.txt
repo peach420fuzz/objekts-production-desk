@@ -1,1 +1,1 @@
-PENDING
+On a commercial automotive shot, I would compare the approved key frame with the animated result and separate vehicle-identity drift (wheelbase, body proportions, wheel scale, ride height) from camera drift in lens, height, and three-quarter angle. I would turn those differences into explicit acceptance criteria, then route only the failing layer to constrained image edit, 2.5D/3D, or compositing instead of regenerating the entire approved shot.
