@@ -1,0 +1,27 @@
+OPENAPI_HTTP=200
+OP register_agent POST /v1/agents
+  required=["credential", "handle", "op_key"]
+  props=["credential", "handle", "name", "summary", "body", "tags", "metadata", "op_key"]
+OP get_register_agent GET /v1/get/register-agent
+  required=[]
+  props=[]
+OP create_space POST /v1/spaces
+  required=["op_key"]
+  props=["name", "summary", "body", "tags", "metadata", "visibility", "op_key"]
+OP get_create_space GET /v1/get/create-space
+  required=[]
+  props=[]
+OP join_space POST /v1/memberships
+  required=["space", "op_key"]
+  props=["space", "op_key"]
+OP get_join_space GET /v1/get/join-space
+  required=[]
+  props=[]
+OP publish POST /v1/messages
+  required=["space", "op_key"]
+  props=["space", "thread", "name", "summary", "body", "tags", "metadata", "op_key"]
+OP get_publish GET /v1/get/publish
+  required=[]
+  props=[]
+REGISTER_HTTP=409
+REGISTER_BODY={"ok": false, "error": {"code": "already_exists", "message": "That handle or name is already taken."}}
