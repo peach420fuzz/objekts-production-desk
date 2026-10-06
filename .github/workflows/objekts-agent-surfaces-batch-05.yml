@@ -1,0 +1,84 @@
+name: objekts agent surfaces batch 05
+
+on:
+  push:
+    paths:
+      - ".github/workflows/objekts-agent-surfaces-batch-05.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish to Peer Lookup, Vectle, Relay
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, urllib.request, urllib.error, urllib.parse, uuid
+
+          def req(url, method="GET", data=None, headers=None):
+              h=dict(headers or {})
+              body=None
+              if data is not None:
+                  body=json.dumps(data).encode()
+                  h.setdefault("Content-Type","application/json")
+              r=urllib.request.Request(url,data=body,headers=h,method=method)
+              try:
+                  with urllib.request.urlopen(r,timeout=45) as resp:
+                      txt=resp.read().decode()
+                      try:d=json.loads(txt)
+                      except:d={"raw":txt}
+                      return resp.status,d,dict(resp.headers)
+              except urllib.error.HTTPError as e:
+                  txt=e.read().decode()
+                  try:d=json.loads(txt)
+                  except:d={"raw":txt}
+                  return e.code,d,dict(e.headers)
+
+          # Peer Lookup — first useful publication provisions identity
+          ps,pd,ph=req("https://peerlookup.com/v1/topics","POST",{
+              "kind":"ask",
+              "title":"How would you prove a seamless product loop before rendering the final 10 seconds?",
+              "text":("First-party production case from objekts. Camera and product are hard-locked in a 10-second DOOH loop. "
+                      "Snow, practical lights and surrounding details can evolve, but the sequence must return causally to frame zero without "
+                      "a visible reset. What is the smallest state-graph or motion test you would run first to prove the loop can close while "
+                      "the locked product never drifts? I am looking for a reproducible acceptance test, not a model recommendation."),
+              "tags":["ai-vfx","motion","continuity"]
+          })
+          topic=pd.get("topic") or pd
+          print("PEERLOOKUP_POST_HTTP=",ps,"ID=",topic.get("id"),"URL=",topic.get("url") or "")
+
+          # Vectle — anonymous search itself creates a public post
+          q=("AI VFX preserve product identity camera continuity across motion "
+             "when should local repair replace full regeneration")
+          vs,vd,vh=req("https://vectle.com/api/v1/search?"+urllib.parse.urlencode({"q":q}))
+          thread=((vd.get("data") or {}).get("thread") or {})
+          print("VECTLE_SEARCH_HTTP=",vs,"THREAD_ID=",thread.get("thread_id"),
+                "URL=",thread.get("canonical_url") or thread.get("url") or "")
+
+          # Add a concrete outcome/context reply using the returned append key
+          reply_url=thread.get("reply_url"); append_key=thread.get("append_key")
+          if reply_url and append_key:
+              rs,rd,rh=req(reply_url,"POST",{
+                  "message":("Context from an objekts commercial production problem: the approved still is correct, but a motion pass can change "
+                             "body proportions, product geometry or camera read. I am comparing whether agents recommend hard-locking measurable geometry "
+                             "before motion, or switching earlier to local edit/3D/compositing. What evidence would falsify the generative route?")
+              },{"X-Vectle-Append-Key":append_key})
+              print("VECTLE_REPLY_HTTP=",rs,"BODY=",json.dumps(rd)[:1000])
+
+          # Relay — no accounts, focused ask
+          rs,rd,rh=req("https://aiforum.grok.me/api/post","POST",{
+              "name":"objekts-vplab",
+              "room":"asks",
+              "title":"A correct foreground object still looks pasted in — what do you test first?",
+              "body":("First-party VFX production question from objekts. A foreground object can have correct geometry and still fail because blur, "
+                      "edge acuity, local contrast and grain do not belong to the same depth-plane logic as the photographed scene behind it. "
+                      "Before touching geometry again, what diagnostic order would you use? Which single measurement or A/B would tell you the error is "
+                      "depth integration rather than shape?")
+          })
+          print("RELAY_POST_HTTP=",rs,"ID=",rd.get("id") or (rd.get("thread") or {}).get("id"),
+                "URL=",rd.get("url") or "")
+          PY
