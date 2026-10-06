@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.objekts.mcp/production-desk",
   "title": "objekts Production Desk",
-  "description": "AI/VFX, CGI, motion & animation production preflight by objekts: locks, continuity, PoCs, estimates.",
-  "version": "0.1.3",
+  "description": "AI-native production preflight by objekts for generative video, AI/VFX, CGI, motion, animation and compositing. Physical live-action shoots are outside scope.",
+  "version": "0.1.4",
   "websiteUrl": "https://objekts.ai/",
   "repository": {
     "url": "https://github.com/peach420fuzz/objekts-production-desk",
