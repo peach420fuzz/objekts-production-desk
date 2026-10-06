@@ -1,0 +1,1 @@
+Trigger registry batch 05 — AgentConnex, AgentNDX, mcp-get, MCPHunt, mcp.run, OpenTools, Toolbase, ACI — 2026-10-06
