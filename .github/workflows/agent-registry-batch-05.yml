@@ -1,0 +1,112 @@
+name: Objekts agent registry batch 05
+
+on:
+  push:
+    paths:
+      - 'ops/agent-surface-trigger/batch-05.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Submit objekts Production Desk to new agent registries
+        shell: python
+        run: |
+          import json, urllib.request, urllib.error, urllib.parse, time
+          UA='objekts-production-desk/1.0 (+https://objekts.ai/)'
+          def req(url,method='POST',data=None,headers=None,form=False):
+              h={'User-Agent':UA,'Accept':'application/json,text/html;q=0.9,*/*;q=0.8'}
+              h.update(headers or {})
+              if form:
+                  body=urllib.parse.urlencode(data or {},doseq=True).encode()
+                  h['Content-Type']='application/x-www-form-urlencoded'
+              else:
+                  body=json.dumps(data or {}).encode()
+                  h['Content-Type']='application/json'
+              r=urllib.request.Request(url,data=body,headers=h,method=method)
+              try:
+                  with urllib.request.urlopen(r,timeout=30) as z:
+                      t=z.read().decode(errors='replace')
+                      try:d=json.loads(t)
+                      except:d={'raw':t[:700]}
+                      return z.status,d,z.geturl(),dict(z.headers)
+              except urllib.error.HTTPError as e:
+                  t=e.read().decode(errors='replace')
+                  try:d=json.loads(t)
+                  except:d={'raw':t[:700]}
+                  return e.code,d,e.geturl(),dict(e.headers)
+              except Exception as e:
+                  return 0,{'error':str(e)},url,{}
+
+          repo='https://github.com/peach420fuzz/objekts-production-desk'
+          home='https://objekts.ai/'
+          mcp='https://mcp.objekts.ai/'
+          desc='objekts Production Desk: professional AI-first visual-production diagnosis, brief preflight, feasibility, production planning and human handoff for commercials, AI VFX, CGI, motion and complex visual work.'
+
+          # AgentConnex: explicitly documented as basic registration without API key.
+          st,d,u,h=req('https://agentconnex.com/api/agents/register',data={
+              'name':'objekts Production Desk',
+              'description':desc,
+              'capabilities':['visual-production','ai-vfx','production-diagnosis','brief-preflight','art-direction','commercial-production'],
+              'model':'multi-model production system',
+              'tools':['MCP','production brief analysis','visual production routing'],
+              'protocols':['mcp','a2a'],
+              'metadata':{'studio':'objekts','homepage':home,'mcp':mcp,'repository':repo}
+          })
+          print('AGENTCONNEX',st,'PUBLIC',d.get('profile_url') or d.get('slug') or d.get('id') or d.get('error'))
+
+          # AgentNDX public review form; send both JSON and form fallback only if JSON rejected.
+          ndx={
+              'name':'objekts Production Desk',
+              'serverName':'objekts Production Desk',
+              'github_url':repo,
+              'githubUrl':repo,
+              'homepage_url':mcp,
+              'homepageUrl':mcp,
+              'protocols':['MCP','A2A'],
+              'description':desc,
+              'contact_email':'salute@objekts.ai',
+              'contactEmail':'salute@objekts.ai'
+          }
+          st,d,u,h=req('https://agentndx.ai/api/submit',data=ndx)
+          if st in (400,404,405,415,422):
+              form={
+                  'serverName':'objekts Production Desk',
+                  'githubUrl':repo,
+                  'homepageUrl':mcp,
+                  'protocols':['MCP','A2A'],
+                  'description':desc,
+                  'contactEmail':'salute@objekts.ai'
+              }
+              st,d,u,h=req('https://agentndx.ai/api/submit',data=form,form=True)
+          print('AGENTNDX',st,'FINAL',u,'RESULT',d.get('success') or d.get('message') or d.get('error') or d.get('raw'))
+
+          targets=[
+            ('MCP_GET','https://mcp-get.com/api/servers/submit',{
+              'name':'objekts Production Desk','description':desc,'vendor':'objekts','sourceUrl':repo,'homepage':mcp,'license':'MIT'
+            }),
+            ('MCPHUNT','https://mcphunt.com/api/servers',{
+              'name':'objekts Production Desk','url':mcp,'repo':repo,'description':desc
+            }),
+            ('MCP_RUN','https://www.mcp.run/api/servers',{
+              'name':'objekts Production Desk','url':mcp,'homepage':home,'description':desc
+            }),
+            ('OPENTOOLS','https://opentools.ai/api/mcp/register',{
+              'name':'objekts Production Desk','url':mcp,'repo':repo,'description':desc
+            }),
+            ('TOOLBASE','https://api.toolbase.ai/v1/mcp/register',{
+              'name':'objekts Production Desk','endpoint':mcp,'description':desc,'homepage':home
+            }),
+            ('ACI','https://api.aci.dev/v1/tools/submit',{
+              'name':'objekts Production Desk','description':desc,'homepage':home,'mcp_url':mcp,'github':repo
+            })
+          ]
+          for name,url,payload in targets:
+              st,d,u,h=req(url,data=payload)
+              val=d.get('url') or d.get('id') or d.get('slug') or d.get('message') or d.get('success') or d.get('error') or d.get('raw')
+              print(name,st,'PUBLIC',str(val)[:500])
+              time.sleep(1)
