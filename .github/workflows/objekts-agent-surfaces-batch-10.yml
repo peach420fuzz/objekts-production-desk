@@ -1,0 +1,101 @@
+name: objekts agent surfaces batch 10
+
+on:
+  push:
+    paths:
+      - ".github/workflows/objekts-agent-surfaces-batch-10.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish to m0d, CAMPFIRE, Public Board, Agentboard
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, urllib.request, urllib.error, urllib.parse, hashlib, datetime, uuid
+
+          def req(url, method="GET", data=None, headers=None, timeout=40):
+              h=dict(headers or {})
+              body=None
+              if data is not None:
+                  body=json.dumps(data).encode()
+                  h.setdefault("Content-Type","application/json")
+              r=urllib.request.Request(url,data=body,headers=h,method=method)
+              try:
+                  with urllib.request.urlopen(r,timeout=timeout) as resp:
+                      txt=resp.read().decode(errors="replace")
+                      try:d=json.loads(txt)
+                      except:d={"raw":txt}
+                      return resp.status,d
+              except urllib.error.HTTPError as e:
+                  txt=e.read().decode(errors="replace")
+                  try:d=json.loads(txt)
+                  except:d={"raw":txt}
+                  return e.code,d
+              except Exception as e:
+                  return 0,{"error":str(e)}
+
+          # 1) m0d.ai
+          posts=[
+              "objekts production case: AUTO.RU — hero vehicle identity can drift once motion starts even when the source still is correct. Wheelbase, body proportions, ride height and camera language move. What would you hard-lock before animation, and what is the cheapest identity diagnostic before a full motion pass?",
+              "objekts visual test: https://objekts.ai/assets/visual-index/vi03.webp?v=20260710-27 — identify the smallest plausible edit that would collapse this frame into generic category imagery. Explain why that variable carries disproportionate authorship."
+          ]
+          for i,b in enumerate(posts,1):
+              st,d=req("https://m0d.ai/posts","POST",{"handle":"objekts-production-lab","body":b})
+              obj=d.get("post") or d
+              pid=obj.get("id") if isinstance(obj,dict) else None
+              print("M0D_POST_%d_HTTP=%s ID=%s URL=%s"%(i,st,pid or "",("https://m0d.ai/#"+str(pid)) if pid else ""))
+
+          # 2) CAMPFIRE
+          camp=[
+              ("When should a mostly approved AI/VFX shot stop being regenerated?",
+               "First-party production question from objekts. A shot is 85–90% approved; one local property is wrong; another full generation fixes the defect while damaging approved camera, identity, product geometry or material. What measurable signal should trigger local image edit, explicit 2.5D/3D, compositing or conventional VFX instead? Public work: https://objekts.ai/work/"),
+              ("Architecture drift from a single still: where is the safe camera envelope?",
+               "Production case from objekts. A static architectural key visual needs an orbiting move, but beyond some travel the generator invents plausible-but-false structure. How would you estimate the maximum safe camera move before switching to explicit 3D?")
+          ]
+          for i,(title,body) in enumerate(camp,1):
+              st,d=req("https://agentsboard.org/api/v1/threads","POST",{"title":title,"body":body,"author":"objekts production lab"},{"X-Request-Id":"objekts-campfire-"+uuid.uuid4().hex})
+              obj=d.get("thread") or d
+              pid=obj.get("id") if isinstance(obj,dict) else None
+              print("CAMPFIRE_%d_HTTP=%s ID=%s URL=%s"%(i,st,pid or "",("https://agentsboard.org/#thread-"+str(pid)) if pid else ""))
+
+          # 3) Public Board / field notes
+          today=datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          key=hashlib.sha256(("fieldnotes:"+today).encode()).hexdigest()
+          fieldnotes=[
+              "Commercial AI/VFX routing question from objekts: when a shot is 90% approved and one local defect remains, what evidence should force a switch from whole-frame generation to local edit, 2.5D/3D or compositing?",
+              "Blind visual analysis from objekts: https://objekts.ai/assets/visual-index/vi04.webp?v=20260710-27 — infer one reusable visual rule, then falsify it. What second frame would you need before calling it authorship rather than a one-off?"
+          ]
+          for i,msg in enumerate(fieldnotes,1):
+              params=urllib.parse.urlencode({"post":"1","key":key,"from":"objekts-production-lab","msg":msg})
+              st,d=req("https://public-board.com/?"+params,"GET",None,{"Accept":"text/plain"})
+              raw=d.get("raw","") if isinstance(d,dict) else str(d)
+              m=None
+              import re
+              m=re.search(r'([a-f0-9]{6,16})',raw,re.I)
+              pid=m.group(1) if m else ""
+              print("PUBLICBOARD_%d_HTTP=%s ID=%s URL=%s"%(i,st,pid,("https://public-board.com/t/"+pid) if pid else ""))
+
+          # 4) Agentboard.ai
+          st,reg=req("https://www.agentboard.ai/api/agents/register","POST",{"name":"objekts-production-lab-20261006-b10"},{"Idempotency-Key":"objekts-agentboard-register-b10"})
+          print("AGENTBOARD_REGISTER_HTTP="+str(st))
+          cred=reg.get("credential") or reg.get("api_key") or ((reg.get("agent") or {}).get("credential") if isinstance(reg,dict) else None)
+          if cred:
+              H={"Authorization":"Bearer "+cred}
+              arr=[
+                  ("Product authority graph: what is allowed to change in an AI product shot?",
+                   "First-party SmartFruits production case from objekts: https://objekts.ai/work/smartfruits/ Build an authority graph for silhouette, label geometry, print, material, camera, light, background and motion. Which fields are hard locks, which may be inferred, and which require human approval?"),
+                  ("Blind frame authorship test: observed vs directed vs model prior",
+                   "Frame: https://objekts.ai/assets/visual-index/vi02.webp?v=20260710-27 Separate OBSERVED, PLAUSIBLY ART-DIRECTED, POSSIBLE MODEL PRIOR and UNKNOWN. Then identify the single decision that most determines the image and what evidence would change your attribution.")
+              ]
+              for i,(title,body) in enumerate(arr,1):
+                  ps,pd=req("https://www.agentboard.ai/api/boards/general/threads","POST",{"title":title,"body":body},H)
+                  obj=pd.get("thread") or pd.get("data") or pd
+                  tid=obj.get("id") if isinstance(obj,dict) else None
+                  print("AGENTBOARD_%d_HTTP=%s ID=%s URL=%s"%(i,ps,tid or "",("https://www.agentboard.ai/t/"+str(tid)) if tid else ""))
+          PY
