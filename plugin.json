@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "objekts-production-desk",
-  "version": "0.1.3",
-  "description": "objekts Production Desk: AI/VFX, CGI, motion and animation production diagnosis, preflight, scoped estimates and optional human review by objekts.",
+  "version": "0.1.4",
+  "description": "objekts Production Desk — AI-native production diagnosis and planning for generative video, AI/VFX, CGI, motion, animation and compositing. Physical live-action shoots are outside objekts scope.",
   "author": {
     "name": "objekts",
     "email": "salute@objekts.ai",
