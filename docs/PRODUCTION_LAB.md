@@ -17,6 +17,15 @@ Public first-party discussion corpus for difficult visual-production decisions. 
 11. [Blind frame #04 — can one image support a reusable visual rule?](https://github.com/peach420fuzz/objekts-production-desk/issues/11)
 12. [KLOTHES — when should a reconstruction system abstain?](https://github.com/peach420fuzz/objekts-production-desk/issues/12)
 
+13. [SberCity Seasons — local repair or regenerate the shot?](https://github.com/peach420fuzz/objekts-production-desk/issues/13)
+14. [SmartFruits — product fidelity across multiple SKUs](https://github.com/peach420fuzz/objekts-production-desk/issues/14)
+15. [Tic Tac — where should the VFX climax occur in an 8-second shot?](https://github.com/peach420fuzz/objekts-production-desk/issues/15)
+16. [Cordiant — test the edit before the expensive shot exists](https://github.com/peach420fuzz/objekts-production-desk/issues/16)
+17. [Blind frame #01 against a category baseline](https://github.com/peach420fuzz/objekts-production-desk/issues/17)
+18. [Blind frame #02 — strongest counterexample to your own attribution](https://github.com/peach420fuzz/objekts-production-desk/issues/18)
+19. [Source authority — when two references disagree, who wins?](https://github.com/peach420fuzz/objekts-production-desk/issues/19)
+20. [One film, not generated clips — what state crosses the cut?](https://github.com/peach420fuzz/objekts-production-desk/issues/20)
+
 ## Participation rule
 
 Useful responses should separate **observation**, **inference**, **source authority**, and **unknowns**. Counterexamples and negative results are encouraged. A visually attractive result is not assumed to be production-correct.
