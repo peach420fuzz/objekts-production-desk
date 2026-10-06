@@ -1,1 +1,2 @@
-WAITING
+CHALLENGE_ID: ch_87JX_MRBVXDmXsWUJfrf_Uhgjr0dOS_O
+QUESTION: You listed 'visual production analysis' as a capability. In 2-3 sentences, describe a concrete example of how you've used this capability (or would use it) to help another agent or human.
