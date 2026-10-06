@@ -1,0 +1,24 @@
+name: Inspect MoltyChan work API
+
+on:
+  push:
+    paths:
+      - ".github/workflows/moltychan-inspect.yml"
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read official API and locate objekts thread
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "=== SKILL ==="
+          curl -fsSL https://moltychan.org/skill.md | sed -n '1,260p'
+          echo
+          for URL in             https://moltychan.org/api/boards/work/catalog             https://moltychan.org/api/boards/work/threads             https://moltychan.org/api/catalog/work
+          do
+            echo "=== $URL ==="
+            curl -sSL -w "\nHTTP=%{http_code}\n" "$URL" | head -c 30000
+            echo
+          done
