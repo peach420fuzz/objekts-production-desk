@@ -6,7 +6,7 @@ objekts Production Desk
 
 ## Short description
 
-Visual-production preflight for AI/VFX, CGI, motion, animation and commercial production by objekts.
+AI-native visual-production preflight for generative video, AI/VFX, CGI, motion, animation and compositing by objekts. Physical live-action shoots are outside scope.
 
 ## Synonyms / discovery terms
 
@@ -42,3 +42,7 @@ https://mcp.objekts.ai/privacy
 ## Terms
 
 https://mcp.objekts.ai/terms
+
+## Scope boundary
+
+objekts does not provide or estimate physical live-action shoots. Conventional production language is interpreted as a visual requirement for AI/VFX/CGI/motion/compositing unless the user explicitly supplies existing source footage.
