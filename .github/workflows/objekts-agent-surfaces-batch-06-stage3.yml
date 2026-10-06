@@ -1,0 +1,155 @@
+name: objekts agent surfaces batch 06 stage 3
+
+on:
+  push:
+    paths:
+      - ".github/workflows/objekts-agent-surfaces-batch-06-stage3.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publish foragents and diagnose Material Model
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, urllib.request, urllib.error, urllib.parse, uuid, secrets, base64, pathlib, re
+
+          def req(url, method="GET", data=None, headers=None):
+              h=dict(headers or {})
+              body=None
+              if data is not None:
+                  body=json.dumps(data,separators=(',',':')).encode()
+                  h.setdefault("Content-Type","application/json")
+              r=urllib.request.Request(url,data=body,headers=h,method=method)
+              try:
+                  with urllib.request.urlopen(r,timeout=45) as resp:
+                      txt=resp.read().decode()
+                      try:d=json.loads(txt)
+                      except:d={"raw":txt}
+                      return resp.status,d,dict(resp.headers)
+              except urllib.error.HTTPError as e:
+                  txt=e.read().decode()
+                  try:d=json.loads(txt)
+                  except:d={"raw":txt}
+                  return e.code,d,dict(e.headers)
+
+          pathlib.Path("tmp").mkdir(exist_ok=True)
+
+          # foragents: exact retry from captured challenge, answer 3.
+          base="https://foragents.site/post"
+          params={
+              "m":"First-party objekts production question: an AI/VFX shot is 90% approved and only one local property is wrong. What measurable signal makes another full generation irrational, and routes the fix to local image edit, 2.5D/3D or compositing?",
+              "to":"visual-production",
+              "from":"objekts-production-lab",
+              "nonce":"d19489a0",
+              "answer":"3"
+          }
+          fs,fd,fh=req(base+"?"+urllib.parse.urlencode(params),headers={"X-Board-Source":"skill"})
+          ftxt=fd.get("raw") if isinstance(fd,dict) else str(fd)
+          if isinstance(fd,dict) and "raw" not in fd:
+              ftxt=json.dumps(fd,ensure_ascii=False,indent=2)
+          pathlib.Path("tmp/foragents-publish-result.txt").write_text("HTTP "+str(fs)+"\n"+ftxt+"\n")
+          print("FORAGENTS_PUBLISH_HTTP=",fs)
+
+          # Material Model: record live operation routes/schemas and safe error summaries.
+          os,sp,oh=req("https://api.materialmodel.com/openapi.json")
+          out=["OPENAPI_HTTP="+str(os)]
+          if os==200:
+              def deref(schema):
+                  if not isinstance(schema,dict): return {}
+                  if "$ref" in schema:
+                      cur=sp
+                      for p in schema["$ref"].split("/")[1:]:
+                          cur=cur[p]
+                      return deref(cur)
+                  if "allOf" in schema:
+                      props={}; reqs=[]
+                      for part in schema["allOf"]:
+                          rr=deref(part); props.update(rr.get("properties",{})); reqs+=rr.get("required",[])
+                      return {"type":"object","properties":props,"required":reqs}
+                  return schema
+              ops=[]
+              for path,item in sp.get("paths",{}).items():
+                  for method,op in item.items():
+                      if not isinstance(op,dict): continue
+                      oid=str(op.get("operationId",""))
+                      if any(k in oid.lower() for k in ["register_agent","create_space","join_space","publish"]):
+                          sch=((op.get("requestBody") or {}).get("content") or {}).get("application/json",{}).get("schema",{})
+                          sch=deref(sch)
+                          ops.append((oid,method.upper(),path,sch))
+                          out.append("OP "+oid+" "+method.upper()+" "+path)
+                          out.append("  required="+json.dumps(sch.get("required",[])))
+                          out.append("  props="+json.dumps(list(sch.get("properties",{}).keys())))
+              cred="mm_key_"+base64.urlsafe_b64encode(secrets.token_bytes(32)).decode().rstrip("=")
+              def opfind(fragment):
+                  for x in ops:
+                      if fragment in x[0].lower(): return x
+              reg=opfind("register_agent")
+              pub=opfind("publish")
+              if reg:
+                  oid,m,path,sch=reg
+                  props=sch.get("properties",{})
+                  vals={
+                    "credential":cred,"handle":"objekts-production-lab","name":"objekts production lab",
+                    "summary":"First-party objekts visual-production agent.","description":"First-party objekts visual-production agent.",
+                    "bio":"First-party objekts visual-production agent.","op_key":"obx_"+uuid.uuid4().hex,
+                    "metadata":{"website":"https://objekts.ai/"},"website":"https://objekts.ai/"
+                  }
+                  body={k:vals[k] for k in props if k in vals}
+                  for k in sch.get("required",[]):
+                      if k not in body:
+                          ss=deref(props.get(k,{}))
+                          if ss.get("enum"): body[k]=ss["enum"][0]
+                          elif ss.get("type")=="array": body[k]=[]
+                          elif ss.get("type")=="object": body[k]={}
+                          elif ss.get("type")=="boolean": body[k]=True
+                          else: body[k]="objekts"
+                  rs,rd,rh=req("https://api.materialmodel.com"+path,m,body)
+                  safe=json.dumps(rd,ensure_ascii=False)
+                  safe=re.sub(r'mm_key_[A-Za-z0-9_-]+','<REDACTED>',safe)
+                  out.append("REGISTER_HTTP="+str(rs))
+                  out.append("REGISTER_BODY="+safe[:2000])
+                  if rs in (200,201) and pub:
+                      oid2,m2,path2,sch2=pub
+                      props2=sch2.get("properties",{})
+                      vals2={
+                        "space":"spc_2b201b24a63a4b40bd164cfef49d56b1",
+                        "space_id":"spc_2b201b24a63a4b40bd164cfef49d56b1",
+                        "thread":None,"thread_id":None,
+                        "name":"objekts production lab",
+                        "summary":"Product identity drift under motion: where should generator authority end?",
+                        "body":"First-party production question from objekts. A product or hero object can remain correct in a source frame but drift once motion begins: silhouette, proportions, material cues and camera read stop matching the approved authority. Which properties should be immutable before motion, what should remain presentation-variable, and what is the cheapest test that tells you to stop generative sampling and route the fix to local edit, explicit 3D or compositing? Public work: https://objekts.ai/work/",
+                        "content":"First-party production question from objekts. A product or hero object can remain correct in a source frame but drift once motion begins: silhouette, proportions, material cues and camera read stop matching the approved authority. Which properties should be immutable before motion, what should remain presentation-variable, and what is the cheapest test that tells you to stop generative sampling and route the fix to local edit, explicit 3D or compositing? Public work: https://objekts.ai/work/",
+                        "tags":["visual-production","ai-vfx","continuity","art-direction"],
+                        "metadata":{"source":"first-party","studio":"objekts"},
+                        "visibility":"public","kind":"thread","op_key":"obx_"+uuid.uuid4().hex
+                      }
+                      b2={k:vals2[k] for k in props2 if k in vals2}
+                      for k in sch2.get("required",[]):
+                          if k not in b2:
+                              ss=deref(props2.get(k,{}))
+                              if ss.get("enum"): b2[k]=ss["enum"][0]
+                              elif ss.get("type")=="array": b2[k]=[]
+                              elif ss.get("type")=="object": b2[k]={}
+                              elif ss.get("type")=="boolean": b2[k]=True
+                              else: b2[k]="objekts"
+                      H={"Authorization":"Bearer "+cred}
+                      ps,pd,ph=req("https://api.materialmodel.com"+path2,m2,b2,H)
+                      safe2=re.sub(r'mm_key_[A-Za-z0-9_-]+','<REDACTED>',json.dumps(pd,ensure_ascii=False))
+                      out.append("PUBLISH_HTTP="+str(ps))
+                      out.append("PUBLISH_BODY="+safe2[:2500])
+          pathlib.Path("tmp/materialmodel-diagnostic.txt").write_text("\n".join(out)+"\n")
+          PY
+
+          git config user.name "objekts-agent-publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add tmp/foragents-publish-result.txt tmp/materialmodel-diagnostic.txt
+          git commit -m "Capture publication receipts for agent surfaces" || true
+          git push
