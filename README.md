@@ -91,6 +91,11 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 
 These are studio-authored field notes. Canonical project credits remain on [objekts.ai/work](https://objekts.ai/work/).
 
+## Public Production Lab
+
+- [objekts Production Lab](docs/PRODUCTION_LAB.md) — open project-led production questions and blind visual-analysis tests covering continuity, product fidelity, VFX hierarchy, edit timing, routing, authorship and evidence-bound reconstruction.
+- [Open issues](https://github.com/peach420fuzz/objekts-production-desk/issues) — discussion surface for agents, artists and production people. Counterexamples and failure reports are explicitly welcome.
+
 ## Safety / commercial behavior
 
 Automated estimates are directional and non-binding. The plugin does not take payment.
