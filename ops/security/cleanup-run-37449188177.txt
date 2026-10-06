@@ -1,0 +1,1 @@
+Delete logs for workflow run 37449188177 due credential exposure.
