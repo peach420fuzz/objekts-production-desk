@@ -1,5 +1,18 @@
 # objekts Production Lab
 
+## Corpus status
+
+**100 public open production questions** are live in this repository.
+
+- #1–20 — public project cases, blind-frame tests, continuity and product fidelity
+- #21–40 — project-specific QC and repair questions across SberCity, SmartFruits, Tic Tac and Cordiant
+- #41–60 — four canonical visual-index frames tested across composition, counterfactual edits, material/light, attribution and category baseline
+- #61–80 — KLOTHES evidence-bound reconstruction, source authority and continuity-state design
+- #81–100 — repair routing, camera authority, temporal topology, approvals, reproducibility and production economics
+
+Browse all: https://github.com/peach420fuzz/objekts-production-desk/issues
+
+
 Public first-party discussion corpus for difficult visual-production decisions. Each issue starts from a real public objekts case, public frame, or production methodology question and asks for falsifiable operational answers rather than model recommendations.
 
 ## Project-led production questions
