@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "distribution/qa/fake-visual-qa.mjs"
+      - "distribution/qa/fake-qa-host-e2e.mjs"
       - ".github/workflows/fake-studio-visual-qa.yml"
 permissions:
   contents: read
@@ -26,6 +27,10 @@ jobs:
         run: |
           cd distribution/qa
           node fake-visual-qa.mjs
+      - name: Exercise real FAKE Studio via localhost QA bridge
+        run: |
+          cd distribution/qa
+          node fake-qa-host-e2e.mjs
       - name: Upload screenshots and report
         if: always()
         uses: actions/upload-artifact@v4
