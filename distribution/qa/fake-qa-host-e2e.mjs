@@ -117,14 +117,14 @@ try {
   }catch(e){report.steps.push({name:"quick-range-change",error:String(e).slice(0,450)})}
   // Use MediaPipe's published test portrait in a distinct QA project.
   try {
-    const photoUrl="https://raw.githubusercontent.com/google-ai-edge/mediapipe/master/mediapipe/python/solutions/testdata/portrait.jpg";
+    const photoUrl="https://raw.githubusercontent.com/ageitgey/face_recognition/master/examples/obama.jpg";
     const rsp=await fetch(photoUrl);
     if(!rsp.ok) throw new Error("photo fixture HTTP "+rsp.status);
     const bytes=Buffer.from(await rsp.arrayBuffer());
     if(bytes.length>6*1024*1024) throw new Error("photo fixture too large");
     const upload=page.locator("#photo-input");
     if(await upload.count()){
-      await upload.setInputFiles({name:"mediapipe-test-portrait.jpg",mimeType:"image/jpeg",buffer:bytes});
+      await upload.setInputFiles({name:"face-landmark-test-portrait.jpg",mimeType:"image/jpeg",buffer:bytes});
       await page.waitForTimeout(9000);
       await snapshot("photo-fit");
       report.steps.push({name:"photo-fit-check",bytes:bytes.length,
