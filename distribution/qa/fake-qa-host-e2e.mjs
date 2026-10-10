@@ -129,6 +129,20 @@ try {
       await snapshot("photo-fit");
       report.steps.push({name:"photo-fit-check",bytes:bytes.length,
         fitVisible:(await page.locator("body").innerText()).includes("PHOTO BASELINE")});
+      const buttons=await page.locator("button").evaluateAll(elems=>elems.filter(e=>e.getBoundingClientRect().width>0).map(e=>({label:(e.getAttribute("aria-label")||e.textContent||"").trim().replace(/\\s+/g," "),disabled:e.disabled})));
+      report.steps.push({name:"save-button-probe",buttons});
+      const saveButton=page.locator("button").filter({hasText:/save/i}).filter({hasNotText:/saved/i}).first();
+      if(await saveButton.count()){
+        try {
+          await saveButton.click({timeout:3500});
+          await page.waitForTimeout(3500);
+          const textAfterSave=await page.locator("body").innerText();
+          report.steps.push({name:"photo-reference-save",clicked:true,savedIndicator:textAfterSave.includes("STATE SAVED"),errorIndicator:/ERROR|FAILED|INVALID REFERENCE|EXPIRED/i.test(textAfterSave)});
+          await snapshot("photo-fit-saved");
+        }catch(e){report.steps.push({name:"photo-reference-save",clicked:false,error:String(e).slice(0,450)})}
+      } else {
+        report.steps.push({name:"photo-reference-save",clicked:false,reason:"no save button found"});
+      }
     }else report.steps.push({name:"photo-fit-check",missing:true});
   }catch(e){report.steps.push({name:"photo-fit-check",error:String(e).slice(0,500)})}
   await page.setViewportSize({width:390,height:844});
@@ -140,7 +154,7 @@ try {
   await fs.writeFile("qa-artifacts/e2e/report.json",JSON.stringify(report,null,2)+"\n");
   console.log(JSON.stringify({
     timestamp:report.timestamp,fatal:report.fatal,
-    steps:report.steps.map(s=>({name:s.name,overflow:s.overflow,canvas:s.canvas,inputCount:s.inputCount,selectCount:s.selectCount,missing:s.missing,error:s.error,canvasScreenshotSha256:s.canvasScreenshotSha256,rangeControls:s.rangeControls,fitVisible:s.fitVisible,before:s.before,after:s.after,target:s.target,text:s.text?.slice(0,550)})),
+    steps:report.steps.map(s=>({name:s.name,overflow:s.overflow,canvas:s.canvas,inputCount:s.inputCount,selectCount:s.selectCount,missing:s.missing,error:s.error,canvasScreenshotSha256:s.canvasScreenshotSha256,rangeControls:s.rangeControls,fitVisible:s.fitVisible,savedIndicator:s.savedIndicator,reason:s.reason,buttons:s.name==="save-button-probe"?s.buttons:undefined,before:s.before,after:s.after,target:s.target,text:s.text?.slice(0,550)})),
     errors:report.errors.slice(0,12),failedRequests:report.requestsFailed.slice(0,10)
   },null,2));
   await browser.close();
