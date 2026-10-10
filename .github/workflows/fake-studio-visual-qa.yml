@@ -1,0 +1,35 @@
+name: FAKE Studio visual QA
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "distribution/qa/fake-visual-qa.mjs"
+      - ".github/workflows/fake-studio-visual-qa.yml"
+permissions:
+  contents: read
+jobs:
+  visual-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install browser runtime
+        run: |
+          cd distribution/qa
+          npm init -y >/dev/null
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Inspect public FAKE Studio across viewports
+        run: |
+          cd distribution/qa
+          node fake-visual-qa.mjs
+      - name: Upload screenshots and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fake-studio-visual-qa
+          path: distribution/qa/qa-artifacts/
+          retention-days: 14
