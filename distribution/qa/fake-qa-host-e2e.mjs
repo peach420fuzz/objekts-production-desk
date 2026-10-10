@@ -131,7 +131,7 @@ try {
         fitVisible:(await page.locator("body").innerText()).includes("PHOTO BASELINE")});
       const buttons=await page.locator("button").evaluateAll(elems=>elems.filter(e=>e.getBoundingClientRect().width>0).map(e=>({label:(e.getAttribute("aria-label")||e.textContent||"").trim().replace(/\\s+/g," "),disabled:e.disabled})));
       report.steps.push({name:"save-button-probe",buttons});
-      const saveButton=page.locator("button").filter({hasText:/save/i}).filter({hasNotText:/saved/i}).first();
+      const saveButton=page.locator("button").filter({hasText:/SAVE STATE/i}).first();
       if(await saveButton.count()){
         try {
           await saveButton.click({timeout:3500});
