@@ -124,6 +124,17 @@ The following feeds are currently hosted on a separate, studio-controlled Cloudf
 - [Product art direction / material studies](https://objekts-public-visual-index.peach420fuzz.workers.dev/feeds/product-direction.xml)
 - [Research / character and camera systems](https://objekts-public-visual-index.peach420fuzz.workers.dev/feeds/research-and-systems.xml)
 
+## Pinterest bulk exports (source-linked, not yet posted)
+
+The import CSV is generated from the **304 verified current index entries**, rather than the earlier 307-row working draft. Title and description limits, eight official CSV columns, absolute image URLs and source backlinks were checked against the live responses. The first 200 records and remaining 104 are distinct; no duplicate media URLs occur between them.
+
+- [Smoke test — one JPEG and one WebP](https://objekts-public-visual-index.peach420fuzz.workers.dev/exports/pinterest-smoke.csv)
+- [Batch 1 — 200 visuals](https://objekts-public-visual-index.peach420fuzz.workers.dev/exports/pinterest-01.csv)
+- [Batch 2 — 104 visuals](https://objekts-public-visual-index.peach420fuzz.workers.dev/exports/pinterest-02.csv)
+- [Current export metadata](https://objekts-public-visual-index.peach420fuzz.workers.dev/exports/status.json)
+
+**Image types:** 38 JPEG, 6 PNG, 260 WebP. Pinterest's organic image specifications include WebP, but individual bulk-import acceptance has not been tested on an authorized studio account. Both CSV files remain unsubmitted. Confirm account ownership and image redistribution rights before importing.
+
 ## Rights and credit boundaries
 
 - Brand: **objekts**, always lower-case.
