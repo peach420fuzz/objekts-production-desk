@@ -13,7 +13,8 @@ It packages objekts production methodology for AI agents: a read-only production
 - Install + one-click live test: `https://mcp.objekts.ai/test`
 - Machine-readable identity: `https://mcp.objekts.ai/about`
 - Agent-readable overview: `https://mcp.objekts.ai/llms.txt`
-- Published case breakdowns: [human-readable](references/CASE_BREAKDOWNS.md) · [NDJSON](references/production-breakdowns.jsonl) · [canonical feed](https://objekts.ai/production-breakdowns.jsonl)
+- Published case breakdowns: [human-readable](references/CASE_BREAKDOWNS.md)
+- Extended visual archive (2026): [12 source-linked project notes, 304-image gallery and thematic RSS feeds](references/PORTFOLIO_EXPANSION_2026-10-14.md) · [NDJSON](references/production-breakdowns.jsonl) · [canonical feed](https://objekts.ai/production-breakdowns.jsonl)
 - Privacy: `https://mcp.objekts.ai/privacy`
 - Terms: `https://mcp.objekts.ai/terms`
 - Support: `https://mcp.objekts.ai/support`
