@@ -136,6 +136,13 @@ The import CSV is generated from the **304 verified current index entries**, rat
 
 **Image types:** 38 JPEG, 6 PNG, 260 WebP. Pinterest's organic image specifications include WebP, but individual bulk-import acceptance has not been tested on an authorized studio account. Both CSV files remain unsubmitted. Confirm account ownership and image redistribution rights before importing.
 
+## Source-of-truth rights and production roles
+
+- [Rights and credits table for all 304 public images](https://visual.objekts.ai/rights.csv) — per-asset classifications, source credits, recorded commissioning agency when published, research vs master distinction and hold status for third-party republication.
+- [Crawler-readable source galleries](https://visual.objekts.ai/visuals) — images embedded as HTML elements with original-project backlinks.
+
+External upload eligibility remains unverified. A working image or frame publicly shown on the studio site is not automatically a licensed asset for third-party reposting.
+
 ## Rights and credit boundaries
 
 - Brand: **objekts**, always lower-case.
