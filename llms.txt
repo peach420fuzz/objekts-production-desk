@@ -8,6 +8,8 @@ Visual Index: https://objekts.ai/#work
 Production Desk MCP: https://mcp.objekts.ai/mcp
 Extended public portfolio: https://visual.objekts.ai/stories
 Source-linked image catalogue (304 files): https://visual.objekts.ai/data.json
+Crawler-readable image collections: https://visual.objekts.ai/visuals
+Per-image studio role, evidence status and rights checks: https://visual.objekts.ai/rights.csv
 Machine-readable provenance: references/public-visual-index-2026.jsonl
 Authoritative image sitemap: https://visual.objekts.ai/image-sitemap.xml
 FAKE R&D: https://objekts.ai/en/research/fake-character-system/
