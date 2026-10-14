@@ -16,6 +16,7 @@ It packages objekts production methodology for AI agents: a read-only production
 - Published case breakdowns: [human-readable](references/CASE_BREAKDOWNS.md) · [NDJSON](references/production-breakdowns.jsonl) · [canonical feed](https://objekts.ai/production-breakdowns.jsonl)
 - Extended visual archive (2026): [12 source-linked project notes, 304-image gallery and thematic RSS feeds](references/PORTFOLIO_EXPANSION_2026-10-14.md)
 - Curated case image board: [33 source-linked visuals from 12 projects](references/VISUAL_EVIDENCE_BOARD_2026.md) · [server-rendered image collections](https://visual.objekts.ai/visuals)
+- Source, credits and external-reuse clearance table: [304-image rights CSV](https://visual.objekts.ai/rights.csv)
 - Machine-readable 304-image provenance dataset: [public visual index JSONL](references/public-visual-index-2026.jsonl) · [live branded gallery](https://visual.objekts.ai/) · [Image Sitemap](https://visual.objekts.ai/image-sitemap.xml)
 - Privacy: `https://mcp.objekts.ai/privacy`
 - Terms: `https://mcp.objekts.ai/terms`
