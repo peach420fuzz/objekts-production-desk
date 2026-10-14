@@ -6,6 +6,10 @@ Canonical studio: https://objekts.ai/
 Work: https://objekts.ai/work/
 Visual Index: https://objekts.ai/#work
 Production Desk MCP: https://mcp.objekts.ai/mcp
+Extended public portfolio: https://visual.objekts.ai/stories
+Source-linked image catalogue (304 files): https://visual.objekts.ai/data.json
+Machine-readable provenance: references/public-visual-index-2026.jsonl
+Authoritative image sitemap: https://visual.objekts.ai/image-sitemap.xml
 FAKE R&D: https://objekts.ai/en/research/fake-character-system/
 KLOTHES R&D: https://objekts.ai/en/research/klothes-catalog-system/
 
