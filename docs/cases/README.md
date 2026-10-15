@@ -6,6 +6,7 @@ They explain production logic, not awards, measured campaign performance or inde
 
 ## Current breakdowns
 
+- [Magnit (2026): photographed camera authority in hybrid VFX — EN/RU](MAGNIT_2026_HYBRID_VFX_BREAKDOWN.md)
 - [SberCity — Seasons: AI VFX as a continuity problem](SBERCITY_SEASONS_AI_VFX_BREAKDOWN.md)
 - [SberCity — New Year: atmosphere as a system, not an overlay](SBERCITY_NEW_YEAR_AI_VFX_BREAKDOWN.md)
 - [SmartFruits: product first, generative environment second](SMARTFRUITS_PRODUCT_AI_BREAKDOWN.md)
