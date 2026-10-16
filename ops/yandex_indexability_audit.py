@@ -113,4 +113,46 @@ def check():
         "canonical_to_different_page":sum(r["status"]==200 and r["canonicals"] and r["canonicals"][0].rstrip("/") != r["requested"].rstrip("/") for r in out["pages"]),
         "tiny_text":sum(r["text_chars"]<100 and r["status"]==200 for r in out["pages"])
     },ensure_ascii=False))
-if __name__=="__main__":check()
+
+def scan_all():
+    import os
+    sm=fetch(BASE+"/sitemap.xml")
+    try:
+        tree=ET.fromstring(sm["body"])
+    except ET.ParseError as e:
+        print("ALL_SITE",json.dumps({"failed_sitemap_parsing":str(e)}))
+        return
+    urls=[(u.findtext("{*}loc") or "") for u in tree.findall(".//{*}url")]
+    failures, noncanonical, noindex, small_content, langs={}, [], [], [], {}
+    for i,url in enumerate(urls,1):
+        response=fetch(url,"yandex-like")
+        doc=Meta()
+        if response["status"] == 200:
+            try: doc.feed(response["body"])
+            except Exception: pass
+        headers={k.lower():v for k,v in response.get("headers",{}).items()}
+        lang=doc.lang or "unknown"
+        langs[lang]=langs.get(lang,0)+1
+        if response["status"]!=200 or response.get("final_url","").rstrip("/")!=url.rstrip("/"):
+            failures.append({"url":url,"status":response["status"],"final":response.get("final_url"),"error":response.get("error")})
+        if response["status"]==200:
+            if doc.canonicals and doc.canonicals[0].rstrip("/")!=url.rstrip("/"):
+                noncanonical.append({"url":url,"canonical":doc.canonicals[0]})
+            if "noindex" in (headers.get("x-robots-tag") or "").lower() or any("noindex" in (c or "").lower() for _,c in doc.robots):
+                noindex.append(url)
+            if doc.body_len < 300:
+                small_content.append({"url":url,"text_chars":doc.body_len})
+        if i % 40 == 0: print("AUDIT_PROGRESS",i,"/",len(urls),flush=True)
+    print("FULL_SITE",json.dumps({
+        "urls":len(urls),"languages":langs,
+        "status_or_redirect_issues":len(failures),"status_samples":failures[:25],
+        "wrong_canonical":len(noncanonical),"canonical_samples":noncanonical[:25],
+        "noindex":len(noindex),"noindex_samples":noindex[:15],
+        "tiny_html_text":len(small_content),"tiny_samples":small_content[:20]
+    },ensure_ascii=False))
+
+if __name__=="__main__":
+    check()
+    import os
+    if os.environ.get("AUDIT_ALL")=="1": scan_all()
+
