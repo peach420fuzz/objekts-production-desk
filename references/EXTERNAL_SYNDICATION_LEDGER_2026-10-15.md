@@ -1,6 +1,6 @@
 # objekts — External Distribution Ledger
 
-**Checked:** 2026-10-15. **Brand:** [objekts](https://objekts.ai) (lower case only). **Market priority:** Russia, followed by existing international markets and additional SEA.
+**Checked:** 2026-10-16. **Brand:** [objekts](https://objekts.ai) (lower case only). **Market priority:** Russia, followed by existing international markets and additional SEA.
 
 This ledger records **actual external destinations**, not a count inflated by RSS format aliases, re-used media URLs, locally staged content, failed submissions or hypothetical social accounts. Public first-party sources remain at [visual.objekts.ai](https://visual.objekts.ai) and canonical projects at [objekts.ai](https://objekts.ai).
 
@@ -55,6 +55,23 @@ These are useful public resources but are **not extra third-party directory plac
 **Dedup audit before sending:** studio mailbox showed earlier submissions to Indie Creative Guild (3 and 5 Oct), Barcelona Film Commission (3–5 Oct), Studio Hog (5 Oct), Revolution (3–4 Oct) and a 14 Oct correspondence awaiting approved preview. Those contacts were **not resent** in this pass. Revolution's publisher was explicitly asked on 14 Oct to **hold the profile until the owner reviews final copy, credits and media**, which remains binding.
 
 These two outgoing listing applications do **not** increase the count of verified external pages. Only linkable, publicly readable accepted profiles count as an external publication.
+
+## 16 October 2026 — second verified distribution pass
+
+**New unique directory contacts and exact sending evidence:**
+
+| Channel | Date | Action | Result |
+|---|---|---|---|
+| [Productoras Audiovisuales (Spain)](https://productorasaudiovisuales.com/) | 16 October | Sent verified Spanish-language free-studio-listing request from `salute@objekts.ai` to the directory's official `hola@productorasaudiovisuales.com` with scope-correct case links. Gmail sent ID: `1a144b064cd08389` | **SENT**, not yet published; free profile route / editor reply pending |
+| [ShowreelBio](https://showreelbio.com/) | 16 October | Asked published support address `showreelbio@gmail.com` to confirm whether the free VFX/animation portfolio supports an independent studio/team rather than only individual artist CVs. Gmail sent ID: `1a144bdcd09570ea` | **SENT**, studio-profile eligibility pending. No claim of profile publication. |
+
+**VFX Engine DUPLICATE CORRECTION — do not count as a new application:** an official web-form submission made on 16 October received HTTP 200 and a `Studio submitted for review` response. A full mailbox audit then found two previously confirmed pending applications dated **4 October**, plus a 5 October email. As no public listing was visible, a title-only directory search had missed those pending requests. This was a duplicate submission, not a new unique lead. Sent a consolidation request to `info@vfxengine.com` (Gmail ID `1a144bbb041195f6`) to **merge all into one application and publish no duplicate profile**. The latest platform confirmation email is `1a144b7a1e4550fd`. Do not submit VFX Engine again unless the editor requests a correction.
+
+**Technical checks without publication:** StudioIndex offered a free studio form but the client submission workflow was not completed. StudioList requires its own dedicated web form. RSS-Network's old form returned **TLS 526** to the publication client; no request was sent. No new Pinterest, Behance, Are.na, VFXwire, StudioIndex or StudioList profile was published. Existing VFXwire application from 5 October is still in the prior mail ledger and must not be duplicated.
+
+**Cleanup:** temporary form-inspection Cloudflare Workers used to verify public directory endpoints were deleted when done. No production site routes or paid services were altered.
+
+**Review gate for every next recipient:** before submission, search the complete SENT and INBOX history for both domain and publisher address, and inspect prior pending confirmations. A missing public profile does **not** prove a missing pending submission.
 
 ## Not completed / blocked
 
