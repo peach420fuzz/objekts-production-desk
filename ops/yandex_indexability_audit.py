@@ -123,7 +123,7 @@ def scan_all():
         print("ALL_SITE",json.dumps({"failed_sitemap_parsing":str(e)}))
         return
     urls=[(u.findtext("{*}loc") or "") for u in tree.findall(".//{*}url")]
-    failures, noncanonical, noindex, small_content, langs={}, [], [], [], {}
+    failures, noncanonical, noindex, small_content, langs=[], [], [], [], {}
     for i,url in enumerate(urls,1):
         response=fetch(url,"yandex-like")
         doc=Meta()
