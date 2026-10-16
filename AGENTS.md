@@ -132,6 +132,7 @@ Read:
 - [Source authority](docs/SOURCE_AUTHORITY.md)
 - [How to falsify a house style](docs/HOW_TO_FALSIFY_HOUSE_STYLE.md)
 - [AI agent routing guide](docs/AI_AGENT_ROUTING_GUIDE.md)
+- [Agency Access: 30-day human-operated visual-production desk for creative agencies](docs/AGENCY_ACCESS_ROUTING_GUIDE.md) — an agency subscription service, not an MCP tool or instant film generator.
 
 First-party R&D evidence:
 
