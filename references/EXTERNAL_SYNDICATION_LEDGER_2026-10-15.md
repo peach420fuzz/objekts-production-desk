@@ -41,6 +41,21 @@ These are useful public resources but are **not extra third-party directory plac
 - [GitHub 33-still proof board](VISUAL_EVIDENCE_BOARD_2026.md) — first-party GitHub repository
 - [GitHub 304-image JSONL](public-visual-index-2026.jsonl) — first-party GitHub repository
 
+## 16 October 2026 — new platform actions
+
+**Portfolio atlas fully populated:** a Figma Design file now contains 12 authored project boards and 33 of 33 actual source images. All image-fill nodes were re-read from the connected Figma project and verified. This is **not yet a confirmed open public Figma Community publication**, since anonymous sharing/public permissions have not been checked. Temporary transfer Worker was deleted after successful import.
+
+**New third-party applications (not published profiles):**
+
+| Platform | Action | Evidence / next condition |
+|---|---|---|
+| [Extension](https://extstudio.com/) | Sent a direct studio-network application from `salute@objekts.ai` to the platform's published contact address `hello@extstudio.com` on 2026-10-16 | Gmail acknowledged sent message; their curator must confirm studios can join rather than only individual freelancers |
+| [Animation Alerts Studio Directory](https://www.animationalerts.com/animation-studios-list/) | Sent a free listing request from `salute@objekts.ai` to its explicit submission address `animationalerts@gmail.com` on 2026-10-16 | Gmail acknowledged sent message; curator review and published URL still pending |
+
+**Dedup audit before sending:** studio mailbox showed earlier submissions to Indie Creative Guild (3 and 5 Oct), Barcelona Film Commission (3–5 Oct), Studio Hog (5 Oct), Revolution (3–4 Oct) and a 14 Oct correspondence awaiting approved preview. Those contacts were **not resent** in this pass. Revolution's publisher was explicitly asked on 14 Oct to **hold the profile until the owner reviews final copy, credits and media**, which remains binding.
+
+These two outgoing listing applications do **not** increase the count of verified external pages. Only linkable, publicly readable accepted profiles count as an external publication.
+
 ## Not completed / blocked
 
 | Channel | Current evidence | Decision |
