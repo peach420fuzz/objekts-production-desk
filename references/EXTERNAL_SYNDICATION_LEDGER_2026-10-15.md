@@ -83,6 +83,14 @@ These two outgoing listing applications do **not** increase the count of verifie
 
 **Count policy:** this pass adds **one new editorial submission** and advances **one existing Cossa lead**, but adds **zero independently confirmed external published pages**. It must not increase the five prior verified RSS Amplifier listings unless editors accept and publish.
 
+### 16 October — The AI Art Magazine No. 4 (pending formal portal submission)
+
+An official free open call from 28 September through **1 November 2026** accepts AI-assisted art including collectives, one work per artist, via **Artist Space** at https://space.art-magazine.ai/. No studio session is available. We sent a single targeted email from `salute@objekts.ai` to `we@art-magazine.ai` describing **The Invisible Silhouette** and asking how to submit under a studio/collective identity without a duplicate account. Gmail SENT ID `1a1454cc70ed3dce`. **Not a formal submission**; awaiting response or authenticated portal access.
+
+### 16 October — KALTBLUT art editorial preflight (not submitted)
+
+Official editorial instructions require a compact PDF story, not a loose photo or Word file; fashion editorial requires 4 looks and 10 images. An initial 2-page Google Docs/PDF proof-of-concept of *The Invisible Silhouette* was created and rendered, but Figma-based visual previews were **blank white rectangles despite Figma's image-fill success reports**. Quality control blocked the KALTBLUT email. Do **not** send or claim the current PDF as an art submission. Rebuild the document with verified visible original images first, and re-check the site's AI-art stance and image publishing permissions.
+
 ## Not completed / blocked
 
 | Channel | Current evidence | Decision |
