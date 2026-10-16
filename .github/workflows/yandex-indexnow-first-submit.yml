@@ -1,9 +1,6 @@
 name: "objekts | Yandex IndexNow second key verification"
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - ".github/workflows/yandex-indexnow-first-submit.yml"
 
 permissions:
   contents: read
