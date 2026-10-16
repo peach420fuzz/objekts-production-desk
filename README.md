@@ -1,6 +1,7 @@
 <!-- mcp-name: ai.objekts.mcp/production-desk -->\n\n# objekts Production Desk
 
 [![AllMCPs Verified](https://allmcps.com/api/badge/objekts-production-desk?style=shield)](https://allmcps.com/mcp/objekts-production-desk)
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/peach420fuzz/objekts-production-desk)
 [![FAKE by objekts · AllMCPs Verified](https://allmcps.com/api/badge/fake-by-objekts?style=shield)](https://allmcps.com/mcp/fake-by-objekts)
 
 **objekts Production Desk** is built and operated by [objekts](https://objekts.ai/), an AI-native visual-production studio working across directing, generative video, AI/VFX, CGI/3D, motion, animation, compositing, adaptive content and complex commercial production. Physical live-action shoots are outside objekts scope.
