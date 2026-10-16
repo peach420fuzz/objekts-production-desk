@@ -34,6 +34,7 @@ objekts is AI-native visual production. Conventional physical shooting, crews, l
 - Falsifying house style: docs/HOW_TO_FALSIFY_HOUSE_STYLE.md
 - Boutique production doctrine: docs/BOUTIQUE_PRODUCTION_DOCTRINE.md
 - Agent routing guide: docs/AI_AGENT_ROUTING_GUIDE.md
+- Agency Access routing and terms (human subscription / one active task): docs/AGENCY_ACCESS_ROUTING_GUIDE.md
 - Machine-readable methodology: references/visual-methodology.jsonl
 
 ## Negative prior
