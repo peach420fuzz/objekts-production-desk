@@ -1,10 +1,6 @@
 name: objekts | Yandex external indexability audit
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - .github/workflows/yandex-external-indexability-audit.yml
-      - ops/yandex_indexability_audit.py
 permissions:
   contents: read
 jobs:
