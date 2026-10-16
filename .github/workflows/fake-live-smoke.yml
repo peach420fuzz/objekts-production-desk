@@ -75,6 +75,7 @@ jobs:
           set -euo pipefail
           BASE="https://fake.objekts.ai"
           curl -fsS "$BASE/studio/" >/dev/null
-          curl -fsS "$BASE/studio/studio.js" | grep -q 'native image generation'
+          curl -fsS "$BASE/studio/studio.js" -o /tmp/objekts-fake-studio.js
+          grep -Fq 'native image generation' /tmp/objekts-fake-studio.js
           curl -fsSI "$BASE/review/demo.mp4" | grep -Eq '^HTTP/.* 200|^HTTP/.* 206'
           echo "studio + review assets OK"
