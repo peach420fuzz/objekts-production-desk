@@ -11,6 +11,7 @@ It packages objekts production methodology for AI agents: a read-only production
 
 - MCP: `https://mcp.objekts.ai/mcp`
 - **Yandex AI Studio integration:** [MCP Hub import and Responses API (Production Desk + FAKE)](docs/YANDEX_AI_STUDIO_MCP_INTEGRATION.md) — requires your own Yandex account; no claim of platform-wide installation.
+- **Yandex SourceCraft Code Assistant:** [project-level `.codeassistant/mcp.json`](.codeassistant/mcp.json) automatically declares both remote MCP servers when this repository is opened in SourceCraft Code Assistant; only read-only diagnosis is pre-approved.
 - Install + one-click live test: `https://mcp.objekts.ai/test`
 - Machine-readable identity: `https://mcp.objekts.ai/about`
 - Agent-readable overview: `https://mcp.objekts.ai/llms.txt`
