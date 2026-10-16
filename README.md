@@ -128,3 +128,11 @@ https://objekts.ai/
 salute@objekts.ai
 
 Copyright © 2026 objekts. All rights reserved. Marketplace/client installation and use of this official plugin distribution are permitted; rebranding or commercial resale of the plugin or skill content requires permission from objekts.
+
+## Open agent-project discovery
+
+This repository supports open, source-backed agent project discovery. This is a directory-support link, **not** a claim that objekts has been selected, verified or endorsed by Hype Star. The directory's listing review remains independent.
+
+<a class="hypestar-badge hypestar-badge--auto" data-hypestar-theme="auto" href="https://hypestar.org/?utm_source=supporter_badge&amp;utm_medium=referral&amp;utm_campaign=hype_star_badge" target="_blank" rel="noopener nofollow">
+  <img class="hypestar-badge__image" src="https://hypestar.org/badges/support-hype-star-auto-v2.svg" alt="Supports Hype Star open project discovery" width="140" height="24" loading="lazy" decoding="async">
+</a>
