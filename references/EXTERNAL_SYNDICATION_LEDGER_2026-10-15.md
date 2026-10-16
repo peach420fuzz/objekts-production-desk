@@ -73,6 +73,16 @@ These two outgoing listing applications do **not** increase the count of verifie
 
 **Review gate for every next recipient:** before submission, search the complete SENT and INBOX history for both domain and publisher address, and inspect prior pending confirmations. A missing public profile does **not** prove a missing pending submission.
 
+## 16 October 2026 — editorial submissions and correction
+
+**New editorial submission (independent external recipient):** [designboom](https://www.designboom.com/readers-submit/) — a first-party pitch for **The Invisible Silhouette** fashion/motion study was emailed from `salute@objekts.ai` to the official editorial mailbox `mail@designboom.com` with three project image URLs, credits and status as uncommissioned R&D. Sent Gmail ID `1a1453a4ed0ba3c2`. Editorial decision and published page remain pending. No transfer of image republication rights presumed.
+
+**Cossa prior proposal completed (not a new unique contact):** an older 14 October pitch had missing Google Docs and author-profile placeholders. Wrote the full, unpublished, approximately 8,718-character original article **«Первый кадр согласован. Как принять гибридный AI/VFX-ролик, который ещё предстоит смонтировать»** and provided `42@cossa.ru` editor-specific writer access to [Google Docs full draft](https://docs.google.com/document/d/1R6HllOUyl1YzpJRfSV0YlFxc_LV8K5B4tmE527Gd8iM/edit). Sent the full-text link in the existing email thread, Gmail SENT ID `1a1454031009ffec`. Asked Cossa for author-account registration instructions; external article publication has not occurred. This article is not cross-posted on GitHub to preserve editorial originality.
+
+**Archive dedup confirmed:** studio sent multiple pitches 3–6 October to AWN/VFXWorld, before & afters, Creative Boom, It's Nice That, 80 Level, Motionographer, Stash, VFXwire, Creative Applications and others. Those messages were verified in the SENT archive and **not duplicated**. An earlier 5 October Creative Applications email requested project submission details, but the actual official web project-submission form returned **HTTP 403** in an unauthenticated read; no CAN form submission occurred. An official Fubiz contact page also rejected unauthenticated access with HTTP 403; no email address was inferred and no proposal claimed. Temporary inspection Workers were deleted.
+
+**Count policy:** this pass adds **one new editorial submission** and advances **one existing Cossa lead**, but adds **zero independently confirmed external published pages**. It must not increase the five prior verified RSS Amplifier listings unless editors accept and publish.
+
 ## Not completed / blocked
 
 | Channel | Current evidence | Decision |
