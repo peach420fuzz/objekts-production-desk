@@ -1,4 +1,4 @@
-name: "objekts | Yandex IndexNow first submission"
+name: "objekts | Yandex IndexNow second key verification"
 on:
   workflow_dispatch:
   push:
@@ -31,12 +31,12 @@ jobs:
           python3 - <<'PY'
           import json
           urls = [
-            "https://objekts.ai/",
-            "https://objekts.ai/agencies",
-            "https://objekts.ai/tools/production-desk",
-            "https://objekts.ai/partnerships/ai-platforms",
-            "https://objekts.ai/work/magnit-2026",
-            "https://objekts.ai/research/fake-character-system"
+            "https://objekts.ai/work",
+            "https://objekts.ai/work/sbercity",
+            "https://objekts.ai/services/ai-vfx",
+            "https://objekts.ai/services/animation",
+            "https://objekts.ai/services/immersive-interactive",
+            "https://objekts.ai/research/klothes-catalog-system"
           ]
           payload = {
              "host": "objekts.ai",
