@@ -14,4 +14,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check indexability with YandexBot-like and browser user agents
         shell: bash
+        env:
+          AUDIT_ALL: "1"
         run: python3 ops/yandex_indexability_audit.py
