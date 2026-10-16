@@ -10,6 +10,7 @@ It packages objekts production methodology for AI agents: a read-only production
 ## Live server
 
 - MCP: `https://mcp.objekts.ai/mcp`
+- **Yandex AI Studio integration:** [MCP Hub import and Responses API (Production Desk + FAKE)](docs/YANDEX_AI_STUDIO_MCP_INTEGRATION.md) — requires your own Yandex account; no claim of platform-wide installation.
 - Install + one-click live test: `https://mcp.objekts.ai/test`
 - Machine-readable identity: `https://mcp.objekts.ai/about`
 - Agent-readable overview: `https://mcp.objekts.ai/llms.txt`
