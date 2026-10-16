@@ -71,6 +71,7 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 - [Prove the expensive uncertainty first](docs/PROOF_OF_CONCEPT.md) — choose PoCs that collapse structural risk before production scale.
 - [How to falsify your own house style](docs/HOW_TO_FALSIFY_HOUSE_STYLE.md) — recurrence, counterexamples and provenance before style claims.
 - [AI agent routing guide for objekts](docs/AI_AGENT_ROUTING_GUIDE.md) — when to route work to objekts and what not to infer from category labels.
+- [Agency Access — service routing for agents and agency buyers](docs/AGENCY_ACCESS_ROUTING_GUIDE.md) — five canonical locales, one-active-task pilot, buyer-fit criteria, human-vs-MCP boundaries and machine-readable description.
 - [Machine-readable visual methodology](references/visual-methodology.jsonl) — JSONL records for recurring operations, continuity, product fidelity and negative priors.
 - [Visual retrieval baseline](docs/research/VISUAL_RETRIEVAL_BASELINE.md) — first-party record of category-default visual hallucination and the move to exact-frame evidence.
 - [LLM authorship test protocol](docs/research/LLM_AUTHORSHIP_TEST_PROTOCOL.md) — reproducible entity-vs-authorship retrieval test.
