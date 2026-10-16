@@ -53,15 +53,19 @@ class Meta(HTMLParser):
         if not self.ignore: self.body_len += len(data.strip())
 
 def fetch(url, ua="browser"):
+    import http.client
     req = Request(url, headers={"User-Agent": UAS.get(ua, UAS["browser"]), "Accept": "text/html,application/xml,text/xml,*/*"})
-    try:
-        with urlopen(req, timeout=22) as r:
-            b = r.read(2_000_000)
-            return {"status":r.status, "final_url":r.url, "headers": dict(r.headers.items()), "body": b.decode("utf-8", errors="replace")}
-    except HTTPError as e:
-        return {"status":e.code, "final_url":e.url, "headers":dict(e.headers.items()), "body":e.read(4000).decode(errors="replace")}
-    except (URLError,TimeoutError,ConnectionError) as e:
-        return {"status":"ERROR", "error":str(e), "final_url":url, "headers":{}, "body":""}
+    for attempt in range(3):
+        try:
+            with urlopen(req, timeout=25) as r:
+                b = r.read(2_000_000)
+                return {"status":r.status, "final_url":r.url, "headers": dict(r.headers.items()), "body": b.decode("utf-8", errors="replace")}
+        except HTTPError as e:
+            return {"status":e.code, "final_url":e.url, "headers":dict(e.headers.items()), "body":e.read(4000).decode(errors="replace")}
+        except (URLError, TimeoutError, ConnectionError, http.client.IncompleteRead, http.client.RemoteDisconnected) as e:
+            if attempt==2:
+                return {"status":"ERROR", "error":str(e)[:260], "final_url":url, "headers":{}, "body":""}
+            time.sleep(0.7*(attempt+1))
 
 def check():
     sitemap=fetch(BASE+"/sitemap.xml")
