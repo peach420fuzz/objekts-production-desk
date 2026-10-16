@@ -3,6 +3,7 @@
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 from html.parser import HTMLParser
+from urllib.parse import urljoin, urlsplit
 import xml.etree.ElementTree as ET
 import json, re, sys, time
 
@@ -24,6 +25,7 @@ class Meta(HTMLParser):
         self.title, self.in_title, self.h1, self.in_h1 = "", False, "", False
         self.canonicals, self.robots, self.alternates = [], [], []
         self.lang, self.body_len, self.ignore, self.tags = None, 0, 0, {}
+        self.links=[]
     def handle_starttag(self, tag, attrs):
         d = dict(attrs)
         self.tags[tag] = self.tags.get(tag, 0) + 1
@@ -37,6 +39,8 @@ class Meta(HTMLParser):
             self.ignore += 1
         if tag == "meta" and d.get("name", "").lower() in ("robots", "yandex", "yandexbot"):
             self.robots.append((d.get("name"), d.get("content")))
+        if tag == "a" and d.get("href"):
+            self.links.append(d["href"])
         if tag == "link":
             rel = (d.get("rel") or "").lower()
             if rel == "canonical":
@@ -128,6 +132,15 @@ def scan_all():
         return
     urls=[(u.findtext("{*}loc") or "") for u in tree.findall(".//{*}url")]
     failures, noncanonical, noindex, small_content, langs=[], [], [], [], {}
+    def normalized(href):
+        z=urlsplit(href)
+        if z.netloc.lower() not in ("objekts.ai","www.objekts.ai"):
+            return None
+        path=z.path
+        if path=="/ru": path="/"
+        elif path.startswith("/ru/"): path=path[3:]
+        return "https://objekts.ai"+(path.rstrip("/") or "/")
+    incoming={normalized(url):set() for url in urls}
     for i,url in enumerate(urls,1):
         response=fetch(url,"yandex-like")
         doc=Meta()
@@ -135,6 +148,12 @@ def scan_all():
             try: doc.feed(response["body"])
             except Exception: pass
         headers={k.lower():v for k,v in response.get("headers",{}).items()}
+        if response["status"]==200:
+            for href in doc.links:
+                target=normalized(urljoin(url,href))
+                origin=normalized(url)
+                if target in incoming and target!=origin:
+                    incoming[target].add(origin)
         lang=doc.lang or "unknown"
         langs[lang]=langs.get(lang,0)+1
         if response["status"]!=200 or response.get("final_url","").rstrip("/")!=url.rstrip("/"):
@@ -152,7 +171,10 @@ def scan_all():
         "status_or_redirect_issues":len(failures),"status_samples":failures[:25],
         "wrong_canonical":len(noncanonical),"canonical_samples":noncanonical[:25],
         "noindex":len(noindex),"noindex_samples":noindex[:15],
-        "tiny_html_text":len(small_content),"tiny_samples":small_content[:20]
+        "tiny_html_text":len(small_content),"tiny_samples":small_content[:20],
+        "zero_html_inlinks":sum(len(sources)==0 for sources in incoming.values()),
+        "zero_html_inlinks_sample":[url for url,sources in incoming.items() if not sources][:40],
+        "inlink_count_by_language":{lang:sum(len(sources) for url,sources in incoming.items() if (url.startswith("https://objekts.ai/"+lang+"/") or (lang=="ru" and not any(url.startswith("https://objekts.ai/"+l+"/") for l in ("en","es","fr","de"))))) for lang in ("ru","en","es","fr","de")}
     },ensure_ascii=False))
 
 if __name__=="__main__":
