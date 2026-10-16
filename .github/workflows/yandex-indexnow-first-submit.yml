@@ -1,0 +1,64 @@
+name: "objekts | Yandex IndexNow first submission"
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/yandex-indexnow-first-submit.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  notify-yandex:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    env:
+      INDEXNOW_KEY: "93e1670428b2fa9545ccb826b60a5cd32a08fdb3"
+      KEY_LOCATION: "https://objekts.ai/93e1670428b2fa9545ccb826b60a5cd32a08fdb3.txt"
+    steps:
+      - name: Verify publicly hosted domain key
+        shell: bash
+        run: |
+          set -euo pipefail
+          CONTENT="$(curl -fsSL --retry 2 --max-time 20 "$KEY_LOCATION")"
+          test "$CONTENT" = "$INDEXNOW_KEY"
+          echo "IndexNow key is reachable and matches the published file."
+
+      - name: Notify Yandex about recently updated studio pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          urls = [
+            "https://objekts.ai/",
+            "https://objekts.ai/agencies",
+            "https://objekts.ai/tools/production-desk",
+            "https://objekts.ai/partnerships/ai-platforms",
+            "https://objekts.ai/work/magnit-2026",
+            "https://objekts.ai/research/fake-character-system"
+          ]
+          payload = {
+             "host": "objekts.ai",
+             "key": "93e1670428b2fa9545ccb826b60a5cd32a08fdb3",
+             "keyLocation": "https://objekts.ai/93e1670428b2fa9545ccb826b60a5cd32a08fdb3.txt",
+             "urlList": urls
+          }
+          with open("indexnow-payload.json","w",encoding="utf-8") as f:
+            json.dump(payload,f,ensure_ascii=False)
+          print(f"Prepared {len(urls)} same-host public URLs.")
+          PY
+          code="$(curl -sS --retry 2 --max-time 35 -o response.txt -w '%{http_code}' \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            -X POST https://yandex.com/indexnow --data-binary @indexnow-payload.json)"
+          echo "Yandex IndexNow HTTP status: $code"
+          head -c 800 response.txt || true
+          echo
+          if [[ "$code" == "200" ]]; then
+            echo "Key verified and URLs accepted; indexing is not guaranteed."
+          elif [[ "$code" == "202" ]]; then
+            echo "URLs accepted pending key verification; indexing is not confirmed."
+          else
+            echo "Yandex did not accept this batch."
+            exit 1
+          fi
