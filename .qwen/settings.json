@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "objekts-production-desk": {
+      "httpUrl": "https://mcp.objekts.ai/mcp",
+      "timeout": 30000,
+      "trust": false,
+      "includeTools": [
+        "diagnose_production",
+        "estimate_production"
+      ]
+    },
+    "fake-by-objekts": {
+      "httpUrl": "https://fake.objekts.ai/mcp",
+      "timeout": 30000,
+      "trust": false
+    }
+  }
+}
