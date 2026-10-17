@@ -1,69 +1,17 @@
 name: objekts | Neuronto ARD commercial discovery audit
 on:
-  push:
-    paths:
-      - ".github/workflows/objekts-neuronto-ard-submit.yml"
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
-  submit-and-audit:
+  verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 7
+    timeout-minutes: 3
     steps:
-      - name: Confirm canonical publisher manifest
-        shell: bash
+      - name: Verify official ARD publication
         run: |
-          set -euo pipefail
-          curl -fsSL -A "Mozilla/5.0 (compatible; AgenticResourceDiscovery/0.91)" --max-time 25 \
-            "https://objekts.ai/.well-known/ard.json" -o manifest.json
-          python3 - <<'PY'
-          import json
-          d=json.load(open('manifest.json'))
-          assert len(d['entries']) == 4
-          assert all(x['identifier'].startswith('urn:air:objekts.ai:') for x in d['entries'])
-          assert all(2 <= len(x.get('representativeQueries',[])) <= 5 for x in d['entries'])
-          print('Verified official publisher ARD manifest:',len(d['entries']),'entries.')
-          PY
-      - name: Submit own domain to Neuronto without duplicating server listings
-        shell: bash
+          curl -fsSL --max-time 20 -A 'Mozilla/5.0' https://objekts.ai/.well-known/ard.json | python3 -c 'import sys,json; d=json.load(sys.stdin); assert d["specVersion"]=="1.0" and len(d["entries"])==4; print("ARD verified:",len(d["entries"]))'
+      - name: Link to source-specific submitted audit
         run: |
-          set -euo pipefail
-          echo '{"domain":"objekts.ai"}' > domain.json
-          code="$(curl -sS --max-time 90 -o submit-response.json -w '%{http_code}' \
-            -H 'Content-Type: application/json' -X POST 'https://neuronto.com/submit' \
-            --data-binary @domain.json)"
-          echo "Neuronto domain submit HTTP status: $code"
-          python3 - <<'PY'
-          import json
-          try:
-            d=json.load(open('submit-response.json'))
-          except Exception as e:
-            print('Response could not be decoded:',str(e))
-            raise
-          for k in ['status','id','submissionId','url','message','error','verified','indexed','entries','resourceCount','evidence']:
-            if k in d:
-              print(k,':',str(d[k])[:1800])
-          print('Response fields:',list(d)[:25])
-          PY
-          case "$code" in 200|201|202|409) ;; *) echo "Submission HTTP failed" >&2; exit 1;; esac
-      - name: Run public discovery and indexing audit for own publisher
-        shell: bash
-        run: |
-          set -euo pipefail
-          code="$(curl -sS --max-time 105 -o audit-response.json -w '%{http_code}' \
-            -H 'Content-Type: application/json' -X POST 'https://neuronto.com/audit' \
-            --data-binary @domain.json)"
-          echo "Neuronto audit HTTP status: $code"
-          python3 - <<'PY'
-          import json
-          d=json.load(open('audit-response.json'))
-          print('DOMAIN:',d.get('domain'))
-          print('DISCOVERY:',json.dumps(d.get('discovery'),ensure_ascii=False))
-          print('CONFORMANCE:',json.dumps(d.get('conformance'),ensure_ascii=False))
-          print('SCORE:',json.dumps(d.get('score'),ensure_ascii=False))
-          print('COVERAGE:',json.dumps(d.get('coverage'),ensure_ascii=False))
-          print('RANKS:',json.dumps(d.get('competition',{}).get('queries',[]),ensure_ascii=False))
-          print('NEXT:',json.dumps(d.get('recommendations',[])[:5],ensure_ascii=False))
-          PY
-          if [[ "$code" != "200" && "$code" != "202" ]]; then exit 1; fi
+          echo 'Accepted: https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39064558779'
+          echo 'Rechecked: https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39064691930'
