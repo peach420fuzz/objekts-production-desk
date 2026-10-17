@@ -1,0 +1,159 @@
+{
+  "specVersion": "0.9",
+  "host": {
+    "displayName": "objekts",
+    "identifier": "objekts.ai",
+    "documentationUrl": "https://objekts.ai/llms.txt"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:objekts.ai:service:commercial-visual-production",
+      "displayName": "objekts — AI/VFX Production for Brands and Agencies",
+      "type": "application/json",
+      "url": "https://objekts.ai/data/crawler-registry.json",
+      "description": "Human-led commercial AI/VFX, CGI, animation, DOOH and complex advertising production. Tender lookdev and Agency Access for RU/CIS, Thailand and international agencies, subject to briefing and contract.",
+      "tags": [
+        "visual-production",
+        "advertising",
+        "AI/VFX",
+        "CGI",
+        "motion",
+        "production-studio",
+        "white-label",
+        "russia",
+        "russian",
+        "thai",
+        "тендеры",
+        "рекламные-ролики",
+        "ИИ-продакшн"
+      ],
+      "capabilities": [
+        "agency-production",
+        "agency-access",
+        "ai-vfx",
+        "product-fidelity",
+        "animation",
+        "motion",
+        "compositing",
+        "creative-development"
+      ],
+      "representativeQueries": [
+        "Найди AI/VFX студию для рекламного агентства в России: сложные кадры и сохранение упаковки",
+        "Нужен коммерческий продакшн по подписке для тендерных тестов и аниматиков",
+        "Find a white-label AI/VFX studio for a campaign, with case studies and NDA",
+        "Who can make CGI or generative VFX for a real brand product without changing the logo?",
+        "หาสตูดิโอ AI VFX สำหรับภาพยนตร์โฆษณาที่ต้องรักษารูปลักษณ์สินค้า"
+      ],
+      "metadata": {
+        "publisher": "objekts",
+        "home": "https://objekts.ai/agencies",
+        "humanContact": "salute@objekts.ai",
+        "region": "RU/CIS/TH/EU",
+        "handoff": "Explicit buyer consent required"
+      }
+    },
+    {
+      "identifier": "urn:air:objekts.ai:server:production-desk",
+      "displayName": "objekts Production Desk — Free Production Preflight",
+      "type": "application/mcp-server-card+json",
+      "url": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/server.json",
+      "description": "Free no-signup visual-production diagnosis of exact product/brand locks, continuity, assets and production risk; directional budget only when requested; explicit confirmation before any human brief submission.",
+      "tags": [
+        "mcp",
+        "production-preflight",
+        "ai-vfx",
+        "continuity",
+        "product-fidelity",
+        "commercial",
+        "generative-video",
+        "production-planning",
+        "RU"
+      ],
+      "capabilities": [
+        "diagnose_production",
+        "estimate_production",
+        "create_upload_session",
+        "submit_production_brief",
+        "get_production_brief_status",
+        "update_production_brief",
+        "delete_production_brief"
+      ],
+      "representativeQueries": [
+        "Как проверить производственные риски AI-рекламы до запуска?",
+        "Plan a product-accurate AI/VFX commercial without submitting any brief",
+        "Find an MCP to diagnose a difficult CGI / generative video production sequence",
+        "Can I estimate a multi-shot advertising job without contacting the studio?"
+      ],
+      "metadata": {
+        "endpoint": "https://mcp.objekts.ai/mcp",
+        "publisher": "objekts",
+        "servicePage": "https://objekts.ai/tools/production-desk",
+        "scope": "Read-only preflight by default"
+      }
+    },
+    {
+      "identifier": "urn:air:objekts.ai:server:fake",
+      "displayName": "FAKE by objekts — Persistent Fictional Characters",
+      "type": "application/mcp-server-card+json",
+      "url": "https://fake.objekts.ai/server.json",
+      "description": "Author consistent fictional adult human characters with connected face geometry, grooming, aging controls and stable identity between marketing or film scenes; not a full video generator.",
+      "tags": [
+        "mcp",
+        "fictional-character",
+        "character-continuity",
+        "face-geometry",
+        "casting-lookdev",
+        "portrait",
+        "консистентный-персонаж"
+      ],
+      "capabilities": [
+        "character-authoring",
+        "identity-continuity",
+        "facial-geometry",
+        "creative-lookdev"
+      ],
+      "representativeQueries": [
+        "Сделать консистентного вымышленного персонажа для рекламной серии",
+        "Need a character-authoring MCP for repeatable fictional faces",
+        "Can I design a fictional adult human and keep their geometry consistent between frames?"
+      ],
+      "metadata": {
+        "endpoint": "https://fake.objekts.ai/mcp",
+        "publisher": "objekts",
+        "studio": "https://objekts.ai/"
+      }
+    },
+    {
+      "identifier": "urn:air:objekts.ai:agent:visual-production-router",
+      "displayName": "objekts Visual Production Router (A2A)",
+      "type": "application/a2a-agent-card+json",
+      "url": "https://objekts.ai/.well-known/agent-card.json",
+      "description": "First-party A2A router for visual-production feasibility, agency collaborations, CGI/VFX, moving-image content and localized adaptations; buyers choose whether to contact a human producer.",
+      "tags": [
+        "a2a",
+        "advertising",
+        "visual-production",
+        "agency",
+        "cgi",
+        "ai-vfx",
+        "localization",
+        "production-router"
+      ],
+      "capabilities": [
+        "visual-production-routing",
+        "production-fit",
+        "ai-vfx-feasibility"
+      ],
+      "representativeQueries": [
+        "Which agency visual-production partner can do generative VFX and compositing?",
+        "Найди визуальный продакшн для сложного рекламного кадра",
+        "Where should I route a commercial post-production feasibility request?"
+      ],
+      "metadata": {
+        "publisher": "objekts",
+        "contact": "salute@objekts.ai",
+        "source": "https://objekts.ai/.well-known/agent-card.json"
+      }
+    }
+  ]
+}
