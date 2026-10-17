@@ -88,7 +88,7 @@ Requested editorial correction: identify video production, animation, VFX, CGI a
 
 ### Clutch — existing free profile; current buyer-fit mismatch
 
-[Listed among Barcelona video production companies](https://clutch.co/es/agencies/video-production/barcelona?page=2). Existing public profile shows **45% Video Production / 45% Generative AI / 10% Audio Production** and a $10k minimum project. Revisit whether Audio Production is still a core service, and ensure smaller scoped VFX jobs are not excluded by misleading minimum-project fields. Never edit rates or minimum project values without the owner's confirmation.
+[Existing objekts company profile on Clutch](https://clutch.co/profile/objekts). Existing public profile shows **45% Video Production / 45% Generative AI / 10% Audio Production** and a $10k minimum project. Revisit whether Audio Production is still a core service, and ensure smaller scoped VFX jobs are not excluded by misleading minimum-project fields. Never edit rates or minimum project values without the owner's confirmation.
 
 Clutch's public pages need client reviews for buyer trust. Do not fabricate reviews or contact client-side personnel without approved relationship owners.
 
