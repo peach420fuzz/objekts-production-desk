@@ -19,6 +19,8 @@ It packages objekts production methodology for AI agents: a read-only production
 - Agent-readable overview: `https://mcp.objekts.ai/llms.txt`
 - Published case breakdowns: [human-readable](references/CASE_BREAKDOWNS.md) · [NDJSON](references/production-breakdowns.jsonl) · [canonical feed](https://objekts.ai/production-breakdowns.jsonl)
 - Extended visual archive (2026): [12 source-linked project notes, 304-image gallery and thematic RSS feeds](references/PORTFOLIO_EXPANSION_2026-10-14.md)
+- Commercial conversion pages: [Russian producer brief](https://visual.objekts.ai/brief) · [English producer brief](https://visual.objekts.ai/en/brief) · [Buyer-facing directory copy for five platforms](references/BUYER_DIRECTORY_CONVERSION_COPY_2026-10-17.md)
+
 - Verified external syndication (2026-10-15): [five active RSS Amplifier listings, receipts and blocked channels](references/EXTERNAL_SYNDICATION_LEDGER_2026-10-15.md)
 - Curated case image board: [33 source-linked visuals from 12 projects](references/VISUAL_EVIDENCE_BOARD_2026.md) · [server-rendered image collections](https://visual.objekts.ai/visuals)
 - Source, credits and external-reuse clearance table: [304-image rights CSV](https://visual.objekts.ai/rights.csv)
