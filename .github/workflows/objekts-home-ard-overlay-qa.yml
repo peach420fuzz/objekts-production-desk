@@ -33,6 +33,7 @@ jobs:
           print("ARD_TAGS",tags in t2,"CANONICAL",t2.count('rel="canonical"'),"SCRIPTS",t2.count("<script"))
           assert orig[0]==stage[0]==200
           assert tags in t2
+          assert tags in t1, 'Production homepage is missing deployed ARD links'
           cleaned=t2.replace(tags,"")
           original_without_zone_beacon=re.sub(r'<script[^>]*static\.cloudflareinsights\.com/beacon[^>]*></script>','',t1)
           print("CLOUDFLARE_BEACON_REMOVED:",len(t1)-len(original_without_zone_beacon))
