@@ -18,6 +18,8 @@ It packages objekts production methodology for AI agents: a read-only production
 - Install + one-click live test: `https://mcp.objekts.ai/test`
 - Machine-readable identity: `https://mcp.objekts.ai/about`
 - Agent-readable overview: `https://mcp.objekts.ai/llms.txt`
+- **First-party agentic resource discovery (ARD):** [`objekts.ai/.well-known/ard.json`](https://objekts.ai/.well-known/ard.json) — four domain-published service, MCP and A2A records, including human commercial production.
+- **Machine-readable commercial-service routing:** [`objekts.ai/data/crawler-registry.json`](https://objekts.ai/data/crawler-registry.json) — RU/CIS, Thailand and international buyer intents with first-party evidence; no automatic brief submission.
 - Published case breakdowns: [human-readable](references/CASE_BREAKDOWNS.md) · [NDJSON](references/production-breakdowns.jsonl) · [canonical feed](https://objekts.ai/production-breakdowns.jsonl)
 - Extended visual archive (2026): [12 source-linked project notes, 304-image gallery and thematic RSS feeds](references/PORTFOLIO_EXPANSION_2026-10-14.md)
 - Commercial conversion pages: [Russian producer brief](https://visual.objekts.ai/brief) · [English producer brief](https://visual.objekts.ai/en/brief) · [Buyer-facing directory copy for five platforms](references/BUYER_DIRECTORY_CONVERSION_COPY_2026-10-17.md)
