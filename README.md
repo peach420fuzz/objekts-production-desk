@@ -11,6 +11,7 @@ It packages objekts production methodology for AI agents: a read-only production
 ## Live server
 
 - MCP: `https://mcp.objekts.ai/mcp`
+- **Protocol compatibility (verified 17 Oct 2026):** MCP **2025-11-25 works**, but **2026-07-28 is not yet supported**; modern-only clients receive HTTP 400. [Exact external test, dual-era fallback and browser alternative](docs/MCP_PROTOCOL_COMPATIBILITY_2026.md) · [machine-readable status JSON](references/mcp-protocol-compatibility.json). This is a first-party connectivity result, not a claim of buyer adoption.
 - **Yandex AI Studio integration:** [MCP Hub import and Responses API (Production Desk + FAKE)](docs/YANDEX_AI_STUDIO_MCP_INTEGRATION.md) — requires your own Yandex account; no claim of platform-wide installation.
 - **Yandex SourceCraft Code Assistant:** [project-level `.codeassistant/mcp.json`](.codeassistant/mcp.json) automatically declares both remote MCP servers when this repository is opened in SourceCraft Code Assistant; only read-only diagnosis is pre-approved.
 - **Alibaba Qwen Code:** [project-level `.qwen/settings.json`](.qwen/settings.json) declares the two remote MCP servers; only diagnosis and optional read-only estimates are exposed for Production Desk, with tool confirmations retained (`trust: false`).
