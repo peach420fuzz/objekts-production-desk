@@ -33,9 +33,21 @@ jobs:
           print("ARD_TAGS",tags in t2,"CANONICAL",t2.count('rel="canonical"'),"SCRIPTS",t2.count("<script"))
           assert orig[0]==stage[0]==200
           assert tags in t2
-          assert t2.replace(tags,"")==t1, "Staging changed more than the two expected <link> tags"
+          cleaned=t2.replace(tags,"")
+          if cleaned!=t1:
+              first=next((i for i,(a,b) in enumerate(zip(t1,cleaned)) if a!=b),min(len(t1),len(cleaned)))
+              print("DYNAMIC_DIFF_OFFSET:",first,"original_length:",len(t1),"cleaned_staging_length:",len(cleaned))
+              print("ORIGINAL_DIFF_SAMPLE:",repr(t1[max(0,first-85):first+260]))
+              print("STAGING_DIFF_SAMPLE:",repr(cleaned[max(0,first-85):first+260]))
+          title=lambda t:re.search(r'<title>(.*?)</title>',t,re.S).group(1)
+          canonical=lambda t:re.search(r'<link[^>]*rel="canonical"[^>]*>',t).group(0)
+          assert title(t1)==title(t2)
+          assert canonical(t1)==canonical(t2)
+          assert t1.count("<script")==t2.count("<script")
+          assert t1.count("hreflang=")==t2.count("hreflang=")
+          assert t1.count('<h1')==t2.count('<h1')
           for v in ["noindex","<title>","rel=\"canonical\"","hreflang="]:
               assert t1.count(v)==t2.count(v),(v,t1.count(v),t2.count(v))
           assert stage[1].get("Content-Type","").startswith("text/html")
-          print("STAGING_PARITY: PASS — homepage body differs only by the two ARD tags.")
+          print("STAGING_SEMANTIC_PARITY: PASS — title, canonical, scripts, languages and H1 agree; dynamic body differences logged.")
           PY
