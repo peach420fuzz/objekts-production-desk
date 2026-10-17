@@ -1,0 +1,61 @@
+name: objekts | Verify live agent discovery surfaces
+on:
+  push:
+    paths:
+      - ".github/workflows/objekts-ard-health.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify live first-party discovery surfaces
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import urllib.request,json
+          site='https://objekts.ai'
+          def get(path):
+              req=urllib.request.Request(site+path,headers={'User-Agent':'Mozilla/5.0 (compatible; objekts-agent-monitor/1.0)'})
+              with urllib.request.urlopen(req,timeout=20) as r:
+                  assert r.status==200,(path,r.status)
+                  return r.read().decode('utf-8')
+          robots=get('/robots.txt')
+          assert 'Agentmap: https://objekts.ai/.well-known/ard.json' in robots
+          assert 'User-agent: YandexBot' in robots
+          assert 'Sitemap: https://objekts.ai/sitemap.xml' in robots
+          a=json.loads(get('/.well-known/ard.json'))
+          b=json.loads(get('/.well-known/ai-catalog.json'))
+          assert a==b
+          assert a['specVersion']=='1.0'
+          assert len(a['entries'])==4
+          assert all(2<=len(z.get('representativeQueries',[]))<=5 for z in a['entries'])
+          c=json.loads(get('/data/crawler-registry.json'))
+          assert len(c['services'])==4
+          print('LIVE_DOMAIN: verified')
+          print('ROBOTS_AGENTMAP: present; Yandex allowed; sitemap unchanged')
+          print('ARD_ENTRIES:',len(a['entries']))
+          print('COMMERCIAL_SERVICE_CATEGORIES:',','.join(x['id'] for x in c['services']))
+          PY
+      - name: Independent Neuronto discovery audit (read-only)
+        shell: bash
+        run: |
+          set -euo pipefail
+          code="$(curl -sS --max-time 95 -o audit.json -w '%{http_code}' \
+            -X POST -H 'content-type: application/json' \
+            https://neuronto.com/audit -d '{"domain":"objekts.ai"}')"
+          echo "Neuronto audit HTTP: $code"
+          python3 - <<'PY'
+          import json
+          x=json.load(open('audit.json'))
+          print('NEURONTO_SCORE:',x.get('score',{}).get('total'))
+          print('CONFORMANCE:',x.get('conformance',{}).get('valid'))
+          print('DISCOVERY:',json.dumps(x.get('discovery'),ensure_ascii=False))
+          print('COVERAGE:',json.dumps(x.get('coverage'),ensure_ascii=False))
+          print('QUERIES:',json.dumps(x.get('competition',{}).get('summary'),ensure_ascii=False))
+          print('RECOMMENDATIONS:',json.dumps(x.get('recommendations',[])[:4],ensure_ascii=False))
+          PY
+          test "$code" = '200'
