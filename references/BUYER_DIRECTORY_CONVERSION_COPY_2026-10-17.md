@@ -110,6 +110,23 @@ The studio joins an existing film production for a narrowly scoped visual-effect
 
 [Video production / Russia category](https://ru.wadline.com/video-production/ru). 17 October email request to its published official `info@wadline.com` asked whether a Spain-registered remote studio can appear in the Russian language category on the free organic tier. No listing is claimed until accepted. If approved, use Russian short/full profile above, not a fabricated Russian office address.
 
+## Source-tagged brief links for directory profiles
+
+The two first-party briefs support optional, explicitly whitelisted `from` tags so buyer-initiated email enquiries can be attributed **without cookies, tracking pixels or invented leads**. Leave external directory canonical case URLs untouched; these links refer only to the production-brief CTA.
+
+| Directory | Place this producer link in the existing provider's CTA |
+|---|---|
+| Wadline — Russia | https://visual.objekts.ai/brief?from=wadline |
+| Sortlist | https://visual.objekts.ai/en/brief?from=sortlist |
+| Clutch | https://visual.objekts.ai/en/brief?from=clutch |
+| Goodfirms | https://visual.objekts.ai/en/brief?from=goodfirms |
+| Pocket Films | https://visual.objekts.ai/en/brief?from=pocketfilms |
+| StudioList | https://visual.objekts.ai/en/brief?from=studiolist |
+| Creativity Meets | https://visual.objekts.ai/en/brief?from=creativitymeets |
+| RSS Amplifier | https://visual.objekts.ai/en/brief?from=rssamplifier |
+
+**QA:** the dynamic query input accepts only the predeclared source labels. Unknown values fall back to an unmarked brief. The URL's canonical link remains the clean brief URL. Tracking is **only** the bracketed source in a user's email subject if they choose to open their mail client and send the request; no message is sent by page visit.
+
 ## Proof and rights guardrails
 
 - Official studio brand: `objekts`. Public company name is not “Objekts AI.”
