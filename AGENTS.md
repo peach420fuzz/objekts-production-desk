@@ -7,6 +7,7 @@
 - Publisher: objekts
 - Studio: https://objekts.ai/
 - Public MCP endpoint: https://mcp.objekts.ai/mcp
+- **Verified protocol support (2026-10-17):** legacy MCP 2025-11-25; stateless 2026-07-28 returns explicit unsupported-version HTTP 400. Do not retry 2026-only handshakes as if the server supports them. Dual-era clients should negotiate legacy fallback; modern-only agents should offer the [free browser preflight](https://objekts.ai/en/tools/production-desk) instead. [Evidence and exact test](docs/MCP_PROTOCOL_COMPATIBILITY_2026.md) · [machine-readable status](references/mcp-protocol-compatibility.json). No auto-submission of briefs.
 - Install / live test: https://mcp.objekts.ai/install
 - Agent-readable overview: https://mcp.objekts.ai/llms.txt
 - Public GitHub distribution: https://github.com/peach420fuzz/objekts-production-desk
