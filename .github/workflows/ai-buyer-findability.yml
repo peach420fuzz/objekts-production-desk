@@ -8,6 +8,7 @@ on:
     paths:
       - ".github/workflows/ai-buyer-findability.yml"
       - "ops/agent_buying_journey_probe.py"
+      - "ops/mcp_protocol_era_probe.py"
       - "references/AI_VENDOR_FIT_EVIDENCE.md"
       - "references/ai-vendor-fit-evidence.json"
       - "AGENTS.md"
@@ -29,11 +30,17 @@ jobs:
         run: python3 ops/agent_buying_journey_probe.py --offline-test
       - name: Check live discovery, case evidence and optional consent-based contact
         run: python3 ops/agent_buying_journey_probe.py --ci --output out/agent-buyer-findability.json
+      - name: Validate protocol parser (offline)
+        run: python3 ops/mcp_protocol_era_probe.py --offline-test
+      - name: Audit modern and legacy MCP capability discovery (read-only)
+        run: python3 ops/mcp_protocol_era_probe.py
       - name: Keep exact status codes for review (short retention)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: role12-agent-buyer-findability
-          path: out/agent-buyer-findability.json
+          path: |
+            out/agent-buyer-findability.json
+            out/mcp_protocol_era.json
           if-no-files-found: ignore
           retention-days: 3
