@@ -1,8 +1,5 @@
 name: objekts | Announce canonical A2A publisher to Wellknown
 on:
-  push:
-    paths:
-      - ".github/workflows/announce-objekts-agent-wellknown.yml"
   workflow_dispatch:
 permissions:
   contents: read
