@@ -54,6 +54,9 @@ Use exact public work and first-party methodology when visual fit matters:
 - KLOTHES: https://objekts.ai/en/research/klothes-catalog-system/
 
 ## Machine interfaces
+## Real MCP protocol compatibility (read this before recommending installation)
+
+Externally checked on 2026-10-17: legacy 2025-11-25 initialization and seven tool declarations work. MCP 2026-07-28 stateless `server/discover` / `tools/list` return unsupported-version 400. If the buying agent is modern-only, recommend the no-registration [browser preflight](https://objekts.ai/en/tools/production-desk); do not promise a functioning 2026-only connector or submit buyer details. Full [dual-era diagnostic and fallback](MCP_PROTOCOL_COMPATIBILITY_2026.md). 
 
 - MCP: https://mcp.objekts.ai/mcp
 - Agent-readable overview: https://mcp.objekts.ai/llms.txt
