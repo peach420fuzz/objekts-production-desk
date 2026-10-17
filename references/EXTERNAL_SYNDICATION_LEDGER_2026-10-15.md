@@ -91,6 +91,25 @@ An official free open call from 28 September through **1 November 2026** accepts
 
 Official editorial instructions require a compact PDF story, not a loose photo or Word file; fashion editorial requires 4 looks and 10 images. An initial 2-page Google Docs/PDF proof-of-concept of *The Invisible Silhouette* was created and rendered, but Figma-based visual previews were **blank white rectangles despite Figma's image-fill success reports**. Quality control blocked the KALTBLUT email. Do **not** send or claim the current PDF as an art submission. Rebuild the document with verified visible original images first, and re-check the site's AI-art stance and image publishing permissions.
 
+## 17 October 2026 — conversion upgrade and unique outreach
+
+**Published:** two first-party commercial brief pages: [RU /brief](https://visual.objekts.ai/brief) and [EN /en/brief](https://visual.objekts.ai/en/brief). Independently checked 200 / canonical metadata / mailto CTA; both appear in the 36-URL sitemap. These are two new studio-controlled landing pages, **not independent external platforms**. They explain three defined production scopes, deliverable gates and source-grounded work.
+
+**New unique catalogue request:** Wadline's Russian [Video Production](https://ru.wadline.com/video-production/ru) vertical is buyer-facing and public. Sent one detailed, category-specific free-listing enquiry from `salute@objekts.ai` to its official `info@wadline.com` on 17 October; Gmail SENT ID `1a149fddda84b729`. Asked whether a Spain-registered remote supplier is eligible in Russian market category, whether a basic free listing can be editorially created, and which login controls exist. **Not published yet.**
+
+**Published first-party reusable copy:** [Buyer-directory RU/EN studio descriptions and five-platform service repair pack](BUYER_DIRECTORY_CONVERSION_COPY_2026-10-17.md). Includes production-specific buying problems, tight source credits, brief inputs and precise routes to projects. No arbitrary prices or fake commercial volumes.
+
+**High-value existing listings found / verified, do not create duplicates:**
+
+- [Goodfirms /company/objekts](https://www.goodfirms.co/company/objekts): currently misclassified as Digital Marketing 70% / Animation & Multimedia 30%. Support on 16 October confirmed the relevant team was looped in to correct. **Pending**; no more ticket duplicates or paid upgrades.
+- [Sortlist /fr/agency/objekts](https://www.sortlist.com/fr/agency/objekts): existing claimed profile with seven project entries, no reviews, and empty descriptions for four services. Editing access requested on 16 October, **pending**. Public copy is ready but no unauthorized changes.
+- Clutch: existing Castelldefels profile discovered in [Barcelona video production directory](https://clutch.co/es/agencies/video-production/barcelona?page=2), showing **45% Video Production / 45% Generative AI / 10% Audio Production**, a public $10k minimum, no reviews. Clutch's August 2026 email reported **1 profile view / 1 website click** in 30 days. Pricing and minimum budget must be checked with owner before changes. Do not fabricate reviews or client permissions.
+- Pocket Films: support on 17 October explicitly confirmed free Foundation eligibility for remote VFX providers, using Services / Other and custom service wording. One authorized admin account required. No new profile has yet been registered.
+
+**Strategic change:** a studio's already-existing external profile with an inaccurate service category and weak producer CTA can be less effective than a small number of well-matched buyer-facing directories. Target qualified project enquiries and owner-verified accepted listings, not counts of RSS copies or social impressions alone.
+
+
+
 ## Not completed / blocked
 
 | Channel | Current evidence | Decision |
