@@ -58,6 +58,12 @@ jobs:
           python3 - <<'PY'
           import json
           d=json.load(open('audit-response.json'))
-          print(json.dumps(d,ensure_ascii=False)[:13500])
+          print('DOMAIN:',d.get('domain'))
+          print('DISCOVERY:',json.dumps(d.get('discovery'),ensure_ascii=False))
+          print('CONFORMANCE:',json.dumps(d.get('conformance'),ensure_ascii=False))
+          print('SCORE:',json.dumps(d.get('score'),ensure_ascii=False))
+          print('COVERAGE:',json.dumps(d.get('coverage'),ensure_ascii=False))
+          print('RANKS:',json.dumps(d.get('competition',{}).get('queries',[]),ensure_ascii=False))
+          print('NEXT:',json.dumps(d.get('recommendations',[])[:5],ensure_ascii=False))
           PY
           if [[ "$code" != "200" && "$code" != "202" ]]; then exit 1; fi
