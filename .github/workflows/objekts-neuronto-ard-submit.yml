@@ -1,0 +1,63 @@
+name: objekts | Neuronto ARD commercial discovery audit
+on:
+  push:
+    paths:
+      - ".github/workflows/objekts-neuronto-ard-submit.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  submit-and-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Confirm canonical publisher manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL -A "Mozilla/5.0 (compatible; AgenticResourceDiscovery/0.91)" --max-time 25 \
+            "https://objekts.ai/.well-known/ard.json" -o manifest.json
+          python3 - <<'PY'
+          import json
+          d=json.load(open('manifest.json'))
+          assert len(d['entries']) == 4
+          assert all(x['identifier'].startswith('urn:air:objekts.ai:') for x in d['entries'])
+          assert all(2 <= len(x.get('representativeQueries',[])) <= 5 for x in d['entries'])
+          print('Verified official publisher ARD manifest:',len(d['entries']),'entries.')
+          PY
+      - name: Submit own domain to Neuronto without duplicating server listings
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo '{"domain":"objekts.ai"}' > domain.json
+          code="$(curl -sS --max-time 90 -o submit-response.json -w '%{http_code}' \
+            -H 'Content-Type: application/json' -X POST 'https://neuronto.com/submit' \
+            --data-binary @domain.json)"
+          echo "Neuronto domain submit HTTP status: $code"
+          python3 - <<'PY'
+          import json
+          try:
+            d=json.load(open('submit-response.json'))
+          except Exception as e:
+            print('Response could not be decoded:',str(e))
+            raise
+          for k in ['status','id','submissionId','url','message','error','verified','indexed','entries','resourceCount','evidence']:
+            if k in d:
+              print(k,':',str(d[k])[:1800])
+          print('Response fields:',list(d)[:25])
+          PY
+          case "$code" in 200|201|202|409) ;; *) echo "Submission HTTP failed" >&2; exit 1;; esac
+      - name: Run public discovery and indexing audit for own publisher
+        shell: bash
+        run: |
+          set -euo pipefail
+          code="$(curl -sS --max-time 105 -o audit-response.json -w '%{http_code}' \
+            -H 'Content-Type: application/json' -X POST 'https://neuronto.com/audit' \
+            --data-binary @domain.json)"
+          echo "Neuronto audit HTTP status: $code"
+          python3 - <<'PY'
+          import json
+          d=json.load(open('audit-response.json'))
+          print(json.dumps(d,ensure_ascii=False)[:13500])
+          PY
+          if [[ "$code" != "200" && "$code" != "202" ]]; then exit 1; fi
