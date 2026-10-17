@@ -1,0 +1,76 @@
+{
+  "schema_version": "objekts.mcp-compatibility.v1",
+  "publisher": "objekts",
+  "observed_at_utc": "2026-10-17T19:48:51Z",
+  "endpoint": "https://mcp.objekts.ai/mcp",
+  "provenance": "first-party verified external read-only GitHub Actions test; not independent certification",
+  "protocols": [
+    {
+      "version": "2026-07-28",
+      "status": "not_supported_observed",
+      "discovery_method": "server/discover",
+      "discovery_http": 400,
+      "discovery_jsonrpc_error": -32000,
+      "tools_list_http": 400,
+      "reason": "Unsupported protocol version: 2026-07-28"
+    },
+    {
+      "version": "2025-11-25",
+      "status": "working_observed",
+      "discovery_method": "initialize",
+      "initialize_http": 200,
+      "tools_list_http": 200,
+      "declared_tool_count": 7,
+      "required_client_behaviour": "Legacy MCP initialization and optional session handling"
+    },
+    {
+      "version": "2025-06-18",
+      "status": "server_reports_supported_not_tested"
+    },
+    {
+      "version": "2025-03-26",
+      "status": "server_reports_supported_not_tested"
+    },
+    {
+      "version": "2024-11-05",
+      "status": "server_reports_supported_not_tested"
+    },
+    {
+      "version": "2024-10-07",
+      "status": "server_reports_supported_not_tested"
+    }
+  ],
+  "resource_support": {
+    "method": "resources/list",
+    "legacy_http_status": 200,
+    "jsonrpc_error": -32601,
+    "supported_observed": false,
+    "warning": "HTTP 200 response contains JSON-RPC Method not found"
+  },
+  "tools_2025": [
+    "diagnose_production",
+    "estimate_production",
+    "create_upload_session",
+    "submit_production_brief",
+    "get_production_brief_status",
+    "update_production_brief",
+    "delete_production_brief"
+  ],
+  "fallbacks": {
+    "free_browser_preflight": "https://objekts.ai/en/tools/production-desk",
+    "russian_browser_preflight": "https://objekts.ai/ru/tools/production-desk",
+    "agent_vendor_fit": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/references/ai-vendor-fit-evidence.json",
+    "mcp_transport_only_for_legacy_clients": true
+  },
+  "tests": {
+    "workflow_receipt": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39064050761",
+    "source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/mcp_protocol_era_probe.py",
+    "modern_errors_verified": true,
+    "legacy_tool_discovery_verified": true,
+    "tool_calls_executed": 0,
+    "briefs_submitted": 0
+  },
+  "buyer_consent": "No uploads, brief submissions or updates without user's explicit approval",
+  "evidence_limit": "MCP event counts and catalog probes do not establish agent recommendations, clients or revenue",
+  "standards_reference": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2026-07-28/server/discover.mdx"
+}
