@@ -110,6 +110,16 @@ Official editorial instructions require a compact PDF story, not a loose photo o
 
 
 
+### 17 October evening — new editorial contact, completed conversion routing and source-tracked briefs
+
+**New unique directory contact:** [Creativity Meets — Creative Suppliers](https://creativitymeets.com/proveedores/) accepts studios and services in its free, reviewed directory. The [provider submission form](https://creativitymeets.com/agregar-proveedor/) requires at least one image and reCAPTCHA, so unattended submission was **not** attempted. A concrete, non-duplicate Spanish-language listing enquiry went to the officially published `info@creativitymeets.com` from `salute@objekts.ai` on 17 October. **Gmail SENT ID `1a14b6515aee6685`**. Asked for eligibility of remote post/VFX services and a rights-aware image-review route. A public company profile and acceptance remain **unconfirmed**.
+
+**First-party conversion improvements deployed:** RU [producer brief](https://visual.objekts.ai/brief) and EN [producer brief](https://visual.objekts.ai/en/brief) are linked from the studio's image gallery, English editorial index, Russian editorial index, and the `llms.txt` description. The brief contact CTA can receive a **whitelisted query parameter** `from=...` that marks the origin in the mailto subject (e.g., `[Wadline]`, `[Sortlist]`, `[Clutch]`, `[RSS Amplifier]`). Source parameters have canonical URLs pointing at the bare route. This does **not** log traffic or track people; it attributes only user-initiated enquiry emails.
+
+**Live external-page recheck:** all five previously verified RSS Amplifier listing URLs still loaded with their individual editorial titles on 17 October. They remain **five listings on one platform**; there were **no additional accepted external directory profiles** in this cycle.
+
+**Duplicate gate:** existing or pending StudioList, VFX Engine, StudioIndex, Sortlist, Goodfirms and DesignRush status was preserved; no repeat bulk submissions, paid upgrades, false client reviews or copyrighted binary reuploads.
+
 ## Not completed / blocked
 
 | Channel | Current evidence | Decision |
