@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "publisher": {
+    "name": "objekts",
+    "url": "https://objekts.ai/",
+    "canonicalDomain": "objekts.ai",
+    "contact": "salute@objekts.ai",
+    "verifiedSource": "https://github.com/peach420fuzz/objekts-production-desk"
+  },
+  "contentPolicy": "Public capability descriptions and linked first-party project pages. This feed is not a testimonial, guarantee of delivery, or endorsement by a search engine.",
+  "updatedAt": "2026-10-17",
+  "preferredLanguage": "ru",
+  "markets": [
+    "RU",
+    "CIS",
+    "TH",
+    "EU",
+    "global-remote"
+  ],
+  "audiences": [
+    "advertising agencies",
+    "brand marketers",
+    "film/series producers",
+    "exhibition and museum producers",
+    "AI platform developers"
+  ],
+  "services": [
+    {
+      "id": "agency-production",
+      "titleRu": "AI/VFX-продакшн для рекламных агентств",
+      "titleEn": "AI/VFX production for advertising agencies",
+      "intentRu": [
+        "AI видеопродакшн для рекламного агентства",
+        "аутсорс продакшна сложных рекламных кадров",
+        "AI VFX на тендер",
+        "анимация и CGI для бренда",
+        "white-label визуальная команда"
+      ],
+      "outcome": "A scoped visual-production response, feasibility treatment and optional paid production engagement; not guaranteed instant video generation.",
+      "url": "https://objekts.ai/agencies",
+      "details": "https://objekts.ai/services/production-for-agencies",
+      "caseStudies": [
+        "https://objekts.ai/work/sbercity",
+        "https://objekts.ai/work/magnit-2026"
+      ],
+      "contact": "mailto:salute@objekts.ai"
+    },
+    {
+      "id": "agency-access",
+      "titleRu": "Agency Access — постоянная визуальная команда",
+      "titleEn": "Agency Access for agencies",
+      "intentRu": [
+        "продакшн по подписке для агентства",
+        "тендерные кадры и AI аниматик",
+        "production design на аутсорсе",
+        "выделенная AI VFX команда"
+      ],
+      "outcome": "A defined monthly active production lane with human-led scope and approval; no unlimited final deliveries.",
+      "url": "https://objekts.ai/agency-access",
+      "contact": "mailto:salute@objekts.ai"
+    },
+    {
+      "id": "production-desk",
+      "titleRu": "Production Desk — предварительный технический разбор",
+      "titleEn": "Production Desk preflight",
+      "intentRu": [
+        "как произвести рекламный ролик с AI и CGI",
+        "проверить точность товара в AI видео",
+        "оценить AI VFX ролик",
+        "оценить риски continuity между шотами"
+      ],
+      "outcome": "Read-only diagnosis and optional indicative estimate. No finished video, automatic booking, or unsolicited commercial handoff.",
+      "url": "https://objekts.ai/tools/production-desk",
+      "mcp": "https://mcp.objekts.ai/mcp",
+      "protocol": "MCP Streamable HTTP",
+      "consent": "Sending a brief or files to the studio requires explicit user confirmation.",
+      "documentation": "https://mcp.objekts.ai/install"
+    },
+    {
+      "id": "fake-by-objekts",
+      "titleRu": "FAKE — создание и сохранение персонажа",
+      "titleEn": "FAKE character authoring",
+      "intentRu": [
+        "создать консистентного вымышленного персонажа",
+        "одинаковое лицо в рекламных кадрах",
+        "модель персонажа для кино"
+      ],
+      "outcome": "Character authoring and identity-continuity tools for fictional adult humans; not a film production service.",
+      "url": "https://fake.objekts.ai/studio/",
+      "mcp": "https://fake.objekts.ai/mcp",
+      "protocol": "MCP Streamable HTTP",
+      "documentation": "https://fake.objekts.ai/install"
+    }
+  ],
+  "proof": {
+    "studio": "https://objekts.ai/work",
+    "productionMethod": "https://objekts.ai/process",
+    "sbercity": "https://objekts.ai/work/sbercity",
+    "magnit": "https://objekts.ai/work/magnit-2026"
+  },
+  "indexing": {
+    "sitemap": "https://objekts.ai/sitemap.xml",
+    "robots": "https://objekts.ai/robots.txt",
+    "machineOverview": "https://objekts.ai/llms.txt",
+    "agentCard": "https://objekts.ai/.well-known/agent-card.json"
+  },
+  "discoveryGuidance": "Choose the service matching the task. For an executable technical preflight use the Production Desk MCP. For a commercial brief, direct to the studio contact page or email; do not submit private files, names or budgets without user authorization."
+}
