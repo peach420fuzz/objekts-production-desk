@@ -27,6 +27,27 @@ Use an authorized [Yandex AI Studio](https://aistudio.yandex.cloud/) cloud folde
 
 **Important:** Changes to upstream tool schemas do not automatically propagate to a previously configured Yandex Hub server. Refresh its tool set after an upstream release.
 
+## Yandex Cloud API installation: secure defaults (not yet executed)
+
+Yandex publishes a complete [REST API `McpGateway.Create` walkthrough and downloadable Python/Node.js examples](https://aistudio.yandex.ru/ru/docs/ai-studio/operations/mcp-servers/connect-external-api). Its example **defaults to a public gateway** unless `MCP_GATEWAY_PUBLIC` is overridden. For an agency/client production tool, start with a private gateway and the minimum available tools:
+
+```bash
+# Set IAM_TOKEN, YANDEX_FOLDER_ID and MCP_SA_ID securely in your own Yandex environment.
+export EXTERNAL_MCP_URL="https://mcp.objekts.ai/mcp"
+export MCP_GATEWAY_NAME="objekts-production-desk"
+export MCP_GATEWAY_PUBLIC="false"
+export MCP_TRANSPORT="STREAMABLE"
+export MCP_AUTH_TYPE="unauthorized"  # public upstream only; Yandex gateway remains private
+export MCP_DISCOVER_TOOLS="true"
+export MCP_DRY_RUN="true"           # inspect the payload; create nothing
+# Run Yandex's official create_gateway_mcpcall.py; omit the DRY_RUN setting
+# only after reviewing permissions, costs and selected tool definitions.
+```
+
+The official discovery script may include **all seven tools**. After creation, explicitly restrict the active gateway/agent tool set to non-submitting diagnostics, with human consent before any upload, submission, update or deletion. A Yandex Cloud tenant, folder, service account and authorization are still required; this repository does not possess those credentials. Repeat independently for FAKE with `EXTERNAL_MCP_URL=https://fake.objekts.ai/mcp` and review its own tools.
+
+Yandex Cloud Marketplace is a separate partner-publishing route, **not** equivalent to this private MCP Hub connection. Marketplace partner eligibility involves a Russian or Kazakh business billing account; verify legal applicability before applying.
+
 ## Yandex Responses API — no prior MCP Hub resource necessary
 
 The same external URLs can also be passed directly as MCP tools to the Yandex OpenAI-compatible Responses API. This is an alternative to registering a gateway resource in the console. It requires a Yandex AI Studio API key and folder ID; model calls may be billed.
