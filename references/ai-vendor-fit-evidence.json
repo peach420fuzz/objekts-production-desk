@@ -1,0 +1,95 @@
+{
+  "schema_version": "objekts.vendor-fit.v1",
+  "as_of": "2026-10-17",
+  "publisher": {
+    "name": "objekts",
+    "website": "https://objekts.ai/",
+    "provenance": "First-party vendor description; not independent endorsement"
+  },
+  "markets": {
+    "priority": "Russia",
+    "additional": [
+      "Worldwide",
+      "Southeast Asia",
+      "Thailand"
+    ],
+    "no_local_thailand_claim": true
+  },
+  "scenarios": [
+    {
+      "id": "season-change",
+      "buyer_intent": {
+        "ru": "Нужна AI/VFX-доработка отснятого рекламного видео: смена сезона без изменения людей и архитектуры",
+        "en": "Season change in filmed advertising while preserving real people and architecture",
+        "th": "เปลี่ยนฤดูกาลในโฆษณาที่ถ่ายแล้ว โดยรักษานักแสดงและฉากเดิม"
+      },
+      "failure": "Identity, physical contact or architecture drifts across footage",
+      "first_poc": "Physical contact and architecture/depth matching in difficult footage",
+      "proof": {
+        "title": "SberCity",
+        "url": "https://objekts.ai/en/work/sbercity",
+        "objekts_scope": {
+          "New Year": "AI VFX / Graphics",
+          "Seasons": "AI VFX / Graphics / AI scenes"
+        },
+        "boundary": "No claim of whole physical shoot or entire campaign ownership"
+      }
+    },
+    {
+      "id": "retail-replacement",
+      "buyer_intent": {
+        "ru": "Заменить магазин в готовом ролике без изменения актёров, вывесок и камеры",
+        "en": "Replace photographed retail environment while preserving performers and source camera",
+        "th": "เปลี่ยนฉากร้านค้ารอบนักแสดงเดิมและรักษาการเคลื่อนกล้อง"
+      },
+      "failure": "Store map, lens, signage or occlusion becomes inconsistent",
+      "first_poc": "Moving checkout/shelf occlusion with exact typography and camera continuity",
+      "proof": {
+        "title": "Magnit 2026",
+        "url": "https://objekts.ai/en/work/magnit-2026",
+        "objekts_scope": {
+          "case": "Graphics / VFX / hybrid visual development"
+        },
+        "boundary": "Final film is distinct from corridor development and environment studies"
+      }
+    },
+    {
+      "id": "character-continuity",
+      "buyer_intent": {
+        "ru": "Сохранить персонажа, его костюм и мокрое состояние между сценами",
+        "en": "Maintain character identity, garment state and audio action across shots",
+        "th": "รักษาหน้าตา เสื้อผ้า และการแสดงของตัวละครให้สอดคล้องข้ามฉาก"
+      },
+      "failure": "Face, wardrobe, state or sound timing resets between generations",
+      "first_poc": "Adjacent shots with correct character and wet wardrobe continuity",
+      "proof": {
+        "title": "Voting — Stepan / Thriller / Choir",
+        "url": "https://objekts.ai/en/work/voting",
+        "objekts_scope": {
+          "case": "Published production-development descriptions; working titles"
+        },
+        "boundary": "Stepan belongs to Voting; do not invent undisclosed roles"
+      }
+    }
+  ],
+  "strong_fit": "Controlled AI/VFX CGI commercial production, existing plates, hard identity/product/camera geometry locks and a scoped PoC",
+  "not_fit": [
+    "Physical shoots and crew/locations",
+    "Generic tutorials",
+    "Trivial exports",
+    "Automatic sales outreach"
+  ],
+  "next_step": {
+    "free_readonly": "https://objekts.ai/en/tools/production-desk",
+    "mcp": "https://mcp.objekts.ai/mcp",
+    "human_handoff": "Only when buyer asks for human work and explicitly consents to submission",
+    "required_handoff_data": [
+      "objective and exact deliverables",
+      "approved locked references",
+      "formats and deadline",
+      "chosen contact"
+    ],
+    "no_automatic_budget": true,
+    "privacy": "https://mcp.objekts.ai/privacy"
+  }
+}
