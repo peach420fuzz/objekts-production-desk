@@ -116,6 +116,8 @@ Official editorial instructions require a compact PDF story, not a loose photo o
 
 **First-party conversion improvements deployed:** RU [producer brief](https://visual.objekts.ai/brief) and EN [producer brief](https://visual.objekts.ai/en/brief) are linked from the studio's image gallery, English editorial index, Russian editorial index, and the `llms.txt` description. The brief contact CTA can receive a **whitelisted query parameter** `from=...` that marks the origin in the mailto subject (e.g., `[Wadline]`, `[Sortlist]`, `[Clutch]`, `[RSS Amplifier]`). Source parameters have canonical URLs pointing at the bare route. This does **not** log traffic or track people; it attributes only user-initiated enquiry emails.
 
+**Conversion CTA in the five RSS sources:** all five first-party RSS feed channel descriptions now point to a defined production-brief path with `from=rssamplifier` source attribution. EN and RU editorial feeds and three visual feeds returned readable content after deployment on 17 October. This is a feed update for an existing external platform, **not five new external publications**. The directory will display changed descriptions only after its own scheduled refresh.
+
 **Live external-page recheck:** all five previously verified RSS Amplifier listing URLs still loaded with their individual editorial titles on 17 October. They remain **five listings on one platform**; there were **no additional accepted external directory profiles** in this cycle.
 
 **Duplicate gate:** existing or pending StudioList, VFX Engine, StudioIndex, Sortlist, Goodfirms and DesignRush status was preserved; no repeat bulk submissions, paid upgrades, false client reviews or copyrighted binary reuploads.
