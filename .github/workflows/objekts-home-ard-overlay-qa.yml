@@ -1,0 +1,41 @@
+name: objekts | Test ARD homepage overlay in isolated staging
+on:
+  push:
+    paths:
+      - ".github/workflows/objekts-home-ard-overlay-qa.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Compare staging HTML against real homepage
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import urllib.request,re
+          ua="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+          def fetch(url,more=None):
+              headers={"User-Agent":ua,"Accept":"text/html","Accept-Language":"ru-RU,ru;q=0.9,en;q=0.8"}
+              if more:headers.update(more)
+              req=urllib.request.Request(url,headers=headers)
+              with urllib.request.urlopen(req,timeout=18) as r:
+                  return r.status,dict(r.headers),r.read().decode("utf-8",errors="replace")
+          orig=fetch("https://objekts.ai/")
+          stage=fetch("https://objekts-ard-home-links.peach420fuzz.workers.dev/")
+          t1,t2=orig[2],stage[2]
+          tags='<link rel="ard" type="application/json" href="https://objekts.ai/.well-known/ard.json"/><link rel="ai-catalog" type="application/json" href="https://objekts.ai/.well-known/ai-catalog.json"/>'
+          print("SOURCE",orig[0],len(t1),orig[1].get("Content-Type"))
+          print("STAGE",stage[0],len(t2),stage[1].get("Content-Type"))
+          print("ARD_TAGS",tags in t2,"CANONICAL",t2.count('rel="canonical"'),"SCRIPTS",t2.count("<script"))
+          assert orig[0]==stage[0]==200
+          assert tags in t2
+          assert t2.replace(tags,"")==t1, "Staging changed more than the two expected <link> tags"
+          for v in ["noindex","<title>","rel=\"canonical\"","hreflang="]:
+              assert t1.count(v)==t2.count(v),(v,t1.count(v),t2.count(v))
+          assert stage[1].get("Content-Type","").startswith("text/html")
+          print("STAGING_PARITY: PASS — homepage body differs only by the two ARD tags.")
+          PY
