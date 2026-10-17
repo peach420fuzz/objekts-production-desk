@@ -1,0 +1,51 @@
+name: objekts | Announce canonical A2A publisher to Wellknown
+on:
+  push:
+    paths:
+      - ".github/workflows/announce-objekts-agent-wellknown.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Check live first-party ARD catalog and A2A identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json,urllib.request
+          for url in ["https://objekts.ai/.well-known/ard.json","https://objekts.ai/.well-known/agent-card.json"]:
+              with urllib.request.urlopen(url,timeout=20) as response:
+                  doc=json.load(response)
+                  assert response.status==200, (url,response.status)
+                  assert len(doc.get("entries",[]))==4 if url.endswith("/ard.json") else bool(doc.get("name") or doc.get("displayName"))
+                  print("Verified official source:",url)
+          PY
+      - name: Submit existing canonical A2A Agent Card; reuse duplicate record when recognized
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo '{"cardUrl":"https://objekts.ai/.well-known/agent-card.json"}' > payload.json
+          code=$(curl -sS --max-time 35 -o response.json -w '%{http_code}' \
+            -H 'content-type: application/json' \
+            -X POST https://wellknown.network/api/v1/submit --data-binary @payload.json)
+          echo "Wellknown submit HTTP status: $code"
+          python3 - <<'PY'
+          import json
+          try:
+              doc=json.load(open("response.json"))
+          except Exception as exc:
+              print("Could not decode response:",str(exc))
+              raise
+          for k in ["status","agentId","agent","id","duplicate","claimUrl","recordUrl","message","error"]:
+              if k in doc:
+                  print(k,":",str(doc[k])[:450])
+          print("Response fields:",list(doc)[:18])
+          PY
+          case "$code" in
+            200|201|202|409) ;;
+            *) echo "Submission not accepted" >&2; exit 1;;
+          esac
