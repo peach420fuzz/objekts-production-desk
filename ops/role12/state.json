@@ -1,0 +1,99 @@
+{
+  "schema_version": "objekts.role12.roadmap_state.v1",
+  "updated_on": "2026-10-18",
+  "mandate": "Organic search and AI-assisted buyer discovery, evidence-backed qualification and inbound attribution; Russia first, SEA and global additional. No editorial outreach and no agent-registry duplication.",
+  "owner_constraints": [
+    "Free channels; no paid API or registration",
+    "No unsolicited mail or confidential submissions",
+    "Do not deploy production changes without permission",
+    "Case sources: SberCity, Magnit, Voting/Stepan; Auto.ru development only",
+    "Do not use Cordiant, Made Sense, SmartFruits in role12 assets"
+  ],
+  "current_stage": "R12-02 RU buyer intent discovery benchmark",
+  "completed": {
+    "R12-00": {
+      "status": "done",
+      "receipt": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/ROADMAP.md"
+    },
+    "R12-01": {
+      "status": "done",
+      "receipt": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39168307086",
+      "result": "Exact-host verified crawler tally corrected; main robots 3/3 HTTP 200, media robots 2x404 and 1x301 on 18 October"
+    },
+    "R12-03_partial": {
+      "status": "published previously",
+      "receipt": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/references/ai-vendor-fit-evidence.json"
+    },
+    "R12-06_partial": {
+      "status": "live elsewhere",
+      "receipt": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39065450471",
+      "note": "ARD is live; Neuronto returned in sampled queries, 5 other registries not confirmed"
+    }
+  },
+  "open": [
+    {
+      "id": "R12-02",
+      "status": "in_progress",
+      "next": "Record 12 nonbrand high-intent queries by market and matched source URLs; separate search sample presence from real rank/impressions"
+    },
+    {
+      "id": "R12-03",
+      "status": "in_progress",
+      "next": "Determine if browser preflight leads to opt-in human briefing without artificial test submission"
+    },
+    {
+      "id": "R12-04",
+      "status": "blocked_by_site_owner",
+      "next": "Fix English machine-reference 404 and verify language-canonical targets, not via role12 speculative deployment"
+    },
+    {
+      "id": "R12-05",
+      "status": "delegated",
+      "receipt": "https://github.com/peach420fuzz/objekts-production-desk/issues/101",
+      "next": "MCP 2026 compatibility in Production Desk runtime"
+    },
+    {
+      "id": "R12-07",
+      "status": "partially_blocked",
+      "next": "Get free verified Google/Yandex impressions/referrer source before publishing attribution claims"
+    },
+    {
+      "id": "R12-09",
+      "status": "active",
+      "next": "Review opt-in qualified briefs, human estimates and receipts weekly"
+    }
+  ],
+  "observed_proxies_2026_10_18": {
+    "window_utc": "2026-10-18 00:00–21:20",
+    "main_host_verified_crawler_requests": {
+      "OAI-SearchBot": {
+        "total": 3,
+        "status_200": 3
+      },
+      "ChatGPT-User": {
+        "total": 10,
+        "status_200": 9,
+        "status_308": 1
+      },
+      "ClaudeBot": {
+        "total": 43,
+        "status_200": 43
+      },
+      "Googlebot": {
+        "total": 76,
+        "status_200": 64,
+        "status_308": 12
+      },
+      "YandexBot": {
+        "total": 5,
+        "status_200": 5
+      }
+    },
+    "mcp_diagnosis_events": 1,
+    "mcp_estimate_events": 1,
+    "new_confirmed_briefs": 0,
+    "warning": "Crawling, calls, or registry listing are not qualified enquiries or payments"
+  },
+  "cost_eur": 0,
+  "production_changes": 0
+}
