@@ -9,6 +9,7 @@ on:
       - ".github/workflows/ai-buyer-findability.yml"
       - "ops/agent_buying_journey_probe.py"
       - "ops/mcp_protocol_era_probe.py"
+      - "ops/role12/**"
       - "references/AI_VENDOR_FIT_EVIDENCE.md"
       - "references/ai-vendor-fit-evidence.json"
       - "AGENTS.md"
@@ -34,6 +35,13 @@ jobs:
         run: python3 ops/mcp_protocol_era_probe.py --offline-test
       - name: Audit modern and legacy MCP capability discovery (read-only)
         run: python3 ops/mcp_protocol_era_probe.py
+      - name: Guard against cross-subdomain crawler false alarms
+        shell: bash
+        run: |
+          mkdir -p out
+          python3 ops/role12/host_scoped_crawlers.py --self-test
+          python3 ops/role12/host_scoped_crawlers.py --input ops/role12/fixtures/oai_searchbot_2026-10-18.json > out/role12-oai-hosts.json
+          python3 -c 'import json; v=json.load(open("out/role12-oai-hosts.json")); x={r["host"]:r for r in v}; assert x["objekts.ai"]["codes"]=={"200":3}; assert x["media.objekts.ai"]["codes"]=={"301":1,"404":2}; print("PASS: OAI-SearchBot root-only status gate")'
       - name: Keep exact status codes for review (short retention)
         if: always()
         uses: actions/upload-artifact@v4
@@ -42,5 +50,6 @@ jobs:
           path: |
             out/agent-buyer-findability.json
             out/mcp_protocol_era.json
+            out/role12-oai-hosts.json
           if-no-files-found: ignore
           retention-days: 3
