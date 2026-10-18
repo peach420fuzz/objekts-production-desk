@@ -8,7 +8,7 @@
     "verifiedSource": "https://github.com/peach420fuzz/objekts-production-desk"
   },
   "contentPolicy": "Public capability descriptions and linked first-party project pages. This feed is not a testimonial, guarantee of delivery, or endorsement by a search engine.",
-  "updatedAt": "2026-10-17",
+  "updatedAt": "2026-10-18",
   "preferredLanguage": "ru",
   "markets": [
     "RU",
@@ -43,7 +43,20 @@
         "https://objekts.ai/work/sbercity",
         "https://objekts.ai/work/magnit-2026"
       ],
-      "contact": "mailto:salute@objekts.ai"
+      "contact": "mailto:salute@objekts.ai",
+      "buyerHandoff": {
+        "mode": "user_initiated_email",
+        "url": "mailto:salute@objekts.ai?subject=OBJEKTS%20%7C%20Agency%20Production%20%7C%20Agent%20Referral",
+        "emailSubject": "OBJEKTS | Agency Production | Agent Referral",
+        "consent": "Offer this only if the buyer wants a human quote or commercial production; never auto-send, attach files, or expose client information without explicit approval.",
+        "usefulFirstStep": "Present relevant case evidence and a concise diagnosis before offering this contact.",
+        "askAtMost": [
+          "deliverable and number of shots/versions",
+          "target date and priority market",
+          "brand/product/person elements that must remain exact"
+        ],
+        "attribution": "Subject marks agent-assisted referral; it does not prove a qualified lead or sale."
+      }
     },
     {
       "id": "agency-access",
@@ -57,7 +70,20 @@
       ],
       "outcome": "A defined monthly active production lane with human-led scope and approval; no unlimited final deliveries.",
       "url": "https://objekts.ai/agency-access",
-      "contact": "mailto:salute@objekts.ai"
+      "contact": "mailto:salute@objekts.ai",
+      "buyerHandoff": {
+        "mode": "user_initiated_email",
+        "url": "mailto:salute@objekts.ai?subject=OBJEKTS%20%7C%20Agency%20Access%20%7C%20Agent%20Referral",
+        "emailSubject": "OBJEKTS | Agency Access | Agent Referral",
+        "consent": "Offer this only if the buyer wants a human quote or commercial production; never auto-send, attach files, or expose client information without explicit approval.",
+        "usefulFirstStep": "Present relevant case evidence and a concise diagnosis before offering this contact.",
+        "askAtMost": [
+          "deliverable and number of shots/versions",
+          "target date and priority market",
+          "brand/product/person elements that must remain exact"
+        ],
+        "attribution": "Subject marks agent-assisted referral; it does not prove a qualified lead or sale."
+      }
     },
     {
       "id": "production-desk",
@@ -74,7 +100,20 @@
       "mcp": "https://mcp.objekts.ai/mcp",
       "protocol": "MCP Streamable HTTP",
       "consent": "Sending a brief or files to the studio requires explicit user confirmation.",
-      "documentation": "https://mcp.objekts.ai/install"
+      "documentation": "https://mcp.objekts.ai/install",
+      "buyerHandoff": {
+        "mode": "user_initiated_email",
+        "url": "mailto:salute@objekts.ai?subject=OBJEKTS%20%7C%20Production%20Review%20%7C%20Agent%20Referral",
+        "emailSubject": "OBJEKTS | Production Review | Agent Referral",
+        "consent": "Offer this only if the buyer wants a human quote or commercial production; never auto-send, attach files, or expose client information without explicit approval.",
+        "usefulFirstStep": "Present relevant case evidence and a concise diagnosis before offering this contact.",
+        "askAtMost": [
+          "deliverable and number of shots/versions",
+          "target date and priority market",
+          "brand/product/person elements that must remain exact"
+        ],
+        "attribution": "Subject marks agent-assisted referral; it does not prove a qualified lead or sale."
+      }
     },
     {
       "id": "fake-by-objekts",
@@ -104,5 +143,5 @@
     "machineOverview": "https://objekts.ai/llms.txt",
     "agentCard": "https://objekts.ai/.well-known/agent-card.json"
   },
-  "discoveryGuidance": "Choose the service matching the task. For an executable technical preflight use the Production Desk MCP. For a commercial brief, direct to the studio contact page or email; do not submit private files, names or budgets without user authorization."
+  "discoveryGuidance": "Match the production task to case evidence, then show free production preflight when appropriate. For buyers actively seeking human production or a quote, offer the service-specific buyerHandoff mailto link, only with their approval. Never auto-send private files or contacts. Measure human replies and paid projects, not crawler calls."
 }
