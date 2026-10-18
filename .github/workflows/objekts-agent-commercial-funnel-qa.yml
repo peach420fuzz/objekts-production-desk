@@ -1,0 +1,22 @@
+name: objekts | Commercial funnel browser smoke
+on:
+  push:
+    paths:
+      - ".github/workflows/objekts-agent-commercial-funnel-qa.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install standalone Chromium for public-site smoke test
+        shell: bash
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Check visible CTA, title, canonical and JS errors without submitting anything
+        shell: bash
+        run: node ops/agent_conversion_smoke.mjs
