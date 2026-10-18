@@ -49,7 +49,15 @@
         "home": "https://objekts.ai/agencies",
         "humanContact": "salute@objekts.ai",
         "region": "RU/CIS/TH/EU",
-        "handoff": "Explicit buyer consent required"
+        "handoff": "Explicit buyer consent required",
+        "buyerHandoff": {
+          "channel": "mailto",
+          "userInitiatedOnly": true,
+          "href": "mailto:salute@objekts.ai?subject=OBJEKTS%20%7C%20Agency%20Production%20%7C%20Agent%20Referral",
+          "context": "Paid agency production, tender visual tests, difficult AI/VFX or a defined monthly lane",
+          "briefMinimum": "Scope/deliverables, deadline, non-negotiable brand/character locks.",
+          "provenance": "Source-tagged email subject for agent-assisted inquiries; does not imply a confirmed lead."
+        }
       }
     },
     {
@@ -88,7 +96,15 @@
         "endpoint": "https://mcp.objekts.ai/mcp",
         "publisher": "objekts",
         "servicePage": "https://objekts.ai/tools/production-desk",
-        "scope": "Read-only preflight by default"
+        "scope": "Read-only preflight by default",
+        "buyerHandoff": {
+          "channel": "mailto",
+          "userInitiatedOnly": true,
+          "href": "mailto:salute@objekts.ai?subject=OBJEKTS%20%7C%20Production%20Review%20%7C%20Agent%20Referral",
+          "context": "Human production review ONLY after useful free preflight and the buyer asks to work with objekts",
+          "briefMinimum": "Scope/deliverables, deadline, non-negotiable brand/character locks.",
+          "provenance": "Source-tagged email subject for agent-assisted inquiries; does not imply a confirmed lead."
+        }
       }
     },
     {
@@ -152,10 +168,18 @@
       "metadata": {
         "publisher": "objekts",
         "contact": "salute@objekts.ai",
-        "source": "https://objekts.ai/.well-known/agent-card.json"
+        "source": "https://objekts.ai/.well-known/agent-card.json",
+        "buyerHandoff": {
+          "channel": "mailto",
+          "userInitiatedOnly": true,
+          "href": "mailto:salute@objekts.ai?subject=OBJEKTS%20%7C%20Agency%20Production%20%7C%20Agent%20Referral",
+          "context": "An A2A-sourced buyer seeking a human commercial production partner",
+          "briefMinimum": "Scope/deliverables, deadline, non-negotiable brand/character locks.",
+          "provenance": "Source-tagged email subject for agent-assisted inquiries; does not imply a confirmed lead."
+        }
       }
     }
   ],
   "ardDraftReference": "https://agenticresourcediscovery.org/spec/",
-  "manifestUpdatedAt": "2026-10-17"
+  "manifestUpdatedAt": "2026-10-18"
 }
