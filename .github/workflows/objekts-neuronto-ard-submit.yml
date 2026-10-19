@@ -1,8 +1,5 @@
 name: objekts | Neuronto ARD publisher update
 on:
-  push:
-    paths:
-      - ".github/workflows/objekts-neuronto-ard-submit.yml"
   workflow_dispatch:
 permissions:
   contents: read
