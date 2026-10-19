@@ -122,6 +122,17 @@ Official editorial instructions require a compact PDF story, not a loose photo o
 
 **Duplicate gate:** existing or pending StudioList, VFX Engine, StudioIndex, Sortlist, Goodfirms and DesignRush status was preserved; no repeat bulk submissions, paid upgrades, false client reviews or copyrighted binary reuploads.
 
+## Owner correction — 19 October 2026: distribution must drive commercial visibility
+
+**Le Marketing & Co podcast deprioritized by the owner.** Small audience reported (~50 subscribers / ~30 views), no credible commercial distribution upside against production workload. Do not book, pursue or count it as a meaningful earned-media placement. The associated Attio task was **deleted** rather than incorrectly marked completed; the historical email record remains for audit. Earlier section of this ledger describing it as an "active high-value editorial opportunity" is superseded by this correction.
+
+**Revised outlet admission test:**
+- The outlet demonstrably serves advertising clients, agency producers, VFX/post supervisors, creative directors or buyers of commercial production; general hobby / micro-audience media are excluded.
+- Record evidence of audience and buyer intent before any outreach. Avoid inventing follower counts, traffic or conversion potential.
+- Reuse verified studio material only with correct scoped credits. First priority: actual publishing on buyer-relevant platforms, then direct brief CTA.
+- Prioritize existing Workspace.ru (confirmed free studio registration from their support; 715 video production providers reported by its current category), Sortlist, Goodfirms, Clutch, Dprofile public portfolios, and appropriate large industry editorials over low-reach podcasts.
+- Separate **LIVE PUBLISHED**, **PENDING MODERATION**, **EDITOR RESPONSE**, and **DRAFT**. Only public accepted URLs are posted as publication wins. Track qualified inquiries and paid deals separately.
+
 ## 19 October 2026 — editorial responses converted into a CRM follow-up queue
 
 **Confirmed positive editorial interest, NOT published yet:**
