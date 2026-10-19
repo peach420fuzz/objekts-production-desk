@@ -11,6 +11,14 @@
 | `objekts-production-desk` | Streamable HTTP | `https://mcp.objekts.ai/mcp` | AI/VFX/CGI/animation production diagnosis and optional budget preflight |
 | `objekts-fake` | Streamable HTTP | `https://fake.objekts.ai/mcp` | FAKE: fictional adult character authoring / continuity |
 
+## MCP protocol-version compatibility gate — verify before Yandex import
+
+**Tested on 2026-10-17:** Production Desk accepted the **MCP 2025-11-25** `initialize` and `tools/list` requests (HTTP 200, seven production tools), but rejected **2026-07-28** `server/discover` and `tools/list` (HTTP 400, JSON-RPC code `-32000`, `Unsupported protocol version: 2026-07-28`). This is [independently verified by an actual read-only POST client](../docs/MCP_PROTOCOL_COMPATIBILITY_2026.md), not inferred from HTTP GET or the presence of the Streamable HTTP URL.
+
+**Transport and protocol version are separate requirements.** Yandex AI Studio documents a Streamable HTTP connector, but its exact MCP version negotiation with this upstream was **not tested in an authorized Yandex tenant**. Do not promise compatibility from transport alone, auto-retry incompatible discovery indefinitely, or create a public gateway to try to work around a version error. At the import stage, require a successful response to `initialize` and a real `tools/list` read under the negotiated version; stop and log the exact protocol error if the Hub only supports the newer stateless handshake. Engineering owners of Production Desk, not the distribution team, must fix underlying compatibility if necessary.
+
+For FAKE by objekts, **test the live endpoint independently**: this Production Desk handshake report does not establish FAKE's supported MCP versions or tool list. Until Yandex actually connects and discovers the tools, both products remain **documented but not installed in Yandex MCP Hub**.
+
 **The first server is an assessment and human-handoff tool, not a video generator. FAKE is a separate character-authoring tool, not a finished-film generator.** Browser surfaces: [Production Desk](https://objekts.ai/tools/production-desk) and [FAKE](https://fake.objekts.ai/studio/).
 
 ## Yandex AI Studio — per-folder MCP Hub import
