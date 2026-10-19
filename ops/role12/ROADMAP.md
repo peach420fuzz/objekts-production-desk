@@ -1,5 +1,5 @@
 # OBJEKTS · 12 — Search & AI Visibility
-## Working roadmap · v1.2 · 2026-10-20
+## Working roadmap · v1.3 · 2026-10-20
 
 **Owner:** Role 12 / Search & AI Visibility. **Market priority:** RU → CIS → international / Thailand / SEA. **Outcome:** inbound commercial briefs attributable to organic search or AI-assisted discovery, with a defensible evidence chain. **Operating constraint:** free surfaces only; no commercial purchases, production-site change without owner approval, unsolicited outreach or new CRM submissions. Do not duplicate role 09 (media), 11 (agent registries), 13 (editorial), 21 (Agency Access buyer campaigns), or Production Desk/runtime ownership.
 
@@ -52,6 +52,12 @@ Read-only Cloudflare GraphQL `httpRequestsAdaptiveGroups`, 00:00–21:20 UTC, ve
 4. If production code or paid connection is needed, file a clearly reproducible bounded blocker for the responsible owner. Do not silently deploy or pay.
 5. Report only genuinely new actions and **separately**: published, crawled, indexed, found for a query, real tool use, qualified lead, paid invoice. Never merge the stages.
 
+### 20 October 2026 — R12-03 inbound measurement started
+
+- Updated [buyer guide](../../references/ru-vfx-plate-preservation-buyer-guide.md) with an **optional `mailto:` link** for a bounded paid production estimate, prefilled with a source marker `OBJ-R12-PLATE-2026`; opening a local draft neither sends an email nor shares assets automatically. Free Production Desk preflight is explicitly distinct from any paid PoC.
+- First exact Gmail search `in:anywhere subject:\"OBJ-R12-PLATE-2026\"` returned **0** on 20 October. The marker reports *document-origin*, not verified Google/Yandex/LLM attribution; source remains uncertain unless sender/analytics corroborate it.
+- Read-only [CI validation of opt-in copy and source boundaries](https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39336115022) passed. No automatic marketing email or buyer contact submitted. Stage R12-03 remains **IN PROGRESS**, pending genuine inbound event and independent source verification.
+
 ### 20 October 2026 — R12-02 completed
 
 - Queried 12 nonbranded commercial-intent phrases with per-query country/language constraints (8 RU, 2 English, 2 Thai), saved [sampled returned domains and source URLs](search_12_queries_2026-10-20.json). **objekts appeared in 0 of 12 returned result sets**. This is *one search provider sample*, not definitive Google/Yandex rankings or demand volume.
@@ -60,6 +66,7 @@ Read-only Cloudflare GraphQL `httpRequestsAdaptiveGroups`, 00:00–21:20 UTC, ve
 - **Next step R12-03:** instrument or derive verifiable *human* acquisition attribution from existing free, authorized sources; until then do not call any MCP bot event a lead. Treat requests to the buyer answer as crawler reachability only, and avoid new site changes without owner permission.
 
 ### Changelog
+- **2026-10-20 v1.3:** R12-03 started with human opt-in source-marker CTA in buyer guide, zero corresponding email baseline, and successful GitHub Action receipt. This is evidence of a measurement route, not customer acquisition.
 - **2026-10-20 v1.2:** R12-02 DONE, concrete 12-query search baseline + source-linked RU buyer question answer published, tested independently and referenced from agent entrypoints. R12-03 promoted to next priority.
 - **2026-10-18 v1.1:** R12-01 **DONE**, external GitHub Action run 39168307086 succeeded with 5 multi-host segregation assertions and actual OAI fixture. Existing monitors still passed 16/17 checks (1 known English Markdown warning). R12-02 started: sampled nonbranded commercial-problem searches expose strong competing answers (exact rank/index impact not established). No new leads.
 - **2026-10-18 v1.0:** Roadmap created; corrected OAI SearchBot false alarm after host-scoped Cloudflare analysis, moved action to host-scoped analytics. The ongoing EN Markdown warning and MCP #101 are distinct issues, not new content pitches.
