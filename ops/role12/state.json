@@ -49,8 +49,8 @@
   "open": [
     {
       "id": "R12-03",
-      "status": "in_progress",
-      "next": "Read-only evaluate buyer path and classify genuine opt-in enquiries separately from repeated automated NL diagnostics; record evidence of acquisition or verify unknown source, with no lead submissions or paid analytics."
+      "status": "in_progress; opt-in content-origin attribution active",
+      "next": "Track opt-in email subject marker OBJ-R12-PLATE-2026 and corroborate voluntary stated source/referrer before counting a search/LLM-origin qualified lead. Keep all submission and contact actions buyer-initiated."
     },
     {
       "id": "R12-04",
@@ -120,5 +120,15 @@
     "search_index_confirmation": false,
     "confirmed_new_paid_jobs": 0,
     "warning": "Search sample not authenticated search ranking; public Markdown is not proof of indexing or buyer contact"
+  },
+  "conversion_experiment_2026_10_20": {
+    "source_asset": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/references/ru-vfx-plate-preservation-buyer-guide.md",
+    "campaign_subject_marker": "OBJ-R12-PLATE-2026",
+    "mechanism": "voluntary mailto local email draft; no automatic send, no cookies, no paid service",
+    "zero_baseline_gmail": "0 messages with exact subject marker at first check 2026-10-20",
+    "consent_required": true,
+    "attribution_scope": "This document as indicated by manually sent email subject only; not proven AI or search referral",
+    "verification": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39336115022",
+    "real_qualified_leads": 0
   }
 }
