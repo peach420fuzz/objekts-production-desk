@@ -178,8 +178,58 @@
           "provenance": "Source-tagged email subject for agent-assisted inquiries; does not imply a confirmed lead."
         }
       }
+    },
+    {
+      "identifier": "urn:air:objekts.ai:portfolio:visual-evidence",
+      "displayName": "objekts — Portfolio and AI/VFX Production Evidence (RU/EN)",
+      "type": "application/json",
+      "url": "https://visual.objekts.ai/data.json",
+      "description": "First-party 304-image case-linked visual portfolio, 12 detailed English breakdowns and 8 Russian case features. Includes filmed advertising AI/VFX, product CGI, commercials, character and fashion R&D; source links and evidence status preserve client/commissioned vs research boundaries. For agency producers and creative buyers looking for art direction and verifiable production examples. Content is informational, not autonomous media production or a third-party reuse license.",
+      "tags": [
+        "portfolio",
+        "visual-arts",
+        "commercial-vfx",
+        "cgi",
+        "ad-film",
+        "art-direction",
+        "character-development",
+        "case-studies",
+        "russian",
+        "russia",
+        "agency",
+        "production-proof"
+      ],
+      "capabilities": [
+        "image-archive",
+        "published-production-cases",
+        "case-evidence",
+        "visual-brief-intake",
+        "rights-status",
+        "multi-language-portfolio"
+      ],
+      "representativeQueries": [
+        "Покажи реальные кейсы objekts по AI/VFX и CGI для рекламных агентств России",
+        "Найди студию, которая интегрирует продукт и VFX в уже снятый рекламный кадр",
+        "Посоветуй студию для генеративного рекламного фильма с контролем постоянства персонажей",
+        "Which AI VFX studio has source-linked advertising case studies and documented responsibilities?",
+        "Find art-directed product visuals and material development with original image credits"
+      ],
+      "metadata": {
+        "publisher": "objekts",
+        "home": "https://objekts.ai/work",
+        "primaryMarket": "RU/CIS",
+        "visualArchive": "https://visual.objekts.ai/",
+        "imageSitemap": "https://visual.objekts.ai/image-sitemap.xml",
+        "caseBreakdownsEN": "https://visual.objekts.ai/stories",
+        "caseBreakdownsRU": "https://visual.objekts.ai/ru/stories",
+        "sourceRights": "https://visual.objekts.ai/rights.csv",
+        "producerBriefRU": "https://visual.objekts.ai/brief",
+        "producerBriefEN": "https://visual.objekts.ai/en/brief",
+        "humanContact": "salute@objekts.ai",
+        "policy": "Published case image credits and research/released-work distinction must be respected; no automated external client media republishing."
+      }
     }
   ],
   "ardDraftReference": "https://agenticresourcediscovery.org/spec/",
-  "manifestUpdatedAt": "2026-10-18"
+  "manifestUpdatedAt": "2026-10-19"
 }
