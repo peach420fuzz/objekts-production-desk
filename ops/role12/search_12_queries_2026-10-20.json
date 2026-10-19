@@ -2,7 +2,7 @@
   "schema_version": "objekts.role12.buyer-intent-search-sample.v1",
   "checked_on": "2026-10-20",
   "provider": "TinyFish public web search; localized by query, location and language",
-  "method": "One public search page (page=0), up to 10 returned results; position is provider result index only, NOT verified Google/Yandex ranks; no authenticated Search Console impressions or conversion data",
+  "method": "One public search page (page=0), up to 10 returned results; position is provider result index only, NOT verified Google/Yandex ranks; no authenticated Search Console impressions or conversion data; Thai top-three URLs rechecked separately on same date after initial compressed capture.",
   "sampled_queries": 12,
   "reported_objekts_mentions_in_sample": 0,
   "caveats": [
@@ -183,8 +183,8 @@
       "objekts_seen_in_returned_sample": false,
       "obs_rank": null,
       "top3_result_urls": [
-        "https://www.facebook.com/iam.kkem/",
-        "https://www.facebook.com/peesamac/",
+        "https://www.facebook.com/iam.kkem/posts/%E0%B8%A5%E0%B8%B7%E0%B8%A1-ai-%E0%B8%A7%E0%B8%B4%E0%B8%94%E0%B8%B5%E0%B9%82%E0%B8%AD%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1%E0%B9%84%E0%B8%9B%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%80%E0%B8%A5%E0%B8%A2-%E0%B9%80%E0%B8%9C%E0%B8%A2%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3%E0%B8%A5%E0%B8%B1%E0%B8%9A-hybrid-workflow-%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B8%89%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%99%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%81%E0%B8%A3%E0%B8%B4%E0%B8%9A%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B8%9C%E0%B8%B9%E0%B9%89/1551279456789431/",
+        "https://www.facebook.com/peesamac/videos/kling-ai-26-motion-control/1343125724250561/",
         "https://kling.ai/th/explore/cine_studio"
       ],
       "first_party_case_for_fit": "https://objekts.ai/en/work/magnit-2026"
@@ -199,7 +199,7 @@
       "objekts_seen_in_returned_sample": false,
       "obs_rank": null,
       "top3_result_urls": [
-        "https://www.facebook.com/GraphicIncomee/",
+        "https://www.facebook.com/GraphicIncomee/posts/4-%E0%B8%82%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B8%95%E0%B8%AD%E0%B8%99-%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%82%E0%B8%86%E0%B8%A9%E0%B8%93%E0%B8%B2-product-vfx-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-ai%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%84%E0%B8%AD%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B9%83%E0%B8%99%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B9%82%E0%B8%86%E0%B8%A9%E0%B8%93%E0%B8%B2%E0%B9%80%E0%B8%84%E0%B8%A5/818995090453611/",
         "https://www.instagram.com/reel/DapPzGxSnU6/",
         "https://www.visionstory.ai/th/solutions/service-agency/ad-creative-production"
       ],
