@@ -1,0 +1,209 @@
+{
+  "schema_version": "objekts.role12.buyer-intent-search-sample.v1",
+  "checked_on": "2026-10-20",
+  "provider": "TinyFish public web search; localized by query, location and language",
+  "method": "One public search page (page=0), up to 10 returned results; position is provider result index only, NOT verified Google/Yandex ranks; no authenticated Search Console impressions or conversion data",
+  "sampled_queries": 12,
+  "reported_objekts_mentions_in_sample": 0,
+  "caveats": [
+    "No occurrence in this sample does not prove the pages are not indexed",
+    "Search results are dynamic; metadata and local market ranking may differ",
+    "Competitor mentions do not imply verified quality or pricing",
+    "Different localized queries are not equal measures of search demand",
+    "No traffic, leads or revenue can be inferred"
+  ],
+  "records": [
+    {
+      "id": "RU01",
+      "country": "RU",
+      "language": "ru",
+      "query": "VFX студия заменить окружение в отснятом рекламном ролике актёры камера Москва",
+      "results_in_sample": 10,
+      "buyer_need": "plate-set",
+      "objekts_seen_in_returned_sample": false,
+      "obs_rank": null,
+      "top3_result_urls": [
+        "https://champvideo.pro/vfx-studiya-vizualnykh-effektov",
+        "https://sfvp.ru/",
+        "https://animation-studios.com/ru/news/cgi-i-vfx-v-sovremennom-videoproizvodstve"
+      ],
+      "first_party_case_for_fit": "https://objekts.ai/en/work/magnit-2026"
+    },
+    {
+      "id": "RU02",
+      "country": "RU",
+      "language": "ru",
+      "query": "студия VFX замена упаковки этикетки на готовом рекламном видео без пересъемки",
+      "results_in_sample": 10,
+      "buyer_need": "packaging",
+      "objekts_seen_in_returned_sample": false,
+      "obs_rank": null,
+      "top3_result_urls": [
+        "https://sxema3d.com/vfx_ru",
+        "https://champvideo.pro/vfx-studiya-vizualnykh-effektov",
+        "https://svyazi-agency.ru/landing/motion/vfx"
+      ],
+      "first_party_case_for_fit": "https://objekts.ai/en/work/magnit-2026"
+    },
+    {
+      "id": "RU03",
+      "country": "RU",
+      "language": "ru",
+      "query": "заменить лето на зиму в отснятом рекламном ролике AI VFX продакшн заказать",
+      "results_in_sample": 9,
+      "buyer_need": "season",
+      "objekts_seen_in_returned_sample": false,
+      "obs_rank": null,
+      "top3_result_urls": [
+        "https://adpass.ru/kak-s-pomoshhyu-virtual-production-snyat-letnyuyu-reklamu-v-snezhnoj-moskve-kejs-avito-spot-i-sberstudios/",
+        "https://www.instagram.com/reel/Dcvqt_sIDdP/",
+        "https://www.youtube.com/watch?v=MQ9_yEKRAuY"
+      ],
+      "first_party_case_for_fit": "https://objekts.ai/en/work/sbercity"
+    },
+    {
+      "id": "RU04",
+      "country": "RU",
+      "language": "ru",
+      "query": "заказать AI рекламу одного персонажа в нескольких сценах сохранить лицо одежду",
+      "results_in_sample": 10,
+      "buyer_need": "character",
+      "objekts_seen_in_returned_sample": false,
+      "obs_rank": null,
+      "top3_result_urls": [
+        "https://www.sostav.ru/blogs/289944/99985",
+        "https://www.klerk.ru/blogs/ranvik/709144/",
+        "https://neiro.unisender.com/nejrosetej-dlya-sozdaniya-ii-personazha/"
+      ],
+      "first_party_case_for_fit": "https://objekts.ai/en/work/voting"
+    },
+    {
+      "id": "RU05",
+      "country": "RU",
+      "language": "ru",
+      "query": "студия композитинг CGI магазин окружение вокруг снятых актеров камера Москва",
+      "results_in_sample": 7,
+      "buyer_need": "plate-set",
+      "objekts_seen_in_returned_sample": false,
+      "obs_rank": null,
+      "top3_result_urls": [
+        "https://animation-studios.com/ru/vfx-and-cgi",
+        "https://resonantarts.com/video_production/post_production/compositing/",
+        "https://animation.su/vfx-cgi"
+      ],
+      "first_party_case_for_fit": "https://objekts.ai/en/work/magnit-2026"
+    },
+    {
+      "id": "RU06",
+      "country": "RU",
+      "language": "ru",
+      "query": "AI VFX продакшн доработать рекламный ролик исходное видео монтаж цветокоррекция",
+      "results_in_sample": 10,
+      "buyer_need": "post",
+      "objekts_seen_in_returned_sample": false,
+      "obs_rank": null,
+      "top3_result_urls": [
+        "https://www.youtube.com/watch?v=6-SG4qRuPoY",
+        "https://www.sostav.ru/blogs/290917/97360",
+        "https://champvideo.pro/ii-production"
+      ],
+      "first_party_case_for_fit": "https://objekts.ai/en/work/sbercity"
+    },
+    {
+      "id": "RU07",
+      "country": "RU",
+      "language": "ru",
+      "query": "сделать рекламный AI ролик точная геометрия товара логотип без искажений студия",
+      "results_in_sample": 10,
+      "buyer_need": "packaging",
+      "objekts_seen_in_returned_sample": false,
+      "obs_rank": null,
+      "top3_result_urls": [
+        "https://www.sostav.ru/blogs/287092/93116",
+        "https://vc.ru/ai/3098834-sozdanie-video-tovara-cherez-neyroset",
+        "https://turbologo.ru/generator-video-ai"
+      ],
+      "first_party_case_for_fit": "https://objekts.ai/en/work/magnit-2026"
+    },
+    {
+      "id": "RU08",
+      "country": "RU",
+      "language": "ru",
+      "query": "разработка одного сложного AI VFX шота для рекламного ролика продакшн заказать",
+      "results_in_sample": 10,
+      "buyer_need": "shot",
+      "objekts_seen_in_returned_sample": false,
+      "obs_rank": null,
+      "top3_result_urls": [
+        "https://svyazi-agency.ru/landing/motion/ai",
+        "https://www.completo.ru/ai-prodakshn/",
+        "https://sxema3d.com/ai_ru"
+      ],
+      "first_party_case_for_fit": "https://objekts.ai/en/work/sbercity"
+    },
+    {
+      "id": "EN01",
+      "country": "US",
+      "language": "en",
+      "query": "VFX studio replace existing filmed retail set keep actors camera unchanged commercial",
+      "results_in_sample": 10,
+      "buyer_need": "plate-set",
+      "objekts_seen_in_returned_sample": false,
+      "obs_rank": null,
+      "top3_result_urls": [
+        "https://www.youtube.com/watch?v=aKRcGoc_osQ",
+        "https://www.linkedin.com/posts/whiteapplestudios_vfx-has-now-replaced-actors-no-vfx-doesn-activity-7450768991142363136-Hl6W",
+        "https://ngproductionfilms.com/how-custom-sets-make-commercial-videos-more-memorable/"
+      ],
+      "first_party_case_for_fit": "https://objekts.ai/en/work/magnit-2026"
+    },
+    {
+      "id": "EN02",
+      "country": "GB",
+      "language": "en",
+      "query": "advertising production studio CGI AI preserve exact product packaging logo across shots",
+      "results_in_sample": 6,
+      "buyer_need": "packaging",
+      "objekts_seen_in_returned_sample": false,
+      "obs_rank": null,
+      "top3_result_urls": [
+        "https://maverickframe.com/services/ai-video-production/",
+        "https://oneingage.com/blog/cgi-and-ai-brand-visuals",
+        "https://www.facebook.com/optimizingwithai/posts/this-entire-ad-is-ai-no-cgi-studio-no-vfx-team-just-prompts-a-reference-image-an/122182429760851557/"
+      ],
+      "first_party_case_for_fit": "https://objekts.ai/en/work/magnit-2026"
+    },
+    {
+      "id": "TH01",
+      "country": "TH",
+      "language": "th",
+      "query": "สตูดิโอ AI VFX โฆษณา เปลี่ยนฉากวิดีโอ รักษานักแสดง กล้องเดิม",
+      "results_in_sample": 10,
+      "buyer_need": "plate-set",
+      "objekts_seen_in_returned_sample": false,
+      "obs_rank": null,
+      "top3_result_urls": [
+        "https://www.facebook.com/iam.kkem/",
+        "https://www.facebook.com/peesamac/",
+        "https://kling.ai/th/explore/cine_studio"
+      ],
+      "first_party_case_for_fit": "https://objekts.ai/en/work/magnit-2026"
+    },
+    {
+      "id": "TH02",
+      "country": "TH",
+      "language": "th",
+      "query": "บริษัทผลิตโฆษณา AI VFX รักษาบรรจุภัณฑ์โลโก้ ตัวละครหลายฉาก",
+      "results_in_sample": 8,
+      "buyer_need": "packaging",
+      "objekts_seen_in_returned_sample": false,
+      "obs_rank": null,
+      "top3_result_urls": [
+        "https://www.facebook.com/GraphicIncomee/",
+        "https://www.instagram.com/reel/DapPzGxSnU6/",
+        "https://www.visionstory.ai/th/solutions/service-agency/ad-creative-production"
+      ],
+      "first_party_case_for_fit": "https://objekts.ai/en/work/magnit-2026"
+    }
+  ]
+}
