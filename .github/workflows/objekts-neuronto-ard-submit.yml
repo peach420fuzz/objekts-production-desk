@@ -1,17 +1,64 @@
-name: objekts | Neuronto ARD commercial discovery audit
+name: objekts | Neuronto ARD publisher update
 on:
+  push:
+    paths:
+      - ".github/workflows/objekts-neuronto-ard-submit.yml"
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
-  verify:
+  announce:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 5
     steps:
-      - name: Verify official ARD publication
+      - name: Check growing ARD catalog contract
+        shell: bash
         run: |
-          curl -fsSL --max-time 20 -A 'Mozilla/5.0' https://objekts.ai/.well-known/ard.json | python3 -c 'import sys,json; d=json.load(sys.stdin); assert d["specVersion"]=="1.0" and len(d["entries"])==4; print("ARD verified:",len(d["entries"]))'
-      - name: Link to source-specific submitted audit
+          set -euo pipefail
+          curl -fsSL --max-time 20 -A 'Mozilla/5.0' https://objekts.ai/.well-known/ard.json -o ard.json
+          python3 - <<'PY'
+          import json
+          d=json.load(open('ard.json'))
+          required={
+            'urn:air:objekts.ai:service:commercial-visual-production',
+            'urn:air:objekts.ai:server:production-desk',
+            'urn:air:objekts.ai:server:fake',
+            'urn:air:objekts.ai:agent:visual-production-router'
+          }
+          found=[x['identifier'] for x in d['entries']]
+          assert d['specVersion']=='1.0' and required.issubset(found)
+          assert len(found)==len(set(found))
+          assert all(2<=len(x.get('representativeQueries',[]))<=5 for x in d['entries'])
+          print('Live ARD valid; entries:',len(found),'required verified:',len(required))
+          PY
+      - name: Update existing domain in Neuronto (not a new publisher)
+        shell: bash
         run: |
-          echo 'Accepted: https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39064558779'
-          echo 'Rechecked: https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39064691930'
+          set -euo pipefail
+          printf '%s' '{"domain":"objekts.ai"}' > input.json
+          http="$(curl -sS --max-time 90 -o submission.json -w '%{http_code}' -H 'content-type: application/json' -X POST https://neuronto.com/submit --data-binary @input.json)"
+          echo "NEURONTO_SUBMIT_HTTP: $http"
+          python3 - <<'PY'
+          import json
+          x=json.load(open('submission.json'))
+          print('NEURONTO_SUBMIT_STATUS:',x.get('status'))
+          print('NEURONTO_SUBMISSION_ID:',x.get('submissionId') or x.get('id'))
+          print('NEURONTO_ERROR:',x.get('error'))
+          print('NEURONTO_NOTE:',str(x.get('message'))[:600])
+          PY
+          case "$http" in 200|201|202|409) ;; *) exit 1;; esac
+      - name: Read-only buyer-discovery audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          http="$(curl -sS --max-time 100 -o audit.json -w '%{http_code}' -H 'content-type: application/json' -X POST https://neuronto.com/audit -d '{"domain":"objekts.ai"}')"
+          echo "NEURONTO_AUDIT_HTTP: $http"
+          python3 - <<'PY'
+          import json
+          x=json.load(open('audit.json'))
+          print('NEURONTO_SCORE:',x.get('score',{}).get('total'))
+          print('NEURONTO_COVERAGE:',json.dumps(x.get('coverage'),ensure_ascii=False)[:1600])
+          print('NEURONTO_QUERIES:',json.dumps(x.get('competition',{}).get('summary'),ensure_ascii=False))
+          print('NEURONTO_RECOMMENDATIONS:',json.dumps(x.get('recommendations',[])[:3],ensure_ascii=False)[:2400])
+          PY
+          test "$http" = "200"
