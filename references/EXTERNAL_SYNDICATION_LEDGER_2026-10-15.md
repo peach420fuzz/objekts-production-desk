@@ -122,6 +122,17 @@ Official editorial instructions require a compact PDF story, not a loose photo o
 
 **Duplicate gate:** existing or pending StudioList, VFX Engine, StudioIndex, Sortlist, Goodfirms and DesignRush status was preserved; no repeat bulk submissions, paid upgrades, false client reviews or copyrighted binary reuploads.
 
+## 19 October 2026 — editorial responses converted into a CRM follow-up queue
+
+**Confirmed positive editorial interest, NOT published yet:**
+
+- **Le Marketing & Co (RU podcast):** 17 Oct incoming email from host Marina Skachek explicitly invites objekts to record a Russian-language episode on practical AI production, budgets and where CG/compositing remains necessary. Incoming Gmail ID `1a14a1b98c5e9cd1`. On 19 Oct, reply send failed twice, Gmail draft creation also failed; sent-folder check showed **no completed reply**. **Never mark as replied/booked.** Next action: reply in the same thread as soon as studio Gmail write capability recovers; request 2–3 Zoom slots and expected duration. Slot confirmation requires studio approval.
+- **The AI Art Magazine No. 4:** 18 Oct editor confirmed collective/studio credit “objekts” and shared studio contact email are accepted, incoming Gmail ID `1a14ef034cbde364`. They explicitly require formal one-work submission through [Artist Space](https://space.art-magazine.ai/). Editorial email is **not** an application. Public concept: [The Invisible Silhouette](https://objekts.ai/en/work/fashion-in-motion). Deadline 1 Nov 2026; obtain existing account authorization and verify visual rights before uploading.
+
+**Operational progress:** created an Attio CRM list **`15 — Earned Media & Portfolio Distribution`** (`objekts_15_earned_media`), added the existing MariCleo/Le Marketing & Co and AI Art Magazine contact records, and attached dated notes with verbatim evidence and outstanding constraints. Created two assigned Attio tasks: podcast confirmation due 21 Oct (`314bd5b6-8e92-43e3-b656-b3ad3d2eabde`), magazine formal entry due 29 Oct (`2e4d89dc-9ab4-470d-af1f-f369365797c8`). These CRM actions do not create external publications.
+
+**Distribution discipline:** don't shift from five active RSS Amplifier listings to imaginary cross-platform placements. Keep requests constrained to distinct third-party publications, official editor responses and rights-safe first-party material.
+
 ## Not completed / blocked
 
 | Channel | Current evidence | Decision |
