@@ -1,6 +1,6 @@
 {
   "schema_version": "objekts.role12.roadmap_state.v1",
-  "updated_on": "2026-10-18",
+  "updated_on": "2026-10-20",
   "mandate": "Organic search and AI-assisted buyer discovery, evidence-backed qualification and inbound attribution; Russia first, SEA and global additional. No editorial outreach and no agent-registry duplication.",
   "owner_constraints": [
     "Free channels; no paid API or registration",
@@ -9,7 +9,7 @@
     "Case sources: SberCity, Magnit, Voting/Stepan; Auto.ru development only",
     "Do not use Cordiant, Made Sense, SmartFruits in role12 assets"
   ],
-  "current_stage": "R12-02 RU buyer intent discovery benchmark",
+  "current_stage": "R12-03: validate real buyer contact path and acquisition attribution without test submissions",
   "completed": {
     "R12-00": {
       "status": "done",
@@ -28,18 +28,29 @@
       "status": "live elsewhere",
       "receipt": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39065450471",
       "note": "ARD is live; Neuronto returned in sampled queries, 5 other registries not confirmed"
+    },
+    "R12-02": {
+      "status": "done",
+      "when": "2026-10-20",
+      "query_count": 12,
+      "markets": {
+        "RU": 8,
+        "EN": 2,
+        "TH": 2
+      },
+      "objekts_seen_in_returned_sample": 0,
+      "limitation": "One localized public SERP provider sample, generally top 10 results; not Google/Yandex ranking or impressions",
+      "query_receipt": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/search_12_queries_2026-10-20.json",
+      "buyer_asset": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/references/ru-vfx-plate-preservation-buyer-guide.md",
+      "independent_ci": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39335764135",
+      "public_read_verified": true
     }
   },
   "open": [
     {
-      "id": "R12-02",
-      "status": "in_progress",
-      "next": "Record 12 nonbrand high-intent queries by market and matched source URLs; separate search sample presence from real rank/impressions"
-    },
-    {
       "id": "R12-03",
       "status": "in_progress",
-      "next": "Determine if browser preflight leads to opt-in human briefing without artificial test submission"
+      "next": "Read-only evaluate buyer path and classify genuine opt-in enquiries separately from repeated automated NL diagnostics; record evidence of acquisition or verify unknown source, with no lead submissions or paid analytics."
     },
     {
       "id": "R12-04",
@@ -95,5 +106,19 @@
     "warning": "Crawling, calls, or registry listing are not qualified enquiries or payments"
   },
   "cost_eur": 0,
-  "production_changes": 0
+  "production_changes": 0,
+  "current_sample_2026_10_20": {
+    "queries": 12,
+    "locale_distribution": {
+      "Russia": 8,
+      "English": 2,
+      "Thailand": 2
+    },
+    "matched_objekts_results": 0,
+    "public_materials_published": 1,
+    "verified_source_access": true,
+    "search_index_confirmation": false,
+    "confirmed_new_paid_jobs": 0,
+    "warning": "Search sample not authenticated search ranking; public Markdown is not proof of indexing or buyer contact"
+  }
 }
