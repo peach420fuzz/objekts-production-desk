@@ -180,6 +180,20 @@ These matter for audience development and AI search, but claims of leads, indepe
 4. Produce a project-level matrix of **PUBLISHED LIVE / ACCOUNT ACCESS REQUIRED / RIGHTS REVIEW / PENDING**. Commercial effect is measured by qualified producer briefs and payments; not mere RSS records, indexed snippets or technical declarations.
 
 
+## 19 October 2026 — gallery image schema and search submission QA
+
+**Live code deployment verified:** updated the standalone public visual index Cloudflare Worker used by `visual.objekts.ai` to emit `schema.org/CollectionPage` / `ItemList` / `ImageObject` JSON-LD on all ten server-rendered image gallery pages. Each image describes an original `objekts.ai/media` URL, the originating case URL (`isBasedOn`), project name, source role (`creditText`) and evidence status, preserving commissioned/R&D boundaries. The site contains **304** source-linked images (31 commercial, 139 product/fashion, 134 character/production/research). A post-deploy external fetch confirmed gallery routes still load. HTML extractor stripped scripts, so **independent external schema-rendering validation was not achieved**; worker source includes the new JSON-LD generator and exact call in `vc`.
+
+**Public case accuracy and producer CTA:** revised the English `storyPage` template (12 EN case pages), replacing a misleading blanket claim that objekts performs physical "shooting" with a scoped description of integrating approved footage, CGI, AI VFX, compositing and animation. Added English and Russian production-brief URLs to the 12 EN and 8 RU articles respectively. Post-deploy external fetch verified the new copy on [Magnit EN](https://visual.objekts.ai/stories/magnit-hybrid-vfx) and [Magnit RU](https://visual.objekts.ai/ru/stories/magnit-hybrid-vfx). Credits remain governed by original source project pages.
+
+**IndexNow one-shot attempt (not accepted):** existing `visual.objekts.ai` root IndexNow key endpoint passed public key-file check. A single 15-URL batch (gallery index, category pagination, two producer briefs and article indexes) was sent to official `https://api.indexnow.org/indexnow` from a temporary one-time worker endpoint. Result **HTTP 429 TooManyRequests**, explicitly rejected; no indexing or acceptance claimed. The temporary submission route was removed and cleanup deployment confirmed. **Do not retry today or rotate keys to defeat the rate limit.** Existing [sitemap](https://visual.objekts.ai/sitemap.xml) and [image sitemap](https://visual.objekts.ai/image-sitemap.xml) remain public.
+
+**External curated GitHub attempt not accepted:** found [Awesome Creative Technology](https://github.com/j0hnm4r5/awesome-creative-technology) curated directory; the objekts studio genuinely fits its *Creative Agencies* section and was not present in its issue tracker. Attempt to create a standard `[Add]` issue via connected GitHub returned **403 Resource not accessible by integration**. Zero PRs or issues published in that repository; no workarounds to the integration permission boundary.
+
+**Account access recheck:** Opera Browser Connector still says browser not connected; Metricool blog ID 7422166 still has no social networks connected; Adobe connector still returns an internal error; TinyFish default profile has zero sites signed in and a negative wallet. Consequently no authenticated Pinterest, Behance, Are.na or Yandex Business publication can be honestly claimed in this session.
+
+**Editorial priority:** do not chase vanity podcasts. This department owns actual image-platform uploads, properly tagged portfolio case pages, discovery for search/agents (without inventing search-engine endorsements), Yandex Business subject to real location policy, and eventually buyer-qualified inquiries.
+
 ## Not completed / blocked
 
 | Channel | Current evidence | Decision |
