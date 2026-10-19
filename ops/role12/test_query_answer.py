@@ -26,7 +26,10 @@ for phrase in ("https://objekts.ai/ru/work/sbercity",
                "https://objekts.ai/ru/tools/production-desk",
                "https://objekts.ai/ru/contact",
                "salute@objekts.ai",
-               "не предлагает бесплатное производство"):
+               "не предлагает бесплатное производство",
+               "OBJ-R12-PLATE-2026",
+               "ничего не отправляется автоматически",
+               "не доказывает переход из Google"):
     assert phrase in guide, "Missing grounded proof/consent/price boundary: " + phrase
 
 for path in ("AGENTS.md", "README.md"):
