@@ -144,6 +144,42 @@ Official editorial instructions require a compact PDF story, not a loose photo o
 
 **Distribution discipline:** don't shift from five active RSS Amplifier listings to imaginary cross-platform placements. Keep requests constrained to distinct third-party publications, official editor responses and rights-safe first-party material.
 
+## 19 October 2026 — owner scope correction: full visual distribution
+
+**Owner-assigned scope:** OBJEKTS 15 must own public visual distribution and creative-platform publishing (**Behance, Pinterest, Are.na, industry visual portfolios**), LLM/agent-readable image attribution, relevant public agent communities, and the public-facing **Yandex Business** studio card. Editorial pitching is secondary to actual verified placements and qualified producer enquiries. This supersedes repetitive generic outreach.
+
+### Verified production actions on 19 October
+
+- Published the **fifth first-party Agentic Resource Discovery resource** `urn:air:objekts.ai:portfolio:visual-evidence` at [objekts.ai/.well-known/ard.json](https://objekts.ai/.well-known/ard.json). Live document has five entries, not four, and explicitly links 304 images, 12 EN cases, 8 RU cases, rights manifest and case-grounded commercial producer brief. Commit `06fdbe4b1f4d7e0459df111d17adc9f8c1817f7e`.
+- Updated the [root-domain crawler registry](https://objekts.ai/data/crawler-registry.json), linking source image sitemap, visual case indexes, 304 image sources, source rights, buyer intents for RU/CIS and English. Live registry independently fetched with `portfolioDiscovery.imageCount = 304`. Commit `4137de128516e6e48e53d434efe23101478c4709`. These are **first-party data publications**, not new external social network profiles.
+- Live Cloudflare bot-management audit: `ai_bots_protection=disabled`, `crawler_protection=disabled`, `fight_mode=false`, `enable_js=false`. Public robots.txt lists OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, YandexBot, Bingbot, Googlebot etc. No positive evidence that Cloudflare bot-management controls block AI search on this zone; search indexing itself still unverified.
+- Inspected zone DNS: three Google site verification TXT records are present. No **Pinterest** or **Yandex** verification TXT was found in the inspected 17 DNS records. Absence of such TXT does **not** prove an account isn't verified by other methods.
+
+### Existing independent external pages rediscovered and verified
+
+These pages predate the current pass; **not newly created or double-counted**:
+- [Clawprint — How an agent should route a complex visual-production brief](https://clawprint.org/p/how-an-agent-should-route-a-complex-visual-production-brief) — first-party studio agent article, verified public
+- [DiraBook — objekts-studio-agent profile and several posts](https://dirabook.com/a/objekts-studio-agent) — verified public, 5 Oct and older posts
+- [AMW Video Production Companies — objekts listing](https://amworldgroup.com/directory/video-production-companies/objekts) — verified live supplier card
+
+These matter for audience development and AI search, but claims of leads, independent endorsements or new 19-Oct publications would be false. The confirmed domains expand the verified historical footprint beyond the single RSS Amplifier domain.
+
+### Connection and eligibility blockers: do not invent publication
+
+- **Behance:** Adobe's connector initialization returned an internal error; no verified writable Behance Adobe ID. Actual project publication requires an authenticated verified Adobe ID. Public search finds unrelated namesakes; never post as another owner.
+- **Pinterest:** Metricool blog ID `7422166` reports **no social network connected**. Studio has 200 + 104 existing CSV source records, three image RSS topic feeds and 304 rights-categorized assets, but **zero confirmed pins**. Per [Pinterest Business RSS guide](https://help.pinterest.com/ru/business/article/auto-publish-pins-from-your-rss-feed), auto-publishing requires a claimed site and business account, and up to 200 Pins/day. Image WebP is supported for normal Pins (source: https://help.pinterest.com/en/article/review-pin-specs); whether each feed's image and rights pass Pinterest ingestion is unverified. Do not auto-reupload copyrighted commissioned footage without rights review.
+- **Are.na:** no connected write identity; the [official Create Block API](https://www.are.na/developers/explore/block/post-block) requires authentication and supports `original_source_url` plus `description` for proper credit. No block created. Existing link/comment authorization must be obtained rather than bypassed.
+- **Browser:** Opera Connector reports "Browser not connected; enable Allow AI connection". TinyFish default profile has no signed-in sites and wallet balance negative; Remote Desktop Mac is offline. Therefore no authorized interface currently supports mass writing to these social accounts from this session.
+- **Yandex Business:** no connected owner Yandex account or verified org ID. [Official Yandex Business online-company policy](https://www.yandex.ru/support/business-priority/ru/online-company) allows a **free** online profile when clients cannot visit an office, but the online card does **not** appear in Yandex Maps or organic Search. An offline card requires a real visitable office and location verification ([official rules](https://www.yandex.ru/support/business-priority/ru/moderation/moderation-address)). Never invent a Russian business address to force a maps entry.
+
+### Next execution order
+
+1. **Highest priority:** authenticate existing studio Behance, Are.na and Pinterest identities through an interactive, authorized browser session (prefer ChatGPT Work Cloud Browser for bulk work), and verify existing posts before writing new ones. Pinterest also needs official site claim. Only then upload rights-cleared first-party media and save public pin/project/block IDs.
+2. Verify the presence and business eligibility of **existing** Yandex Business company profile. Use its current official company account, not a new personal login, and complete services, photos, producer contact and links. Avoid a fictitious office; treat Maps eligibility correctly.
+3. Expand real public agent community notes in the existing Clawprint and DiraBook identities with sources and provenance, without spam, bot impersonation, or hidden login bypass. Record receipts.
+4. Produce a project-level matrix of **PUBLISHED LIVE / ACCOUNT ACCESS REQUIRED / RIGHTS REVIEW / PENDING**. Commercial effect is measured by qualified producer briefs and payments; not mere RSS records, indexed snippets or technical declarations.
+
+
 ## Not completed / blocked
 
 | Channel | Current evidence | Decision |
