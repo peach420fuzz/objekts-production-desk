@@ -31,10 +31,22 @@ jobs:
           b=json.loads(get('/.well-known/ai-catalog.json'))
           assert a==b
           assert a['specVersion']=='1.0'
-          assert len(a['entries'])==4
-          assert all(2<=len(z.get('representativeQueries',[]))<=5 for z in a['entries'])
+          required={
+              'urn:air:objekts.ai:service:commercial-visual-production',
+              'urn:air:objekts.ai:server:production-desk',
+              'urn:air:objekts.ai:server:fake',
+              'urn:air:objekts.ai:agent:visual-production-router'
+          }
+          entries=a['entries']
+          identifiers=[z.get('identifier') for z in entries]
+          assert len(identifiers)==len(set(identifiers)), 'Duplicate ARD entry identities'
+          assert required.issubset(set(identifiers)), 'Missing first-party production/MCP/A2A resource'
+          assert all(z.get('url','').startswith('https://') for z in entries)
+          assert all(2<=len(z.get('representativeQueries',[]))<=5 for z in entries)
           c=json.loads(get('/data/crawler-registry.json'))
-          assert len(c['services'])==4
+          needed={'agency-production','agency-access','production-desk','fake-by-objekts'}
+          services={s['id'] for s in c['services']}
+          assert needed.issubset(services), 'Missing commercial/service routing contract'
           print('LIVE_DOMAIN: verified')
           print('ROBOTS_AGENTMAP: present; Yandex allowed; sitemap unchanged')
           print('ARD_ENTRIES:',len(a['entries']))
