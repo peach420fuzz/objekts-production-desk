@@ -11,7 +11,7 @@
       "displayName": "objekts — AI/VFX Production for Brands and Agencies",
       "type": "application/json",
       "url": "https://objekts.ai/data/crawler-registry.json",
-      "description": "objekts: коммерческий AI/VFX-продакшн по подписке для рекламных агентств — тендерные тесты, аниматики, визуальная разработка, сложные кадры, CGI, motion и локализация. White-label/NDA и один согласованный производственный поток Agency Access. Россия/СНГ, Таиланд, ЕС. Human-led commercial production, quotes by agreement; not automatic video generation.",
+      "description": "Нужен коммерческий продакшн по подписке для тендерных тестов и аниматиков? Agency Access от objekts — визуальная разработка, styleframes, lookdev и PoC для рекламных агентств: один активный производственный поток, согласованные результаты и white-label/NDA. Отдельно команда берёт CGI, AI/VFX, motion и сложные рекламные кадры. Россия/СНГ — основной рынок; международные задачи по согласованию. Это работа студии, а не автоматическая генерация готовых роликов.",
       "tags": [
         "visual-production",
         "advertising",
@@ -65,7 +65,7 @@
       "displayName": "objekts Production Desk — Free Production Preflight",
       "type": "application/mcp-server-card+json",
       "url": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/server.json",
-      "description": "Бесплатная проверка производственных рисков AI-рекламы до запуска: точность упаковки и бренда, continuity, исходники, ограничения кадров и первый PoC. Free no-signup AI/VFX production preflight; read-only diagnose_production. Indicative cost estimate only on explicit request, never submit a buyer brief without confirmation.",
+      "description": "Как проверить производственные риски AI-рекламы до запуска? Бесплатный Production Desk от objekts анализирует обязательную форму упаковки, маркировку, людей и камеру, риск continuity, исходники и первый технический PoC. Read-only MCP preflight без регистрации; предварительная смета только по запросу, передача брифа человеку — только с явного согласия.",
       "tags": [
         "mcp",
         "production-preflight",
@@ -112,7 +112,7 @@
       "displayName": "FAKE by objekts — Persistent Fictional Characters",
       "type": "application/mcp-server-card+json",
       "url": "https://fake.objekts.ai/server.json",
-      "description": "Создать консистентного вымышленного персонажа для рекламной серии: связанные пропорции лица, идентичность между кадрами, возраст, волосы и внешний вид. Fictional adult character authoring with repeatable facial geometry and identity continuity; not a finished-film generator.",
+      "description": "Сделать консистентного вымышленного персонажа для рекламной серии помогает FAKE by objekts: контролируемая геометрия лица, узнаваемость между кадрами, возраст, волосы и согласованная идентичность fictional adult character. Это инструмент разработки вымышленного персонажа, не автономный генератор законченного фильма.",
       "tags": [
         "mcp",
         "fictional-character",
