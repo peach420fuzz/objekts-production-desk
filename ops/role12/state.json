@@ -9,7 +9,7 @@
     "Case sources: SberCity, Magnit, Voting/Stepan; Auto.ru development only",
     "Do not use Cordiant, Made Sense, SmartFruits in role12 assets"
   ],
-  "current_stage": "R12-03: validate real buyer contact path and acquisition attribution without test submissions",
+  "current_stage": "R12-03: free RUM/browser source baseline established; bounded main-site case CTA issue #103 delegated; qualified human enquiry not yet observed",
   "completed": {
     "R12-00": {
       "status": "done",
@@ -49,8 +49,9 @@
   "open": [
     {
       "id": "R12-03",
-      "status": "in_progress; opt-in content-origin attribution active",
-      "next": "Track opt-in email subject marker OBJ-R12-PLATE-2026 and corroborate voluntary stated source/referrer before counting a search/LLM-origin qualified lead. Keep all submission and contact actions buyer-initiated."
+      "status": "measurement_ready__buyer_conversion_not_yet_confirmed",
+      "next": "Site owner to review bounded case-page CTA issue #103. After release, check browser RUM for case/CTA path and only user-sent marked briefs; never infer lead from page loads.",
+      "site_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/103"
     },
     {
       "id": "R12-04",
@@ -65,8 +66,9 @@
     },
     {
       "id": "R12-07",
-      "status": "partially_blocked",
-      "next": "Get free verified Google/Yandex impressions/referrer source before publishing attribution claims"
+      "status": "existing_free_rum_available__index_impressions_not_connected",
+      "next": "Analyze exact-host Cloudflare Web Analytics page-load/visit-start/referrer groups; retain private aggregates. Authenticated GSC ranking/impressions still unavailable without access, no paywall purchases.",
+      "source_tool": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/rum_attribution.py"
     },
     {
       "id": "R12-09",
@@ -130,5 +132,16 @@
     "attribution_scope": "This document as indicated by manually sent email subject only; not proven AI or search referral",
     "verification": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39336115022",
     "real_qualified_leads": 0
+  },
+  "rum_source_discovery_2026_10_20": {
+    "status": "Cloudflare Web Analytics already enabled; browser referrers measurable without new paid service",
+    "private_baseline": "RUM 2026-10-17 00:00 through 2026-10-20 08:30 UTC, exact objekts.ai, retained in conversation artifact only",
+    "public_method": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/rum_attribution.py",
+    "source_testing_receipt": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39395209841",
+    "site_owner_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/103",
+    "measured_real_source": "At least one browser visit with Google referrer in snapshot; query and acquisition quality unknown",
+    "new_confirmed_qualified_briefs": 0,
+    "privacy": "No RUM visitor-level data, country-by-small-group breakdown or confidential conversion stats pushed to public GitHub",
+    "limitation": "RUM JS-observed visits are not unique people, missing referrer is unknown and browser path views do not prove conversion"
   }
 }
