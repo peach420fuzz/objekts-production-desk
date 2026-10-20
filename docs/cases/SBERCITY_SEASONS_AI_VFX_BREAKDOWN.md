@@ -2,7 +2,9 @@
 
 **Published objekts role:** AI VFX / graphics / AI scenes  
 **Format:** advertising series (2026)  
-**Canonical case:** https://objekts.ai/work/sbercity-seasons/
+**Canonical case:** https://objekts.ai/work/sbercity
+
+The two SberCity films share this grouped canonical page but have distinct published contribution scopes.
 
 This is a first-party production note from objekts.
 
