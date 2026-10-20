@@ -30,8 +30,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Test A2A endpoint probe safety (offline)
         run: python3 ops/role12/a2a_endpoint_availability_probe.py --offline-test
-      - name: Verify advertised A2A JSON-RPC endpoint (no tasks sent)
-        run: python3 ops/role12/a2a_endpoint_availability_probe.py --ci
       - name: Validate assertions without external requests
         run: python3 ops/agent_buying_journey_probe.py --offline-test
       - name: Check live discovery, case evidence and optional consent-based contact
@@ -62,3 +60,5 @@ jobs:
             out/role12-oai-hosts.json
           if-no-files-found: ignore
           retention-days: 3
+      - name: Verify advertised A2A JSON-RPC endpoint (no tasks sent)
+        run: python3 ops/role12/a2a_endpoint_availability_probe.py --ci
