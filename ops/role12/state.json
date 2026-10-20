@@ -9,7 +9,7 @@
     "Case sources: SberCity, Magnit, Voting/Stepan; Auto.ru development only",
     "Do not use Cordiant, Made Sense, SmartFruits in role12 assets"
   ],
-  "current_stage": "R12-03: free RUM/browser source baseline established; bounded main-site case CTA issue #103 delegated; qualified human enquiry not yet observed",
+  "current_stage": "R12-03 real buyer conversion awaiting site owner issue #103; R12-04 SberCity source canonical drift closed; EN reference Markdown unresolved",
   "completed": {
     "R12-00": {
       "status": "done",
@@ -44,6 +44,20 @@
       "buyer_asset": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/references/ru-vfx-plate-preservation-buyer-guide.md",
       "independent_ci": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39335764135",
       "public_read_verified": true
+    },
+    "R12-04_sbercity_canonical": {
+      "status": "done",
+      "date": "2026-10-20",
+      "official_contract": "Both distinct SberCity New Year and Seasons records in official 69-record JSONL use /work/sbercity; EN /en/work/sbercity",
+      "corrected_public_sources": [
+        "docs/cases/SBERCITY_NEW_YEAR_AI_VFX_BREAKDOWN.md",
+        "docs/cases/SBERCITY_SEASONS_AI_VFX_BREAKDOWN.md",
+        "references/CASE_BREAKDOWNS.md",
+        "references/production-breakdowns.jsonl"
+      ],
+      "test": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/test_sbercity_canonical.py",
+      "external_receipt": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39420028126",
+      "lead_or_index_claims": false
     }
   },
   "open": [
@@ -55,8 +69,8 @@
     },
     {
       "id": "R12-04",
-      "status": "blocked_by_site_owner",
-      "next": "Fix English machine-reference 404 and verify language-canonical targets, not via role12 speculative deployment"
+      "status": "partial_done__official_source_contract_verified",
+      "next": "EN /en/reference/work/sbercity.md remains 404; investigate main site owner localization and real HTML hreflang/root consistency without touching production; don't recreate grouped-case URLs."
     },
     {
       "id": "R12-05",
@@ -143,5 +157,14 @@
     "new_confirmed_qualified_briefs": 0,
     "privacy": "No RUM visitor-level data, country-by-small-group breakdown or confidential conversion stats pushed to public GitHub",
     "limitation": "RUM JS-observed visits are not unique people, missing referrer is unknown and browser path views do not prove conversion"
+  },
+  "latest_observations_2026_10_20_1200utc": {
+    "Cloudflare_RUM_browser": "25 page-load events; 20 visit starts; 1 Bing referrer; 19 unknown referrer; data may include automated browser smoke, not unique buyers",
+    "contact_marker_gmail_results": 0,
+    "production_desk_new_submissions_after_2026_10_05": 0,
+    "browser_diagnosis_events": 1,
+    "diagnosis_qualifies_as_lead": false,
+    "production_site_deployments_by_role12": 0,
+    "advisory": "A2A failing workflow runs on PR#104's feature branch; role12 main branch run 39420028126 passed. Do not conflate branch tests with production outage."
   }
 }
