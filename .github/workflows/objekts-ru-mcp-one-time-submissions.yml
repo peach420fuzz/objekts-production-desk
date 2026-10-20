@@ -72,11 +72,22 @@ jobs:
               await page.getByPlaceholder("https://docs.example.com").fill("https://mcp.objekts.ai/install");
               await page.locator("select").first().selectOption({label:"Other"});
               await page.getByLabel("JavaScript",{exact:true}).check({force:true});
+              // Some reactive controls remount the first section on select/checkbox changes.
+              // Re-fill and blur all required fields after those controls have settled.
+              await page.getByPlaceholder("Мой MCP Сервер").fill("objekts Production Desk");
+              await page.getByPlaceholder("my-mcp-server",{exact:true}).fill("objekts-production-desk");
+              await page.getByPlaceholder("Опишите ваш сервер в 1-2 предложениях...").fill(
+                 "objekts Production Desk — удалённый MCP для технического разбора рекламного AI/VFX и CGI: точность бренда и упаковки, continuity, риски кадров и смета по запросу. Передача клиентского брифа студии — только по явному согласию."
+              );
+              await page.getByPlaceholder("https://github.com/username/repo").fill(repo);
+              await page.getByPlaceholder("ivan@example.com").click();
+              await page.waitForTimeout(750);
+
               await page.getByPlaceholder("api, database, automation (через запятую)").fill("ai-vfx, video-production, cgi, advertising, production-planning, mcp");
               await page.getByPlaceholder("John Doe").fill("objekts");
               await page.getByPlaceholder("Иван Иванов").fill("objekts studio");
               await page.getByPlaceholder("ivan@example.com").fill(email);
-              const ready=await page.evaluate(()=>({invalid:[...document.querySelectorAll('input[required],textarea[required],select[required]')].filter(x=>!x.checkValidity()).map(x=>x.placeholder||x.type||x.tagName),selectedCategory:document.querySelector("select")?.selectedOptions?.[0]?.innerText,checkboxes:[...document.querySelectorAll('input[type=checkbox]')].filter(x=>x.checked).map(x=>x.closest('label')?.innerText?.trim())}));
+              const ready=await page.evaluate(()=>({invalid:[...document.querySelectorAll('input[required],textarea[required],select[required]')].filter(x=>!x.checkValidity()).map(x=>({field:x.placeholder||x.type||x.tagName,chars:x.value?.length,message:x.validationMessage,pattern:x.pattern,required:x.required})),selectedCategory:document.querySelector("select")?.selectedOptions?.[0]?.innerText,checkboxes:[...document.querySelectorAll('input[type=checkbox]')].filter(x=>x.checked).map(x=>x.closest('label')?.innerText?.trim())}));
               if(ready.invalid.length)throw Error("Required form fields invalid: "+JSON.stringify(ready));
               console.log("MCPDB_READY "+JSON.stringify(ready));
               await page.getByRole('button',{name:"Отправить заявку"}).click({timeout:15000});
