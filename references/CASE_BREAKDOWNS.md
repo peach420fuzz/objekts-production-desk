@@ -28,11 +28,13 @@ Made Sense — 40-секундный рекламный ролик, где AI и
 
 ---
 
+**Canonical grouping:** SberCity New Year and Seasons are distinct films with separate credited contributions, presented on one live case page at https://objekts.ai/work/sbercity. The former per-film URLs are legacy redirects, not separate canonical project pages.
+
 ## SberCity — Seasons
 
 **Published role:** AI VFX / графика / AI-сцены  
 **Format:** Рекламная серия (2026)  
-**Canonical case:** https://objekts.ai/work/sbercity-seasons/
+**Canonical case:** https://objekts.ai/work/sbercity
 
 SberCity — Seasons работает как серия связанных состояний одного городского мира. При сезонной трансформации легко получить набор красивых, но несвязанных изображений; производственная задача состоит в том, чтобы среда оставалась узнаваемой, а изменения света, масштаба, движения и атмосферы читались как развитие одной кампании.
 
@@ -56,7 +58,7 @@ SberCity — Seasons работает как серия связанных со�
 
 **Published role:** AI VFX / графика  
 **Format:** Новогодняя реклама (2025)  
-**Canonical case:** https://objekts.ai/work/sbercity-new-year/
+**Canonical case:** https://objekts.ai/work/sbercity
 
 SberCity — New Year строится вокруг праздничного состояния городского пространства. Сезонный VFX здесь работает не набором украшений поверх готовых кадров: свет, атмосфера, движение и графические акценты должны формировать единый визуальный мир между планами.
 
