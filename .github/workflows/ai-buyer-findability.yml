@@ -10,6 +10,9 @@ on:
       - "ops/agent_buying_journey_probe.py"
       - "ops/mcp_protocol_era_probe.py"
       - "ops/role12/**"
+      - "docs/cases/SBERCITY_*"
+      - "references/CASE_BREAKDOWNS.md"
+      - "references/production-breakdowns.jsonl"
       - "references/AI_VENDOR_FIT_EVIDENCE.md"
       - "references/ai-vendor-fit-evidence.json"
       - "references/ru-vfx-plate-preservation-buyer-guide.md"
@@ -47,6 +50,8 @@ jobs:
         run: python3 ops/role12/test_query_answer.py
       - name: RUM referral classification (synthetic tests, no private visitor data)
         run: python3 ops/role12/rum_attribution.py --self-test
+      - name: Verify SberCity grouped canonical and official feed (read-only)
+        run: python3 ops/role12/test_sbercity_canonical.py --live
       - name: Keep exact status codes for review (short retention)
         if: always()
         uses: actions/upload-artifact@v4
