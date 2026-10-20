@@ -1,101 +1,17 @@
-name: objekts | One-time RU MCP directory applications
+name: objekts | RU MCP directory submission receipts
 on:
-  push:
-    paths:
-      - ".github/workflows/objekts-ru-mcp-one-time-submissions.yml"
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
-  submit:
+  receipts:
     runs-on: ubuntu-latest
-    timeout-minutes: 9
     steps:
-      - name: Install Chromium
+      - name: Show immutable historical receipts without resubmitting
         run: |
-          npm install --no-save --ignore-scripts playwright@1.56.1
-          npx playwright install --with-deps chromium
-      - name: Send two first-party MCP directory applications and log receipts
-        shell: bash
-        run: |
-          node --input-type=module <<'JS'
-          import { chromium } from 'playwright';
-          const repo="https://github.com/peach420fuzz/objekts-production-desk";
-          const mcp="https://mcp.objekts.ai/mcp";
-          const email="salute@objekts.ai";
-          const browser=await chromium.launch({headless:true});
-          const context=await browser.newContext({locale:"ru-RU",viewport:{width:1360,height:930}});
-          async function receipt(page,key){
-            await page.waitForTimeout(3500);
-            return {
-              platform:key, url:page.url(),
-              excerpt:(await page.locator('body').innerText()).slice(-2200).replace(/\s+/g,' '),
-              title:await page.title()
-            };
-          }
-          async function submitKatalog(){
-            const page=await context.newPage();
-            const requests=[];
-            page.on('response',r=>{if(r.request().method()==='POST'&&r.url().startsWith('https://mcp-katalog.ru/'))requests.push({url:r.url().split('?')[0],status:r.status()})});
-            try{
-              const res=await page.goto("https://mcp-katalog.ru/suggest",{waitUntil:"domcontentloaded",timeout:22000});
-              if(res?.status()!==200)throw Error("Not HTTP 200 on form");
-              await page.locator('[name="githubUrl"]').fill(repo);
-              await page.locator('[name="email"]').fill(email);
-              const message="objekts Production Desk — работающий удалённый MCP для предварительного разбора рекламного AI/VFX и CGI: ограничения бренда, continuity, риски кадра и смета по запросу. 7 инструментов; передача брифа человеку только с согласия. Streamable HTTP: "+mcp;
-              if(message.length>300)throw Error("message too long: "+message.length);
-              await page.locator('[name="message"]').fill(message);
-              const ready=await page.evaluate(()=>Object.fromEntries([...document.querySelectorAll('input[name],textarea[name]')].filter(x=>['githubUrl','email','message'].includes(x.name)).map(x=>[x.name,{valid:x.checkValidity(),length:x.value.length}])));
-              if(Object.values(ready).some(x=>!x.valid))throw Error("Invalid input fields");
-              console.log("KATALOG_READY "+JSON.stringify(ready));
-              await page.getByRole('button',{name:'Отправить заявку'}).click({timeout:10000});
-              console.log("KATALOG_RECEIPT "+JSON.stringify({...await receipt(page,"mcp-katalog.ru"),posts:requests}));
-            }catch(e){console.log("KATALOG_ERROR "+JSON.stringify({error:String(e).slice(0,480),posts:requests}));process.exitCode=1}
-            finally{await page.close()}
-          }
-          async function submitDb(){
-            const page=await context.newPage();
-            const requests=[];
-            page.on('response',r=>{if(r.request().method()==='POST'&&r.url().startsWith('https://mcpdb.ru/'))requests.push({url:r.url().split('?')[0],status:r.status()})});
-            try{
-              const res=await page.goto("https://mcpdb.ru/submit/server",{waitUntil:"domcontentloaded",timeout:25000});
-              if(res?.status()!==200)throw Error("Not HTTP 200 on form");
-              await page.getByPlaceholder("Мой MCP Сервер").fill("objekts Production Desk");
-              await page.getByPlaceholder("my-mcp-server",{exact:true}).fill("objekts-production-desk");
-              await page.getByPlaceholder("Опишите ваш сервер в 1-2 предложениях...").fill(
-                 "Production Desk от objekts — удалённый MCP-сервер для предварительного анализа AI/VFX и CGI-продакшна рекламы. Проверяет неизменяемые элементы продукта, continuity и риски кадра; смета — по запросу. Отправка производственного брифа человеку только после явного согласия заказчика."
-              );
-              await page.getByPlaceholder("Подробное описание функций, возможностей и применения...").fill(
-                 "objekts Production Desk — технический помощник для рекламных агентств, продюсеров и брендов.\n\nСначала помогает определить риски производства AI/VFX, CGI, анимации и гибридной рекламы: точность упаковки и логотипов, требования к исходному видео и персонажам, continuity, состав тестового кадра. Без передачи клиентского брифа даёт бесплатный предварительный разбор; ориентировочную оценку стоимости возвращает только по запросу.\n\nMCP Streamable HTTP: "+mcp+"\nДокументация: https://mcp.objekts.ai/install\nКейсы студии: https://objekts.ai/work/sbercity и https://objekts.ai/work/magnit-2026 .\n\nСемь инструментов, из которых diagnose_production и estimate_production безопасны для чтения. Отправка, изменение или удаление клиентских брифов требуют явного согласия. Сервис не является автоматическим генератором готовых рекламных роликов."
-              );
-              await page.getByPlaceholder("https://github.com/username/repo").fill(repo);
-              await page.getByPlaceholder("https://docs.example.com").fill("https://mcp.objekts.ai/install");
-              await page.locator("select").first().selectOption({label:"Other"});
-              await page.getByLabel("JavaScript",{exact:true}).check({force:true});
-              // Some reactive controls remount the first section on select/checkbox changes.
-              // Re-fill and blur all required fields after those controls have settled.
-              await page.getByPlaceholder("Мой MCP Сервер").fill("objekts Production Desk");
-              await page.getByPlaceholder("my-mcp-server",{exact:true}).fill("objekts-production-desk");
-              await page.getByPlaceholder("Опишите ваш сервер в 1-2 предложениях...").fill(
-                 "objekts Production Desk — удалённый MCP для технического разбора рекламного AI/VFX и CGI: точность бренда и упаковки, continuity, риски кадров и смета по запросу. Передача клиентского брифа студии — только по явному согласию."
-              );
-              await page.getByPlaceholder("https://github.com/username/repo").fill(repo);
-              await page.getByPlaceholder("ivan@example.com").click();
-              await page.waitForTimeout(750);
-
-              await page.getByPlaceholder("api, database, automation (через запятую)").fill("ai-vfx, video-production, cgi, advertising, production-planning, mcp");
-              await page.getByPlaceholder("John Doe").fill("objekts");
-              await page.getByPlaceholder("Иван Иванов").fill("objekts studio");
-              await page.getByPlaceholder("ivan@example.com").fill(email);
-              const ready=await page.evaluate(()=>({invalid:[...document.querySelectorAll('input[required],textarea[required],select[required]')].filter(x=>!x.checkValidity()).map(x=>({field:x.placeholder||x.type||x.tagName,chars:x.value?.length,message:x.validationMessage,pattern:x.pattern,required:x.required})),selectedCategory:document.querySelector("select")?.selectedOptions?.[0]?.innerText,checkboxes:[...document.querySelectorAll('input[type=checkbox]')].filter(x=>x.checked).map(x=>x.closest('label')?.innerText?.trim())}));
-              if(ready.invalid.length)throw Error("Required form fields invalid: "+JSON.stringify(ready));
-              console.log("MCPDB_READY "+JSON.stringify(ready));
-              await page.getByRole('button',{name:"Отправить заявку"}).click({timeout:15000});
-              console.log("MCPDB_RECEIPT "+JSON.stringify({...await receipt(page,"mcpdb.ru"),posts:requests}));
-            }catch(e){console.log("MCPDB_ERROR "+JSON.stringify({error:String(e).slice(0,480),posts:requests}));process.exitCode=1}
-            finally{await page.close()}
-          }
-          console.log("KATALOG_ALREADY_SUBMITTED: 2026-10-20, confirmed by success UI in run 39393985100; skipping to avoid duplicate");
-          await submitDb();
-          await browser.close();
-          JS
+          echo 'mcp-katalog.ru: submission form SUCCESS, editor moderation pending.'
+          echo 'Evidence: https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39393985100'
+          echo 'mcpdb.ru: /api/submissions returned HTTP 500, page showed "Ошибка создания заявки"; NOT submitted.'
+          echo 'Evidence: https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39394467319'
+          echo 'mcp-catalog.ru: a separate editorial email was sent 2026-10-20; not a listing.'
+          echo 'No automated repeat submissions are enabled.'
