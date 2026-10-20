@@ -61,7 +61,7 @@ jobs:
               const res=await page.goto("https://mcpdb.ru/submit/server",{waitUntil:"domcontentloaded",timeout:25000});
               if(res?.status()!==200)throw Error("Not HTTP 200 on form");
               await page.getByPlaceholder("Мой MCP Сервер").fill("objekts Production Desk");
-              await page.getByPlaceholder("my-mcp-server").fill("objekts-production-desk");
+              await page.getByPlaceholder("my-mcp-server",{exact:true}).fill("objekts-production-desk");
               await page.getByPlaceholder("Опишите ваш сервер в 1-2 предложениях...").fill(
                  "Production Desk от objekts — удалённый MCP-сервер для предварительного анализа AI/VFX и CGI-продакшна рекламы. Проверяет неизменяемые элементы продукта, continuity и риски кадра; смета — по запросу. Отправка производственного брифа человеку только после явного согласия заказчика."
               );
@@ -84,7 +84,7 @@ jobs:
             }catch(e){console.log("MCPDB_ERROR "+JSON.stringify({error:String(e).slice(0,480),posts:requests}));process.exitCode=1}
             finally{await page.close()}
           }
-          await submitKatalog();
+          console.log("KATALOG_ALREADY_SUBMITTED: 2026-10-20, confirmed by success UI in run 39393985100; skipping to avoid duplicate");
           await submitDb();
           await browser.close();
           JS
