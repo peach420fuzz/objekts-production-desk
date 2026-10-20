@@ -1,0 +1,46 @@
+name: objekts | RU MCP submission form inspection
+on:
+  push:
+    paths:
+      - ".github/workflows/objekts-ru-mcp-listing-forms.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Install Chromium
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Inspect three public catalog submission forms without sending
+        shell: bash
+        run: |
+          node --input-type=module <<'JS'
+          import { chromium } from 'playwright';
+          const urls=[
+             "https://mcp-katalog.ru/suggest",
+             "https://mcpdb.ru/submit/server",
+             "https://ailist.ru/add/"
+          ];
+          const browser=await chromium.launch({headless:true});
+          for(const url of urls){
+            const page=await browser.newPage({locale:"ru-RU",viewport:{width:1280,height:900}});
+            try{
+               const res=await page.goto(url,{timeout:30000,waitUntil:"domcontentloaded"});
+               await page.waitForTimeout(1700);
+               const d=await page.evaluate(()=>{
+                 const inputs=[...document.querySelectorAll("input,textarea,select")].map(e=>({tag:e.tagName.toLowerCase(),name:e.getAttribute("name"),id:e.id,type:e.getAttribute("type"),placeholder:e.getAttribute("placeholder"),required:e.required,label:e.labels?.[0]?.innerText?.trim().slice(0,120),outer:e.outerHTML.slice(0,230)}));
+                 const buttons=[...document.querySelectorAll("button,input[type=submit]")].map(e=>({tag:e.tagName.toLowerCase(),text:e.innerText?.trim()||e.getAttribute("value"),type:e.type,outer:e.outerHTML.slice(0,230)}));
+                 const forms=[...document.forms].map(e=>({action:e.action,method:e.method,id:e.id}));
+                 return {title:document.title,bodyText:document.body.innerText.slice(0,1600),inputs,buttons,forms};
+               });
+               console.log("FORM_INSPECTION "+JSON.stringify({url,status:res?.status(),finalUrl:page.url(),...d}));
+            }catch(err){console.log("FORM_ERROR "+JSON.stringify({url,error:String(err).slice(0,360)}))}
+            finally{await page.close()}
+          }
+          await browser.close();
+          console.log("SUBMISSIONS_SENT: 0");
+          JS
