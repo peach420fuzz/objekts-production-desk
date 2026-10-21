@@ -132,3 +132,27 @@ if(process.env.R12_LIVE==="1"){
     console.log("R12 LIVE PREVIEW-IN-MEMORY PASS: both case HTML pages and 2 official film records; 0 server writes / 0 mail sent");
   });
 }
+
+
+if(process.env.R12_LIVE==="1"){
+  test("Isolated Cloudflare noindex preview serves actual opt-in CTA and EN source route",async()=>{
+    const stage="https://objekts-r12-case-preview-20261021.peach420fuzz.workers.dev";
+    const paths=["/work/sbercity","/work/magnit-2026","/en/reference/work/sbercity.md","/en/work/sbercity"];
+    const response=await Promise.all(paths.map(path=>fetch(stage+path,{signal:AbortSignal.timeout(20000)})));
+    assert.deepEqual(response.map(x=>x.status),[200,200,200,200]);
+    for(const r of response)assert.match(r.headers.get("x-robots-tag")||"",/noindex/i);
+    const [sber,magnit,ref,en]=await Promise.all(response.map(x=>x.text()));
+    const mailto=(s,tag)=>new RegExp('href="mailto:salute@objekts\\.ai\\?subject='+tag).test(s);
+    assert.ok(mailto(sber,"OBJ-R12-SBER-2026"),"RU SberCity real mailto is missing");
+    assert.ok(mailto(magnit,"OBJ-R12-MAGNIT-2026"),"RU Magnit real mailto is missing");
+    assert.ok(mailto(en,"OBJ-R12-SBER-2026"),"EN SberCity real mailto is missing");
+    assert.match(sber,/data-objekts-role12="case-brief-v1"/);
+    assert.match(magnit,/data-objekts-role12="case-brief-v1"/);
+    assert.match(en,/Nothing is sent automatically/i);
+    assert.match(sber,/https:\/\/objekts\.ai\/tools\/production-desk/);
+    assert.match(ref,/Canonical HTML: https:\/\/objekts\.ai\/en\/work\/sbercity/);
+    assert.match(ref,/AI VFX \/ Graphics \/ AI scenes/);
+    assert.doesNotMatch(sber,/<form\b[^>]*data-objekts-role12/i);
+    console.log("R12 CF PREVIEW LIVE PASS: noindex=4/4, opted-in mailto=3/3, English factual reference 200; production unchanged.");
+  });
+}
