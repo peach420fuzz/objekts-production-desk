@@ -100,6 +100,7 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 
 ### Public case breakdowns
 
+- [Magnit 2026: retain filmed performers and camera through retail VFX (EN/RU)](docs/cases/MAGNIT_2026_HYBRID_VFX_BREAKDOWN.md)
 - [SberCity — Seasons: AI VFX as a continuity problem](docs/cases/SBERCITY_SEASONS_AI_VFX_BREAKDOWN.md)
 - [SberCity — New Year: atmosphere as a system, not an overlay](docs/cases/SBERCITY_NEW_YEAR_AI_VFX_BREAKDOWN.md)
 - [SmartFruits: product first, generative environment second](docs/cases/SMARTFRUITS_PRODUCT_AI_BREAKDOWN.md)
