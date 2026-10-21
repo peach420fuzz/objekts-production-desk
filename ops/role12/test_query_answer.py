@@ -39,4 +39,17 @@ for path in ("AGENTS.md", "README.md"):
 for forbidden in ("Cordiant", "Made Sense", "SmartFruits", "/work/stepan"):
     assert forbidden not in guide, "Disallowed or misleading case: " + forbidden
 
+# Ensure existing approved case sources expose a voluntary commercial path,
+# without auto-submitting buyer briefs or promising a free rendered shot.
+for path, tag in [
+    ("docs/cases/SBERCITY_NEW_YEAR_AI_VFX_BREAKDOWN.md", "OBJ-R12-SBER-NY-2026"),
+    ("docs/cases/SBERCITY_SEASONS_AI_VFX_BREAKDOWN.md", "OBJ-R12-SBER-SEASONS-2026"),
+    ("docs/cases/MAGNIT_2026_HYBRID_VFX_BREAKDOWN.md", "OBJ-R12-MAGNIT-CASE-2026"),
+]:
+    text = (repo / path).read_text("utf-8")
+    assert tag in text, (path, "tag missing")
+    assert "mailto:salute@objekts.ai?" in text, (path, "human quote link missing")
+    assert "nothing is sent automatically" in text, (path, "consent disclaimer missing")
+    assert "Production Desk" in text, (path, "free diagnostic distinction missing")
+
 print("PASS: 12 query records, RU8/EN2/TH2, exact source URLs, owned case evidence and consent-based next action")
