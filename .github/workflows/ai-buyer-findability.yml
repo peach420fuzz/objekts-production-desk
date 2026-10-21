@@ -53,6 +53,11 @@ jobs:
         run: python3 ops/role12/rum_attribution.py --self-test
       - name: Verify SberCity grouped canonical and official feed (read-only)
         run: python3 ops/role12/test_sbercity_canonical.py --live
+      - name: Track in-content buyer actions and agent reference (read-only; WARN until site release)
+        shell: bash
+        run: |
+          python3 ops/role12/test_live_buyer_entrypoints.py --offline-test
+          python3 ops/role12/test_live_buyer_entrypoints.py --live --output out/role12-site-buyer-entrypoints.json
       - name: Keep exact status codes for review (short retention)
         if: always()
         uses: actions/upload-artifact@v4
@@ -62,5 +67,6 @@ jobs:
             out/agent-buyer-findability.json
             out/mcp_protocol_era.json
             out/role12-oai-hosts.json
+            out/role12-site-buyer-entrypoints.json
           if-no-files-found: ignore
           retention-days: 3
