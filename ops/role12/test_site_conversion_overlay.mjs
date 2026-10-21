@@ -156,3 +156,44 @@ if(process.env.R12_LIVE==="1"){
     console.log("R12 CF PREVIEW LIVE PASS: noindex=4/4, opted-in mailto=3/3, English factual reference 200; production unchanged.");
   });
 }
+
+
+if(process.env.R12_LIVE==="1"){
+  test("Service-binding stage preserves exact active markets wrapper HTML except the isolated R12 block and preview noindex",async()=>{
+    const origin="https://objekts.ai";
+    const stage="https://objekts-r12-service-preview-20261022.peach420fuzz.workers.dev";
+    const pairs=[
+      ["/work/sbercity","OBJ-R12-SBER-2026"],
+      ["/work/magnit-2026","OBJ-R12-MAGNIT-2026"],
+      ["/en/work/sbercity","OBJ-R12-SBER-2026"],
+      ["/en/work/magnit-2026","OBJ-R12-MAGNIT-2026"]
+    ];
+    const results=await Promise.all(pairs.map(async ([path,tag])=>{
+      const [prod,preview]=await Promise.all([origin,stage].map(host=>fetch(host+path,{signal:AbortSignal.timeout(20000)})));
+      assert.equal(prod.status,200,path+" production");
+      assert.equal(preview.status,200,path+" stage");
+      assert.match(preview.headers.get("x-robots-tag")||"",/noindex/i);
+      assert.match(preview.headers.get("content-type")||"",/text\/html/i);
+      const a=await prod.text(),b=await preview.text();
+      assert.ok(!a.includes("data-objekts-role12="),path+": production still untouched");
+      assert.ok(b.includes('data-objekts-role12="case-brief-v1"'),path+": preview must have exactly one CTA");
+      assert.ok(b.includes('mailto:salute@objekts.ai?subject='+tag),path+": opt-in subject source");
+      assert.ok(b.includes('src="/__markets/client-v27.mjs"'),path+": preserve the active site’s MARKETS navigation script");
+      const normalized=b
+        .replace('<base href="https://objekts.ai/"><meta name="robots" content="noindex,nofollow">','')
+        .replace(/<section data-objekts-role12="case-brief-v1"[\s\S]*?<\/section>/,'');
+      assert.equal(normalized,a,path+": non-R12 HTML must remain byte-identical");
+      return {path,sourceBytes:a.length,previewBytes:b.length,exactOriginalAfterStrip:true};
+    }));
+    const md=await fetch(stage+"/en/reference/work/sbercity.md",{signal:AbortSignal.timeout(20000)});
+    assert.equal(md.status,200);
+    assert.match(md.headers.get("content-type")||"",/text\/markdown/);
+    assert.match(md.headers.get("link")||"",/https:\/\/objekts.ai\/en\/work\/sbercity/);
+    assert.match(md.headers.get("x-robots-tag")||"",/noindex/i);
+    assert.match(await md.text(),/AI VFX \/ Graphics \/ AI scenes/);
+    const unknown=await fetch(stage+"/contact",{signal:AbortSignal.timeout(20000)});
+    assert.equal(unknown.status,404,"preview must not accidentally handle global studio routes");
+    assert.match(unknown.headers.get("x-robots-tag")||"",/noindex/i);
+    console.log("R12 SERVICE BINDING STAGING PASS "+JSON.stringify({routes:results,markdown200:true,unrelated404:true,productionUnchanged:true}));
+  });
+}
