@@ -9,7 +9,7 @@
     "Case sources: SberCity, Magnit, Voting/Stepan; Auto.ru development only",
     "Do not use Cordiant, Made Sense, SmartFruits in role12 assets"
   ],
-  "current_stage": "R12-03 website conversion owner issue #103 open; read-only GSC accessible via Windsor.ai; role12 canonical alias/sitemap regression gate updated",
+  "current_stage": "R12-03 case in-main CTA still not deployed (#103); R12-04 English case agent Markdown 404 confirmed (#105); read-only daily independent QA gate installed and passing",
   "completed": {
     "R12-00": {
       "status": "done",
@@ -64,7 +64,7 @@
     {
       "id": "R12-03",
       "status": "measurement_ready__buyer_conversion_not_yet_confirmed",
-      "next": "Site owner to review bounded case-page CTA issue #103. After release, check browser RUM for case/CTA path and only user-sent marked briefs; never infer lead from page loads.",
+      "next": "Case CTAs confirmed missing in main content on both RU case pages by independent HTTP CI #39641318230. Site owner to deploy #103, and daily R12 test must then report PRESENT; do not infer revenue before actual marked enquiry.",
       "site_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/103"
     },
     {
@@ -88,6 +88,12 @@
       "id": "R12-09",
       "status": "active",
       "next": "Review opt-in qualified briefs, human estimates and receipts weekly"
+    },
+    {
+      "id": "R12-04_EN_reference",
+      "status": "confirmed_404__site_owner_fix_required",
+      "next": "Reuse first-party existing RU Markdown renderer for EN locale from official evidence feed; verify GET 200 and locale-specific canonical via daily R12 gate",
+      "site_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/105"
     }
   ],
   "observed_proxies_2026_10_18": {
@@ -196,5 +202,24 @@
     "site_cta_deployed": false,
     "regression_test": "ops/role12/test_sbercity_canonical.py",
     "actions_result": "PASS https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39620716895 (all read-only tests incl 3 alias canonical + sitemap contracts)"
+  },
+  "new_live_buyer_gate_2026_10_21": {
+    "source": "public website server HTML",
+    "continuous_monitor": "existing .github/workflows/ai-buyer-findability.yml (daily; no new task)",
+    "test": "ops/role12/test_live_buyer_entrypoints.py",
+    "last_confirmed_receipt": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39641318230",
+    "case_status": {
+      "sbercity": "200 canonical PASS / contextual CTA MISSING",
+      "magnit": "200 canonical PASS / contextual CTA MISSING"
+    },
+    "english_markdown_reference": "404 https://objekts.ai/en/reference/work/sbercity.md",
+    "warnings": 3,
+    "script_errors": 0,
+    "forms_sent": 0,
+    "main_site_production_deployments_by_R12": 0,
+    "issues": [
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/103",
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/105"
+    ]
   }
 }
