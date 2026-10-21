@@ -1,5 +1,5 @@
 # OBJEKTS · 12 — Search & AI Visibility
-## Working roadmap · v1.7 · 2026-10-21
+## Working roadmap · v1.8 · 2026-10-21
 
 **Owner:** Role 12 / Search & AI Visibility. **Market priority:** RU → CIS → international / Thailand / SEA. **Outcome:** inbound commercial briefs attributable to organic search or AI-assisted discovery, with a defensible evidence chain. **Operating constraint:** free surfaces only; no commercial purchases, production-site change without owner approval, unsolicited outreach or new CRM submissions. Do not duplicate role 09 (media), 11 (agent registries), 13 (editorial), 21 (Agency Access buyer campaigns), or Production Desk/runtime ownership.
 
@@ -96,7 +96,15 @@ Read-only Cloudflare GraphQL `httpRequestsAdaptiveGroups`, 00:00–21:20 UTC, ve
 - Recovered authenticated free read-only GSC data using already-connected Windsor.ai (searchconsole, sc-domain:objekts.ai). Two equal 18-day settled windows show more impressions but disproportionately fewer incremental clicks; exact small-volume numbers remain private. No independently proven new production enquiry, paid job, or indexing verdict.
 - Site owner issue #103 remains OPEN: no in-content buyer CTA confirmed on production SberCity/Magnit, and Role12 does not own the bundled Worker deployment.
 
+### 21 October 2026 — live buyer conversion and EN reference monitor
+
+- **Shipped code, not a site deployment:** new `ops/role12/test_live_buyer_entrypoints.py` performs transparent read-only HTTP GETs of the two current canonical RU commercial case pages and the EN machine-readable SberCity reference. It checks exact self-canonical and in-`<main>` voluntary subject-tagged estimate link plus contextual Production Desk. It has parser self-tests, public JSON output, no forms or buyer-data collection.
+- **Existing daily workflow enhanced** (`ai-buyer-findability.yml`), no new automation. Verified independent CI [run 39641318230](https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39641318230) **SUCCESS**: 2 live case pages 200 and correct canonical, both contextual CTA **MISSING**, EN `/en/reference/work/sbercity.md` **404**, 3 WARN / 0 test execution errors / 0 forms sent.
+- English reference is a route omission: existing RU `/reference/work/sbercity.md` produces live detailed first-party Markdown from official machine-readable evidence. Correct remediation is locale-aware routing to the same generator, not a stale static duplicate. Opened [site owner issue #105](https://github.com/peach420fuzz/objekts-production-desk/issues/105), distinct from website CTA [#103](https://github.com/peach420fuzz/objekts-production-desk/issues/103). Existing source repository/Cloudflare deployment still unavailable to Role 12; do not overwrite live Worker using unrelated MARKETS archived `site_worker.mjs` found in Library.
+- Search Console via existing Windsor.ai remains read-only and reports settled rows through 19 Oct, including real impressions/clicks; neither those nor a passing QA test demonstrates a new qualified brief. Successful crawl / submission / indexing / search display / enquiry / payment are separate states.
+
 ### Changelog
+- **2026-10-21 v1.8:** shipped daily in-main conversion/EN-reference HTTP monitoring, independent CI PASS, isolated site-owner reference route bug #105, no production deploy or synthetic leads.
 - **2026-10-21 v1.7:** repaired canonical buyer links, extended live read-only QA, recovered free GSC via Windsor, kept site issue #103 open.
 - **2026-10-20 v1.5:** fixed public SberCity source canonical split, verified official 69-record feed by independent read-only CI, refined R12-04 open scope; new Bing referral observed but zero qualified briefs.
 - **2026-10-20 v1.4:** Free live Cloudflare RUM browser/referrer source discovered; privacy-safe analysis test implemented; case-to-contact fix documented as site-owner issue #103. No changes to production and no new clients attributed.
