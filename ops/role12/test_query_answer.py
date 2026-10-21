@@ -21,10 +21,10 @@ assert all(all(u.startswith("https://") for u in x["top3_result_urls"]) for x in
 assert all(x["first_party_case_for_fit"].startswith("https://objekts.ai/en/work/") for x in rows)
 
 guide = (repo / "references/ru-vfx-plate-preservation-buyer-guide.md").read_text("utf-8")
-for phrase in ("https://objekts.ai/ru/work/sbercity",
-               "https://objekts.ai/ru/work/magnit-2026",
-               "https://objekts.ai/ru/tools/production-desk",
-               "https://objekts.ai/ru/contact",
+for phrase in ("https://objekts.ai/work/sbercity",
+               "https://objekts.ai/work/magnit-2026",
+               "https://objekts.ai/tools/production-desk",
+               "https://objekts.ai/contact",
                "salute@objekts.ai",
                "не предлагает бесплатное производство",
                "OBJ-R12-PLATE-2026",
