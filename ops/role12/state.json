@@ -1,6 +1,6 @@
 {
   "schema_version": "objekts.role12.roadmap_state.v1",
-  "updated_on": "2026-10-21",
+  "updated_on": "2026-10-22",
   "mandate": "Organic search and AI-assisted buyer discovery, evidence-backed qualification and inbound attribution; Russia first, SEA and global additional. No editorial outreach and no agent-registry duplication.",
   "owner_constraints": [
     "Free channels; no paid API or registration",
@@ -9,7 +9,7 @@
     "Case sources: SberCity, Magnit, Voting/Stepan; Auto.ru development only",
     "Do not use Cordiant, Made Sense, SmartFruits in role12 assets"
   ],
-  "current_stage": "R12-03/04 staged in an isolated noindex Cloudflare Worker (11/11 read-only+preview CI PASS). Production cases still lack case CTA and EN reference remains 404; owner source integration/release approval required.",
+  "current_stage": "R12-03 owner release gate: dedicated Cloudflare service-binding worker objekts-r12-case-edge-v1 staged, four exact case routes QA PASS, production routes unchanged. R12 EN reference false-positive CLOSED (#105); official /reference/en/work/sbercity.md is live 200.",
   "completed": {
     "R12-00": {
       "status": "done",
@@ -58,19 +58,26 @@
       "test": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/test_sbercity_canonical.py",
       "external_receipt": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39420028126",
       "lead_or_index_claims": false
+    },
+    "R12_English_reference_false_positive": {
+      "date": "2026-10-22",
+      "status": "CLOSED_FALSE_POSITIVE",
+      "url": "https://objekts.ai/reference/en/work/sbercity.md",
+      "receipt": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39695525384",
+      "note": "Original 200 first-party English reference exists at /reference/en/ not /en/reference/. Issue #105 closed not_planned; both existing R12 probes fixed to require 200; no duplicate alternate reference route should be published."
     }
   },
   "open": [
     {
       "id": "R12-03",
-      "status": "ISOLATED_STAGING_PASS__MAIN_SITE_DEPLOY_PENDING",
-      "next": "Site owner integrate and release R12 optional Worker wrapper into true source build, preserving static assets and metadata. Check desktop/mobile/keyboard; production R12 CI then requires both CTAs PRESENT; only genuine voluntary human requests qualify.",
+      "status": "EXACT_ROUTE_RELEASE_CANDIDATE_VERIFIED__OWNER_SIGNOFF_PENDING",
+      "next": "Publish only after visual mobile/keyboard owner acceptance: attach 4 exact Cloudflare routes to objekts-r12-case-edge-v1 while preserving existing objekts-ard-home-links wildcard; roll back by removing only four route IDs. Production case CTA monitor must then switch MISSING → PRESENT, and mailto conversion requires real human-sent enquiries.",
       "site_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/103"
     },
     {
       "id": "R12-04",
       "status": "canonical_alias_regression_checks_updated__site_owner_localization_pending",
-      "next": "Existing daily CI now checks RU /ru aliases, preferred case/tool canonicals and sitemap membership. Confirm a successful Actions run. Investigate EN reference Markdown 404 with site owner; no direct production Worker changes."
+      "next": "Live canonical and sitemap QA passing in CI. English machine Markdown is already live under /reference/en/work/sbercity.md; mistaken /en/reference form 404 is expected, no main-site localization deploy needed."
     },
     {
       "id": "R12-05",
@@ -88,12 +95,6 @@
       "id": "R12-09",
       "status": "active",
       "next": "Review opt-in qualified briefs, human estimates and receipts weekly"
-    },
-    {
-      "id": "R12-04_EN_reference",
-      "status": "ISOLATED_STAGING_200__MAIN_SITE_404",
-      "next": "Site owner releases generated EN machine reference from first-party JSONL by reviewed original Worker build. CI stage passed, production route still 404.",
-      "site_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/105"
     }
   ],
   "observed_proxies_2026_10_18": {
@@ -207,27 +208,26 @@
     "source": "public website server HTML",
     "continuous_monitor": "existing .github/workflows/ai-buyer-findability.yml (daily; no new task)",
     "test": "ops/role12/test_live_buyer_entrypoints.py",
-    "last_confirmed_receipt": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39641318230",
+    "last_confirmed_receipt": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39695525384",
     "case_status": {
       "sbercity": "200 canonical PASS / contextual CTA MISSING",
       "magnit": "200 canonical PASS / contextual CTA MISSING"
     },
-    "english_markdown_reference": "404 https://objekts.ai/en/reference/work/sbercity.md",
-    "warnings": 3,
+    "english_markdown_reference": "200 https://objekts.ai/reference/en/work/sbercity.md",
+    "warnings": 2,
     "script_errors": 0,
     "forms_sent": 0,
     "main_site_production_deployments_by_R12": 0,
     "issues": [
-      "https://github.com/peach420fuzz/objekts-production-desk/issues/103",
-      "https://github.com/peach420fuzz/objekts-production-desk/issues/105"
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/103"
     ]
   },
   "conversion_staging_2026_10_21": {
-    "status": "STAGED_NONINDEXED__PRODUCTION_NOT_CHANGED",
+    "status": "ARCHIVED_PREVIEW_DISABLED_NOT_FOR_RELEASE",
     "worker": "objekts-r12-case-preview-20261021",
     "public_preview_sbercity": "https://objekts-r12-case-preview-20261021.peach420fuzz.workers.dev/work/sbercity",
     "public_preview_magnit": "https://objekts-r12-case-preview-20261021.peach420fuzz.workers.dev/work/magnit-2026",
-    "public_preview_english_reference": "https://objekts-r12-case-preview-20261021.peach420fuzz.workers.dev/en/reference/work/sbercity.md",
+    "public_preview_english_reference": "RETIRED incorrect alternate; official URL https://objekts.ai/reference/en/work/sbercity.md",
     "code": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/site_conversion_overlay.mjs",
     "tests": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/test_site_conversion_overlay.mjs",
     "independent_live_ci": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39682466637",
@@ -239,5 +239,36 @@
     "production_deployments_by_R12": 0,
     "main_worker_architecture": "Cloudflare Workers module with ASSETS static hash manifest; edit via original site build/release gate, not source-less bundle overwrite.",
     "new_qualified_organic_briefs": "not confirmed"
+  },
+  "replaced_legacy_stage_2026_10_22": {
+    "retired_workers_dev": [
+      "objekts-r12-case-preview-20261021",
+      "objekts-r12-service-preview-20261022",
+      "objekts-r12-cta-preview-20261022"
+    ],
+    "public_subdomain_status": "DISABLED",
+    "old_duplicate_reference_generator": "ARCHIVED_NOT_FOR_RELEASE",
+    "retire_reason": "keep one truthful candidate; original full first-party localized Markdown already exists"
+  },
+  "release_candidate_2026_10_22": {
+    "worker": "objekts-r12-case-edge-v1",
+    "status": "ISOLATED_PREVIEW_ACTIVE__NO_PRODUCTION_ZONE_ROUTES_ASSIGNED",
+    "worker_preview": "https://objekts-r12-case-edge-v1.peach420fuzz.workers.dev/work/sbercity",
+    "upstream": "objekts-ard-home-links",
+    "binding": "UPSTREAM service binding",
+    "original_site_worker": "objekts-site-production",
+    "production_wildcard_route": "objekts.ai/*",
+    "exact_routes_for_owner_approval": [
+      "objekts.ai/work/sbercity",
+      "objekts.ai/work/magnit-2026",
+      "objekts.ai/en/work/sbercity",
+      "objekts.ai/en/work/magnit-2026"
+    ],
+    "source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/site_case_cta_only.mjs",
+    "qa": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39695828842",
+    "byte_identity_qa": "FOUR FOUR PASS after subtracting exactly one CTA section and noindex preview head",
+    "production_route_count_added": 0,
+    "new_briefs_confirmed": 0,
+    "required_signoff": "owner visual & route-release gate"
   }
 }
