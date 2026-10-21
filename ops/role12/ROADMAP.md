@@ -1,5 +1,7 @@
 # OBJEKTS · 12 — Search & AI Visibility
-## Working roadmap · v1.9 · 2026-10-21
+## Working roadmap · v2.0 · 2026-10-22
+
+**Current red line (v2.0):** EN machine record is LIVE at `/reference/en/work/sbercity.md`; only the 4 case CTAs remain unreleased. The main site must not be silently redeployed from a partial Worker bundle. Older audit sections are historical.
 
 **Owner:** Role 12 / Search & AI Visibility. **Market priority:** RU → CIS → international / Thailand / SEA. **Outcome:** inbound commercial briefs attributable to organic search or AI-assisted discovery, with a defensible evidence chain. **Operating constraint:** free surfaces only; no commercial purchases, production-site change without owner approval, unsolicited outreach or new CRM submissions. Do not duplicate role 09 (media), 11 (agent registries), 13 (editorial), 21 (Agency Access buyer campaigns), or Production Desk/runtime ownership.
 
@@ -112,7 +114,20 @@ Read-only Cloudflare GraphQL `httpRequestsAdaptiveGroups`, 00:00–21:20 UTC, ve
 - Real conversion status: private read-only Production Desk D1 rollups were checked; no confirmed new production brief since the previous review. No automatically generated browser diagnostic is a qualified lead. Sensitive count details remain out of the public repository.
 - [Issue #103](https://github.com/peach420fuzz/objekts-production-desk/issues/103) and [#105](https://github.com/peach420fuzz/objekts-production-desk/issues/105) now contain implementation and live staging receipts. Site owner must integrate in the **actual source build** and approve visual mobile/desktop, keyboard, accessibility and release/rollback. No public production merge or domain change until that gate is satisfied.
 
+### 22 October 2026 — canonical EN Markdown correction and actual edge release strategy
+
+**CURRENT VERIFIED STATE supersedes historical 21-Oct EN 404 claims below.** The English machine-readable first-party case is already published at [the correct site URL](https://objekts.ai/reference/en/work/sbercity.md). The incorrectly constructed `/en/reference/work/sbercity.md` is not an intended route; its 404 does **not** require repair. Official RU and EN machine-readable source checks now both PASS; independent [Actions #39695525384](https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39695525384) reported 17 PASS, 0 WARN, 0 FAIL on source-discoverability and 4/4 case CTA-only tests. [False-positive issue #105](https://github.com/peach420fuzz/objekts-production-desk/issues/105) CLOSED. Never deploy experimental 1-KB alternate EN summary in place of the actual extensive source document.
+
+**Actual production delivery architecture:** Cloudflare wildcard `objekts.ai/*` is handled by `objekts-ard-home-links`, which invokes `objekts-site-production` via bound Worker service `SITE`; the latter contains approved static asset manifest. Keep BOTH existing scripts and their bindings untouched. Four-canonical-path CTA integration can be a separate service-bound Worker upstream to `objekts-ard-home-links`, not an invasive source rebuild.
+
+**Ready release candidate, production UNCHANGED:** `objekts-r12-case-edge-v1` exists as a distinct Cloudflare Worker. The candidate has service binding `UPSTREAM` to `objekts-ard-home-links`, exact path allowlist `/work/sbercity`, `/work/magnit-2026`, `/en/work/sbercity`, `/en/work/magnit-2026`. It inserts one opt-in CTA only after case content; no auto send, no capture, no price commitment. Its isolated workers.dev [SberCity](https://objekts-r12-case-edge-v1.peach420fuzz.workers.dev/work/sbercity) / [Magnit](https://objekts-r12-case-edge-v1.peach420fuzz.workers.dev/work/magnit-2026) previews are `noindex`. On main `objekts.ai` the same script would preserve the original upstream headers/canonical/Markets nav. **No production zone routes were added, and the main site still lacks the case CTA.**
+
+**Proof and rollback:** [Case-only tests](https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/test_case_cta_only.mjs) and independent [CI #39695828842](https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39695828842) PASS: four real live pages, byte-for-byte original markup when stripping one injected CTA and preview meta, unchanged Markets script, `mailto:` opt-in markers, noindex preview, official EN reference 200, unexpected EN alias 404. Three superseded R12 preview subdomains disabled; keep only `objekts-r12-case-edge-v1` for review. Release ONLY after site-owner visual mobile/desktop/keyboard QA and explicit sign-off; add four exact Cloudflare route patterns to the candidate, do not modify wildcard `objekts.ai/*`. Roll back by removing only the newly created exact route IDs. After release require monitor `cta_status: PRESENT` on both case pages and actual human-sent buyer enquiries, not synthetic crawl counts.
+
+**Search metrics:** Settled Google Search Console daily data currently stops at 2026-10-19 (latency inherent). Query-level exposure remains small; no new qualified commercial brief is established. Do not treat tool invocations, agent links, views or crawls as sales.
+
 ### Changelog
+- **2026-10-22 v2.0:** closed false EN 404, verified correct official machine record 200, prepared and QA'd exact-path service-binding release candidate (four case CTAs), retired three obsolete previews, main production zone unchanged.
 - **2026-10-21 v1.9:** code + isolated noindex staging for two case CTAs and EN factual reference; live HTTP 11/11 QA pass, Cloudflare production untouched; source/release sign-off still open.
 - **2026-10-21 v1.8:** shipped daily in-main conversion/EN-reference HTTP monitoring, independent CI PASS, isolated site-owner reference route bug #105, no production deploy or synthetic leads.
 - **2026-10-21 v1.7:** repaired canonical buyer links, extended live read-only QA, recovered free GSC via Windsor, kept site issue #103 open.
