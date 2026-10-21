@@ -19,7 +19,7 @@ Search Console access update (2026-10-21): GSC Wizard is subscription-gated, but
 
 ### Executable roadmap / stage gates
 
-| ID | Stage / owner | Status as at 2026-10-18 | Acceptance gate and next action |
+| ID | Stage / owner | Status as at 2026-10-21 | Acceptance gate and next action |
 | --- | --- | --- | --- |
 | R12-00 | Inventory and dedup, Role 12 | **DONE** | ARD (4 entries) already live; MCP, skills, llms.txt, A2A, external registries already owned elsewhere. Reuse them; don't republish or claim otherwise. |
 | R12-01 | Correct the AI visibility baseline, Role 12 | **DONE (2026-10-18)** | Segmented Cloudflare GraphQL by `clientRequestHTTPHost`, exact path, `verifiedBotCategory`, status, period. Published [normalizer](host_scoped_crawlers.py) and [18-Oct verified OAI-SearchBot fixture](fixtures/oai_searchbot_2026-10-18.json); [external PASS](https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39168307086). Never merge errors from `media.objekts.ai` into `objekts.ai`. |
@@ -92,7 +92,7 @@ Read-only Cloudflare GraphQL `httpRequestsAdaptiveGroups`, 00:00–21:20 UTC, ve
 
 - Live HTML metadata: preferred Russian URLs for SberCity, Magnit and Production Desk have no /ru prefix; /ru aliases canonicalize to /work/sbercity, /work/magnit-2026 and /tools/production-desk respectively. The current main sitemap offers 200 URLs including these canonicals. An earlier submitted sitemap count differs; that alone is not proof of a broken index.
 - Corrected 12 existing SberCity GitHub discussions (including #103) and two SberCity case breakdowns to the verified /work/sbercity canonical. Updated case links in the RU buyer guide and 3 case-note Production Desk links. All source scopes and voluntary mailto tracking markers stay unchanged.
-- Added 3 Russian alias/canonical checks and sitemap membership to the existing read-only live CI test in ops/role12/test_sbercity_canonical.py. No new schedule, external submissions or production changes. Await confirmed Actions receipt.
+- Added 3 Russian alias/canonical checks and sitemap membership to the existing read-only live CI test in ops/role12/test_sbercity_canonical.py. No new schedule, external submissions or production changes. Independent run 39620716895 PASS across all live and offline role-12 QA steps (https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39620716895).
 - Recovered authenticated free read-only GSC data using already-connected Windsor.ai (searchconsole, sc-domain:objekts.ai). Two equal 18-day settled windows show more impressions but disproportionately fewer incremental clicks; exact small-volume numbers remain private. No independently proven new production enquiry, paid job, or indexing verdict.
 - Site owner issue #103 remains OPEN: no in-content buyer CTA confirmed on production SberCity/Magnit, and Role12 does not own the bundled Worker deployment.
 
