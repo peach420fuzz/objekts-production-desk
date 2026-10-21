@@ -30,8 +30,8 @@ TARGETS = [
     ("preflight", SITE + "/en/tools/production-desk", True),
     ("contact", SITE + "/en/contact", True),
     ("ru-machine-evidence", SITE + "/reference/work/sbercity.md", True),
-    # Existing published URL gap. Do not fail the workflow until it is fixed.
-    ("en-machine-evidence", SITE + "/en/reference/work/sbercity.md", False),
+    # Official locale convention is /reference/{locale}/work/{slug}.md.
+    ("en-machine-evidence", SITE + "/reference/en/work/sbercity.md", True),
 ]
 
 def check_content(key, body):
