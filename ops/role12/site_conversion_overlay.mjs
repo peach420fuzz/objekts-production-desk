@@ -185,7 +185,7 @@ export function withR12BuyerEntryPoints(siteHandler) {
       if (request.method === "HEAD" || response.status !== 200 || !caseRoute(url.pathname)
         || !(response.headers.get("content-type")||"").toLowerCase().includes("text/html"))
         return response;
-      const result = injectCaseQuote(url.pathname, await response.text());
+      const result = injectCaseQuote(url.pathname, await response.clone().text());
       if (!result.changed) return response; // Source untouched on unexpected layout
       const headers = new Headers(response.headers);
       for (const name of ["content-length","content-encoding","etag","last-modified"]) headers.delete(name);
