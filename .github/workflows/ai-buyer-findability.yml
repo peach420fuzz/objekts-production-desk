@@ -11,6 +11,7 @@ on:
       - "ops/mcp_protocol_era_probe.py"
       - "ops/role12/**"
       - "docs/cases/SBERCITY_*"
+      - "docs/cases/MAGNIT_2026_HYBRID_VFX_BREAKDOWN.md"
       - "references/CASE_BREAKDOWNS.md"
       - "references/production-breakdowns.jsonl"
       - "references/AI_VENDOR_FIT_EVIDENCE.md"
