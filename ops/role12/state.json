@@ -195,6 +195,6 @@
     "production_changes": 0,
     "site_cta_deployed": false,
     "regression_test": "ops/role12/test_sbercity_canonical.py",
-    "actions_result": "pending verification"
+    "actions_result": "PASS https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39620716895 (all read-only tests incl 3 alias canonical + sitemap contracts)"
   }
 }
