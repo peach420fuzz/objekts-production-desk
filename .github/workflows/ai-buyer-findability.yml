@@ -53,11 +53,11 @@ jobs:
         run: python3 ops/role12/rum_attribution.py --self-test
       - name: Verify SberCity grouped canonical and official feed (read-only)
         run: python3 ops/role12/test_sbercity_canonical.py --live
-      - name: Proof-test optional isolated site conversion middleware (NOT a production deployment)
+      - name: Proof-test four-case service-bound CTA-only preview (NOT a production deployment)
         shell: bash
         env:
           R12_LIVE: "1"
-        run: node --test ops/role12/test_site_conversion_overlay.mjs
+        run: node --test ops/role12/test_case_cta_only.mjs
       - name: Track in-content buyer actions and agent reference (read-only; WARN until site release)
         shell: bash
         run: |
