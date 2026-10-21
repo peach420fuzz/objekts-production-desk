@@ -9,6 +9,7 @@ import json
 import re
 import urllib.error
 import urllib.request
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -103,9 +104,34 @@ def check_live():
     page = Links()
     page.feed(raw.decode("utf-8", "replace"))
     assert EN in page.canonicals, page.canonicals
+    # A Russian /ru alias is accessible, but the live site declares its
+    # unprefixed Russian page canonical. Do not republish aliases as canonicals.
+    alias_contracts = [
+        ("https://objekts.ai/ru/work/sbercity", CANON),
+        ("https://objekts.ai/ru/work/magnit-2026",
+         "https://objekts.ai/work/magnit-2026"),
+        ("https://objekts.ai/ru/tools/production-desk",
+         "https://objekts.ai/tools/production-desk"),
+    ]
+    for alias, preferred in alias_contracts:
+        final, html, _ = get(alias)
+        assert final in (alias, preferred), (alias, final)
+        page = Links()
+        page.feed(html.decode("utf-8", "replace"))
+        assert preferred in page.canonicals, (alias, page.canonicals)
+    sitemap_final, xml, _ = get("https://objekts.ai/sitemap.xml")
+    assert sitemap_final == "https://objekts.ai/sitemap.xml"
+    root = ET.fromstring(xml)
+    locations = [node.text for node in root.iter()
+                 if node.tag.rsplit("}", 1)[-1] == "loc"]
+    for alias, preferred in alias_contracts:
+        assert preferred in locations, ("missing preferred URL", preferred)
+        assert alias not in locations, ("alias in preferred sitemap", alias)
     return {"official_feed_records": len(official),
             "legacy_urls_follow_to_grouped": 2,
-            "en_case_self_canonical": True}
+            "en_case_self_canonical": True,
+            "ru_alias_canonical_contracts": len(alias_contracts),
+            "sitemap_listed_urls": len(locations)}
 
 def self_test():
     sample = '{"project":"SberCity — New Year","canonical_url":"' + CANON + '"}\n'
