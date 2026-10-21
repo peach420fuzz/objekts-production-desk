@@ -1,5 +1,5 @@
 # OBJEKTS · 12 — Search & AI Visibility
-## Working roadmap · v1.5 · 2026-10-20
+## Working roadmap · v1.6 · 2026-10-21
 
 **Owner:** Role 12 / Search & AI Visibility. **Market priority:** RU → CIS → international / Thailand / SEA. **Outcome:** inbound commercial briefs attributable to organic search or AI-assisted discovery, with a defensible evidence chain. **Operating constraint:** free surfaces only; no commercial purchases, production-site change without owner approval, unsolicited outreach or new CRM submissions. Do not duplicate role 09 (media), 11 (agent registries), 13 (editorial), 21 (Agency Access buyer campaigns), or Production Desk/runtime ownership.
 
@@ -80,6 +80,13 @@ Read-only Cloudflare GraphQL `httpRequestsAdaptiveGroups`, 00:00–21:20 UTC, ve
 - Added [local + external canonical contract tests](test_sbercity_canonical.py) to existing daily role-12 CI. [Run 39420028126](https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39420028126) **PASS**, confirming **69-record live feed**, both legacy redirects to combined case, current English canonical and the corrected seven-record GitHub mirror. Publishing a GitHub canonical is not itself proof of Google/Bing index refresh.
 - On 20 Oct 00:00–12:00 UTC, Cloudflare RUM main-host browser sample included **one Bing referrer visit** and a few loads on relevant case and Production Desk pages. A separate D1 event `diagnose_production` with client family `browser` was observed, but **no submitted brief** and no proof of buyer/source linkage. First-party case-to-brief site change [issue #103](https://github.com/peach420fuzz/objekts-production-desk/issues/103) remains OPEN.
 - The failed A2A monitor runs on the non-main `fix/a2a-discovery-health-check-20261020` branch (PR #104) are **not** evidence that this role-12 main-branch audit or production was broken; site/agent runtime ownership remains separate.
+
+### 21 October 2026 — R12-03 partial conversion fix published
+
+- **Production case pages remain unchanged:** public RU/EN SberCity/Magnit have no in-content R12 quote CTA. Site source is unavailable in connected GitHub and Drive; Cloudflare management failed internally, so never overwrite the bundled main-site Worker. Site owner issue [#103](https://github.com/peach420fuzz/objekts-production-desk/issues/103) remains open.
+- **Live free agent-source workaround:** added relevant commercial one-shot quote CTAs to three *existing* GitHub case breakdowns (SberCity New Year, SberCity Seasons, Magnit), distinguishing free read-only Production Desk diagnosis from human production estimates; all contact steps opt-in and no customer data is sent by link creation. Readable unauthenticated raw markdown URLs verified. Added Magnit case to root README and assertion guards to existing CI.
+- **Receipt:** [GitHub Actions run 39592316441](https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39592316441) PASS. PostHog available default project has `ingested_event=false`, so do not claim separate PostHog conversion events. Gmail source-marker search returned 0. Search-related confirmed paid work remains 0.
+- **Next:** #103 stays P0 until actual safe site deployment; meanwhile ask/search for the legitimate main-site source/release process. R12 must not repeatedly call an issue creation or public GitHub change 'site conversion solved'.
 
 ### Changelog
 - **2026-10-20 v1.5:** fixed public SberCity source canonical split, verified official 69-record feed by independent read-only CI, refined R12-04 open scope; new Bing referral observed but zero qualified briefs.
