@@ -2,7 +2,7 @@
 
 **Published objekts role:** AI VFX / graphics  
 **Format:** New Year advertising (2025)  
-**Canonical case:** https://objekts.ai/work/sbercity
+**Canonical case (RU):** https://objekts.ai/ru/work/sbercity
 
 The two SberCity films share this grouped canonical page but have distinct published contribution scopes.
 
