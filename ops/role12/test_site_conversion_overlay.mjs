@@ -63,7 +63,7 @@ test("EN machine reference uses only confirmed two official first-party records"
   assert.match(text,/New Year[\s\S]*Year: 2025[\s\S]*AI VFX \/ Graphics/);
   assert.match(text,/Seasons[\s\S]*Year: 2026[\s\S]*AI VFX \/ Graphics \/ AI scenes/);
   assert.match(text,/Official evidence: https:\/\/objekts.ai\/production-breakdowns\.jsonl/);
-  assert.doesNotMatch(text,/independent ranking/i);
+  assert.match(text,/not an independent ranking or endorsement/i);
   assert.equal((text.match(/Official record:/g)||[]).length,2);
   assert.throws(()=>englishSbercityReferenceFromFeed(FEED+RECORDS.map(x=>JSON.stringify(x)).join("\n")),/duplicate/);
   assert.throws(()=>englishSbercityReferenceFromFeed(FEED.replace(BASE+"/en/work/sbercity",BASE+"/en/work/wrong")),/drift/);
