@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import {injectCaseQuote,withR12CaseQuote} from "./site_case_cta_only.mjs";
 
 const ROOT="https://objekts.ai";
-const PREVIEW="https://objekts-r12-cta-preview-20261022.peach420fuzz.workers.dev";
+const PREVIEW="https://objekts-r12-case-edge-v1.peach420fuzz.workers.dev";
 const CASES=[
   ["/work/sbercity","OBJ-R12-SBER-2026"],
   ["/work/magnit-2026","OBJ-R12-MAGNIT-2026"],
