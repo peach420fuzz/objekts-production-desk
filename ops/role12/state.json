@@ -1,6 +1,6 @@
 {
   "schema_version": "objekts.role12.roadmap_state.v1",
-  "updated_on": "2026-10-20",
+  "updated_on": "2026-10-21",
   "mandate": "Organic search and AI-assisted buyer discovery, evidence-backed qualification and inbound attribution; Russia first, SEA and global additional. No editorial outreach and no agent-registry duplication.",
   "owner_constraints": [
     "Free channels; no paid API or registration",
@@ -9,7 +9,7 @@
     "Case sources: SberCity, Magnit, Voting/Stepan; Auto.ru development only",
     "Do not use Cordiant, Made Sense, SmartFruits in role12 assets"
   ],
-  "current_stage": "R12-03 real buyer conversion awaiting site owner issue #103; R12-04 SberCity source canonical drift closed; EN reference Markdown unresolved",
+  "current_stage": "R12-03 website conversion owner issue #103 open; read-only GSC accessible via Windsor.ai; role12 canonical alias/sitemap regression gate updated",
   "completed": {
     "R12-00": {
       "status": "done",
@@ -69,8 +69,8 @@
     },
     {
       "id": "R12-04",
-      "status": "partial_done__official_source_contract_verified",
-      "next": "EN /en/reference/work/sbercity.md remains 404; investigate main site owner localization and real HTML hreflang/root consistency without touching production; don't recreate grouped-case URLs."
+      "status": "canonical_alias_regression_checks_updated__site_owner_localization_pending",
+      "next": "Existing daily CI now checks RU /ru aliases, preferred case/tool canonicals and sitemap membership. Confirm a successful Actions run. Investigate EN reference Markdown 404 with site owner; no direct production Worker changes."
     },
     {
       "id": "R12-05",
@@ -80,8 +80,8 @@
     },
     {
       "id": "R12-07",
-      "status": "existing_free_rum_available__index_impressions_not_connected",
-      "next": "Analyze exact-host Cloudflare Web Analytics page-load/visit-start/referrer groups; retain private aggregates. Authenticated GSC ranking/impressions still unavailable without access, no paywall purchases.",
+      "status": "Cloudflare_RUM_and_Windsor_GSC_read_available__attribution_not_confirmed",
+      "next": "Use Windsor.ai searchconsole for settled impressions/clicks/queries/pages (account sc-domain:objekts.ai) and Cloudflare exact-host RUM for browser referrers. Do not claim URL indexing from sitemap counts or infer leads from crawls.",
       "source_tool": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/rum_attribution.py"
     },
     {
@@ -166,5 +166,35 @@
     "diagnosis_qualifies_as_lead": false,
     "production_site_deployments_by_role12": 0,
     "advisory": "A2A failing workflow runs on PR#104's feature branch; role12 main branch run 39420028126 passed. Do not conflate branch tests with production outage."
+  },
+  "search_console_access_2026_10_21": {
+    "status": "read_only_connected_without_paid_gscwizard",
+    "connector": "Windsor.ai/searchconsole",
+    "account": "sc-domain:objekts.ai",
+    "latest_observed_settled_date": "2026-10-18",
+    "comparison_windows": [
+      "2026-09-13/2026-09-30",
+      "2026-10-01/2026-10-18"
+    ],
+    "precise_traffic_numbers": "private_only_not_in_public_git_repo",
+    "known_limitations": "Search Console Search Analytics has lag and thresholding; not URL-level index verdict, no confirmed human inquiries"
+  },
+  "canonical_site_audit_2026_10_21": {
+    "declared_russian_preferred_urls": [
+      "https://objekts.ai/work/sbercity",
+      "https://objekts.ai/work/magnit-2026",
+      "https://objekts.ai/tools/production-desk"
+    ],
+    "aliases": [
+      "https://objekts.ai/ru/work/sbercity",
+      "https://objekts.ai/ru/work/magnit-2026",
+      "https://objekts.ai/ru/tools/production-desk"
+    ],
+    "main_sitemap_loc_count_from_live_extraction": 200,
+    "documented_github_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/103",
+    "production_changes": 0,
+    "site_cta_deployed": false,
+    "regression_test": "ops/role12/test_sbercity_canonical.py",
+    "actions_result": "pending verification"
   }
 }
