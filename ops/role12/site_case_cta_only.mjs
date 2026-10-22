@@ -69,12 +69,13 @@ function composeBlock(route) {
   return [
     '<section data-objekts-role12="case-brief-v1" aria-labelledby="r12-case-brief-heading" ',
     'style="max-width:72rem;margin:3.5rem auto;padding:1.5rem 0;border-top:1px solid currentColor">',
+    '<style>[data-objekts-role12] a:focus-visible{outline:2px solid currentColor;outline-offset:4px}</style>',
     '<p style="font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;opacity:.65">', escapeHtml(heading), '</p>',
     '<h2 id="r12-case-brief-heading" style="font:inherit;font-size:clamp(1.45rem,3vw,2.4rem);line-height:1.1;margin:1rem 0">', escapeHtml(tr.lead), '</h2>',
     '<p style="max-width:49rem;line-height:1.55">', escapeHtml(tr.detail), '</p>',
     '<p style="display:flex;flex-wrap:wrap;gap:1.4rem;margin-top:1.25rem">',
-    '<a href="', escapeHtml(mailto), '" style="text-decoration:underline;text-underline-offset:.25em">', escapeHtml(tr.quote), ' ↗</a>',
-    '<a href="', escapeHtml(desk), '" style="text-decoration:underline;text-underline-offset:.25em">', escapeHtml(tr.preflight), ' ↗</a>',
+    '<a href="', escapeHtml(mailto), '" style="display:inline-flex;align-items:center;min-height:44px;max-width:100%;padding:4px 0;text-decoration:underline;text-underline-offset:.25em;outline-offset:4px">', escapeHtml(tr.quote), ' ↗</a>',
+    '<a href="', escapeHtml(desk), '" style="display:inline-flex;align-items:center;min-height:44px;max-width:100%;padding:4px 0;text-decoration:underline;text-underline-offset:.25em;outline-offset:4px">', escapeHtml(tr.preflight), ' ↗</a>',
     '</p><p style="font-size:.8rem;opacity:.7;max-width:50rem">', escapeHtml(tr.note), '</p>',
     '</section>'
   ].join("");
