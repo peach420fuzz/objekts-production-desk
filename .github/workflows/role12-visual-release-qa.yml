@@ -1,0 +1,38 @@
+name: R12 Chromium visual release QA
+on:
+  push:
+    paths:
+      - "ops/role12/browser_visual_qa.cjs"
+      - ".github/workflows/role12-visual-release-qa.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: role12-visual-release-qa
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare installed Chrome and lightweight Playwright API
+        shell: bash
+        run: |
+          set -euo pipefail
+          CHROME_PATH="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || true)"
+          test -n "$CHROME_PATH"
+          echo "CHROME_PATH=$CHROME_PATH" >> "$GITHUB_ENV"
+          npm install --no-save --no-audit --no-fund --prefix /tmp/role12qa playwright-core@1.56.1
+          echo "NODE_PATH=/tmp/role12qa/node_modules" >> "$GITHUB_ENV"
+      - name: Check actual staging desktop and mobile (no mail submits)
+        shell: bash
+        run: node ops/role12/browser_visual_qa.cjs
+      - name: Attach QA screenshots and measured layouts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: role12-browser-visual-qa
+          path: out/role12-visual-qa/
+          if-no-files-found: warn
+          retention-days: 7
