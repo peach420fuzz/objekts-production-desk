@@ -9,7 +9,7 @@
     "Case sources: SberCity, Magnit, Voting/Stepan; Auto.ru development only",
     "Do not use Cordiant, Made Sense, SmartFruits in role12 assets"
   ],
-  "current_stage": "R12-03 live on original site: 4 exact case CTA Cloudflare routes released after Chromium 8/8 desktop+mobile staging QA and 44px tap target correction; existing wildcard, site origin, assets and canonical unchanged. Follow up with independent production Chromium and source-attributed human enquiries.",
+  "current_stage": "R12-03 case CTA released on four canonical pages, issue #103 CLOSED, confirmed live 200/canonical/index+CTA. Primary remaining objective is attribution: turn real nonbranded AI/VFX search traffic into human-sent qualified brief + estimate + payment. Post-release Chromium live visual workflow still executing.",
   "completed": {
     "R12-00": {
       "status": "done",
@@ -78,16 +78,12 @@
       "source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/site_case_cta_only.mjs",
       "release_receipt": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/EDGE_RELEASE_2026-10-22.md",
       "approval_scope": "General user instruction to continue site visibility work; visual QA automated, screenshots retained. Original wildcard preserved.",
-      "commercial_outcome": "no new confirmed human-sent briefs"
+      "commercial_outcome": "no new confirmed human-sent briefs",
+      "status": "LIVE_CASE_TO_BRIEF_CTA_COMPLETED",
+      "closed_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/103"
     }
   },
   "open": [
-    {
-      "id": "R12-03",
-      "status": "LIVE__PRODUCTION_BROWSER_ACCEPTANCE_IN_PROGRESS",
-      "next": "Await/inspect 4 RU/EN live case Chromium run and full R12 strict post-release monitoring. Close #103 after all gates pass. Monitor actual opt-in enquiries and source tags, not generated test traffic.",
-      "site_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/103"
-    },
     {
       "id": "R12-04",
       "status": "canonical_alias_regression_checks_updated__site_owner_localization_pending",
@@ -266,7 +262,7 @@
   },
   "release_candidate_2026_10_22": {
     "worker": "objekts-r12-case-edge-v1",
-    "status": "LIVE_4_EXACT_ROUTES_ON_OBJEKTS.AI",
+    "status": "LIVE_4_EXACT_ROUTES_ISSUE103_CLOSED",
     "worker_preview": "https://objekts-r12-case-edge-v1.peach420fuzz.workers.dev/work/sbercity",
     "upstream": "objekts-ard-home-links",
     "binding": "UPSTREAM service binding",
