@@ -1,7 +1,7 @@
 # OBJEKTS · 12 — Search & AI Visibility
-## Working roadmap · v2.0 · 2026-10-22
+## Working roadmap · v2.1 · 2026-10-22
 
-**Current red line (v2.0):** EN machine record is LIVE at `/reference/en/work/sbercity.md`; only the 4 case CTAs remain unreleased. The main site must not be silently redeployed from a partial Worker bundle. Older audit sections are historical.
+**Current state (v2.1):** EN machine record is LIVE at `/reference/en/work/sbercity.md`; 4 case CTAs are now deployed on canonical pages with exact Cloudflare routes. Maintain rollback receipt and count only real qualified enquiries. The main site must not be silently redeployed from a partial Worker bundle. Older audit sections are historical.
 
 **Owner:** Role 12 / Search & AI Visibility. **Market priority:** RU → CIS → international / Thailand / SEA. **Outcome:** inbound commercial briefs attributable to organic search or AI-assisted discovery, with a defensible evidence chain. **Operating constraint:** free surfaces only; no commercial purchases, production-site change without owner approval, unsolicited outreach or new CRM submissions. Do not duplicate role 09 (media), 11 (agent registries), 13 (editorial), 21 (Agency Access buyer campaigns), or Production Desk/runtime ownership.
 
@@ -126,7 +126,16 @@ Read-only Cloudflare GraphQL `httpRequestsAdaptiveGroups`, 00:00–21:20 UTC, ve
 
 **Search metrics:** Settled Google Search Console daily data currently stops at 2026-10-19 (latency inherent). Query-level exposure remains small; no new qualified commercial brief is established. Do not treat tool invocations, agent links, views or crawls as sales.
 
+### 22 October 2026 — R12 main-site case CTA LIVE
+
+- **Live release, production verified**: deployed four **exact** Cloudflare zone Worker routes (`/work/sbercity`, `/work/magnit-2026`, `/en/work/sbercity`, `/en/work/magnit-2026`) to `objekts-r12-case-edge-v1`, bound internally to the existing site wrapper `objekts-ard-home-links`. Existing wildcard `objekts.ai/*`, original `objekts-site-production`, hashed asset manifest, Production Desk and original EN factual Markdown untouched. See [full four-route IDs + rollback receipt](EDGE_RELEASE_2026-10-22.md).
+- Real Chromium QA **caught and fixed** a release blocker: mobile links had 24 px hit target. Changed both links to 44 px minimum and added a `focus-visible` outline. Independent [GitHub Actions #39798290733](https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39798290733): 8/8 viewport x case checks PASS, 0 horizontal overflow and 0 keyboard-focus regressions; screenshot artifacts archived.
+- Post-route live checks confirmed all four requested case pages carry opt-in conversion copy with correct self-canonical, `index, follow`, and unchanged global links. Source-snapshot HTML parity was previously verified against current website; no form submission and no injected client tracker.
+- Daily buyer-discovery QA now runs `--require-cta` and covers all **four** localized cases to detect silent regression; separate Chromium QA is triggered on edits, not a new scheduled automaton. Independent public-site Chromium production receipt may complete after this document update and must be checked before closing the release issue.
+- Google Search Console latest settled daily data available through **20 October** (reported 9 impressions and 0 clicks on 20 Oct); attribution and human commercial briefs remain a separate stage. Cloudflare D1 query showed **0 new submitted production briefs** since 20 Oct at the latest read; do not attribute new sales to this release.
+
 ### Changelog
+- **2026-10-22 v2.1:** published scoped case CTAs on original site, repaired mobile hit targets via Chromium QA, added exact rollback/route receipt, enforced 4-page daily production regression test.
 - **2026-10-22 v2.0:** closed false EN 404, verified correct official machine record 200, prepared and QA'd exact-path service-binding release candidate (four case CTAs), retired three obsolete previews, main production zone unchanged.
 - **2026-10-21 v1.9:** code + isolated noindex staging for two case CTAs and EN factual reference; live HTTP 11/11 QA pass, Cloudflare production untouched; source/release sign-off still open.
 - **2026-10-21 v1.8:** shipped daily in-main conversion/EN-reference HTTP monitoring, independent CI PASS, isolated site-owner reference route bug #105, no production deploy or synthetic leads.
