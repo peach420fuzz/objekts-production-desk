@@ -33,7 +33,7 @@ const routes=[
    if(data.documentW>data.viewportW+2)issues.push("horizontal-scroll");
    if(data.sectionX<-1||data.sectionX+data.sectionW>data.viewportW+2)issues.push("section-overflow");
    if(data.links.length!==2)issues.push("unexpected-link-count");
-   if(shape.isMobile&&data.links.some(l=>l.h<40||l.w<44))issues.push("touch-target-too-small");
+   if(shape.isMobile&&data.links.some(l=>l.h<44||l.w<44))issues.push("touch-target-too-small");
    await section.locator('a[href^="mailto:"]').focus();
    if(!(await page.evaluate(()=>document.activeElement?.getAttribute("href")?.startsWith("mailto:salute@objekts.ai"))))issues.push("focus-failed");
    const outFile="out/role12-visual-qa/"+shape.name+path.replace(/[^a-z0-9]/gi,"_")+".png";
