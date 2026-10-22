@@ -27,7 +27,9 @@ jobs:
           echo "NODE_PATH=/tmp/role12qa/node_modules" >> "$GITHUB_ENV"
       - name: Check actual staging desktop and mobile (no mail submits)
         shell: bash
-        run: node ops/role12/browser_visual_qa.cjs
+        run: |
+          node ops/role12/browser_visual_qa.cjs
+          R12_BROWSER_BASE="https://objekts.ai" node ops/role12/browser_visual_qa.cjs
       - name: Attach QA screenshots and measured layouts
         if: always()
         uses: actions/upload-artifact@v4
