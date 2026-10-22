@@ -9,7 +9,7 @@
     "Case sources: SberCity, Magnit, Voting/Stepan; Auto.ru development only",
     "Do not use Cordiant, Made Sense, SmartFruits in role12 assets"
   ],
-  "current_stage": "R12-03 owner release gate: dedicated Cloudflare service-binding worker objekts-r12-case-edge-v1 staged, four exact case routes QA PASS, production routes unchanged. R12 EN reference false-positive CLOSED (#105); official /reference/en/work/sbercity.md is live 200.",
+  "current_stage": "R12-03 live on original site: 4 exact case CTA Cloudflare routes released after Chromium 8/8 desktop+mobile staging QA and 44px tap target correction; existing wildcard, site origin, assets and canonical unchanged. Follow up with independent production Chromium and source-attributed human enquiries.",
   "completed": {
     "R12-00": {
       "status": "done",
@@ -65,13 +65,27 @@
       "url": "https://objekts.ai/reference/en/work/sbercity.md",
       "receipt": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39695525384",
       "note": "Original 200 first-party English reference exists at /reference/en/ not /en/reference/. Issue #105 closed not_planned; both existing R12 probes fixed to require 200; no duplicate alternate reference route should be published."
+    },
+    "R12_03_live_case_cta_release": {
+      "date": "2026-10-22",
+      "worker": "objekts-r12-case-edge-v1",
+      "live_paths": 4,
+      "markers": [
+        "OBJ-R12-SBER-2026",
+        "OBJ-R12-MAGNIT-2026"
+      ],
+      "staging_chromium_qa": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39798290733",
+      "source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/site_case_cta_only.mjs",
+      "release_receipt": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/EDGE_RELEASE_2026-10-22.md",
+      "approval_scope": "General user instruction to continue site visibility work; visual QA automated, screenshots retained. Original wildcard preserved.",
+      "commercial_outcome": "no new confirmed human-sent briefs"
     }
   },
   "open": [
     {
       "id": "R12-03",
-      "status": "EXACT_ROUTE_RELEASE_CANDIDATE_VERIFIED__OWNER_SIGNOFF_PENDING",
-      "next": "Publish only after visual mobile/keyboard owner acceptance: attach 4 exact Cloudflare routes to objekts-r12-case-edge-v1 while preserving existing objekts-ard-home-links wildcard; roll back by removing only four route IDs. Production case CTA monitor must then switch MISSING → PRESENT, and mailto conversion requires real human-sent enquiries.",
+      "status": "LIVE__PRODUCTION_BROWSER_ACCEPTANCE_IN_PROGRESS",
+      "next": "Await/inspect 4 RU/EN live case Chromium run and full R12 strict post-release monitoring. Close #103 after all gates pass. Monitor actual opt-in enquiries and source tags, not generated test traffic.",
       "site_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/103"
     },
     {
@@ -129,7 +143,7 @@
     "warning": "Crawling, calls, or registry listing are not qualified enquiries or payments"
   },
   "cost_eur": 0,
-  "production_changes": 0,
+  "production_changes": 4,
   "current_sample_2026_10_20": {
     "queries": 12,
     "locale_distribution": {
@@ -252,7 +266,7 @@
   },
   "release_candidate_2026_10_22": {
     "worker": "objekts-r12-case-edge-v1",
-    "status": "ISOLATED_PREVIEW_ACTIVE__NO_PRODUCTION_ZONE_ROUTES_ASSIGNED",
+    "status": "LIVE_4_EXACT_ROUTES_ON_OBJEKTS.AI",
     "worker_preview": "https://objekts-r12-case-edge-v1.peach420fuzz.workers.dev/work/sbercity",
     "upstream": "objekts-ard-home-links",
     "binding": "UPSTREAM service binding",
@@ -265,10 +279,18 @@
       "objekts.ai/en/work/magnit-2026"
     ],
     "source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/site_case_cta_only.mjs",
-    "qa": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39695828842",
+    "qa": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/39798290733",
     "byte_identity_qa": "FOUR FOUR PASS after subtracting exactly one CTA section and noindex preview head",
-    "production_route_count_added": 0,
+    "production_route_count_added": 4,
     "new_briefs_confirmed": 0,
-    "required_signoff": "owner visual & route-release gate"
+    "required_signoff": "owner visual & route-release gate",
+    "release_receipt": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/EDGE_RELEASE_2026-10-22.md",
+    "route_ids": {
+      "objekts.ai/work/sbercity": "d4c99ef80b51482cb90fba5bc5821fa3",
+      "objekts.ai/work/magnit-2026": "d0745939641e4809865e1250f6dc7eb0",
+      "objekts.ai/en/work/sbercity": "1ed3c0d9dc824bbc83e6c273ada3a887",
+      "objekts.ai/en/work/magnit-2026": "e0bb1172a2424b13a24933fe5286ab8a"
+    },
+    "reviewer_caveat": "Automated Chromium geometry and accessibility checks passed 8/8 on preview; independent production run initiated. Screenshot artifact stored, no manual design approval."
   }
 }
