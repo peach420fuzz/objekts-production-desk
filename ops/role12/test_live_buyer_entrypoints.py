@@ -117,6 +117,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--offline-test", action="store_true")
     ap.add_argument("--live", action="store_true")
+    ap.add_argument("--require-cta", action="store_true", help="Fail if either released case CTA is missing")
     ap.add_argument("--output", default="")
     opts = ap.parse_args()
     if opts.offline_test:
@@ -161,6 +162,10 @@ def main():
         "deployment_authority": "main-site owner",
         "forms_sent": 0,
     }))
+    missing_ctas = [x["path"] for x in result["cases"] if x["cta_status"] != "PRESENT"]
+    if opts.require_cta and missing_ctas:
+        print("FAIL: production CTA regression " + ", ".join(missing_ctas), file=sys.stderr)
+        return 1
     return 1 if result["errors"] else 0
 
 
