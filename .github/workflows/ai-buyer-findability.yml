@@ -62,7 +62,7 @@ jobs:
         shell: bash
         run: |
           python3 ops/role12/test_live_buyer_entrypoints.py --offline-test
-          python3 ops/role12/test_live_buyer_entrypoints.py --live --output out/role12-site-buyer-entrypoints.json
+          python3 ops/role12/test_live_buyer_entrypoints.py --live --require-cta --output out/role12-site-buyer-entrypoints.json
       - name: Keep exact status codes for review (short retention)
         if: always()
         uses: actions/upload-artifact@v4
