@@ -1,6 +1,7 @@
 const {chromium}=require("playwright-core");
 const fs=require("node:fs");
-const ROOT="https://objekts-r12-case-edge-v1.peach420fuzz.workers.dev";
+const ROOT=process.env.R12_BROWSER_BASE||"https://objekts-r12-case-edge-v1.peach420fuzz.workers.dev";
+const SCOPE=ROOT.includes(".workers.dev")?"preview":"production";
 const routes=[
 ["/work/sbercity","OBJ-R12-SBER-2026"],
 ["/work/magnit-2026","OBJ-R12-MAGNIT-2026"],
@@ -36,7 +37,7 @@ const routes=[
    if(shape.isMobile&&data.links.some(l=>l.h<44||l.w<44))issues.push("touch-target-too-small");
    await section.locator('a[href^="mailto:"]').focus();
    if(!(await page.evaluate(()=>document.activeElement?.getAttribute("href")?.startsWith("mailto:salute@objekts.ai"))))issues.push("focus-failed");
-   const outFile="out/role12-visual-qa/"+shape.name+path.replace(/[^a-z0-9]/gi,"_")+".png";
+   const outFile="out/role12-visual-qa/"+SCOPE+"_"+shape.name+path.replace(/[^a-z0-9]/gi,"_")+".png";
    await section.screenshot({path:outFile,animations:"disabled",timeout:15000});
    result.tests.push({shape:shape.name,path,issues,...data,image:outFile});
    if(issues.length)result.issues.push({shape:shape.name,path,issues});
@@ -45,7 +46,7 @@ const routes=[
   await context.close();
  }
  await browser.close();
- fs.writeFileSync("out/role12-visual-qa/result.json",JSON.stringify(result,null,2));
- console.log("VISUAL_SUMMARY "+JSON.stringify({total:result.tests.length,failures:result.issues.length,issues:result.issues}));
+ fs.writeFileSync("out/role12-visual-qa/result-"+SCOPE+".json",JSON.stringify(result,null,2));
+ console.log("VISUAL_SUMMARY "+JSON.stringify({scope:SCOPE,total:result.tests.length,failures:result.issues.length,issues:result.issues}));
  if(result.issues.length)process.exitCode=1;
 })().catch(e=>{console.error("VISUAL_FATAL",String(e.stack||e));process.exitCode=2});
