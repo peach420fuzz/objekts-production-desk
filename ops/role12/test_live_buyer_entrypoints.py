@@ -19,6 +19,8 @@ HOST = "https://objekts.ai"
 CASES = [
     ("/work/sbercity", "OBJ-R12-SBER-2026"),
     ("/work/magnit-2026", "OBJ-R12-MAGNIT-2026"),
+    ("/en/work/sbercity", "OBJ-R12-SBER-2026"),
+    ("/en/work/magnit-2026", "OBJ-R12-MAGNIT-2026"),
 ]
 REFERENCE = "/reference/en/work/sbercity.md"
 USER_AGENT = "objekts-role12-readonly-qa/1.0 (+https://objekts.ai)"
