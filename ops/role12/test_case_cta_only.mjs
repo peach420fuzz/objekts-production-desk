@@ -52,19 +52,22 @@ test("middleware neither invents localized machine Markdown nor modifies non-GET
 });
 
 if(process.env.R12_LIVE==="1") {
-  test("live service-bound stage changes exactly one section and preserves active upstream site",async()=>{
+  test("released main-site routes match noindex preview exactly with four production CTAs",async()=>{
     const got=await Promise.all(CASES.map(async ([path,tag])=>{
       const [pub,stage]=await Promise.all([ROOT,PREVIEW].map(u=>fetch(u+path,{signal:AbortSignal.timeout(20000)})));
       assert.equal(pub.status,200,path+": main-site 200");
       assert.equal(stage.status,200,path+": preview 200");
       assert.match(stage.headers.get("x-robots-tag")||"",/noindex/i);
       const a=await pub.text(),b=await stage.text();
-      assert.ok(!a.includes('data-objekts-role12="case-brief-v1"'),path+": site still unmodified");
+      assert.ok(a.includes('data-objekts-role12="case-brief-v1"'),path+": released CTA must be present on main site");
+      assert.match(a,new RegExp('href="mailto:salute@objekts\\.ai\\?subject='+tag));
       assert.match(b,new RegExp('href="mailto:salute@objekts\\.ai\\?subject='+tag));
+      assert.ok(!(pub.headers.get('x-robots-tag')||'').includes('noindex'),path+": public case may be indexed");
       assert.ok(b.includes('data-objekts-role12="case-brief-v1"'));
       assert.ok(b.includes('src="/__markets/client-v27.mjs"'),path+": existing markets header preserved");
-      const clean=b.replace('<base href="https://objekts.ai/"><meta name="robots" content="noindex,nofollow">',"").replace(/<section data-objekts-role12="case-brief-v1"[\s\S]*?<\/section>/,"");
-      assert.equal(clean,a,path+": original markup bytes unchanged");
+      const clean=b.replace('<base href="https://objekts.ai/"><meta name="robots" content="noindex,nofollow">',"");
+      assert.equal(clean,a,path+": released HTML and preview must be byte-identical except preview robots/base");
+      assert.equal((a.match(/data-objekts-role12="case-brief-v1"/g)||[]).length,1,path+": exactly one CTA section");
       return {path,original_length:a.length,preview_length:b.length,match:true};
     }));
     const official=await fetch(ROOT+"/reference/en/work/sbercity.md",{signal:AbortSignal.timeout(18000)});
@@ -77,6 +80,6 @@ if(process.env.R12_LIVE==="1") {
     const invalid=await fetch(PREVIEW+"/en/reference/work/sbercity.md",{signal:AbortSignal.timeout(18000)});
     assert.equal(invalid.status,404,"do not create redundant alternate machine-readable route");
     assert.match(invalid.headers.get("x-robots-tag")||"",/noindex/);
-    console.log("R12 2026-10-22 CTA-ONLY STAGE PASS "+JSON.stringify({cases:got,officialEnglishMarkdown:200,wrongEnglishAlias:404,emailsSent:0}));
+    console.log("R12 2026-10-22 LIVE RELEASE PASS "+JSON.stringify({cases:got,officialEnglishMarkdown:200,wrongEnglishAlias:404,emailsSent:0}));
   });
 }
