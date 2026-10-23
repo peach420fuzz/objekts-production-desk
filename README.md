@@ -1,4 +1,6 @@
-<!-- mcp-name: ai.objekts.mcp/production-desk -->\n\n# objekts Production Desk
+<!-- mcp-name: ai.objekts.mcp/production-desk -->
+
+# objekts Production Desk
 
 [![AllMCPs Verified](https://allmcps.com/api/badge/objekts-production-desk?style=shield)](https://allmcps.com/mcp/objekts-production-desk)
 [![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/peach420fuzz/objekts-production-desk)
@@ -31,6 +33,10 @@ It packages objekts production methodology for AI agents: a read-only production
 - Privacy: `https://mcp.objekts.ai/privacy`
 - Terms: `https://mcp.objekts.ai/terms`
 - Support: `https://mcp.objekts.ai/support`
+
+## Discovery evidence
+
+[Verified agent-discovery paths and technical audit — 24 October 2026](references/DISCOVERY_EVIDENCE_2026-10-24.md): ACN category discovery, mcp.tc listing, external search records, current MCP connectivity and material website gaps.
 
 ## Portable formats
 
