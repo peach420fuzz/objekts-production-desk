@@ -43,6 +43,8 @@ This example is a scoping model only; it gives **no universal unit price**, turn
 
 ## Screen-specification intake: request this before quoting
 
+**Downloadable intake:** [blank venue screen-spec CSV (one row per screen/placement)](../templates/dooh_screen_specs_blank.csv). Fill the operator-supplied technical columns first, then add `creative_geometry_id` and `technical_output_profile_id` only after production and the media operator have reviewed the requirements. Unknowns stay blank; never substitute guessed codec, colour or safe-area values. The CSV contains column headers only—no client campaign data.
+
 For each screen or venue, request a row with:
 
 - Venue / campaign placement ID and the operator contact for spec questions.
