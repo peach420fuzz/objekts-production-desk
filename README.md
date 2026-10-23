@@ -97,6 +97,7 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 - [Treat season as a world state](docs/SEASON_AS_WORLD_STATE.md) — seasonal continuity across environment, light and material.
 - [Tender tests and styleframes should collapse uncertainty](docs/TENDER_TESTS_AND_STYLEFRAMES.md) — PoC logic for agency/tender work.
 - [Adaptive content should inherit a visual system](docs/ADAPTIVE_CONTENT.md) — exports, crops, recompositions and new production units.
+- [30-venue DOOH delivery preflight (RU/EN)](docs/DOOH_MULTI_SCREEN_ADAPTATION_PREFLIGHT.md) — screen-spec intake, true shot-version counts, creative vs technical matrices and buyer-facing scope logic.
 
 ### Public case breakdowns
 
