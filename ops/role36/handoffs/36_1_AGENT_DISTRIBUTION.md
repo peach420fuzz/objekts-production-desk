@@ -13,7 +13,7 @@
 
 ### First-party official entry points and verified inventory
 
-- [Studio](https://objekts.ai), [llms.txt](https://objekts.ai/llms.txt), [ARD](https://objekts.ai/.well-known/ard.json), [machine discovery ledger](../../references/DISCOVERY_EVIDENCE_2026-10-24.md).
+- [Studio](https://objekts.ai), [llms.txt](https://objekts.ai/llms.txt), [ARD](https://objekts.ai/.well-known/ard.json), [machine discovery ledger](../../../references/DISCOVERY_EVIDENCE_2026-10-24.md).
 - Production Desk remote **https://mcp.objekts.ai/mcp**, [install](https://mcp.objekts.ai/install), about at host /about, registry name ai.objekts.mcp/production-desk, last registry observation 0.1.3, last owner Plugin Creator package 1.0.4. Those versions represent different release tracks; do not conflate them.
 - FAKE remote **https://fake.objekts.ai/mcp**, [install](https://fake.objekts.ai/install), /about claims version 0.4.7. Its user-visible positioning is reusable character state, GNM geometry and cinematic/fashion presets; actual generated image in web UI **not independently proven**. Never advertise unlimited/fully working hosted image-gen or paid API-free outputs as facts.
 - Both servers passed **legacy 2025-11-25 initialize/tools/list** read-only probes: Production Desk 7 tools, FAKE 6 in Oct24 audit. No live brief, file, generation or contact was submitted.
