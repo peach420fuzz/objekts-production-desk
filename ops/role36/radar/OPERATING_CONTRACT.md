@@ -86,4 +86,4 @@ See [opportunities.json](opportunities.json) for four independently source-check
 
 ### Scheduled task receipt
 
-Status: **not yet recorded in this document**. Fill only after an actual task-creation confirmation; no plan counts as a running schedule.
+Status: **ENABLED / CREATED** on 25 October 2026, confirmed by the Scheduled task service. Task: **OBJEKTS 36 Opportunity Radar**, recurring **daily, flexible morning window**, timezone **Europe/Madrid**, initial DTSTART 26 October 2026 08:00 local (flexible timing, not an exact guaranteed delivery minute). The creation response confirmed success and enabled state. **No first recurring execution or GitHub update has been observed yet**; inspect Scheduled run receipts before claiming autonomous cycles produced new entries. The four initial candidates came from the interactive manual setup cycle.
