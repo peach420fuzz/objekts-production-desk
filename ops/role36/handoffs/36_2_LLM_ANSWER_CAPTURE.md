@@ -108,3 +108,8 @@ Score separately: *brand mentioned*, *correct context*, *source link*, *public i
 ### LIVE HQ RADAR (mandatory read on every activation)
 
 Fetch the **[shared new-opportunity feed](../radar/opportunities.json)** and [routing contract](../radar/OPERATING_CONTRACT.md) at start of each active session. Filter 36.2 primary/secondary signals, particularly newly **approved public** product releases and new independent sources, and incorporate them into the buyer-question/citation panel. A private Plugin Creator update is *not* approval or a new model citation. Continue original experiments without waiting for HQ signals, and write tested deltas back into the shared source record.
+
+
+### 25 October 2026 — first successor session receipt (read before restarting)
+
+[Actual source-retrieval session report, 30-query panel, 34 search spotchecks/controls and self-ranked next ten](../answer_capture/SESSION_2026-10-25.md). A distinct 30-prompt RU buyer panel was **created and source-tested**, not run against six LLMs: 30 system2 web source retrievals (8 named objekts in the exposed top five; 7 exact owned hosts), four separate system1 missed-intent retests (0/4) and four identity controls. Two factual correction requests were **SENT** to ProtocolProbe and MCPRepository, with publication still pending. No new human lead or model citation proven. Start the next cycle from this evidence and the latest shared ledger; do not redo these exact sends or count the search-source tests as LLM-answer runs.
