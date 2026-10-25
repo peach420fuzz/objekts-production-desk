@@ -1,0 +1,192 @@
+{
+  "schema_version": "objekts.role36_2.entity_controls.v1",
+  "date_utc": "2026-10-25",
+  "surface": "Chat Search system2 web retrieval, NOT LLM answer",
+  "finding": "Generic 'objektstudio' URLs can falsely match a naive /objekts/ substring search. Use strict canonical-host or standalone-branded-title matching. The two positive controls found relevant brand/product sources; the two negative/collision controls did not establish objekts identity.",
+  "records": [
+    {
+      "id": "B01",
+      "prompt": "objekts AI VFX CGI visual production studio",
+      "type": "positive_entity_control",
+      "started_at": "2026-10-25T19:33:45.613Z",
+      "ended_at": "2026-10-25T19:33:47.376Z",
+      "top5": [
+        {
+          "title": "AI VFX studio — generative VFX, advertising and hybrid post | objekts",
+          "url": "https://objekts.ai/en/services/ai-vfx/",
+          "order": 1,
+          "canonical_owned_source": true,
+          "brand_entity_named": true
+        },
+        {
+          "title": "AI VFX for film and series — objekts",
+          "url": "https://objekts.ai/en/services/film-series-vfx/",
+          "order": 2,
+          "canonical_owned_source": true,
+          "brand_entity_named": true
+        },
+        {
+          "title": "objekts — режиссура, визуальный продакшн, AI VFX и motion",
+          "url": "https://objekts.ai/",
+          "order": 3,
+          "canonical_owned_source": true,
+          "brand_entity_named": true
+        },
+        {
+          "title": "AI video production for commercial work and brands — objekts",
+          "url": "https://objekts.ai/en/services/advertising-brands/",
+          "order": 4,
+          "canonical_owned_source": true,
+          "brand_entity_named": true
+        },
+        {
+          "title": "objekts — Video Production Companies | AMW®",
+          "url": "https://amworldgroup.com/directory/video-production-companies/objekts",
+          "order": 5,
+          "canonical_owned_source": false,
+          "brand_entity_named": true
+        }
+      ],
+      "objekts_top5": true,
+      "brand_match_rule": "literal standalone 'objekts' in source title, or canonical objekts.ai host; no generic substring match"
+    },
+    {
+      "id": "B02",
+      "prompt": "objekts Production Desk MCP",
+      "type": "positive_product_control",
+      "started_at": "2026-10-25T19:33:45.613Z",
+      "ended_at": "2026-10-25T19:33:48.254Z",
+      "top5": [
+        {
+          "title": "objekts Production Desk - MCP Connector | Glama",
+          "url": "https://glama.ai/mcp/connectors/ai.objekts.mcp/production-desk",
+          "order": 1,
+          "canonical_owned_source": false,
+          "brand_entity_named": true
+        },
+        {
+          "title": "Servidor MCP de Objekts Production Desk",
+          "url": "https://mcpservers.org/es/servers/peach420fuzz/objekts-production-desk",
+          "order": 2,
+          "canonical_owned_source": false,
+          "brand_entity_named": true
+        },
+        {
+          "title": "Objekts Production Desk: Official distribution for objekts Production Desk — professional production diagnosis/preflight, planning, optional estimates and human review via MCP — Hype Star",
+          "url": "https://hypestar.org/project/objekts-production-desk",
+          "order": 3,
+          "canonical_owned_source": false,
+          "brand_entity_named": true
+        },
+        {
+          "title": "objekts Production Desk (@objekts-production-desk) — AI Bot | AICoder",
+          "url": "https://aicoder.com/b/objekts-production-desk",
+          "order": 4,
+          "canonical_owned_source": false,
+          "brand_entity_named": true
+        },
+        {
+          "title": "objekts Production Desk - Tool - OpenSmartRoute",
+          "url": "https://opensmartroute.ai/marketplace/mcp-ai-objekts-mcp-production-desk",
+          "order": 5,
+          "canonical_owned_source": false,
+          "brand_entity_named": true
+        }
+      ],
+      "objekts_top5": true,
+      "brand_match_rule": "literal standalone 'objekts' in source title, or canonical objekts.ai host; no generic substring match"
+    },
+    {
+      "id": "N01",
+      "prompt": "objects furniture decorative design store Barcelona",
+      "type": "unrelated_generic_objects",
+      "started_at": "2026-10-25T19:33:45.613Z",
+      "ended_at": "2026-10-25T19:33:47.710Z",
+      "top5": [
+        {
+          "title": "OMG BCN | The Home Of Barcelona Designers",
+          "url": "https://www.omgbcn.com/",
+          "order": 1,
+          "canonical_owned_source": false,
+          "brand_entity_named": false
+        },
+        {
+          "title": "Our stores",
+          "url": "https://www.omgbcn.com/en/pages/nuestras-tienda",
+          "order": 2,
+          "canonical_owned_source": false,
+          "brand_entity_named": false
+        },
+        {
+          "title": "Little House - Tienda de decoración en Barcelona",
+          "url": "https://www.cottagelittlehouse.es/",
+          "order": 3,
+          "canonical_owned_source": false,
+          "brand_entity_named": false
+        },
+        {
+          "title": "el-recibidor17-21004-555804",
+          "url": "https://www.catalunya.com/en/continguts/compres/el-recibidor-17-21004-555804",
+          "order": 4,
+          "canonical_owned_source": false,
+          "brand_entity_named": false
+        },
+        {
+          "title": "Las mejores tiendas de muebles y decoración de Barcelona",
+          "url": "https://www.timeout.es/barcelona/es/compras/tiendas-de-muebles-y-decoracion",
+          "order": 5,
+          "canonical_owned_source": false,
+          "brand_entity_named": false
+        }
+      ],
+      "objekts_top5": false,
+      "brand_match_rule": "literal standalone 'objekts' in source title, or canonical objekts.ai host; no generic substring match"
+    },
+    {
+      "id": "N02",
+      "prompt": "Objekt Studio architecture interior design branding",
+      "type": "similarly_named_different_entity",
+      "started_at": "2026-10-25T19:33:45.613Z",
+      "ended_at": "2026-10-25T19:33:48.451Z",
+      "top5": [
+        {
+          "title": "Studio - Objekt Studio",
+          "url": "https://www.objektstudio.nl/studio-and-services/",
+          "order": 1,
+          "canonical_owned_source": false,
+          "brand_entity_named": false
+        },
+        {
+          "title": "OBJ.Studio",
+          "url": "https://obj.studio/",
+          "order": 2,
+          "canonical_owned_source": false,
+          "brand_entity_named": false
+        },
+        {
+          "title": "Contemporary Architecture - Objekt studio",
+          "url": "https://objektstudio.com/",
+          "order": 3,
+          "canonical_owned_source": false,
+          "brand_entity_named": false
+        },
+        {
+          "title": "Object Studio / Branding, Environmental, Product Design",
+          "url": "https://www.this-object.com/",
+          "order": 4,
+          "canonical_owned_source": false,
+          "brand_entity_named": false
+        },
+        {
+          "title": "Objekt Studio - Graphic design studio in Amsterdam",
+          "url": "https://www.objektstudio.nl/",
+          "order": 5,
+          "canonical_owned_source": false,
+          "brand_entity_named": false
+        }
+      ],
+      "objekts_top5": false,
+      "brand_match_rule": "literal standalone 'objekts' in source title, or canonical objekts.ai host; no generic substring match"
+    }
+  ]
+}
