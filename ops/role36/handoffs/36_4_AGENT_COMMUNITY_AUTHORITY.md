@@ -115,3 +115,8 @@ Use [shared ledger](../../../references/EXTERNAL_SYNDICATION_LEDGER_2026-10-15.m
 - If account permission blocks a venue: track it as an ownership gate and switch to allowed discussions or public first-party knowledge artifacts; never create impersonated accounts or forum spam.
 - If no suitable post exists in a cycle: improve reproducible technical explainers from actual documented tests and seek review/discussion in maintainers' legitimate channels. A useful source with no outside audience is a staging artifact, not a completed distribution win.
 - Periodically audit live replies to existing posts and turn product critique into a specific owner issue; coordinate rather than authorise fixes to production tooling.
+
+
+### LIVE HQ RADAR (mandatory read on every activation)
+
+Before new forum outreach, fetch **[shared opportunity feed](../radar/opportunities.json)** and [routing contract](../radar/OPERATING_CONTRACT.md); filter 36.4 community/technical-window signals and actual published product changes. HQ can flag a newly relevant developer question, launch or disclosure window, but each answer requires own evidence, current rules and legitimate studio account. If feed has no 36.4 entry, continue searching real questions and maintaining prior public discussions. Feed candidates are never automatic posts.
