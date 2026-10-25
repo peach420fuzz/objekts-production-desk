@@ -64,3 +64,18 @@ curl -sS https://objekts.ai/.well-known/agent-skills/visual-production-brief/SKI
 6. Maintain rollback: original Worker modules in private backup; response header rule labeled `Agent discovery Link headers — role 36`; new Worker routes uniquely scoped. Update tests and server-card version when MCP changes.
 
 No purchases, unapproved OAuth publication, DNSSEC flips, payment integration, or secret exposure occurred.
+
+## Independent full Cloudflare scanner re-test — confirmed
+
+`POST https://isitagentready.com/api/scan` with `{"url":"https://objekts.ai/"}` returned:
+
+- **2026-10-25T21:11:23.788Z**, `level:5`, `levelName:"Agent-Native"` (a scanner readiness tier, **not** an LLM ranking, citation, referral or revenue result).
+- Discoverability: `robotsTxt:pass`, `sitemap:pass`, `linkHeaders:pass`, `dnsAid:fail`.
+- Content: `markdownNegotiation:pass`.
+- Bot: `robotsTxtAiRules:pass`, `contentSignals:pass`, `webBotAuth:neutral`.
+- Integrations: `apiCatalog:pass`, `mcpServerCard:pass`, `a2aAgentCard:pass`, `agentSkills:pass`, `ard:pass`; `oauthDiscovery:fail`, `oauthProtectedResource:fail`, `authMd:fail`, `webMcp:fail`, `personalAgentProtocol:fail`.
+- `authMd:fail` **despite public /auth.md returning 200** because the WorkOS protocol is for real user registration, methods and credential issuance. Our file truthfully documents **no registration**, so do not fake a supported flow to gain a pass. Revise the gap wording above accordingly.
+- Scanner also independently initialized Production Desk MCP for 2025-11-25 and listed **7 tools**, and observed **6 valid ARD resources**. It recorded Link relations and the Markdown HTTP content type.
+- The initial user's Cloudflare zone dashboard snapshot and this public scanner may show different groupings/check counts and may cache different scans. Only this second official public scanner result is asserted as observed after deployment.
+
+Practical interpretation: role36 recovered six real machine-readability signals and a confirmed Level 5 readiness tier. The next business metric is *actual citations and paid briefs*, not a cosmetically higher percentage.
