@@ -139,9 +139,9 @@
       "source_url": "https://marketing-tech.ru/company_tags/video-production/",
       "source_checked_at": "2026-10-25",
       "source_type": "OFFICIAL_CURRENT_CATEGORY_AND_FORM",
-      "evidence": "Current site has a producer-facing video-production agency directory, filter tags for VFX/CGI and AI video, a footer 'Добавить агентство' and a lead form with legal personal-data checkbox. Independent site figures are internally inconsistent (e.g. 478 agencies on page vs 666 FAQ); don't quote a directory population until clarified. Free/paid placement and Spain-based remote studio eligibility NOT verified.",
+      "evidence": "Current site has a producer-facing video-production agency directory, filter tags for VFX/CGI and AI video, a footer 'Добавить агентство' and a lead form with legal personal-data checkbox. Independent site figures are internally inconsistent (e.g. 478 agencies on page vs 666 FAQ); don't quote a directory population until clarified. Free/paid placement and Spain-based remote studio eligibility NOT verified. 36.3 mailbox reconciliation 25 Oct: original video-production free-listing request to pr@marketing-tech.ru on 6 Oct (SENT 1a113a1fcd2da553) and targeted editor follow-up to info@marketing-tech.ru on 19 Oct (SENT 1a1553ece71271db). Already contacted; no additional submission or public page.",
       "buyer_hypothesis": "Strong RU commercial supplier selection intent and exact technical categories match commissioned SberCity/Magnit + AI/VFX offering.",
-      "status": "DISCOVERED",
+      "status": "IN_PROGRESS",
       "publication_proof": null,
       "submission_id": null,
       "eligibility_gates": [
@@ -150,9 +150,9 @@
         "Check remote Spain-registered company eligibility with Russian market services",
         "Do not tick legal/marketing consent automatically or invent EGRUL/turnover/reviews/staff"
       ],
-      "next_action": "36.3 independently resolve listing terms and prior history; if legitimate free basic option, prepare truthful supplier profile. 36.2 later tests whether public profile becomes a citation for RU producer queries.",
+      "next_action": "Do not duplicate. Check existing editorial request and public named page after 27 Oct; a new email only if a real response or justified follow-up is due.",
       "due_for_first_review": "2026-10-28",
-      "last_action": "RADAR_OFFICIAL_BUYER_CATEGORY_VERIFIED",
+      "last_action": "36.3 EXISTING_REQUEST_RECONCILED — 6 Oct and 19 Oct Gmail SENT, no new submission",
       "dedup_key": "marketing-tech.ru|objekts|video-production"
     },
     {
@@ -167,9 +167,9 @@
       "source_url": "https://www.sostav.ru/map/companies",
       "source_checked_at": "2026-10-25",
       "source_type": "OFFICIAL_CATEGORY_PUBLIC_MAP",
-      "evidence": "Public map displays named Russian-market production/creative/company profiles with specialization, services, prior client brands and project filters; source proves directory exists, NOT a free self-add route or approval.",
+      "evidence": "Public map displays named Russian-market production/creative/company profiles with specialization, services, prior client brands and project filters; source proves directory exists, NOT a free self-add route or approval. 36.3 sent distinct catalogue-process enquiry to official info@sostav.ru on 25 Oct 2026, Gmail SENT 1a1748b4d97aedda; the prior Oct 6 Sostav message was editorial, not a supplier-card application. No listing accepted or published.",
       "buyer_hypothesis": "An industry-specific producer/agency decision audience might be more valuable than global generic AI-tool mirrors.",
-      "status": "DISCOVERED",
+      "status": "QUALIFYING",
       "publication_proof": null,
       "submission_id": null,
       "eligibility_gates": [
@@ -178,9 +178,9 @@
         "Do not claim company clients from other businesses' filters",
         "If only paid placement or legal declaration outside scope, record and pivot"
       ],
-      "next_action": "36.3 map official listing/inclusion process and profile eligibility, compare with existing B2B contact ledger before a pitch; 36.2 may use a published profile as later source only after verification.",
-      "due_for_first_review": "2026-10-29",
-      "last_action": "RADAR_OFFICIAL_BUYER_MAP_VERIFIED",
+      "next_action": "Wait for Sostav to confirm free supplier-directory inclusion and eligibility of a remote Spain-registered studio. Recheck 1 Nov; do not treat SENT as form acceptance or create duplicate company.",
+      "due_for_first_review": "2026-11-01",
+      "last_action": "36.3 DIRECTORY_ELIGIBILITY_ENQUIRY_SENT 2026-10-25",
       "dedup_key": "sostav.ru/map/companies|objekts"
     }
   ],
