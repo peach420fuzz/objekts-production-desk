@@ -332,3 +332,43 @@ The three source types are kept distinct: a newly accepted editorial queue reque
 [Operational split master](../ops/role36/SPLIT_MASTER_2026-10-25.md) and four ready successor instructions are now part of the existing public operations record: [36.1 agent distribution](../ops/role36/handoffs/36_1_AGENT_DISTRIBUTION.md), [36.2 answer/citation capture](../ops/role36/handoffs/36_2_LLM_ANSWER_CAPTURE.md), [36.3 B2B studio directories](../ops/role36/handoffs/36_3_B2B_STUDIO_DIRECTORIES.md), [36.4 agent technical communities](../ops/role36/handoffs/36_4_AGENT_COMMUNITY_AUTHORITY.md). The original role 36 remains ledger/suppression and attribution coordinator, not an extra publisher account. **This is a proposed operational division, not a claim that separate ChatGPT sessions automatically started.**
 
 **Reconciled fixed starting count** for 36.1: six accepted new free external moderation requests (aiagents.org 2, AgenticSkills 2, Launch MCP 2), zero independently verified new published pages from those six at last check. Existing public directory pages, old agent-tools.org pending applications, four open marketplace PRs, protocol issues and explicit failed submissions stay in their original rows; no double-count or reset. 36.3 inherits all pre-existing supplier contacts; 36.4 coordinates role13 editorial/role15 visual without resending. Buyer leads, if any, are passed to role16 with source evidence.
+
+## 2026-10-25 — Role 36.1 independent distribution pass (session 1)
+
+**Accounting:** the six already accepted-but-moderated requests remain **six pending / zero newly verified published**, not six live. No new paid purchase, login, fake product attestation, external form submission, or unverified publication is counted. The actual newly created owner follow-up in this pass is [objekts-production-desk issue #107](https://github.com/peach420fuzz/objekts-production-desk/issues/107).
+
+### Receipts: existing queues and surfaces
+
+| Target | Current observation, source | Classification | Action |
+|---|---|---|---|
+| Launch MCP — Production Desk | [Status](https://launchmcp.co/submit/status/b0d11c12-8a28-4f68-853d-152a0c200b8a): **In review**, submitted 2026-10-25 via API | PENDING_MODERATION, not LIVE | Check status again; don't resubmit |
+| Launch MCP — FAKE | [Status](https://launchmcp.co/submit/status/1760dc60-31a6-4762-8c06-a3d60c776ec6): **In review**, submitted 2026-10-25 via API | PENDING_MODERATION, not LIVE | Check status again; don't resubmit |
+| aiagents.org, both products | Submission response HTTP202 in inherited record; no independent public listing verified today | PENDING_MODERATION | Check by product and exact URLs, avoid duplicate |
+| AgenticSkills PRD #1199 / Skill #1200 | Inherited HTTP200 issue-creation receipts; current GitHub connector GET returned 404/inaccessible, **not proof of closure** | ACCEPTED_RECEIPT, STATUS_UNVERIFIABLE | Verify directly when visible; no replacement issue |
+| agent-tools.org, both | Existing verification ID `prd_u4iS1xrTumYv`, `prd__yBzYT6Gr-bv`; inherited pending_review; live UI could not be reliably inspected today | PENDING_REVIEW, NOT_VERIFIED_LIVE | Revisit original submission/status |
+| xAI #1093, Copilot #101, Kilo #313, TRAE #6 | GitHub PR info checks: all **open / unmerged**; xAI mergeability not established, three others mergeable. | EXISTING_OPEN_PRS | Track comments/CI; no duplicate PR |
+| Production Desk modern 2026-07-28 transport | Inherited HTTP400 incompatibility, [owner issue #101](https://github.com/peach420fuzz/objekts-production-desk/issues/101) still open | BLOCKED_PROTOCOL | Owner to provide compliant handshake proof before 2026-07-28 claims |
+| FAKE public MCP metadata | Inherited `/.well-known/mcp.json` 404, [owner issue #29](https://github.com/peach420fuzz/objekts-production-desk/issues/29) open | BLOCKED_METADATA | Fix metadata before claiming compliant discoverability |
+| [mcpi.app — Production Desk](https://mcpi.app/servers/objekts-production-desk) | **Already public** independent listing, 7 diagnostic/preflight tools, MCP 2025-11-25; scanner showed 62/65 recent checks (~95.4%) and missing browser CORS, optional server card | PREEXISTING_PUBLIC, UNCLAIMED; 0 incremental publication | Created [owner issue #107](https://github.com/peach420fuzz/objekts-production-desk/issues/107); verify header handling and claim via legitimate sign-in/domain proof only |
+| [mcpi.app — FAKE](https://mcpi.app/) | Directory lookup of `https://fake.objekts.ai/mcp` found a remote 6-tool, no-auth server `fake-by-objekts`; no existing public listing verified. Publishing/verification record step demanded authenticated account and domain proof | DISCOVERED_ELIGIBLE, AUTH_GATE | Owner account/domain verification; avoid counting probe as public listing |
+
+### New directory qualification (not submissions)
+
+| Route | Evidence from primary publisher page | Decision |
+|---|---|---|
+| [AI Picks](https://aipicks.dev/en/submit/) | Public add-tool/skill intake requires signed-in account and owner attestation; zero `objekts` search matches observed | AUTH/OWNER_ATTESTATION_GATE, P1; prepare truthful listing copy |
+| [AgentForge](https://agentforge.community/en/submit) | Submit form exists and prompts sign-in; [pricing](https://agentforge.community/en/pricing) has free tier, **but free publication not established** | AUTH_PLUS_FREE_ELIGIBILITY_GATE, P1 |
+| [Add AI Directory](https://www.addaidirectory.com/submit-ai-agent) | Requires independently acting agent rather than an MCP preflight assistant; ProdDesk currently human-led preflight | REJECT_PRODUCT_FIT; no claim of autonomous action |
+| [agentfirst.directory](https://agentfirst.directory/policy) | Agent-first inclusion policy excludes human-first tools whose MCP access is secondary | REJECT_PRODUCT_FIT; no spam PR |
+| [mcp.so](https://mcp.so/submit?type=server) | Current server submit UI advertises **$39 one-time paid** placement | PAID_ROUTE; skip (free-only mandate) |
+| [VoltAgent official MCP servers](https://github.com/VoltAgent/awesome-mcp-servers/blob/main/CONTRIBUTING.md) | Curated list: public docs + product + substantive public community use; emerging section possible | QUALIFYING_EDITORIAL; collect true usage evidence before PR |
+| [punkpeye remote MCP list](https://github.com/punkpeye/awesome-remote-mcp-servers) | [Contributor guidance](https://github.com/punkpeye/awesome-remote-mcp-servers/blob/main/CONTRIBUTING.md) requires public remote MCP + Glama card (satisfied for PRD) and starring upstream before PR (not independently verified). Fork has prepared `add-objekts-production-desk-20261020`; no upstream PR verified | READY_TECHNICALLY, CONTRIBUTOR_PRECONDITION_GATE; check star, then open carefully |
+| [mcpdb.ru](https://mcpdb.ru/submit/server) | Russian-language manual server submission form, free/paid unconfirmed; asks for accurate description, source, docs, contact and runtime | RU_PRIORITY, VERIFY_FEE_AND_OWNER_EMAIL_FIRST |
+| [mcp-katalog.ru](https://mcp-katalog.ru/suggest) | Russian-language suggestion form requests repository link + contact email | RU_PRIORITY, VERIFY_DEDUP_AND_CONTACT_POLICY_FIRST |
+| [mcp-catalog.ru](https://mcp-catalog.ru/about) | Russian snapshot, no clear direct add-server route from inspected pages | WATCH_ONLY |
+| [setmpp/awesome-mcp-servers-ru](https://github.com/setmpp/awesome-mcp-servers-ru) | Editorial apparent open-source-code requirement; PRD public repo is a manifest, **not proof of server implementation source** | CODE_AVAILABILITY_GATE; do not label server open-source |
+| [PulseMCP](https://pulsemcp.com/submit) | Third-party reports submissions paused; primary page not reliably accessible | HOLD_UNVERIFIED; don't claim official closure |
+
+**Product-canon guardrail:** Production Desk is production preflight and optional opt-in human review, not video or image generation; FAKE is character-state/reference tooling, not a promised full image-generation service. Public manifests may expose client integration but are not sufficient proof of open-source backend code or license. Labels should use the confirmed publicly testable endpoint and product state only. **No fabricated users, benchmarks, clients, availability or editorial approvals.**
+
+**Attribution:** this pass did independent status and directory qualification, documented existing public discovery on mcpi.app, and filed a verifiable engineering issue. It did **not** create a newly approved/visible external directory listing. The next pass must rank work by incremental live listing potential, RU buyer intent, editorial friction, and actual product readiness.
