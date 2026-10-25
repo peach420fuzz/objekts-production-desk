@@ -325,3 +325,10 @@ No additional external public pages are claimed from the two aiagents.org forms 
 | [AI Product Index](https://index.percall.dev/llms.txt) | First-party requires external GitHub issue `[register]` on `110kc3/seo`. Connected GitHub integration returned **403 Resource not accessible by integration** on create_issue; no alternate identity attempted | **NOT_SUBMITTED / PERMISSION_BLOCKED** |
 
 The three source types are kept distinct: a newly accepted editorial queue request, a previously indexed third-party public mirror, and a failed/permission-blocked attempt. **Six** accepted new free-queue requests total (aiagents.org 2, AgenticSkills 2, Launch MCP 2), **zero new anonymous public profile confirmations from those queues** at time of record.
+
+
+## Role 36 four-branch handoff · 25 October 2026
+
+[Operational split master](../ops/role36/SPLIT_MASTER_2026-10-25.md) and four ready successor instructions are now part of the existing public operations record: [36.1 agent distribution](../ops/role36/handoffs/36_1_AGENT_DISTRIBUTION.md), [36.2 answer/citation capture](../ops/role36/handoffs/36_2_LLM_ANSWER_CAPTURE.md), [36.3 B2B studio directories](../ops/role36/handoffs/36_3_B2B_STUDIO_DIRECTORIES.md), [36.4 agent technical communities](../ops/role36/handoffs/36_4_AGENT_COMMUNITY_AUTHORITY.md). The original role 36 remains ledger/suppression and attribution coordinator, not an extra publisher account. **This is a proposed operational division, not a claim that separate ChatGPT sessions automatically started.**
+
+**Reconciled fixed starting count** for 36.1: six accepted new free external moderation requests (aiagents.org 2, AgenticSkills 2, Launch MCP 2), zero independently verified new published pages from those six at last check. Existing public directory pages, old agent-tools.org pending applications, four open marketplace PRs, protocol issues and explicit failed submissions stay in their original rows; no double-count or reset. 36.3 inherits all pre-existing supplier contacts; 36.4 coordinates role13 editorial/role15 visual without resending. Buyer leads, if any, are passed to role16 with source evidence.
