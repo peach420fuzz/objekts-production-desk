@@ -95,7 +95,7 @@ Nine proposed blocks, each an **external URL block only** unless separately perm
 4. Stash / FutureDeluxe “Verizon London Hub Film” (22 Oct): scale as a shot-to-shot spatial device; https://www.stashmedia.tv/futuredeluxe-zooms-way-out-for-verizon-london-hub-film/
 5. Stash / Kutuko “Bullpadel Xplo 02” (20 Oct): action implied through damaged surfaces and inertia; https://www.stashmedia.tv/drama-damage-kutuko-lets-loose-for-bullpadel-xplo-02/
 6. Stash / FRAME “Our Planet / Ege Carpets x Gensler” (18 Oct): landscape patterns transformed into film form; https://www.stashmedia.tv/frame-explores-our-planet-for-ege-carpets-x-gensler/
-7. Stash / Pleid St. “Aether Scent” (8 Oct): imagined material metaphors, carefully separated from real natural objects; https://www.stashmedia.tv/category/3d-style/ (article URL to verify before stage).
+7. Stash / Pleid St. “Aether Scent” (8 Oct): imagined material metaphors, carefully separated from real natural objects; https://www.stashmedia.tv/botanical-resonance-aether-scent-short-film-by-pleid-st/ (direct article verified 25 Oct 2026).
 8. It's Nice That / Nik Arthur on animations for A24 and J. Cole (19 Oct): material response from actual wool/flowers/light; https://www.itsnicethat.com/articles/nik-arthur-animation-discover-191026
 9. Closing objekts text: “An atmosphere can be new without asking the actor or architecture to become someone else.”
 
