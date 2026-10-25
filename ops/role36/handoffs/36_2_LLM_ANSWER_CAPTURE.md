@@ -103,3 +103,8 @@ Score separately: *brand mentioned*, *correct context*, *source link*, *public i
 - If source appearance remains zero: test whether official facts are retrievable, check exact quoted/cited source and compare with rival evidence; propose one bounded factual source improvement to its owner, rerun after release and record negative results.
 - If model access/rate limits block a provider: continue with source audits, public answer/search surfaces and available engines; label coverage missing rather than scoring a model zero or bypassing limits.
 - Every cycle identify one higher-intent buyer question the existing panel misses, and one source-backed way to improve the studio's answerability without interfering with role12 analytics.
+
+
+### LIVE HQ RADAR (mandatory read on every activation)
+
+Fetch the **[shared new-opportunity feed](../radar/opportunities.json)** and [routing contract](../radar/OPERATING_CONTRACT.md) at start of each active session. Filter 36.2 primary/secondary signals, particularly newly **approved public** product releases and new independent sources, and incorporate them into the buyer-question/citation panel. A private Plugin Creator update is *not* approval or a new model citation. Continue original experiments without waiting for HQ signals, and write tested deltas back into the shared source record.
