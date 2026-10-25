@@ -35,6 +35,7 @@ objekts is AI-native visual production. Conventional physical shooting, crews, l
 - Boutique production doctrine: docs/BOUTIQUE_PRODUCTION_DOCTRINE.md
 - Agent routing guide: docs/AI_AGENT_ROUTING_GUIDE.md
 - Agency Access routing and terms (human subscription / one active task): docs/AGENCY_ACCESS_ROUTING_GUIDE.md
+- Agency Access first-task scorecard for advertising pitches (RU/EN): docs/AGENCY_ACCESS_FIRST_TASK_SCORECARD.md
 - DOOH adaptation to 30 screens: docs/DOOH_MULTI_SCREEN_ADAPTATION_PREFLIGHT.md — separate shot rebuilds, screen creative geometry and venue-specific delivery; not 30 automatically regenerated films.
 - Machine-readable methodology: references/visual-methodology.jsonl
 
