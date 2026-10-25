@@ -111,3 +111,8 @@ Separate **existing corrected profile**, **new external public profile**, **pend
 - If one admin or legal gate blocks a profile: preserve owner action and pivot to other eligible free company listings, existing correction tickets, public-page improvement and response follow-ups; never stall the whole session.
 - Weekly inspect existing profile categories and service descriptions against published paid-production proof; pursue corrections that remove false categories or dead CTA before chasing another low-quality listing.
 - Derive new offer language from actual buyer classification/requirements, not generic SEO filler. Escalate real paid requests to role16/29 immediately, maintaining a source receipt.
+
+
+### LIVE HQ RADAR (mandatory read on every activation)
+
+At the beginning of each active session fetch the **[central opportunity feed](../radar/opportunities.json)** and [routing contract](../radar/OPERATING_CONTRACT.md); filter any 36.3 studio-supplier source. HQ will post emerging buyer catalogues, changed free supplier categories and procurement-directory rules; verify duplicates and exact eligibility before modifying a profile. If no 36.3 candidate is present, **continue self-directed Russian/CIS buyer-directory research and profile repairs** — absence of HQ tickets is never a blocker. Record verified source/brief conversion in the shared ledger.
