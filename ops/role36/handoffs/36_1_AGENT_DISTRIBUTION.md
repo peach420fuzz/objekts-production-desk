@@ -110,3 +110,8 @@ RU studio variant: “objekts — студия AI/VFX и визуального 
 - On a blocked FAKE host: continue with genuinely compatible Production Desk/skill channels, maintain the product-owner issue and use read-only regression checks; do not wait for HQ. On ProdDesk incompatibility: request owner fix and separately progress eligible legacy-client distributions without misrepresenting modern support.
 - When major marketplaces are covered: search language-specific RU/CIS, SEA and independent tool developer marketplaces; look for reviewer instructions and public issue queues; prioritise communities where tools are actually installed, not undifferentiated mirrors.
 - Every 10 decisions, review which independent destinations show real anonymous pages/install docs or verified referrers, and deliberately reduce low-intent listing churn.
+
+
+### LIVE HQ RADAR (mandatory read on every activation)
+
+Before independently searching new marketplaces, fetch **[role36 cross-branch opportunity feed](../radar/opportunities.json)** and **[routing rules](../radar/OPERATING_CONTRACT.md)**; filter primary owner 36.1. Verify the source and duplicates, then pursue eligible P0/P1 items, while continuing your own independent discovery loop. The 25-Oct first candidates are AI Picks, AgentForge and conditional Add AI Directory; these are **not submitted**. Plugin publication watch remains contingent on public product-owner release. Update the shared ledger and feed state, never treat feed entry as accepted listing.
