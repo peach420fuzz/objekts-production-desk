@@ -38,3 +38,49 @@ Status legend: TO_VERIFY / RIGHTS_GATE / APPROVAL_GATE / RESEARCHING / READY_FOR
 **At each session:** read the latest [HQ radar](../radar/opportunities.json) and replace closed queue rows with newly discovered externally supported actions. Never assert publication without signed-out public evidence. Returning “no authority” is insufficient: choose the next legitimate research or material-preparation task.
 
 **Official primary sources for first tasks:** [Pinterest originals](https://help.pinterest.com/en/business/article/pin-performance-and-distribution), [Pinterest domain claim](https://help.pinterest.com/en/business/article/claim-your-website), [Behance project publishing](https://help.behance.net/hc/en-us/articles/204483684-Guide-Create-Publish-A-Project), [Behance credits](https://help.behance.net/hc/en-us/articles/204483494-Guide-Co-owning-And-Crediting), [Are.na channel visibility](https://help.are.na/docs/getting-started/channels), [Motionographer submissions](https://motionographer.com/submit/). All reverify before execution.
+
+
+---
+
+## Session execution receipt — 25 October 2026 (supersedes initial statuses above)
+**Purpose:** trace work, not claim signed-out publications. Full implementation is in [draft PR #109](https://github.com/peach420fuzz/objekts-production-desk/pull/109); cross-role account blocker [issue #108](https://github.com/peach420fuzz/objekts-production-desk/issues/108); independent-art call [issue #110](https://github.com/peach420fuzz/objekts-production-desk/issues/110).
+**Overall:** 7 new authorial/research Markdown deliverables + 1 updated priority audit + canonical radar with three new records. GitHub research is real; zero external posts, zero editorial pitches and zero measured traffic/lead/purchase. This is a rights-gated research/production shift, not a completed launch.
+
+| Starter ID | Evidence-backed current disposition | Next closure gate |
+|---|---|---|
+| C36-501 | BLOCKED: Pinterest account URL, live Posts and claimed site not recovered; platform claim docs read | Role15 authenticated inventory; no duplicate account |
+| C36-502 | BLOCKED: Behance exact studio handle and existing posts unknown; 27 comparative public creator cases audited | Role15 exact handle and prior posts |
+| C36-503 | BLOCKED: Are.na edit privileges/channel inventory unknown; real externally-owned channels inspected | Role15 inventory/visibility |
+| C36-504 | HOLD: Stage32 historic account unverified and use for case referrals not evidenced | Role15 profile and measurable fit |
+| C36-505 | PARTIAL: first-party SberCity contribution and frame labels verified, per-frame third-party rights unknown | Per-asset client/agency/performer/music release |
+| C36-506 | RIGHTS_GATE: Magnit published text exists, talent/brand/alternate scenes not consent-cleared | Producer signed matrix |
+| C36-507 | RIGHTS_GATE: Auto.ru development unapproved; suppress third-party upload | Express release permission |
+| C36-508 | PARTIAL: signed-out SberCity and Magnit first-party case text resolved through /work; no signed-out screenshots/asset QC | Exact media masters and link rendering on target platforms |
+| C36-509 | READY_FOR_APPROVAL_COPY: 12-section Behance order with correct narrow studio scope | Role15 media and credit QC |
+| C36-510 | READY_FOR_APPROVAL_COPY: 3 distinct editorial board theses | Native existing account and client frames |
+| C36-511 | PARTIAL: 4 distinct Pin copy/crop concepts; **no final 2:3 exports/screenshots** | Approved original assets + actual crop QC |
+| C36-512 | READY_FOR_APPROVAL_COPY: 9 linked Are.na blocks and defined authors/curator thesis | Existing channel, official visibility choice |
+| C36-513 | PARTIAL: Pinterest official claim doc verified; actual claimed status UNKNOWN and RSS remains OFF | Signed-in proof; role12 only for authorized fix |
+| C36-514 | DONE_RESEARCH_EVIDENCED: 44 dated RU/CIS-adjacent Dprofile projects, real authors/source URLs | Expand non-Dprofile RU venue diversity |
+| C36-515 | PARTIAL: 27 dated Behance cases, 3 current Are.na channel examples and Pinterest provenance notes; not 25 projects evenly distributed across platforms | More verified Pinterest original-authored posts and temporal tags |
+| C36-516 | DONE_COUNT_ONLY: **101 case-page URLs** across 30 international editorial, 27 Behance and 44 Dprofile entries; **not** 100 directly QC-played recent distinct films; publication dates ≠ debut | Identity dedup, medium/release validation, larger unbiased sample before trends |
+| C36-517 | PARTIAL: Dprofile/RENDER/DSGNERS and editorial or video channels qualified or explicitly held/rejected; 10 independent RU *fully qualified* routes not proven | Official free publication terms, recent creative examples and role13 ownership per venue |
+| C36-518 | PARTIAL: Behance/Pinterest/Are.na/ArtStation/Stash/Motionographer plus art calls, no systematic 10 international fully-qualified submission routes with current fit/rights | More curator route checks and old pitch suppression |
+| C36-519 | COPY_READY: content IDs, UTM, signed-out URL and 7/28d check definition authored | role12 analytics connectivity, first actual external post |
+| C36-520 | **READY_FOR_APPROVAL** package completed; **NOT_PUBLISHED**, media rights and account gates | Role15 real upload after owner/producer/client authorization; public link |
+
+### Replenishment — next self-owned events
+- C36-521 / 26 Oct: role15 creative account inventory and exact URLs (issue #108).
+- C36-522 / 26 Oct: existing Dprofile company profile or documented absence; no new registration by 36.5.
+- C36-523 / 26 Oct: SberCity owner/client/agency per-frame licenses, full credits, music/performer/film grants.
+- C36-524 / 26 Oct: matching masters and export/crop inspection; preserve lensing, character and colour canon.
+- C36-525–528 / 27 Oct: one approved Behance or Dprofile case, four native Pins, one Are.na channel only when respective asset/account permission is complete. Verify signed-out live URLs, don't count staged drafts.
+- C36-529–530 / 27–28 Oct: RENDER.RU making-of and DSGNERS Russian original craft article. DSGNERS complete first copy now in [draft](../deliverables/36_5_DSGNERS_EDITORIAL_DRAFT_2026-10-25.md); cover/account rights gate persists.
+- C36-531 / 28 Oct: broaden platform-comparative sample to provenance-verified Pinterest posts, not indexed copies of Instagram.
+- C36-532 / 28 Oct: de-bias and playback/credit audit 101-page source sample; qualify trends only after precise denominator and production dates.
+- C36-533 / 27 Oct: 1 Nov **The AI Art Magazine** free call: choose one independent eligible artwork. No artwork identified yet; [issue #110](https://github.com/peach420fuzz/objekts-production-desk/issues/110).
+- C36-534 / 28 Oct: 5 Nov **AFTER THE PALACE** video mapping: review signed organizer annex and feasible existing projection work; otherwise REJECT_NO_FEASIBLE_ASSET.
+- C36-535 / 30 Oct: 7-day/28-day referral scheme handoff to role12, first public permalink required.
+- C36-536 / 1 Nov: review new editorial/art outlets, no duplicate role13 cold pitches.
+
+**Review standard:** every new source official URL + checked date + fit + cost + rights + exact owner. Every publication receipt signed-out public link + credit + timestamp. An open issue or pull request is *not* an external publication.
