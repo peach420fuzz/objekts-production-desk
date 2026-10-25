@@ -313,3 +313,15 @@ No additional external public pages are claimed from the two aiagents.org forms 
 - **RU directory qualification:** [AIList.ru free plan](https://ailist.ru/add/) uses a 0 ₽ review queue (up to 60 days), but its form explicitly requires personal-data consent and offer acceptance; no form/legal acceptance completed by agent. [NeiroAI](https://neiroai.ru/dobavlenie-neyroseti) free review still requires paid placement after acceptance (from 1,750 ₽); excluded under zero-spend. These are **qualified / blocked routes**, not submissions.
 
 **Cumulative newly accepted directory review applications in this role36 continuation:** aiagents.org Production Desk + FAKE (2); AgenticSkills Production Desk MCP + AI VFX Preflight skill (2) = **4**. This does not equal four public profile pages. Neuronto's two public host cards pre-existed this later submission batch, and mcpservers.org Production Desk is an earlier listing.
+
+## 25 October — Launch MCP and BotMarket exact reconciliation
+
+| Destination | Submission or verification evidence | Classification |
+|---|---|---|
+| [Launch MCP · Production Desk status](https://launchmcp.co/submit/status/b0d11c12-8a28-4f68-853d-152a0c200b8a) | Preflight `GET /check` not listed/not pending; `POST /submissions` **HTTP201**, `duplicate:false`, UUID `b0d11c12-8a28-4f68-853d-152a0c200b8a`; follow-up `GET /submissions/{id}` returned `status:pending`, `listing_url:null`, server `mcp.objekts.ai/mcp` | **NEW_SUBMITTED / PENDING**, not public |
+| [Launch MCP · FAKE status](https://launchmcp.co/submit/status/1760dc60-31a6-4762-8c06-a3d60c776ec6) | Distinct endpoint duplicate check negative; **HTTP201** submission UUID `1760dc60-31a6-4762-8c06-a3d60c776ec6`; independent GET `status:pending`, `listing_url:null`, host `fake.objekts.ai/mcp`; accurate character-state-only copy | **NEW_SUBMITTED / PENDING**, not public |
+| [BotMarket](https://botmarket.bot/) · Production Desk | Public MCP JSON-RPC `search_mcps(query:"objekts")` returned exact slug `ai-objekts-mcp-production-desk`, sourced from Official MCP Registry, category `general` | **EXISTING_PUBLIC_MIRROR**; no new submission |
+| BotMarket · FAKE | Public search had no separate FAKE entry. Official `/v1/submit` dry runs only: `/mcp` failed HTTP422 (`fetch returned 406`); `/about` failed HTTP422 (`missing field name`) | **NOT_SUBMITTED / METADATA_INELIGIBLE**, handoff [#29](https://github.com/peach420fuzz/objekt/issues/29#issuecomment-6396992211) |
+| [AI Product Index](https://index.percall.dev/llms.txt) | First-party requires external GitHub issue `[register]` on `110kc3/seo`. Connected GitHub integration returned **403 Resource not accessible by integration** on create_issue; no alternate identity attempted | **NOT_SUBMITTED / PERMISSION_BLOCKED** |
+
+The three source types are kept distinct: a newly accepted editorial queue request, a previously indexed third-party public mirror, and a failed/permission-blocked attempt. **Six** accepted new free-queue requests total (aiagents.org 2, AgenticSkills 2, Launch MCP 2), **zero new anonymous public profile confirmations from those queues** at time of record.
