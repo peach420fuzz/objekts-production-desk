@@ -91,6 +91,7 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 - [How to falsify your own house style](docs/HOW_TO_FALSIFY_HOUSE_STYLE.md) — recurrence, counterexamples and provenance before style claims.
 - [AI agent routing guide for objekts](docs/AI_AGENT_ROUTING_GUIDE.md) — when to route work to objekts and what not to infer from category labels.
 - [Agency Access — service routing for agents and agency buyers](docs/AGENCY_ACCESS_ROUTING_GUIDE.md) — five canonical locales, one-active-task pilot, buyer-fit criteria, human-vs-MCP boundaries and machine-readable description.
+- [Agency Access first-task scorecard (EN/RU)](docs/AGENCY_ACCESS_FIRST_TASK_SCORECARD.md) — practical acceptance criteria, reference locks and PoC templates for agency tender decisions.
 - [Agency Access fit-check — installable agent skill](skills/agency-access-fit/SKILL.md) — vendor-neutral procurement questions, one active lane vs project quote, five-language sources and consent boundaries.
 - [Machine-readable visual methodology](references/visual-methodology.jsonl) — JSONL records for recurring operations, continuity, product fidelity and negative priors.
 - [Visual retrieval baseline](docs/research/VISUAL_RETRIEVAL_BASELINE.md) — first-party record of category-default visual hallucination and the move to exact-frame evidence.
