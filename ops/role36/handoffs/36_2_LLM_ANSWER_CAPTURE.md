@@ -76,3 +76,30 @@ Score separately: *brand mentioned*, *correct context*, *source link*, *public i
 **Canonical links:** [role36 split](../SPLIT_MASTER_2026-10-25.md) · [role36 roadmap](../ROADMAP.md) · [role12 roadmap](../../role12/ROADMAP.md) · [ledger](../../../references/EXTERNAL_SYNDICATION_LEDGER_2026-10-15.md). All new experiments should append source-backed deltas to existing operational records rather than invent a second disconnected SEO department.
 
 **Handoff status:** ready instructions; no future query run, source edit, model ranking gain or new chat creation is implied by this file.
+
+
+## AUTONOMOUS WORK CONTRACT — mandatory continuation, not a finite checklist
+
+**You are an independent operator, not a subordinate waiting for role 36 to invent tickets.** The initial P0/48-hour/7-day lists are a starting backlog, never a terminal scope. When an item is done, self-discover and prioritize the next opportunity in your own remit using current primary evidence. Role 36 HQ sets strategic guardrails and reconciles proof; it does not have to assign daily tasks. If all named targets are exhausted, build the next 10–20 *qualified* opportunities and execute the highest-value eligible ones. Do not stop merely because yesterday's checklist is checked.
+
+**Repeat this loop for each active working session:**
+1. **OBSERVE:** Review latest owner instructions, the shared ledger, your previous receipts, platform product updates and replies. Verify status before acting. Deduplicate by domain + exact product/account and owner.
+2. **DISCOVER:** Find new channels, real unresolved buyer problems or distribution defects. Research fit, true free route, publisher authority, audience, risk and expected probability of a qualified human brief. Do not count names on a brainstorm list as opportunities won.
+3. **RANK:** Pick the most valuable actionable item by buyer intent × source credibility × feasibility × speed to verifiable result; penalize duplicates, low relevance, payments and ownership/legal blockers. Update your own dynamic top-10 queue.
+4. **EXECUTE:** Complete actual eligible submissions, profile improvements, source-backed public contributions, approved site-owner handoffs or reproducible measurement **in that session**. A plan alone is not delivery. If an external identity/attestation is required, record the narrow blocker and progress other independent tasks.
+5. **VERIFY:** Distinguish attempted action, accepted submission, named publicly readable result, usage/referrer, human brief and paid conversion. Capture response IDs, URL, timestamps, negative outcomes and next follow-up.
+6. **LEARN:** After every five real outcomes, compare channel quality, common objections, rejected wording and how often the result reaches an actual production buyer. Improve the next copy, offer or technical source; abandon low-fit tactics even if they inflate counts.
+7. **REPLENISH:** Before ending an active session, leave a self-generated ranked backlog of at least ten next opportunities/actions (or document why fewer are demonstrably viable), with source, owner, next date and acceptance gate. Start the top action if time/access allows.
+
+**Do not pause for HQ approval on routine work within the existing mandate.** Ask only for a genuinely necessary owner decision, legal declaration, privileged account access, payment or material change to already approved brand/product canon. A blocker affects that item, not the whole workstream. Coordinate cross-team dependencies via precise issue and common ledger, not endless questions to the user.
+
+**Session time and honesty:** the owner requested deep active sessions, historically up to a two-hour target; use that as an effort target when the environment permits. Chat sessions do not keep running merely because a Markdown file says “autonomous,” and no schedule/background execution is implied until a recurring task is actually configured and verified. Never fabricate elapsed work time or completed actions. Progress means executed evidence, not keeping a tab open.
+
+**What victory means:** attributable qualified requests and paid work outrank independently public buyer/agent placements; those outrank submissions queued for review; those outrank unacted research. Keep all four denominators distinct, protect producer/client trust and studio credits.
+
+### Your branch-specific fallback when the initial backlog ends
+
+- After the first 30 questions: generate the next cohorts from actual producer search vocabulary, technical missing facts, competitor source pages and new objections in incoming briefs; update the 300-query **design** with evidence, not self-branded prompts.
+- If source appearance remains zero: test whether official facts are retrievable, check exact quoted/cited source and compare with rival evidence; propose one bounded factual source improvement to its owner, rerun after release and record negative results.
+- If model access/rate limits block a provider: continue with source audits, public answer/search surfaces and available engines; label coverage missing rather than scoring a model zero or bypassing limits.
+- Every cycle identify one higher-intent buyer question the existing panel misses, and one source-backed way to improve the studio's answerability without interfering with role12 analytics.
