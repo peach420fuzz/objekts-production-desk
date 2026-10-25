@@ -1,0 +1,88 @@
+# 36.5 — Channel audit, access gates and prioritized distribution queue
+**Date:** 25 October 2026 (Europe/Madrid) · **Version:** 0.1 · **Owner:** OBJEKTS role 36.5
+**State:** RESEARCH_EVIDENCED / ACCOUNT_UNVERIFIED / MEDIA_RIGHTS_GATED / NOT_PUBLISHED
+**Context:** main [36.5 handoff](../handoffs/36_5_CREATIVE_BRAND_DISTRIBUTION.md), [20 tasks](../queues/36_5_STARTER_QUEUE.md), [SberCity editorial kit](./36_5_SBERCITY_EDITORIAL_PACK_2026-10-25.md), [30-work source map](./36_5_VISUAL_SOURCE_MAP_2026-10-25.md).
+
+## 0. Definitions and decision principle
+A public case page on objekts.ai is evidence of public text and owned studio presentation, **not evidence of permission to upload client footage/stills to a third-party network**. Canonical studio portfolio remains primary. An external venue is worth an authorial presence only if its format, active users and links are useful for motion/design/art direction, its rules allow the exact material, and its posting account is verifiably under studio/role15 control. No paid boosts, PRO subscriptions, new duplicate profiles, editorial cold-pitch duplicates or blind RSS sync. Research references are not pending submissions.
+
+## 1. Existing-account recovery: proof, not guesswork
+| Surface | What was checked | Verified position | Missing evidence | Next owner/action |
+|---|---|---|---|---|
+| Pinterest | Repository's 15 Oct syndication ledger; current public search; [claim docs](https://help.pinterest.com/en/business/article/claim-your-website) | 0 verified new Pins for objects as of ledger; no exact attributable official public handle found by public search. No claim confirmation. | Signed-in profile URL, claimed-domain status, existing boards and posting rights | Role15: send profile URL and screenshot of Website Claim; role12 only if unclaimed and role15 authorizes change |
+| Behance | 15 Oct ledger; public exact-brand search; [publisher guide](https://help.behance.net/hc/en-us/articles/204483684-Guide-Create-Publish-A-Project) | Existing creative presence historically discussed, but profile and project ownership NOT authenticated. Namesake “Objekts AI” is not evidence of studio ownership. | Studio handle, edit role, inventory, duplicate drafts | Role15: screenshot of logged-in profile and signed-out case URLs |
+| Are.na | Ledger, public search, [channel visibility](https://help.are.na/docs/getting-started/channels) | No proven editable studio channel or existing links; public independent channel search does not prove studio identity. | Canonical profile, private/closed/open visibility, editor permissions | Role15: signed-in inventory and canonical URL |
+| Stage32 | Ledger says historically connected; no authenticated profile inspection | Stage32 creative film networking relevance possible; **not proven** as current visual-case traffic source | Profile, existing posts and referral evidence | Role15: account inventory; 36.5 drop if no useful showcase surface |
+| Dprofile | [official help](https://dprofile.ru/help) and multiple 2026 public example cases | **Qualified new candidate**, NOT an existing account; do not register until duplication check | Whether a studio company profile already exists; owner choice/approval | 36.5 identify existing account; role15 account ownership and upload only after approval |
+| RENDER.RU | [gallery/blog rules](https://render.ru/ru/main/post/12964); active 2026 editorial feed | Qualified for VFX/CGI making-of; account unknown | Existing company/user ID, client permission | Role15/no double registration; produce own making-of, not generic AI artwork |
+
+**Boundary:** Connector setting errors are not identity proof. In particular, a Metricool brand-settings probe returned INVALID_ARGUMENT; it cannot establish that Pinterest is connected or disconnected.
+
+## 2. Platform priority — first-party rules and work fit (25 Oct 2026)
+Score is editorial usefulness and practical fit, **not a verified conversion rate**. No paid route is approved. “Qualified” means researched, not applied/published.
+
+| Priority | Venue / region | Official route or current native proof | Relevance and material | Submission / moderation / money / conflict | Verdict / exact next action |
+|---|---|---|---|---|---|
+| P0 | Behance / global | [Create & publish](https://help.behance.net/hc/en-us/articles/204483684-Guide-Create-Publish-A-Project); [credits](https://help.behance.net/hc/en-us/articles/204483494-Guide-Co-owning-And-Crediting) | 10–14 section SberCity visual project: hero, spatial choices, before/after, contact/credits | Existing role15 only; image/video usage rights unresolved; no duplicates | READY_FOR_APPROVAL_TEXT; retrieve account and approved pixels |
+| P0 | Pinterest / global | [Claim your website](https://help.pinterest.com/en/business/article/claim-your-website); [distribution](https://help.pinterest.com/en/business/article/pin-performance-and-distribution) | Four original 2:3 SberCity frame-led editorial concepts, 3 coherent boards | Signed-in claim unknown; role15 upload; no RSS autopost | Prepare source/crop/media QC, then role15 claims domain if allowed |
+| P0 | Are.na / global | [Channel permission model](https://help.are.na/docs/getting-started/channels) | Film space, artificial materials, dramaturgy of camera; 9-block annotated reference chain | Only owned or source-linked materials; closed/open implications; existing account unknown | Curation text ready; owner editor validation |
+| P0 | Dprofile / RU/CIS | [Studio type, constructor, slots](https://dprofile.ru/help); live comparable [SHAR / LUKOIL 26 Jun 2026](https://dprofile.ru/case/185292/lukoil-ai-grafika-i-mousn-dizain) | RU case study with technical layer-by-layer breakdown; strong exact-market analogue | Basic account: 2 projects / rolling 30d; 4 fragments / 30d; **do not pay**. Ownership check and permissions first. | NEW HIGH-FIT candidate; role15 existing account audit, then one SberCity project |
+| P1 | RENDER.RU gallery/blog / RU | [Gallery rules](https://render.ru/ru/main/post/12964), [portfolio notes](https://render.ru/ru/main/post/14415), fresh 23 Oct 2026 making-of in onsite feed | Production craft, tracking, compositing, VFX matter integration; genuine technical tutorial | 2D gallery warns of weak purely neural work; third-party-rights complaints; blog is better than vanity artwork | Draft a measured composite/making-of with permission-cleared media |
+| P1 | DSGNERS / RU | [Guide](https://dsgners.ru/dsgners/1561-kak-pisat-novosti-i-stati-dlya-dsgners), [rules](https://dsgners.ru/rules) | Narrative through frame/cinematography; original professional essay tied to allowed examples | No overt sales copy; article with useful craft takeaway; exact account missing | Prepare Russian original craft essay, publication only after existing-profile/role15 audit |
+| P1 | ArtStation / global | [Studio profiles 7 Aug 2026](https://help.artstation.com/en/articles/16155062-studio-profiles), [content](https://help.artstation.com/en/articles/16155163-community-content-guidelines), [video clips](https://help.artstation.com/en/articles/16155107-how-to-add-video-clips) | VFX frame/concept art, compliant compositing breakdown; closer to production buyer | Studio-authored work only; free portfolio exists; **blog is Premium only**, [source](https://help.artstation.com/en/articles/16155242-how-do-i-publish-a-new-blog-post) | Portfolio candidate if authentic pipeline frames and consent; NO paid blog |
+| P1 | Stash / global | [Official submission](https://www.stashmedia.tv/submit/) | High-curation film + material-driven new work with exact crew credits | Vimeo/YouTube or usable downloadable work and all credits; Oct3–6 outreach already logged, **no duplicate** | Cross-check previous pitch ledger/response; only new distinct approved project later |
+| P1 | Motionographer / global | [Official submission](https://motionographer.com/submit/) | New original experimental motion or exceptional client CG breakdown | Embedded public video, credits; existing editorial pitch logged | Role13 coordination, do not send same film twice |
+| P1 | Design Milk / global | [Editorial form](https://design-milk.com/submit/) | Potentially installation/object/physical design and exhibition films; not ordinary ads | Rights and submission terms; images and project context; role13 owns editorial PR | CONDITIONAL: only future authored installation/art object project |
+| P2 | Design Mate / RU | [Contact](https://design-mate.ru/about) | Editorial angle on architecture/materiality or installation; not generic production ad | hi@design-mate.ru, editorial selection, prior outreach check; role13 owns | Conditional referral to role13 only |
+| P2 | Cossa / RU | [2026 active official rules](https://www.cossa.ru/rules/) | Deep, useful marketing/production methodology and measurable digital case | Original never-before-published text, Google Doc editable, Cossa author bio/photo, licensed images, free editorial if selected; **not visual portfolio**, role13 owns | Only with exclusive distinct method article; no pitch from 36.5 |
+| P2 | It's Nice That / global | [Submissions](https://www.itsnicethat.com/submissions) | Strong singular visual-art story, not service deck | Editorial role13, no duplicated historical pitch; bio/links/media | Forward art/story thesis, not outbound |
+| P2 | Creative Boom / global | [Submit](https://www.creativeboom.com/submit/) | New visual project with strong authored photography/motion images | Credit/creator bio and large files requested; role13 overlapping | Defer to role13 with specific project after rights |
+| P2 | Thirdplat “Reflection: AI and Us” / global | [Official open call](https://thirdplat.com/open-call/2026-12-reflection-ai/); [listing](https://www.artconnect.com/opportunity/9trYlvERUw2MhNstx4YD9) | Experimental, *original* philosophical film about AI and human agency | Deadline 31 Dec 2026, account and terms to verify; no substantial established distribution record; **not a SberCity client case** | Conditional new opportunity if studio has free independent rights-cleared experiment |
+| REJECT | Dribbble / global | [Current guidelines](https://dribbble.com/guidelines) | Some graphic motion identity in theory | Explicitly bars promotional videos/commercials, whole-AI Shots, links/emails in Shot; unlike objekts hero films | Do NOT upload SberCity/Magnit commercial film there |
+| REJECT | Directors' Library / global | [Submission info](https://directorslibrary.com/information/) | Directorial film showcase might fit | Ordinary project submissions involve paid membership; free exceptions don't generally cover studio | Zero-budget policy: no payment, no submission now |
+| REJECT | Promonews / global | [Music-video submit](https://www.promonews.tv/submit) | Music video coverage only | No appropriate music-video project approved | Exclude advertising films |
+| HOLD | Awwwards / global | Award nomination prices and site fit not confirmed in this session | Site design competition, not authorial VFX case | Pricing/format to verify before inclusion | No spend, lower priority |
+| HOLD | Stage32 / global | Existing account reported in historical scope only | Filmmaker community; evidence of direct case discovery unknown | No case-posting/reach verified | Audit old profile and measure before investment |
+
+Additional operating proof: On [Dprofile](https://dprofile.ru/help), the basic tier allows 2 portfolio projects and 4 fragments in a rolling 30 days; its PRO gate affects jury and more slots, not an immediate reason to pay. Public comparable 2026 cases: [SHAR LUKOIL](https://dprofile.ru/case/185292/lukoil-ai-grafika-i-mousn-dizain) (June), [BORZOMANIA](https://dprofile.ru/case/193327/borzomaniia) (September), [motion/brand identity](https://dprofile.ru/case/187187/kriptoleto-2025-aidentika-mousn-i-dizain) (August). These are **external reference works**, never objekts credits.
+
+## 3. Fresh, prioritized work queue — next 14 events
+The sequence is based on access/rights dependencies. Role36.5 owns research/copy/analysis; role15 owns uploads on pre-existing identities; owner/client/agency approve media rights and public use.
+
+| ID | Due target | Task and exit proof | Current status/owner |
+|---|---|---|---|
+| C36-521 | 26 Oct | Role15 returns exact existing Pinterest/Behance/Are.na/Stage32 handle, owner and last real post, signed-out URLs; negative counts verified separately | BLOCKED_BY_ACCOUNT_EVIDENCE / role15 |
+| C36-522 | 26 Oct | Check Dprofile existing studio/company profile; **do not create another**. Screenshot of signed-in account or documented absence | TO_VERIFY / role15+36.5 |
+| C36-523 | 26 Oct | Obtain per-SberCity-shot client/agency repost permission, embedded video rights, music, actors, logo and third-party assets, credits. Matrix for each proposed 10–14 section | RIGHTS_GATE / owner or producer |
+| C36-524 | 26 Oct | Gather 10–14 approved public frame files, source PTS or official gallery identifiers, 16:9 master, 2:3 safe crops, QA screenshot | RIGHTS_GATE / role15 and 36.5 |
+| C36-525 | 27 Oct | One Behance live project by role15 if authorized; signed-out URL, correct caption, authors and canonical source | APPROVAL_GATE / role15 |
+| C36-526 | 27 Oct | Adapt approved SberCity package for Dprofile, RU-first, 2 project slots limit; verify company profile and site link | ACCOUNT + RIGHTS_GATE / role15 |
+| C36-527 | 27 Oct | 4 Pinterest posts, each visually distinct from source frame, 2:3 QA and UTM; one exact board route per concept | ACCOUNT + RIGHTS_GATE / role15 |
+| C36-528 | 27 Oct | Close/open Are.na channel decision and 9 properly sourced blocks; canon rights on studio item | APPROVAL_GATE / role15 |
+| C36-529 | 27 Oct | 1 independent RENDER.RU making-of text with capture method and measured limitation, no client frames until clear | RESEARCHING / 36.5 |
+| C36-530 | 28 Oct | 1 DSGNERS native RU authorial essay with own drawings or permission-cleared pictures, independent practical value | RESEARCHING / 36.5 |
+| C36-531 | 28 Oct | Build 25 Behance/Pinterest/Are.na individual reference projects with **visible author and temporal source**, not a “trend” claim | INCOMPLETE / 36.5 |
+| C36-532 | 28 Oct | Broaden research to >=100 verified recent distinct works across source diversity before any market-level trend statement | INCOMPLETE / 36.5 |
+| C36-533 | 29 Oct | Rights-safe independent experimental film inventory for Thirdplat; verify free account and terms, owner approve specific experiment | CONDITIONAL / owner + 36.5 |
+| C36-534 | 01 Nov | Measure true external publication indexed URLs, 7-day referral sessions and qualified inquiries; do not credit traffic without logs | NO_PUBLISHING_BASELINE / roles12+36.5 |
+
+## 4. Attribution, exact events and conversion control
+Asset ID is distinct from platform and publication:
+- Creative asset IDs: OB36S5-SBC-HERO, -SB-MATERIAL, -SBC-STAGE, -SBC-SPATIAL; each stores first-party parent /ru/work/sbercity, source-frame ID/PTS, rights approval ID, credit approval, actual asset checksum, crop geometry and publish owner.
+- External entry key: role36.5:platform:assetID:YYYYMMDD:NN. Required fields: account URL, public post permalink checked signed-out, published_at in Europe/Madrid, language, title, approved hashtags, canonical case URL, source/medium/campaign, no paid promotion flag.
+- Conditional example UTM (not live): https://objekts.ai/ru/work/sbercity?utm_source=pinterest&utm_medium=organic_social&utm_campaign=role36_5_sbercity&utm_content=material_frame_01 . Same structure for Behance, Dprofile, Are.na if platform accepts outbound link; never place links where platform forbids them.
+- Recheck 24h signed-out media/credits and destination; day7 and day28 exposures, saves, outbound clicks when available, sessions in verified analytics, inquiry source. Attribution only when measured; never invent ROI or rankings.
+- One editorial idea cannot generate several indistinguishable posts. If a site forbids link or promotional content, comply and measure external discovery qualitatively without spoofing.
+
+## 5. Approval request (precise and small)
+1. Identify role15 manager or existing account handles for Pinterest/Behance/Are.na/Stage32/Dprofile. **This asks for existing access audit, not a new paid subscription or duplicate registration.**
+2. From current SberCity project, approve/reject each named frame/film/snowman break and its music/performer/agency credits for third-party use. Blanket website visibility is insufficient.
+3. Confirm whether creative publishing is to be executed by role15 after legal approval; 36.5 supplies captions, source map and QA, but does not take over the account.
+
+## 6. End-of-session evidence, 25 Oct
+- Text artifact created: SberCity Behance/Pinterest/Are.na editorial kit; **media assets NOT approved**.
+- Comparative research: 30 dated works Stash/It's Nice That/Sostav + extra platform examples; **not** a market-wide study or a 100-work sample.
+- Qualified channel: Dprofile strongest new RU creative case candidate, RENDER.RU next.
+- Disqualified for hero commercial: Dribbble, due official rules; pay-gated Directors' Library not fit zero spend.
+- External posts published this session: **0 verified**. Editorial submissions sent: **0 verified**. Qualified leads: **0 verified**.
+- Next definitive closure: real account URLs and per-asset publishing consent, then native upload with a public signed-out link.
