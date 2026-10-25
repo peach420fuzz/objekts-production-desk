@@ -79,3 +79,37 @@ A weekly table of **independent verified public domains** (not duplicate mirrore
 4. [36.4 — Agent Communities & Technical Authority](handoffs/36_4_AGENT_COMMUNITY_AUTHORITY.md)
 
 **Living source of truth:** [existing role36 roadmap](ROADMAP.md), [syndication ledger](../../references/EXTERNAL_SYNDICATION_LEDGER_2026-10-15.md), [independent discovery evidence](../../references/DISCOVERY_EVIDENCE_2026-10-24.md). Every branch reads these before operating, and never starts a duplicate account or fresh CRM as a shortcut.
+
+
+## Autonomy amendment v1.1 — every successor self-generates work
+
+**Clarification from owner:** branches are not passive ticket executors. All four handoffs now include a mandatory **OBSERVE → DISCOVER → RANK → EXECUTE → VERIFY → LEARN → REPLENISH** loop, a self-generated rolling top-10 queue, and field-specific fallback searches when the initial list runs dry. Role 36 does **not** have to keep adding to their GitHub Markdown for them to think. The files are durable state and operating law, not a short-lived task list.
+
+**Escalation principle:** normal selection of destinations, research, eligible free submissions, source-backed replies and revision of copy are delegated to each branch. Only legal/identity/payment gates, cross-team ownership conflicts or material canon changes need HQ/owner coordination. When blocked on one site, the branch moves to the next qualified opportunity and preserves the blocker.
+
+### What role 36 HQ itself does every cycle
+
+1. **See the system:** reconcile all four branches' public receipts, pipeline and suppression in the common ledger. Validate dates, status and distinct domains; stop duplicates or false “published” claims. An internal plan is not an external placement.
+2. **Find cross-lane market opportunities:** look for one recurring buying problem affecting ≥2 branches (e.g. a verified studio case that should power both a citation and a catalogue listing). Create a shared canonical evidence/offer brief; route tactical execution to appropriate specialist, preserving roles 12/13/15/16 and product owners.
+3. **Improve the conversion path:** inspect whether an external placement points to an accurate production proof and voluntary brief, whether leads can disclose source, and whether the web/app owner has shipped the required fix. Prepare reproducible source defects and verify actual releases. Do not replace a production Worker unilaterally.
+4. **Product-release watch:** scan verified owner-released app/connector changes. On a genuinely new accepted public product capability, update one canonical claims matrix and notify 36.1 (tools), 36.2 (answer sources), 36.3 (commercial service relevance) and 36.4 (technical examples). Never promote PRIVATE Plugin Creator records as public.
+5. **Allocation / pruning:** review every 7 days. Shift **attention** toward distinct sources that are producing qualified human briefs, not the ones sending the most forms. If a lane has no commercial discovery signal after 30 days, change source/offer/channel hypothesis rather than demand more low-fit posts.
+6. **Revenue accountability:** role16 owns the actual sales CRM and replies. HQ aggregates sourced qualified briefs, negotiation and paid value only with evidence; does not claim to be the account manager or send parallel client replies.
+7. **Self-directed HQ research:** keep its own open hypotheses about agent discovery, shared factual identity, cross-product demand, and distribution infrastructure. Each active session must produce either a verified cross-lane improvement, an executed independent correction within scope, or a sourced test result; mere supervision is not enough.
+
+### Branch completion is a trigger, not a stop
+
+If one branch empties its top-10 backlog, it must research a next pool, rank it and act; if an environment stops it, log the exact gate and continue safe work. An unapproved legal consent, missing credentials or rate limit is not a reason to fabricate success or route around restrictions. The previous request for deep two-hour working sessions is an **effort target for active sessions**, not a claim that agents run continuously between messages. A recurring background schedule requires a separate, confirmed automation.
+
+### HQ dashboard (source-based, weekly)
+
+| Signal | Evidence standard | Decision |
+|---|---|---|
+| New independent public publisher/page | Anonymous named URL, exact scope, first-seen date | Keep investing if buyer/agent relevance is real |
+| Directory/skill review pending | Accepted UUID/issue, moderation age, next follow-up | Follow up once when reasonable, never count as publication |
+| Real model answer/citation | Exact buyer query/provider/date/canonical URL | Expand source that appears in genuine buyer answers |
+| Voluntary qualified human brief | Role16 CRM owner + source and project scope | Prioritize that acquisition path |
+| Paid job | Contract/payment verified by sales owner | Strongest success metric |
+| Bad-fit traffic/spam/duplicate/misleading copy | Negative receipts and corrections | Stop or repair the tactic |
+
+**HQ is not a dispatcher bottleneck.** The team's operating standard is four independent research-and-execution loops plus one strategic quality/revenue coordinator. New GitHub tasks are only necessary when a strategic priority changes, a shared constraint appears or a new product/source is accepted.
