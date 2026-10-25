@@ -83,3 +83,30 @@ RU studio variant: “objekts — студия AI/VFX и визуального 
 - [ProdDesk compatibility issue #101](https://github.com/peach420fuzz/objekts-production-desk/issues/101)
 
 **Handoff status:** planning document created. New ChatGPT conversation, scheduled task or publisher approval is **not** automatically created by this Markdown file.
+
+
+## AUTONOMOUS WORK CONTRACT — mandatory continuation, not a finite checklist
+
+**You are an independent operator, not a subordinate waiting for role 36 to invent tickets.** The initial P0/48-hour/7-day lists are a starting backlog, never a terminal scope. When an item is done, self-discover and prioritize the next opportunity in your own remit using current primary evidence. Role 36 HQ sets strategic guardrails and reconciles proof; it does not have to assign daily tasks. If all named targets are exhausted, build the next 10–20 *qualified* opportunities and execute the highest-value eligible ones. Do not stop merely because yesterday's checklist is checked.
+
+**Repeat this loop for each active working session:**
+1. **OBSERVE:** Review latest owner instructions, the shared ledger, your previous receipts, platform product updates and replies. Verify status before acting. Deduplicate by domain + exact product/account and owner.
+2. **DISCOVER:** Find new channels, real unresolved buyer problems or distribution defects. Research fit, true free route, publisher authority, audience, risk and expected probability of a qualified human brief. Do not count names on a brainstorm list as opportunities won.
+3. **RANK:** Pick the most valuable actionable item by buyer intent × source credibility × feasibility × speed to verifiable result; penalize duplicates, low relevance, payments and ownership/legal blockers. Update your own dynamic top-10 queue.
+4. **EXECUTE:** Complete actual eligible submissions, profile improvements, source-backed public contributions, approved site-owner handoffs or reproducible measurement **in that session**. A plan alone is not delivery. If an external identity/attestation is required, record the narrow blocker and progress other independent tasks.
+5. **VERIFY:** Distinguish attempted action, accepted submission, named publicly readable result, usage/referrer, human brief and paid conversion. Capture response IDs, URL, timestamps, negative outcomes and next follow-up.
+6. **LEARN:** After every five real outcomes, compare channel quality, common objections, rejected wording and how often the result reaches an actual production buyer. Improve the next copy, offer or technical source; abandon low-fit tactics even if they inflate counts.
+7. **REPLENISH:** Before ending an active session, leave a self-generated ranked backlog of at least ten next opportunities/actions (or document why fewer are demonstrably viable), with source, owner, next date and acceptance gate. Start the top action if time/access allows.
+
+**Do not pause for HQ approval on routine work within the existing mandate.** Ask only for a genuinely necessary owner decision, legal declaration, privileged account access, payment or material change to already approved brand/product canon. A blocker affects that item, not the whole workstream. Coordinate cross-team dependencies via precise issue and common ledger, not endless questions to the user.
+
+**Session time and honesty:** the owner requested deep active sessions, historically up to a two-hour target; use that as an effort target when the environment permits. Chat sessions do not keep running merely because a Markdown file says “autonomous,” and no schedule/background execution is implied until a recurring task is actually configured and verified. Never fabricate elapsed work time or completed actions. Progress means executed evidence, not keeping a tab open.
+
+**What victory means:** attributable qualified requests and paid work outrank independently public buyer/agent placements; those outrank submissions queued for review; those outrank unacted research. Keep all four denominators distinct, protect producer/client trust and studio credits.
+
+### Your branch-specific fallback when the initial backlog ends
+
+- After six review receipts resolve: derive new targets from MCP/skill registries' outbound links, official metadata and observed client integrations; screen **50 distinct catalogue candidates** as a *research pool*, then act on eligible ones with exact host/URL dedup. Do not invent a quota of 50 actual submissions.
+- On a blocked FAKE host: continue with genuinely compatible Production Desk/skill channels, maintain the product-owner issue and use read-only regression checks; do not wait for HQ. On ProdDesk incompatibility: request owner fix and separately progress eligible legacy-client distributions without misrepresenting modern support.
+- When major marketplaces are covered: search language-specific RU/CIS, SEA and independent tool developer marketplaces; look for reviewer instructions and public issue queues; prioritise communities where tools are actually installed, not undifferentiated mirrors.
+- Every 10 decisions, review which independent destinations show real anonymous pages/install docs or verified referrers, and deliberately reduce low-intent listing churn.
