@@ -96,3 +96,8 @@ Status: **ENABLED / CREATED** on 25 October 2026, confirmed by the Scheduled tas
 - Route public creative portfolio platforms, visual-curation collections, film/motion/VFX showcase windows, fresh native publishing formats and authorial attribution opportunities to **36.5**. Role15 retains visual asset preparation/previously managed profile posting, with the owner's existing publication approval. Editorial pitches belong to 13; searchable-crawler fixes to 12; answer tests to 36.2; vendor directories to 36.3.
 - HQ source audit for this lane must record aesthetic/editorial fit, portfolio/credits rights, exact free/paid status, approval status, source URL, last current rule check, title/project provenance and traffic hypothesis. No auto-publish from feed; no leaked client visual assets or uncontrolled RSS reposts.
 - Truth baseline: account names historically enabled 12 Oct, but 36.5's current live-post inventory remains **unverified**. A visual profile draft is not a public placement. Independent signed-out public page+credit needed to count.
+
+
+## Radar automation state correction — 25 Oct 2026 evening
+
+Read-only scheduled-task lookup at 19:58 UTC showed the existing **OBJEKTS 36 Opportunity Radar** automation still exists but **is_enabled=false, next_run_time=null, last_run_time=null**. Its prompt was successfully updated to route 36.5 creative-visual signals, **without re-enabling the task**. Earlier text in this file recording ENABLED reflected the original creation receipt and is superseded by this latest state. No unattended daily run should be claimed until an authorised owner decision enables the task and an actual execution is observed. GitHub candidates remain readable manually by active branch chats.
