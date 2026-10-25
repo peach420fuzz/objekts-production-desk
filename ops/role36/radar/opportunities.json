@@ -375,9 +375,9 @@
         "Rights, sound and music, historic-site sensitive content, master and projection QA",
         "Owner approval for production effort and submission; zero paid services"
       ],
-      "next_action": "By 28 Oct decide if an existing already-rendered installation work fits; inspect Annex4 license and technical needs. If no feasible asset, reject rather than rush paid new production.",
+      "next_action": "By 28 Oct open official Building Matrix (2D/3D) and participant license, check whether any already-owned film is feasible with site projection geometry. Organizer extended deadline to 5 Nov 23:59 CET, but application form intro still says 30 Oct: verify in intake. If no feasible work, REJECT_NO_FEASIBLE_ASSET. Tracking issue #112.",
       "due_for_first_review": "2026-10-28",
-      "last_action": "2026-10-25: OFFICIAL_DEADLINE_EXTENSION_VERIFIED; NO_MEDIA_OR_TECH_LICENSE_QC; NOT_SUBMITTED",
+      "last_action": "2026-10-25: ORGANIZER_5NOV_EXTENSION_VS_FORM_30OCT_DISCREPANCY_LOGGED; ISSUE_112_CREATED; NO_SUBMISSION",
       "dedup_key": "unloc.uken.krakow.pl|after-the-palace-resonance-2026|objekts"
     }
   ],
