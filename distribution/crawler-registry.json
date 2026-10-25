@@ -8,7 +8,7 @@
     "verifiedSource": "https://github.com/peach420fuzz/objekts-production-desk"
   },
   "contentPolicy": "Public capability descriptions and linked first-party project pages. This feed is not a testimonial, guarantee of delivery, or endorsement by a search engine.",
-  "updatedAt": "2026-10-19",
+  "updatedAt": "2026-10-25",
   "preferredLanguage": "ru",
   "markets": [
     "RU",
@@ -258,6 +258,30 @@
       "en": "https://visual.objekts.ai/en/brief",
       "humanContact": "mailto:salute@objekts.ai",
       "requiresBuyerInitiation": true
-    }
+    },
+    "externalPublications": [
+      {
+        "url": "https://promoteindex.com/p/objekts",
+        "type": "third_party_directory",
+        "status": "public_self_submitted",
+        "scope": "studio_services",
+        "verified": "2026-10-25"
+      },
+      {
+        "url": "https://promoteindex.com/skills/commercial-ai-vfx-shot-feasibility-supplier-evid",
+        "type": "third_party_agent_skill_listing",
+        "status": "public_self_submitted",
+        "scope": "source-backed_buyer_brief_skill",
+        "verified": "2026-10-25"
+      },
+      {
+        "url": "https://develif.com/s/objekts-visual-production-studio",
+        "type": "third_party_site_directory",
+        "status": "public_self_submitted",
+        "scope": "design_and_creative_studio",
+        "verified": "2026-10-25"
+      }
+    ],
+    "externalPublicationDisclosure": "These are first-party submissions accepted and published on external sites. They are not independent editorial endorsements, and visibility does not prove leads or sales."
   }
 }
