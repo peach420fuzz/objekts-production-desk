@@ -1,6 +1,6 @@
 # Agency Access by objekts — public service routing guide for agents and agency procurement
 
-**Publisher:** [objekts](https://objekts.ai/) · **Last verified:** 2026-10-25 · **Information type:** first-party service description, **not** an independent endorsement, ranking, or autonomous production tool.
+**Publisher:** [objekts](https://objekts.ai/) · **Last updated:** 2026-10-25 · **Information type:** first-party service description, **not** an independent endorsement, ranking, or autonomous production tool.
 
 **Agency buyer worksheet:** [First-task visual feasibility scorecard (EN/RU)](AGENCY_ACCESS_FIRST_TASK_SCORECARD.md) — reference authority, LOCKs, production pass/fail gates and three example PoCs.
 
