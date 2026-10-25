@@ -1,8 +1,8 @@
 {
-  "schema_version": "objekts.role36_2.web_retrieval_sample.v1",
+  "schema_version": "objekts.role36_2.web_retrieval_sample.v1.1",
   "tested_date_utc": "2026-10-25",
   "tested_surface": "Search tool system2, not a named ChatGPT/Claude/Gemini/Grok answer or an independent Google/Yandex ranking; no locale/GEO parameter was supplied",
-  "methodology": "One call per non-branded exact query. Capture the first 5 distinct displayed title/URL headings. Mark an objekts hit only if its literal brand/domain occurs in displayed title or URL; do not count snippets, inherited knowledge or provider opinion. Each provider-order number is search-tool ordering, NOT Google rank.",
+  "methodology": "One call per non-branded exact query. Capture first five displayed title/URL headings. Count a brand entity only when 'objekts' appears as a standalone token in a source title or exact objekts.ai host; canonical-owned requires exact hostname ending in .objekts.ai or objekts.ai. Do not match 'objektstudio' as objekts. Provider order is NOT Google rank.",
   "stats": {
     "unique_queries": 30,
     "top5_links_preserved": 150,
@@ -11,7 +11,8 @@
     "llm_answers_observed": 0,
     "llm_citations_observed": 0,
     "counted_human_briefs": 0,
-    "counted_paid_commissions": 0
+    "counted_paid_commissions": 0,
+    "owned_objekts_host_in_top5": 7
   },
   "compare_with_role12": "Independent prompt set and different retrieval provider; role12 12-query sample is a separate denominator and not an LLM response test.",
   "quality_limits": [
@@ -19,7 +20,8 @@
     "No exact per-call UTC time in first exploratory pass",
     "Search-tool personalization/retrieval algorithm and result freshness are not controlled",
     "Query wording was authored for the experiment, not mined from verified user demand",
-    "One run per query: apparent presence/absence is unstable until same-mode retests"
+    "One run per query: apparent presence/absence is unstable until same-mode retests",
+    "Brand entity classification was hardened after negative-control false positive on unrelated objektstudio domain; original 8/30 count unchanged."
   ],
   "records": [
     {
@@ -39,36 +41,42 @@
           "provider_order": 1,
           "source_title": "AI / ИИ-продакшн студия в Москве — реклама, VFX и видео | objekts",
           "source_url": "https://objekts.ai/services/advertising-brands/",
-          "owned_objekts_source": true
+          "canonical_owned_source": true,
+          "named_objekts_entity": true
         },
         {
           "provider_order": 2,
           "source_title": "AI-ролики для рекламы, обучения и промышленности — Студия Пинкман",
           "source_url": "https://www.pinkman.ru/video-production/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "AI VFX studio — generative VFX, advertising and hybrid post | objekts",
           "source_url": "https://objekts.ai/en/services/ai-vfx/",
-          "owned_objekts_source": true
+          "canonical_owned_source": true,
+          "named_objekts_entity": true
         },
         {
           "provider_order": 4,
           "source_title": "AI-видео и рекламные ролики | Реальный Vайб AI Studio",
           "source_url": "https://real-vibe.studio/service-detail.html?id=0",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "KUDINOV FILMS — ИИ-видео для брендов · Москва · Даниил Кудинов",
           "source_url": "https://kudinovfilms.com/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": true,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "product-fidelity"
+      "intent": "product-fidelity",
+      "canonical_owned_host_in_top5": true
     },
     {
       "query_id": "R36.2-AC02",
@@ -87,36 +95,42 @@
           "provider_order": 1,
           "source_title": "О студии objekts — AI / ИИ-продакшн, режиссура и VFX",
           "source_url": "https://objekts.ai/about/",
-          "owned_objekts_source": true
+          "canonical_owned_source": true,
+          "named_objekts_entity": true
         },
         {
           "provider_order": 2,
           "source_title": "Как выбрать студию видео без съёмки: критерии, цены, договор",
           "source_url": "https://clyovo.ru/blog/kak-vybrat-studiyu-rolikov-bez-semki",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "1.0 Студия — AI, 2D/3D Motion, CGI, VFX, FOOH",
           "source_url": "https://one-zero.ru/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "CG Freelance – Telegram",
           "source_url": "https://t.me/s/cgfreelance?before=20673",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Видеопродакшн студия Human Video — Заказать видеоролик в Москве, съемка и продакшн видео роликов",
           "source_url": "https://humanvideo.ru/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": true,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "one-shot"
+      "intent": "one-shot",
+      "canonical_owned_host_in_top5": true
     },
     {
       "query_id": "R36.2-AC03",
@@ -135,36 +149,42 @@
           "provider_order": 1,
           "source_title": "White-Label AI Creative Production for Agencies | AITEIT",
           "source_url": "https://www.aiteitai.com/services/white-label-ai-creative",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Producción con IA en marca blanca para agencias",
           "source_url": "https://www.creativa.ai/para-agencias",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "AXIOMA — white-label AI-видео для агентств и брендов",
           "source_url": "https://axiomamedia.com/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "White-label AI-видеопродакшн для рекламных агентств — AXIOMA",
           "source_url": "https://axiomamedia.com/business/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Partner de producción con IA para agencias | Nobod",
           "source_url": "https://www.nobod.es/produccion-ia-agencias/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "white-label"
+      "intent": "white-label",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-AC04",
@@ -183,36 +203,42 @@
           "provider_order": 1,
           "source_title": "Видео + AI: что можно изменить в рекламном ролике после съёмки",
           "source_url": "https://www.sostav.ru/blogs/290917/113668",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "DeSeif | Audiovisual Production",
           "source_url": "https://www.deseif.es/ai",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "AI VFX: Remove, Replace, Extend, Relight or Composite a Shot | Shoty",
           "source_url": "https://www.shoty.ai/community/blog/ai-vfx",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "AI VFX — Change One Thing in a Real Shot | MITO",
           "source_url": "https://mito.ai/create/video/vfx/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "AI set extension, period conversion and sky replacement",
           "source_url": "https://nolanlabs.io/use-cases/environment",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "environment-replacement"
+      "intent": "environment-replacement",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-AC05",
@@ -231,36 +257,42 @@
           "provider_order": 1,
           "source_title": "White-Label AI Creative Production for Agencies | AITEIT",
           "source_url": "https://www.aiteitai.com/services/white-label-ai-creative",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Producción con IA en marca blanca para agencias",
           "source_url": "https://www.creativa.ai/para-agencias",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "AI Ad Production for Agencies and Brands, White-Label",
           "source_url": "https://www.gnsdf.com/ai-ad-production",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Гибридный видеопродакшн: съёмка, AI и CGI — SHAR Production",
           "source_url": "https://sharprod.com/services/hybrid-video-production.html",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "SynthNova AI Production — Кино и реклама нового поколения",
           "source_url": "https://synthnova.media/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "agency-white-label"
+      "intent": "agency-white-label",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-AC06",
@@ -279,36 +311,42 @@
           "provider_order": 1,
           "source_title": "ИИ-замена товара в видеорекламе - ваш продукт в готовом ролике",
           "source_url": "https://www.dreamega.ai/ru/video/video-product-swap",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Как отмечать товары в видео - Компьютер - Cправка - YouTube",
           "source_url": "https://support.google.com/youtube/answer/10191533?hl=ru",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "Товарные знаки в видео: порядок согласования",
           "source_url": "https://blog.berdoff.studio/ispolzovanie-tovarnyh-znakov-v-video/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Заменить товар в видео с AI | OneThing Video",
           "source_url": "https://onethingclip.com/ru/replace-product-in-video-ai",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Replace a Logo or Branded Item in a Video | Inflyu",
           "source_url": "https://inflyu.com/replace-logo-in-video",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "product-replacement"
+      "intent": "product-replacement",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-AC07",
@@ -327,36 +365,42 @@
           "provider_order": 1,
           "source_title": "AI-видео и motion-дизайн для рекламы — Veltos.Tech",
           "source_url": "https://veltos.tech/ru/services/motion-ai-video",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "PixVerse & each::labs: Turning One Approved AI Video Into Every Ad Placement | PixVerse",
           "source_url": "https://pixverse.ai/en/blog/pixverse-eachlabs-one-video-every-ad-placement",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "Voom | Моушн-графика с ИИ: видео из промпта или ссылки",
           "source_url": "https://madewithvoom.com/ru",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Котик-рыцарь и великан: как сделать трендовое ИИ-видео с котенком в доспехах / Хабр",
           "source_url": "https://habr.com/ru/companies/study_ai/articles/1092464/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Как создаётся реклама с ИИ | VSNRY Motion",
           "source_url": "https://www.vsnry-motion.com/ru/method",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "adaptation"
+      "intent": "adaptation",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-AC08",
@@ -375,36 +419,42 @@
           "provider_order": 1,
           "source_title": "AB-InBev Masterpiece | CGI Art Direction & Product Visualization | Madness – CGI & AI Film Studio",
           "source_url": "https://www.madnss.com/ab-inbev-masterpiece",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Sliding On – Storz & Escherich",
           "source_url": "https://www.storzescherich.de/portfolio/sliding-on/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "ReelSource - Commercial TV | OLV – CGI | VFX Showreel / SHOWREEL / ВидеоЗаяц",
           "source_url": "https://reelsource.ru/ru/profile/14482/work/67643",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "CGI и VFX в рекламе и когда бренду действительно нужны 3D и визуальные эффекты - узнать больше про контент на Workspace",
           "source_url": "https://workspace.ru/blog/cgi-i-vfx-v-reklame-i-kogda-brendu-deystvitelno-nuzhny-3d-i-vizualnye-effekty/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "DV Labs — 3D Studio",
           "source_url": "https://dv-labs.vercel.app/projects/project2",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "product-vfx"
+      "intent": "product-vfx",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-AC09",
@@ -423,36 +473,42 @@
           "provider_order": 1,
           "source_title": "Хочешь попробовать первым? — Kadrio",
           "source_url": "https://kadrio.ai/ru/waitlist",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Etyp - AI-продакшен полного цикла",
           "source_url": "https://etyp.ru/index.html",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "AI UGC creator jobs, paid on performance (2026) | Anglr",
           "source_url": "https://anglr.co/creators",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "OKAD Agency — Video Ad Creative Testing, UGC & Design",
           "source_url": "https://okad.agency/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "HardLaunch | AI Face Swap for UGC and Paid Ads",
           "source_url": "https://hardlaunch.com/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "shot-poc"
+      "intent": "shot-poc",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-AC10",
@@ -471,36 +527,42 @@
           "provider_order": 1,
           "source_title": "Dónde trabajamos · Productora de vídeo con IA · EficiencIAl",
           "source_url": "https://eficiencial.com/estudio/donde-trabajamos",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Loc&Capture | Producción final para marketing localizado de videojuegos",
           "source_url": "https://locncapture.com/es/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "Адаптация рекламных роликов - TimeLine",
           "source_url": "https://timeline.ru/services/post-production/adaptation/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Рекламный видеопродакшн под ключ | от $213 | VITON13 Studio",
           "source_url": "https://studio.viton13.com/ru/video-production/commercial-production",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Frontways – Video Localization Agency",
           "source_url": "https://frontways.agency/es/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "localization"
+      "intent": "localization",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-FL01",
@@ -519,36 +581,42 @@
           "provider_order": 1,
           "source_title": "Fixed in AI Post - AI VFX Breakdown - AI25.STUDIO",
           "source_url": "https://ai25.studio/work/fixed-in-ai-post",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "nolanlabs | AI for post-production",
           "source_url": "https://nolanlabs.io/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "AI VFX для кино и сериалов — objekts",
           "source_url": "https://objekts.ai/services/film-series-vfx/",
-          "owned_objekts_source": true
+          "canonical_owned_source": true,
+          "named_objekts_entity": true
         },
         {
           "provider_order": 4,
           "source_title": "Постпродакшн. Создание VFX для сериала.",
           "source_url": "https://render.ru/ru/AfterUs_OriginalSeries/post/15107",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Post-production effects for your footage | Synthetic FX",
           "source_url": "https://www.syntheticcinema.com/hybrid-vfx/post-production/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": true,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "crowd-vfx"
+      "intent": "crowd-vfx",
+      "canonical_owned_host_in_top5": true
     },
     {
       "query_id": "R36.2-FL02",
@@ -567,36 +635,42 @@
           "provider_order": 1,
           "source_title": "DeSeif | Audiovisual Production",
           "source_url": "https://www.deseif.es/ai",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "AI-led VFX Services | Vinc",
           "source_url": "https://www.v.inc/services/ai-vfx",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "Post-production effects for your footage | Synthetic FX",
           "source_url": "https://www.syntheticcinema.com/hybrid-vfx/post-production/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Fixed in AI Post - AI VFX Breakdown - AI25.STUDIO",
           "source_url": "https://ai25.studio/work/fixed-in-ai-post",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Hybrid AI Production Company in Los Angeles | Onsetology",
           "source_url": "https://onsetology.com/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "set-extension"
+      "intent": "set-extension",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-FL03",
@@ -615,36 +689,42 @@
           "provider_order": 1,
           "source_title": "Estudio VFX de gama alta, compositing & efectos visuales | Digiteyes",
           "source_url": "https://digiteyes.fr/es/expertise/vfx",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Premium VFX for Independent Film, Ads & Social | 208 Monkeys",
           "source_url": "https://208monkeys.com/vfx-studio",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "VFX Studio for Cleanup, Compositing, and Roto",
           "source_url": "https://www.spitshinevfx.com/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "The Paint Collective VFX",
           "source_url": "https://www.paintcollective.com/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "AI Shot Rescue and VFX Cleanup — Trained to Imagine",
           "source_url": "https://trainedtoimagine.ai/en/ai-shot-rescue",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "cleanup"
+      "intent": "cleanup",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-FL04",
@@ -663,36 +743,42 @@
           "provider_order": 1,
           "source_title": "AI VFX для кино и сериалов — objekts",
           "source_url": "https://objekts.ai/services/film-series-vfx/",
-          "owned_objekts_source": true
+          "canonical_owned_source": true,
+          "named_objekts_entity": true
         },
         {
           "provider_order": 2,
           "source_title": "AI, CGI, live action and post capabilities | SHAR Production",
           "source_url": "https://sharprod.com/en/capabilities/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "AI VFX studio — generative VFX, advertising and hybrid post | objekts",
           "source_url": "https://objekts.ai/en/services/ai-vfx/",
-          "owned_objekts_source": true
+          "canonical_owned_source": true,
+          "named_objekts_entity": true
         },
         {
           "provider_order": 4,
           "source_title": "AI VFX for film and series — objekts",
           "source_url": "https://objekts.ai/en/services/film-series-vfx/",
-          "owned_objekts_source": true
+          "canonical_owned_source": true,
+          "named_objekts_entity": true
         },
         {
           "provider_order": 5,
           "source_title": "VFX Artist - AI Job Risk Assessment - YourBestChance",
           "source_url": "https://yourbestchance.io/jobs/media-entertainment/vfx-artist/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": true,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "continuity"
+      "intent": "continuity",
+      "canonical_owned_host_in_top5": true
     },
     {
       "query_id": "R36.2-FL05",
@@ -711,36 +797,42 @@
           "provider_order": 1,
           "source_title": "Студия постпродакшн в Москве, стомиость услуги и отзывы | Творческий видеопродакшн Losfilms",
           "source_url": "https://losfilms.ru/postprodakshn-video-i-filmov",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Конверсиум — техническая графика и композитинг для кино и сериалов",
           "source_url": "https://conversium.ru/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "Зачем подключать постпродакшн еще на этапе подготовки проекта — PixelBit",
           "source_url": "https://pixelbit.ru/journal/postproduction-na-etape-podgotovki",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Постпродакшн видео, фильмов и сериалов | Студия в Москве",
           "source_url": "https://video.chemodanov-production.ru/studiya/post-production",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Что такое постпродакшн и из чего он состоит | AVA studio",
           "source_url": "https://avastudio.ru/blog/shto-takoe-postprodakshn-i-iz-chego-on-sostoit/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "season"
+      "intent": "season",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-MU01",
@@ -759,36 +851,42 @@
           "provider_order": 1,
           "source_title": "Revive: transforma imágenes antiguas en historias vivas",
           "source_url": "https://www.sunomonofilms.com/revive",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "ILLUMUR HISTORY | Презентационный ролик | Videos & Movies on Vimeo",
           "source_url": "https://vimeo.com/1117732444",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "Reconstrucción histórica audiovisual | Epopeia Studio",
           "source_url": "https://www.epopeiastudio.com/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Оживлення та анімація фото на замовлення | AnimaFrame",
           "source_url": "https://www.animaframe.tech/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Recreaciones históricas con IA para museos, exposiciones y patrimonio",
           "source_url": "https://www.brande.es/eventos-curiosidades/recreaciones-historicas-con-ia-para-museos-y-exposiciones/amp/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "archive-animation"
+      "intent": "archive-animation",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-MU02",
@@ -807,36 +905,42 @@
           "provider_order": 1,
           "source_title": "Создание иммерсивных пространств | Российская музейная компания",
           "source_url": "https://ros-museumstroy.ru/vidyresheniy/immersivnue_prostranstva/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "ТЗ на мультимедийное оснащение музея: структура, образец и ошибки | Rekkom",
           "source_url": "https://rekkom.agency/blog/tz-na-multimedijnoe-osnashchenie-muzeya/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "Оснащение музеев под ключ: интерактив в экспозиции | ITLabs",
           "source_url": "https://itlabs-soft.ru/industries/muzei",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Мультимедийная экспозиция для музея — Умный Век",
           "source_url": "https://umvek.ru/museums",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Сервис мультимедийной экспозиции музея | ITLabs",
           "source_url": "https://itlabs-soft.ru/servis-muzeynoy-ekspozicii",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "museum-projection"
+      "intent": "museum-projection",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-MU03",
@@ -855,36 +959,42 @@
           "provider_order": 1,
           "source_title": "Российский этнографический музей",
           "source_url": "https://ethnomuseum.ru/about/museum_structure/departments/otdel-fotografii/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Компьютерная реставрация и обработка изображений стеклянных негативов коллекции Г.Н. Малиновского для создания выставки | Долгопрудненский историко-художественный музей",
           "source_url": "https://dolgoprudnymuseum.ru/kompyuternaya-restavratsiya-i-obrabotka-izobrazhenij-steklyannyh-negativov-kollektsii-g-n-malinovskogo-dlya-sozdaniya-vystavki-2/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "Российский государственный архив кинофотодокументов. Подробная информация: расписание, фото, адрес и т. д. на официальном сайте Культура.РФ",
           "source_url": "https://www.culture.ru/institutes/5965/rossiiskii-gosudarstvennyi-arkhiv-kinofotodokumentov",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "MUSEUM SCIENCE, CONSERVATION AND RESTORATION OF HISTORICAL...",
           "source_url": "https://kpfu.ru/portal/docs/F_1449945470/Nasledie__2_2022.pdf",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "О проекте – KUNSTRU",
           "source_url": "https://kunstru.ru/o-proekte/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "archive-rights"
+      "intent": "archive-rights",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-MU04",
@@ -903,36 +1013,42 @@
           "provider_order": 1,
           "source_title": "INMIYA — студия immersive и motion контента",
           "source_url": "https://inmiya.ru/index.html",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Immersivity - создание и организация иммерсивного и интерактивного шоу, спектакля, постановки, квеста на корпоратив и свадьбу в Санкт-Петербурге, Москве, России",
           "source_url": "https://immersivity.ru/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "AI-контент для экранов и мероприятий | DragonShow Калининград",
           "source_url": "https://dragonshow.ru/contentsai/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Заказать видеодекорации и LED-контент — Киров, вся Россия | Марк Кривошеин",
           "source_url": "https://mark-krivoshein.ru/event-content",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Интерактивные визуальные системы для событий и expo — objekts",
           "source_url": "https://objekts.ai/services/immersive-interactive/",
-          "owned_objekts_source": true
+          "canonical_owned_source": true,
+          "named_objekts_entity": true
         }
       ],
       "brand_source_in_top5": true,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "stage"
+      "intent": "stage",
+      "canonical_owned_host_in_top5": true
     },
     {
       "query_id": "R36.2-MU05",
@@ -951,36 +1067,42 @@
           "provider_order": 1,
           "source_title": "Константин Кузнецов: «В фильме \"Кутузов\" было важно использовать ИИ-технологии дозированно и аккуратно»",
           "source_url": "https://www.proficinema.com/interviews/detail.php?ID=461929",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Есть ли компьютерная графика в «Наполеоне», «Барби» и «Оппенгеймере»? Развенчиваем мифы тренда «No CGI» — Статьи на Кинопоиске",
           "source_url": "https://www.kinopoisk.ru/media/article/4008985/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "КЕМЕРОВСКИЙ ГОСУДАРСТВЕННЫЙ",
           "source_url": "https://kemgmu.ru/science/sci_events/%D1%81%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA_%D1%84%D0%B0%D0%BB%D1%8C%D1%81%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8_2021_%D0%B3%D0%BE%D0%B4_v2.pdf",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "«Цареубийца»: почему история всегда жива?",
           "source_url": "https://www.mosfilm.ru/about/news/tsareubiytsa-pochemu-istoriya-vsegda-zhiva/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "How does ‘Oppenheimer’ re-create history? We asked Christopher Nolan. | National Geographic",
           "source_url": "https://www.nationalgeographic.com/history/article/oppenheimer-historical-accuracy-christopher-nolan",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "heritage"
+      "intent": "heritage",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-RE01",
@@ -999,36 +1121,42 @@
           "provider_order": 1,
           "source_title": "On-Model | Fashion Visuals at Scale with AI",
           "source_url": "https://on-model.com/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "AI Model Photoshoot for Clothing Catalogs | TextileStudio.ai",
           "source_url": "https://textilestudio.ai/catalog",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "OnModel — AI on-model photography for fashion brands",
           "source_url": "https://onmodel.io/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Товар на модели — фотосъёмка аксессуаров с ИИ",
           "source_url": "https://fashiolabs.com/ru/product-on-model",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Catálogo on-model con IA fiel al producto real",
           "source_url": "https://ia360empresas.es/imagen-con-ia/catalogo-on-model/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "on-model"
+      "intent": "on-model",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-RE02",
@@ -1047,36 +1175,42 @@
           "provider_order": 1,
           "source_title": "Herofab — нейросеть для фото товаров из одного снимка на телефон",
           "source_url": "https://herofab.app/ru/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Смена одежды с ИИ и виртуальная примерка | Collart AI",
           "source_url": "https://collart.ai/ru/studio/ai-clothes-changer",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "Fitrine — ИИ-фотостудия для модных брендов",
           "source_url": "https://fitrine.com/ru/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "AI-фотостудия Marta Creative — фото товара для Wildberries, Ozon, Яндекс.Маркета за 60 секунд",
           "source_url": "https://marta-creative.ru/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Фотосессия одежды на модели для маркетплейса — нейросеть | Luvpic",
           "source_url": "https://luvpic.ru/photo/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "on-model"
+      "intent": "on-model",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-RE03",
@@ -1095,36 +1229,42 @@
           "provider_order": 1,
           "source_title": "KLOTHES by objekts — R&D-система производства fashion-каталогов",
           "source_url": "https://objekts.ai/research/klothes-catalog-system/",
-          "owned_objekts_source": true
+          "canonical_owned_source": true,
+          "named_objekts_entity": true
         },
         {
           "provider_order": 2,
           "source_title": "Fashion and Apparel Manufacturing AI Agent | UPX",
           "source_url": "https://www.upx.com/en/ai-agents/fashion-and-apparel-manufacturing",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "AI-распознавание полки и контроль выкладки - Smartup",
           "source_url": "https://loop.smartup24.com/ru/platform/ai-shelf-recognition/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "KLOTHES by objekts — an R&D system for fashion-catalog production",
           "source_url": "https://objekts.ai/en/research/klothes-catalog-system/",
-          "owned_objekts_source": true
+          "canonical_owned_source": true,
+          "named_objekts_entity": true
         },
         {
           "provider_order": 5,
           "source_title": "AI-студия товарных фото для пакетной обработки SKU",
           "source_url": "https://fireredimage.com/ru/ai-product-photo-studio",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": true,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "catalog-qc"
+      "intent": "catalog-qc",
+      "canonical_owned_host_in_top5": true
     },
     {
       "query_id": "R36.2-RE04",
@@ -1143,36 +1283,42 @@
           "provider_order": 1,
           "source_title": "Облик — создаёт нейросетью продающие карточки маркетплейсов",
           "source_url": "https://obliqapp.vercel.app/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Consistent AI Models: A Guide for Fashion Catalog Production - FlixStock",
           "source_url": "https://www.flixstock.com/resources/articles/consistent-ai-fashion-models-across-catalog",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "Облик — нейросеть для карточек товара на Wildberries и Ozon",
           "source_url": "https://obliqapp.ru/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Обликум — AI-редактор карточек товаров для маркетплейсов",
           "source_url": "https://oblikum.ru/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Нейросеть для товаров и маркетплейсов — на русском, без VPN | Molnia AI",
           "source_url": "https://molniaai.com/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "identity"
+      "intent": "identity",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-RE05",
@@ -1191,36 +1337,42 @@
           "provider_order": 1,
           "source_title": "AI-съёмка одежды под ключ | Indossa Studio",
           "source_url": "https://indossa.studio/index.html",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Tailor Base Patterns",
           "source_url": "https://tailorbasepatterns.com/ru",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "Генератор лукбуков с ИИ для модных брендов | Mew Design",
           "source_url": "https://mew.design/ru/create/ai-lookbook-generator",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Muvie - Cadwise",
           "source_url": "https://cadwise.ru/Solution/muvie",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "MoodLock Outfit Studio | MoodLock",
           "source_url": "https://moodlock.jp/studio",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "garment-fit"
+      "intent": "garment-fit",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-TO01",
@@ -1239,36 +1391,42 @@
           "provider_order": 1,
           "source_title": "Servidor MCP de Objekts Production Desk",
           "source_url": "https://mcpservers.org/es/servers/peach420fuzz/objekts-production-desk",
-          "owned_objekts_source": true
+          "canonical_owned_source": false,
+          "named_objekts_entity": true
         },
         {
           "provider_order": 2,
           "source_title": "objekts Production Desk - MCP Server",
           "source_url": "https://mcprepository.com/peach420fuzz/objekts-production-desk",
-          "owned_objekts_source": true
+          "canonical_owned_source": false,
+          "named_objekts_entity": true
         },
         {
           "provider_order": 3,
           "source_title": "mcp.film — The MCP Directory for AI Filmmaking",
           "source_url": "https://mcp.film/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "MCP Documentation: Tools, Costs & Workflows | VisionX",
           "source_url": "https://www.vxstudio.ai/mcp/docs",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "What is invideo MCP? | Help Center",
           "source_url": "https://help.invideo.io/en/articles/17336870-what-is-invideo-mcp",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": true,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "mcp-preflight"
+      "intent": "mcp-preflight",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-TO02",
@@ -1287,36 +1445,42 @@
           "provider_order": 1,
           "source_title": "Онлайн-бриф на видеопродакшн — команда и подход | SHAR",
           "source_url": "https://sharprod.com/brief/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Бриф на создание видеоролика – dt group видеопродакшн | dt group",
           "source_url": "https://www.dtgroup.ru/brief/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "Как составить бриф на AI-видео для бизнеса: шаблон — GLOV MEDIA",
           "source_url": "https://glov-media.com/materials/ai-video-brief-for-business",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Бриф на создание видео — онлайн-генератор ТЗ для видеопроизводства | City Production",
           "source_url": "https://city-production.ru/brief",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Бриф на фото и видео нейросетью — ЮИ Манэки",
           "source_url": "https://ui-maneki.ru/brief.html",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "brief-tool"
+      "intent": "brief-tool",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-TO03",
@@ -1335,36 +1499,42 @@
           "provider_order": 1,
           "source_title": "Microsoft MCP Server | Microsoft Advertising",
           "source_url": "https://about.ads.microsoft.com/en/solutions/technology/mcp-server",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Microsoft MCP Server | Microsoft Advertising",
           "source_url": "https://www.about.ads.microsoft.com/en/solutions/technology/mcp-server",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "GitHub - UnrealUGC/mcp: Official MCP server for creating AI UGC videos with UnrealUGC · GitHub",
           "source_url": "https://github.com/UnrealUGC/mcp",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "EzUGC MCP Server: Brand Videos & Ads in Any Agent | EzUGC",
           "source_url": "https://www.ezugc.ai/mcp",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Quelta MCP server — video ad analysis in Claude, ChatGPT and Cursor",
           "source_url": "https://quelta.ai/mcp-server/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "mcp-estimate"
+      "intent": "mcp-estimate",
+      "canonical_owned_host_in_top5": false
     },
     {
       "query_id": "R36.2-TO04",
@@ -1383,36 +1553,42 @@
           "provider_order": 1,
           "source_title": "FAKE by objekts — система создания стабильных AI-персонажей",
           "source_url": "https://objekts.ai/research/fake-character-system/",
-          "owned_objekts_source": true
+          "canonical_owned_source": true,
+          "named_objekts_entity": true
         },
         {
           "provider_order": 2,
           "source_title": "Как сохранить единообразие персонажей в Meshy | Meshy Help Center",
           "source_url": "https://help.meshy.ai/ru/articles/16102614-how-to-keep-characters-consistent-in-meshy",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "Consistent Characters: Which AI Platform for What Job",
           "source_url": "https://www.dreamdrive.ai/learn/cross-platform/consistent-characters-which-platform-for-what/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Kling AI Motion Control | Инструмент анимации персонажей и захвата движения",
           "source_url": "https://kling.ai/ru/feature/ai-motion-control",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "Best AI Tools for Consistent Characters Across Video Scenes",
           "source_url": "https://openart.ai/blog/best-ai-tools-consistent-characters-video-scenes/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": true,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "character"
+      "intent": "character",
+      "canonical_owned_host_in_top5": true
     },
     {
       "query_id": "R36.2-TO05",
@@ -1431,36 +1607,42 @@
           "provider_order": 1,
           "source_title": "ИИ сделал логотип, претензия пришла бизнесу: как оформить права на нейроконтент",
           "source_url": "https://spark.ru/startup/lyudi-i-dengi/blog/393398/ii-sdelal-logotip-pretenziya-prishla-biznesu-kak-oformit-prava-na-nejrokontent",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 2,
           "source_title": "Заказать логотип для сайта и бизнеса у фрилансера | DitWork",
           "source_url": "https://ditwork.com/logotip-i-brending/logotip/creating-simple-logos",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 3,
           "source_title": "ИИ агент для дизайна: бриф, версии и приёмка",
           "source_url": "https://zinin-shturbin.com/blog/ii-agent-dlya-dizayna-brif-versii-prava-i-priemka-maketa/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 4,
           "source_title": "Права на логотип от дизайнера: что проверить — КиберПраво",
           "source_url": "https://cyberrlaw.ru/practice/prava-na-logotip-pri-zakaze-u-dizajnera/",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         },
         {
           "provider_order": 5,
           "source_title": "AI Video Reference Asset Preflight Checklist | GenflowAI | AI Commercial Content Agent",
           "source_url": "https://www.genflowai.io/en/blog/ai-video-reference-asset-preflight-checklist",
-          "owned_objekts_source": false
+          "canonical_owned_source": false,
+          "named_objekts_entity": false
         }
       ],
       "brand_source_in_top5": false,
       "status": "WEB_SOURCE_ONLY_NOT_LLM_ANSWER",
-      "intent": "preflight"
+      "intent": "preflight",
+      "canonical_owned_host_in_top5": false
     }
   ]
 }
