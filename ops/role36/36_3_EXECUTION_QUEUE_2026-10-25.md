@@ -22,12 +22,25 @@
 | [RUWARD](https://ruward.ru/faq/) | Existing 6-Oct enquiry Gmail **1a111b9cb9d741ba**; publisher says user registration then claim/create company keyed by matching email domain. No valid signed-in account proven. | **ACCOUNT_GATE** | Profile recovery and studio domain verification |
 | [AllAdvertising](https://www.alladvertising.ru/top/video-production/) | 7 Oct editor quoted **5,000 RUB** ranking entry; free single editorial case offered with >=3 rights-cleared separate images. Not an eligible free ranking; case editorial belongs role13/15. | **PAID_RANKING_REJECTED** | No payment; route editorial only after rights clearance |
 
+### Further incoming-evidence reconciliation and new supplier-market triage (25 October, same session)
+
+| Publisher / channel | Primary or mailbox evidence | Decision |
+|---|---|---|
+| [VFX Engine — objs studio URL](https://www.vfxengine.com/studios/objekts) | Publisher email **19 Oct 2026**, Gmail INBOX **1a1560b33ef4ce30**, states page “now live” and includes exact canonical URL. **25 Oct anonymous web fetch of exact page failed**, while /studios catalog loaded; no independent public HTML proof. 25-Oct SENT one in-thread check of URL accessibility and duplicate consolidation, Gmail **1a1749d888d62145**. | **PUBLISHER_CLAIMS_LIVE / PUBLIC_QA_UNVERIFIED**. Do not claim a verified public profile until an independent successful request. |
+| [FrameBid VFX Industry Directory](https://www.framebid.com/directory) | Publisher page directly says listing additions/changes via support@framebid.com, categories VFX Studios/Post-Production/Creative Agencies. Original Oct4 SENT **1a1073c3e2c6d116**; no reply/public objekts entry found. 25-Oct one respectful 21-day follow-up in existing thread SENT **1a1749dc4b20c0c5**. | **EDITORIAL_PENDING**; recheck by 1 Nov, no third blind email. |
+| [Cinematch](https://cinematch.pro/companies) | Live RU film-company directory separates **Production / Post-production and CGI**, 151 indexed companies in current UI. Existing Oct16 SENT **1a144cf21d36dd91** to info@cinematch.pro; no independent page/response verified. | **EXISTING_REQUEST_PENDING**, no duplicate. |
+| [CMS Magazine — video vendors](https://cmsmagazine.ru/video/) | 222-company video supplier directory has “Обсудить мой проект” buyer workflow. Oct14 **DRAFT**, **not SENT**, to info@cmsmagazine.ru; only separate Oct6 editorial mail SENT. Publisher is linked in site footer to Proactivity Group / Rating Runeta; no separate no-cost company registration proven. | **QUALIFY_AS_WORKSPACE/SHARED-CABINET POSSIBLE**, avoid duplicate entity. Official feedback uses form with privacy consent. |
+| [Workspace video-production ranking](https://workspace.ru/rating/videoproduction/) | Official FAQ says ranking requires **complete Workspace company profile, ≥3 relevant cases, service revenue share**; rankings free, buyer tender workflow. Publicly evidenced commissioned projects in this branch currently **two** (SberCity, Magnit). | **DIRECTORY_ACCOUNT_GATE** remains; separate **RANKING_3_CASE_PROOF_GATE**; do not invent third case or revenue share. |
+| [Roster9 / VILKA Market](https://roster9.ru/) | High-intent Russian video/CG buyer briefs, but vendor signup requires IP/LLC entity, 3 completed projects and legal papers, free Starter charges **10% revenue-share fee**. Studio mailbox has existing **VILKA agency contact relationship** (Jul20/23). | **OUTSIDE 36.3 FREE ZERO-SPEND PUBLIC DIRECTORY**: legal/commission gate and owner-duplicate concern; refer only through existing business owner if approved. |
+| [Prepropost](https://prepropost.ru/about) | Explicit free personal creative-specialist portfolios, direct buyer contacts, but eligibility describes **individual specialists**; corporate supplier-card route not established. | **LOW FIT for this branch**, personal art-author profile route belongs visual/cinema owner; no signup. |
+| [Eventcatalog — video/montage](https://eventcatalog.ru/contractor/videosemka_montazh/) | Supplier directory appears focused on event shoot operators; no confirmed free corporate registration or AI/VFX buyer path. | **LOW FIT / eligibility unverified**; do not inflate qualified inventory. |
+
 ### Net new verified outcome of this 36.3 session
 
 - **One already-existing external studio profile corrected and independently verified** (GoodFirms).
-- **Two actual outbound emails SENT** (Sostav unique directory enquiry; Sortlist existing correction thread), with IDs above.
+- **Four actual outbound emails SENT** (Sostav directory enquiry, Sortlist service correction, VFX Engine anonymous access/duplicate QA, FrameBid directory follow-up), with exact Gmail IDs above.
 - **One editor’s positive free eligibility/category-expansion response recovered** (Creativity Meets), dated 20 Oct, **not** a public card.
-- **No new public studio card, no accepted external form, no inbound qualified brief, no contract and no spend.**
+- **One publisher-confirmed VFX Engine page by email** (19 Oct), **not anonymously accessible/verified on 25 Oct**. **No newly independently verified public studio card, no accepted external form, no inbound qualified brief, no contract and no spend.**
 - The current incoming Sostav and Sortlist follow-ups remain open; never mark received/accepted until evidence.
 
 ### Rolling top-12 independent work queue
@@ -45,7 +58,7 @@
 | 9 | GoodFirms: recheck 50/50 corrected taxonomy remains stable 1 Nov | Anonymous page still correct |
 | 10 | RUWARD: recover current account and studio-domain verification | Company claimed, VFX/video classification accurate |
 | 11 | DesignRush: finish authorized account/phone/password flow, no premium | Public approved free video/CGI profile |
-| 12 | AMW: check whether no-cost story/CTA update exists; otherwise deprioritize | Better buyer proof or recorded no-free-edit outcome |
+| 12 | VFX Engine: publisher confirms live, but anonymous URL failed — resolve and inspect full public copy | Successful unauthenticated URL and no duplicates |\n| 13 | FrameBid: await single Oct25 follow-up, confirm free VFX listing | Verified public vendor entry, no duplicate |\n| 14 | Cinematch: await Oct16 request / check Post-production & CGI | Searchable named page under correct category |\n| 15 | AMW: check whether no-cost story/CTA update exists; otherwise deprioritize | Better buyer proof or recorded no-free-edit outcome |
 
 ### Shared constraints
 
