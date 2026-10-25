@@ -330,3 +330,8 @@ https://motionographer.com/submission-guidelines-2024/
 - Internal history: master/radar/ledger plus exact official objekts sources above. Strategic fit assessments are reasoned hypotheses; no new publications or referral claims are made by creating this handoff.
 
 **End of operating law. Read it in full, verify current platform/source state, and build the next task without waiting for HQ.**
+
+
+## Separate live starter queue
+
+Read and actively work through [the first 20 exact 36.5 tasks](../queues/36_5_STARTER_QUEUE.md); this is an execution seed, not a cap. It includes account audits, rights/credits gates, native Pinterest/Behance/Are.na draft packages, real visual source sampling, RU/CIS and international destination research, referral instrumentation and public proof. Replenish as each entry closes.
