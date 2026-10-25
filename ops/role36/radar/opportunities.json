@@ -126,10 +126,66 @@
       "due_for_first_review": "2026-10-29",
       "last_action": "RADAR_OFFICIAL_RELEASE_WATCH",
       "dedup_key": "openai-plugin-directory|objekts-current-product-release"
+    },
+    {
+      "id": "R36-20261025-005",
+      "title": "MARKETING-TECH RU video production, CGI/VFX and AI-video supplier taxonomy",
+      "owner_branch": "36.3",
+      "secondary_branch": "36.2",
+      "priority": "P1",
+      "score": 83,
+      "market": "RUSSIA/CIS",
+      "category": "B2B_VIDEO_PRODUCTION_SUPPLIER",
+      "source_url": "https://marketing-tech.ru/company_tags/video-production/",
+      "source_checked_at": "2026-10-25",
+      "source_type": "OFFICIAL_CURRENT_CATEGORY_AND_FORM",
+      "evidence": "Current site has a producer-facing video-production agency directory, filter tags for VFX/CGI and AI video, a footer 'Добавить агентство' and a lead form with legal personal-data checkbox. Independent site figures are internally inconsistent (e.g. 478 agencies on page vs 666 FAQ); don't quote a directory population until clarified. Free/paid placement and Spain-based remote studio eligibility NOT verified.",
+      "buyer_hypothesis": "Strong RU commercial supplier selection intent and exact technical categories match commissioned SberCity/Magnit + AI/VFX offering.",
+      "status": "DISCOVERED",
+      "publication_proof": null,
+      "submission_id": null,
+      "eligibility_gates": [
+        "Search for existing objekts profile and prior sent/contact history before form",
+        "Verify actual basic listing price and editorial terms",
+        "Check remote Spain-registered company eligibility with Russian market services",
+        "Do not tick legal/marketing consent automatically or invent EGRUL/turnover/reviews/staff"
+      ],
+      "next_action": "36.3 independently resolve listing terms and prior history; if legitimate free basic option, prepare truthful supplier profile. 36.2 later tests whether public profile becomes a citation for RU producer queries.",
+      "due_for_first_review": "2026-10-28",
+      "last_action": "RADAR_OFFICIAL_BUYER_CATEGORY_VERIFIED",
+      "dedup_key": "marketing-tech.ru|objekts|video-production"
+    },
+    {
+      "id": "R36-20261025-006",
+      "title": "Sostav.ru — Russian advertising-market company map",
+      "owner_branch": "36.3",
+      "secondary_branch": "36.2",
+      "priority": "P1",
+      "score": 74,
+      "market": "RUSSIA/CIS",
+      "category": "AD_INDUSTRY_COMPANY_DIRECTORY",
+      "source_url": "https://www.sostav.ru/map/companies",
+      "source_checked_at": "2026-10-25",
+      "source_type": "OFFICIAL_CATEGORY_PUBLIC_MAP",
+      "evidence": "Public map displays named Russian-market production/creative/company profiles with specialization, services, prior client brands and project filters; source proves directory exists, NOT a free self-add route or approval.",
+      "buyer_hypothesis": "An industry-specific producer/agency decision audience might be more valuable than global generic AI-tool mirrors.",
+      "status": "DISCOVERED",
+      "publication_proof": null,
+      "submission_id": null,
+      "eligibility_gates": [
+        "Check the entire site and prior Gmail ledger for existing objekts profile/request",
+        "Find legitimate publisher/company listing requirements and whether a genuinely free/basic route exists",
+        "Do not claim company clients from other businesses' filters",
+        "If only paid placement or legal declaration outside scope, record and pivot"
+      ],
+      "next_action": "36.3 map official listing/inclusion process and profile eligibility, compare with existing B2B contact ledger before a pitch; 36.2 may use a published profile as later source only after verification.",
+      "due_for_first_review": "2026-10-29",
+      "last_action": "RADAR_OFFICIAL_BUYER_MAP_VERIFIED",
+      "dedup_key": "sostav.ru/map/companies|objekts"
     }
   ],
   "counts": {
-    "candidate_items": 4,
+    "candidate_items": 6,
     "submitted": 0,
     "public_verified_from_these": 0,
     "attributed_briefs": 0
