@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-10-25",
-  "generated_by": "OBJEKTS 36 HQ + latest independently source-verified creative additions",
+  "generated_by": "OBJEKTS 36 HQ + role36.5 verified visual authorial updates",
   "source_of_truth": "ops/role36/radar/opportunities.json",
-  "methodology": "External source checked; no candidate below is a submission, acceptance, public listing or commercial lead. Branch checks existing ledger and live status before acting.",
+  "methodology": "External source checked; no candidate below is a submission, acceptance, public listing or commercial lead. Branch checks existing ledger and live status before acting. Role36.5 appended verified primary-source art calls and Dprofile into PR #109; not submissions.",
   "statuses": [
     "DISCOVERED",
     "QUALIFYING",
@@ -197,7 +197,7 @@
       "source_type": "OFFICIAL_PLATFORM_DOCUMENTATION",
       "evidence": "Official Pinterest docs confirm site claim enables studio brand/profile attribution to Pins saved from site, business analytics supports outbound clicks and original content should avoid duplication. Actual objekts profile and claimed domain status not yet audited.",
       "buyer_hypothesis": "Authorial cinematic works found in visual discovery could refer art directors to specific case pages; no attributable Pinterest traffic established.",
-      "status": "DISCOVERED",
+      "status": "BLOCKED",
       "publication_proof": null,
       "submission_id": null,
       "eligibility_gates": [
@@ -206,9 +206,9 @@
         "Site domain claim/DNS write belongs to site owner; no unauthorized modifications",
         "RSS autopublishing must remain disabled absent approvals"
       ],
-      "next_action": "36.5 signed-out audits existing profile, works and links; drafts 3-5 distinct source-linked approved pin concepts; coordinates publishing via role15.",
+      "next_action": "Role15 returns signed-in account inventory and original media consent; see issue #108 and PR #109. No client frames uploaded. 36.5 only has editorial text source map and approval-ready concepts.",
       "due_for_first_review": "2026-10-27",
-      "last_action": "RADAR_OFFICIAL_SOURCE_VERIFIED_ONLY",
+      "last_action": "2026-10-25: BRANCH36.5 COPY/CURATION PREPARED; ACCOUNT_OWNER_AND_MEDIA_RIGHTS_UNVERIFIED; issue #108",
       "dedup_key": "pinterest.com|objekts|creative-brand-authorial"
     },
     {
@@ -225,7 +225,7 @@
       "source_type": "OFFICIAL_PLATFORM_DOCUMENTATION",
       "evidence": "Official platform supports drafted multi-image/media projects with cover/title/creative field/tags and separate credits/copyright settings. Existing objekts profile/publication state unknown.",
       "buyer_hypothesis": "A tightly directed honest case on SberCity or other approved work can become an independent, citeable proof of actual visual craft.",
-      "status": "DISCOVERED",
+      "status": "BLOCKED",
       "publication_proof": null,
       "submission_id": null,
       "eligibility_gates": [
@@ -234,9 +234,9 @@
         "Owner approval for actual publication; do not make speculative Auto.ru campaign claim",
         "Do not invite co-owners without owner authority"
       ],
-      "next_action": "36.5 produces a credits-verified Behance case outline and asset/approval matrix; role15 account owner stages/publishes after approval.",
+      "next_action": "Role15 returns signed-in account inventory and original media consent; see issue #108 and PR #109. No client frames uploaded. 36.5 only has editorial text source map and approval-ready concepts.",
       "due_for_first_review": "2026-10-28",
-      "last_action": "RADAR_OFFICIAL_SOURCE_VERIFIED_ONLY",
+      "last_action": "2026-10-25: BRANCH36.5 COPY/CURATION PREPARED; ACCOUNT_OWNER_AND_MEDIA_RIGHTS_UNVERIFIED; issue #108",
       "dedup_key": "behance.net|objekts|authored-portfolio"
     },
     {
@@ -253,7 +253,7 @@
       "source_type": "OFFICIAL_PLATFORM_DOCUMENTATION",
       "evidence": "Are.na official docs confirm open/closed/private channels, with closed publicly viewable and editable by owner/collaborators only; blocks support source/metadata. Current studio channels and permission state unknown.",
       "buyer_hypothesis": "Authored, credited collections around moving image/stage/materiality may introduce objekts to relevant curators rather than generic followers.",
-      "status": "DISCOVERED",
+      "status": "BLOCKED",
       "publication_proof": null,
       "submission_id": null,
       "eligibility_gates": [
@@ -262,9 +262,9 @@
         "Owner-approved public studio contribution",
         "Curatorial research value, not mass promotions"
       ],
-      "next_action": "36.5 audits existing profile; drafts one argued channel with 7-15 properly credited reference/source blocks and few permitted studio links; sends to role15 for approval.",
+      "next_action": "Role15 returns signed-in account inventory and original media consent; see issue #108 and PR #109. No client frames uploaded. 36.5 only has editorial text source map and approval-ready concepts.",
       "due_for_first_review": "2026-10-28",
-      "last_action": "RADAR_OFFICIAL_SOURCE_VERIFIED_ONLY",
+      "last_action": "2026-10-25: BRANCH36.5 COPY/CURATION PREPARED; ACCOUNT_OWNER_AND_MEDIA_RIGHTS_UNVERIFIED; issue #108",
       "dedup_key": "are.na|objekts|authored-curation"
     },
     {
@@ -294,10 +294,94 @@
       "due_for_first_review": "2026-10-30",
       "last_action": "RADAR_OFFICIAL_SOURCE_VERIFIED_ONLY",
       "dedup_key": "motionographer.com/submit|objekts|creative-project"
+    },
+    {
+      "id": "R36-20261025-011",
+      "title": "Dprofile — Russian studio animation/AI VFX portfolio",
+      "owner_branch": "36.5",
+      "secondary_branch": "15",
+      "priority": "P1",
+      "score": 86,
+      "market": "RUSSIA/CIS",
+      "category": "CREATIVE_STUDIO_PORTFOLIO",
+      "source_url": "https://dprofile.ru/help",
+      "source_checked_at": "2026-10-25",
+      "source_type": "OFFICIAL_HELP_AND_LIVE_2026_CASES",
+      "evidence": "Official Dprofile FAQ allows company/studio profiles and text-image-embedded/video case construction; basic account has 2 projects and 4 fragments per rolling 30 days. 44 dated externally published cases documented in PR #109, including comparable SHAR/LUKOIL VFX. Does not prove existing studio account or publication rights.",
+      "buyer_hypothesis": "Russian production/design peers and commissioning visitors may discover a precise rights-approved case; no traffic/referral metric established.",
+      "status": "BLOCKED",
+      "publication_proof": null,
+      "submission_id": null,
+      "eligibility_gates": [
+        "Role15 audit existing Dprofile company profile; do not register duplicate",
+        "Per-frame client/agency rights and contributors, performers, music cleared",
+        "SberCity RU process case only after consent; no PRO/award payment",
+        "Signed-out live source and 7/28-day analytics required"
+      ],
+      "next_action": "Role15 account inventory and case permission per issue #108; 36.5 adapts approved SberCity editorial pack. If no existing profile, seek explicit owner registration decision. No publication yet.",
+      "due_for_first_review": "2026-10-27",
+      "last_action": "2026-10-25: 44_CASE_COMPETITOR_SCAN_DONE; ACCOUNT_AND_RIGHTS_GATED",
+      "dedup_key": "dprofile.ru|objekts|creative-studio-case"
+    },
+    {
+      "id": "R36-20261025-012",
+      "title": "The AI Art Magazine No.4 — free print AI artwork call",
+      "owner_branch": "36.5",
+      "secondary_branch": "15",
+      "priority": "P0",
+      "score": 82,
+      "market": "GLOBAL",
+      "category": "ART_PRINT_OPEN_CALL",
+      "source_url": "https://www.art-magazine.ai/edition/number-four",
+      "source_checked_at": "2026-10-25",
+      "source_type": "OFFICIAL_CURRENT_OPEN_CALL",
+      "evidence": "Publisher confirms free application, one work per artist, deadline 1 Nov 2026, Image/Moving image/Spatial image/System categories, still+short excerpt for moving image, process statement and around 50 print selections; no theme. Prior issues publicly shown.",
+      "buyer_hypothesis": "Curated artistic authorial credit and critical visibility; not a commercial lead guarantee.",
+      "status": "BLOCKED",
+      "publication_proof": null,
+      "submission_id": null,
+      "eligibility_gates": [
+        "Identify one existing original rights-cleared nonclient or cleared collaborative artwork",
+        "Accurate creative authors and statement, AI process and rights",
+        "Owner/role15 authorized Artist Space identity and final approval",
+        "No fabricated receipt or selected-work claim"
+      ],
+      "next_action": "Owner/role15 identify ONE eligible existing artwork by 27 Oct, prepare moving-image still/excerpt or system docs, approve statement, submit by 1 Nov; see issue #110.",
+      "due_for_first_review": "2026-10-27",
+      "last_action": "2026-10-25: OFFICIAL_FREE_CALL_VERIFIED; NO_ELIGIBLE_ARTWORK_IDENTIFIED; issue #110",
+      "dedup_key": "art-magazine.ai/edition/number-four|objekts-original-art"
+    },
+    {
+      "id": "R36-20261025-013",
+      "title": "AFTER THE PALACE Resonance — free Krakow video mapping competition",
+      "owner_branch": "36.5",
+      "secondary_branch": "15",
+      "priority": "P1",
+      "score": 63,
+      "market": "EU/GLOBAL",
+      "category": "SPATIAL_VIDEO_MAPPING_OPEN_CALL",
+      "source_url": "https://unloc.uken.krakow.pl/en/after-the-palace-resonance-video-mapping-contest/",
+      "source_checked_at": "2026-10-25",
+      "source_type": "OFFICIAL_ORGANIZER_EXTENDED_DEADLINE",
+      "evidence": "Organizer official page now says DEADLINE EXTENDED TO 5 Nov 2026 23:59 CET (aggregators show stale 30 Oct); free worldwide for original projection on specific former steelworks architecture, award list PLN 10k/6k/3k, 23 Nov exhibition. Requires actual regulations, participant license and building matrix annex, publicly linked but inaccessible as machine-readable via web in this research.",
+      "buyer_hypothesis": "Spatial-art installation visibility and possible prize, not a commission; more costly production effort likely.",
+      "status": "BLOCKED",
+      "publication_proof": null,
+      "submission_id": null,
+      "eligibility_gates": [
+        "Existing original site-specific or adaptable audiovisual work, not generic showreel",
+        "Retrieve and read organizer's Annex4 geometry/spec and license before committing",
+        "Rights, sound and music, historic-site sensitive content, master and projection QA",
+        "Owner approval for production effort and submission; zero paid services"
+      ],
+      "next_action": "By 28 Oct decide if an existing already-rendered installation work fits; inspect Annex4 license and technical needs. If no feasible asset, reject rather than rush paid new production.",
+      "due_for_first_review": "2026-10-28",
+      "last_action": "2026-10-25: OFFICIAL_DEADLINE_EXTENSION_VERIFIED; NO_MEDIA_OR_TECH_LICENSE_QC; NOT_SUBMITTED",
+      "dedup_key": "unloc.uken.krakow.pl|after-the-palace-resonance-2026|objekts"
     }
   ],
   "counts": {
-    "candidate_items": 10,
+    "candidate_items": 13,
     "submitted": 0,
     "public_verified_from_these": 0,
     "attributed_briefs": 0
