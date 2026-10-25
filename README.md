@@ -92,6 +92,7 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 
 - [Visual authorship without a fixed house style](docs/VISUAL_AUTHORSHIP.md) — exact-frame evidence, recurring visual operations, provenance and negative priors.
 - [Continuity is art direction before generation](docs/CONTINUITY_BEFORE_GENERATION.md) — source authority, invariants, variables and sequence-level control.
+- [Agent shot acceptance contract](docs/AGENT_SHOT_ACCEPTANCE_CONTRACT.md) — a practical hard-lock and source-authority schema, G0–G5 shot QC gates, change accounting and export/timebase verification; **first-party guidance, not a tool benchmark**.
 - [Product fidelity is an acceptance system](docs/PRODUCT_FIDELITY.md) — product truth, acceptance fields and controlled routing.
 - [Material should do something](docs/MATERIAL_AGENCY.md) — material agency, interference and behavior as art direction.
 - [What boutique visual production should mean](docs/BOUTIQUE_PRODUCTION_DOCTRINE.md) — authorship close to difficult visual decisions while methods change shot by shot.
