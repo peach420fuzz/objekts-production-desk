@@ -27,9 +27,9 @@
       "source_url": "https://aipicks.dev/en/submit/",
       "source_checked_at": "2026-10-25",
       "source_type": "OFFICIAL_SUBMISSION_PAGE",
-      "evidence": "Official page documents WEB/SKILL/MCP paths, editorial review, public discovery API, 30-day credential for submit-only MCP and review receipts; publisher states 20 submissions per rolling 24h.",
+      "evidence": "Official page documents WEB/SKILL/MCP paths, editorial review, public discovery API, 30-day credential for submit-only MCP and review receipts; publisher states 20 submissions per rolling 24h. Role36.1 2026-10-25: anonymous tools/skills search yielded zero objekts hits; editor submission screen required sign-in and owner attestation.",
       "buyer_hypothesis": "Production Desk and public AI VFX Preflight skill might be found by agent developers; actual buyer referrals unknown.",
-      "status": "DISCOVERED",
+      "status": "BLOCKED",
       "publication_proof": null,
       "submission_id": null,
       "eligibility_gates": [
@@ -38,9 +38,9 @@
         "Rights/owner attestation checkbox requires actual authority",
         "Verify current protocol and truthful product copy"
       ],
-      "next_action": "36.1 checks public /api/resources and prior ledger for duplicates, determines free account access and one suitable entity. Do not submit before validation.",
-      "due_for_first_review": "2026-10-27",
-      "last_action": "RADAR_SOURCE_VERIFIED",
+      "next_action": "Owner-authorized signed-in session and owner/rights attestation needed. Public tool/skill search showed no objekts match; verify docs and exact entity before submission. No form submitted.",
+      "due_for_first_review": "2026-10-28",
+      "last_action": "2026-10-25: ANONYMOUS_DIRECTORY_SEARCH_ZERO; SIGNIN_AND_OWNER_ATTESTATION_REQUIRED",
       "dedup_key": "aipicks.dev|objekts-production-desk+ai-vfx-production-preflight"
     },
     {
@@ -55,9 +55,9 @@
       "source_url": "https://agentforge.community/en/submit",
       "source_checked_at": "2026-10-25",
       "source_type": "OFFICIAL_SUBMISSION_PAGE",
-      "evidence": "Publisher provides MCP-server review form requiring name, description, category, source code URL and documentation; authenticated multi-step flow and current free/paid conditions need further verification.",
+      "evidence": "Publisher provides MCP-server review form requiring name, description, category, source code URL and documentation; authenticated multi-step flow and current free/paid conditions need further verification. Role36.1 2026-10-25: submit form visually requires sign-in and code repository; public pricing mentions free tier but does not establish free listing.",
       "buyer_hypothesis": "MCP discovery in EU audience; language reach visible, specific exposure/conversions unverified.",
-      "status": "DISCOVERED",
+      "status": "BLOCKED",
       "publication_proof": null,
       "submission_id": null,
       "eligibility_gates": [
@@ -66,9 +66,9 @@
         "Supply truthful public source code/documentation and compatibility scope",
         "No publication claim until anonymous named card"
       ],
-      "next_action": "36.1 verifies eligibility and dedup, prepares ProdDesk listing only if source and access fit. 36.2 observes possible new citations after public acceptance.",
+      "next_action": "Check account owner, exact free editorial publication rules, and whether public repo (manifest not backend code) satisfies source-code requirement. No submission and no claimed free listing.",
       "due_for_first_review": "2026-10-28",
-      "last_action": "RADAR_SOURCE_VERIFIED",
+      "last_action": "2026-10-25: SIGNIN_REQUIRED; NO_PROOF_FREE_PUBLISHING_OR_OPEN_SERVER_SOURCE",
       "dedup_key": "agentforge.community|mcp.objekts.ai/mcp"
     },
     {
@@ -76,16 +76,16 @@
       "title": "Add AI Directory — free editorial AI agent entries",
       "owner_branch": "36.1",
       "secondary_branch": "36.2",
-      "priority": "P2",
-      "score": 47,
+      "priority": "P3",
+      "score": 12,
       "market": "GLOBAL",
       "category": "AGENT_DIRECTORY",
       "source_url": "https://www.addaidirectory.com/submit-ai-agent",
       "source_checked_at": "2026-10-25",
       "source_type": "OFFICIAL_EDITORIAL_RULES",
-      "evidence": "Publisher explicitly requires a real agent, website, truthful pricing/access, minimum 200x200 square logo and editor email; free review, initial response target seven business days. Eligibility stricter than a generic MCP diagnostic.",
+      "evidence": "Publisher explicitly requires a real agent, website, truthful pricing/access, minimum 200x200 square logo and editor email; free review, initial response target seven business days. Eligibility stricter than a generic MCP diagnostic. Role36.1 verified stricter autonomous-agent criterion: current human-led production preflight not proven eligible.",
       "buyer_hypothesis": "Potential agent directory discovery; ProdDesk may not qualify as autonomously acting agent. Avoid forcing fit.",
-      "status": "DISCOVERED",
+      "status": "REJECTED",
       "publication_proof": null,
       "submission_id": null,
       "eligibility_gates": [
@@ -94,9 +94,9 @@
         "Check no prior submission and sender thread",
         "No submission if product does not fit editorial definition"
       ],
-      "next_action": "36.1 performs candid eligibility preflight. Reject if tool does not satisfy agent criterion; optional future revisit on approved agent release.",
+      "next_action": "Suppress submission for current Production Desk. Reopen only if product owner confirms a genuinely autonomous, publicly supported agent release satisfying publisher's definition.",
       "due_for_first_review": "2026-10-30",
-      "last_action": "RADAR_SOURCE_VERIFIED",
+      "last_action": "2026-10-25: PRODUCT_FIT_REJECTED; NOT_AUTONOMOUS_AGENT",
       "dedup_key": "addaidirectory.com|objekts-production-desk"
     },
     {
