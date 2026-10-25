@@ -100,3 +100,12 @@ An absent figure can still perform. In *Invisible Silhouette*, clothing moves th
 - **After real publication:** external signed-out link, dated credits, outbound/referral measurement day7/day28; change radar `PUBLIC_VERIFIED` only with proof.
 
 **Commercial boundaries:** Role36.5 researches art presentation; role13 retains editorial outreach; role15 publishes in existing social accounts; role12 handles canonical site; external product/client claims remain untouched.
+
+
+## 9. Δ 25 Oct evening — verified earlier publisher / asset context
+**Reconciled historical evidence**: [account+editorial ledger](36_5_RECOVERED_EDITORIAL_ACCOUNT_HISTORY_2026-10-25.md).
+- The 16 Oct Drive review document already describes this as **objekts independent, non-client generative-tool visual R&D**, with iterative art direction. The studio repeated these production claims in signed outgoing mail 16 Oct. Thus the broad claim **AI-assisted generative visual research** has first-party documentary support, even though exact image-model versions, original source files, licenses and print reproduction permissions remain unverified.
+- Studio actually sent three first-party images to designboom and The AI Art Magazine: `/media/oct03/clothing/002.webp`, `004.webp`, `009.webp`. **Do not duplicate** an editorial pitch. These are media references only; compare actual images and original native masters before choosing a final print-quality subset. No change to geometry, lighting, wardrobe or image canon is authorized.
+- The AI Art Magazine editor replied **18 Oct** confirming an application under collective/studio credit **objekts** is eligible, using shared contact. This is *not* approval of a specific image or a formal application receipt; Artist Space still required before 1 Nov.
+- KALTBLUT has an earlier editorial review PDF-source Google Doc from 16 Oct, not a verified sent submission. Official route requests **one small PDF** and appropriate art editor; this is role13 handoff.
+- Prior designboom mail was a link-only reader-project pitch; their actual author-submission form imposes express IP ownership/authorization, so don't sign it without rights. The previous draft's account/ownership gates remain in force.
