@@ -188,5 +188,6 @@
       "objekts_top5": false,
       "brand_match_rule": "literal standalone 'objekts' in source title, or canonical objekts.ai host; no generic substring match"
     }
-  ]
+  ],
+  "methodology": "One separately executed web retrieval per exact query; positive controls contain literal brand, negative controls omit it and include similar entity names. Computed brand presence uses exact canonical host or standalone word in title."
 }
