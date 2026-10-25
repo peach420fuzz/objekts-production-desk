@@ -1,6 +1,19 @@
 # OBJEKTS / Role 36 — Cloudflare Agent Readiness LIVE change receipt
 Date: 2026-10-25 (UTC) | Site: https://objekts.ai | Owner: Role 36 HQ
-Status: **LIVE VERIFIED (HTTP)**, Cloudflare Diagnostics re-scan **NOT YET VERIFIED**.
+Status: **LIVE VERIFIED (HTTP + INDEPENDENT SCANNER)**. Cloudflare's private dashboard diagnostic page not individually re-read; independent public readiness scanner verified.
+
+## LIVE WebMCP update — 2026-10-25 22:17 UTC
+
+**Status: ENABLED / INDEPENDENT PASS.** Following three dashboard login attempts, authenticated Cloudflare zone settings API was used instead. Zone: `202c8e4302a796990a6203435ba7a078`.
+
+- Before: `webmcp_enabled=off`, `webmcp_packs=""`, `webmcp_mcp_url=""`.
+- Changed: `webmcp_packs=c2pa` (API success 22:16:25Z), then `webmcp_enabled=on` (API success 22:16:32Z).
+- After: authenticated GET verifies `on`, `c2pa`, empty `webmcp_mcp_url`. **The `mcp-server-client` pack remains disabled**: same-origin `/mcp` returns 404; Production Desk MCP exists at a separate dedicated subdomain and should not be exposed through an unreviewed website bridge.
+- Public HTML homepage and `/en/work/sbercity` both contain the Cloudflare-injected `/.webmcp/bridge.js` script with `data-packs="c2pa"`. Public bridge returns HTTP 200 JavaScript.
+- Independent scanner `POST https://isitagentready.com/api/scan` at **2026-10-25T22:17:17.524Z** confirms `checks.discovery.webMcp.status=pass`, **Level 5 Agent-Native**, and two read-only browser WebMCP tools: `scan_images_c2pa`, `inspect_image_c2pa`. They extract C2PA metadata; they do **not** cryptographically verify signatures or grant image provenance. The 21:11Z fail listed farther below is an **earlier historical snapshot**.
+- No subscription change, DNSSEC flip, public write/mutation tools, OAuth fabrication, or cost-bearing external API was introduced.
+
+WebMCP success **does not establish LLM brand recommendations**. Maintain separate AEO tests: non-branded buyer prompts, actual citations/referrals, off-site legitimate editorial case distribution, and downstream qualified briefs.
 
 ## Baseline observed before changes
 Cloudflare screenshot diagnostics: Quick Wins 4/5; Technical Groundwork 0/3; Advanced Integration 1/8; Commerce 0/5 optional. robots.txt, sitemap.xml, AI-crawler rules, Content Signals, and A2A Agent Card were already green. The site already exposed /llms.txt, /.well-known/ai-catalog.json, /.well-known/ard.json, and case-study reference Markdown. Do not describe the site as entirely unprepared.
@@ -33,7 +46,7 @@ Stage test `objekts-agent-markdown-probe` passed for MD and HTML, then its publi
 
 ## Remaining legitimate gaps / non-actions
 
-1. **Cloudflare WebMCP OFF.** Dashboard-only experimental toggle not exposed by authenticated Cloudflare OpenAPI tool. Do not claim enabled. Before Site MCP Server pack: Cloudflare's bridge defaults to same-origin `/mcp`, while live Production Desk is on `mcp.objekts.ai/mcp`; browser CORS, method scope, user consent and tool side effects must be reviewed. Content Credentials pack only reads C2PA metadata; enabling it does **not** add C2PA provenance to images. Requires browser UI access approval if connector remains insufficient.
+1. **Cloudflare WebMCP ON (C2PA only).** Confirmed API settings, live bridge injection and independent scanner PASS at 22:17Z; see live update above. MCP server-client bridge remains disabled intentionally, since the real Production Desk MCP uses a separate subdomain and public tools must undergo scoped consent/CORS/security review. Content Credentials tools only read metadata; they do not create/verify image provenance.
 2. **Native Cloudflare Markdown for Agents OFF on Free.** Our homepage negotiation is implemented at owned edge for Free; exact native content_converter remains uneditable. Other portfolio paths may still respond HTML to Markdown Accept. Evaluate case-by-case, while static case Markdown at /reference/... already exists.
 3. **OAuth authorization / protected-resource metadata absent.** The public studio homepage is not a registered OAuth service; do not invent OAuth endpoints merely for score. Implement only if API owner ships real user/account authentication.
 4. **DNS-AID not deployed.** Zone DNSSEC API reports `status:disabled`. DNS-AID relies on SVCB and security validation; DNSSEC setup/registrar DS and draft compatibility require a separately reviewed migration. Do not add fake TXT as if standard were satisfied.
@@ -56,9 +69,9 @@ curl -sS https://objekts.ai/.well-known/agent-skills/visual-production-brief/SKI
 
 ## Next controlled actions (owner: Role36 HQ)
 
-1. Re-run the **same Cloudflare Diagnostics** against `objekts.ai`; capture exact per-check pass/fail and timestamp. Do not infer score from HTTP 200 alone.
-2. Confirm C2PA Content Credentials UI-only WebMCP can safely be enabled without exposing production tools; enable only once UI access is authorized and C2PA provenance policy accepted.
-3. If enabled, inspect injected `/.webmcp/bridge.js` on real HTML and call only a read-only tool in an experimental browser. Never allow anonymous task mutation by default.
+1. Re-run **Cloudflare's private dashboard Diagnostics** once account UI access becomes stable, to compare per-check classifications with the independent public scanner (already Level 5, WebMCP PASS at 22:17Z).
+2. Keep WebMCP restricted to read-only C2PA pack; confirm behavior under a supported browser tool when available and do not add `mcp-server-client` until CORS, consent and tool exposure have been separately reviewed.
+3. Audit C2PA tool semantics honestly: metadata inspection is not signature verification, nor automatic addition of Content Credentials to studio imagery. Never allow anonymous task mutation by default.
 4. Determine whether Cloudflare AEO visibility beta and AI operator activity are enabled for this zone, and establish baseline mention/citation/referral/error metrics.
 5. Add homepage/recent work machine-readable references only when art-direction credits and rights are verified. Keep 36.5 as publisher of approved third-party creative cards; HQ owns this technical discovery layer.
 6. Maintain rollback: original Worker modules in private backup; response header rule labeled `Agent discovery Link headers — role 36`; new Worker routes uniquely scoped. Update tests and server-card version when MCP changes.
