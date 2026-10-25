@@ -293,3 +293,15 @@ Neither has a public directory profile yet. [AFS-1](https://agent-tools.org/docs
 | [OOH Mag](https://oohmag.ru/) | Two genuine replies received in original email thread: editor retains editing rights and offered paid placement only if no changes allowed; original factual Russian DOOH production column composed. Gmail send received **429**, draft saved in same thread. | `EDITOR_REPLIED / DRAFT_UNSENT`; no column acceptance | Role 36 + role 13; after provider 10:56:35 UTC retry window, reconcile SENT and send one draft, otherwise leave unsent |
 
 No additional external public pages are claimed from the two aiagents.org forms or the unsent article. Duplicates and bad-fit paid/non-free directories were excluded. Editorial column is an illustrative engineering calculation, explicitly not a completed 30-screen client campaign.
+
+## 25 October — further exact receipts and dependency gates
+
+| Destination / item | Verification | Status |
+|---|---|---|
+| [AgenticSkills](https://agenticskills.io/submit?type=mcp) · Production Desk | Official free form `POST /api/submissions`: HTTP **200**, `ok:true`, `issueNumber:1199`, `issueUrl:https://github.com/Korona7x17/agenticskills/issues/1199`. Public GitHub issue fetch yielded 404 for connected integration; do not infer the issue is public. One only; no FAKE form sent. | `REVIEW_QUEUED`, **not** `PUBLIC_VERIFIED` |
+| [mcpub.dev](https://mcpub.dev/) · Production Desk | Public anonymous MCP `tools/call search(query:"objekts")` returned one archived Production Desk endpoint (`https://mcp.objekts.ai`); `search_live` returned **zero**. The host `/.well-known/mcp.json` is HTTP 200. | **Existing** archive presence, **no** live-verified entry. Not a new listing. [Owner issue #101 comment](https://github.com/peach420fuzz/objekts-production-desk/issues/101#issuecomment-6396739999). |
+| [mcpub.dev](https://mcpub.dev/) · FAKE | Host `https://fake.objekts.ai/.well-known/mcp.json` returned 404; mcpub official site requires this host file before submission. No attempt made. | `PREREQUISITE_BLOCKED`; owner fix required |
+| [mcpservers.org](https://mcpservers.org/servers/peach420fuzz/objekts-production-desk) · Production Desk | Independently discovered already published named EN/ES card; source includes hosted MCP URL and docs. Suppressed duplicate free submission. | `PUBLIC_VERIFIED` **historical existing**, not newly acquired |
+| ChatGPT personal owned plugin release inventory | Verified KINEMA 1.1.5, SKRIPT 0.1.0, Neural Color 0.12.5, MARKETS 2.4.0, REMAKE 0.38.0, CINEMA 0.5.6, Production Desk 1.0.4, FAKE 0.4.7 plus two obsolete separate FAKE bundles (0.2.0, 0.1.1). All **PRIVATE**; external public access not established by these version numbers. [First-party source handoff #29](https://github.com/peach420fuzz/objekt/issues/29). | `PRIVATE_RELEASES / SITE_UPDATE_PENDING` |
+| OOH Mag draft | `gmail_send_draft` retried only after originally stated retry-after, returned `rateLimitExceeded` again; independent SENT check remained the original pitch only, and edited reply remained DRAFT in same conversation. | `NOT_SENT / RATE_LIMITED`, no editorial acceptance |
+
