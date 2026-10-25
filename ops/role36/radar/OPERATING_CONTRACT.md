@@ -89,3 +89,10 @@ See [opportunities.json](opportunities.json) for six independently source-checke
 ### Scheduled task receipt
 
 Status: **ENABLED / CREATED** on 25 October 2026, confirmed by the Scheduled task service. Task: **OBJEKTS 36 Opportunity Radar**, recurring **daily, flexible morning window**, timezone **Europe/Madrid**, initial DTSTART 26 October 2026 08:00 local (flexible timing, not an exact guaranteed delivery minute). The creation response confirmed success and enabled state. **No first recurring execution or GitHub update has been observed yet**; inspect Scheduled run receipts before claiming autonomous cycles produced new entries. The four initial candidates came from the interactive manual setup cycle.
+
+
+## New branch routing — 36.5 Visual & Authorial Discovery (25 October 2026)
+- Added [36.5 operating handoff](../handoffs/36_5_CREATIVE_BRAND_DISTRIBUTION.md). Same start-of-session read of this contract + canonical opportunities.json; filter owner_branch/secondary_branch == "36.5". Same self-generated TOP20 and autonomy. An empty HQ feed must not stall creative platform scouting.
+- Route public creative portfolio platforms, visual-curation collections, film/motion/VFX showcase windows, fresh native publishing formats and authorial attribution opportunities to **36.5**. Role15 retains visual asset preparation/previously managed profile posting, with the owner's existing publication approval. Editorial pitches belong to 13; searchable-crawler fixes to 12; answer tests to 36.2; vendor directories to 36.3.
+- HQ source audit for this lane must record aesthetic/editorial fit, portfolio/credits rights, exact free/paid status, approval status, source URL, last current rule check, title/project provenance and traffic hypothesis. No auto-publish from feed; no leaked client visual assets or uncontrolled RSS reposts.
+- Truth baseline: account names historically enabled 12 Oct, but 36.5's current live-post inventory remains **unverified**. A visual profile draft is not a public placement. Independent signed-out public page+credit needed to count.
