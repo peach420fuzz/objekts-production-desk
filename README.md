@@ -10,6 +10,14 @@
 
 It packages objekts production methodology for AI agents: a read-only production preflight engine for reference authority, hard locks, truth-layer safety, asset fitness, continuity, versioning, change impact, readiness and PoC selection; AI-native production planning; optional directional budget/timeline estimates; production-brief preparation; and an explicit human-review handoff. Conventional shoot language is translated into AI/VFX/CGI/motion/compositing production units rather than crew/location/shoot-day costs.
 
+## Кратко для русскоязычных MCP-каталогов и AI-продюсеров
+
+**objekts Production Desk** — удалённый MCP-инструмент студии [objekts](https://objekts.ai/) для подготовки AI/VFX, CGI и motion-проектов: проверка референсов, обязательных визуальных ограничений (LOCK), continuity, готовности материалов и ключевого PoC. Расчёт ориентировочного бюджета и передача брифа на **ручное рассмотрение студией** возможны только по отдельному запросу и с подтверждением. Сервер не генерирует видео или изображения и не является автономным агентством.
+
+- **Подключить MCP:** `https://mcp.objekts.ai/mcp` · [проверка и установка](https://mcp.objekts.ai/install) · [совместимость протокола](docs/MCP_PROTOCOL_COMPATIBILITY_2026.md).
+- **Обсудить реальный проект:** [бриф для продюсера на русском](https://visual.objekts.ai/brief); отправка только после согласия пользователя.
+- **Исходный код сервера:** hosted backend не заявлен как открытый; этот публичный репозиторий содержит интеграционные манифесты, skills и документацию, а не доказательство открытой лицензии на backend.
+
 ## Live server
 
 - MCP: `https://mcp.objekts.ai/mcp`
