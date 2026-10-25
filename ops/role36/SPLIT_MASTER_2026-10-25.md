@@ -113,3 +113,10 @@ If one branch empties its top-10 backlog, it must research a next pool, rank it 
 | Bad-fit traffic/spam/duplicate/misleading copy | Negative receipts and corrections | Stop or repair the tactic |
 
 **HQ is not a dispatcher bottleneck.** The team's operating standard is four independent research-and-execution loops plus one strategic quality/revenue coordinator. New GitHub tasks are only necessary when a strategic priority changes, a shared constraint appears or a new product/source is accepted.
+
+
+## New HQ opportunity radar — branch inbox agreement
+
+[Machine-readable new opportunity feed](radar/opportunities.json) · [routing, proof and automation contract](radar/OPERATING_CONTRACT.md).
+
+HQ now owns **emerging opportunity discovery across channels**: spot new marketplaces/tool formats, source/citation windows, changes in product publication, high-intent supplier catalogues and agent developer topics; verify an official source, assign the relevant branch with eligibility gates, priority, date and next action; keep old suppression. Each successor now has a required **start-of-session read** of the live radar. This is not a substitute for the branch's own independent research. An external feed update does not wake a dormant chat; only an enabled scheduled task can trigger a future run.
