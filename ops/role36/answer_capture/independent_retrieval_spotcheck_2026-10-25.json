@@ -1,0 +1,131 @@
+{
+  "schema_version": "objekts.role36_2.second_retrieval_surface.v1",
+  "checked_utc": "2026-10-25",
+  "surface": "Chat Search system1 web retrieval; search source ranking, NOT a generative LLM answer",
+  "motivation": "Retest four source misses from distinct system2 search tool. Exact prompts matched, each query executed alone; compare only within its own provider and run. This is qualitative second-source triangulation, not a multi-run probability estimate.",
+  "count": 4,
+  "brand_source_present_top5": 0,
+  "caveat": "Results have search-provider ordering, not Google/Yandex rank. Territory not fixed. Do not combine provider counts into a fictional 300-query panel or six-engine AI share of voice.",
+  "records": [
+    {
+      "id": "AC03",
+      "prompt": "AI продакшн для рекламного агентства white label аутсорсинг ролик VFX CGI",
+      "started_at": "2026-10-25T19:32:03.210Z",
+      "ended_at": "2026-10-25T19:32:07.737Z",
+      "top5": [
+        {
+          "title": "White-Label AI Video Production for Agencies",
+          "url": "https://ai25.studio/for-agencies"
+        },
+        {
+          "title": "AiLabPro | Студия CGI и AI-видеопродакшена , ИИ ...",
+          "url": "https://www.ailabpro.ru/"
+        },
+        {
+          "title": "Best White Label AI Video Platform Tools in 2026",
+          "url": "https://www.wireflow.ai/blog/best-white-label-ai-video-platform-tools-in-2026"
+        },
+        {
+          "title": "White-Label Video Creation Platform for Agencies",
+          "url": "https://wideo.co/white-label-video-creation-platform-for-agencies/"
+        },
+        {
+          "title": "ИИ-видео и AI-продакшен для бизнеса | Shchi Production",
+          "url": "https://shchiprod.ru/ai"
+        }
+      ],
+      "brand_source_in_top5": false,
+      "surface": "web_search_system1—not LLM answer"
+    },
+    {
+      "id": "AC04",
+      "prompt": "подрядчик AI VFX замена окружения отснятого рекламного ролика сохранение людей камеры",
+      "started_at": "2026-10-25T19:32:03.210Z",
+      "ended_at": "2026-10-25T19:32:07.929Z",
+      "top5": [
+        {
+          "title": "ИИ-редактор видео онлайн: изменить ролик словами",
+          "url": "https://era2.ai/tools/video-editor"
+        },
+        {
+          "title": "AI-видеопродакшн: рекламные ролики с ИИ",
+          "url": "https://sharprod.com/services/ai-video-production-service.html"
+        },
+        {
+          "title": "AI VFX | invideo Agent",
+          "url": "https://invideo.io/make/ai-vfx/"
+        },
+        {
+          "title": "VFX видео с ИИ – контент, созданный ИИ",
+          "url": "https://kling.ai/ru/explore/vfx_ai_video"
+        },
+        {
+          "title": "Репликация видео — воссоздание видео с помощью ИИ ...",
+          "url": "https://www.weshop.ai/ru/apps/video-replication"
+        }
+      ],
+      "brand_source_in_top5": false,
+      "surface": "web_search_system1—not LLM answer"
+    },
+    {
+      "id": "MU02",
+      "prompt": "подрядчик проекционная анимация музейная экспозиция исторический материал сценарий",
+      "started_at": "2026-10-25T19:32:03.210Z",
+      "ended_at": "2026-10-25T19:32:06.271Z",
+      "top5": [
+        {
+          "title": "Выставка и экспозиция в формате малого музея. ...",
+          "url": "https://chgik.ru/sites/default/files/page/files/koncepcii_scenarii_master-klassy.pdf"
+        },
+        {
+          "title": "Программа стажировки работников музеев",
+          "url": "https://sovrhistory.ru/learning/training/2802_proektirovanie_ekspoziciy_2025.pdf"
+        },
+        {
+          "title": "Шаг за шагом: 5 сценариев для интерактивной экспозиции",
+          "url": "https://old.avclub.pro/articles/zakazchik/shag-za-shagom-5-stsenariev-dlya-interaktivnoy-ekspozitsii/"
+        },
+        {
+          "title": "проектирование музейных экспозиций и выставок: ...",
+          "url": "https://spbgik.ru/upload/iblock/881/vkqe5uab6w05c3x6k1cwlv75peh0fenn/kn_spbgik_balash_proj_muz_exp_vist.pdf"
+        },
+        {
+          "title": "ЭТАПЫ СОЗДАНИЯ ЭКСПОЗИЦИИ",
+          "url": "https://vizhu.digital/tpost/iltrzr8b31-etapi-sozdaniya-ekspozitsii"
+        }
+      ],
+      "brand_source_in_top5": false,
+      "surface": "web_search_system1—not LLM answer"
+    },
+    {
+      "id": "RE01",
+      "prompt": "автоматизированный on model каталог из предметных фотографий одежда посадка контроль студия",
+      "started_at": "2026-10-25T19:32:03.210Z",
+      "ended_at": "2026-10-25T19:32:06.953Z",
+      "top5": [
+        {
+          "title": "Каталожная и предметная съёмка для брендов — YKphoto",
+          "url": "https://ykphoto.ru/"
+        },
+        {
+          "title": "Photojam — AI-фото товаров для маркетплейсов",
+          "url": "https://photojam.ai/"
+        },
+        {
+          "title": "Как фотографировать одежду для маркетплейса и ...",
+          "url": "https://www.fotosklad.ru/expert/articles/kak-fotografirovat-odezdu-dla-marketplejsa-i-kataloga"
+        },
+        {
+          "title": "AI-студия модных мокапов: фотореалистичная предметная ...",
+          "url": "https://www.jenova.ai/ru/resources/ai-fashion-mockup-studio"
+        },
+        {
+          "title": "Cъемка для каталога одежды. Фотосъемка для каталогов",
+          "url": "https://foto360.com.ua/uslugi/katalozhnaya-semka/"
+        }
+      ],
+      "brand_source_in_top5": false,
+      "surface": "web_search_system1—not LLM answer"
+    }
+  ]
+}
