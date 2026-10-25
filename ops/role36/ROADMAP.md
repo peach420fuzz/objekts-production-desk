@@ -117,3 +117,15 @@ This roadmap is executed against [the public syndication ledger](../../reference
 - [AI Product Index](https://index.percall.dev/llms.txt) legitimately requires GitHub issue `110kc3/seo` for registration, with an existing public schema. No current `objekts` listing in HTML. Attempt to create approved `[register]` issue through connected GitHub integration returned **403 `Resource not accessible by integration`**. This is a permissions stop, **not submitted**. Do not route through another identity or claim approved registration.
 
 **Correct total newly accepted free review applications in this continuation: 6** = 2 aiagents.org + 2 AgenticSkills (one MCP, one skill) + 2 Launch MCP. Separate pre-existing Neuronto, BotMarket, mcpservers.org public records from these six queues. There is no claimed buyer lead, new public approval, media reply send, or revenue conversion.
+
+
+### Owner-proposed four-branch continuation · 25 October 2026
+
+The owner requested a deeper decomposition of this workstream, grounded in the actual public submissions, private plugin inventory, source-visibility experiments and buyer catalogues. **This is an operational handoff; it does not assert four new ChatGPT conversations already exist.** Role 36 retains shared suppression, KPI reconciliation and handoffs; execution responsibilities split along four distinct evidence funnels:
+
+1. [36.1 — MCP, skills and agent directories](handoffs/36_1_AGENT_DISTRIBUTION.md): six newly accepted free publisher review requests, two agent-tools.org AFS-1 pending, historical public Neuronto/mcpservers/mcp.tc pages, four open ecosystem PRs and product protocol/meta defect gates.
+2. [36.2 — LLM answer and citations](handoffs/36_2_LLM_ANSWER_CAPTURE.md): actual buyer-intent questions and reproducible source/citation panels, shared with role 12's measurement owner; no unverifiable AI Top-5 claims.
+3. [36.3 — B2B studio/supplier directories](handoffs/36_3_B2B_STUDIO_DIRECTORIES.md): Workspace.ru, Wadline, GoodFirms/Sortlist/Clutch, Pocket Films, VFX Engine and other nonduplicate public studio profiles. Separate from outbound sales.
+4. [36.4 — agent communities/technical authority](handoffs/36_4_AGENT_COMMUNITY_AUTHORITY.md): actual educational value in agent-builder discussions, authentic authorship, independent public post verification; editorial to role13, visual assets to role15.
+
+**[Full split rationale, alternatives, shared rules, verifiable numbers and HQ scorecard](SPLIT_MASTER_2026-10-25.md).** The prior D36-00…10 stage gates remain valid and feed the relevant successor, not four separate CRMs. Qualified briefs still go to role16; product defects to their product owners; no paid/spam/duplicate shortcuts.
