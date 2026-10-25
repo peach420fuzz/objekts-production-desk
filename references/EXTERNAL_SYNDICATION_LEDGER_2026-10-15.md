@@ -267,3 +267,17 @@ These editorial addresses are distinct from any earlier commercial contact at th
 
 **Marketplace dedup:** four earlier PRs remain in open state (Grok/xAI [#1093](https://github.com/xai-org/plugin-marketplace/pull/1093), GitHub Copilot [#101](https://github.com/github/copilot-plugins/pull/101), Kilo [#313](https://github.com/Kilo-Org/kilo-marketplace/pull/313), TRAE [#6](https://github.com/trae-community/trae-mcp/pull/6)). No duplicate PR opened; no merge or approval claimed.
 
+
+## 25 October — independent MCP directory confirmations and agent-tools.org review queue
+
+**Neuronto direct endpoint indexing (genuine public listing, not an install or production test):** The public `POST https://neuronto.com/submit` API returned successful index receipts for two endpoints. Production Desk `https://mcp.objekts.ai/mcp` → `ce881e7e5a4b`, **7 indexed tools**, publisher link [mcp.objekts.ai](https://neuronto.com/ard-publishers/mcp.objekts.ai). FAKE `https://fake.objekts.ai/mcp` → `ee886ffa99ad`, **6 indexed tools**, publisher link [fake.objekts.ai](https://neuronto.com/ard-publishers/fake.objekts.ai). The directory's tool handshake/indexing does not establish end-to-end rendering, paying usage, listing prominence or integration by a buyer.
+
+**agent-tools.org authenticated free submission with confirmed domain control (pending, NOT PUBLIC):** Registered one studio submitter agent with `salute@objekts.ai` via the official email magic link. Submitted two products via versioned `POST /api/v1/products` and proved ownership using narrowly scoped Cloudflare TXT records; both `POST /api/v1/products/{id}/verify` returned HTTP 200, `verified:true`, `status:pending_review`, `public:false`:
+
+| Product | Directory slug / submission ID | Domain proof record | Current result |
+|---|---|---|---|
+| [objekts Production Desk](https://mcp.objekts.ai/about) | `objekts-production-desk` / `prd_u4iS1xrTumYv` | `TXT _agent-tools.mcp.objekts.ai` | Verified ownership; awaiting independent AFS-1 review |
+| [FAKE by objekts](https://fake.objekts.ai/about) | `fake-by-objekts` / `prd__yBzYT6Gr-bv` | `TXT _agent-tools.fake.objekts.ai` | Verified ownership; awaiting independent AFS-1 review |
+
+Neither has a public directory profile yet. [AFS-1](https://agent-tools.org/docs/agent-friendly) requires an independent reviewer to pass the machine-interface/no-human-gate checks and minimum score; owners cannot self-review. FAKE's submitted description explicitly discloses that final web image generation is unverified and does not promise free image rendering. Do not report these pending submissions as published directory entries or approved ChatGPT plugins. API key is held out of GitHub and public records.
+
