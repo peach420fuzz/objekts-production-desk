@@ -228,8 +228,45 @@
         "humanContact": "salute@objekts.ai",
         "policy": "Published case image credits and research/released-work distinction must be respected; no automated external client media republishing."
       }
+    },
+    {
+      "identifier": "urn:air:objekts.ai:skill:visual-production-evidence-brief",
+      "displayName": "objekts — Visual Production Evidence & Briefing Skill",
+      "type": "text/markdown",
+      "url": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/skills/visual-production-evidence-brief/SKILL.md",
+      "description": "Public, original SKILL.md for commercial film producers and AI assistants: seven gates for assessing VFX, CGI and generative-image source authority, supplier evidence, rights and controlled buyer handoff. Separates commissioned films, adaptations and R&D. Published and discoverable in the independent PromoteIndex agents skills index.",
+      "tags": [
+        "skill-md",
+        "portfolio-evidence",
+        "ai-vfx",
+        "cgi",
+        "agency-production",
+        "commercial",
+        "human-handoff",
+        "source-provenance",
+        "ru-en"
+      ],
+      "capabilities": [
+        "supplier-proof-review",
+        "brief-assessment",
+        "production-feasibility",
+        "risk-screening",
+        "evidence-bound-handoff"
+      ],
+      "representativeQueries": [
+        "Какие материалы запросить у AI/VFX-студии перед заказом рекламного шота?",
+        "How should an AI agent assess a creative production vendor without inventing case-study claims?",
+        "Evaluate whether generative VFX can preserve a branded product shot"
+      ],
+      "metadata": {
+        "publisher": "objekts",
+        "projectEvidence": "https://visual.objekts.ai/visuals",
+        "publicSkillListing": "https://promoteindex.com/skills/commercial-ai-vfx-shot-feasibility-supplier-evid",
+        "humanContact": "salute@objekts.ai",
+        "policy": "Open read-only guidance, no automatic outreach or endorsement. Source project pages govern attribution and image reuse."
+      }
     }
   ],
   "ardDraftReference": "https://agenticresourcediscovery.org/spec/",
-  "manifestUpdatedAt": "2026-10-19"
+  "manifestUpdatedAt": "2026-10-25"
 }
