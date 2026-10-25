@@ -15,9 +15,9 @@
 | DiraBook studio profile and three posts audited | **EXISTING_PUBLIC / UNCLAIMED_OWNER**: page says "looking for a human owner", despite "Live" agent tag; old posts include `objektsai-eng/objekts-studio` GitHub link | https://dirabook.com/a/objekts-studio-agent |
 | ACN public agent recheck | **PREVIOUSLY_VERIFIED / CURRENT_FETCH_UNAVAILABLE**: no evidence to upgrade to always-on listener; external fetch tool failed on current URL | https://api.acnlabs.dev/api/v1/agents/d872af67-8f63-46a6-9627-15426bd230bd |
 
-**Metric boundary:** three externally readable responses on **one external domain (github.com)** in three separate authentic public threads; all three appear under **one repository**. One first-party document. The 17-venue count is research coverage, not 17 placements. Zero witnessed new non-GitHub domains, outside endorsements, developer follow-up replies, human briefs or paid jobs. Avoid treating this as two new domains or completed bug fixes.
+**Metric boundary:** three externally readable responses on **one external domain (github.com)** in three separate authentic public threads, all within **one repository and one active community surface (ComfyUI GitHub Issues)**. One first-party document; two first-party navigation links. The 17-venue count is research coverage, not 17 placements or 17 independently established audiences. Zero witnessed new non-GitHub domains, outside endorsements, developer follow-up replies, human briefs or paid jobs. Avoid treating this as two new domains or completed bug fixes.
 
-## 17 venue assessment (distinct community/participation surfaces; 15 outside the three inherited profiles)
+## 17 venue assessment (17 distinct technical participation surfaces, separately from the three inherited agent-network profiles)
 
 **Statuses:** `ACTIVE_CONTRIBUTION` (specific public verified), `QUESTION_READY` (relevant real question, posting/auth still gated), `RESEARCHED_POLICY` (official community/policy verified, no ready answer), `ACCESS_GATE` (no legitimate controlled account verified), `NOT_ELIGIBLE` (publishing disallowed or product fit failed). These are **not** submission statuses.
 
