@@ -196,6 +196,28 @@ These matter for audience development and AI search, but claims of leads, indepe
 
 **Editorial priority:** do not chase vanity podcasts. This department owns actual image-platform uploads, properly tagged portfolio case pages, discovery for search/agents (without inventing search-engine endorsements), Yandex Business subject to real location policy, and eventually buyer-qualified inquiries.
 
+## 25 October 2026 — Traffic & Agent Discovery (role 36): verified new actions
+
+**First-party Google search baseline recovered via connected Windsor.ai → Google Search Console `sc-domain:objekts.ai`.** The GSC reporting window 5–22 October covers 18 days: **19 search clicks / 353 impressions**, derived CTR **5.38%**. Landing pages of interest: EN AI-VFX 40 impressions/0 clicks/mean position 11.175; RU advertising brands 34/2/13.4412; homepage 46/5/2.2174. Query-level disclosure is limited/anonymized. This is **not** a human-session count, a lead count or an AI-citation metric. GSC confirms `/sitemap.xml` last fetched 23 Oct (200 submitted URL entries), image sitemap last fetched 21 Oct (2,295 entries), video sitemap last fetched 18 Oct (170 entries), with zero reported sitemap errors/warnings; deprecated `indexed=0` is **not** evidence of zero indexed URLs.
+
+**New owner-side GitHub issue:** [objekt website issue #28](https://github.com/peach420fuzz/objekt/issues/28) records above baseline plus specific EN AI-VFX snippet opportunities, duplicate after-hydration JSON-LD reproduction and mobile LCP QA. Website source/deployment not verified; no source change, publication or ranking uplift is claimed.
+
+**Five new unique editorial/library pitches sent** from `salute@objekts.ai` after per-address SENT dedup:
+
+| Destination | Date | Why it fits | Verified state |
+|---|---|---|---|
+| [OOH Mag](https://oohmag.ru/contacts/) · `oohmag@gmail.com` | 25 Oct | Russian DOOH 30-screen adaptation scoping, original guide plus blank operator-spec CSV; openly hypothetical example | Gmail SENT `1a170717348c2407`, external publication **pending** |
+| [CloudAtelier](https://www.cloudatelier.shop/advertise) · `cloud@cloudatelier.shop` | 25 Oct | Official free editorial tool nomination for Production Desk; disclosed budget-estimator/protocol limitations | Gmail SENT `1a17071b0509facd`, editorial review **pending** |
+| [DOC.ru](https://doc.ru/kontakty/) · `info@nmgdoc.ru` | 25 Oct | Russian film-industry VFX method: preserve filmed performers/camera while replacing space, with accurately scoped SberCity/Magnit breakdowns | Gmail SENT `1a17071f8467da37`, editorial decision **pending** |
+| [vona](https://vonalab.com/en/ai-tools/submit) · `hello@vonalab.com` | 25 Oct | Official form fallback email; free business-AI tool consideration for specialist marketing-production preflight | Gmail SENT `1a170756cd7f2049`, editorial review **pending** |
+| [Stepthrough by Ynteractive](https://learn.ynteractive.com/content/ai-tools/submit) · `rbreen@ynteractive.com` | 25 Oct | Official free email nomination for specialist Marketing category, explicit limitation on narrower relevance | Gmail SENT `1a17075966a8e748`, editorial review **pending** |
+
+**Existing listing correction (not a new unique recipient):** Following the original 17 October request, sent one short follow-up **in the same Gmail thread** to Glama support about inaccurate Production Desk categories (`Project Management / CMS / Workplace & Productivity` vs actual AI/VFX/media production). Gmail SENT `1a17074c973d08c7`; no taxonomy change or reply yet verified. The existing verified [Glama connector](https://glama.ai/mcp/connectors/ai.objekts.mcp/production-desk) remains the single existing listing, not a new submission.
+
+**New integration probes without added costs:** Ahrefs account reports `Insufficient plan` even for the free usage endpoint; stopped, no credit purchase. Sites integration lists four distinct hosted sites (KINEMA private, LINCO public, objekts Production Tools public, objekts Global Creative Production private), **none proved to be source control for `objekts.ai`**. GSC Wizard still requires subscription; Windsor successfully supplies actual GSC data. No private Site audience was changed and no premature KINEMA public launch claimed.
+
+**Impact accounting:** **5 new externally sent editorial nominations; 1 existing support-thread follow-up; 1 internal GitHub issue. 0 newly confirmed accepted listings, 0 newly attributable visits or leads.** Follow-up after editorial reply/public listing, not blind resend.
+
 ## Not completed / blocked
 
 | Channel | Current evidence | Decision |
