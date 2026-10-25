@@ -84,3 +84,10 @@ Status legend: TO_VERIFY / RIGHTS_GATE / APPROVAL_GATE / RESEARCHING / READY_FOR
 - C36-536 / 1 Nov: review new editorial/art outlets, no duplicate role13 cold pitches.
 
 **Review standard:** every new source official URL + checked date + fit + cost + rights + exact owner. Every publication receipt signed-out public link + credit + timestamp. An open issue or pull request is *not* an external publication.
+
+
+### Δ 25 Oct later reconciliation — supersedes stale earlier C36-533 description
+- C36-501 / 503: linked personal Gmail shows Pinterest recommendation messages Oct13–17 and Are.na onboarding Jan2026. **Not evidence of public studio handles, profile claim, or publication authority.** Issue #108 remains open.
+- C36-533: **Original-art candidate IS identified and independently described in the earlier 16 Oct KALTBLUT review document:** The Invisible Silhouette. Its generative R&D/objekts authorship is corroborated by studio's 16 Oct email. **Publisher The AI Art Magazine replied 18 Oct confirming studio/collective credit**, shared email permitted. FORM SUBMISSION **NOT** found; rights to external print and original masters still unverified. Deadline 1 Nov, issue #110. Prior early-queue phrase 'No artwork identified' is superseded; status becomes `CANDIDATE_IDENTIFIED / FORM_BLOCKED`.
+- C36-517 / 518: KALTBLUT review Doc **prepared**, no Gmail sent evidence; official small PDF to correct fashion/art editor (role13). designboom **mail pitch already sent 16 Oct**, but reader-upload form not confirmed, and its IP attestation remains unapproved. No duplicate outbound. [Reconciliation ledger](../deliverables/36_5_RECOVERED_EDITORIAL_ACCOUNT_HISTORY_2026-10-25.md).
+- NetMovIA existing Oct23–25 conversation is already managed elsewhere; publisher offered free basic signup, no paid producer network or verified pro studio badge. Suppress overlapping pitch from 36.5.
