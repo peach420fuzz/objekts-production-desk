@@ -243,3 +243,27 @@ These matter for audience development and AI search, but claims of leads, indepe
 6. To broaden the audience, prioritize new *external* platforms that accept studios and artistic production work, not additional near-duplicate subdomains or merely preparatory CSV files.
 
 **Contact:** salute@objekts.ai · https://objekts.ai
+
+## 25 October — supplemental verified actions and corrections (role 36)
+
+**Search Console scope correction:** 19 clicks / 353 impressions are specifically the **Web** search surface (5–22 October), not all Google surfaces combined. Separate **Image** search returned 1 click / 128 impressions (mean position 31.7812), while **Video** search returned 0 clicks / 6 impressions (mean position 10.1667). SberCity and Magnit showed only two image-search impressions each in this window. Google sitemap entries 200/2,295/170 are submitted URL counts, not indexed URL totals. A clarifying comment was added to the existing owner-side [site issue #28](https://github.com/peach420fuzz/objekt/issues/28#issuecomment-6391529434). No ranking uplift or traffic-growth claim is made.
+
+**Two more new unique outbound editorial pitches, sent and verified:**
+
+| Destination | Why it fits | Verified status |
+|---|---|---|
+| [IT-World](https://www.it-world.ru/) · `news@it-world.ru` | Russian technology editorial: reproducibility, shot locks and AI/VFX continuity, not a generic advertising pitch | Gmail **SENT** `1a17079967f32f85`; publication pending |
+| [Outdoor Media](https://outdoor.ru/) · `info@outdoor.ru` | Russian DOOH operations editor: multi-screen playback, pixel geometry, legibility and preflight of operator specs | Gmail **SENT** `1a17079992cbf1d3`; publication pending |
+
+These editorial addresses are distinct from any earlier commercial contact at the same company; do not count them as separate organizations where domains coincide. **Cumulative 25-Oct outreach now: seven new unique publisher addresses plus one existing Glama support follow-up = eight confirmed outgoing Gmail messages.** Zero accepted new editorial pages verified.
+
+**Explicit NON-SEND:** a separate technical column enquiry for [Бриф](https://brief-media.ru/share/) at `copy@callibri.ru` was attempted only after a SENT check; Gmail returned **429 rateLimitExceeded**, first with a retry-after of 00:54 UTC and then again with a retry-after of 01:13 UTC. The message is **NOT SENT** and must not be counted. No alternate-account/rate-limit workaround.
+
+**Unclosed existing directory lead discovered by dedup:** Workspace.ru support `team@workspace.ru` replied on **7 October** with a free contractor/studio registration route at [workspace.ru](https://workspace.ru/login/registration.php?backurl=%2Fpersonal%2F&type=contractor). This is **not** an accepted studio profile; check the existing account before opening any new one, and do not buy PRO or duplicate a support enquiry.
+
+**New tools audit:** The owner’s personal Plugin Creator inventory was inspected with exact saved package metadata, but private release details and proposed fixes are kept in a private working document, not in this public syndication ledger. Some personal releases remain private even when a related remote MCP is externally indexed. ChatGPT App Directory publication remains unverified.
+
+**Free AI-visibility project:** connected Ubersuggest account has one free project slot, 25 keyword slots and 10 brand-prompt slots. Its current geographic selector did not offer Russia; a Kazakhstan/Russian-language preflight reached **review stage**, but the project was **not created**, because it would consume the only available geographic slot and requires owner confirmation. No AI visibility/rank score is therefore claimed.
+
+**Marketplace dedup:** four earlier PRs remain in open state (Grok/xAI [#1093](https://github.com/xai-org/plugin-marketplace/pull/1093), GitHub Copilot [#101](https://github.com/github/copilot-plugins/pull/101), Kilo [#313](https://github.com/Kilo-Org/kilo-marketplace/pull/313), TRAE [#6](https://github.com/trae-community/trae-mcp/pull/6)). No duplicate PR opened; no merge or approval claimed.
+
