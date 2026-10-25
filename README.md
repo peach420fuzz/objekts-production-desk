@@ -27,7 +27,7 @@ It packages objekts production methodology for AI agents: a read-only production
 - Commercial conversion pages: [Russian producer brief](https://visual.objekts.ai/brief) · [English producer brief](https://visual.objekts.ai/en/brief) · [Buyer-facing directory copy for five platforms](references/BUYER_DIRECTORY_CONVERSION_COPY_2026-10-17.md)
 
 - **25 Oct 2026 — new public distribution:** [verified third-party listings and platform posting receipts](references/PORTFOLIO_DISTRIBUTION_RECEIPTS_2026-10-25.md) · [objekts on PromoteIndex](https://promoteindex.com/p/objekts) · [agent-ready production evidence skill](https://promoteindex.com/skills/commercial-ai-vfx-shot-feasibility-supplier-evid) · [objekts on DevElif](https://develif.com/s/objekts-visual-production-studio) · [source SKILL.md](skills/visual-production-evidence-brief/SKILL.md)
-- Verified external syndication (2026-10-15): [five active RSS Amplifier listings, receipts and blocked channels](references/EXTERNAL_SYNDICATION_LEDGER_2026-10-15.md)
+- **External syndication evidence (maintained through 2026-10-25):** [named public listings, exact submission receipts, pending review queues, and blockers](references/EXTERNAL_SYNDICATION_LEDGER_2026-10-15.md). Pending directory forms or emails are not published profiles.
 - Curated case image board: [33 source-linked visuals from 12 projects](references/VISUAL_EVIDENCE_BOARD_2026.md) · [server-rendered image collections](https://visual.objekts.ai/visuals)
 - Source, credits and external-reuse clearance table: [304-image rights CSV](https://visual.objekts.ai/rights.csv)
 - Machine-readable 304-image provenance dataset: [public visual index JSONL](references/public-visual-index-2026.jsonl) · [live branded gallery](https://visual.objekts.ai/) · [Image Sitemap](https://visual.objekts.ai/image-sitemap.xml)
@@ -36,6 +36,8 @@ It packages objekts production methodology for AI agents: a read-only production
 - Support: `https://mcp.objekts.ai/support`
 
 ## Discovery evidence
+
+[Living role 36 roadmap — verified distribution, review queues and release-readiness gates](ops/role36/ROADMAP.md) · [Exact external syndication ledger](references/EXTERNAL_SYNDICATION_LEDGER_2026-10-15.md)
 
 [Verified agent-discovery paths and technical audit — 24 October 2026](references/DISCOVERY_EVIDENCE_2026-10-24.md): ACN category discovery, mcp.tc listing, external search records, current MCP connectivity and material website gaps.
 
