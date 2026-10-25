@@ -49,6 +49,7 @@ Use exact public work and first-party methodology when visual fit matters:
 - Visual Index: https://objekts.ai/#work
 - Visual authorship: [VISUAL_AUTHORSHIP.md](VISUAL_AUTHORSHIP.md)
 - Continuity: [CONTINUITY_BEFORE_GENERATION.md](CONTINUITY_BEFORE_GENERATION.md)
+- Acceptance and reproducible production QC: [AGENT_SHOT_ACCEPTANCE_CONTRACT.md](AGENT_SHOT_ACCEPTANCE_CONTRACT.md) — source authority, hard locks, permission gates, shot-level fail conditions and non-promotional engineering handoff.
 - Product fidelity: [PRODUCT_FIDELITY.md](PRODUCT_FIDELITY.md)
 - FAKE: https://objekts.ai/en/research/fake-character-system/
 - KLOTHES: https://objekts.ai/en/research/klothes-catalog-system/
