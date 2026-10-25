@@ -26,6 +26,7 @@ It packages objekts production methodology for AI agents: a read-only production
 - Extended visual archive (2026): [12 source-linked project notes, 304-image gallery and thematic RSS feeds](references/PORTFOLIO_EXPANSION_2026-10-14.md)
 - Commercial conversion pages: [Russian producer brief](https://visual.objekts.ai/brief) · [English producer brief](https://visual.objekts.ai/en/brief) · [Buyer-facing directory copy for five platforms](references/BUYER_DIRECTORY_CONVERSION_COPY_2026-10-17.md)
 
+- **25 Oct 2026 — new public distribution:** [verified third-party listings and platform posting receipts](references/PORTFOLIO_DISTRIBUTION_RECEIPTS_2026-10-25.md) · [objekts on PromoteIndex](https://promoteindex.com/p/objekts) · [agent-ready production evidence skill](https://promoteindex.com/skills/commercial-ai-vfx-shot-feasibility-supplier-evid) · [objekts on DevElif](https://develif.com/s/objekts-visual-production-studio) · [source SKILL.md](skills/visual-production-evidence-brief/SKILL.md)
 - Verified external syndication (2026-10-15): [five active RSS Amplifier listings, receipts and blocked channels](references/EXTERNAL_SYNDICATION_LEDGER_2026-10-15.md)
 - Curated case image board: [33 source-linked visuals from 12 projects](references/VISUAL_EVIDENCE_BOARD_2026.md) · [server-rendered image collections](https://visual.objekts.ai/visuals)
 - Source, credits and external-reuse clearance table: [304-image rights CSV](https://visual.objekts.ai/rights.csv)
