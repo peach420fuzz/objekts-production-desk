@@ -206,9 +206,9 @@
         "Site domain claim/DNS write belongs to site owner; no unauthorized modifications",
         "RSS autopublishing must remain disabled absent approvals"
       ],
-      "next_action": "Role15 returns signed-in account inventory and original media consent; see issue #108 and PR #109. No client frames uploaded. 36.5 only has editorial text source map and approval-ready concepts.",
+      "next_action": "Studio Pinterest profile still UNKNOWN. Personal Pinterest recommendation emails observed at linked peach mailbox Oct13–17, not proof of official objekts account or site claim. Role15 returns exact logged-in official handle, signed-out posts, claim state and media release; issue #108.",
       "due_for_first_review": "2026-10-27",
-      "last_action": "2026-10-25: BRANCH36.5 COPY/CURATION PREPARED; ACCOUNT_OWNER_AND_MEDIA_RIGHTS_UNVERIFIED; issue #108",
+      "last_action": "2026-10-25: PERSONAL_PINTEREST_MAIL_SIGNAL_FOUND; OFFICIAL_STUDIO_PROFILE_NOT_VERIFIED",
       "dedup_key": "pinterest.com|objekts|creative-brand-authorial"
     },
     {
@@ -262,9 +262,9 @@
         "Owner-approved public studio contribution",
         "Curatorial research value, not mass promotions"
       ],
-      "next_action": "Role15 returns signed-in account inventory and original media consent; see issue #108 and PR #109. No client frames uploaded. 36.5 only has editorial text source map and approval-ready concepts.",
+      "next_action": "Are.na account-onboarding messages in peach mailbox Jan 2026 establish a personal account signal only. Role15 confirms whether any separate official objekts channel/handle exists, who may edit, visibility, credit and publication rights. Issue #108.",
       "due_for_first_review": "2026-10-28",
-      "last_action": "2026-10-25: BRANCH36.5 COPY/CURATION PREPARED; ACCOUNT_OWNER_AND_MEDIA_RIGHTS_UNVERIFIED; issue #108",
+      "last_action": "2026-10-25: PERSONAL_ARENA_MAIL_SIGNAL_FOUND; OFFICIAL_STUDIO_CHANNEL_NOT_VERIFIED",
       "dedup_key": "are.na|objekts|authored-curation"
     },
     {
@@ -335,7 +335,7 @@
       "source_url": "https://www.art-magazine.ai/edition/number-four",
       "source_checked_at": "2026-10-25",
       "source_type": "OFFICIAL_CURRENT_OPEN_CALL",
-      "evidence": "Publisher confirms free application, one work per artist, deadline 1 Nov 2026, Image/Moving image/Spatial image/System categories, still+short excerpt for moving image, process statement and around 50 print selections; no theme. Prior issues publicly shown.",
+      "evidence": "Publisher confirms free application, one work per artist, deadline 1 Nov 2026, Image/Moving image/Spatial image/System categories, still+short excerpt for moving image, process statement and around 50 print selections; no theme. Prior issues publicly shown. Recovered studio Gmail: preflight mailed 16 Oct and publisher replied 18 Oct explicitly allowing collective studio credit 'objekts'; selection only from formal Artist Space submission. A 16 Oct studio Drive review doc and outgoing mail describe The Invisible Silhouette as independent generative art-direction R&D and list three public study frames. No formal submission receipt.",
       "buyer_hypothesis": "Curated artistic authorial credit and critical visibility; not a commercial lead guarantee.",
       "status": "BLOCKED",
       "publication_proof": null,
@@ -343,13 +343,13 @@
       "eligibility_gates": [
         "Identify one existing original rights-cleared nonclient or cleared collaborative artwork",
         "Verify Invisible Silhouette is self-owned, AI-created with documented method and available approved high-resolution stills; website alone grants no third-party print rights",
-        "Accurate creative authors and statement, AI process and rights",
+        "Studio already represents AI generative R&D; verify exact process, image sources, high-res masters, external print rights and credited makers",
         "Owner/role15 authorized Artist Space identity and final approval",
         "No fabricated receipt or selected-work claim"
       ],
-      "next_action": "Candidate discovered: https://objekts.ai/ru/work/fashion-in-motion (Invisible Silhouette, four archive stills). By 27 Oct verify independently owned AI-assisted image-series rights, exact source masters and method; if approved, use Image category and finalize truthful statement by 31 Oct; otherwise NO_ELIGIBLE_ASSET. Official deadline 1 Nov; see issue #110 and merged PR #111.",
+      "next_action": "P0 by 27 Oct: skip duplicate eligibility email, publisher already accepted collective studio name. Confirm existing Artist Space identity, final print/media rights and original masters for Invisible Silhouette, accurate generative process and contributor credits; then authorized role15/owner submits ONE Image series by 1 Nov. Existing designboom pitch 16 Oct; no duplicate. See recovered history file and issue #110.",
       "due_for_first_review": "2026-10-27",
-      "last_action": "2026-10-25: INDEPENDENT_LOOKING_FASHION_SERIES_CANDIDATE_FOUND; COPYRIGHT_AND_AI_METHOD_UNVERIFIED; NO_SUBMISSION",
+      "last_action": "2026-10-25: PRIOR_OUTREACH_RECONCILED; ART_MAGAZINE_18OCT_COLLECTIVE_CREDIT_OK; INDEPENDENT_AI_RND_DECLARED; NO_ARTIST_SPACE_RECEIPT",
       "dedup_key": "art-magazine.ai/edition/number-four|objekts-original-art"
     },
     {
