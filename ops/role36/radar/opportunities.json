@@ -342,13 +342,14 @@
       "submission_id": null,
       "eligibility_gates": [
         "Identify one existing original rights-cleared nonclient or cleared collaborative artwork",
+        "Verify Invisible Silhouette is self-owned, AI-created with documented method and available approved high-resolution stills; website alone grants no third-party print rights",
         "Accurate creative authors and statement, AI process and rights",
         "Owner/role15 authorized Artist Space identity and final approval",
         "No fabricated receipt or selected-work claim"
       ],
-      "next_action": "Owner/role15 identify ONE eligible existing artwork by 27 Oct, prepare moving-image still/excerpt or system docs, approve statement, submit by 1 Nov; see issue #110.",
+      "next_action": "Candidate discovered: https://objekts.ai/ru/work/fashion-in-motion (Invisible Silhouette, four archive stills). By 27 Oct verify independently owned AI-assisted image-series rights, exact source masters and method; if approved, use Image category and finalize truthful statement by 31 Oct; otherwise NO_ELIGIBLE_ASSET. Official deadline 1 Nov; see issue #110 and merged PR #111.",
       "due_for_first_review": "2026-10-27",
-      "last_action": "2026-10-25: OFFICIAL_FREE_CALL_VERIFIED; NO_ELIGIBLE_ARTWORK_IDENTIFIED; issue #110",
+      "last_action": "2026-10-25: INDEPENDENT_LOOKING_FASHION_SERIES_CANDIDATE_FOUND; COPYRIGHT_AND_AI_METHOD_UNVERIFIED; NO_SUBMISSION",
       "dedup_key": "art-magazine.ai/edition/number-four|objekts-original-art"
     },
     {
