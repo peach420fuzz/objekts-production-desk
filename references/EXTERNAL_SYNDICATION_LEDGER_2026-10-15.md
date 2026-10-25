@@ -281,3 +281,15 @@ These editorial addresses are distinct from any earlier commercial contact at th
 
 Neither has a public directory profile yet. [AFS-1](https://agent-tools.org/docs/agent-friendly) requires an independent reviewer to pass the machine-interface/no-human-gate checks and minimum score; owners cannot self-review. FAKE's submitted description explicitly discloses that final web image generation is unverified and does not promise free image rendering. Do not report these pending submissions as published directory entries or approved ChatGPT plugins. API key is held out of GitHub and public records.
 
+
+## 25 October — role 36 live execution, directory editorial queue and publisher reply
+
+| Channel / URL | Action and unique evidence | Status | Owner / next step |
+|---|---|---|---|
+| [Neuronto / Production Desk](https://neuronto.com/ard-publishers/mcp.objekts.ai) | Independently checked public HTML `<title>` + metadata identifies `mcp.objekts.ai` and **7** indexed MCP tools, in addition to prior submit receipt `ce881e7e5a4b` | `PUBLIC_VERIFIED` as MCP publisher card; no usage proof | Role 36; recheck on manifest changes |
+| [Neuronto / FAKE](https://neuronto.com/ard-publishers/fake.objekts.ai) | Independently checked public HTML `<title>` + metadata identifies `fake.objekts.ai` and **6** indexed MCP tools, receipt `ee886ffa99ad` | `PUBLIC_VERIFIED` for MCP listing; image generation unverified | Role 36 / 34; recheck on actual release |
+| [aiagents.org / Production Desk](https://aiagents.org/for-agents) | Free official `POST /api/submit` tool listing returned HTTP **202**, `accepted:true`, `intent:listing`, `Queued for editorial review. Not published.` | `PENDING_REVIEW`; no public card | Role 36; query exact name after editorial review |
+| [aiagents.org / FAKE](https://aiagents.org/for-agents) | Free official `POST /api/submit` tool listing returned HTTP **202**, same queue response; description explicitly labels in-browser image generation as in development | `PENDING_REVIEW`; no public card | Role 36; check name and copy, no image-gen claim |
+| [OOH Mag](https://oohmag.ru/) | Two genuine replies received in original email thread: editor retains editing rights and offered paid placement only if no changes allowed; original factual Russian DOOH production column composed. Gmail send received **429**, draft saved in same thread. | `EDITOR_REPLIED / DRAFT_UNSENT`; no column acceptance | Role 36 + role 13; after provider 10:56:35 UTC retry window, reconcile SENT and send one draft, otherwise leave unsent |
+
+No additional external public pages are claimed from the two aiagents.org forms or the unsent article. Duplicates and bad-fit paid/non-free directories were excluded. Editorial column is an illustrative engineering calculation, explicitly not a completed 30-screen client campaign.
