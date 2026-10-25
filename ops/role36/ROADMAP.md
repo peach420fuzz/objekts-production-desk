@@ -129,3 +129,12 @@ The owner requested a deeper decomposition of this workstream, grounded in the a
 4. [36.4 — agent communities/technical authority](handoffs/36_4_AGENT_COMMUNITY_AUTHORITY.md): actual educational value in agent-builder discussions, authentic authorship, independent public post verification; editorial to role13, visual assets to role15.
 
 **[Full split rationale, alternatives, shared rules, verifiable numbers and HQ scorecard](SPLIT_MASTER_2026-10-25.md).** The prior D36-00…10 stage gates remain valid and feed the relevant successor, not four separate CRMs. Qualified briefs still go to role16; product defects to their product owners; no paid/spam/duplicate shortcuts.
+
+
+### Operating model correction — branches do not wait for HQ tickets · 25 Oct
+
+Owner explicitly challenged whether successor chats can think after completing prewritten lists. **Yes, the mandate is now self-directed**: every handoff includes a rolling Observe/Discover/Rank/Execute/Verify/Learn/Replenish loop, a top-10 dynamic queue, meaningful self-selected next channels and an instruction to keep acting within scope. The initial roadmap is launch context, **not a ceiling**; no branch may use “HQ has not assigned new tasks” as a stop condition. Blocking access/terms apply only to that particular item; research and other eligible tasks continue.
+
+Role **36 HQ** owns cross-lane source truth, duplicate suppression, release-watch, strategic experiments, qualified lead attribution and weekly ROI pruning. It must independently fix/corroborate cross-lane problems rather than merely produce assignments. It does not replace role11 tool registry, role12 SEO/measurement, role13 editorial, role15 visual networks, role16 sales CRM or existing product owners. [Full roles and scoreboard](SPLIT_MASTER_2026-10-25.md#autonomy-amendment-v11--every-successor-self-generates-work).
+
+**Duration caveat:** user expects deep active sessions (prior two-hour target); actual agent activity requires an active run or configured verified automation. Never claim background execution or elapsed hours because a task document says so.
