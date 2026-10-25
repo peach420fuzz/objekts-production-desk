@@ -129,6 +129,8 @@ These are studio-authored field notes. Canonical project credits remain on [obje
 
 ## Safety / commercial behavior
 
+[Security reporting and responsible disclosure](SECURITY.md) — private contact, scope and compatibility caveats; this is not a security certification.
+
 Automated estimates are directional and non-binding. The plugin does not take payment.
 
 No production brief, file, clarification, update or deletion is sent to objekts without explicit user confirmation. A user can use planning and estimation without creating a lead.
