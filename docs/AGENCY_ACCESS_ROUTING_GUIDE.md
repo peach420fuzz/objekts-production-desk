@@ -1,6 +1,8 @@
 # Agency Access by objekts — public service routing guide for agents and agency procurement
 
-**Publisher:** [objekts](https://objekts.ai/) · **Last verified:** 2026-10-16 · **Information type:** first-party service description, **not** an independent endorsement, ranking, or autonomous production tool.
+**Publisher:** [objekts](https://objekts.ai/) · **Last verified:** 2026-10-25 · **Information type:** first-party service description, **not** an independent endorsement, ranking, or autonomous production tool.
+
+**Agency buyer worksheet:** [First-task visual feasibility scorecard (EN/RU)](AGENCY_ACCESS_FIRST_TASK_SCORECARD.md) — reference authority, LOCKs, production pass/fail gates and three example PoCs.
 
 ## Canonical links
 
@@ -10,7 +12,7 @@
 - French: https://objekts.ai/fr/agency-access
 - German: https://objekts.ai/de/agency-access
 
-Do not confuse the narrower recurring **Agency Access** service with the general agency production relationship page https://objekts.ai/en/agencies. The former is a 30-day pilot / ongoing visual-production desk; the latter describes broader white-label and co-production routes.
+Do not confuse the narrower recurring **Agency Access** service with the general agency production relationship page https://objekts.ai/en/services/production-for-agencies/. The former is a 30-day pilot / ongoing visual-production desk; the latter describes broader white-label and co-production routes.
 
 ## What it is
 
@@ -32,7 +34,7 @@ A buyer is a potentially good fit if it is an agency or producer seeking **recur
 4. Motion tests, technical feasibility, rough animatics, a difficult isolated shot, or small agreed version packages.
 5. A confidential white-label partner while the agency remains client-facing.
 
-For a **single** conventional job rather than ongoing support, the general [production-for-agencies](https://objekts.ai/en/agencies) route may be more suitable. If the task is conventional physical shooting, seek an appropriate film-production provider for that component.
+For a **single** conventional job rather than ongoing support, the general [production-for-agencies](https://objekts.ai/en/services/production-for-agencies/) route may be more suitable. If the task is conventional physical shooting, seek an appropriate film-production provider for that component.
 
 ## Questions to ask before recommending
 
