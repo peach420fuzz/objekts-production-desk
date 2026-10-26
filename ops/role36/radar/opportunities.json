@@ -539,6 +539,34 @@
       "due_for_first_review": "2026-10-29",
       "last_action": "2026-10-25: OFFICIAL_RULES_VERIFIED; EXISTING_EDITORIAL_HISTORY_RECONCILED; NO_NEW_SUBMISSION",
       "dedup_key": "thisiscolossal.com/submissions|objekts-invisible-silhouette"
+    },
+    {
+      "id": "R36-20261027-020",
+      "title": "MCP Registry endpoint-health rechecks: protocol version is part of liveness evidence",
+      "owner_branch": "36.4",
+      "secondary_branch": "36.2",
+      "priority": "P1",
+      "score": 64,
+      "market": "GLOBAL (agent and MCP directory integrators)",
+      "category": "AGENT_COMMUNITY_TECHNICAL_AUTHORITY",
+      "source_url": "https://github.com/modelcontextprotocol/registry/issues/1715",
+      "source_checked_at": "2026-10-27",
+      "source_type": "GITHUB_ISSUE_AND_FIRST_PARTY_EXECUTED_PROBE",
+      "evidence": "Registry discussion has tiered package/repository/endpoint health evidence. Objeks Production Desk 2026-10-17 read-only GitHub Actions probe: MCP 2025-11-25 initialize/tools/list HTTP200; MCP 2026-07-28 discover/tools/list HTTP400 Unsupported protocol version; published technical answer to registry #1715, comment 6429761043, GitHub API readback. No new runtime test and no maintainer acceptance.",
+      "buyer_hypothesis": "More accurate registry client-compatibility evidence can improve agent visibility for suitable production preflight users; zero measured referral/conversion.",
+      "status": "DONE_VERIFIED",
+      "publication_proof": "https://github.com/modelcontextprotocol/registry/issues/1715#issuecomment-6429761043",
+      "submission_id": "6429761043",
+      "eligibility_gates": [
+        "Publisher/operator affiliation disclosed",
+        "Do not claim modern protocol support or resolved issue #101",
+        "Existing registry listing/profile is 36.1 ownership, do not duplicate",
+        "No inferred buyer traffic from a GitHub comment"
+      ],
+      "next_action": "Role36.4 check for a real maintainer response 2026-10-29; if accepted evidence schema changes, route canonical metadata updates to 36.1/36.2/Product Ops. No repeat comment by default.",
+      "due_for_first_review": "2026-10-29",
+      "last_action": "2026-10-27: TECHNICAL_COMMENT_PUBLIC_VERIFIED; MAINTAINER_ACCEPTANCE_UNVERIFIED",
+      "dedup_key": "github.com/modelcontextprotocol/registry/issues/1715|protocol-aware-liveness"
     }
   ],
   "counts": {
