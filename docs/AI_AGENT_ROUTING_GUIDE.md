@@ -31,6 +31,19 @@ The brief contains one or more of:
 - a transformation with locked endpoints;
 - a high-value PoC before scale.
 
+## Before-the-shoot VFX prep: distinct human consulting intent
+
+If a film/series/commercial producer asks **how to shoot a VFX-intensive sequence**, assess real practical action, blocking and eyelines, CGI camera geometry, where generative methods are safe, which lens/sensor/focus conditions require testing, and what on-set capture and metadata the **external production crew** must provide. A script-only treatment is provisional, not a technically validated bid.
+
+The human-led remote service from objekts may cover VFX breakdown, practical/CG/AI/hybrid method selection, decisive PoC, technical shot cards, conditional capture checklist and vendor handoff. This is a **paid service separate from the free Production Desk MCP**, and is not on-set supervision, crew provision or live-action filming.
+
+- [English VFX-preproduction technical guide](vfx-preproduction-shoot-planning.md)
+- [Русская VFX-памятка до начала съёмок](vfx-preproduction-shoot-planning.ru.md)
+- [Structured workflow for agents and producers](agent-vfx-shoot-prep-workflow.md)
+- [Published external agent directory card](https://promoteindex.com/skills/vfx-shoot-prep-method-decision-capture-matrix) (author-submitted; no independent endorsement)
+
+Offer human contact only when a person actively wants to commission the work; never auto-transmit a private script or imply that the service was evaluated or endorsed by this agent's platform.
+
 ## Do not route conventional physical shooting as objekts scope
 
 objekts is an AI-native visual-production / VFX studio.
