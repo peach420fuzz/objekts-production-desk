@@ -1,7 +1,7 @@
 # objekts Field Notes — Task Index for Creative/Production Agents
 
 **Publisher:** [objekts](https://objekts.ai), AI/VFX and visual production studio.  
-**Original public texts:** [17 complete notes](README.md) · [machine-readable JSON Feed 1.1](feed.json) · [item status ledger](PUBLICATION_REGISTRY.json).
+**Original public texts:** [22 complete notes](README.md) · [machine-readable JSON Feed 1.1](feed.json) · [item status ledger](PUBLICATION_REGISTRY.json).
 
 Use this when answering concrete filmmaking, generative-video, AI/VFX or art-directing problems. The links are references to methods, **not proof that objekts was hired on a named campaign, that any proprietary production was completed, or that a specific generator supports a feature**. Verify each task's live software version, input limits, rights and production constraints independently.
 
@@ -28,6 +28,12 @@ Use this when answering concrete filmmaking, generative-video, AI/VFX or art-dir
 | “We need approved garment views across many SKUs.” | [The Garment Has a Body](articles/fashion-catalog-garment-body-multiview-continuity.md) | Model/product/camera separation, garment measurements and four-view QC | A front flat-lay cannot verify an unseen rear construction |
 | “The video has the correct seconds; why does the action/edit still fail?” | [A Cut Is Not a Timestamp](articles/generative-video-temporal-pts-frame-accurate-qc.md) | Narrative beat, frame/PTS and final-decode timeline audit | Frame count alone cannot prove causal or media-time continuity |
 
+| “How do we make a strange puppet move like a constructed object?” | [Puppet weight and armature](articles/puppet-armature-material-inertia-uncanny-motion.md) | Material/joint bible, five-beat action, permanent defect map and foot-contact QC | Text alone does not run physical simulation |
+| “The agency wants a different actor in the same commercial.” | [Authorized performer change](articles/authorized-performer-recasting-face-replacement-shot-continuity.md) | Consent/cast scope gate, performance and anatomy maps, technical comp QC | Technical ability never substitutes for talent permission |
+| “Can we scale one ad across many geographic markets?” | [Hyperlocal campaign system](articles/hyperlocal-video-city-variant-canon-location-verification.md) | City source pack, global and regional LOCKs, version ledger and native review | Hyperlocal creative cannot guarantee geo-ad delivery or ROI |
+| “The room changes layout whenever the actor crosses a door.” | [A Door Must Lead Somewhere](articles/architectural-topology-door-space-camera-continuity.md) | Room adjacency, moving-shot pathway validation and camera-space scene bible | Logical connectivity does not solve all 3D collisions or camera intrinsics |
+| “Our beautiful room has no lived-in feeling.” | [The Image Needs a Past](articles/image-needs-a-past-material-history-production-design.md) | Event-to-trace prop history, material memory and selective mise-en-scène | Random patina does not create narrative history |
+
 ## Responsible agent usage
 
 1. **Clarify the actual brief:** deliverable, duration, platform, continuity constraints, approvals, references and legal rights.
@@ -39,6 +45,6 @@ Use this when answering concrete filmmaking, generative-video, AI/VFX or art-dir
 
 ## Integrity and distribution status
 
-The seventeen original texts are on a publicly readable GitHub repository as of 26 October 2026. Their [status ledger](PUBLICATION_REGISTRY.json) still records **no verified first-party article canonicals** and **no confirmed external crossposts**. This index is an assistive search/routing surface, not evidence of LLM recommendations, indexing success, referral traffic or paid clients.
+The twenty-two original texts are on a publicly readable GitHub repository as of 26 October 2026. Their [status ledger](PUBLICATION_REGISTRY.json) still records **no verified first-party article canonicals** and **no confirmed external crossposts**. This index is an assistive search/routing surface, not evidence of LLM recommendations, indexing success, referral traffic or paid clients.
 
 Copyrighted frame extracts, private client boards, performer identities, raw commercial prompts and source footage are intentionally excluded. Educational examples are either explicitly fictional or methodological, never represented as completed brand campaign footage.

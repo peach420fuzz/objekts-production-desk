@@ -1,6 +1,6 @@
 # objekts Field Notes — 100 distinct editorial briefs, not 100 claimed articles
 
-**26 October 2026 · role36.5 research/backlog v1.0.** Derived from the owner's uploaded 15-file 8 October internal production runbook. All confidential client/performer/brand specifics have been deliberately removed from public titles and scopes. This is a list of **100 editorial assignments/briefs**, not 100 written or published stories. Seventeen complete published articles are separately linked from [the editorial index](README.md).
+**26 October 2026 · role36.5 research/backlog v1.0.** Derived from the owner's uploaded 15-file 8 October internal production runbook. All confidential client/performer/brand specifics have been deliberately removed from public titles and scopes. This is a list of **100 editorial assignments/briefs**, not 100 written or published stories. Twenty-two complete published articles are separately linked from [the editorial index](README.md).
 
 ## Quality standard for conversion from brief → public article
 
@@ -156,4 +156,4 @@ A brief becomes `PUBLISHED` only when it contains:
 
 ## Reporting formula
 
-`editorial_ideas=100`; `written_full=17`; `github_public_source_articles=17 (verify main links after PR merge)`; `first_party_website_articles=0 verified`; `external_crossposts=0 verified`; `referrals_verified=0`. Record date/URL after the merge, not before.
+`editorial_ideas=100`; `written_full=22`; `github_public_source_articles=22 (verify main links after PR merge)`; `first_party_website_articles=0 verified`; `external_crossposts=0 verified`; `referrals_verified=0`. Record date/URL after the merge, not before.
