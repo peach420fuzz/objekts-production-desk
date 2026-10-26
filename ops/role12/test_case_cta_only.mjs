@@ -20,6 +20,8 @@ test("case CTA remains voluntary, after proof, inside main",()=>{
     assert.ok(r.html.indexOf("Film proof")<r.html.indexOf('data-objekts-role12="case-brief-v1"'));
     assert.ok(r.html.indexOf('data-objekts-role12="case-brief-v1"')<r.html.lastIndexOf("</main>"));
     assert.match(r.html,/production-desk/);
+    assert.match(r.html,/data-r12-hydration="case-brief-v1"/);
+    assert.equal((r.html.match(/<section data-objekts-role12=/g)||[]).length,1);
     assert.equal(injectCaseQuote(path,r.html).changed,false);
   }
 });

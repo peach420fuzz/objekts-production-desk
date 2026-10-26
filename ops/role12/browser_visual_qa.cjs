@@ -1,6 +1,6 @@
 const {chromium}=require("playwright-core");
 const fs=require("node:fs");
-const ROOT=process.env.R12_BROWSER_BASE||"https://objekts-r12-case-edge-v1.peach420fuzz.workers.dev";
+const ROOT=process.env.R12_BROWSER_BASE||"https://objekts-r12-cta-hydration-preview.peach420fuzz.workers.dev";
 const SCOPE=ROOT.includes(".workers.dev")?"preview":"production";
 const routes=[
 ["/work/sbercity","OBJ-R12-SBER-2026"],
