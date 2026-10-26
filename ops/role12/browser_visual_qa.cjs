@@ -13,7 +13,7 @@ const routes=[
 (async()=>{
  fs.mkdirSync("out/role12-visual-qa",{recursive:true});
  const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||"/usr/bin/google-chrome",headless:true,args:["--no-sandbox","--disable-dev-shm-usage"]});
- const result={tests:[],issues:[],forms_sent:0,production_changed:false};
+ const result={tests:[],issues:[],diagnostics:[],forms_sent:0,production_changed:false};
  for(const shape of [{name:"mobile",width:390,height:844,isMobile:true,hasTouch:true},{name:"desktop",width:1440,height:900,isMobile:false,hasTouch:false}]){
   const context=await browser.newContext({viewport:{width:shape.width,height:shape.height},isMobile:shape.isMobile,hasTouch:shape.hasTouch,deviceScaleFactor:1});
   const page=await context.newPage();
@@ -84,11 +84,11 @@ const routes=[
     await navPage.waitForTimeout(1500);
     const fromCard=inventory(await navPage.locator('script[type="application/ld+json"]').allTextContents());
     const evidence={shape:shape.name,path:"/en/work/tic-tac",direct,fromCard,route:"catalogue-card",knownIssue:122};
-    result.tests.push({kind:"jsonld-spa-navigation",...evidence});
+    result.diagnostics.push({kind:"jsonld-spa-navigation",...evidence});
     console.log("JSONLD_NAVIGATION "+JSON.stringify(evidence));
    } catch (err) {
     const note={kind:"jsonld-spa-navigation",shape:shape.name,available:false,error:String(err.message||err),knownIssue:122};
-    result.tests.push(note);
+    result.diagnostics.push(note);
     console.log("JSONLD_NAVIGATION_INCONCLUSIVE "+JSON.stringify(note));
    } finally { await navPage.close(); }
   }
