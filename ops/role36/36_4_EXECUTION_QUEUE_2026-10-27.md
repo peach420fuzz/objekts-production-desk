@@ -62,3 +62,8 @@ Prioritize replies from **Russian FLUX.3 user** and **Mac Qwen model user**, sou
 - [Official registry API docs](https://github.com/modelcontextprotocol/registry/blob/main/docs/reference/api/official-registry-api.md) and [ProtocolProbe external discovery record](https://protocolprobe.com/mcp/servers/ai.objekts.mcp/production-desk) were reviewed. ProtocolProbe is **pre-existing independent listing already present in shared ledger**, so not newly counted. Its October 9 handshake fact must not be mistaken for compatibility with all later protocol versions. Registry directory ownership remains 36.1; runtime fix issue #101 remains Product Operations, not 36.4.
 
 **Additional next action:** recheck #1715 on **29 Oct** for maintainer/researcher feedback; only expand version-aware evidence shape if requested. No follow-up promotional comment by default.
+
+
+## Engagement baseline check · 27 Oct (GitHub API)
+
+Fetched first-page reactions for all **eight exact comment IDs** (6 ComfyUI, 1 MCP spec, 1 MCP Registry). Each returned **0 reactions**. Direct issue-comment reread had also found no follow-up reply directed at the first six. This is a **negative observed engagement signal**, not proof of zero human readers or search exposure. No landing-page analytics or attributed brief were accessed. **Strategic response:** prioritize one genuinely resolved question or accepted upstream change over five more similar lightweight comments; third-party community count is already nonzero, conversion proof is not.
