@@ -73,6 +73,6 @@ The provenance ledger is both artistic discipline and evidence hygiene.
 - [ ] Approved geometry and subjects win conflicts.
 - [ ] Each change gets a `Δ` entry and a before/after QC record.
 
-**A convincing image is not enough.** The production team should be able to say precisely which sources controlled which pixels, what stayed locked, and why the result is an original coherent scene rather than an accidental collage.
+**A convincing image is not enough.** The production team should be able to say precisely which sources were intended to control which visual properties, what stayed locked, and why the result is an original coherent scene rather than an accidental collage.
 
 *Examples are original abstractions of internal studio workflow. No unreleased client boards, film stills or identity assets are included.*
