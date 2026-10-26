@@ -1,6 +1,6 @@
 # objekts Field Notes — 100 distinct editorial briefs, not 100 claimed articles
 
-**26 October 2026 · role36.5 research/backlog v1.0.** Derived from the owner's uploaded 15-file 8 October internal production runbook. All confidential client/performer/brand specifics have been deliberately removed from public titles and scopes. This is a list of **100 editorial assignments/briefs**, not 100 written or published stories. Six actual initial articles are separately linked from [the editorial index](README.md).
+**26 October 2026 · role36.5 research/backlog v1.0.** Derived from the owner's uploaded 15-file 8 October internal production runbook. All confidential client/performer/brand specifics have been deliberately removed from public titles and scopes. This is a list of **100 editorial assignments/briefs**, not 100 written or published stories. Eight complete published articles are separately linked from [the editorial index](README.md).
 
 ## Quality standard for conversion from brief → public article
 
@@ -72,7 +72,7 @@ A brief becomes `PUBLISHED` only when it contains:
 
 ## Character, wardrobe, likeness — source: `OBJEKTS_MASTER_SYSTEM_V2_1.md §G4`
 
-41. **Licensed identity sheets before scene generation — anatomy checklist**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
+41. **Licensed identity sheets before scene generation — anatomy checklist [PUBLISHED: identity-invariant method]**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 42. **Face-angle drift at 3/4 and profile — landmark comparison**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 43. **Costume as geometry: seams, weight, folds and inertia — fabric sheet**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 44. **A character stays constant across independent sets — pose/identity matrix**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
