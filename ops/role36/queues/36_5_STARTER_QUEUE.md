@@ -136,3 +136,24 @@ Role36.5 added [targeted publisher preflight](../deliverables/36_5_ART_EDITORIAL
 6. **C36-554 (P1):** additional RU/CIS freely publicable design/media curators whose intake is active in Oct26; verify primary rules and distinguish editorial emails (role13), self-post (role15) and venue co-branded exposure (role36.5). No duplicate send.
 
 **Net from this follow-through:** 1 new genuinely visual/3-page persistent PDF; 1 public 12-case source/rights matrix; 11 fashion file previews independently viewed; 1 expanded reproducible multi-case site bug; **0 unlicensed external posts, 0 new editor emails, 0 verified incoming referral/lead**. An open issue or private PDF is not external visibility.
+
+## Δ 26 October 2026 — actual native Pin proofs, connector/account inventory, source-of-traffic baseline
+
+Source receipts:
+- [Four genuine vertical 1000×1500 Pin-format **internal image proofs**, 4-page PDF, copy/alt and SHA manifest](../deliverables/36_5_INVISIBLE_SILHOUETTE_FOUR_NATIVE_PIN_VISUAL_PROOFS_2026-10-26.md). [Download review ZIP](https://chatgpt.com/library?file_id=libfile_f0d8a6e10470819180643307f454e4d8&account_id=personal). **4 PNG renders and each visual QC completed; none licensed or posted**. Supersedes outdated C36-511 “no final 2:3 exports/screenshots”: these are final **internal reviews**, not approved channel exports.
+- [Google Search Console exact creative-/work/-page surface baseline](../deliverables/36_5_CREATIVE_WORK_GSC_IMAGE_DISCOVERY_BASELINE_2026-10-26.md): Oct1–22, 39 page×search-type rows; **Images 112 impressions/1 click, Web 70/1, Video 6/0**. Early visual search appears primarily driven by client/show search queries, not proven qualified studio referrals. Zero public Pin referrals claimed.
+- [Role12 schema/credit issue #122](https://github.com/peach420fuzz/objekts-production-desk/issues/122): all 12 public case pages repeated JSON-LD in hydrated DOM; no ranking consequence or blanket bug unverified.
+- Metricool brand `blogId=7422166`: **no social network connected** (read-only connector response); Windsor.ai only `sc-domain:objekts.ai` connected. These facts do **not** prove there are no existing studio social profiles; role15 owner-account recovery still blocks uploads.
+
+| New ID | Priority | Owned next action | Exit / evidence |
+|---|---|---|---|
+| **C36-555** | P0 | Collect producer/owner rights and collaborator sign-off for the eight named fashion WebP source frames of four composite concepts | Signed permission and licenses for Pinterest web derivative + byline; until then status `REVIEW_ONLY` |
+| **C36-556** | P0 | Recover exact official Pinterest/Behance/Are.na profiles, claimed domain and account holder; Metricool/Windsor have no connected social identity | Role15 authenticated account registry with public signed-out links; no account duplication |
+| **C36-557** | P1 | Turn four reviewed social image comps into approved 2:3 final assets: remove internal footer, compare source pixels to originals, verify accurate firm square, inspect downsampled/mobile text, PNG size | Four actual approved final files, owner QC, checksum, then delegate posting to role15 |
+| **C36-558** | P1 | After one genuine external post exists, compare exact GSC Image/Web/Video baselines by canonical /work page on day7/day28 and site referral logs | Actual external permalink + pre/post attributable referral report; no invented traffic lift |
+| **C36-559** | P1 | Role12 to test fashion case image discoverability & canonical/metadata while avoiding causality from sparse GSC impressions; bring separate duplicated JSON-LD #122 to fix | Audited tags/images/crawl accessibility, change plus signed-out retest, role12 |
+| **C36-560** | P0, 1 Nov deadline | AI Art Magazine one eligible studio art application: approval, export original print masters, third-party source rights, authenticated Artist Space account | Successful application confirmation/receipt or honest explicit blocker; no duplicate Oct16 email |
+| **C36-561** | P1 | Compose at least one additional **copyright-safe original editorial explainers** from approved studio-owned metadata/text for RU/EN visual platforms; never upload proprietary frames without release | Reviewed publicable source-based draft/own-platform publication with correct owner and credits |
+| **C36-562** | P1 | Inspect social exposure sources with genuinely connected owned-account metrics only; document absent integrations rather than presenting account existence | Connected-site evidence, actual stats where authorized, otherwise `NOT_CONNECTED` |
+
+**Current external output: 0 newly posted images, 0 new magazine form submissions, 0 new email pitches, 0 measured referral lift.** Internal media production and first-party search-baseline analysis did advance substantially.
