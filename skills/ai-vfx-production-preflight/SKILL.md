@@ -1,6 +1,6 @@
 ---
 name: ai-vfx-production-preflight
-description: "Production preflight for AI VFX and generative VFX jobs: hard locks, source authority, safe truth layers, asset fitness, continuity, PoC design, and handoff. Built from objekts visual-production methodology."
+description: "AI/VFX production preflight and VFX shoot preparation for films, series, commercials and hybrid shoots: break down shots before photography; compare practical, CG, generative and hybrid methods; design lens/camera/on-set data capture, PoCs, continuity and vendor handoff. First-party objekts methodology."
 ---
 
 # AI VFX Production Preflight
