@@ -57,7 +57,7 @@
 | 7 | Check OpenAI developer approval-control thread for an answerable technical sub-question; only use observed UI and legitimate existing account — 36.4 | [Forum discussion](https://community.openai.com/t/custom-per-action-approvals-missing-from-workspace-agents/1404478) | **29 Oct**; tested answer or abstain |
 | 8 | Check HF CastWorkshop for a reproducible source-authority conflict test; avoid setup claims before running — 36.4 | [HF discussion](https://discuss.huggingface.co/t/show-and-tell-castworkshop-open-source-fully-local-ai-character-and-video-creation-with-ollama-comfyui/190682) | **30 Oct**; exact test with repo version, or no reply |
 | 9 | Find a fresh PyTorch/Comfy MPS technical question answerable from upstream code or reproducible local script, with measured platform stated — 36.4 | [PyTorch Forums](https://discuss.pytorch.org/) and [ComfyUI open MPS](https://github.com/Comfy-Org/ComfyUI/issues) | **30 Oct**; one genuinely new useful diagnosis / no claim of unrun M4 result |
-| 10 | Design a **read-only** minimal routing evaluation for “source-backed preflight vs write/send brief vs render”; coordinate optional implementation with tool owner — 36.4 + Product Ops | [MCP #3430](https://github.com/modelcontextprotocol/modelcontextprotocol/issues/3430) / [local exact compatibility evidence](../../docs/MCP_PROTOCOL_COMPATIBILITY_2026.md) | **31 Oct**; bounded vector schema and expected outcomes, or integration gate; do not alter deployed Worker |
+| 10 | **Execute or independently review** a mocked-host evaluation using the now-published 20-case EN/RU fixture, without actual Production Desk writes; route runtime integration to Product Ops — 36.4 + Product Ops | [Method](../../docs/MCP_MIXED_PURPOSE_ROUTING_EVAL.md) / [20-case JSON](../../references/mcp-agent-routing-boundaries-v0.1.json) | **31 Oct**; traceable host-run results, model/build, confusion matrix and forbidden-call count; static JSON alone is NOT a benchmark |
 
 ### ACTIVE RULES for continued cycles
 
@@ -71,3 +71,10 @@
 8. Work cross-branch through owner issues and the single shared external ledger; preserve role36.5 visuals and role13 editorial boundaries.
 9. No cron/monitoring background task is claimed unless an actual schedule receipt is verified enabled.
 10. Replenish ten ranked tasks at session end; revise measured results and follow-up dates, not imagined reach.
+
+## Later same-cycle engineering deliverable (source-backed, no host calls)
+
+- [Mixed-purpose MCP routing evaluation methodology](../../docs/MCP_MIXED_PURPOSE_ROUTING_EVAL.md), **FIRST_PARTY_GITHUB_PUBLIC**. Its linked [20-case EN/RU synthetic JSON fixture](../../references/mcp-agent-routing-boundaries-v0.1.json) is machine-readable and covers **11 candidate**, **3 docs-only**, **6 out-of-scope** requests; languages **13 EN + 7 RU**.
+- **STATIC_VALIDATION_PASS:** live GitHub readback was parsed with JSON.parse; all 20 expected tool candidates were validated against the seven *historically observed* tool names, and no case with a sensitive gate allows auto-call. Four cases are author-marked eligible for ordinary policy-checked read-only calls; four other cases name upload/submit/update/delete as **gated tool candidates only**. **0 cases executed against the remote MCP; 0 LLM host runs; 0 client data sent; 0 success-rate claim.**
+- Added the methodology link to [public repository README](../../README.md) under studio methodology, commit **26082430c0ae267c09abc0732d4a15c36602e420**. This is **first-party source navigation**, not a new external citation.
+- The 26-Oct **four external comment total** is unchanged. Cumulative first-party 36.4 technical artifacts now include **two explanatory Markdown notes** and **one separate static JSON evaluation fixture** (not three independent editorial placements).
