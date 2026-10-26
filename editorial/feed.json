@@ -1,0 +1,172 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "objekts Field Notes — Visual Production Methods",
+  "home_page_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
+  "feed_url": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json",
+  "description": "Original AI/VFX, cinematography, art direction and visual production research by objekts. Public source texts in English and Russian. GitHub source pages are temporary; verified first-party canonicals have not yet been deployed.",
+  "authors": [
+    {
+      "name": "objekts",
+      "url": "https://objekts.ai"
+    }
+  ],
+  "language": "en",
+  "items": [
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/immutable-art-direction-lock-minimal-delta-ledger.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/immutable-art-direction-lock-minimal-delta-ledger.md",
+      "title": "A Prompt Revision Is a Change Request",
+      "content_text": "Treat visual revisions as controlled changes to a scene specification. The note gives a LOCK hierarchy, a minimal-delta ledger, a simplified preflight checker and four reported logic scenarios; it does not claim the checker proves generated-image fidelity.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/immutable-art-direction-lock-minimal-delta-ledger.md",
+      "summary": "Treat visual revisions as controlled changes to a scene specification. The note gives a LOCK hierarchy, a minimal-delta ledger, a simplified preflight checker and four reported logic scenarios; it does not claim the checker proves generated-image fidelity.",
+      "language": "en",
+      "tags": [
+        "immutable-art-direction-locks",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/film-reference-contact-sheet-research-method.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/film-reference-contact-sheet-research-method.md",
+      "title": "Twenty Frames, Five Roles",
+      "content_text": "A contact sheet is a research instrument, not a gallery of moods. The note proposes twenty frames assigned five analytical roles, with source attribution, shot grammar, optical/lighting observations, reference limitations and a reproducible review path.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/film-reference-contact-sheet-research-method.md",
+      "summary": "A contact sheet is a research instrument, not a gallery of moods. The note proposes twenty frames assigned five analytical roles, with source attribution, shot grammar, optical/lighting observations, reference limitations and a reproducible review path.",
+      "language": "en",
+      "tags": [
+        "reference-contact-sheets",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/generative-media-rights-provenance-publication-gate.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/generative-media-rights-provenance-publication-gate.md",
+      "title": "A Frame Is Not Publishable Just Because You Generated It",
+      "content_text": "Generation is not a publication license. The guide builds a rights/consent/provenance ledger, distinguishes client permission from visual quality, explains C2PA's limits and defines explicit stop conditions before external distribution.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/generative-media-rights-provenance-publication-gate.md",
+      "summary": "Generation is not a publication license. The guide builds a rights/consent/provenance ledger, distinguishes client permission from visual quality, explains C2PA's limits and defines explicit stop conditions before external distribution.",
+      "language": "en",
+      "tags": [
+        "rights-provenance-publication",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/camera-perspective-spatial-consistency-generative-video.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/camera-perspective-spatial-consistency-generative-video.md",
+      "title": "The Camera Cannot Teleport",
+      "content_text": "A lens can change framing, but it cannot erase the position of a camera in space. The guide covers field of view, perspective, room topology, parallax and camera-move continuity; its numeric exercise is fictional and does not claim a production camera test.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/camera-perspective-spatial-consistency-generative-video.md",
+      "summary": "A lens can change framing, but it cannot erase the position of a camera in space. The guide covers field of view, perspective, room topology, parallax and camera-move continuity; its numeric exercise is fictional and does not claim a production camera test.",
+      "language": "en",
+      "tags": [
+        "camera-spatial-continuity",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/identity-continuity-generative-stylization.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/identity-continuity-generative-stylization.md",
+      "title": "Keep the Person Change the World",
+      "content_text": "Changing wardrobe, era or environment must not silently mutate the person being depicted. The note separates identity-defining invariants from permissible transformations, discusses camera and skin continuity, and proposes full-sequence rather than hero-frame QC.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/identity-continuity-generative-stylization.md",
+      "summary": "Changing wardrobe, era or environment must not silently mutate the person being depicted. The note separates identity-defining invariants from permissible transformations, discusses camera and skin continuity, and proposes full-sequence rather than hero-frame QC.",
+      "language": "en",
+      "tags": [
+        "identity-continuity-stylization",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/the-frame-needs-a-reason-authorial-image-making.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/the-frame-needs-a-reason-authorial-image-making.md",
+      "title": "The Frame Needs a Reason",
+      "content_text": "An authorial argument for images that mean something beyond visual polish. Space, materials, weather, light and framing should make a scene's intention legible; the essay distinguishes artistic necessity from attractive but interchangeable generative surfaces.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/the-frame-needs-a-reason-authorial-image-making.md",
+      "summary": "An authorial argument for images that mean something beyond visual polish. Space, materials, weather, light and framing should make a scene's intention legible; the essay distinguishes artistic necessity from attractive but interchangeable generative surfaces.",
+      "language": "en",
+      "tags": [
+        "authored-image-art-direction",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-statuses-technical-success-vs-approval_ru.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-statuses-technical-success-vs-approval_ru.md",
+      "title": "Completed ещё не Approved",
+      "content_text": "Русскоязычная схема производственных статусов: завершение API-задания не означает художественную приёмку, пригодность к публикации или согласование клиентом. Вводятся отдельные состояния technical success, QC, approval и permission to release.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-statuses-technical-success-vs-approval_ru.md",
+      "summary": "Русскоязычная схема производственных статусов: завершение API-задания не означает художественную приёмку, пригодность к публикации или согласование клиентом. Вводятся отдельные состояния technical success, QC, approval и permission to release.",
+      "language": "ru",
+      "tags": [
+        "production-job-qc-states",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/storyboard-frame-accurate-generative-edit_ru.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/storyboard-frame-accurate-generative-edit_ru.md",
+      "title": "Бордоматик против генеративного видео",
+      "content_text": "Русскоязычный разбор: почему бордоматик с фиксированной длиной планов и монтажной функцией надёжнее списка привлекательных генеративных кадров. Размечаются переходы, темп, длительности, драматургический payoff и проверка недостающих звеньев.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/storyboard-frame-accurate-generative-edit_ru.md",
+      "summary": "Русскоязычный разбор: почему бордоматик с фиксированной длиной планов и монтажной функцией надёжнее списка привлекательных генеративных кадров. Размечаются переходы, темп, длительности, драматургический payoff и проверка недостающих звеньев.",
+      "language": "ru",
+      "tags": [
+        "shot-frame-accurate-editing",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/world-master-scene-continuity.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/world-master-scene-continuity.md",
+      "title": "One Location, Many Shots",
+      "content_text": "A generated location needs a reusable world master, not twelve separately imagined rooms. The note maps object placement, architectural dimensions, light sources, camera paths, and cut-to-cut continuity checks into a traceable scene-state specification.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/world-master-scene-continuity.md",
+      "summary": "A generated location needs a reusable world master, not twelve separately imagined rooms. The note maps object placement, architectural dimensions, light sources, camera paths, and cut-to-cut continuity checks into a traceable scene-state specification.",
+      "language": "en",
+      "tags": [
+        "world-master-continuity",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/reference-provenance-role-based-image-control.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/reference-provenance-role-based-image-control.md",
+      "title": "Reference Provenance",
+      "content_text": "Not all reference images have the same authority. Learn how to classify role-specific references for identity, wardrobe, architecture, camera, lighting or texture, and to document which attributes are transferable versus locked to another source or rights-holder.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/reference-provenance-role-based-image-control.md",
+      "summary": "Not all reference images have the same authority. Learn how to classify role-specific references for identity, wardrobe, architecture, camera, lighting or texture, and to document which attributes are transferable versus locked to another source or rights-holder.",
+      "language": "en",
+      "tags": [
+        "reference-role-control",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/physical-causality-generative-video.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/physical-causality-generative-video.md",
+      "title": "Stop Prompting Make It Move",
+      "content_text": "Motion must be designed as a causal sequence: anticipation, force, contact, material response and settling. The note introduces an action ledger and temporal QC questions for short generated shots that would otherwise contain plausible-looking but physically unmotivated movement.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/physical-causality-generative-video.md",
+      "summary": "Motion must be designed as a causal sequence: anticipation, force, contact, material response and settling. The note introduces an action ledger and temporal QC questions for short generated shots that would otherwise contain plausible-looking but physically unmotivated movement.",
+      "language": "en",
+      "tags": [
+        "motion-physical-causality",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/canvas-reference-graph-input-audit.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/canvas-reference-graph-input-audit.md",
+      "title": "A Canvas Arrow Is Not a Model Input",
+      "content_text": "A diagram arrow can describe a reference relationship without proving that a particular model or generator received the image bytes. The note explains typed reference roles, input-contract checks, run receipts and the difference between a user interface state and an executed model call.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/canvas-reference-graph-input-audit.md",
+      "summary": "A diagram arrow can describe a reference relationship without proving that a particular model or generator received the image bytes. The note explains typed reference roles, input-contract checks, run receipts and the difference between a user interface state and an executed model call.",
+      "language": "en",
+      "tags": [
+        "ai-canvas-reference-graphs",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    }
+  ]
+}
