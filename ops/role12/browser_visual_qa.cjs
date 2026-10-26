@@ -19,7 +19,19 @@ const routes=[
    const response=await page.goto(ROOT+path,{waitUntil:"domcontentloaded",timeout:25000});
    if(response.status()!==200)throw Error("HTTP "+response.status()+" "+path);
    const section=page.locator('[data-objekts-role12="case-brief-v1"]');
-   await section.waitFor({state:"visible",timeout:12000});
+   // The edge inserts server HTML, but the Next.js client can remove it during hydration.
+   // Do not accept a pre-hydration flash as a real buyer-visible CTA.
+   try { await page.waitForLoadState("load",{timeout:15000}); } catch (_) {}
+   await page.waitForTimeout(1500);
+   if (await section.count() !== 1 || !(await section.isVisible())) {
+     const reason="post-hydration-cta-missing";
+     const outFile="out/role12-visual-qa/"+SCOPE+"_"+shape.name+path.replace(/[^a-z0-9]/gi,"_")+".png";
+     await page.screenshot({path:outFile,fullPage:true,animations:"disabled",timeout:15000});
+     result.tests.push({shape:shape.name,path,issues:[reason],afterHydration:true,image:outFile});
+     result.issues.push({shape:shape.name,path,issues:[reason]});
+     console.log("VISUAL_AUDIT "+JSON.stringify({shape:shape.name,path,issues:[reason]}));
+     continue;
+   }
    const data=await page.evaluate(marker=>{
     const s=document.querySelector("[data-objekts-role12]"),r=s.getBoundingClientRect();
     const links=[...s.querySelectorAll("a")].map(a=>{const t=a.getBoundingClientRect();return {href:a.getAttribute("href"),text:a.textContent.trim(),w:t.width,h:t.height,x:t.x,y:t.y}});
