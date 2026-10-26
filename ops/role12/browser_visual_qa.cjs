@@ -68,6 +68,30 @@ const routes=[
    if(issues.length)result.issues.push({shape:shape.name,path,issues});
    console.log("VISUAL_AUDIT "+JSON.stringify({shape:shape.name,path,issues,jsonLd:{ssr:ldSsr,hydrated:ldDom},links:data.links.map(x=>({text:x.text,w:x.w,h:x.h}))}));
   }
+  // Known issue #122: JSON-LD is duplicated after catalogue SPA navigation,
+  // not necessarily on a direct hard load. Observe both states without changing site.
+  if (SCOPE==="production") {
+   const navPage=await context.newPage();
+   try {
+    await navPage.goto("https://objekts.ai/en/work/tic-tac",{waitUntil:"domcontentloaded",timeout:25000});
+    await navPage.waitForLoadState("load",{timeout:15000}).catch(()=>{});
+    await navPage.waitForTimeout(1500);
+    const direct=inventory(await navPage.locator('script[type="application/ld+json"]').allTextContents());
+    await navPage.goto("https://objekts.ai/en/work",{waitUntil:"domcontentloaded",timeout:25000});
+    const card=navPage.locator('a[href$="/work/tic-tac"]').first();
+    await card.click({timeout:20000});
+    await navPage.waitForURL(/\/work\/tic-tac(?:[?#]|$)/,{timeout:20000});
+    await navPage.waitForTimeout(1500);
+    const fromCard=inventory(await navPage.locator('script[type="application/ld+json"]').allTextContents());
+    const evidence={shape:shape.name,path:"/en/work/tic-tac",direct,fromCard,route:"catalogue-card",knownIssue:122};
+    result.tests.push({kind:"jsonld-spa-navigation",...evidence});
+    console.log("JSONLD_NAVIGATION "+JSON.stringify(evidence));
+   } catch (err) {
+    const note={kind:"jsonld-spa-navigation",shape:shape.name,available:false,error:String(err.message||err),knownIssue:122};
+    result.tests.push(note);
+    console.log("JSONLD_NAVIGATION_INCONCLUSIVE "+JSON.stringify(note));
+   } finally { await navPage.close(); }
+  }
   await context.close();
  }
  await browser.close();
