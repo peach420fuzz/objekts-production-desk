@@ -1,6 +1,8 @@
 # Three platform-native, ready-to-edit adaptations — objekts Field Notes
 
-**26 Oct 2026.** These are original platform-specific short pieces, **not published posts**. Publication is assigned to roles13/15 using real approved studio accounts; role12 owns the final first-party article canonicals. If native platform permits canonical, set it to actual live on-domain article, never an invented future slug. If not yet deployed, link the public GitHub source and do not claim own-domain canon. Do not attach client faces, campaign images, private Canvas screenshots or producer drafts.
+**26 Oct 2026.** These are original platform-specific short pieces, **not published posts**. **POLICY HOLD 26 Oct:** The DEV draft contains studio promotion and a direct brand link; this conflicts with DEV's [AI-assisted guideline](https://dev.to/guidelines-for-ai-assisted-articles-on-dev/) prohibiting AI-assisted business promotion and backlink SEO. Do not submit that draft unchanged. Medium requires [upfront AI-generated writing disclosure](https://help.medium.com/hc/en-us/articles/22576852947223-Artificial-Intelligence-AI-content-policy), substantive human editorial review and no paywall for mostly generated writing. See [mandatory publication gates](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md). These drafts have not undergone owner/human technical signoff.
+
+Publication is assigned to roles13/15 using real approved studio accounts; role12 owns the final first-party article canonicals. If native platform permits canonical, set it to actual live on-domain article, never an invented future slug. If not yet deployed, link the public GitHub source and do not claim own-domain canon. Do not attach client faces, campaign images, private Canvas screenshots or producer drafts.
 
 ## A. DEV Community — technical note
 
@@ -79,8 +81,8 @@ The longer essay, with an applied art-direction self-test: [The Frame Needs a Re
 
 | Slot | Role | Account verified | Submitted | Live URL | First-party canonical | Next check |
 |---|---|---|---|---|---|---|
-| DEV | 13 + 15 | NO | NO | none | pending role12 | Verify studio identity and current DEV rules |
-| Medium | 13 + 15 | NO | NO | none | pending role12 | Authenticate, import via legitimate workflow |
+| DEV | 13 + 15 | NO | NO | none | pending role12 | HOLD: rewrite as noncommercial community education with transparent AI disclosure and human factcheck |
+| Medium | 13 + 15 | NO | NO | none | pending role12 | HOLD: upfront AI disclosure, human rewrite, platform auth; no paywall |
 | RU design/production | 13 + 15 | NO | NO | none | pending role12 | Choose editorial fit and real company identity |
 
 Only change the row after verifying evidence. [Role12 on-domain deploy #126](https://github.com/peach420fuzz/objekts-production-desk/issues/126). [Role13/15 external dispatch #128](https://github.com/peach420fuzz/objekts-production-desk/issues/128).

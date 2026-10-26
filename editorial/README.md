@@ -1,6 +1,6 @@
 # objekts Field Notes — Original Visual Production Knowledge
 
-Practical directing, AI/VFX, reference-engineering and generative-video production notes authored by **objekts**. The aim is to help filmmakers, artists, production engineers and software agents make stronger, more coherent moving images—not to manufacture search traffic through spun content.
+Practical directing, AI/VFX, reference-engineering and generative-video production notes published by **objekts**. The aim is to help filmmakers, artists, production engineers and software agents make stronger, more coherent moving images—not to manufacture search traffic through spun content.
 
 **[objekts.ai](https://objekts.ai) · [Creative work](https://objekts.ai/en/work/) · [AI/VFX production](https://objekts.ai/en/services/ai-vfx/) · [Contact](https://objekts.ai/en/contact/)**
 
@@ -31,7 +31,9 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 | 21 | [A Door Must Lead Somewhere](articles/architectural-topology-door-space-camera-continuity.md) | Room-graph topology, continuous camera routes and a tested toy checker | EN |
 | 22 | [The Image Needs a Past](articles/image-needs-a-past-material-history-production-design.md) | Authorial material history, scars/wear and causal production design | EN |
 
-**These twenty-two are authored full articles.** The [100 original article briefs](100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md) form the future editorial backlog and **do not count as published articles**. Articles are original studio methodology with self-contained, illustrative examples; they do not contain raw production client data, client likeness, proprietary boards or submitted generative assets.
+**These twenty-two are complete AI-assisted studio field notes, not human-only authored or independently peer-reviewed articles.** Research and drafts were prepared with AI assistance from the studio's brief and reviewed against selected public references; they require qualified human editorial and technical signoff before external syndication. Worked examples are illustrative unless an execution receipt is included. See the [editorial integrity and platform policy](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md).
+
+**These twenty-two are full articles.** The [100 original article briefs](100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md) form the future editorial backlog and **do not count as published articles**. Articles are original studio methodology with self-contained, illustrative examples; they do not contain raw production client data, client likeness, proprietary boards or submitted generative assets.
 
 ## Evidentiary standards
 
@@ -56,10 +58,13 @@ Each article has **a named failure mode, source hierarchy, testable method and Q
 
 ## Distribution
 
-[Three complete platform-native adaptation drafts: DEV, Medium and RU design/production](PLATFORM_NATIVE_POSTS_01_2026-10-26.md) are ready for a real authorized account and verified canonical. These are editable publication copy, **not live external posts**.
+[Three platform-native adaptation drafts (external use now POLICY-HOLD pending substantive human review)](PLATFORM_NATIVE_POSTS_01_2026-10-26.md) are ready for a real authorized account and verified canonical. These are editable publication copy, **not live external posts**.
 
 
 [Machine-readable publication registry](PUBLICATION_REGISTRY.json) lists every full article, exact live GitHub source, current absent own-domain canonical, external post URLs (currently empty), rights status and downstream owner roles. Other agents must verify a new permalink before changing any pending status.
 
 
 This public GitHub folder is the first accessible source for the notes. The corresponding canonical pages on `objekts.ai` are **not deployed** by this role. [Selective cross-posting playbook](PLATFORM_PUBLICATION_AND_CANONICAL_ROUTING_2026-10-26.md) keeps roles and URLs clear: role12 handles own-site publishing, role13 external editorial, role15 authenticated creative profiles. No claims of distribution until signed-out live URLs are verified.
+
+
+**Policy correction, 26 Oct:** DEV's [official AI guidelines](https://dev.to/guidelines-for-ai-assisted-articles-on-dev/) prohibit promotional AI-assisted posts. Do not submit the earlier DEV brand-linked draft as written. Medium's [AI-content policy](https://help.medium.com/hc/en-us/articles/22576852947223-Artificial-Intelligence-AI-content-policy) requires disclosure in the first two paragraphs and additional editorial oversight. External drafts are not an approved publication queue until these gates are met.
