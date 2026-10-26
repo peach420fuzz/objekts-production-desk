@@ -52,3 +52,13 @@
 ### Next operative switch
 
 Prioritize replies from **Russian FLUX.3 user** and **Mac Qwen model user**, source-based follow-up to #17326 metadata gap, and an independently publishable third-community technical conversation. Do **not** inflate post count by responding to every ComfyUI issue. DiraBook/Clawprint existing author identity remains unverified for writes; external forum login cannot be assumed. Proof metric remains 0 owner-confirmed fixes and 0 paid production inquiries.
+
+
+## 27 Oct after MCP Registry source scan
+
+- Identified current [Registry #1715](https://github.com/modelcontextprotocol/registry/issues/1715) (18 Oct issue, 15 prior comments) where researchers published October 2026 per-entry package/repository/endpoint liveness data. Their discussion distinguishes validation tiers and endpoint states, but not explicit **requested protocol version** dimension. Reviewed all existing comments to deduplicate the proposed field before posting.
+- **Published** [#1715 comment 6429761043](https://github.com/modelcontextprotocol/registry/issues/1715#issuecomment-6429761043). One previously executed, source-linked **17-Oct** Production Desk protocol matrix supports the point. Suggested version/method/SDK/status fields, no auto-takedown. GitHub API response + full thread readback verified ID and exact text. **No registry proposal accepted or amended by maintainers yet**.
+- **Updated public-count boundary:** 8 external technical issue comments over ComfyUI core (6), MCP specification (1), MCP official Registry (1), **three repositories / two organizations / one GitHub domain**. No external user acknowledgments, paid referrals or attributable leads as of immediate readback. This cycle did not independently test live production MCP again.
+- [Official registry API docs](https://github.com/modelcontextprotocol/registry/blob/main/docs/reference/api/official-registry-api.md) and [ProtocolProbe external discovery record](https://protocolprobe.com/mcp/servers/ai.objekts.mcp/production-desk) were reviewed. ProtocolProbe is **pre-existing independent listing already present in shared ledger**, so not newly counted. Its October 9 handshake fact must not be mistaken for compatibility with all later protocol versions. Registry directory ownership remains 36.1; runtime fix issue #101 remains Product Operations, not 36.4.
+
+**Additional next action:** recheck #1715 on **29 Oct** for maintainer/researcher feedback; only expand version-aware evidence shape if requested. No follow-up promotional comment by default.
