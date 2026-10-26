@@ -10,6 +10,12 @@
 
 It packages objekts production methodology for AI agents: a read-only production preflight engine for reference authority, hard locks, truth-layer safety, asset fitness, continuity, versioning, change impact, readiness and PoC selection; AI-native production planning; optional directional budget/timeline estimates; production-brief preparation; and an explicit human-review handoff. Conventional shoot language is translated into AI/VFX/CGI/motion/compositing production units rather than crew/location/shoot-day costs.
 
+## Public objekts Field Notes — production knowledge for artists and agents
+
+Seven original, **public and directly linkable** studio articles explain real failure modes in AI-first visual production: [reference-input graphs](editorial/articles/canvas-reference-graph-input-audit.md), [physical causality](editorial/articles/physical-causality-generative-video.md), [reference provenance](editorial/articles/reference-provenance-role-based-image-control.md), [scene-world continuity](editorial/articles/world-master-scene-continuity.md), [frame-accurate storyboard planning (RU)](editorial/articles/storyboard-frame-accurate-generative-edit_ru.md), [technical completion versus approval (RU)](editorial/articles/production-statuses-technical-success-vs-approval_ru.md), and an [authorial essay about directing images](editorial/articles/the-frame-needs-a-reason-authorial-image-making.md).
+
+**[Read the full Field Notes index](editorial/README.md) · [100 distinct future editorial briefs](editorial/100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md)**. The briefs are not claimed publications; notes are first-party studio methodology, not third-party endorsements, model performance benchmarks or a guarantee that a specific client production was delivered. For actual production work, validate current tools, rights and feasibility. [Studio portfolio](https://objekts.ai/en/work/).
+
 ## Кратко для русскоязычных MCP-каталогов и AI-продюсеров
 
 **objekts Production Desk** — удалённый MCP-инструмент студии [objekts](https://objekts.ai/) для подготовки AI/VFX, CGI и motion-проектов: проверка референсов, обязательных визуальных ограничений (LOCK), continuity, готовности материалов и ключевого PoC. Расчёт ориентировочного бюджета и передача брифа на **ручное рассмотрение студией** возможны только по отдельному запросу и с подтверждением. Сервер не генерирует видео или изображения и не является автономным агентством.
