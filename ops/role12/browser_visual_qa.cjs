@@ -18,11 +18,12 @@ const routes=[
   for(const [path,marker]of routes){
    const response=await page.goto(ROOT+path,{waitUntil:"domcontentloaded",timeout:25000});
    if(response.status()!==200)throw Error("HTTP "+response.status()+" "+path);
+   const robotsHeader=response.headers()["x-robots-tag"]||"";
    const section=page.locator('[data-objekts-role12="case-brief-v1"]');
    // The edge inserts server HTML, but the Next.js client can remove it during hydration.
    // Do not accept a pre-hydration flash as a real buyer-visible CTA.
    try { await page.waitForLoadState("load",{timeout:15000}); } catch (_) {}
-   await page.waitForTimeout(1500);
+   await page.waitForTimeout(2500);
    if (await section.count() !== 1 || !(await section.isVisible())) {
      const reason="post-hydration-cta-missing";
      const outFile="out/role12-visual-qa/"+SCOPE+"_"+shape.name+path.replace(/[^a-z0-9]/gi,"_")+".png";
@@ -37,9 +38,13 @@ const routes=[
     const links=[...s.querySelectorAll("a")].map(a=>{const t=a.getBoundingClientRect();return {href:a.getAttribute("href"),text:a.textContent.trim(),w:t.width,h:t.height,x:t.x,y:t.y}});
     return {viewportW:innerWidth,documentW:document.documentElement.scrollWidth,sectionX:r.x,sectionW:r.width,sectionH:r.height,links,
      withinMain:document.querySelector("main").contains(s),hasMarketsScript:!!document.querySelector('script[src="/__markets/client-v27.mjs"]'),
-     hasMarker:links.some(a=>decodeURIComponent(a.href).includes(marker)),canonical:document.querySelector('link[rel="canonical"]')?.href};
+     hasMarker:links.some(a=>decodeURIComponent(a.href).includes(marker)),canonical:document.querySelector('link[rel="canonical"]')?.href,
+     robotsMeta:document.querySelector('meta[name="robots"]')?.content||""};
    },marker);
    const issues=[];
+   if(data.canonical!=="https://objekts.ai"+path)issues.push("unexpected-canonical");
+   if(SCOPE==="preview"&&!/noindex/i.test(robotsHeader))issues.push("preview-must-be-noindex");
+   if(SCOPE==="production"&&/noindex/i.test(robotsHeader+" "+data.robotsMeta))issues.push("production-accidentally-noindex");
    if(!data.withinMain)issues.push("outside-main");
    if(!data.hasMarketsScript)issues.push("lost-markets-nav");
    if(!data.hasMarker)issues.push("missing-opt-in-tag");
