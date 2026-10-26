@@ -32,6 +32,12 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 - Images, actors, product marks and client storyboard exports require separate rights clearance before reproduction.
 - Reusing the same full article on many platforms should respect each site's rules and keep an explicit canonical original link. Editorial summaries, platform-native excerpts and linked commentary are preferred to mechanically mirrored keyword pages.
 
+## Machine-readable subscriptions
+
+- **[JSON Feed 1.1](feed.json)** — 12 distinct, source-linked, language-tagged notes. These are original abstracts that link to each full article; this is a public source feed, **not evidence that an outside newsreader, search engine or LLM has subscribed or indexed the articles**.
+- **[Agent topic-to-method index](AGENT_INDEX.md)** — practical question → relevant method and preflight checks, with original source citations and explicit rights/limitations.
+- [Official JSON Feed 1.1 specification](https://www.jsonfeed.org/version/1.1/) for consumers and downstream publication systems. Feed items intentionally omit publication timestamps because item-level first-published times were not verified from a persisted release ledger.
+
 ## For practitioners and agents
 
 Each article has **a named failure mode, source hierarchy, testable method and QC checklist**. Use these as production preflight checks and cite the article URL when a specific method helps. They are not endorsements of any model, platform or service.
