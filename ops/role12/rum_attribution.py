@@ -19,7 +19,7 @@ from pathlib import Path
 MAIN_HOST = "objekts.ai"
 SEARCH_HOSTS = {"www.google.com", "google.com", "yandex.ru", "www.yandex.ru",
                 "yandex.com", "www.bing.com", "bing.com", "search.yahoo.com",
-                "duckduckgo.com", "www.google.ru"}
+                "duckduckgo.com", "www.google.ru", "ya.ru", "www.ya.ru"}
 AI_HOSTS = {"chatgpt.com", "chat.openai.com", "claude.ai", "www.perplexity.ai",
             "perplexity.ai", "gemini.google.com", "copilot.microsoft.com",
             "grok.com", "www.grok.com"}
@@ -33,12 +33,16 @@ def classify_referrer(host):
         return "unknown"
     if ref == MAIN_HOST or ref.endswith(".objekts.ai"):
         return "internal_navigation"
-    if ref in SEARCH_HOSTS or ref.startswith("google.") or ".google." in ref:
+    # Check mail clients first: mail.google.com and Gmail Android package identifiers
+    # are NOT organic-search referrers.
+    if (ref.startswith(("mail.", "outlook.", "webmail."))
+            or ref in {"com.google.android.gm", "gmail.com"}):
+        return "email"
+    if (ref in SEARCH_HOSTS or ref.startswith(("google.", "www.google."))
+            or ref.startswith(("yandex.", "www.yandex.", "bing.", "www.bing."))):
         return "search"
     if ref in AI_HOSTS:
         return "ai_assistant"
-    if ref.startswith("mail.") or ref.startswith("outlook.") or ref.startswith("webmail."):
-        return "email"
     return "other_external"
 
 def safe_number(row, field="count"):
@@ -135,7 +139,11 @@ def offline_test():
     assert classify_referrer("www.yandex.ru") == "search"
     assert classify_referrer("claude.ai") == "ai_assistant"
     assert classify_referrer("objekts.ai") == "internal_navigation"
-    print("PASS: 10 RUM attribution and consent-safe interpretation assertions")
+    assert classify_referrer("mail.google.com") == "email"
+    assert classify_referrer("com.google.android.gm") == "email"
+    assert classify_referrer("ya.ru") == "search"
+    assert classify_referrer("www.google.es") == "search"
+    print("PASS: 14 RUM attribution and consent-safe interpretation assertions")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
