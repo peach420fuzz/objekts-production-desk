@@ -4,7 +4,7 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 
 **[objekts.ai](https://objekts.ai) · [Creative work](https://objekts.ai/en/work/) · [AI/VFX production](https://objekts.ai/en/services/ai-vfx/) · [Contact](https://objekts.ai/en/contact/)**
 
-## Start here: twelve complete field notes
+## Start here: seventeen complete field notes
 
 | # | Article | Core practical result | Language |
 |---|---|---|---|
@@ -20,8 +20,13 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 | 10 | [A Frame Is Not Publishable Just Because You Generated It](articles/generative-media-rights-provenance-publication-gate.md) | Rights/consent ledger, C2PA limits and publication gates | EN |
 | 11 | [Twenty Frames, Five Roles](articles/film-reference-contact-sheet-research-method.md) | Contact-sheet research, reference role map and source QC | EN |
 | 12 | [A Prompt Revision Is a Change Request](articles/immutable-art-direction-lock-minimal-delta-ledger.md) | Immutable LOCK ledger and four tested preflight scenarios | EN |
+| 13 | [The VFX Shot Is Won Before the Camera Rolls](articles/vfx-shot-preproduction-on-set-capture-decision-matrix.md) | Practical/CG/generative layer contract, capture checklist and pre-shoot risk matrix | EN |
+| 14 | [Товар в кадре — не декоративный предмет](articles/product-package-lock-ai-cg-compositing_ru.md) | Product geometry, branding, materials and hybrid CG compositing LOCKs | RU |
+| 15 | [Color Continuity Is a Contract, Not a LUT](articles/color-continuity-scene-lighting-ocio-aces-compositing.md) | Motivated light, ACES/OCIO, alpha semantics and shot-to-shot grade QC | EN |
+| 16 | [The Garment Has a Body](articles/fashion-catalog-garment-body-multiview-continuity.md) | Approved garment/fit/model distinction and four-view fashion catalogue QC | EN |
+| 17 | [A Cut Is Not a Timestamp](articles/generative-video-temporal-pts-frame-accurate-qc.md) | Rational PTS, frame/event maps, conform and causal edit gates | EN |
 
-**These twelve are authored full articles.** The [100 original article briefs](100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md) form the future editorial backlog and **do not count as published articles**. Articles are original studio methodology with self-contained, illustrative examples; they do not contain raw production client data, client likeness, proprietary boards or submitted generative assets.
+**These seventeen are authored full articles.** The [100 original article briefs](100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md) form the future editorial backlog and **do not count as published articles**. Articles are original studio methodology with self-contained, illustrative examples; they do not contain raw production client data, client likeness, proprietary boards or submitted generative assets.
 
 ## Evidentiary standards
 
@@ -34,7 +39,7 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 
 ## Machine-readable subscriptions
 
-- **[JSON Feed 1.1](feed.json)** — 12 distinct, source-linked, language-tagged notes. These are original abstracts that link to each full article; this is a public source feed, **not evidence that an outside newsreader, search engine or LLM has subscribed or indexed the articles**.
+- **[JSON Feed 1.1](feed.json)** — 17 distinct, source-linked, language-tagged notes. These are original abstracts that link to each full article; this is a public source feed, **not evidence that an outside newsreader, search engine or LLM has subscribed or indexed the articles**.
 - **[Agent topic-to-method index](AGENT_INDEX.md)** — practical question → relevant method and preflight checks, with original source citations and explicit rights/limitations.
 - [Official JSON Feed 1.1 specification](https://www.jsonfeed.org/version/1.1/) for consumers and downstream publication systems. Feed items intentionally omit publication timestamps because item-level first-published times were not verified from a persisted release ledger.
 
