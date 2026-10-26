@@ -1,5 +1,11 @@
 name: R12 Chromium visual release QA
 on:
+  pull_request:
+    paths:
+      - "ops/role12/browser_visual_qa.cjs"
+      - "ops/role12/site_case_cta_only.mjs"
+      - "ops/role12/test_case_cta_only.mjs"
+      - ".github/workflows/role12-visual-release-qa.yml"
   push:
     paths:
       - "ops/role12/browser_visual_qa.cjs"
@@ -25,11 +31,13 @@ jobs:
           echo "CHROME_PATH=$CHROME_PATH" >> "$GITHUB_ENV"
           npm install --no-save --no-audit --no-fund --prefix /tmp/role12qa playwright-core@1.56.1
           echo "NODE_PATH=/tmp/role12qa/node_modules" >> "$GITHUB_ENV"
-      - name: Check actual staging desktop and mobile (no mail submits)
+      - name: Check preview desktop and mobile after hydration (no mail submits)
         shell: bash
-        run: |
-          node ops/role12/browser_visual_qa.cjs
-          R12_BROWSER_BASE="https://objekts.ai" node ops/role12/browser_visual_qa.cjs
+        run: node ops/role12/browser_visual_qa.cjs
+      - name: Check current production after hydration (post-release watch)
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: R12_BROWSER_BASE="https://objekts.ai" node ops/role12/browser_visual_qa.cjs
       - name: Attach QA screenshots and measured layouts
         if: always()
         uses: actions/upload-artifact@v4
