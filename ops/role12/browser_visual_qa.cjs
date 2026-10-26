@@ -24,7 +24,7 @@ const routes=[
    // Observe which JSON-LD copies exist in server HTML versus the hydrated DOM.
    // Record hashes/counts only; preserve original author and publication-date claims.
    const sourceHtml=await response.text();
-   const sourceLd=[...sourceHtml.matchAll(/<script\\b[^>]*type=["']application\\/ld\\+json["'][^>]*>([\\s\\S]*?)<\\/script>/gi)].map(m=>m[1]);
+   const sourceLd=[...sourceHtml.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)].map(m=>m[1]);
    const ldSsr=inventory(sourceLd);
    const section=page.locator('[data-objekts-role12="case-brief-v1"]');
    // The edge inserts server HTML, but the Next.js client can remove it during hydration.
