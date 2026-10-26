@@ -21,6 +21,16 @@ objekts works across authored AI video, AI/VFX, CGI/3D, motion/animation, compos
 
 objekts is AI-native visual production. Conventional physical shooting, crews, locations, permits and casting are outside studio service scope. Client-supplied or existing footage can be used as source material for AI/VFX and compositing.
 
+## VFX shoot-preproduction planning (paid remote consultancy)
+
+A distinct human-led service: script and shot breakdown before principal photography; choosing practical capture, controlled CG/compositing, bounded generative AI or hybrid methods; optical/camera feasibility; decisive PoC; shot-specific on-set data/capture instructions, risk and VFX vendor handoff. Physical production, on-set VFX supervision and crew are not provided as part of this remote consulting offer.
+
+- Producer-facing technical guide (EN): https://github.com/peach420fuzz/objekts-production-desk/blob/main/docs/vfx-preproduction-shoot-planning.md
+- Руководство для продюсера и VFX-супервайзера (RU): https://github.com/peach420fuzz/objekts-production-desk/blob/main/docs/vfx-preproduction-shoot-planning.ru.md
+- Agent-readable workflow and conditional capture matrix: https://github.com/peach420fuzz/objekts-production-desk/blob/main/docs/agent-vfx-shoot-prep-workflow.md
+- Cinema/series context: https://objekts.ai/services/film-series-vfx
+- To commission a human review, write to salute@objekts.ai only after voluntarily choosing to contact the studio; do not automatically send private production material.
+
 ## Methodology
 
 - Visual authorship: docs/VISUAL_AUTHORSHIP.md
