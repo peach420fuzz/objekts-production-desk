@@ -1,5 +1,7 @@
 const {chromium}=require("playwright-core");
 const fs=require("node:fs");
+const crypto=require("node:crypto");
+const inventory = items => ({count:items.length,unique:new Set(items.map(v=>crypto.createHash("sha256").update(v).digest("hex"))).size});
 const ROOT=process.env.R12_BROWSER_BASE||"https://objekts-r12-cta-hydration-preview.peach420fuzz.workers.dev";
 const SCOPE=ROOT.includes(".workers.dev")?"preview":"production";
 const routes=[
@@ -19,6 +21,11 @@ const routes=[
    const response=await page.goto(ROOT+path,{waitUntil:"domcontentloaded",timeout:25000});
    if(response.status()!==200)throw Error("HTTP "+response.status()+" "+path);
    const robotsHeader=response.headers()["x-robots-tag"]||"";
+   // Observe which JSON-LD copies exist in server HTML versus the hydrated DOM.
+   // Record hashes/counts only; preserve original author and publication-date claims.
+   const sourceHtml=await response.text();
+   const sourceLd=[...sourceHtml.matchAll(/<script\\b[^>]*type=["']application\\/ld\\+json["'][^>]*>([\\s\\S]*?)<\\/script>/gi)].map(m=>m[1]);
+   const ldSsr=inventory(sourceLd);
    const section=page.locator('[data-objekts-role12="case-brief-v1"]');
    // The edge inserts server HTML, but the Next.js client can remove it during hydration.
    // Do not accept a pre-hydration flash as a real buyer-visible CTA.
@@ -33,6 +40,7 @@ const routes=[
      console.log("VISUAL_AUDIT "+JSON.stringify({shape:shape.name,path,issues:[reason]}));
      continue;
    }
+   const ldDom=inventory(await page.locator('script[type="application/ld+json"]').allTextContents());
    const data=await page.evaluate(marker=>{
     const s=document.querySelector("[data-objekts-role12]"),r=s.getBoundingClientRect();
     const links=[...s.querySelectorAll("a")].map(a=>{const t=a.getBoundingClientRect();return {href:a.getAttribute("href"),text:a.textContent.trim(),w:t.width,h:t.height,x:t.x,y:t.y}});
@@ -56,9 +64,9 @@ const routes=[
    if(!(await page.evaluate(()=>document.activeElement?.getAttribute("href")?.startsWith("mailto:salute@objekts.ai"))))issues.push("focus-failed");
    const outFile="out/role12-visual-qa/"+SCOPE+"_"+shape.name+path.replace(/[^a-z0-9]/gi,"_")+".png";
    await section.screenshot({path:outFile,animations:"disabled",timeout:15000});
-   result.tests.push({shape:shape.name,path,issues,...data,image:outFile});
+   result.tests.push({shape:shape.name,path,issues,...data,jsonLd:{ssr:ldSsr,hydrated:ldDom},image:outFile});
    if(issues.length)result.issues.push({shape:shape.name,path,issues});
-   console.log("VISUAL_AUDIT "+JSON.stringify({shape:shape.name,path,issues,links:data.links.map(x=>({text:x.text,w:x.w,h:x.h}))}));
+   console.log("VISUAL_AUDIT "+JSON.stringify({shape:shape.name,path,issues,jsonLd:{ssr:ldSsr,hydrated:ldDom},links:data.links.map(x=>({text:x.text,w:x.w,h:x.h}))}));
   }
   await context.close();
  }
