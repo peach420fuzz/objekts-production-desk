@@ -26,14 +26,14 @@ A brief becomes `PUBLISHED` only when it contains:
 4. **How to audit a PDF brief's hidden hyperlinks — ingestion checklist**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 5. **Freeze a brand-specific hard-lock register — minimal YAML schema**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 6. **How to document unresolved signage conflict — decision/hold example**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
-7. **Version the same brief across revisions — immutable change receipts**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
+7. **Version the same brief across revisions — immutable change receipts [PUBLISHED: lock/delta ledger]**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 8. **What belongs in a production intake manifest — file/hash/rights**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 9. **Build an actionable deliverables matrix — film/aspect/owner/gate**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
-10. **Detect unavailable rights before rendering — image/likeness/voice gate**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
+10. **Detect unavailable rights before rendering — image/likeness/voice gate [PUBLISHED: media/publication rights gate]**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 
 ## Research and contact sheets — source: `OBJEKTS_MASTER_RUNBOOK_V3_MAGNIT.md §5`
 
-11. **Twenty frames per reference film: when this sampling heuristic helps — contact-sheet test**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
+11. **Twenty frames per reference film: when this sampling heuristic helps — contact-sheet test [PUBLISHED]**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 12. **How to reject duplicate or corrupt reference frames — QC recipe**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 13. **The 5×4 contact sheet as a visual memory system — annotated template**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 14. **References by camera/light/material instead of film title — role-map**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
@@ -59,7 +59,7 @@ A brief becomes `PUBLISHED` only when it contains:
 
 ## Cinematography and lighting — source: `OBJEKTS_MASTER_RUNBOOK_V3_MAGNIT.md §7.4`
 
-31. **Camera XYZ versus the word cinematic — objective staging fields**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
+31. **Camera XYZ versus the word cinematic — objective staging fields [PUBLISHED]**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 32. **Motivated practical light in a dense exterior — source diagram**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 33. **Contrasting CCT and camera WB without neon cliché — case-free setup**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 34. **When a 24 mm focal choice changes spatial comedy — lens test**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
