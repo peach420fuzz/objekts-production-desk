@@ -5,6 +5,8 @@ on:
     paths:
       - "distribution/qa/fake-visual-qa.mjs"
       - "distribution/qa/fake-qa-host-e2e.mjs"
+      - "distribution/qa/fake-qa-verdict.mjs"
+      - "distribution/qa/fake-qa-verdict.test.mjs"
       - ".github/workflows/fake-studio-visual-qa.yml"
 permissions:
   contents: read
@@ -23,6 +25,8 @@ jobs:
           npm init -y >/dev/null
           npm install --no-save playwright@1.56.1
           npx playwright install --with-deps chromium
+      - name: Verify QA rejects deliberate failures
+        run: node --test distribution/qa/fake-qa-verdict.test.mjs
       - name: Inspect public FAKE Studio across viewports
         run: |
           cd distribution/qa
