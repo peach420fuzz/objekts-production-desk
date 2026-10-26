@@ -174,3 +174,10 @@ Detailed, privacy-screened [execution receipt](../deliverables/36_5_PRIVATE_RUNB
 | **C36-570** | P1 ROLE36.5 | Write next five full differentiated published Field Notes, disallow private production data and fabricated examples; gather actual search/referral uplift against pre-existing GSC baseline | Five new public full article URLs and day7/day28 measured report |
 
 **Current external other-platform crossposts: 0 confirmed.** Original works on public GitHub: seven articles + two SVG artwork sources; task coordination open, not output counted. Goal is credible expertise and qualified brand traffic, not bot-driven identical thousand-site syndication.
+
+### Δ Publication control — 26 October 2026, second handoff
+
+- [Field Note 08 — Keep the Person, Change the World](../../../editorial/articles/identity-continuity-generative-stylization.md) independently authored (10,976-character full article), reviewed for private/client/performer protection; [PR #130](https://github.com/peach420fuzz/objekts-production-desk/pull/130) MERGED. Eight full articles: six EN and two RU; **not** nine/ten/100.
+- [Publication registry](../../../editorial/PUBLICATION_REGISTRY.json) creates eight per-item records with public full-source URL; `own_domain_canonical=null`, `external_posts=[]`, `qualified_leads_attributed=null` until real proof. Agent/distribution teams must append receipts, never assume syndication.
+- **C36-571 (P0):** role12/13/15 update registry only from signed-out live URL of actual published page/post and correct studio authorization; add publication dates/canonicals when available. GitHub source is not an objekts.ai native journal post.
+- **C36-572 (P1):** role36.5 complete four more differentiated long-form technical/authorial articles with worked examples and source checks (C36-570 progress: 1/5). Curate native teaser packages with links instead of mass duplicate mirrored pages.
