@@ -1,5 +1,7 @@
 # A Canvas Arrow Is Not a Model Input: Auditing Reference Graphs in AI Image Production
 
+![Original objekts reference graph diagram: three role-bounded media inputs connect to one verifiable generation request](../assets/reference-graph-audit.svg)
+
 *objekts / Production Field Notes · 26 October 2026 · Practical guide*
 
 **For:** AI image producers, technical art directors and agent/workflow engineers. **Read time:** ~7 minutes. **Scope:** model-agnostic quality-control method, inspired by firsthand studio production logs. Product-specific API names and numerical input limits change; inspect the current tool schema before a run.
