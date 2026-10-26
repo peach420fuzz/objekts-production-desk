@@ -446,3 +446,14 @@ The three source types are kept distinct: a newly accepted editorial queue reque
 | [36.4 Oct26 operating queue](../ops/role36/36_4_EXECUTION_QUEUE_2026-10-26.md) | Updated technical source map, access gates, prior comment follow-ups, and **ten self-generated dated next tasks**. | **FIRST_PARTY_RESEARCH_RECORD**, not a publication outside the repository. |
 
 **Reconciled cumulative 36.4 totals through 26 Oct:** **4 independently readable external technical comments in 4 genuine GitHub threads, split across 2 independently governed technical communities (ComfyUI and MCP) on 1 domain**; **1 first-party public engineering explainer**, 2 first-party navigation links; no new non-GitHub community post in this 26-Oct cycle; **0 observed independent replies to our comments, 0 attributable buyer briefs, 0 paid jobs, 0 spend**. GitHub issue #135 and existing DiraBook/Clawprint posts are not inflated into a new external reach count.
+
+
+## 36.4 follow-up — 26 Oct 2026 · reproducible MCP routing fixture (first-party only)
+
+| Exact first-party resource | Verified work | Status and interpretation |
+|---|---|---|
+| [20 bilingual MCP routing cases](../references/mcp-agent-routing-boundaries-v0.1.json) | Machine-readable **20 synthetic cases** (13 EN, 7 RU): 11 candidate Production Desk server, 3 docs_only, 6 out_of_scope; includes authorization gates and expected 7-tool candidate names. Verified GitHub readback and JSON parse, zero unsafe automatic-call labels under author-defined gates. | **FIRST_PARTY_STATIC_FIXTURE**, not a host or model execution; zero real user data and zero remote tool calls. |
+| [Evaluation method](../docs/MCP_MIXED_PURPOSE_ROUTING_EVAL.md) | Public three-stage server/tool/consent breakdown with staged host evaluation criteria, protocol source map, negative-capability examples and explicit limitations. | **FIRST_PARTY_TECHNICAL_NOTE**, rooted in prior external MCP #3430 comment; not a separate independent citation. |
+| [Repository README](../README.md) | Added link to public evaluation method in methodology navigation; commit `26082430c0ae267c09abc0732d4a15c36602e420`. | **FIRST_PARTY_INTERNAL_NAVIGATION**; not a new community placement. |
+
+**This addendum changes no 36.4 external-count, buyer-lead or revenue metric.** Follow-up is to evaluate routing against a controlled mock host without allowing live Production Desk mutations and only then, if authorized, test a real client.
