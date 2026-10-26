@@ -3,7 +3,7 @@
   "title": "objekts Field Notes — Visual Production Methods",
   "home_page_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
   "feed_url": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json",
-  "description": "Original AI/VFX, cinematography, art direction and visual production research by objekts. Public source texts in English and Russian. GitHub source pages are temporary; verified first-party canonicals have not yet been deployed.",
+  "description": "Seventeen original AI/VFX, cinematography, art direction and visual production research by objekts. Public source texts in English and Russian. GitHub source pages are temporary; verified first-party canonicals have not yet been deployed.",
   "authors": [
     {
       "name": "objekts",
@@ -12,6 +12,71 @@
   ],
   "language": "en",
   "items": [
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/generative-video-temporal-pts-frame-accurate-qc.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/generative-video-temporal-pts-frame-accurate-qc.md",
+      "title": "A Cut Is Not a Timestamp",
+      "content_text": "Time-accurate generative video QC across narrative beats, frame indices and media PTS. Uses a fictional 150-frame envelope action and an illustrative ffprobe command to show why duration and frame count are insufficient without per-frame timestamps, causal timing, cut-boundary and full audio/picture validation.\n\nRead the full original field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/generative-video-temporal-pts-frame-accurate-qc.md",
+      "summary": "Time-accurate generative video QC across narrative beats, frame indices and media PTS. Uses a fictional 150-frame envelope action and an illustrative ffprobe command to show why duration and frame count are insufficient without per-frame timestamps, causal timing, cut-boundary and full audio/picture validation.",
+      "language": "en",
+      "tags": [
+        "generative-video-pts-edit-qc",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/fashion-catalog-garment-body-multiview-continuity.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/fashion-catalog-garment-body-multiview-continuity.md",
+      "title": "The Garment Has a Body",
+      "content_text": "A multi-view fashion catalogue method that keeps SKU truth, licensed model identity and camera presentation separate. Includes fabric bending/contact diagnosis, a front/three-quarter/profile/back audit, a fictional fit discrepancy, per-SKU source/measurement ledger and the limits of front-only source photography.\n\nRead the full original field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/fashion-catalog-garment-body-multiview-continuity.md",
+      "summary": "A multi-view fashion catalogue method that keeps SKU truth, licensed model identity and camera presentation separate. Includes fabric bending/contact diagnosis, a front/three-quarter/profile/back audit, a fictional fit discrepancy, per-SKU source/measurement ledger and the limits of front-only source photography.",
+      "language": "en",
+      "tags": [
+        "fashion-catalog-multiview-continuity",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/color-continuity-scene-lighting-ocio-aces-compositing.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/color-continuity-scene-lighting-ocio-aces-compositing.md",
+      "title": "Color Continuity Is a Contract, Not a LUT",
+      "content_text": "Separates motivated lighting, exposure, color pipeline and artistic grade through a fictional predawn restaurant scene. Explains ACES/OCIO transform handoff, straight versus premultiplied alpha, texture-safe clean-up, A–B–A cut review and why automatic palette matching cannot certify scene continuity.\n\nRead the full original field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/color-continuity-scene-lighting-ocio-aces-compositing.md",
+      "summary": "Separates motivated lighting, exposure, color pipeline and artistic grade through a fictional predawn restaurant scene. Explains ACES/OCIO transform handoff, straight versus premultiplied alpha, texture-safe clean-up, A–B–A cut review and why automatic palette matching cannot certify scene continuity.",
+      "language": "en",
+      "tags": [
+        "scene-lighting-ocio-aces-compositing",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/product-package-lock-ai-cg-compositing_ru.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/product-package-lock-ai-cg-compositing_ru.md",
+      "title": "Товар в кадре — не декоративный предмет",
+      "content_text": "Русскоязычный технический материал о точной упаковке в гибридной AI/CG-рекламе: LOCK геометрии, лого, этикетки, материалов, жидкости и движения камеры. Вымышленный пример бутылки, три производственных маршрута, контроль PBR, альфа-канала и покадровый QC вместо обещаний «похожего» товара.\n\nRead the full original field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/product-package-lock-ai-cg-compositing_ru.md",
+      "summary": "Русскоязычный технический материал о точной упаковке в гибридной AI/CG-рекламе: LOCK геометрии, лого, этикетки, материалов, жидкости и движения камеры. Вымышленный пример бутылки, три производственных маршрута, контроль PBR, альфа-канала и покадровый QC вместо обещаний «похожего» товара.",
+      "language": "ru",
+      "tags": [
+        "product-package-lock-hybrid-cg",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/vfx-shot-preproduction-on-set-capture-decision-matrix.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/vfx-shot-preproduction-on-set-capture-decision-matrix.md",
+      "title": "The VFX Shot Is Won Before the Camera Rolls",
+      "content_text": "An actionable hybrid-shoot prep method: decide what must stay photographed, separate live-action, CG and generative layers, specify the on-set measurements and clean plates that cannot be recovered later, and review an explicitly fictional tram-stop shot with a 0–2 risk matrix. Grounded in Adobe tracking, OpenCV calibration, Autodesk light probes and ACES.\n\nRead the full original field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/vfx-shot-preproduction-on-set-capture-decision-matrix.md",
+      "summary": "An actionable hybrid-shoot prep method: decide what must stay photographed, separate live-action, CG and generative layers, specify the on-set measurements and clean plates that cannot be recovered later, and review an explicitly fictional tram-stop shot with a 0–2 risk matrix. Grounded in Adobe tracking, OpenCV calibration, Autodesk light probes and ACES.",
+      "language": "en",
+      "tags": [
+        "vfx-shoot-preproduction",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
     {
       "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/immutable-art-direction-lock-minimal-delta-ledger.md",
       "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/immutable-art-direction-lock-minimal-delta-ledger.md",
