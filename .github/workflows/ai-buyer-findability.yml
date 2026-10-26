@@ -29,7 +29,7 @@ concurrency:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 14
     steps:
       - uses: actions/checkout@v4
       - name: Validate assertions without external requests
@@ -63,6 +63,15 @@ jobs:
         run: |
           python3 ops/role12/test_live_buyer_entrypoints.py --offline-test
           python3 ops/role12/test_live_buyer_entrypoints.py --live --require-cta --output out/role12-site-buyer-entrypoints.json
+      - name: Verify buyer CTA survives Next.js hydration (production mobile + desktop)
+        shell: bash
+        run: |
+          set -euo pipefail
+          CHROME_PATH="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || true)"
+          test -n "$CHROME_PATH"
+          echo "CHROME_PATH=$CHROME_PATH" >> "$GITHUB_ENV"
+          npm install --no-save --no-audit --no-fund --prefix /tmp/role12qa playwright-core@1.56.1
+          NODE_PATH=/tmp/role12qa/node_modules CHROME_PATH="$CHROME_PATH" R12_BROWSER_BASE=https://objekts.ai node ops/role12/browser_visual_qa.cjs
       - name: Keep exact status codes for review (short retention)
         if: always()
         uses: actions/upload-artifact@v4
@@ -73,5 +82,6 @@ jobs:
             out/mcp_protocol_era.json
             out/role12-oai-hosts.json
             out/role12-site-buyer-entrypoints.json
+            out/role12-visual-qa/
           if-no-files-found: ignore
           retention-days: 3
