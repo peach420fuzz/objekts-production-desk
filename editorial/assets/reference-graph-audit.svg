@@ -3,7 +3,7 @@
 <desc id="desc">An editorial diagram separating reference roles from typed image inputs and decorative canvas lines. Three image assets connect to an execution request only through verifiable typed inputs.</desc>
 <rect width="1000" height="1500" fill="#F3F0E8"/>
 <rect x="58" y="54" width="884" height="5" fill="#111820"/>
-<text x="58" y="108" fill="#111820" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" letter-spacing="3">OBJEKTS FIELD NOTES  /  01</text>
+<text x="58" y="108" fill="#111820" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" letter-spacing="3">objekts / FIELD NOTES  /  01</text>
 <text x="58" y="220" fill="#111820" font-family="Arial,Helvetica,sans-serif" font-size="70" font-weight="800" letter-spacing="-3">A CANVAS ARROW</text>
 <text x="58" y="299" fill="#111820" font-family="Arial,Helvetica,sans-serif" font-size="70" font-weight="800" letter-spacing="-3">IS NOT A MODEL</text>
 <text x="58" y="378" fill="#111820" font-family="Arial,Helvetica,sans-serif" font-size="70" font-weight="800" letter-spacing="-3">INPUT.</text>
