@@ -157,3 +157,20 @@ Source receipts:
 | **C36-562** | P1 | Inspect social exposure sources with genuinely connected owned-account metrics only; document absent integrations rather than presenting account existence | Connected-site evidence, actual stats where authorized, otherwise `NOT_CONNECTED` |
 
 **Current external output: 0 newly posted images, 0 new magazine form submissions, 0 new email pitches, 0 measured referral lift.** Internal media production and first-party search-baseline analysis did advance substantially.
+
+## Δ 26 October 2026 — original Field Notes public editorial release from owner production runbook
+
+Detailed, privacy-screened [execution receipt](../deliverables/36_5_PRIVATE_RUNBOOK_TO_PUBLIC_FIELD_NOTES_RECEIPT_2026-10-26.md) and [seven-article public index](../../../editorial/README.md) are the source of truth. Source archive: 15 production entries (350,298 uncompressed bytes), with client/performer/proprietary prompt materials withheld. **Seven complete original articles are public on GitHub; 100 separate briefs are not yet articles.** Two public original SVG explainers are not Pinterest-ready PNG and not social posts. [PR #124](https://github.com/peach420fuzz/objekts-production-desk/pull/124), [PR #125](https://github.com/peach420fuzz/objekts-production-desk/pull/125), [PR #127](https://github.com/peach420fuzz/objekts-production-desk/pull/127) all MERGED. First-party README and AGENTS.md link the expert notes without unverifiable claims.
+
+| New ID | Priority | Executed status and next action | Exit evidence |
+|---|---|---|---|
+| **C36-563** | DONE | Audited owner production archive, selected publishable domain principles, redacted all real performer/client/Canvas jobs, past rejected prompts and visual materials | Runbook-to-editorial receipt, no source leak |
+| **C36-564** | DONE | Wrote and published 5 complete EN + 2 RU public original methodology/authorial essays in `editorial/articles/` | Anonymous signed-out [article index](../../../editorial/README.md); merged #124 |
+| **C36-565** | DONE_BRIEF_ONLY | Produced [100 differentiated future content assignments](../../../editorial/100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md), each with specific problem, result and verification angle | Brief backlog public; **not** 100 written articles |
+| **C36-566** | DONE_VECTOR / PNG_PENDING | Designed and visually inspected two original editable portrait infographics, reference input graph and physical causality | [Source artwork](../../../editorial/assets/README.md), merged #127; no Pin post claimed |
+| **C36-567** | P0 ROLE12 | Convert seven fully sourced Markdown notes to real native `objekts.ai` editorial pages with canonical, image alt, metadata, one JSON-LD Article per page and signed-out QA | [Issue #126](https://github.com/peach420fuzz/objekts-production-desk/issues/126), actual production URLs+fetch |
+| **C36-568** | P0 ROLE13/15 | Three actual quality posts: DEV technical, Medium authorial, RU production; check existing studio identity and canonicals; avoid scaled syndicated spam | [Issue #128](https://github.com/peach420fuzz/objekts-production-desk/issues/128), three live independent URLs or blockers |
+| **C36-569** | P1 ROLE15 | Export two original SVGs to real PNG, visual QA 1000×1500, locate authenticated official accounts/owner approval before Pinterest/visual publication | [Issue #108](https://github.com/peach420fuzz/objekts-production-desk/issues/108), PNG hashes+real post permalink |
+| **C36-570** | P1 ROLE36.5 | Write next five full differentiated published Field Notes, disallow private production data and fabricated examples; gather actual search/referral uplift against pre-existing GSC baseline | Five new public full article URLs and day7/day28 measured report |
+
+**Current external other-platform crossposts: 0 confirmed.** Original works on public GitHub: seven articles + two SVG artwork sources; task coordination open, not output counted. Goal is credible expertise and qualified brand traffic, not bot-driven identical thousand-site syndication.
