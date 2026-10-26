@@ -1,0 +1,54 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/services/paid-remote-vfx-shoot-prep.json#service",
+  "name": "Paid Remote VFX Preproduction & Shoot-Prep Advisory by objekts",
+  "alternateName": [
+    "VFX shoot-prep",
+    "VFX preproduction consulting",
+    "AI/VFX preflight",
+    "Удалённый VFX-препродакшн перед съёмками"
+  ],
+  "serviceType": "Project-scoped paid remote visual-effects preproduction consulting before principal photography",
+  "description": "Shot-level preproduction analysis for film, episodic, commercial and mixed-media productions. Assess planned visual effects against practical/on-set, 3D CGI, compositing, controlled generative AI and hybrid methods. Review optical and production feasibility; identify critical tests and deliver shot-specific camera, lens, tracking, lighting, clean-plate, reference and metadata capture instructions for the appointed crew and VFX team.",
+  "provider": {
+    "@type": "Organization",
+    "name": "objekts",
+    "url": "https://objekts.ai/",
+    "email": "salute@objekts.ai",
+    "description": "Director-led AI/VFX and hybrid visual-production studio."
+  },
+  "areaServed": "Worldwide (remote; Russia/CIS priority)",
+  "availableLanguage": [
+    "ru",
+    "en"
+  ],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Film producers, episodic producers, line producers, VFX producers, production companies, VFX supervisors, cinematography and camera departments"
+  },
+  "termsOfService": "Project-scoped paid advisory; fee, deliverable depth, schedule and rights agreed per brief; no published flat price. This remote service does not imply physical set attendance, replacement of production-appointed VFX supervision, or delivery of finished VFX.",
+  "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/docs/vfx-preproduction-shoot-planning.md",
+  "subjectOf": [
+    {
+      "@type": "TechArticle",
+      "name": "VFX Preproduction / Shoot Planning",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/docs/vfx-preproduction-shoot-planning.md"
+    },
+    {
+      "@type": "TechArticle",
+      "name": "VFX Lens, Camera and Plate Data Preflight",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/docs/vfx-lens-camera-data-preflight.md"
+    },
+    {
+      "@type": "TechArticle",
+      "name": "RU VFX shoot-planning guide",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/docs/vfx-preproduction-shoot-planning.ru.md"
+    }
+  ],
+  "potentialAction": {
+    "@type": "ContactAction",
+    "name": "Send a VFX preproduction brief",
+    "target": "mailto:salute@objekts.ai?subject=VFX%20shoot-prep%20brief"
+  }
+}
