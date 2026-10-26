@@ -340,6 +340,101 @@
         "13",
         "15"
       ]
+    },
+    {
+      "id": "FN-18",
+      "title": "A Puppet Must Have a Secret Weight",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "puppet-armature-material-inertia",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/puppet-armature-material-inertia-uncanny-motion.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-19",
+      "title": "Changing the Face Is Changing the Contract",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "authorized-performer-recasting-vfx",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/authorized-performer-recasting-face-replacement-shot-continuity.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-20",
+      "title": "One Campaign, One Hundred Cities, Zero Invented Landmarks",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "hyperlocal-ad-campaign-variation",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hyperlocal-video-city-variant-canon-location-verification.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-21",
+      "title": "A Door Must Lead Somewhere",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "architectural-topology-camera-continuity",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/architectural-topology-door-space-camera-continuity.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-22",
+      "title": "The Image Needs a Past",
+      "language": "en",
+      "editorial_type": "authorial",
+      "topic": "material-history-authorial-production-design",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/image-needs-a-past-material-history-production-design.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
     }
   ],
   "format": "objekts.field_notes.publication_registry.v1"
