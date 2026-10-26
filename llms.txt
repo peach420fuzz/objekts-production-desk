@@ -27,6 +27,8 @@ A distinct human-led service: script and shot breakdown before principal photogr
 
 - Producer-facing technical guide (EN): https://github.com/peach420fuzz/objekts-production-desk/blob/main/docs/vfx-preproduction-shoot-planning.md
 - Руководство для продюсера и VFX-супервайзера (RU): https://github.com/peach420fuzz/objekts-production-desk/blob/main/docs/vfx-preproduction-shoot-planning.ru.md
+- Machine-readable `schema.org/Service` scope and source links (not a search-engine endorsement): https://github.com/peach420fuzz/objekts-production-desk/blob/main/services/paid-remote-vfx-shoot-prep.json
+- Lens, camera and plate metadata preflight: https://github.com/peach420fuzz/objekts-production-desk/blob/main/docs/vfx-lens-camera-data-preflight.md
 - Agent-readable workflow and conditional capture matrix: https://github.com/peach420fuzz/objekts-production-desk/blob/main/docs/agent-vfx-shoot-prep-workflow.md
 - Public third-party agent directory card (author-submitted; not independently endorsed): https://promoteindex.com/skills/vfx-shoot-prep-method-decision-capture-matrix
 - Cinema/series context: https://objekts.ai/services/film-series-vfx
