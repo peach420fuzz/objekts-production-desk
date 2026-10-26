@@ -169,6 +169,82 @@
         "13",
         "15"
       ]
+    },
+    {
+      "id": "FN-09",
+      "title": "The Camera Cannot Teleport",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "camera-spatial-continuity",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/camera-perspective-spatial-consistency-generative-video.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-10",
+      "title": "A Frame Is Not Publishable Just Because You Generated It",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "rights-provenance-publication",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/generative-media-rights-provenance-publication-gate.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-11",
+      "title": "Twenty Frames, Five Roles",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "reference-contact-sheets",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/film-reference-contact-sheet-research-method.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-12",
+      "title": "A Prompt Revision Is a Change Request",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "immutable-art-direction-locks",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/immutable-art-direction-lock-minimal-delta-ledger.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
     }
   ],
   "format": "objekts.field_notes.publication_registry.v1"

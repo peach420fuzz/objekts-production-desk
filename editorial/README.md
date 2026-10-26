@@ -4,7 +4,7 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 
 **[objekts.ai](https://objekts.ai) · [Creative work](https://objekts.ai/en/work/) · [AI/VFX production](https://objekts.ai/en/services/ai-vfx/) · [Contact](https://objekts.ai/en/contact/)**
 
-## Start here: eight complete field notes
+## Start here: twelve complete field notes
 
 | # | Article | Core practical result | Language |
 |---|---|---|---|
@@ -16,8 +16,12 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 | 06 | [«Completed» — ещё не «Approved»](articles/production-statuses-technical-success-vs-approval_ru.md) | Job/QC/approval/publication state machine | RU |
 | 07 | [The Frame Needs a Reason](articles/the-frame-needs-a-reason-authorial-image-making.md) | Authorial essay on space, light, objects and artistic intent | EN |
 | 08 | [Keep the Person, Change the World](articles/identity-continuity-generative-stylization.md) | Identity invariant map, layered transformation, camera control and full-sequence QC | EN |
+| 09 | [The Camera Cannot Teleport](articles/camera-perspective-spatial-consistency-generative-video.md) | Camera pose, lens assumptions, room topology and parallax QC | EN |
+| 10 | [A Frame Is Not Publishable Just Because You Generated It](articles/generative-media-rights-provenance-publication-gate.md) | Rights/consent ledger, C2PA limits and publication gates | EN |
+| 11 | [Twenty Frames, Five Roles](articles/film-reference-contact-sheet-research-method.md) | Contact-sheet research, reference role map and source QC | EN |
+| 12 | [A Prompt Revision Is a Change Request](articles/immutable-art-direction-lock-minimal-delta-ledger.md) | Immutable LOCK ledger and four tested preflight scenarios | EN |
 
-**These eight are authored full articles.** The [100 original article briefs](100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md) form the future editorial backlog and **do not count as published articles**. Articles are original studio methodology with self-contained, illustrative examples; they do not contain raw production client data, client likeness, proprietary boards or submitted generative assets.
+**These twelve are authored full articles.** The [100 original article briefs](100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md) form the future editorial backlog and **do not count as published articles**. Articles are original studio methodology with self-contained, illustrative examples; they do not contain raw production client data, client likeness, proprietary boards or submitted generative assets.
 
 ## Evidentiary standards
 
