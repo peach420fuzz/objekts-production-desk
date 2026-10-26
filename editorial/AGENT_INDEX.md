@@ -1,5 +1,7 @@
 # objekts Field Notes — Task Index for Creative/Production Agents
 
+**AI-assisted drafting transparency:** These studio-briefed field notes used AI text assistance and selected official source review. They are not human-only authored or independently validated execution reports. Professional external reuse requires [editorial policy gates](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md).
+
 **Publisher:** [objekts](https://objekts.ai), AI/VFX and visual production studio.  
 **Original public texts:** [22 complete notes](README.md) · [machine-readable JSON Feed 1.1](feed.json) · [item status ledger](PUBLICATION_REGISTRY.json).
 
