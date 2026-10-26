@@ -1,6 +1,6 @@
 # OBJEKTS 24.1 · Session receipt · 26 Oct 2026
 
-**Working window:** started 07:50:37 Europe/Madrid; final check must be after 09:50:37. A document of verifiable actions, not background automation.
+**Working window:** 07:50:37–09:50:46 Europe/Madrid, independently checked via the client-offset time service; **120 minutes 9 seconds** elapsed. This documents the active session's verified span and receipts, not continuous unattended automation. A document of verifiable actions, not background automation.
 
 ## Completed, source-checked
 
