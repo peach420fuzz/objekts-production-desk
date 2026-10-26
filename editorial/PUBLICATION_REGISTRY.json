@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "registry_version": "1.0.0",
   "publisher": "objekts",
   "publisher_url": "https://objekts.ai",
@@ -171,5 +170,6 @@
         "15"
       ]
     }
-  ]
+  ],
+  "format": "objekts.field_notes.publication_registry.v1"
 }
