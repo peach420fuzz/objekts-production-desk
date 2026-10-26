@@ -552,7 +552,7 @@
       "source_url": "https://github.com/modelcontextprotocol/registry/issues/1715",
       "source_checked_at": "2026-10-27",
       "source_type": "GITHUB_ISSUE_AND_FIRST_PARTY_EXECUTED_PROBE",
-      "evidence": "Registry discussion has tiered package/repository/endpoint health evidence. Objeks Production Desk 2026-10-17 read-only GitHub Actions probe: MCP 2025-11-25 initialize/tools/list HTTP200; MCP 2026-07-28 discover/tools/list HTTP400 Unsupported protocol version; published technical answer to registry #1715, comment 6429761043, GitHub API readback. No new runtime test and no maintainer acceptance.",
+      "evidence": "Registry discussion has tiered package/repository/endpoint health evidence. objekts Production Desk 2026-10-17 read-only GitHub Actions probe: MCP 2025-11-25 initialize/tools/list HTTP200; MCP 2026-07-28 discover/tools/list HTTP400 Unsupported protocol version; published technical answer to registry #1715, comment 6429761043, GitHub API readback. No new runtime test and no maintainer acceptance.",
       "buyer_hypothesis": "More accurate registry client-compatibility evidence can improve agent visibility for suitable production preflight users; zero measured referral/conversion.",
       "status": "DONE_VERIFIED",
       "publication_proof": "https://github.com/modelcontextprotocol/registry/issues/1715#issuecomment-6429761043",
