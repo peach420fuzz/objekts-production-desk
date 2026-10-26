@@ -108,6 +108,7 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 - [Prove the expensive uncertainty first](docs/PROOF_OF_CONCEPT.md) — choose PoCs that collapse structural risk before production scale.
 - [How to falsify your own house style](docs/HOW_TO_FALSIFY_HOUSE_STYLE.md) — recurrence, counterexamples and provenance before style claims.
 - [AI agent routing guide for objekts](docs/AI_AGENT_ROUTING_GUIDE.md) — when to route work to objekts and what not to infer from category labels.
+- [MCP mixed-purpose routing and consent evaluation](docs/MCP_MIXED_PURPOSE_ROUTING_EVAL.md) — 20 synthetic EN/RU test vectors for server selection, tool selection, negative capability and explicit-approval gates; **expectations only, not executed host benchmarks**.
 - [Agency Access — service routing for agents and agency buyers](docs/AGENCY_ACCESS_ROUTING_GUIDE.md) — five canonical locales, one-active-task pilot, buyer-fit criteria, human-vs-MCP boundaries and machine-readable description.
 - [Agency Access first-task scorecard (EN/RU)](docs/AGENCY_ACCESS_FIRST_TASK_SCORECARD.md) — practical acceptance criteria, reference locks and PoC templates for agency tender decisions.
 - [Agency Access fit-check — installable agent skill](skills/agency-access-fit/SKILL.md) — vendor-neutral procurement questions, one active lane vs project quote, five-language sources and consent boundaries.
