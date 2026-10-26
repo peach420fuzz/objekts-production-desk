@@ -14,13 +14,13 @@ Deliberately withheld: client briefs, storyboard frames, real actor likeness and
 
 ## Public outputs completed
 
-- [Seven original, full EN/RU studio field-note articles](../../editorial/README.md) (5 EN / 2 RU), all linked to first-party studio pages; anonymous browser verified the GitHub index and all seven internal article links visible.
+- [Seven original, full EN/RU studio field-note articles](../../../editorial/README.md) (5 EN / 2 RU), all linked to first-party studio pages; anonymous browser verified the GitHub index and all seven internal article links visible.
 
-- [100 differentiated future article briefs](../../editorial/100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md); briefs are not written or published articles.
+- [100 differentiated future article briefs](../../../editorial/100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md); briefs are not written or published articles.
 
-- [Two original 1000×1500 SVG explainers](../../editorial/assets/README.md); anonymous-browser screenshots reviewed top and bottom of each with no visible clipping. Original artwork, no client imagery or facial likeness. Still requires PNG export before actual Pinterest upload.
+- [Two original 1000×1500 SVG explainers](../../../editorial/assets/README.md); anonymous-browser screenshots reviewed top and bottom of each with no visible clipping. Original artwork, no client imagery or facial likeness. Still requires PNG export before actual Pinterest upload.
 
-- [Crosspost/canonical and rights policy](../../editorial/PLATFORM_PUBLICATION_AND_CANONICAL_ROUTING_2026-10-26.md), based on verified DEV/Medium and Google guidance.
+- [Crosspost/canonical and rights policy](../../../editorial/PLATFORM_PUBLICATION_AND_CANONICAL_ROUTING_2026-10-26.md), based on verified DEV/Medium and Google guidance.
 
 - Github [PR #124](https://github.com/peach420fuzz/objekts-production-desk/pull/124) (articles), [PR #125](https://github.com/peach420fuzz/objekts-production-desk/pull/125) (README/AGENTS.md discoverability) and [PR #127](https://github.com/peach420fuzz/objekts-production-desk/pull/127) (two diagrams) all MERGED.
 
