@@ -1,6 +1,6 @@
 /**
  * OBJEKTS R12: optional drop-in middleware for the ORIGINAL main-site Worker.
- * Not deployed. Preserve original upstream wrapper, existing bindings and security headers,
+ * Deployed on four exact public routes. Preserve upstream bindings and security headers,
  * video range logic and all unrelated routes untouched.
  * Integration: export default withR12CaseQuote(existingUpstream);
  */
@@ -92,10 +92,36 @@ export function injectCaseQuote(pathname, originalHtml) {
     return { changed:false, reason:"already-present", html:originalHtml };
   }
   const block = composeBlock(route);
-  // Preserve every existing section, film and nav node; add a scoped production
-  // path after the case proof and before the end of its <main>.
+  // Preserve SSR CTA for crawlers; client hydration can remove server-added nodes.
   const anchor = originalHtml.lastIndexOf("</main>");
-  return { changed:true, reason:"injected", html:originalHtml.slice(0,anchor)+block+originalHtml.slice(anchor) };
+  let html = originalHtml.slice(0,anchor) + block + originalHtml.slice(anchor);
+  const bodyEnd = html.toLowerCase().lastIndexOf("</body>");
+  if (bodyEnd < 0) return {changed:false,reason:"body-missing",html:originalHtml};
+  const encoded = encodeURIComponent(block);
+  const helper = `<script data-r12-hydration="case-brief-v1">(function(){
+    const expectedPath=${JSON.stringify(pathname)};
+    const block=decodeURIComponent(${JSON.stringify(encoded)});
+    const selector='[data-objekts-role12]';
+    let pending=false;
+    function reconcile(){
+      pending=false;
+      if(location.pathname!==expectedPath){
+        document.querySelector(selector)?.remove();
+        watcher.disconnect();
+        return;
+      }
+      const main=document.querySelector('main');
+      if(main && !main.querySelector(selector)) main.insertAdjacentHTML('beforeend',block);
+    }
+    const watcher=new MutationObserver(function(){
+      if(!pending){pending=true;requestAnimationFrame(reconcile);}
+    });
+    watcher.observe(document.documentElement,{childList:true,subtree:true});
+    reconcile();
+    window.addEventListener('pageshow',reconcile);
+  })();</script>`;
+  html = html.slice(0,bodyEnd)+helper+html.slice(bodyEnd);
+  return {changed:true,reason:"injected-with-hydration-repair",html};
 }
 
 
