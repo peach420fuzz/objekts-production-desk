@@ -37,17 +37,18 @@ Period **2026-10-05 through 2026-10-23** inclusive, before these Oct26 specialis
 - Query `episodic vfx budget`: **1 / 0**, avg position **60**.
 - **No VFX-prep traffic uplift measured yet**. GA4 connected account unavailable through Windsor; Search Console Wizard says payment required; do not assert conversion counts.
 
-## Specialist directories / opportunities (NOT submitted)
+## Existing third-party directories, corrections and outstanding opportunities
 
 | Channel | Fit | Eligibility, account, next action |
 |---|---|---|
-| [VFX Engine — List Your Studio](https://www.vfxengine.com/jobs/list-studio) | VFX industry audience | Global studio directory, check duplicate by autocomplete first; free form name/email/company/URL/location/logo/description; reviewed. Need authenticated/publishing UI consent to submit, no claim accepted. |
-| [Revolution Film — Production Companies](https://revolution.film/behind-the-lens/production-companies) | Buyer-side production service directory | 57k+ worldwide listings across 171 countries (platform's own statement), categories including VFX/post. Free add or claim, editor-reviewed. Check for existing objekts entry before creating. |
+| [VFX Engine — existing public objekts listing](https://www.vfxengine.com/studios/objekts) | **EXISTING LIVE** studio directory, confirmed 2026-10-26 by anonymous browser check | Other role already in conversation with editor since 19 Oct. Current visible text contains unauthorized SmartFruits/BeCreative portfolio credit. **URGENT CORRECTION EMAIL SENT** from salute@objekts.ai to info@vfxengine.com on 26 Oct, Gmail message `1a1774cefe6662f5`; asks to remove unapproved credit and replace summary with paid remote before-shoot VFX-prep description. **AWAIT EDITOR CONFIRMATION; not changed as of request**. Do not duplicate listing. |
+| [Revolution Film — existing editorial application](https://revolution.film/behind-the-lens/production-companies) | **NOT LIVE — editor holding unpublished draft for owner approval** | Existing correspondence Oct 3–4, 14, 18, 21. Editor Alex on 21 Oct explicitly confirmed **Cordiant removed**, only SberCity selected work, Barcelona city and salute@objekts.ai contact; legal entity/address/team/year/other credits excluded. Editor will email full page text/images for owner's explicit approval **BEFORE publication**. DO NOT resubmit, publish or approve without owner review. |
 | [mcp.film — submit server](https://mcp.film/submit/) | HIGH machine-first filmmaking relevance | **Server-only** listings, must demonstrate real runnable MCP core tools, active maintenance and primary docs; do not submit this consultancy merely as a server. Route existing **working, verified** production/consulting MCP through role plugin-ops, after runtime evidence and dedup check. Submission GitHub issue or PR. |
 | [FOOH.com](https://www.fooh.com/) | CGI/AI/VFX creative buyers | Claims free portfolio, directory and work publication for artists; needs actual account and rights-cleared work, visual ownership role36.5/15; no fake finished production. |
 | [Oward](https://www.oward.co/en) | Worldwide audiovisual professionals | Free filmmaker company profile, signup required; check org eligibility and existing account. |
 | [Stage32 — Promotion Lounge](https://www.stage32.com/lounge/promotion) | Producer/network audience | Platform rules: one promotional post in Your Stage, no repetitive cross-posts/DMs; cloud browser checked signed out, existing user account reportedly active but session unavailable. |
 | [RSS.mobi — Submit](https://rss.mobi/submit/) | Independent RSS directory | Anonymous-looking user-facing form; no documented public submission API; require consent and browser form action. Distinct specialist RSS feed exists. |
+| [AgentSkillsDir free manual review](https://agentskillsdir.com/submit) | General agent skills directory | **EXISTING Oct20 studio email** to submit@agentskillsdir.com for Production Desk and skill set, found in Sent Oct26. Avoid duplicate; status pending/unverified. | 
 | [PromoteIndex contest](https://promoteindex.com/contest) | Potential **free 7-day** sponsor banner | Current round closes **2026-10-28 04:00 UTC (05:00 Europe/Madrid)**; requires site badge on objekts.ai, matching domain. Owner website/design approval required; DO NOT self-publish badge or presume win. |
 
 ## Ownership / spam hygiene
@@ -59,7 +60,7 @@ Period **2026-10-05 through 2026-10-23** inclusive, before these Oct26 specialis
 
 ## Next action queue and outcome metrics
 
-1. Resolve whether **VFX Engine / Revolution Film** already list the studio; prepare exact human-grade profile text and submit via authorized account/action-time confirmation if needed. Status: research, not published.
+1. **VFX Engine:** follow existing editor thread until SmartFruits suppression and specialist text are visibly corrected; check public page before calling DONE. **Revolution Film:** await unpublished complete preview from Alex and refer it for owner explicit approval; never publish Cordiant or other unapproved credit. **AgentSkillsDir:** do not resend Oct20 request.
 2. Verify **Production Desk MCP** live callable URL/tools and demonstrable working preproduction intent before submitting to mcp.film; coordinate role plugin-ops (not a speculative directory listing).
 3. Get site-owner issue #31 implemented, verify live RU+EN pages manually/HTTP and search-engine crawlability before promoting page URLs.
 4. Monitor PromoteIndex method listing views/referrals and RSS Amplifier exposure only when platform exposes real counts; annotate zeroes, not invented wins.
