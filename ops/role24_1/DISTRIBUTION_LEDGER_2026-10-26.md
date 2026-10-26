@@ -70,7 +70,7 @@ Period **2026-10-05 through 2026-10-23** inclusive, before these Oct26 specialis
 - Role **24.1** owns only paid *before-shoot* VFX prep promotion, specialist content, demand matching, warm B2B leads. Role **24 broad** handles cinema/TV VFX general sales. Role **36.1** owns general agent distribution, **36.4** agent communities, **36.5** public art portfolios, **13/15** syndication. Log and notify, avoid duplicate profile/submission across owners.
 - Existing PromoteIndex general studio profile and DevElif/general RSS placements belong to others; specialist records are distinct. No broad blasting, no automated low-value comments, no deceptive 'AI endorsement' statements, no claim actual OpenAI/Anthropic/Google/X/Yandex/Sber recommendation.
 - No client frames or third-party case credit without clearance. Suppression: **Cordiant, Made Sense, SmartFruits** not reused as promotional proofs. Email outreach must check CRM/suppression and account auth; no invented deliverability.
-- Owner has not approved visible PromoteIndex badge on corporate site; legitimate directories still require their actual publisher review.
+- Repository-root `LICENSE` fetch returned **404** on 26 Oct; this does **not** authorise adding a license or granting reuse rights for the methodology. Some agent-skill registries require an explicit license; refer a deliberate rights/licensing decision to studio owner / plugin ops. Existing public readability is not permission to modify or redistribute.\n- Owner has not approved visible PromoteIndex badge on corporate site; legitimate directories still require their actual publisher review.
 
 ## Next action queue and outcome metrics
 
