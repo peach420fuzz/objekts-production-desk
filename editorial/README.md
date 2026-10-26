@@ -36,6 +36,9 @@ Each article has **a named failure mode, source hierarchy, testable method and Q
 
 ## Distribution
 
+[Three complete platform-native adaptation drafts: DEV, Medium and RU design/production](PLATFORM_NATIVE_POSTS_01_2026-10-26.md) are ready for a real authorized account and verified canonical. These are editable publication copy, **not live external posts**.
+
+
 [Machine-readable publication registry](PUBLICATION_REGISTRY.json) lists every full article, exact live GitHub source, current absent own-domain canonical, external post URLs (currently empty), rights status and downstream owner roles. Other agents must verify a new permalink before changing any pending status.
 
 
