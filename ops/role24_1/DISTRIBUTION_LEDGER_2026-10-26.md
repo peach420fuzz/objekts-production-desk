@@ -29,6 +29,10 @@ Paid remote preproduction consultation for feature films, series, commercials an
 | GitHub (owned) | [ai-vfx-production-preflight SKILL.md](https://github.com/peach420fuzz/objekts-production-desk/blob/main/skills/ai-vfx-production-preflight/SKILL.md) | Updated | pre-shoot branch + trigger metadata, commits 6d23d3b8e5be788e414d3e76ecc7ae53d6da641d and 05dc4e12df6159c27faefd35bff6a5aa236a45b8 |
 | Private site-owner handoff | [objekt#31](https://github.com/peach420fuzz/objekt/issues/31) | OPEN instruction, **NOT deployed on site** | RU/EN ready copy, metadata, capture list and CTA; actual live site/source change owner-controlled. |
 
+## Additional SEO keyword research gate
+
+Ubersuggest connected and authenticated as `objektsai@gmail.com` on **free tier** on 26 Oct; `location_suggest` returned no results for either `Russia` or `Russian Federation`. **No Russia locId and no locally valid volume/SEO-difficulty rows** were obtained. Do **not** copy US/global keyword volumes into RU market claims. Candidate commercial phrases are hypotheses until locally verified: `VFX препродакшн`, `консультация VFX перед съемками`, `планирование съемок под графику`, `техническое задание для VFX съемки`, `VFX супервайзер на препродакшн`. For English: `VFX preproduction consultation`, `VFX shoot planning`, `on-set VFX data planning`, `VFX plate capture checklist` — also without measured volumes in this pass.
+
 ## Initial Google Search Console / Windsor.ai evidence
 
 Period **2026-10-05 through 2026-10-23** inclusive, before these Oct26 specialist placements and subject to normal GSC lag; Search Console data is not GA4, and not a proof of enquiries.
