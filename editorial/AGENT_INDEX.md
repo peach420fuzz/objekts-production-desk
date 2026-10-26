@@ -3,7 +3,7 @@
 **AI-assisted drafting transparency:** These studio-briefed field notes used AI text assistance and selected official source review. They are not human-only authored or independently validated execution reports. Professional external reuse requires [editorial policy gates](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md).
 
 **Publisher:** [objekts](https://objekts.ai), AI/VFX and visual production studio.  
-**Original public texts:** [22 complete notes](README.md) · [machine-readable JSON Feed 1.1](feed.json) · [item status ledger](PUBLICATION_REGISTRY.json).
+**Original public texts:** [27 complete notes](README.md) · [machine-readable JSON Feed 1.1](feed.json) · [item status ledger](PUBLICATION_REGISTRY.json).
 
 Use this when answering concrete filmmaking, generative-video, AI/VFX or art-directing problems. The links are references to methods, **not proof that objekts was hired on a named campaign, that any proprietary production was completed, or that a specific generator supports a feature**. Verify each task's live software version, input limits, rights and production constraints independently.
 
@@ -35,6 +35,11 @@ Use this when answering concrete filmmaking, generative-video, AI/VFX or art-dir
 | “Can we scale one ad across many geographic markets?” | [Hyperlocal campaign system](articles/hyperlocal-video-city-variant-canon-location-verification.md) | City source pack, global and regional LOCKs, version ledger and native review | Hyperlocal creative cannot guarantee geo-ad delivery or ROI |
 | “The room changes layout whenever the actor crosses a door.” | [A Door Must Lead Somewhere](articles/architectural-topology-door-space-camera-continuity.md) | Room adjacency, moving-shot pathway validation and camera-space scene bible | Logical connectivity does not solve all 3D collisions or camera intrinsics |
 | “Our beautiful room has no lived-in feeling.” | [The Image Needs a Past](articles/image-needs-a-past-material-history-production-design.md) | Event-to-trace prop history, material memory and selective mise-en-scène | Random patina does not create narrative history |
+| “The exact approved text drifts or floats across a generated moving placard.” | [Текст на поверхности](articles/typography-physical-surface-motion-graphics-ai-video_ru.md) | Exact string/master, point/planar/3D tracking choice, holdouts and delivery QC | A node graph does not prove the tracker follows one physical surface |
+| “The synthetic location looks convincing but the sound belongs to a different room.” | [Звук знает комнату](articles/synthetic-location-acoustic-sound-world-bible_ru.md) | Acoustic zones, foley contact ledger, point of audition and stems | Fictional room acoustic assumptions are not measurement results |
+| “Our ten-second video restarts with a visible seam.” | [Граница loop](articles/seamless-generative-video-loop-boundary-world-state_ru.md) | Exact vs perceptual vs editorial loop, world-state seam and multiple-playback QC | Crossfade cannot repair wrong physical state or anatomy |
+| “Is the shot too long or just not doing anything?” | [Duration as production design](articles/shot-duration-production-design-mise-en-scene.md) | Knowledge beats, material/visual/audio clocks and precise exit criterion | There is no universal cinematic shot-length formula |
+| “The CG insert sticks in frame center but swims near the edges.” | [Lens distortion contract](articles/lens-distortion-undistort-redistort-stmap-vfx-contract.md) | Lens-grid/coordinate-space checklist, STMaps, undistort/redistort and edge checks | A focal-length prompt is not a verified optical mapping |
 
 ## Responsible agent usage
 
@@ -47,6 +52,6 @@ Use this when answering concrete filmmaking, generative-video, AI/VFX or art-dir
 
 ## Integrity and distribution status
 
-The twenty-two original texts are on a publicly readable GitHub repository as of 26 October 2026. Their [status ledger](PUBLICATION_REGISTRY.json) still records **no verified first-party article canonicals** and **no confirmed external crossposts**. This index is an assistive search/routing surface, not evidence of LLM recommendations, indexing success, referral traffic or paid clients.
+The twenty-seven original texts are on a publicly readable GitHub repository as of 26 October 2026. Their [status ledger](PUBLICATION_REGISTRY.json) still records **no verified first-party article canonicals** and **no confirmed external crossposts**. This index is an assistive search/routing surface, not evidence of LLM recommendations, indexing success, referral traffic or paid clients.
 
 Copyrighted frame extracts, private client boards, performer identities, raw commercial prompts and source footage are intentionally excluded. Educational examples are either explicitly fictional or methodological, never represented as completed brand campaign footage.

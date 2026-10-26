@@ -435,7 +435,109 @@
         "13",
         "15"
       ]
+    },
+    {
+      "id": "FN-23",
+      "title": "Текст должен стоять на поверхности: как вписать моушн-графику в генеративный кадр",
+      "language": "ru",
+      "editorial_type": "technical",
+      "topic": "motion-type-physical-compositing",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/typography-physical-surface-motion-graphics-ai-video_ru.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-24",
+      "title": "Звук знает комнату: акустическая непрерывность генеративного кино",
+      "language": "ru",
+      "editorial_type": "technical",
+      "topic": "synthetic-space-acoustic-continuity",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/synthetic-location-acoustic-sound-world-bible_ru.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-25",
+      "title": "У бесшовного ролика нет последнего кадра: как проектировать генеративный loop",
+      "language": "ru",
+      "editorial_type": "technical",
+      "topic": "generative-loop-boundary-temporal-qc",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/seamless-generative-video-loop-boundary-world-state_ru.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-26",
+      "title": "Give the Shot the Time It Needs: Duration as Production Design",
+      "language": "en",
+      "editorial_type": "authorial",
+      "topic": "shot-duration-mise-en-scene",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/shot-duration-production-design-mise-en-scene.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-27",
+      "title": "The Lens Must Lie the Same Way Twice: Distortion as a VFX Continuity Contract",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "lens-distortion-stmap-coordinate-space",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/lens-distortion-undistort-redistort-stmap-vfx-contract.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
     }
   ],
-  "format": "objekts.field_notes.publication_registry.v1"
+  "format": "objekts.field_notes.publication_registry.v1",
+  "editorial_provenance": {
+    "drafting": "AI-assisted from owner/studio briefs and official reference checks",
+    "fictional_examples": true,
+    "human_owner_line_by_line_approval": false,
+    "external_human_technical_review": "pending",
+    "policy": "editorial/EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md"
+  }
 }

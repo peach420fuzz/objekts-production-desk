@@ -13,6 +13,71 @@
   "language": "en",
   "items": [
     {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/lens-distortion-undistort-redistort-stmap-vfx-contract.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/lens-distortion-undistort-redistort-stmap-vfx-contract.md",
+      "title": "The Lens Must Lie the Same Way Twice: Distortion as a VFX Continuity Contract",
+      "content_text": "Plate/CG coordinate-space and optical-distortion contract from official Foundry and Autodesk workflows; lens grids, STMaps, undistort and redistort gates.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/lens-distortion-undistort-redistort-stmap-vfx-contract.md",
+      "summary": "Plate/CG coordinate-space and optical-distortion contract from official Foundry and Autodesk workflows; lens grids, STMaps, undistort and redistort gates.",
+      "language": "en",
+      "tags": [
+        "lens-distortion-stmap-coordinate-space",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/shot-duration-production-design-mise-en-scene.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/shot-duration-production-design-mise-en-scene.md",
+      "title": "Give the Shot the Time It Needs: Duration as Production Design",
+      "content_text": "Editorial method for shot duration as staging: knowledge beats, material clock, camera/sound clocks and exit criteria. Cites first-person BFI interviews; no endorsement inferred.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/shot-duration-production-design-mise-en-scene.md",
+      "summary": "Editorial method for shot duration as staging: knowledge beats, material clock, camera/sound clocks and exit criteria. Cites first-person BFI interviews; no endorsement inferred.",
+      "language": "en",
+      "tags": [
+        "shot-duration-mise-en-scene",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/seamless-generative-video-loop-boundary-world-state_ru.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/seamless-generative-video-loop-boundary-world-state_ru.md",
+      "title": "У бесшовного ролика нет последнего кадра: как проектировать генеративный loop",
+      "content_text": "Distinguishes exact, perceptual and editorial loops, builds periodic world-state boundary contract and decoded multi-repeat QC. Fictional 250-frame example.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/seamless-generative-video-loop-boundary-world-state_ru.md",
+      "summary": "Distinguishes exact, perceptual and editorial loops, builds periodic world-state boundary contract and decoded multi-repeat QC. Fictional 250-frame example.",
+      "language": "ru",
+      "tags": [
+        "generative-loop-boundary-temporal-qc",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/synthetic-location-acoustic-sound-world-bible_ru.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/synthetic-location-acoustic-sound-world-bible_ru.md",
+      "title": "Звук знает комнату: акустическая непрерывность генеративного кино",
+      "content_text": "Audio-space bible for synthetic architecture: source geography, contact timing, room tone, object audio and picture/audio sync. Fictional stone passage; no real mix performed.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/synthetic-location-acoustic-sound-world-bible_ru.md",
+      "summary": "Audio-space bible for synthetic architecture: source geography, contact timing, room tone, object audio and picture/audio sync. Fictional stone passage; no real mix performed.",
+      "language": "ru",
+      "tags": [
+        "synthetic-space-acoustic-continuity",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/typography-physical-surface-motion-graphics-ai-video_ru.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/typography-physical-surface-motion-graphics-ai-video_ru.md",
+      "title": "Текст должен стоять на поверхности: как вписать моушн-графику в генеративный кадр",
+      "content_text": "Hybrid generative plate and deterministic typography pipeline: surface tracking, exact strings, holdout mattes, material/light integration and decoded-delivery QC. Fictional three-placard scene.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/typography-physical-surface-motion-graphics-ai-video_ru.md",
+      "summary": "Hybrid generative plate and deterministic typography pipeline: surface tracking, exact strings, holdout mattes, material/light integration and decoded-delivery QC. Fictional three-placard scene.",
+      "language": "ru",
+      "tags": [
+        "motion-type-physical-compositing",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
       "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/image-needs-a-past-material-history-production-design.md",
       "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/image-needs-a-past-material-history-production-design.md",
       "title": "The Image Needs a Past",

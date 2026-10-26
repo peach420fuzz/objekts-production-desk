@@ -4,7 +4,7 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 
 **[objekts.ai](https://objekts.ai) · [Creative work](https://objekts.ai/en/work/) · [AI/VFX production](https://objekts.ai/en/services/ai-vfx/) · [Contact](https://objekts.ai/en/contact/)**
 
-## Start here: twenty-two complete field notes
+## Start here: twenty-seven complete field notes
 
 | # | Article | Core practical result | Language |
 |---|---|---|---|
@@ -30,10 +30,15 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 | 20 | [One Campaign, One Hundred Cities, Zero Invented Landmarks](articles/hyperlocal-video-city-variant-canon-location-verification.md) | Source-checked location variants and brand/geo campaign gates | EN |
 | 21 | [A Door Must Lead Somewhere](articles/architectural-topology-door-space-camera-continuity.md) | Room-graph topology, continuous camera routes and a tested toy checker | EN |
 | 22 | [The Image Needs a Past](articles/image-needs-a-past-material-history-production-design.md) | Authorial material history, scars/wear and causal production design | EN |
+| 23 | [Текст должен стоять на поверхности](articles/typography-physical-surface-motion-graphics-ai-video_ru.md) | Exact text and material/plane tracking in hybrid AI–AE compositing | RU |
+| 24 | [Звук знает комнату](articles/synthetic-location-acoustic-sound-world-bible_ru.md) | Acoustic world bible, scene sources, sound event clock and sync | RU |
+| 25 | [У бесшовного ролика нет последнего кадра](articles/seamless-generative-video-loop-boundary-world-state_ru.md) | Exact/perceptual/editorial loops and decoded boundary-state QC | RU |
+| 26 | [Give the Shot the Time It Needs](articles/shot-duration-production-design-mise-en-scene.md) | Dramatic duration, material/action clock, shot exit conditions | EN |
+| 27 | [The Lens Must Lie the Same Way Twice](articles/lens-distortion-undistort-redistort-stmap-vfx-contract.md) | Lens grids, STMap space, matchmove, undistort/redistort integration | EN |
 
-**These twenty-two are complete AI-assisted studio field notes, not human-only authored or independently peer-reviewed articles.** Research and drafts were prepared with AI assistance from the studio's brief and reviewed against selected public references; they require qualified human editorial and technical signoff before external syndication. Worked examples are illustrative unless an execution receipt is included. See the [editorial integrity and platform policy](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md).
+**These twenty-seven are complete AI-assisted studio field notes, not human-only authored or independently peer-reviewed articles.** Research and drafts were prepared with AI assistance from the studio's brief and reviewed against selected public references; they require qualified human editorial and technical signoff before external syndication. Worked examples are illustrative unless an execution receipt is included. See the [editorial integrity and platform policy](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md).
 
-**These twenty-two are full articles.** The [100 original article briefs](100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md) form the future editorial backlog and **do not count as published articles**. Articles are original studio methodology with self-contained, illustrative examples; they do not contain raw production client data, client likeness, proprietary boards or submitted generative assets.
+**These twenty-seven are full articles.** The [100 original article briefs](100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md) form the future editorial backlog and **do not count as published articles**. Articles are original studio methodology with self-contained, illustrative examples; they do not contain raw production client data, client likeness, proprietary boards or submitted generative assets.
 
 ## Evidentiary standards
 
@@ -46,7 +51,7 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 
 ## Machine-readable subscriptions
 
-- **[JSON Feed 1.1](feed.json)** — 22 distinct, source-linked, language-tagged notes. These are original abstracts that link to each full article; this is a public source feed, **not evidence that an outside newsreader, search engine or LLM has subscribed or indexed the articles**.
+- **[JSON Feed 1.1](feed.json)** — 27 distinct, source-linked, language-tagged notes. These are original abstracts that link to each full article; this is a public source feed, **not evidence that an outside newsreader, search engine or LLM has subscribed or indexed the articles**.
 - **[Agent topic-to-method index](AGENT_INDEX.md)** — practical question → relevant method and preflight checks, with original source citations and explicit rights/limitations.
 - [Official JSON Feed 1.1 specification](https://www.jsonfeed.org/version/1.1/) for consumers and downstream publication systems. Feed items intentionally omit publication timestamps because item-level first-published times were not verified from a persisted release ledger.
 
