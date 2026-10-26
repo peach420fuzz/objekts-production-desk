@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "registry_version": "1.0.0",
+  "publisher": "objekts",
+  "publisher_url": "https://objekts.ai",
+  "evidence_as_of": "2026-10-26",
+  "status_dictionary": {
+    "PUBLIC_GITHUB": "Article's full authored text exists in public GitHub repo on main; no ranking/indexing guarantee",
+    "OWN_DOMAIN_PENDING": "No live first-party canonical article page verified",
+    "EXTERNAL_NONE": "No authenticated external editorial/social crosspost verified"
+  },
+  "rights": {
+    "articles": "First-party de-identified methodology; no imported client stills, specific performer identity, private Canvas data or proprietary prompts",
+    "assets": "Two original SVG graphics separately tracked; four fashion photographic Pins remain permission-gated"
+  },
+  "measurement": {
+    "qualified_leads_attributed": null,
+    "referral_lift_attributed": null,
+    "search_ranking_claim": "none"
+  },
+  "articles": [
+    {
+      "id": "FN-01",
+      "title": "A Canvas Arrow Is Not a Model Input",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "ai-canvas-reference-graphs",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/canvas-reference-graph-input-audit.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-02",
+      "title": "Stop Prompting Make It Move",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "motion-physical-causality",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/physical-causality-generative-video.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-03",
+      "title": "Reference Provenance",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "reference-role-control",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/reference-provenance-role-based-image-control.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-04",
+      "title": "One Location, Many Shots",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "world-master-continuity",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/world-master-scene-continuity.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-05",
+      "title": "Бордоматик против генеративного видео",
+      "language": "ru",
+      "editorial_type": "technical",
+      "topic": "shot-frame-accurate-editing",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/storyboard-frame-accurate-generative-edit_ru.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-06",
+      "title": "Completed ещё не Approved",
+      "language": "ru",
+      "editorial_type": "technical",
+      "topic": "production-job-qc-states",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-statuses-technical-success-vs-approval_ru.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-07",
+      "title": "The Frame Needs a Reason",
+      "language": "en",
+      "editorial_type": "authorial",
+      "topic": "authored-image-art-direction",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/the-frame-needs-a-reason-authorial-image-making.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "id": "FN-08",
+      "title": "Keep the Person Change the World",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "identity-continuity-stylization",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/identity-continuity-generative-stylization.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PENDING",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15"
+      ]
+    }
+  ]
+}
