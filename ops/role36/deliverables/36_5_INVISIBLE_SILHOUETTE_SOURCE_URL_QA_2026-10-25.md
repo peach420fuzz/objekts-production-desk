@@ -35,3 +35,7 @@ The public case text describes **thirteen source images**, while the rendered pa
 - **Owner/producer:** original-author authorization, underlying model/asset rights and any print sublicensing permission.
 
 **Status:** 10 public URL anchors mapped; 7 crawler image previews; 3 ambiguous crawler errors; 0 verified native masters/print licenses; 0 new external posts from this check.
+
+
+## Δ 26 Oct signed-out browser verification — supersedes crawler ambiguity
+All 10 linked WebP images (including 004/009/013) loaded visibly in anonymous browser; all ten are 1920 × 1072 or 1920 × 1080 according to verified exact rows in the [browser visual QC](36_5_INVISIBLE_SILHOUETTE_BROWSER_VISUAL_QC_2026-10-26.md) (specifically 3 at 1920×1080, 7 at 1920×1072). This excludes a visible origin failure for previously ambiguous URLs in the tested browser; it does **not** establish original print resolution or usage rights. Prior crawler errors remain historical tool observations only. Three recommended unaltered editorial images: 003 / 002 / 006, subject to ownership and original-art masters. The source page's 3.25-sec, 1280×720 variations.mp4 plays. Public WebMCP C2PA scan found **no embedded C2PA on those 10 fashion WebP previews**; neither negative metadata nor website availability proves content rights. External-publication status remains NOT_PUBLISHED.
