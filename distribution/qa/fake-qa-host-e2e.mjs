@@ -5,6 +5,7 @@ import {chromium} from "playwright";
 import fs from "node:fs/promises";
 import crypto from "node:crypto";
 import {collectFailures} from "./fake-qa-verdict.mjs";
+import {rewriteQaHtml} from "./fake-qa-proxy.mjs";
 const upstream="https://fake.objekts.ai";
 await fs.mkdir("qa-artifacts/e2e",{recursive:true});
 const server=http.createServer(async (req,res)=>{
@@ -23,6 +24,10 @@ const server=http.createServer(async (req,res)=>{
     const responseHeaders={};
     for(const [key,value] of upstreamResponse.headers.entries()) {
       if(!["connection","content-encoding","content-length","transfer-encoding"].includes(key)) responseHeaders[key]=value;
+    }
+    if(upstreamResponse.headers.get("content-type")?.includes("text/html")){
+      const html=rewriteQaHtml(await upstreamResponse.text());
+      res.writeHead(upstreamResponse.status,responseHeaders);res.end(html);return;
     }
     res.writeHead(upstreamResponse.status,responseHeaders);
     if(upstreamResponse.body) Readable.fromWeb(upstreamResponse.body).pipe(res);

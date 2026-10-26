@@ -7,6 +7,7 @@ on:
       - "distribution/qa/fake-qa-host-e2e.mjs"
       - "distribution/qa/fake-qa-verdict.mjs"
       - "distribution/qa/fake-qa-verdict.test.mjs"
+      - "distribution/qa/fake-qa-proxy.mjs"
       - ".github/workflows/fake-studio-visual-qa.yml"
 permissions:
   contents: read

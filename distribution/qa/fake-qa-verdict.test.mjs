@@ -1,6 +1,19 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { assertReport, REQUIRED_TABS, REQUIRED_POSES, REQUIRED_PRESETS } from "./fake-qa-verdict.mjs";
+import { rewriteQaHtml } from "./fake-qa-proxy.mjs";
+
+test("proxy keeps the injected same-site script on the QA origin", () => {
+  assert.equal(rewriteQaHtml('<script src="https://fake.objekts.ai/.webmcp/bridge.js" data-packs="c2pa"></script>'), '<script src="/.webmcp/bridge.js" data-packs="c2pa"></script>');
+});
+test("proxy does not rewrite unrelated links or external scripts", () => {
+  const html='<a href="https://fake.objekts.ai/about">About</a><script src="https://other.example/script.js"></script>';
+  assert.equal(rewriteQaHtml(html),html);
+});
+test("proxy rewrite is idempotent", () => {
+  const html='<script src="https://fake.objekts.ai/.webmcp/bridge.js"></script>';
+  assert.equal(rewriteQaHtml(rewriteQaHtml(html)),rewriteQaHtml(html));
+});
 
 function passingReport() {
   const view = name => ({ name, geometryReady: true, loading: false, overflow: false, canvas: {width: 900, height: 600, clientWidth: 900, clientHeight: 600} });
