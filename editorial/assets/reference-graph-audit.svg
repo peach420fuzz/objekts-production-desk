@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500" role="img" aria-labelledby="title desc">
+<title id="title">A Canvas Arrow Is Not a Model Input — objekts field note</title>
+<desc id="desc">An editorial diagram separating reference roles from typed image inputs and decorative canvas lines. Three image assets connect to an execution request only through verifiable typed inputs.</desc>
+<rect width="1000" height="1500" fill="#F3F0E8"/>
+<rect x="58" y="54" width="884" height="5" fill="#111820"/>
+<text x="58" y="108" fill="#111820" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" letter-spacing="3">OBJEKTS FIELD NOTES  /  01</text>
+<text x="58" y="220" fill="#111820" font-family="Arial,Helvetica,sans-serif" font-size="70" font-weight="800" letter-spacing="-3">A CANVAS ARROW</text>
+<text x="58" y="299" fill="#111820" font-family="Arial,Helvetica,sans-serif" font-size="70" font-weight="800" letter-spacing="-3">IS NOT A MODEL</text>
+<text x="58" y="378" fill="#111820" font-family="Arial,Helvetica,sans-serif" font-size="70" font-weight="800" letter-spacing="-3">INPUT.</text>
+<text x="60" y="438" fill="#3D4950" font-family="Arial,Helvetica,sans-serif" font-size="28">Verify the execution graph, not the decoration.</text>
+<rect x="58" y="486" width="884" height="608" fill="#FFFFFF" stroke="#1E252C" stroke-width="3"/>
+<text x="84" y="530" fill="#101820" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" letter-spacing="2">AUTHORITY AND ACTUAL MEDIA INPUTS</text>
+<g font-family="Arial,Helvetica,sans-serif">
+<rect x="82" y="563" width="335" height="123" fill="#ECF1F6" stroke="#193C5A" stroke-width="2"/>
+<text x="107" y="603" fill="#193C5A" font-size="21" font-weight="700">REF 01 / WORLD</text>
+<text x="107" y="642" fill="#101820" font-size="22">Geometry / locked</text>
+<text x="107" y="669" fill="#3F505F" font-size="17">File ID + media object</text>
+<rect x="82" y="712" width="335" height="123" fill="#ECF1F6" stroke="#193C5A" stroke-width="2"/>
+<text x="107" y="752" fill="#193C5A" font-size="21" font-weight="700">REF 02 / CHARACTER</text>
+<text x="107" y="791" fill="#101820" font-size="22">Identity / licensed</text>
+<text x="107" y="818" fill="#3F505F" font-size="17">File ID + media object</text>
+<rect x="82" y="861" width="335" height="123" fill="#ECF1F6" stroke="#193C5A" stroke-width="2"/>
+<text x="107" y="901" fill="#193C5A" font-size="21" font-weight="700">REF 03 / LIGHT</text>
+<text x="107" y="940" fill="#101820" font-size="22">Light only / bounded</text>
+<text x="107" y="967" fill="#3F505F" font-size="17">File ID + media object</text>
+<rect x="589" y="644" width="328" height="254" fill="#102940"/>
+<text x="614" y="694" fill="#E9F0F4" font-size="19" letter-spacing="2">GENERATION REQUEST</text>
+<text x="614" y="746" fill="#FFFFFF" font-size="29" font-weight="700">3 verified typed</text>
+<text x="614" y="785" fill="#FFFFFF" font-size="29" font-weight="700">image inputs</text>
+<text x="614" y="840" fill="#B9D8EC" font-size="19">+ prompt revision</text>
+<text x="614" y="865" fill="#B9D8EC" font-size="19">+ run receipt</text>
+<path d="M417 623 H500 V709 H589" fill="none" stroke="#2B755D" stroke-width="7" stroke-linecap="round"/>
+<path d="M417 772 H589" fill="none" stroke="#2B755D" stroke-width="7" stroke-linecap="round"/>
+<path d="M417 921 H500 V840 H589" fill="none" stroke="#2B755D" stroke-width="7" stroke-linecap="round"/>
+<polygon points="589,709 565,696 565,722" fill="#2B755D"/>
+<polygon points="589,772 565,759 565,785" fill="#2B755D"/>
+<polygon points="589,840 565,827 565,853" fill="#2B755D"/>
+<text x="92" y="1050" fill="#A1422C" font-size="21" font-weight="700">DOTTED NOTE OR UI ARROW</text>
+<text x="472" y="1050" fill="#A1422C" font-size="21">≠ submitted image payload</text>
+</g>
+<text x="58" y="1152" fill="#111820" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700">RUN THE THREE-PART CHECK</text>
+<g font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#111820">
+<text x="58" y="1218"><tspan font-weight="700" fill="#2B755D">01</tspan><tspan dx="28">Trace the typed edge to the actual job.</tspan></text>
+<text x="58" y="1274"><tspan font-weight="700" fill="#2B755D">02</tspan><tspan dx="28">Inspect every attached media ID.</tspan></text>
+<text x="58" y="1330"><tspan font-weight="700" fill="#2B755D">03</tspan><tspan dx="28">Judge the output against locked fields.</tspan></text>
+</g>
+<rect x="58" y="1371" width="884" height="3" fill="#111820"/>
+<text x="58" y="1421" fill="#111820" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700">objekts.ai</text>
+<text x="942" y="1421" fill="#3D4950" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="21">REFERENCE  /  GRAPH  /  QC</text>
+<text x="58" y="1462" fill="#65737B" font-family="Arial,Helvetica,sans-serif" font-size="17">Original editorial graphic. Methodology, not a vendor UI screenshot.</text>
+</svg>
