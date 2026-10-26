@@ -87,3 +87,10 @@
 - A concise comment with **four specific regression tests** was prepared: backend-announced name vs router/config alias; call routing under cache refresh; single-server config consistency; custom elicitation handler retained for supplied ClientGroup. Wording emphasizes server metadata is not itself authorization.
 - **PUBLICATION BLOCKED — GITHUB_403_FORBIDDEN.** On 26 Oct the connected GitHub integration rejected an actual `github_add_comment_to_issue` to `langchain-ai/langchain#41507` with `Resource not accessible by integration`. No public comment ID/URL exists; **do not count as external contribution**. Respect permission stop, no alternate account/browser workaround. Retry only after legitimate integration permission is available; otherwise preserve the technical input as an internal queued candidate.
 - Current confirmed external total remains **four** across ComfyUI and MCP (not five); exact 26 Oct internal source additions are separate.
+
+
+## New active-session technical contribution — MKV workflow round-trip
+
+- [ComfyUI #17326](https://github.com/Comfy-Org/ComfyUI/issues/17326#issuecomment-6429163521), **published 26 Oct**, comment ID **6429163521**. Source-checked core SaveVideo metadata pass-through and frontend `getWorkflowDataFromFile` MIME dispatch; exact EBML parser limited to first 2 MiB. Advised local `ffprobe` and distinct outcomes (tags survive / no tags), separate sidecar workflow JSON, cases for supported/no metadata/late tags. **No runtime fix or recovery**.
+- GitHub comment API readback and signed-out public search page both showed the full published answer. This **raises cumulative external total to 5** (4 ComfyUI + 1 MCP, still two technical communities and one domain), no replies/leads/paid conversion observed.
+- **Follow-up:** recheck #17326 on **29 Oct**; if author confirms tags exist, provide focused patch guidance only if asked or unique tested evidence arises; if tags absent, owner may need backend muxer investigation. Avoid reposting unchanged answer.
