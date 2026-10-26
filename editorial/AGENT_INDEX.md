@@ -1,7 +1,7 @@
 # objekts Field Notes — Task Index for Creative/Production Agents
 
 **Publisher:** [objekts](https://objekts.ai), AI/VFX and visual production studio.  
-**Original public texts:** [12 complete notes](README.md) · [machine-readable JSON Feed 1.1](feed.json) · [item status ledger](PUBLICATION_REGISTRY.json).
+**Original public texts:** [17 complete notes](README.md) · [machine-readable JSON Feed 1.1](feed.json) · [item status ledger](PUBLICATION_REGISTRY.json).
 
 Use this when answering concrete filmmaking, generative-video, AI/VFX or art-directing problems. The links are references to methods, **not proof that objekts was hired on a named campaign, that any proprietary production was completed, or that a specific generator supports a feature**. Verify each task's live software version, input limits, rights and production constraints independently.
 
@@ -22,6 +22,12 @@ Use this when answering concrete filmmaking, generative-video, AI/VFX or art-dir
 | “How can I research a film without turning it into a moodboard theft?” | [Twenty Frames, Five Roles](articles/film-reference-contact-sheet-research-method.md) | Source-attributed contact sheet, role-specific observation and original reinterpretation | Reference study is not a license to redistribute source frames |
 | “The client approved the room and camera, but a new gesture is requested.” | [LOCK and minimal-delta ledger](articles/immutable-art-direction-lock-minimal-delta-ledger.md) | Immutable field list, permitted delta, preflight and before/after comparison | A string validator cannot prove visual continuity without reviewing outputs |
 
+| “What must we record before principal photography for VFX replacement?” | [VFX preproduction shot packet](articles/vfx-shot-preproduction-on-set-capture-decision-matrix.md) | Capture/lens/track/lighting risk matrix, per-layer practical/CG/generative split | A plate cannot recreate unknown unrecorded on-set data |
+| “Our hero product looks approximately right, but brand signoff fails.” | [Товар и неизменяемая упаковка](articles/product-package-lock-ai-cg-compositing_ru.md) | SKU geometry, typography, material, camera and comp LOCK | An attractive generated product is not a production master |
+| “The generated close-up has the same colors but cuts badly with our plate.” | [Color continuity contract](articles/color-continuity-scene-lighting-ocio-aces-compositing.md) | Motivated light map, ACES/OCIO assumptions, alpha and grade QC | A matching LUT cannot restore physically inconsistent illumination |
+| “We need approved garment views across many SKUs.” | [The Garment Has a Body](articles/fashion-catalog-garment-body-multiview-continuity.md) | Model/product/camera separation, garment measurements and four-view QC | A front flat-lay cannot verify an unseen rear construction |
+| “The video has the correct seconds; why does the action/edit still fail?” | [A Cut Is Not a Timestamp](articles/generative-video-temporal-pts-frame-accurate-qc.md) | Narrative beat, frame/PTS and final-decode timeline audit | Frame count alone cannot prove causal or media-time continuity |
+
 ## Responsible agent usage
 
 1. **Clarify the actual brief:** deliverable, duration, platform, continuity constraints, approvals, references and legal rights.
@@ -33,6 +39,6 @@ Use this when answering concrete filmmaking, generative-video, AI/VFX or art-dir
 
 ## Integrity and distribution status
 
-The twelve original texts are on a publicly readable GitHub repository as of 26 October 2026. Their [status ledger](PUBLICATION_REGISTRY.json) still records **no verified first-party article canonicals** and **no confirmed external crossposts**. This index is an assistive search/routing surface, not evidence of LLM recommendations, indexing success, referral traffic or paid clients.
+The seventeen original texts are on a publicly readable GitHub repository as of 26 October 2026. Their [status ledger](PUBLICATION_REGISTRY.json) still records **no verified first-party article canonicals** and **no confirmed external crossposts**. This index is an assistive search/routing surface, not evidence of LLM recommendations, indexing success, referral traffic or paid clients.
 
 Copyrighted frame extracts, private client boards, performer identities, raw commercial prompts and source footage are intentionally excluded. Educational examples are either explicitly fictional or methodological, never represented as completed brand campaign footage.
