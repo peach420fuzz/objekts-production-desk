@@ -67,3 +67,8 @@ Prioritize replies from **Russian FLUX.3 user** and **Mac Qwen model user**, sou
 ## Engagement baseline check · 27 Oct (GitHub API)
 
 Fetched first-page reactions for all **eight exact comment IDs** (6 ComfyUI, 1 MCP spec, 1 MCP Registry). Each returned **0 reactions**. Direct issue-comment reread had also found no follow-up reply directed at the first six. This is a **negative observed engagement signal**, not proof of zero human readers or search exposure. No landing-page analytics or attributed brief were accessed. **Strategic response:** prioritize one genuinely resolved question or accepted upstream change over five more similar lightweight comments; third-party community count is already nonzero, conversion proof is not.
+
+
+## Existing publisher-control audit · repo workflows, read-only
+
+Fetched current `.github/workflows` directory (48 YAML files) and read all **48** from the public production-desk repository. **0 workflows contained references to `dirabook`, `clawprint`, or `acnlabs`**; no DiraBook/Clawprint publish workflow was identified. This is an exact scoped repository finding, **not** proof that those services have no credentials or are not controlled elsewhere. No workflow was rerun; no token or secret was accessed. Thus the existing DiraBook/Clawprint author identity remains an **external publishing permission gate**, rather than a reason to manufacture a new account. Follow owner issue #135 and existing legitimate publisher session only.
