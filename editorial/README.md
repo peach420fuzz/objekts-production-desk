@@ -36,4 +36,7 @@ Each article has **a named failure mode, source hierarchy, testable method and Q
 
 ## Distribution
 
+[Machine-readable publication registry](PUBLICATION_REGISTRY.json) lists every full article, exact live GitHub source, current absent own-domain canonical, external post URLs (currently empty), rights status and downstream owner roles. Other agents must verify a new permalink before changing any pending status.
+
+
 This public GitHub folder is the first accessible source for the notes. The corresponding canonical pages on `objekts.ai` are **not deployed** by this role. [Selective cross-posting playbook](PLATFORM_PUBLICATION_AND_CANONICAL_ROUTING_2026-10-26.md) keeps roles and URLs clear: role12 handles own-site publishing, role13 external editorial, role15 authenticated creative profiles. No claims of distribution until signed-out live URLs are verified.
