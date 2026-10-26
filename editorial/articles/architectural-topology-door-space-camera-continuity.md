@@ -94,6 +94,8 @@ console.log(checkContinuousPath(rooms, doors, ["K", "R"]));
 // ["no declared connection: K -> R"]
 ```
 
+The isolated teaching function was actually executed on 26 October 2026 against four input cases: declared K→H→R returned no failures; undeclared K→R returned the expected missing-connection failure; K→Z flagged both the unknown room and missing connection; an empty path flagged a missing path. **4/4 assertions passed** in the text-level logic test. This is not an image/video test, geometry solver, or measured film set.
+
 A robust implementation would also reject malformed door records, assign orientation/width and collision geometry, distinguish camera routes from performer routes and verify actual 3D positions. This simplified validator's job is to make *one kind* of false continuity visible before image generation.
 
 Even a passing path can be impossible: a 1.3-m corridor may not fit a full-size dolly, a doorway can be blocked by the camera body, and a one-way security barrier cannot be traversed in both directions. Those require geometric/production review.
