@@ -477,3 +477,12 @@ The three source types are kept distinct: a newly accepted editorial queue reque
 | [Evaluation methodology, updated](../docs/MCP_MIXED_PURPOSE_ROUTING_EVAL.md) | Documents expected executable commands, trace keys, fail-closed boundaries and source/test qualification. | **FIRST_PARTY_METHODOLOGY**; source navigation, not independent coverage. |
 
 **Metric boundary remains:** five externally visible 36.4 technical comments (four ComfyUI, one MCP), two external technical communities on one domain. **0 independent developer responses and 0 tracked inbound production briefs/revenue at latest check.**
+
+
+## 36.4 ongoing session — 27 Oct 2026 · Mac/PyTorch model-format diagnosis
+
+| Verified public receipt | Question / contribution | Boundary |
+|---|---|---|
+| [ComfyUI #17376, comment 6429443393](https://github.com/Comfy-Org/ComfyUI/issues/17376#issuecomment-6429443393) | Mac/MPS user reported `UNETLoader` `_pickle.UnpicklingError: Unsupported operand 1` for Qwen 2.1 “uncensored” workflow. Read complete issue/error log (PyTorch 2.12.1, ComfyUI 0.42.5) and current core `nodes.py` `UNETLoader` + `comfy/utils.py` `load_torch_file`; traced `torch.load(weights_only=True)` to the filename-extension branch rather than MPS runtime. Published safe check of exact selected diffusion filename, model container/loader (GGUF vs safetensors), source checksum, avoiding insecure `weights_only=False`. Separately noted unrelated custom-node transformers import failure. | **EXTERNAL_PUBLIC_VERIFIED** via GitHub API comment ID **6429443393** and readback. **Static diagnosis only**; no access to user's weights and no local MPS reproduction. Anonymous search frontend temporarily rejected public GitHub fetch (DisabledError), so signed-out rendering was not additionally proven in this cycle. |
+
+**Cumulative 36.4 verified top-level external technical comments: 6** (5 ComfyUI, 1 Model Context Protocol), **2 independent communities on one domain**. No independently observed human response, attributed buyer inquiry, commission or revenue in this check. This answer is a contribution, not a remotely confirmed fix.
