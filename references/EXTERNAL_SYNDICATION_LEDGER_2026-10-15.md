@@ -457,3 +457,12 @@ The three source types are kept distinct: a newly accepted editorial queue reque
 | [Repository README](../README.md) | Added link to public evaluation method in methodology navigation; commit `26082430c0ae267c09abc0732d4a15c36602e420`. | **FIRST_PARTY_INTERNAL_NAVIGATION**; not a new community placement. |
 
 **This addendum changes no 36.4 external-count, buyer-lead or revenue metric.** Follow-up is to evaluate routing against a controlled mock host without allowing live Production Desk mutations and only then, if authorized, test a real client.
+
+
+## 36.4 second active session — 26 Oct 2026 · ComfyUI MKV workflow import gap
+
+| Public receipt | Actual technical contribution | Verification / limits |
+|---|---|---|
+| [Comfy-Org/ComfyUI #17326 comment 6429163521](https://github.com/Comfy-Org/ComfyUI/issues/17326#issuecomment-6429163521) | User reported ComfyUI `SaveVideo` MKV export that no longer re-imports embedded workflow. Reviewed current core `comfy_extras/nodes_video.py` (metadata passed into `save_to`) and frontend `src/scripts/metadata/parser.ts` (dispatches WebM + ISOBMFF, not MKV) plus `ebml.ts` (common EBML header, **2 MiB front read**). Posted exact writer/reader distinction, local `ffprobe -v error -show_entries format_tags -of json ...` recovery gate and negative/regression scenarios. Studio affiliation named. | **EXTERNAL_PUBLIC_VERIFIED:** GitHub API comment ID **6429163521** read back fully; anonymous search open/find displayed entire answer. **Static source finding**, no tested MKV, no maintainer acceptance or file recovery claimed. |
+
+**Updated cumulative independent external comments: 5** (4 ComfyUI, 1 Model Context Protocol) across **2 independently governed technical communities on github.com**; **0 observed independent replies as of this publication**, **0 attributable human buyer briefs, 0 revenue, 0 spend**. This one question is not a new independent domain or direct sale.
