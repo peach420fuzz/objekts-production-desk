@@ -3,7 +3,7 @@
   "title": "objekts Field Notes — Visual Production Methods",
   "home_page_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
   "feed_url": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json",
-  "description": "Seventeen original AI/VFX, cinematography, art direction and visual production research by objekts. Public source texts in English and Russian. GitHub source pages are temporary; verified first-party canonicals have not yet been deployed.",
+  "description": "Twenty-two original AI/VFX, cinematography, art direction and visual production research by objekts. Public source texts in English and Russian. GitHub source pages are temporary; verified first-party canonicals have not yet been deployed.",
   "authors": [
     {
       "name": "objekts",
@@ -12,6 +12,71 @@
   ],
   "language": "en",
   "items": [
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/image-needs-a-past-material-history-production-design.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/image-needs-a-past-material-history-production-design.md",
+      "title": "The Image Needs a Past",
+      "content_text": "An authorial essay on why scratches, cloth wear and practical light become convincing when grounded in causal histories. A fictional tailor's room and event-to-trace ledger reinterpret principles discussed in BFI interviews with Pedro Costa and the Quay brothers without copying their image designs or implying a client shoot.\n\nOriginal full article: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/image-needs-a-past-material-history-production-design.md",
+      "summary": "An authorial essay on why scratches, cloth wear and practical light become convincing when grounded in causal histories. A fictional tailor's room and event-to-trace ledger reinterpret principles discussed in BFI interviews with Pedro Costa and the Quay brothers without copying their image designs or implying a client shoot.",
+      "language": "en",
+      "tags": [
+        "material-history-authorial-production-design",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/architectural-topology-door-space-camera-continuity.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/architectural-topology-door-space-camera-continuity.md",
+      "title": "A Door Must Lead Somewhere",
+      "content_text": "Architectural scene continuity treated as room/door topology, geometry, light, material history and camera blocking. A fictional three-room studio and runnable illustrative JavaScript checker distinguish connected continuous paths from impossible teleports; four separate logic cases were independently executed, with no image-generation test claimed.\n\nOriginal full article: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/architectural-topology-door-space-camera-continuity.md",
+      "summary": "Architectural scene continuity treated as room/door topology, geometry, light, material history and camera blocking. A fictional three-room studio and runnable illustrative JavaScript checker distinguish connected continuous paths from impossible teleports; four separate logic cases were independently executed, with no image-generation test claimed.",
+      "language": "en",
+      "tags": [
+        "architectural-topology-camera-continuity",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hyperlocal-video-city-variant-canon-location-verification.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hyperlocal-video-city-variant-canon-location-verification.md",
+      "title": "One Campaign, One Hundred Cities, Zero Invented Landmarks",
+      "content_text": "Hyperlocal video design without mass-spun clones: global story/brand LOCKs, per-city licensed architecture and language research, a ten-step variant state machine, market rights checks and realistic media-targeting limits. The fictional parcel campaign is a teaching scenario, not a deployed 100-city ad system or demonstrated ROI.\n\nOriginal full article: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hyperlocal-video-city-variant-canon-location-verification.md",
+      "summary": "Hyperlocal video design without mass-spun clones: global story/brand LOCKs, per-city licensed architecture and language research, a ten-step variant state machine, market rights checks and realistic media-targeting limits. The fictional parcel campaign is a teaching scenario, not a deployed 100-city ad system or demonstrated ROI.",
+      "language": "en",
+      "tags": [
+        "hyperlocal-ad-campaign-variation",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/authorized-performer-recasting-face-replacement-shot-continuity.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/authorized-performer-recasting-face-replacement-shot-continuity.md",
+      "title": "Changing the Face Is Changing the Contract",
+      "content_text": "An ethical and production-technical map for replacing a commercial lead under explicit performer consent: differentiate face, head, body, voice and full recast, define identity and performance constraints, track camera/occlusion and review rights/temporal QC. Includes union and EU law references with jurisdiction-specific caveats; no generated recognizable faces.\n\nOriginal full article: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/authorized-performer-recasting-face-replacement-shot-continuity.md",
+      "summary": "An ethical and production-technical map for replacing a commercial lead under explicit performer consent: differentiate face, head, body, voice and full recast, define identity and performance constraints, track camera/occlusion and review rights/temporal QC. Includes union and EU law references with jurisdiction-specific caveats; no generated recognizable faces.",
+      "language": "en",
+      "tags": [
+        "authorized-performer-recasting-vfx",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/puppet-armature-material-inertia-uncanny-motion.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/puppet-armature-material-inertia-uncanny-motion.md",
+      "title": "A Puppet Must Have a Secret Weight",
+      "content_text": "An original guide to convincing hand-built puppet and sculpture animation: skull mass, pivot axes, wool/linen behavior, fixed handmade defects, foot contact and a five-beat fictional tabletop figure. It draws craft ideas from a 2025 Quay brothers BFI interview and SideFX Vellum constraints without copying designs or claiming simulated output.\n\nOriginal full article: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/puppet-armature-material-inertia-uncanny-motion.md",
+      "summary": "An original guide to convincing hand-built puppet and sculpture animation: skull mass, pivot axes, wool/linen behavior, fixed handmade defects, foot contact and a five-beat fictional tabletop figure. It draws craft ideas from a 2025 Quay brothers BFI interview and SideFX Vellum constraints without copying designs or claiming simulated output.",
+      "language": "en",
+      "tags": [
+        "puppet-armature-material-inertia",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
     {
       "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/generative-video-temporal-pts-frame-accurate-qc.md",
       "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/generative-video-temporal-pts-frame-accurate-qc.md",
