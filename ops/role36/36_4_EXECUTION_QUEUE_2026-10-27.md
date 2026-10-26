@@ -2,7 +2,7 @@
 
 **Source:** [36.4 handoff](handoffs/36_4_AGENT_COMMUNITY_AUTHORITY.md) · [26-Oct run](36_4_EXECUTION_QUEUE_2026-10-26.md) · [shared external ledger](../../references/EXTERNAL_SYNDICATION_LEDGER_2026-10-15.md) · [HQ radar](radar/opportunities.json).
 
-**Mission:** source-backed answers in genuine agent/developer conversations that can independently cite objects.ai / the public AI/VFX production skill and lead to consented commercial briefs. Market priority Russia/CIS, then TH/SEA, then Europe/global. The HQ 27-Oct read of `opportunities.json` (19 items) contained **no entries explicitly assigned to 36.4**; generate work independently.
+**Mission:** source-backed answers in genuine agent/developer conversations that can independently cite objekts.ai / the public AI/VFX production skill and lead to consented commercial briefs. Market priority Russia/CIS, then TH/SEA, then Europe/global. The HQ 27-Oct read of `opportunities.json` (19 items) contained **no entries explicitly assigned to 36.4**; generate work independently.
 
 ## Real activity carried into this cycle
 
