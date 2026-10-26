@@ -4,6 +4,8 @@ import {Readable} from "node:stream";
 import {chromium} from "playwright";
 import fs from "node:fs/promises";
 import crypto from "node:crypto";
+import {collectFailures} from "./fake-qa-verdict.mjs";
+import {rewriteQaHtml} from "./fake-qa-proxy.mjs";
 const upstream="https://fake.objekts.ai";
 await fs.mkdir("qa-artifacts/e2e",{recursive:true});
 const server=http.createServer(async (req,res)=>{
@@ -23,6 +25,10 @@ const server=http.createServer(async (req,res)=>{
     for(const [key,value] of upstreamResponse.headers.entries()) {
       if(!["connection","content-encoding","content-length","transfer-encoding"].includes(key)) responseHeaders[key]=value;
     }
+    if(upstreamResponse.headers.get("content-type")?.includes("text/html")){
+      const html=rewriteQaHtml(await upstreamResponse.text());
+      res.writeHead(upstreamResponse.status,responseHeaders);res.end(html);return;
+    }
     res.writeHead(upstreamResponse.status,responseHeaders);
     if(upstreamResponse.body) Readable.fromWeb(upstreamResponse.body).pipe(res);
     else res.end();
@@ -36,16 +42,20 @@ const browser=await chromium.launch({
   args:["--enable-webgl","--use-gl=angle","--use-angle=swiftshader"]
 });
 const page=await browser.newPage({viewport:{width:1440,height:900},deviceScaleFactor:1});
-const report={url:"http://127.0.0.1:8793/studio/?qa=1",timestamp:new Date().toISOString(),steps:[],errors:[],requestsFailed:[]};
+const report={url:"http://127.0.0.1:8793/studio/?qa=1",timestamp:new Date().toISOString(),evidenceScope:"LOCAL_QA_BRIDGE_NOT_CHATGPT",photoFixtureRequested:Boolean(process.env.FAKE_QA_PHOTO),steps:[],errors:[],requestsFailed:[],httpErrors:[]};
 page.on("pageerror",e=>report.errors.push(e.message));
 page.on("console",m=>{if(m.type()==="error")report.errors.push(m.text().slice(0,250))});
 page.on("requestfailed",r=>{if(report.requestsFailed.length<20)report.requestsFailed.push({url:r.url().replace(/\?.*/,""),error:r.failure()?.errorText})});
+page.on("response",r=>{if(r.status()>=400)report.httpErrors.push({url:new URL(r.url()).pathname,status:r.status()})});
+async function canvasDigest(){return crypto.createHash("sha256").update(await page.locator("canvas").first().screenshot()).digest("hex")}
 async function snapshot(name){
   const info=await page.evaluate(()=>{
     const root=document.documentElement;
     const c=document.querySelector("canvas");
     const active=document.activeElement;
     return {
+      loading:/INITIALIZING|LOADING MODEL/i.test(document.body.innerText),
+      geometryReady:/REALTIME|GEOMETRY READY/i.test(document.body.innerText),
       text:document.body.innerText.replace(/\s+/g," ").slice(0,2000),
       overflow:root.scrollWidth>root.clientWidth+2,
       canvas:c?{width:c.width,height:c.height,clientWidth:c.clientWidth,clientHeight:c.clientHeight}:null,
@@ -62,7 +72,7 @@ async function snapshot(name){
 }
 try {
   await page.goto(report.url,{waitUntil:"domcontentloaded",timeout:50000});
-  await page.waitForTimeout(24000);
+  await page.getByText(/REALTIME|GEOMETRY READY/i).first().waitFor({timeout:45000});
   await snapshot("00-quick-desktop");
   for(const tab of ["PRO","RAW","LOOK","RENDER","STATE","QUICK"]){
     const locator=page.getByText(tab,{exact:true}).first();
@@ -84,7 +94,7 @@ try {
         const bytes=await canvas.screenshot();
         const digest=crypto.createHash("sha256").update(bytes).digest("hex");
         report.steps.push({name:"pose-"+pose,canvasScreenshotSha256:digest});
-      }
+      } else report.steps.push({name:"pose-"+pose,missing:true});
     }catch(err){report.steps.push({name:"pose-"+pose,error:String(err).slice(0,500)})}
   }
   // Exercise real presets, keeping GNM geometry authority separate.
@@ -95,7 +105,7 @@ try {
       if(await target.count()) {
         await target.click({timeout:3500});
         await page.waitForTimeout(500);
-        await snapshot("preset-"+preset.toLowerCase().replace(/\\s+/g,"-"));
+        await snapshot("preset-"+preset.toLowerCase().replace(/\s+/g,"-"));
       } else report.steps.push({name:"preset-"+preset,missing:true});
     }
   } catch(e) { report.steps.push({name:"presets-interaction",error:String(e).slice(0,450)}); }
@@ -105,26 +115,26 @@ try {
     const ranges=page.locator('input[type="range"]');
     const count=await ranges.count();
     if(count){
+      const beforeCanvasSha256=await canvasDigest();
       const first=ranges.first();
       const before=await first.inputValue();
       const props=await first.evaluate(e=>({min:Number(e.min),max:Number(e.max),step:Number(e.step)}));
-      const target=Math.min(props.max,Math.max(props.min,Number(before)+props.step*5));
+      const delta=(props.step>0?props.step:(props.max-props.min)/20)*5;
+      const target=Number(before)+delta<=props.max?Number(before)+delta:Number(before)-delta;
       await first.evaluate((e,v)=>{e.value=String(v);e.dispatchEvent(new Event("input",{bubbles:true}));e.dispatchEvent(new Event("change",{bubbles:true}))},target);
       await page.waitForTimeout(1200);
       await snapshot("quick-edited");
+      Object.assign(report.steps.at(-1),{beforeCanvasSha256,canvasScreenshotSha256:await canvasDigest()});
       report.steps.push({name:"quick-range-change",before,target,after:await first.inputValue()});
-    }
+    } else report.steps.push({name:"quick-range-change",missing:true,reason:"No Quick range control found"});
   }catch(e){report.steps.push({name:"quick-range-change",error:String(e).slice(0,450)})}
-  // Use MediaPipe's published test portrait in a distinct QA project.
-  try {
-    const photoUrl="https://raw.githubusercontent.com/ageitgey/face_recognition/master/examples/obama.jpg";
-    const rsp=await fetch(photoUrl);
-    if(!rsp.ok) throw new Error("photo fixture HTTP "+rsp.status);
-    const bytes=Buffer.from(await rsp.arrayBuffer());
+  // Only exercise media persistence with an explicitly supplied authorized fixture.
+  if(report.photoFixtureRequested) try {
+    const bytes=await fs.readFile(process.env.FAKE_QA_PHOTO);
     if(bytes.length>6*1024*1024) throw new Error("photo fixture too large");
     const upload=page.locator("#photo-input");
     if(await upload.count()){
-      await upload.setInputFiles({name:"face-landmark-test-portrait.jpg",mimeType:"image/jpeg",buffer:bytes});
+      await upload.setInputFiles(process.env.FAKE_QA_PHOTO);
       await page.waitForTimeout(9000);
       await snapshot("photo-fit");
       report.steps.push({name:"photo-fit-check",bytes:bytes.length,
@@ -151,13 +161,15 @@ try {
 } catch(err) {
   report.fatal=String(err);
 } finally {
+  report.failures=collectFailures(report);
+  report.passed=report.failures.length===0;
   await fs.writeFile("qa-artifacts/e2e/report.json",JSON.stringify(report,null,2)+"\n");
   console.log(JSON.stringify({
-    timestamp:report.timestamp,fatal:report.fatal,
+    timestamp:report.timestamp,fatal:report.fatal,passed:report.passed,failures:report.failures,evidenceScope:report.evidenceScope,
     steps:report.steps.map(s=>({name:s.name,overflow:s.overflow,canvas:s.canvas,inputCount:s.inputCount,selectCount:s.selectCount,missing:s.missing,error:s.error,canvasScreenshotSha256:s.canvasScreenshotSha256,rangeControls:s.rangeControls,fitVisible:s.fitVisible,savedIndicator:s.savedIndicator,reason:s.reason,buttons:s.name==="save-button-probe"?s.buttons:undefined,before:s.before,after:s.after,target:s.target,text:s.text?.slice(0,550)})),
     errors:report.errors.slice(0,12),failedRequests:report.requestsFailed.slice(0,10)
   },null,2));
   await browser.close();
   await new Promise(resolve=>server.close(resolve));
 }
-if(report.fatal) process.exitCode=1;
+if(!report.passed) process.exitCode=1;
