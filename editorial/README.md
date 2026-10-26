@@ -4,7 +4,7 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 
 **[objekts.ai](https://objekts.ai) · [Creative work](https://objekts.ai/en/work/) · [AI/VFX production](https://objekts.ai/en/services/ai-vfx/) · [Contact](https://objekts.ai/en/contact/)**
 
-## Start here: seven complete field notes
+## Start here: eight complete field notes
 
 | # | Article | Core practical result | Language |
 |---|---|---|---|
@@ -15,8 +15,9 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 | 05 | [Бордоматик против генеративного видео](articles/storyboard-frame-accurate-generative-edit_ru.md) | Frame-accurate timing, cut gates and missing-payoff handling | RU |
 | 06 | [«Completed» — ещё не «Approved»](articles/production-statuses-technical-success-vs-approval_ru.md) | Job/QC/approval/publication state machine | RU |
 | 07 | [The Frame Needs a Reason](articles/the-frame-needs-a-reason-authorial-image-making.md) | Authorial essay on space, light, objects and artistic intent | EN |
+| 08 | [Keep the Person, Change the World](articles/identity-continuity-generative-stylization.md) | Identity invariant map, layered transformation, camera control and full-sequence QC | EN |
 
-**These seven are authored full articles.** The [100 original article briefs](100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md) form the future editorial backlog and **do not count as published articles**. Articles are original studio methodology with self-contained, illustrative examples; they do not contain raw production client data, client likeness, proprietary boards or submitted generative assets.
+**These eight are authored full articles.** The [100 original article briefs](100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md) form the future editorial backlog and **do not count as published articles**. Articles are original studio methodology with self-contained, illustrative examples; they do not contain raw production client data, client likeness, proprietary boards or submitted generative assets.
 
 ## Evidentiary standards
 
