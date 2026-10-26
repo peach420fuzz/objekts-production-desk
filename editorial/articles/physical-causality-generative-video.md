@@ -1,5 +1,7 @@
 # Stop Prompting “Make It Move”: Physical Causality for Generative Video
 
+![Original objekts physical-causality diagram: contact, force, motion, material response and reaction in sequence](../assets/physical-causality.svg)
+
 *objekts / Production Field Notes · 26 October 2026 · Shot-engineering method*
 
 **For:** directors, AI filmmakers, previs artists and motion engineers. [objekts — cinematic AI/VFX production](https://objekts.ai/en/services/ai-vfx/)
