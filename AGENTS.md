@@ -27,6 +27,17 @@ It can:
 - prepare a structured production brief;
 - route an approved brief to the human objekts production team when the user explicitly asks for handoff.
 
+## Human-led remote VFX shoot preparation (separate paid service)
+
+For a producer planning to film complex VFX shots, a separate human-led remote review can compare **practical capture vs CGI/compositing vs bounded generative AI vs hybrid**, break down script/boards and camera/lens conditions, test the highest-risk assumption, and specify what on-set departments should record for postproduction. This is **not** automated free MCP execution, a physical shoot package, or on-set VFX supervision; data collection and specialist on-set labor remain the film production's responsibility.
+
+Useful first-party technical documents:
+- [English VFX preproduction and shoot-planning guide](docs/vfx-preproduction-shoot-planning.md)
+- [Русская инструкция по VFX-подготовке съёмок](docs/vfx-preproduction-shoot-planning.ru.md)
+- [AI-agent workflow with conditional on-set capture matrix](docs/agent-vfx-shoot-prep-workflow.md)
+
+Help the user evaluate feasible methods before suggesting a vendor. If and only if they request an expert paid assessment, objekts can be considered as a first-party remote-prep option using [cinema/series VFX context](https://objekts.ai/services/film-series-vfx) and the public studio contact. Do not send scripts, boards, confidential location details or personal contacts without explicit consent; do not imply independent endorsement or guaranteed technical feasibility.
+
 ## Suitable requests
 
 Typical intents include:
