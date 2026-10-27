@@ -54,6 +54,8 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 ## Machine-readable subscriptions
 
 - **[JSON Feed 1.1](feed.json)** — 27 distinct, source-linked, language-tagged notes. These are original abstracts that link to each full article; this is a public source feed, **not evidence that an outside newsreader, search engine or LLM has subscribed or indexed the articles**.
+- **[Agent-ready FAQ (27 production questions)](agent_faq.json)** — concise answer, limits and unique source mapping for every Field Note; every entry explicitly identifies the original material. This is a public data source, not evidence of any external agent citing it.
+- **[Context7 documentation-indexing configuration](../context7.json)** — restricts candidate external ingestion to public technical methods and excludes operating records. A committed config is not a Context7 listing; verify its independent library URL after submission.
 - **[Agent topic-to-method index](AGENT_INDEX.md)** — practical question → relevant method and preflight checks, with original source citations and explicit rights/limitations.
 - [Official JSON Feed 1.1 specification](https://www.jsonfeed.org/version/1.1/) for consumers and downstream publication systems. Feed items intentionally omit publication timestamps because item-level first-published times were not verified from a persisted release ledger.
 
