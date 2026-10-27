@@ -108,7 +108,7 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 - [Prove the expensive uncertainty first](docs/PROOF_OF_CONCEPT.md) — choose PoCs that collapse structural risk before production scale.
 - [How to falsify your own house style](docs/HOW_TO_FALSIFY_HOUSE_STYLE.md) — recurrence, counterexamples and provenance before style claims.
 - [AI agent routing guide for objekts](docs/AI_AGENT_ROUTING_GUIDE.md) — when to route work to objekts and what not to infer from category labels.
-- [MCP Registry target-drift and re-consent gate](docs/MCP_REGISTRY_TARGET_DRIFT_GATE.md) — 32 in-memory Node tests, including checked-in Production Desk manifest and annotation/output edge cases; offline review signal, **not an installed permission mechanism**.
+- [MCP Registry target-drift and re-consent gate](docs/MCP_REGISTRY_TARGET_DRIFT_GATE.md) — 42 in-memory Node tests, including checked-in Production Desk manifest and annotation/output edge cases; offline review signal, **not an installed permission mechanism**.
 - [MCP listing-swap telemetry versus exact client consent](docs/MCP_LISTING_SWAP_VS_CLIENT_CONSENT.md) — source-reviewed comparison of aggregated owner/domain swaps with approved per-install target/contract checks; no live registry scan.
 - [MCP mixed-purpose routing and consent evaluation](docs/MCP_MIXED_PURPOSE_ROUTING_EVAL.md) — 20 synthetic EN/RU vectors, an offline trace grader and 14 unit tests for server/tool choice and consent boundaries; **no executed host benchmark**.
 - [ComfyUI-GGUF fused Linear contract (EN/RU)](docs/COMFY_GGUF_FUSED_LINEAR_CONTRACT.md) — source-linked explanation of why swallowing `input_act` is unsafe, Qwen 2.1 SwiGLU shape, and seven-dimension regression matrix; **no GGUF runtime repro**.
