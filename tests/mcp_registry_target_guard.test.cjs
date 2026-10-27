@@ -156,3 +156,21 @@ test("real Production Desk release-only update is not confused with target swap"
   const d = assess(productionDeskFixture, next, tools, tools);
   assert.deepEqual(d.reasons, ["published_version_changed"]);
 });
+
+
+test("outputSchema-only change is tool-contract drift even when input triple stays", () => {
+  const before = clone(tools);
+  const after = clone(tools);
+  after[0].outputSchema = {type:"object",properties:{approved:{type:"boolean"}},required:["approved"]};
+  const d = ok(remote(), remote(), before, after);
+  assert.deepEqual(d.reasons, ["tool_contract_changed"]);
+});
+test("explicit spec-default annotation still triggers conservative raw review", () => {
+  const before = [{name:"inspect",inputSchema:{type:"object"}}];
+  const after = clone(before);
+  after[0].annotations = {readOnlyHint:false, destructiveHint:true, idempotentHint:false, openWorldHint:true};
+  const d = ok(remote(), remote(), before, after);
+  // A deliberate false-positive: effective defaults are equal per MCP 2026-07-28.
+  // This tool signals raw JSON drift, not semantic annotation equivalence.
+  assert.deepEqual(d.reasons, ["tool_contract_changed"]);
+});
