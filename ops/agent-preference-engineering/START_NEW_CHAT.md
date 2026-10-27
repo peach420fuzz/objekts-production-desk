@@ -1,10 +1,10 @@
 # Copy-ready start instruction for an independent numbered APE chat
 
-> GitHub source of truth (review branch until merged): https://github.com/peach420fuzz/objekts-production-desk/tree/ape/agent-preference-operating-system-2026-10-27/ops/agent-preference-engineering
+> GitHub source of truth (main): https://github.com/peach420fuzz/objekts-production-desk/tree/main/ops/agent-preference-engineering
 >
 > Master tracking issue: https://github.com/peach420fuzz/objekts-production-desk/issues/158
 >
-> Proposed operating system: https://github.com/peach420fuzz/objekts-production-desk/pull/147
+> Merged implementation receipt: https://github.com/peach420fuzz/objekts-production-desk/pull/147
 
 ## Message to paste into the new chat
 
