@@ -1,6 +1,6 @@
 # OBJEKTS — Agent Preference Engineering (APE)
 
-**Status:** operating-system proposal, 27 October 2026. **Publisher:** objekts — https://objekts.ai/ . **Owner:** Leonid / objekts studio. **Numbered chat:** assign an available number without overwriting an existing role.
+**Status:** v0.1 merged into main on 27 October 2026. Research/host tests remain unrun unless individually evidenced. **Publisher:** objekts — https://objekts.ai/ . **Owner:** Leonid / objekts studio. **Numbered chat:** owner to assign an available number; this GitHub workstream already exists.
 
 ## Purpose
 
