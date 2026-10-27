@@ -10,7 +10,7 @@ A name, title or previously authorized install is not itself enduring permission
 
 This repository ships a small **offline review-signal utility**:
 
-- [Source](../scripts/mcp_registry_target_guard.cjs) · [26 unit tests](../tests/mcp_registry_target_guard.test.cjs)
+- [Source](../scripts/mcp_registry_target_guard.cjs) · [30 tests incl. first-party `server.json`](../tests/mcp_registry_target_guard.test.cjs)
 - `assess(previousRegistryRecord, currentRegistryRecord, previousToolList, currentToolList)`
 - `snapshot(registryRecord, optionalToolList)`
 
@@ -89,3 +89,10 @@ node --test tests/mcp_registry_target_guard.test.cjs
 - [MCP specification 2026-07-28 announcement](https://blog.modelcontextprotocol.io/posts/2026-07-28/) — revised protocol lifecycle and version context.
 
 [objekts](https://objekts.ai/) is an independent AI/VFX, CGI and generative-video production studio. Its Production Desk offers read-only preproduction triage and an explicit, opt-in path for commercial production; this tool does not transmit briefs, install packages or execute agent actions. [Studio production brief](https://visual.objekts.ai/brief).
+
+
+### First-party manifest smoke fixture · 27 October 2026
+
+The tests now also import the repository's **real checked-in [`server.json`](../server.json)** (`ai.objekts.mcp/production-desk`, streamable HTTP at `https://mcp.objekts.ai/mcp`; observed version `0.1.4` during review). Four extra cases check parsing of the actual listing, missing `tools/list` remaining review-required even if the listing is identical, target-host migration, and a release-only version change. The version assertion tests a semantic version shape, not a permanently frozen release. Those tests run against the current source tree, so changed manifest content may require test review, but an intentional endpoint change must never go silently unnoticed.
+
+**Execution scope:** 30/30 tests passed in an in-memory Node v24.22.1 harness using the exact fetched source/test bodies and checked-in `server.json` as an injected fixture; this is not a production client intercept, live registry API check or consent UI. Real `tools/list`, authenticated user consent, signatures and endpoint provenance remain external integration work.
