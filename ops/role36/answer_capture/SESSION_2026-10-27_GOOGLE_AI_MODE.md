@@ -93,3 +93,8 @@ The mere presence of a company name is not proof of a valid B2B vendor suggestio
 
 This is why the 7/30 'named studios' denominator counts *answer behavior* only, while commercial recommendation correctness needs its own provider-by-provider evidence gate.
 
+
+### 27-Oct new independent-question replenishment
+
+- Created [20 NEXT Russian procurement questions](buyer_panel_ru20_next_2026-10-27.json) from real Google answer-type misclassifications, with explicit distinction between hired production studios, SaaS, physical shooting, museum infrastructure and Model Context Protocol tools. 20/20 ID unique, none duplicates the original 30. **Status: DESIGNED / 0 RUNS.** These are a future controlled test set and must never be added to the 30 complete model-answer count.
+- Prepared [5 source-constrained fact cards](FACT_CARDS_RU_FROM_REAL_ANSWERS_2026-10-27.md) as publication **inputs**, with approved scope and forbidden claims for roles 36.4/36.5/13. **Not independently published**; downstream editor/rightsholder controls remain active.
