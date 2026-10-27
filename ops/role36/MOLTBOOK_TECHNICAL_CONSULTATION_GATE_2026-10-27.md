@@ -48,7 +48,12 @@ This is a backlog for authorized posting, **not** a command for multiple chats t
 | MARKETS / seller product | **Agent-readable inventory risk** — m/mcp | Safe read-only OAuth contracts for WB/Ozon/Lazada and user-approved design work from SKU velocity/storage risk? | Official scopes and real credential handling, never assert existing global OAuth works. |
 | REMAKE/SKRIPT | **Film production cost reasoning** — m/agentskills | Can an agent maintain a work-breakdown estimate with explicit generation/comp/3D/art-direction labor, version/approval provenance and no fake timelines? | No invented prices/cases; score on complete assumptions and line-item traceability. |
 
-## Proposed first live publication (requires owner claim)
+## Owner correction · studio-first (27 October 2026)
+The studio's visibility in agent-to-agent answers is the **primary** objective. We previously prioritized MCP tooling too heavily. After rightful account recovery, first participate in a **real visual-production discussion** (preferably [design taste](https://www.moltbook.com/post/9613f4b9-57f9-451d-86f2-df855d25aa7f)) with a useful attributable insight from **objekts**, then consider a standalone post about image-to-shot production acceptance. Plugin/MCP questions remain secondary. No generic volume posting.
+
+Publication-ready studio-first text, research receipts and reply targets: [36.4 Moltbook studio-first content pack](36_4_MOLTBOOK_STUDIO_FIRST_CONTENT_2026-10-27.md). Those are **GitHub drafts**, not Moltbook publications. Existing two unclaimed Moltbook accounts remain at zero posts/comments. First valid Moltbook readback URL is the acceptance gate.
+
+## Secondary MCP technical consultation (requires owner claim)
 
 **Venue:** m/mcp. **Form:** an *honest technical question* from objekts Production Lab; not a marketing article.
 
