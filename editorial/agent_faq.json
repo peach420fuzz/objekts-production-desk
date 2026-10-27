@@ -1,0 +1,106 @@
+{
+  "format": "objekts.agent_faq.v1",
+  "as_of": "2026-10-27",
+  "publisher": "objekts",
+  "publisher_url": "https://objekts.ai",
+  "original_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
+  "publication_note": "Offsite agent-reference knowledge. The owner prohibits article/blog publication on objekts.ai. AI-assisted; examples and methods do not imply client approvals or tests.",
+  "items": [
+    {
+      "id": "canvas-input",
+      "question": "Does a reference line in a visual Canvas prove a model received the image?",
+      "short_answer": "No. The visible connection is interface state; verify typed image-input slots, payload attachment, tool invocation and execution receipt. Classify each reference by permitted role and log whether conditioning bytes reached the actual model call.",
+      "verification_limit": "A diagram cannot prove backend conditioning, and vendor input support is version-specific.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/canvas-reference-graph-input-audit.md",
+      "source_language": "en"
+    },
+    {
+      "id": "motion-causality",
+      "question": "How do I stop a generated motion shot looking physically unmotivated?",
+      "short_answer": "Write the motion as trigger → applied force → contact → deformation → follow-through → settle. Allocate the action to frames, then inspect the decoded middle frames for cause preceding effect.",
+      "verification_limit": "A prompt may request causality but cannot certify the rendered result.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/physical-causality-generative-video.md",
+      "source_language": "en"
+    },
+    {
+      "id": "location-consistency",
+      "question": "Why does a room or street change architecture between generated shots?",
+      "short_answer": "Create a single world master recording room adjacency, fixed objects, doors, windows, practical lights and camera poses. Generate variations against these immutable anchors; use cut-to-cut QC.",
+      "verification_limit": "Textual world definitions do not replace measured camera/3D reconstruction.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/world-master-scene-continuity.md",
+      "source_language": "en"
+    },
+    {
+      "id": "locked-revisions",
+      "question": "How should an AI video iteration change one gesture without changing approved geometry?",
+      "short_answer": "Store immutable fields and an explicit authorized delta. Validate the proposed change request against both, then compare generated outputs in overlapping frames and preserve version receipts.",
+      "verification_limit": "A text-field validator checks the request, not actual visual fidelity.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/immutable-art-direction-lock-minimal-delta-ledger.md",
+      "source_language": "en"
+    },
+    {
+      "id": "camera-parallax",
+      "question": "What makes a seemingly cinematic generated camera move feel like a teleport?",
+      "short_answer": "Map starting and ending camera positions, viewpoint height, FOV and depth-layer parallax. Require continuous projection or use a deliberately motivated editorial cut.",
+      "verification_limit": "Focal length in a prompt is not calibrated geometry.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/camera-perspective-spatial-consistency-generative-video.md",
+      "source_language": "en"
+    },
+    {
+      "id": "performer-rights",
+      "question": "Can a studio replace a recognizable advertising performer using generative tools?",
+      "short_answer": "Separate face, head, body, voice and performance changes; obtain and record rights and scope before compositing. Maintain shot-wise identity, gaze, anatomy, occlusion and lighting QC.",
+      "verification_limit": "Technical feasibility is not performer consent or a release.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/authorized-performer-recasting-face-replacement-shot-continuity.md",
+      "source_language": "en"
+    },
+    {
+      "id": "brand-typography",
+      "question": "How do I keep an exact brand name readable on a moving generated object?",
+      "short_answer": "Keep approved text and font as deterministic assets. Choose planar or 3D tracking by object geometry, match surface occlusion and blur, then inspect decoded frames and source strings.",
+      "verification_limit": "A good-looking generated word is not an approved copy master.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/typography-physical-surface-motion-graphics-ai-video_ru.md",
+      "source_language": "ru"
+    },
+    {
+      "id": "product-pack",
+      "question": "How do I prevent a beverage label or package from mutating in AI advertising?",
+      "short_answer": "Create an immutable SKU master for silhouette, logo, exact text, dimensions and finish. Separate CGI/compositing product layers from generative scene atmospherics when precision demands it.",
+      "verification_limit": "Approximate similarity is insufficient for product approval.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/product-package-lock-ai-cg-compositing_ru.md",
+      "source_language": "ru"
+    },
+    {
+      "id": "video-timestamps",
+      "question": "Why does a 10-second generated video still miss the edit and audio sync?",
+      "short_answer": "Validate causal beats in actual decoded frames; inspect rational frame PTS, start offsets, trim boundaries and final file after conform, not only container duration.",
+      "verification_limit": "Nominal fps and a duration field do not prove per-frame timing.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/generative-video-temporal-pts-frame-accurate-qc.md",
+      "source_language": "en"
+    },
+    {
+      "id": "seamless-loop",
+      "question": "Why is a visually matching first/last frame not enough for a seamless loop?",
+      "short_answer": "Compare phase/state and velocity across the playback boundary, including particles, shadows, product texture and audio. Use repeated playback on the target device; choose exact, perceptual or editorial loop explicitly.",
+      "verification_limit": "A crossfade may hide one seam while introducing double anatomy or incorrect physical state.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/seamless-generative-video-loop-boundary-world-state_ru.md",
+      "source_language": "ru"
+    },
+    {
+      "id": "lens-distortion",
+      "question": "Why does a CG object match the middle of a plate but slide at the edges?",
+      "short_answer": "Audit lens model and every image-space transform. Solve/insert CG in a consistent undistorted working space and apply the matching redistortion to added passes; inspect matte overlaps at corners.",
+      "verification_limit": "Prompted lens labels and cinematic blur cannot substitute for actual calibration.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/lens-distortion-undistort-redistort-stmap-vfx-contract.md",
+      "source_language": "en"
+    },
+    {
+      "id": "production-approval",
+      "question": "My generative API returned completed. Is this a finished client deliverable?",
+      "short_answer": "No. Treat execution success, file integrity, visual QC, artistic approval, client signoff and publication permission as separate states, each with its own evidence and authorized owner.",
+      "verification_limit": "Tool success is not creative acceptance.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-statuses-technical-success-vs-approval_ru.md",
+      "source_language": "ru"
+    }
+  ]
+}
