@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-25",
+  "generated_at": "2026-10-27",
   "generated_by": "OBJEKTS 36 HQ + role36.5 verified visual/editorial opportunity updates",
   "source_of_truth": "ops/role36/radar/opportunities.json",
   "methodology": "External source checked; no candidate below is a submission, acceptance, public listing or commercial lead. Branch checks existing ledger and live status before acting. Role36.5 appended verified primary-source art calls and Dprofile into PR #109; not submissions. 25 Oct second session: add six official art/editorial routes, including prior outbound suppression and explicit rights gates; never count mail as accepted publication.",
@@ -567,6 +567,35 @@
       "due_for_first_review": "2026-10-29",
       "last_action": "2026-10-27: TECHNICAL_COMMENT_PUBLIC_VERIFIED; MAINTAINER_ACCEPTANCE_UNVERIFIED",
       "dedup_key": "github.com/modelcontextprotocol/registry/issues/1715|protocol-aware-liveness"
+    },
+    {
+      "id": "R36-20261027-021",
+      "title": "Moltbook — existing studio identity recovery; visual-production technical authority",
+      "owner_branch": "36.4",
+      "secondary_branch": "36.5",
+      "priority": "P0",
+      "score": 87,
+      "market": "GLOBAL agent-native network; RU/CIS buyer referrals unverified",
+      "category": "AGENT_COMMUNITY_STUDIO_AUTHORITY",
+      "source_url": "https://www.moltbook.com/m/design",
+      "source_checked_at": "2026-10-27",
+      "source_type": "OFFICIAL_PUBLIC_AGENT_API_AND_LIVE_POSTS",
+      "evidence": "Public Moltbook API checked 27 Oct: objekts-production-lab and objekts-studio-agent profiles both 0 posts/0 comments, is_claimed:false, is_verified:false; no configured Moltbook API key. m/design had Oct25 legitimate discussion and Oct19 unanswered stylistic question with genuine peer comments; m/creative had Oct27 posts but low visible response; m/vfx/aivideo/filmmaking mostly inactive since early 2026. Studio-first drafts for two actual m/design threads and an original VFX shot acceptance opener are in ops/role36/36_4_MOLTBOOK_STUDIO_FIRST_CONTENT_2026-10-27.md. Github draft is NOT Moltbook publication.",
+      "buyer_hypothesis": "Named first-party objekts AI/VFX expertise may be discovered/referenced by agents advising visual production buyers; qualified human traffic, LLM citations and commercial conversion not yet observed.",
+      "status": "BLOCKED",
+      "publication_proof": null,
+      "submission_id": null,
+      "eligibility_gates": [
+        "Human rightful owner confirms which existing Moltbook identity is theirs; no third account",
+        "Recover existing account through official owner claim or support; no raw API key in GitHub/chat",
+        "Authenticated agent name/claim check before any write",
+        "Refresh post comments, submolt rules and duplication before posting; state studio affiliation",
+        "After publishing, independently fetch exact Moltbook post/comment URL and register any real referral"
+      ],
+      "next_action": "Owner-assisted claim of canonical objekts-production-lab; publish one useful reply to a real m/design thread about taste-through-time, then verify anonymous URL. Follow with selectively one studio-authored visual-production acceptance discussion if distinct. Studio-first, plugins secondary.",
+      "due_for_first_review": "2026-10-28",
+      "last_action": "2026-10-27: LIVE_VISUAL_THREADS_VERIFIED; STUDIO_DRAFTS_CREATED_AND_READBACK; REAL_MOLTBOOK_POSTS_ZERO; OWNER_CLAIM_REQUIRED",
+      "dedup_key": "moltbook.com|objekts-production-lab|studio-technical-presence"
     }
   ],
   "counts": {
