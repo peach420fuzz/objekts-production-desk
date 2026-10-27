@@ -157,3 +157,9 @@ Fetched current `.github/workflows` directory (48 YAML files) and read all **48*
 
 - Posted and verified [apify/apify-mcp-server #1621 comment 6430696633](https://github.com/apify/apify-mcp-server/issues/1621#issuecomment-6430696633), a third organization's GitHub issue on large `outputSchema` and alleged client truncation. Method defines server wire → importer declaration → model call comparison, A/B exact schemas, unknown limits; **no claim of Devin reproduction**. Cumulative external **12** comments / **5** GitHub repos / **3** orgs. Reactions **0/12**, one peer acknowledgment elsewhere; no attributable buyer lead.
 - Follow-up gate: reply only if Apify author produces sanitized raw/imported schema fingerprint pair or requests a precise test fixture. No second promotional comment.
+
+
+### 27-Oct MCP output-schema manifest offline profiler ready
+
+- Created, executed on synthetic fixtures (**10/10 in-memory Node 24.22.1 PASS**) and readback-verified [manifest profiler](../../scripts/mcp_manifest_profile.cjs), [tests](../../tests/mcp_manifest_profile.test.cjs), [guide](../../docs/MCP_TOOLS_LIST_MANIFEST_PROFILER.md). Reads local authorized `tools/list` files only, does no network calls, measures schema sizes and structural complexity, hides tool names/description by default, makes **no vendor token/byte limit assertion**. Added README link.
+- Targeted downstream use: if [Apify #1621](https://github.com/apify/apify-mcp-server/issues/1621) or OpenAI Developer Community user supplies a permitted sanitized manifest/client import, measure exact stage before suggesting trimming; otherwise no uninvited second comments. **No live client replay so far**. External comment count stays 12.
