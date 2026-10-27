@@ -152,7 +152,7 @@ test("real Production Desk endpoint move triggers deployment target review", () 
 });
 test("real Production Desk release-only update is not confused with target swap", () => {
   const next = clone(productionDeskFixture);
-  next.version = "0.1.5";
+  next.version = productionDeskFixture.version.replace(/\d+$/, n => String(Number(n) + 1));
   const d = assess(productionDeskFixture, next, tools, tools);
   assert.deepEqual(d.reasons, ["published_version_changed"]);
 });
