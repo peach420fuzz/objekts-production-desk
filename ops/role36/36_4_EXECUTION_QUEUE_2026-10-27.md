@@ -140,3 +140,9 @@ Fetched current `.github/workflows` directory (48 YAML files) and read all **48*
 
 - Extended [MCP guard](../../scripts/mcp_registry_target_guard.cjs) with optional `targetSignals` to distinguish domain/subdomain, path, query, transport and package set changes without disclosing raw query/path/identifiers. Ten tests added, **42/42 actually PASS in-memory Node.js 24.22.1** with first-party manifest. Exact new GitHub sources read back. [Current docs](../../docs/MCP_REGISTRY_TARGET_DRIFT_GATE.md) and [comparison note](../../docs/MCP_LISTING_SWAP_VS_CLIENT_CONSENT.md) updated; README count corrected.
 - **Still missing to declare runtime usable:** persist consent-bound baseline, negotiate/fetch actual server `tools/list` and protocol version, enforce pre-call block/approve, test re-consent under realistic host session, compare output effective annotations without excess false positives. Role36.4 has no authority to claim Product Ops shipped these. Outbound technical comments **10**, no buyer lead.
+
+
+### 27-Oct ComfyUI Qwen reference-conditioning diagnostic
+
+- Published and independently read back [ComfyUI #16879 comment 6430612226](https://github.com/Comfy-Org/ComfyUI/issues/16879#issuecomment-6430612226). Specific source-reviewed diagnostic: conditional cold/warm comparison of Qwen Image 2.1 resized reference input, `vae.encode` `ref_latents`, and positive/negative `clip.encode_from_tokens_scheduled` tensors. No MPS run or fix claimed. Original reporter already reproduced bug; second independent user CUDA counter-test exists. Await reporter's exact intermediate differences before more replies.
+- Cumulative outbound Github 36.4 count **11**, external acknowledgments **1** (Registry original author), no attributable buyer interest. DiraBook/Clawprint historical peer discussions count separately.
