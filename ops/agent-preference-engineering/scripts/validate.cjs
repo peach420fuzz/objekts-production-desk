@@ -19,7 +19,7 @@ const required = [
   'PLUGIN_REGISTER.md', 'HANDOFF_CONTRACT.md', 'EXPERIMENT_PROTOCOL.md',
   'templates/PLUGIN_AUDIT.md', 'templates/EXPERIMENT_REPORT.md',
   'templates/IMPLEMENTATION_REQUEST.md', 'templates/CROSS_CHAT_INTAKE.md',
-  'hypotheses.csv'
+  'hypotheses.csv', 'DECISION_LOG.md', 'START_NEW_CHAT.md'
 ];
 for (const file of required) check(fs.existsSync(path.join(root, file)), 'Required file missing: ' + file);
 

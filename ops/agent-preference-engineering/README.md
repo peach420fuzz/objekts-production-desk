@@ -18,7 +18,8 @@ The mission is practical: reliable task recognition, low delegation friction, cl
 6. [Source and claim map](SOURCE_MAP.md) — academic and official first-party references.
 7. [Baseline and known limitations](BASELINE_2026-10-27.md).
 8. [Incoming ideas from all chats](INBOX.md), [change request contract](HANDOFF_CONTRACT.md), [session log](WORKLOG.md).
-9. Templates: [product audit](templates/PLUGIN_AUDIT.md), [test report](templates/EXPERIMENT_REPORT.md), [owner request](templates/IMPLEMENTATION_REQUEST.md), [cross-chat intake](templates/CROSS_CHAT_INTAKE.md).
+9. [Owner decisions / active LOCKs](DECISION_LOG.md) and [copy-ready start for a new APE chat](START_NEW_CHAT.md).
+10. Templates: [product audit](templates/PLUGIN_AUDIT.md), [test report](templates/EXPERIMENT_REPORT.md), [owner request](templates/IMPLEMENTATION_REQUEST.md), [cross-chat intake](templates/CROSS_CHAT_INTAKE.md).
 
 ## Workflow: one new user message or external finding
 
