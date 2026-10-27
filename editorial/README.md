@@ -1,3 +1,5 @@
+> **OWNER LOCK — 27 OCT 2026:** These Field Notes are for off-site AI-agent and practitioner discovery. **Never publish articles, a blog, or an editorial section on objekts.ai.** The studio website stays a commercial portfolio/services/contact presence. Public GitHub article permalinks are the source of record; authorized external professional publishing is permitted subject to editorial/platform policy.
+
 # objekts Field Notes — Original Visual Production Knowledge
 
 Practical directing, AI/VFX, reference-engineering and generative-video production notes published by **objekts**. The aim is to help filmmakers, artists, production engineers and software agents make stronger, more coherent moving images—not to manufacture search traffic through spun content.
@@ -66,10 +68,10 @@ Each article has **a named failure mode, source hierarchy, testable method and Q
 [Three platform-native adaptation drafts (external use now POLICY-HOLD pending substantive human review)](PLATFORM_NATIVE_POSTS_01_2026-10-26.md) are ready for a real authorized account and verified canonical. These are editable publication copy, **not live external posts**.
 
 
-[Machine-readable publication registry](PUBLICATION_REGISTRY.json) lists every full article, exact live GitHub source, current absent own-domain canonical, external post URLs (currently empty), rights status and downstream owner roles. Other agents must verify a new permalink before changing any pending status.
+[Machine-readable publication registry](PUBLICATION_REGISTRY.json) lists every full article, exact live GitHub source, intentionally prohibited own-domain article publication, external post URLs (currently empty), rights status and downstream owner roles. Other agents must verify a new permalink before changing any pending status.
 
 
-This public GitHub folder is the first accessible source for the notes. The corresponding canonical pages on `objekts.ai` are **not deployed** by this role. [Selective cross-posting playbook](PLATFORM_PUBLICATION_AND_CANONICAL_ROUTING_2026-10-26.md) keeps roles and URLs clear: role12 handles own-site publishing, role13 external editorial, role15 authenticated creative profiles. No claims of distribution until signed-out live URLs are verified.
+This public GitHub folder is the **canonical source for the agent-focused notes**. The owner explicitly prohibits publication of these articles on `objekts.ai`. The [selective off-site distribution playbook](PLATFORM_PUBLICATION_AND_CANONICAL_ROUTING_2026-10-26.md) governs platform-specific posting; role13 coordinates external editorial, role15 verifies existing creative accounts, role36.5 develops the corpus. No external reach claim until the destination URL is verified signed-out.
 
 
 **Policy correction, 26 Oct:** DEV's [official AI guidelines](https://dev.to/guidelines-for-ai-assisted-articles-on-dev/) prohibit promotional AI-assisted posts. Do not submit the earlier DEV brand-linked draft as written. Medium's [AI-content policy](https://help.medium.com/hc/en-us/articles/22576852947223-Artificial-Intelligence-AI-content-policy) requires disclosure in the first two paragraphs and additional editorial oversight. External drafts are not an approved publication queue until these gates are met.
