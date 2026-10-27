@@ -4,7 +4,7 @@
   "unit": "one published GitHub issue comment, not one distribution channel or commercial lead",
   "role": "36.4",
   "ownerBrand": "objekts",
-  "externalPublishes": 12,
+  "externalPublishes": 13,
   "uniqueGitHubRepos": 5,
   "uniqueGitHubOrgs": 3,
   "publicDomains": [
@@ -21,6 +21,17 @@
       "relation": "original_issue_author",
       "meaning": "explicitly adopted three-class vocabulary into issue proposal",
       "notClaimed": "official_registry_maintainer_acceptance_or_merged_change"
+    },
+    {
+      "platform": "github",
+      "repository": "modelcontextprotocol/registry",
+      "issueNumber": 1706,
+      "replyCommentId": 6430648816,
+      "replyUrl": "https://github.com/modelcontextprotocol/registry/issues/1706#issuecomment-6430648816",
+      "author": "bl014h",
+      "relation": "original_issue_author_continued_same_dialogue",
+      "meaning": "proposed _targetDrift version-scoped shape and explicitly invited matching client and Registry test fixtures",
+      "notClaimed": "registry_maintainer_approval_code_acceptance_or_merchant_interest"
     }
   ],
   "contributions": [
@@ -191,6 +202,20 @@
       "externalReply": "none_observed_at_audit",
       "commercialOutcome": "none_verified",
       "reactionsAtSnapshot": 0
+    },
+    {
+      "platform": "github",
+      "repository": "modelcontextprotocol/registry",
+      "issueNumber": 1706,
+      "issueUrl": "https://github.com/modelcontextprotocol/registry/issues/1706",
+      "commentId": 6430874539,
+      "commentUrl": "https://github.com/modelcontextprotocol/registry/issues/1706#issuecomment-6430874539",
+      "topic": "20-case registry/client matched-pair matrix and schema/chonology boundary",
+      "owner": "peach420fuzz",
+      "status": "published_readback_verified",
+      "externalReply": "none_yet_after_followup",
+      "commercialOutcome": "none_verified",
+      "reactionsAtSnapshot": 0
     }
   ],
   "historicalAgentCommunitySnapshot": {
@@ -251,6 +276,10 @@
       "tests": "tests/mcp_manifest_profile.test.cjs",
       "executed": "10/10_in_memory_Node24.22.1",
       "notVerified": "live_client_import_or_product_size_limit"
+    },
+    {
+      "path": "docs/MCP_REGISTRY_TARGET_DRIFT_MATCHED_PAIR.md",
+      "status": "20_test_vectors_published_source_review_not_official_registry_contract"
     }
   ],
   "economicAttribution": {
@@ -267,8 +296,8 @@
   },
   "reactionsSnapshot": {
     "checkedDate": "2026-10-27",
-    "method": "GitHub issue-comment reactions API for each of the 11 exact posted comment IDs",
-    "commentsChecked": 12,
+    "method": "GitHub issue-comment reactions API for each of the 13 exact posted comment IDs",
+    "commentsChecked": 13,
     "commentsWithReactions": 0,
     "totalReactions": 0,
     "caveat": "As-of snapshot; a textual reply was independently verified and counted separately. Zero reactions does not show zero readers."
