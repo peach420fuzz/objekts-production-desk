@@ -1,0 +1,102 @@
+{
+  "schema_version": "objekts.role36_2.agent_router_probe.v1",
+  "owner": "OBJEKTS 36.2 — LLM Answer & Citation Capture",
+  "date": "2026-10-27",
+  "source": "https://mcp.film/router/",
+  "method": "Three manually entered independent, non-branded, English-language buyer-intent prompts into the live public mcp.film brief router. Each displayed one primary recommendation route. No login, paid API, files, private data, actual lead or resulting MCP tool calls. Client geography unspecified.",
+  "source_state": {
+    "canonical_directory_listing": "https://mcp.film/mcps/objekts-production-desk/",
+    "catalog_first_listed": "2026-10-26",
+    "catalog_verified": "2026-10-26",
+    "listing_type": "External curated catalogue card, marked official to mean published by vendor; NOT an independent commercial endorsement",
+    "reported_tools": 7,
+    "limitations": [
+      "The catalogue reports MCP 2026-07-28 HTTP 400, legacy versions accepted.",
+      "Four brief/upload tools can mutate or transmit user data and require explicit consent.",
+      "The remote tool does not generate images or video.",
+      "GitHub repo is a public distribution/manifest repository, not server implementation source."
+    ],
+    "live_recommendation_page": "https://mcp.film/recommendations/",
+    "live_intent_count": 18,
+    "current_data_source": "https://github.com/c47-inc/mcp-film/blob/main/data/recommendations.json",
+    "objekts_in_primary_or_fallback_slug_count": 0,
+    "note": "A web search cached earlier 9-intent pages. Actual live site UI on 27 Oct showed 18; no conflation."
+  },
+  "tests": [
+    {
+      "test_id": "MCPFILM-PF01",
+      "prompt": "Before rendering a 20-second commercial, I need a production preflight: verify actor and product lock references, environment replacement feasibility, continuity risks, scope of VFX post, and a minimal proof of concept. Which agent tools should I connect?",
+      "actual_primary_route": "character-series",
+      "actual_route_title": "Build a character-consistent series",
+      "examples_of_primary_servers": [
+        "Martini",
+        "Higgsfield MCP",
+        "Recraft MCP Server",
+        "Cartesia MCP",
+        "studio-state",
+        "Airtable MCP Server"
+      ],
+      "expected_fit": "A production-readiness/preflight tool, or explicitly no exact match and justified alternatives",
+      "observed_objekts_named": false,
+      "observed_exact_readiness_tool": false
+    },
+    {
+      "test_id": "MCPFILM-PF02",
+      "prompt": "Agency producer: which AI/VFX production preflight MCP can check a locked packaging label, camera track, actor identity and a realistic scope estimate before spending on a hybrid advertising spot?",
+      "actual_primary_route": "short-film",
+      "actual_route_title": "Make a short film with generated shots",
+      "examples_of_primary_servers": [
+        "Martini",
+        "Framesail",
+        "Runway MCP",
+        "Google GenMedia MCP",
+        "Hume MCP Server",
+        "ElevenLabs MCP",
+        "Sonilo MCP"
+      ],
+      "expected_fit": "A production-readiness/preflight tool, or explicitly no exact match and justified alternatives",
+      "observed_objekts_named": false,
+      "observed_exact_readiness_tool": false
+    },
+    {
+      "test_id": "MCPFILM-PF03",
+      "prompt": "A commercial production company needs pre-production readiness analysis before buying AI VFX: hard locks, reference authority, legal asset readiness, cost estimate, and one proof-of-concept plan. No image or video generation needed.",
+      "actual_primary_route": "animation-stylized",
+      "actual_route_title": "Animate stylised and anime characters from reference frames",
+      "examples_of_primary_servers": [
+        "Luma API MCP",
+        "Pika MCP",
+        "Kling MCP (Official)",
+        "FLUX MCP",
+        "Comfy MCP"
+      ],
+      "expected_fit": "A production-readiness/preflight tool, or explicitly no exact match and justified alternatives",
+      "observed_objekts_named": false,
+      "observed_exact_readiness_tool": false
+    }
+  ],
+  "counts": {
+    "distinct_test_prompts": 3,
+    "live_router_runs_observed": 3,
+    "fit_gap_on_primary_route": 3,
+    "objekts_named_in_primary": 0,
+    "independent_llm_answers": 0,
+    "independent_llm_citations": 0,
+    "attributable_customer_leads": 0,
+    "commissions": 0
+  },
+  "feedback": {
+    "channel": "GitHub issue in publisher's source repository",
+    "issue": "https://github.com/c47-inc/mcp-film/issues/136",
+    "status": "OPEN",
+    "opened_on": "2026-10-27",
+    "disclosure": "Published by an objekts-affiliated contributor. Proposed unbiased route quality and accurate alternatives, no claimed placement guarantee."
+  },
+  "constraints": [
+    "Not evidence of ChatGPT/Gemini/Claude generated answers.",
+    "Not a measurement of actual buyer searches, conversion, rank or reach.",
+    "Three author-crafted English queries, one run each; no statistical generalization.",
+    "Site list may change; rerun exact prompts after publisher action.",
+    "Ubersuggest authenticated free account has zero projects, so no provider visibility score was generated."
+  ]
+}
