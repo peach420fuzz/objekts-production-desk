@@ -174,3 +174,53 @@ test("explicit spec-default annotation still triggers conservative raw review", 
   // This tool signals raw JSON drift, not semantic annotation equivalence.
   assert.deepEqual(d.reasons, ["tool_contract_changed"]);
 });
+
+
+test("granularity: remote host migration distinguished without echo", () => {
+  const d = ok(remote(), remote("https://other.example/mcp"));
+  assert.deepEqual(d.targetSignals, ["remote_origin_set_changed"]);
+});
+test("granularity: same registrable domain subdomain change is still noticed", () => {
+  const d = ok(remote("https://mcp.example.com/mcp"), remote("https://api.example.com/mcp"));
+  assert.deepEqual(d.targetSignals, ["remote_origin_set_changed"]);
+});
+test("granularity: same-host route change", () => {
+  const d = ok(remote("https://api.example.com/mcp"), remote("https://api.example.com/v2/mcp"));
+  assert.deepEqual(d.targetSignals, ["remote_path_set_changed"]);
+});
+test("granularity: query rotation does not disclose token", () => {
+  const d = ok(remote("https://api.example.com/mcp?token=public"), remote("https://api.example.com/mcp?token=very-secret-value"));
+  assert.deepEqual(d.targetSignals, ["remote_query_set_changed"]);
+  assert.equal(JSON.stringify(d).includes("very-secret-value"), false);
+});
+test("granularity: additive remote is not missed due overlap", () => {
+  const x = remote(), y = clone(x);
+  y.remotes.push({type:"streamable-http",url:"https://another.example/mcp"});
+  const d = ok(x, y);
+  assert.deepEqual(d.targetSignals, ["remote_target_count_changed", "remote_origin_set_changed"]);
+});
+test("granularity: same npm scope but other package identifier", () => {
+  const d = ok(packageRecord("@studio/first"), packageRecord("@studio/second"));
+  assert.deepEqual(d.targetSignals, ["package_identifier_set_changed"]);
+});
+test("granularity: npm scope transfer surfaces same classifier without package leak", () => {
+  const d = ok(packageRecord("@studio/first"), packageRecord("@stranger/first"));
+  assert.deepEqual(d.targetSignals, ["package_identifier_set_changed"]);
+});
+test("granularity: version-only changes have no target signals", () => {
+  const d = ok(packageRecord("@studio/first","1.0"), packageRecord("@studio/first","1.1"));
+  assert.deepEqual(d.targetSignals, []);
+  assert.ok(d.reasons.includes("published_version_changed"));
+});
+test("granularity: transport-only change surfaces separately", () => {
+  const x = remote(), y = clone(x); y.remotes[0].type = "sse";
+  const d = ok(x,y);
+  assert.deepEqual(d.targetSignals, ["remote_transport_set_changed"]);
+});
+test("granularity: package registry and package transport changes classified", () => {
+  const x = packageRecord(), y = clone(x), z = clone(x);
+  y.packages[0].registryBaseUrl = "https://other.registry.example";
+  z.packages[0].transport.type = "http";
+  assert.deepEqual(ok(x,y).targetSignals, ["package_registry_set_changed"]);
+  assert.deepEqual(ok(x,z).targetSignals, ["package_transport_set_changed"]);
+});
