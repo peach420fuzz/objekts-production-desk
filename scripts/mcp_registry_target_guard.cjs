@@ -119,6 +119,52 @@ function snapshot(record, toolList) {
   };
 }
 
+
+function targetGranularity(previousRecord, currentRecord) {
+  // Classification compares only structural keys. Never return endpoints, URL
+  // paths/queries or identifiers as raw values.
+  const unwrap = value => isObject(value.server) ? value.server : value;
+  const oldEntry = unwrap(previousRecord), newEntry = unwrap(currentRecord);
+  const uniqueSorted = values => [...new Set(values)].sort();
+  const differs = (l, r) => JSON.stringify(uniqueSorted(l)) !== JSON.stringify(uniqueSorted(r));
+  const summarize = entry => {
+    const remotes = (entry.remotes || []).map(remote => {
+      const url = new URL(remote.url); // Snapshot already validated URL and rejected credentials.
+      return { type: remote.type, origin: url.origin,
+        route: url.origin + url.pathname, exact: url.origin + url.pathname + url.search };
+    });
+    const packages = (entry.packages || []).map(pkg => {
+      const registry = pkg.registryType + "|" +
+        (pkg.registryBaseUrl ? canonicalURL(pkg.registryBaseUrl, "package registry").identity : "");
+      const identifier = registry + "|" + pkg.identifier;
+      const transport = identifier + "|" + (isObject(pkg.transport) ? String(pkg.transport.type || "") : "");
+      return { registry, identifier, transport };
+    });
+    return { remotes, packages };
+  };
+  const a = summarize(oldEntry), b = summarize(newEntry), signals = [];
+  if (a.remotes.length !== b.remotes.length) signals.push("remote_target_count_changed");
+  if (differs(a.remotes.map(x => x.type), b.remotes.map(x => x.type))) {
+    signals.push("remote_transport_set_changed");
+  }
+  if (differs(a.remotes.map(x => x.origin), b.remotes.map(x => x.origin))) {
+    signals.push("remote_origin_set_changed");
+  } else if (differs(a.remotes.map(x => x.route), b.remotes.map(x => x.route))) {
+    signals.push("remote_path_set_changed");
+  } else if (differs(a.remotes.map(x => x.exact), b.remotes.map(x => x.exact))) {
+    signals.push("remote_query_set_changed");
+  }
+  if (a.packages.length !== b.packages.length) signals.push("package_target_count_changed");
+  if (differs(a.packages.map(x => x.registry), b.packages.map(x => x.registry))) {
+    signals.push("package_registry_set_changed");
+  } else if (differs(a.packages.map(x => x.identifier), b.packages.map(x => x.identifier))) {
+    signals.push("package_identifier_set_changed");
+  } else if (differs(a.packages.map(x => x.transport), b.packages.map(x => x.transport))) {
+    signals.push("package_transport_set_changed");
+  }
+  return signals;
+}
+
 function assess(previousRecord, currentRecord, previousTools, currentTools) {
   const next = snapshot(currentRecord, currentTools);
   if (!previousRecord) {
@@ -149,6 +195,7 @@ function assess(previousRecord, currentRecord, previousTools, currentTools) {
     reasons,
     previous: prev,
     current: next,
+    targetSignals: prev.targetsHash === next.targetsHash ? [] : targetGranularity(previousRecord, currentRecord),
   };
 }
 
