@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0",
+  "owner": "OBJEKTS 36.2 — LLM Answer & Citation Capture",
+  "created_at_utc": "2026-10-27T19:51:19.948Z",
+  "kind": "Observed-answer-to-existing-public-source crosswalk; NOT vendor rating, model rank or SEO success",
+  "dataset_sources": [
+    "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role36/answer_capture/google_ai_mode_ru20_followup_2026-10-27.json",
+    "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role36/answer_capture/google_ai_mode_semantic_source_controls_2026-10-27.json",
+    "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role36/answer_capture/google_ai_mode_en2_2026-10-27.json"
+  ],
+  "unique_test_ids": 16,
+  "geography_caveat": "Spanish-language anonymous Google browser; location not confirmed, RU/EN prompt language is not regional sampling",
+  "measurement_baseline": {
+    "completed_unique_unbranded_RU": 56,
+    "completed_unique_unbranded_EN": 2,
+    "brand_named_total": 1,
+    "publisher_guided_control_outside_denominator": 1,
+    "paid_leads_observed": 0
+  },
+  "claim_priority_order": [
+    "Observed AI response",
+    "Physically opened source or first-party publisher text",
+    "Owner-approved public production credit",
+    "Actual paid/qualified lead only with attribution"
+  ],
+  "delegation_scope": "Role36.2 logs observations and retests only. Role12 owns website and release proof; 36.4 owns external editorial; 36.1 owns directories/MCP; product owner owns product throughput. Do not modify objekts.ai.",
+  "rows": [
+    {
+      "test_id": "R36.2-NEXT-AG01",
+      "cohort": "agency",
+      "buyer_need": "post-production of a single locked product shot",
+      "evidence_url": "https://objekts.ai/en/services/ai-vfx/",
+      "evidence_stage": "PUBLIC_SERVICE_CLAIM",
+      "observed_answer_gap": "Omitted; GAI cited five other vendors including SLOI and Main Road Post",
+      "action_owner": "36.4",
+      "scoped_action": "Rights-cleared case-level explanation of one shot with handoff, asset match and frame-level QC",
+      "claim_guard": "Do not claim a completed client case without approval",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "R36.2-NEXT-AG03",
+      "cohort": "agency",
+      "buyer_need": "conditional white-label NDA, agency producer intermediary",
+      "evidence_url": "https://objekts.ai/services/production-for-agencies",
+      "evidence_stage": "CONDITIONAL_PUBLIC_SERVICE_CLAIM",
+      "observed_answer_gap": "Omitted; no supporting source labels surfaced",
+      "action_owner": "12/#142",
+      "scoped_action": "Fact-check NDA, producer-only routing and single-shot clause; return approved exact wording before external quoting",
+      "claim_guard": "NDA agreement and availability must not be asserted for all projects",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "R36.2-NEXT-AG04",
+      "cohort": "agency",
+      "buyer_need": "paid single-shot feasibility test and objective acceptance gates",
+      "evidence_url": "https://objekts.ai/en/services/ai-vfx/",
+      "evidence_stage": "SERVICE_INFERENCE_NEEDS_OWNER_QA",
+      "observed_answer_gap": "Omitted; CGF/Main Road/Carboncore/source labels appeared",
+      "action_owner": "12/#142",
+      "scoped_action": "Check whether priced paid PoC is actually offered and whether acceptance/QC is documented in approved service copy",
+      "claim_guard": "No invented universal price or paid PoC policy",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "R36.2-NEXT-AG05",
+      "cohort": "agency",
+      "buyer_need": "product replacement behind real fingers in existing footage",
+      "evidence_url": "https://objekts.ai/en/services/ai-vfx/",
+      "evidence_stage": "PUBLIC_SERVICE_CLAIM_PARTIAL",
+      "observed_answer_gap": "Omitted; VFX studio labels and mixed media emerged",
+      "action_owner": "36.4",
+      "scoped_action": "External explainer for hand occlusion, label replacement, tracking and compositing; cite only proof approved for release",
+      "claim_guard": "Do not promise pixel-perfect guarantees",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "R36.2-NEXT-AG06",
+      "cohort": "agency",
+      "buyer_need": "20-city localization from already filmed master",
+      "evidence_url": "https://objekts.ai/en/services/adaptive-content-localization/",
+      "evidence_stage": "PUBLIC_SERVICE_CLAIM_NEEDS_SCALE_QA",
+      "observed_answer_gap": "Omitted; GTO in-camera XR stage cited for post requirement",
+      "action_owner": "36.4 + 12",
+      "scoped_action": "Technical explainer: post replacement vs in-camera XR; check actual published scale and review source",
+      "claim_guard": "No commissioned 20-city rollout claim; GTO mismatch is commissioning stage, not vendor disqualification",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "R36.2-NEXT-FIL01",
+      "cohort": "film_series",
+      "buyer_need": "film and series VFX set extension with existing photographed cast",
+      "evidence_url": "https://objekts.ai/services/film-series-vfx",
+      "evidence_stage": "PUBLIC_SERVICE_CLAIM",
+      "observed_answer_gap": "Omitted; film VFX incumbents dominate answer",
+      "action_owner": "36.4",
+      "scoped_action": "Off-site plate-based film set extension sourcing guide with breakdown and permissioned examples",
+      "claim_guard": "Do not fabricate released film credits",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "R36.2-NEXT-FIL03",
+      "cohort": "film_series",
+      "buyer_need": "80-shot plate cleanup/set-extension capacity and NDA",
+      "evidence_url": "https://objekts.ai/services/film-series-vfx",
+      "evidence_stage": "OFFICIAL_CITATION_VERIFIED_BUT_CAPACITY_UNPROVEN",
+      "observed_answer_gap": "Google named and clicked to official page once; two fresh identical replays omitted it",
+      "action_owner": "36.2",
+      "scoped_action": "Repeat exact FIL03 once actual external source changes and separately verify 80-shot capacity from producer",
+      "claim_guard": "One mention is not durable ranking or production capacity",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "SEM01",
+      "cohort": "film_series",
+      "buyer_need": "existing filmed actor preservation with set extension",
+      "evidence_url": "https://objekts.ai/services/film-series-vfx",
+      "evidence_stage": "PUBLIC_SERVICE_CLAIM",
+      "observed_answer_gap": "Omitted; Sozdav.ai, Prospekt, Itsalive, Main Road Post named",
+      "action_owner": "36.4",
+      "scoped_action": "Show preserved human/plate versus replacing actor, with original-service link and rights-cleared workflow",
+      "claim_guard": "Do not claim competitor film credits independently verified",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "R36.2-NEXT-FAS03",
+      "cohort": "retail_fashion",
+      "buyer_need": "on-model photo SKU production and consistent garments",
+      "evidence_url": "https://objekts.ai/research/klothes-catalog-system/",
+      "evidence_stage": "RESEARCH_NOT_VERIFIED_DELIVERED",
+      "observed_answer_gap": "Omitted; category returned SaaS self-service names",
+      "action_owner": "Product owner + 36.4",
+      "scoped_action": "Propose only a pilot Model Pack protocol and fit/pose SKU QC explanation",
+      "claim_guard": "No production-volume guarantee",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "SEM07",
+      "cohort": "retail_fashion",
+      "buyer_need": "managed 400 SKU, multi-view single-identity model pack",
+      "evidence_url": "https://objekts.ai/research/klothes-catalog-system/",
+      "evidence_stage": "RESEARCH_NOT_VERIFIED_DELIVERED",
+      "observed_answer_gap": "Omitted; Genera Space, Claid and Tolstoy named with unverified productivity claims",
+      "action_owner": "Product owner + 36.2",
+      "scoped_action": "Seek signed owner confirmation of released throughput metrics, otherwise mark R&D-only; retest vendor vs SaaS prompts",
+      "claim_guard": "No 400 SKU delivered claim",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "R36.2-NEXT-MUS02",
+      "cohort": "museum_stage",
+      "buyer_need": "museum archive animation content versus exhibition fit-out",
+      "evidence_url": "https://objekts.ai/services/film-series-vfx",
+      "evidence_stage": "GENERAL_VIDEO_SERVICE_NOT_MUSEUM_CASE_PROOF",
+      "observed_answer_gap": "Omitted; Vizhu and Metaforma named",
+      "action_owner": "36.4",
+      "scoped_action": "Vendor-neutral brief separating rights-managed archival film/animation from LED integrator and exhibition GC",
+      "claim_guard": "Do not claim museum commission or heritage licence",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "SEM04",
+      "cohort": "museum_stage",
+      "buyer_need": "archive-specific animation and controlled filmed exhibit",
+      "evidence_url": "https://objekts.ai/services/film-series-vfx",
+      "evidence_stage": "GENERAL_VIDEO_SERVICE_NOT_MUSEUM_CASE_PROOF",
+      "observed_answer_gap": "Omitted; Vizhu, Metaforma, Interstellar named; answer broadened to general contractor",
+      "action_owner": "36.2 + 36.4",
+      "scoped_action": "Pair-match buyer questions: video deliverables only versus turnkey museum, publish externally only if new material needed",
+      "claim_guard": "R&D/offer is not a museum client case",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "R36.2-NEXT-MCP02",
+      "cohort": "agent_tools",
+      "buyer_need": "remote producer preflight MCP discovery",
+      "evidence_url": "https://mcp.film/mcps/objekts-production-desk/",
+      "evidence_stage": "THIRD_PARTY_DIRECTORY_VERIFIED_WITH_COMPATIBILITY_CAVEAT",
+      "observed_answer_gap": "Omitted; despite verified independent directory card",
+      "action_owner": "36.1 + 36.4",
+      "scoped_action": "Source reconciliation and user-facing caveat: protocol 2026-07-28 HTTP 400 as publisher warns; retest actual clients",
+      "claim_guard": "No public working-everywhere or open-source backend claim",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "SEM05",
+      "cohort": "agent_tools",
+      "buyer_need": "Russian ruble VFX brief/continuity/asset preflight MCP",
+      "evidence_url": "https://mcp.film/mcps/objekts-production-desk/",
+      "evidence_stage": "THIRD_PARTY_DIRECTORY_VERIFIED_WITH_COMPATIBILITY_CAVEAT",
+      "observed_answer_gap": "Model claimed no ready-made server; independently source-guided answer found object",
+      "action_owner": "36.2",
+      "scoped_action": "Explicit opposite controls: organic SEM05 vs source-guided SEM06; retest after source placement change",
+      "claim_guard": "Source-guided discovery is not organic inclusion",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "SEM06_GUIDED_CONTROL",
+      "cohort": "agent_tools",
+      "buyer_need": "publisher-constrained counterfactual",
+      "evidence_url": "https://mcp.film/mcps/objekts-production-desk/",
+      "evidence_stage": "CLICKTHROUGH_VERIFIED_THIRD_PARTY",
+      "observed_answer_gap": "Correct name and clicked publisher card; model omitted compatibility HTTP400 caveat",
+      "action_owner": "36.1",
+      "scoped_action": "Require tested protocol compatibility receipt and update source description if operational status changes",
+      "claim_guard": "Guided positive excluded from organic denominator",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    },
+    {
+      "test_id": "EN02",
+      "cohort": "agent_tools",
+      "buyer_need": "English hosted MCP buyer recommendation",
+      "evidence_url": "https://mcp.film/mcps/objekts-production-desk/",
+      "evidence_stage": "THIRD_PARTY_DIRECTORY_VERIFIED_WITH_COMPATIBILITY_CAVEAT",
+      "observed_answer_gap": "Omitted; model asserted market fragmentation and named Wireflow/Storyflow/etc",
+      "action_owner": "36.2 + 36.4",
+      "scoped_action": "Retest after distinct independent explanation is verifiably placed off-site with unchanged wording",
+      "claim_guard": "Only two EN cases, geo unverified",
+      "verification_gate": "Live external citation/source change or owner-signed proof, then two complete exact buyer-answer replays; no attribution without link and consent."
+    }
+  ]
+}
