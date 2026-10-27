@@ -128,3 +128,9 @@ Fetched current `.github/workflows` directory (48 YAML files) and read all **48*
 - Independently fetched first public comment under [modelcontextprotocol/java-sdk #1272, ID 6430419943](https://github.com/modelcontextprotocol/java-sdk/issues/1272#issuecomment-6430419943) by peach420fuzz. Two acceptance gaps in narrow tool triple: `outputSchema` drift and effective annotation defaults (per MCP 2026-07-28 and RugSnare PIN-SPEC). Affiliation, lack of Java execution, Node-only offline tests disclosed. **No maintainer acceptance/reply yet.**
 - First-party guard test file now has **32/32 in-memory passing** tests incl. actual `server.json`, outputSchema-only drift, and deliberate conservative false positive from an explicit default annotation. Docs separate our raw hash from PIN-SPEC's interoperable surface hash. `node --test` in a cloned working tree was **not run**.
 - Reprioritize monitor: #1272 specific Java SDK maintainer response; #1706 first proposal author acknowledged and incorporated 36.4's three classes, no need for second comment; #1715 protocol liveness remains source-gated; #17286/#17376 only after reporter provides facts. Do not overstate 10 messages as 10 leads.
+
+
+### 27-Oct exact target versus owner-swap source review
+
+- [Published and readback-confirmed methodology note](../../docs/MCP_LISTING_SWAP_VS_CLIENT_CONSENT.md) added to README: comparison from upstream ATPP `count.py`, Registry spec and our Node guard. Distinction between population-scale registrable-domain/npm-scope swaps (first→latest) and exact per-install URL/path/query/package/version contract review (approved→current). Source review, not full corpus reproduction. 10 external GitHub messages unchanged.
+- Potential next implementation after consumer request: redacted granular reason codes for path/subdomain/query/owner changes, tested multiple-endpoint additions and static fixtures; **not** yet implemented in library, despite note's acceptance-test list.
