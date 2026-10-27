@@ -102,7 +102,9 @@ test("missing previous or current manifest must not pass", () => {
   assert.ok(ok(remote(), remote(), tools, null).requiresReview);
 });
 test("without approved baseline result is unverified", () => {
-  assert.equal(assess(null, remote(), null, tools).state, "UNVERIFIED");
+  const a = assess(null, remote(), null, tools);
+  assert.equal(a.state, "UNVERIFIED");
+  assert.deepEqual(a.targetSignals, []);
 });
 test("rejects URL userinfo and fragments", () => {
   assert.throws(() => snapshot(remote("https://user:password@agent.example/mcp"), tools), /credentials/);
