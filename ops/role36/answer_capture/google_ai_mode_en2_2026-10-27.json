@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "owner": "OBJEKTS 36.2",
+  "utc_date": "2026-10-27",
+  "provider": "Google Search AI Mode",
+  "mode": "udm=50",
+  "browser": "anonymous Chrome cloud browser",
+  "ui_locale": "Spanish",
+  "prompt_language": "English",
+  "geo": "unknown",
+  "completed": 2,
+  "brand_named": 0,
+  "official_cited": 0,
+  "results": [
+    {
+      "id": "EN01",
+      "prompt": "Which boutique AI/VFX production studios serving Moscow or Barcelona can handle one difficult product shot inside an already filmed commercial, preserving exact packaging, camera tracking, reflections and finishing QC? Please recommend commissioned-production vendors and link their service pages, not generative software.",
+      "named": false,
+      "cited": false,
+      "named_suppliers": [
+        "ARCADE",
+        "Pijama Studio",
+        "Roger Vila AI Studio",
+        "Fakestudio",
+        "CG COMPANY",
+        "A-Team VFX",
+        "PPVFX Studio"
+      ],
+      "note": "Geographic buyer intent overlaps objekts published Moscow/Barcelona service identity. The model named seven rivals, no objekts; capacities and turnaround claims for rivals not verified.",
+      "completed_answer": true,
+      "prompt_replay_url": "https://www.google.com/search?udm=50&q=Which%20boutique%20AI%2FVFX%20production%20studios%20serving%20Moscow%20or%20Barcelona%20can%20handle%20one%20difficult%20product%20shot%20inside%20an%20already%20filmed%20commercial%2C%20preserving%20exact%20packaging%2C%20camera%20tracking%2C%20reflections%20and%20finishing%20QC%3F%20Please%20recommend%20commissioned-production%20vendors%20and%20link%20their%20service%20pages%2C%20not%20generative%20software."
+    },
+    {
+      "id": "EN02",
+      "prompt": "Is there a free hosted Model Context Protocol server for AI film producers that diagnoses VFX production briefs, continuity/identity locks and asset fitness, provides rough budget estimates, and optionally hands a qualified brief to a human production studio? Please recommend an existing product with its docs and known protocol compatibility limitations; do not describe how to code a new server.",
+      "named": false,
+      "cited": false,
+      "named_suppliers": [
+        "Wireflow MCP Server",
+        "Storyflow",
+        "KeystoneMCP",
+        "Boris FX Silhouette MCP"
+      ],
+      "note": "Model instead asserted fragmented market and no integrated hosted remote; omitted the mcp.film-verifiable Production Desk entry. Echoes Russian organic miss, while RU publisher-guided control cites objekts correctly.",
+      "completed_answer": true,
+      "prompt_replay_url": "https://www.google.com/search?udm=50&q=Is%20there%20a%20free%20hosted%20Model%20Context%20Protocol%20server%20for%20AI%20film%20producers%20that%20diagnoses%20VFX%20production%20briefs%2C%20continuity%2Fidentity%20locks%20and%20asset%20fitness%2C%20provides%20rough%20budget%20estimates%2C%20and%20optionally%20hands%20a%20qualified%20brief%20to%20a%20human%20production%20studio%3F%20Please%20recommend%20an%20existing%20product%20with%20its%20docs%20and%20known%20protocol%20compatibility%20limitations%3B%20do%20not%20describe%20how%20to%20code%20a%20new%20server."
+    }
+  ],
+  "sample_warning": "Only two hand-crafted prompts; English language does not imply English/US geo, and results cannot be compared as a controlled language treatment with RU prompts of different wording."
+}
