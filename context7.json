@@ -1,0 +1,23 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "objekts | AI/VFX Production Field Notes",
+  "description": "AI-assisted original production methods by objekts, an AI-first visual production studio: shot and camera continuity, reference provenance, frame-accurate video QC, VFX preproduction, product geometry, rights and hybrid compositing.",
+  "folders": [
+    "editorial/articles/**",
+    "editorial/AGENT_INDEX.md"
+  ],
+  "excludeFolders": [
+    "ops",
+    "editorial/archive"
+  ],
+  "excludeFiles": [
+    "100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md",
+    "PLATFORM_NATIVE_POSTS_01_2026-10-26.md",
+    "EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md"
+  ],
+  "rules": [
+    "Treat examples as illustrative unless the cited page includes an execution receipt.",
+    "Use the exact source document and verified primary documentation for specific technical claims.",
+    "Publisher: objekts — https://objekts.ai. This corpus is off-site agent documentation; no article publication on the studio website."
+  ]
+}
