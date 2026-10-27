@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-27",
+  "unit": "one published GitHub issue comment, not one distribution channel or commercial lead",
+  "role": "36.4",
+  "ownerBrand": "objekts",
+  "externalPublishes": 11,
+  "uniqueGitHubRepos": 4,
+  "uniqueGitHubOrgs": 2,
+  "publicDomains": [
+    "github.com"
+  ],
+  "verifiedCommunityResponses": [
+    {
+      "platform": "github",
+      "repository": "modelcontextprotocol/registry",
+      "issueNumber": 1706,
+      "replyCommentId": 6430297248,
+      "replyUrl": "https://github.com/modelcontextprotocol/registry/issues/1706#issuecomment-6430297248",
+      "author": "bl014h",
+      "relation": "original_issue_author",
+      "meaning": "explicitly adopted three-class vocabulary into issue proposal",
+      "notClaimed": "official_registry_maintainer_acceptance_or_merged_change"
+    }
+  ],
+  "contributions": [
+    {
+      "platform": "github",
+      "repository": "Comfy-Org/ComfyUI",
+      "issueNumber": 16673,
+      "issueUrl": "https://github.com/Comfy-Org/ComfyUI/issues/16673",
+      "commentId": 6402495949,
+      "commentUrl": "https://github.com/Comfy-Org/ComfyUI/issues/16673#issuecomment-6402495949",
+      "topic": "MiniMax H3 MPS AddGuide encode bisect",
+      "owner": "peach420fuzz",
+      "status": "published_readback_verified",
+      "externalReply": "none_observed_at_audit",
+      "commercialOutcome": "none_verified"
+    },
+    {
+      "platform": "github",
+      "repository": "Comfy-Org/ComfyUI",
+      "issueNumber": 14896,
+      "issueUrl": "https://github.com/Comfy-Org/ComfyUI/issues/14896",
+      "commentId": 6402547344,
+      "commentUrl": "https://github.com/Comfy-Org/ComfyUI/issues/14896#issuecomment-6402547344",
+      "topic": "multi-shot continuity production contract",
+      "owner": "peach420fuzz",
+      "status": "published_readback_verified",
+      "externalReply": "none_observed_at_audit",
+      "commercialOutcome": "none_verified"
+    },
+    {
+      "platform": "github",
+      "repository": "Comfy-Org/ComfyUI",
+      "issueNumber": 16644,
+      "issueUrl": "https://github.com/Comfy-Org/ComfyUI/issues/16644",
+      "commentId": 6402660110,
+      "commentUrl": "https://github.com/Comfy-Org/ComfyUI/issues/16644#issuecomment-6402660110",
+      "topic": "MPS sampler banding diagnostic",
+      "owner": "peach420fuzz",
+      "status": "published_readback_verified",
+      "externalReply": "none_observed_at_audit",
+      "commercialOutcome": "none_verified"
+    },
+    {
+      "platform": "github",
+      "repository": "modelcontextprotocol/modelcontextprotocol",
+      "issueNumber": 3430,
+      "issueUrl": "https://github.com/modelcontextprotocol/modelcontextprotocol/issues/3430",
+      "commentId": 6428859632,
+      "commentUrl": "https://github.com/modelcontextprotocol/modelcontextprotocol/issues/3430#issuecomment-6428859632",
+      "topic": "mixed-purpose MCP server routing and consent",
+      "owner": "peach420fuzz",
+      "status": "published_readback_verified",
+      "externalReply": "none_observed_at_audit",
+      "commercialOutcome": "none_verified"
+    },
+    {
+      "platform": "github",
+      "repository": "Comfy-Org/ComfyUI",
+      "issueNumber": 17326,
+      "issueUrl": "https://github.com/Comfy-Org/ComfyUI/issues/17326",
+      "commentId": 6429163521,
+      "commentUrl": "https://github.com/Comfy-Org/ComfyUI/issues/17326#issuecomment-6429163521",
+      "topic": "MKV workflow metadata writer/importer mismatch",
+      "owner": "peach420fuzz",
+      "status": "published_readback_verified",
+      "externalReply": "none_observed_at_audit",
+      "commercialOutcome": "none_verified"
+    },
+    {
+      "platform": "github",
+      "repository": "Comfy-Org/ComfyUI",
+      "issueNumber": 17376,
+      "issueUrl": "https://github.com/Comfy-Org/ComfyUI/issues/17376",
+      "commentId": 6429443393,
+      "commentUrl": "https://github.com/Comfy-Org/ComfyUI/issues/17376#issuecomment-6429443393",
+      "topic": "Qwen file format loader before MPS",
+      "owner": "peach420fuzz",
+      "status": "published_readback_verified",
+      "externalReply": "none_observed_at_audit",
+      "commercialOutcome": "none_verified"
+    },
+    {
+      "platform": "github",
+      "repository": "Comfy-Org/ComfyUI",
+      "issueNumber": 17286,
+      "issueUrl": "https://github.com/Comfy-Org/ComfyUI/issues/17286",
+      "commentId": 6429700992,
+      "commentUrl": "https://github.com/Comfy-Org/ComfyUI/issues/17286#issuecomment-6429700992",
+      "topic": "FLUX.3 encoder mismatch Russian",
+      "owner": "peach420fuzz",
+      "status": "published_readback_verified",
+      "externalReply": "none_observed_at_audit",
+      "commercialOutcome": "none_verified"
+    },
+    {
+      "platform": "github",
+      "repository": "modelcontextprotocol/registry",
+      "issueNumber": 1715,
+      "issueUrl": "https://github.com/modelcontextprotocol/registry/issues/1715",
+      "commentId": 6429761043,
+      "commentUrl": "https://github.com/modelcontextprotocol/registry/issues/1715#issuecomment-6429761043",
+      "topic": "protocol-version scoped endpoint liveness",
+      "owner": "peach420fuzz",
+      "status": "published_readback_verified",
+      "externalReply": "none_observed_at_audit",
+      "commercialOutcome": "none_verified"
+    },
+    {
+      "platform": "github",
+      "repository": "modelcontextprotocol/registry",
+      "issueNumber": 1706,
+      "issueUrl": "https://github.com/modelcontextprotocol/registry/issues/1706",
+      "commentId": 6430127433,
+      "commentUrl": "https://github.com/modelcontextprotocol/registry/issues/1706#issuecomment-6430127433",
+      "topic": "registry target/version/tools drift contract",
+      "owner": "peach420fuzz",
+      "status": "published_readback_verified",
+      "externalReply": "original_issue_author_responded",
+      "commercialOutcome": "none_verified"
+    },
+    {
+      "platform": "github",
+      "repository": "modelcontextprotocol/java-sdk",
+      "issueNumber": 1272,
+      "issueUrl": "https://github.com/modelcontextprotocol/java-sdk/issues/1272",
+      "commentId": 6430419943,
+      "commentUrl": "https://github.com/modelcontextprotocol/java-sdk/issues/1272#issuecomment-6430419943",
+      "topic": "Java SDK tool-surface output schema and annotation defaults",
+      "owner": "peach420fuzz",
+      "status": "published_readback_verified",
+      "externalReply": "none_observed_at_audit",
+      "commercialOutcome": "none_verified"
+    },
+    {
+      "platform": "github",
+      "repository": "Comfy-Org/ComfyUI",
+      "issueNumber": 16879,
+      "issueUrl": "https://github.com/Comfy-Org/ComfyUI/issues/16879",
+      "commentId": 6430612226,
+      "commentUrl": "https://github.com/Comfy-Org/ComfyUI/issues/16879#issuecomment-6430612226",
+      "topic": "Qwen Image 2.1 cold-warm reference conditioning bisect",
+      "owner": "peach420fuzz",
+      "status": "published_readback_verified",
+      "externalReply": "none_observed_at_audit",
+      "commercialOutcome": "none_verified"
+    }
+  ],
+  "historicalAgentCommunitySnapshot": {
+    "nature": "read_only_UI_audit_not_new_outbound",
+    "diraBook": [
+      {
+        "profile": "https://dirabook.com/a/objekts-production-lab",
+        "posts": 10,
+        "visibleComments": 5,
+        "ownerBadge": "verified_human_owner_UI_label_only"
+      },
+      {
+        "profile": "https://dirabook.com/a/objekts-studio-agent",
+        "posts": 4,
+        "visibleComments": 12,
+        "ownerBadge": "looking_for_human_owner"
+      }
+    ],
+    "clawprint": [
+      {
+        "profile": "https://clawprint.org/u/objekts-studio-agent",
+        "articles": 2,
+        "visibleThirdPartyResponses": 6,
+        "writerControl": "unverified"
+      }
+    ]
+  },
+  "accessGates": [
+    {
+      "repo": "langchain-ai/langchain",
+      "issue": 41507,
+      "status": "403_no_publication"
+    },
+    {
+      "repo": "vizart-vj/ComfyUI-MiniMax-H3-LongMedia",
+      "issue": 27,
+      "status": "403_no_publication"
+    },
+    {
+      "repo": "city96/ComfyUI-GGUF",
+      "issue": 488,
+      "status": "403_no_publication"
+    }
+  ],
+  "firstPartyEvidence": [
+    {
+      "path": "scripts/mcp_registry_target_guard.cjs",
+      "tests": "tests/mcp_registry_target_guard.test.cjs",
+      "executed": "42/42_in_memory_Node24.22.1",
+      "notVerified": "live_client_integration"
+    },
+    {
+      "path": "docs/MCP_LISTING_SWAP_VS_CLIENT_CONSENT.md",
+      "status": "published_source_review_not_live_corpus_scan"
+    }
+  ],
+  "economicAttribution": {
+    "qualifiedBuyerEnquiries": 0,
+    "paidJobs": 0,
+    "verifiedReferralConversions": 0,
+    "scope": "observed/confirmed only; analytics absence is not proof of zero unseen sessions"
+  },
+  "maintenance": {
+    "doNotDoubleCountHistoricalProfiles": true,
+    "noUnauthenticatedExternalPosts": true,
+    "ownerIssueUrl": "https://github.com/peach420fuzz/objekts-production-desk/issues/135",
+    "productOpsIssueUrl": "https://github.com/peach420fuzz/objekts-production-desk/issues/141"
+  }
+}
