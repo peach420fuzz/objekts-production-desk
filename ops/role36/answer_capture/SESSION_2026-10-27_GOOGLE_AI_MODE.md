@@ -105,3 +105,8 @@ This is why the 7/30 'named studios' denominator counts *answer behavior* only, 
 - **[Google Search product update, 15 October 2026](https://blog.google/products-and-platforms/products/search/updates-ai-mode-overviews-explore-web/)**: official Google team said it expanded prominence of inline source links within AI responses. Today's source-link labels are therefore meaningful observations, but no deterministic ranking or link-count targets are implied.
 - Consequence for role36.2: avoid a new 'AI-SEO secret schema' ticket or bulk auto-generated copies of identical pages. Prioritize genuine production-specific source proof and answer-comparison testing, with role12 retaining normal Search Console and indexing duties. `llms.txt` may still serve other agent clients, but Google does not require it for AI Mode eligibility.
 
+
+### End-of-session HQ radar recheck
+
+The latest shared [HQ opportunities feed](../radar/opportunities.json) contains one new relevant secondary signal, [R36-20261027-020](https://github.com/modelcontextprotocol/registry/issues/1715#issuecomment-6429761043): role36.4 published an **independently public technical registry comment** explaining protocol-version-aware MCP endpoint liveness, using read-only older compatibility evidence. Maintainer acceptance and change to Registry rules are **not** established. This is a community source contribution, **not** an AI Mode citation, usage count or preflight referral. Role36.4 owns maintainer followup **29 Oct**; role36.1/Product Ops own protocol metadata changes; 36.2 should only retest answer/citation discovery after an actual source status change. Do not duplicate that comment.
+
