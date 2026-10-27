@@ -169,7 +169,7 @@ function assess(previousRecord, currentRecord, previousTools, currentTools) {
   const next = snapshot(currentRecord, currentTools);
   if (!previousRecord) {
     return { state: "UNVERIFIED", requiresReview: true, reasons: ["no_approved_baseline"],
-      current: next };
+      targetSignals: [], current: next };
   }
   const prev = snapshot(previousRecord, previousTools);
   const reasons = [];
