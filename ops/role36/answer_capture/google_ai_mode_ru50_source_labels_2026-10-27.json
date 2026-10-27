@@ -1,0 +1,711 @@
+{
+  "owner": "OBJEKTS 36.2",
+  "date": "2026-10-27",
+  "purpose": "Raw source-label inventory and typed-answer failure modes, not supplier market-share ranking",
+  "provenance": {
+    "panel_30": "google_ai_mode_ru30_2026-10-27.json",
+    "panel_20": "google_ai_mode_ru20_followup_2026-10-27.json",
+    "one_browser": "anonymous cloud Chrome Google AI Mode, Spanish UI, geo unverified"
+  },
+  "original_30": {
+    "n": 30,
+    "answer_type_named_studios": 7,
+    "answer_type_other": 23,
+    "cohorts": {
+      "advertising_agency": {
+        "n": 10,
+        "answer_type_named_studios": 2,
+        "answer_type_other": 8,
+        "with_source_labels": 5,
+        "answer_spanish": 1
+      },
+      "film_series": {
+        "n": 5,
+        "answer_type_named_studios": 2,
+        "answer_type_other": 3,
+        "with_source_labels": 3,
+        "answer_spanish": 0
+      },
+      "museum_stage": {
+        "n": 5,
+        "answer_type_named_studios": 3,
+        "answer_type_other": 2,
+        "with_source_labels": 5,
+        "answer_spanish": 0
+      },
+      "retail_fashion": {
+        "n": 5,
+        "answer_type_named_studios": 0,
+        "answer_type_other": 5,
+        "with_source_labels": 4,
+        "answer_spanish": 1
+      },
+      "agent_tools": {
+        "n": 5,
+        "answer_type_named_studios": 0,
+        "answer_type_other": 5,
+        "with_source_labels": 1,
+        "answer_spanish": 1
+      }
+    },
+    "raw_source_label_counts": [
+      {
+        "source_label": "Sostav.ru",
+        "answer_occurrences": 3
+      },
+      {
+        "source_label": "24AI",
+        "answer_occurrences": 2
+      },
+      {
+        "source_label": "Photojam",
+        "answer_occurrences": 2
+      },
+      {
+        "source_label": "The New Black AI",
+        "answer_occurrences": 2
+      },
+      {
+        "source_label": "4FashionAI",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "В точку",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "ВидеоЗаяц",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "ГК Айтек",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Госкаталог Музейного фонда РФ",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Пушкинский музей",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "РГАКФД",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Связи Agency",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Студия Визуальных Решений",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Хабр",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "ЮАП",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Adobe Premiere & After Effects",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Beeble",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Botika",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Chicken Bone FX",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Cognex",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Creatorry.ru",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Depth Anything V2",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "EFFEX Studio",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Elpub",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "es.suntech-machinery.com",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Fuser",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Fuser Studio",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "G3D Studio",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "GenImagePro",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Genlogo",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Ideogram",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "iFactory AI",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Imagine.art",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Instagram · Гари Азат",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Intelgic",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Mironov's Vision",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Omelchak Multimedia Studio",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Online VFX Studio",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "OpusClip",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Photoroom",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "PicCopilot",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Pixazo",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Pixune",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "POGUMAX",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Proinicia",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "RAWSHOT",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Reddit · r/generativeAI",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Runway",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "russiainphoto.ru",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Segment Anything 2 (SAM2)",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "seliverstoff.ru",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "SellerPic",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Skillbox",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "SLOI AI Studio",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Stagedesign",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "stagedesign.ru",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Studio 22.12",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Sxema",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "True",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "true-ag.com",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "VC.ru",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Vinchi Interactive",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Vitrina AI",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Vizard AI",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "VWO / Vue.ai",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "WearView",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Wonder Dynamics (Wonder Studio)",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "www.foundry.com",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "www.omelchak.com",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "YOPRST",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "YouTube · Chomp Studio",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "YouTube · Comfy Compositing",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "YouTube · getimg",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "YouTube · SYNTX AI",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "YouTube · Youri van Hofwegen",
+        "answer_occurrences": 1
+      }
+    ]
+  },
+  "new_20": {
+    "n": 20,
+    "objekts_named": 1,
+    "source_labels_visible": 15,
+    "cohorts": {
+      "agency": {
+        "n": 6,
+        "source_labels_visible": 4,
+        "objekts_named": 0
+      },
+      "film_series": {
+        "n": 4,
+        "source_labels_visible": 4,
+        "objekts_named": 1
+      },
+      "retail_fashion": {
+        "n": 4,
+        "source_labels_visible": 4,
+        "objekts_named": 0
+      },
+      "museum_stage": {
+        "n": 3,
+        "source_labels_visible": 1,
+        "objekts_named": 0
+      },
+      "agent_tools": {
+        "n": 3,
+        "source_labels_visible": 2,
+        "objekts_named": 0
+      }
+    },
+    "raw_source_label_counts": [
+      {
+        "source_label": "Main Road Post",
+        "answer_occurrences": 4
+      },
+      {
+        "source_label": "CGF",
+        "answer_occurrences": 3
+      },
+      {
+        "source_label": "CJ VFX",
+        "answer_occurrences": 3
+      },
+      {
+        "source_label": "Online VFX Studio",
+        "answer_occurrences": 3
+      },
+      {
+        "source_label": "Algous Studio",
+        "answer_occurrences": 2
+      },
+      {
+        "source_label": "Alina Sozdaet",
+        "answer_occurrences": 2
+      },
+      {
+        "source_label": "FilmDirection FX",
+        "answer_occurrences": 2
+      },
+      {
+        "source_label": "Instagram",
+        "answer_occurrences": 2
+      },
+      {
+        "source_label": "Online VFX",
+        "answer_occurrences": 2
+      },
+      {
+        "source_label": "Studio 210",
+        "answer_occurrences": 2
+      },
+      {
+        "source_label": "SXEMA",
+        "answer_occurrences": 2
+      },
+      {
+        "source_label": "1-2-3 Production VFX",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "24AI",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Аэроплан (VFX-отдел)",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Белый город",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "БИЗНЕС Online",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Бюллетень кинопрокатчика",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "ВидеоЗаяц",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Виртуальный продакшн GTO Group",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "ВЛАДА ГРУПП / MATÈ",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Далина Графикс",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "ИИ-Продакшн El Chedo",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Метаформа",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Официальный сайт CG Company",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Официальный сайт CGF",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Официальный сайт Game4Art",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Официальный сайт Main Road Post",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Страница VFX услуг Sxema",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Студия 3D-графики и VFX (sfvp.ru)",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Студия Проспект",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Agentura Studio",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Algous studio",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Autodesk",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "AVM Technology",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Botika",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "carboncore vfx",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "CG Factory",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Claid.ai",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Dalinagraphics",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "design.hse.ru",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Fash Studio",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "FilmDirection FX / CJ VFX",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "FL.ru",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Game4Art Production",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "GenImagePro",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "goggy'co",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "INSOFT",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "jenova.ai",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Jumper MCP",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Kling AI MCP",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Krea MCP",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "kunwarVivek/mcp-github-project-manager",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Kwork",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Lifewood Data Technology",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "loonghao/shotgrid-mcp-server",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Mad Brains",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "MCPMarket",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Monks",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Morozova Production",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Objekts.ai",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Open Technology",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "OWASP MCP Governance",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Photojam",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Ptichka-3d",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "QUTE Studio",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Rawshot.ai",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Seliverstoff",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "sfvp.ru",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "SLOI AI STUDIO",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Sostav.ru",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Storyflow MCP",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "tejpalvirk/project",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "The AI Film Stack",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "VideoSmile.ru",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Vizhu Digital",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Wikipedia",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Wireflow MCP",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "Workspace",
+        "answer_occurrences": 1
+      },
+      {
+        "source_label": "YouTube",
+        "answer_occurrences": 1
+      }
+    ]
+  },
+  "warnings": [
+    "Different prompts and definitions across panels. Do not pool raw labels as ranks.",
+    "Source label counts include software, platforms, books, social channels and supplier names.",
+    "Names/links in AI answer do not establish competitor verified production availability or legal claims.",
+    "Exact label duplicates may refer to the same entity under different language or spelling; the JSON intentionally preserves them.",
+    "This is a convenience panel, not regional traffic or share-of-voice measurement."
+  ]
+}
