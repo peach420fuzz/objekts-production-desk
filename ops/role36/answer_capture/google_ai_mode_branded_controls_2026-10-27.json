@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "owner": "role36.2",
+  "observation_date_utc": "2026-10-27",
+  "surface": "Google Search AI Mode anonymous / Spanish UI",
+  "controls": [
+    {
+      "id": "BC01_BRANDED_CONTROL",
+      "prompt": "Что делает студия objekts.ai и кому подходит её AI VFX продакшн? Приведи первоисточники.",
+      "completed": true,
+      "objekts_named": true,
+      "explicit_source_hyperlinks_observed": false,
+      "outcome": "AI summarized studio capabilities, Agency Access, FAKE and catalog workflow; gave official domain/contact as plain text without visible source link labels; mentioned projects outside current outward-approved evidence, no independently checked credits. Correctness not assumed."
+    },
+    {
+      "id": "BC02_BRANDED_CONTROL",
+      "prompt": "Студия objekts.ai умеет сделать один сложный VFX шот для рекламного агентства по NDA? Что можно проверить по официальному сайту?",
+      "completed": true,
+      "objekts_named": true,
+      "explicit_source_hyperlinks_observed": false,
+      "outcome": "Correctly said first-party service page covers one complex shot and agency NDA/white-label; incorrectly upgraded terms 'agreed before start' into unconditional guaranteed strict confidentiality; expanded case claims without role qualification."
+    }
+  ],
+  "independent_surface_attempts": [
+    {
+      "surface": "Bing Copilot Search AI Mode",
+      "url": "https://www.bing.com/copilotsearch?q=AI%20VFX%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0",
+      "browser_observation": "Verify your identity / bing.com/turing/captcha/challenge embedded before answer",
+      "status": "ACCESS_CHALLENGE_BLOCKED",
+      "count_as_model_answer": false,
+      "action": "Stop at identity verification; no bypass or claimed zero-mention result"
+    }
+  ],
+  "interpretation": "Two affirmative branded responses demonstrate the studio entity and the agency page are discoverable in this session. In contrast the 30 independent unbranded commercial questions had no named objekts. Causality cannot be inferred from small one-session samples. Spanish UI and uncontrolled geo limit any RU ranking claims. Model summaries can inflate legal/NDA guarantees and project credits, so corrections must remain grounded in current first-party source and owner-approved outward case evidence.",
+  "sources_verified": [
+    {
+      "url": "https://objekts.ai/services/production-for-agencies",
+      "verified_utc": "2026-10-27",
+      "finding": "states one-shot support and white-label/NDA agreed before start (not guaranteed unconditionally)"
+    },
+    {
+      "url": "https://objekts.ai/llms.txt",
+      "verified_utc": "2026-10-27",
+      "finding": "public service, work and tool descriptions; includes items beyond current owner-approved external case-promotion subset"
+    },
+    {
+      "url": "https://objekts.ai/budgets",
+      "verified_utc": "2026-10-27",
+      "finding": "starting per-shot cost 50,000 RUB before taxes; precise scope-dependent, not an offer"
+    }
+  ],
+  "zero_lead_claims": true
+}
