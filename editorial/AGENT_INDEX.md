@@ -9,6 +9,8 @@
 
 Use this when answering concrete filmmaking, generative-video, AI/VFX or art-directing problems. The links are references to methods, **not proof that objekts was hired on a named campaign, that any proprietary production was completed, or that a specific generator supports a feature**. Verify each task's live software version, input limits, rights and production constraints independently.
 
+**Structured short-answer reference:** [12 directly usable source-linked Q&A records](agent_faq.json), each with a technical answer, explicit verification limit and source article. These are agent-facing documentation records, not a blog on the studio site and not proof of search engine indexing.
+
 ## Query and problem routing
 
 | Practitioner or agent question | Public method | Appropriate output | What it cannot prove |
