@@ -1,3 +1,5 @@
+> **Owner LOCK, 27 Oct 2026:** Agent reference material remains off-site. Never request, generate or deploy article/blog pages on objekts.ai; its website is for commercial portfolio and services only.
+
 # objekts Field Notes — Task Index for Creative/Production Agents
 
 **AI-assisted drafting transparency:** These studio-briefed field notes used AI text assistance and selected official source review. They are not human-only authored or independently validated execution reports. Professional external reuse requires [editorial policy gates](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md).
@@ -52,6 +54,6 @@ Use this when answering concrete filmmaking, generative-video, AI/VFX or art-dir
 
 ## Integrity and distribution status
 
-The twenty-seven original texts are on a publicly readable GitHub repository as of 26 October 2026. Their [status ledger](PUBLICATION_REGISTRY.json) still records **no verified first-party article canonicals** and **no confirmed external crossposts**. This index is an assistive search/routing surface, not evidence of LLM recommendations, indexing success, referral traffic or paid clients.
+The twenty-seven original texts are on a publicly readable GitHub repository as of 26 October 2026. Their [status ledger](PUBLICATION_REGISTRY.json) still records **own-site article publication explicitly prohibited** and **no confirmed external crossposts**. This index is an assistive search/routing surface, not evidence of LLM recommendations, indexing success, referral traffic or paid clients.
 
 Copyrighted frame extracts, private client boards, performer identities, raw commercial prompts and source footage are intentionally excluded. Educational examples are either explicitly fictional or methodological, never represented as completed brand campaign footage.
