@@ -72,7 +72,7 @@
 
 ### Time honesty
 
-Session restarted **2026-10-27T17:59:44.910Z** after owner correctly challenged a prior elapsed-wall-clock assertion. This report records actual browser answer checks, source reviews and versioned GitHub changes. The terminal end time is appended only after the requested 40-minute window actually elapses; elapsed time alone does not prove continuous activity.
+Session restarted **2026-10-27T17:59:44.910Z** after owner correctly challenged a prior elapsed-wall-clock assertion. This report records actual browser answer checks, source reviews and versioned GitHub changes. End-of-session live timestamp **2026-10-27T18:39:57.923Z**, giving **40.22 minutes** between the renewed start and final evidence check. Elapsed wall time by itself is not proof of uninterrupted attention: the independently readable model-answer probe outputs, evidence changes, verified GitHub commits, official-source reviews, de-duplicated publisher lead and issue #142 are the substantive activity records. No background runtime or paid lead is implied.
 
 ### Additional cited-competitor primary-source comparison and duplicate suppression (27 Oct)
 
