@@ -128,3 +128,31 @@ test("repository return has no credential or tool descriptions", () => {
   assert.equal(JSON.stringify(a).includes("secret"), false);
   assert.equal(JSON.stringify(a).includes("Read-only production preflight"), false);
 });
+
+
+const productionDeskFixture = require("../server.json");
+test("real pinned Production Desk server.json resolves official remote target", () => {
+  const s = snapshot(productionDeskFixture, null);
+  assert.equal(s.name, "ai.objekts.mcp/production-desk");
+  assert.match(s.serverVersion, /^\d+\.\d+\.\d+$/);
+  assert.deepEqual(s.targetLabels, ["remote:streamable-http@https://mcp.objekts.ai"]);
+  assert.equal(s.toolsHash, null); // A registry listing is NOT the live tools/list.
+});
+test("real Production Desk identical listing cannot pass when tools/list is missing", () => {
+  const d = assess(productionDeskFixture, clone(productionDeskFixture), null, null);
+  assert.deepEqual(d.reasons, ["tool_manifest_not_comparable"]);
+  assert.equal(d.requiresReview, true);
+});
+test("real Production Desk endpoint move triggers deployment target review", () => {
+  const next = clone(productionDeskFixture);
+  next.remotes[0].url = "https://migration.objekts.ai/mcp";
+  const d = assess(productionDeskFixture, next, tools, tools);
+  assert.ok(d.reasons.includes("deployment_target_changed"));
+  assert.equal(d.reasons.includes("published_version_changed"), false);
+});
+test("real Production Desk release-only update is not confused with target swap", () => {
+  const next = clone(productionDeskFixture);
+  next.version = "0.1.5";
+  const d = assess(productionDeskFixture, next, tools, tools);
+  assert.deepEqual(d.reasons, ["published_version_changed"]);
+});
