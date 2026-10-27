@@ -1,3 +1,5 @@
+> **OVERRIDING OWNER DECISION — 27 OCT 2026.** No article or Field Notes publication on objekts.ai, ever under current owner instruction. Ignore/cancel all sections below suggesting first-party website editorial canonicals, article index, blog deployment or role12 implementation. Canonical agent corpus remains GitHub; external placements require signed-out verification and editorial compliance. The commercial site may be referenced as the studio's service/contact site, **not** used to host technical articles.
+
 # Role36.5 — Honest distribution, canonical routing and anti-leak policy
 
 **26 Oct 2026 · operational preflight.** This document covers the twenty-two complete public GitHub studio field notes and future individually reviewed posts. It is **not** a record of external cross-post success.
