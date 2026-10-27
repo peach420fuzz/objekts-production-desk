@@ -1,10 +1,10 @@
 {
   "format": "objekts.agent_faq.v1",
-  "as_of": "2026-10-27",
+  "as_of": "2026-10-28",
   "publisher": "objekts",
   "publisher_url": "https://objekts.ai",
   "original_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
-  "publication_note": "Offsite agent-reference knowledge. The owner prohibits article/blog publication on objekts.ai. AI-assisted; examples and methods do not imply client approvals or tests.",
+  "publication_note": "Off-site only agent-reference knowledge from 27 public AI-assisted Field Notes; not a validated runtime implementation or independent recommendation. The owner prohibits article/blog publishing on objekts.ai.",
   "items": [
     {
       "id": "canvas-input",
@@ -101,6 +101,126 @@
       "verification_limit": "Tool success is not creative acceptance.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-statuses-technical-success-vs-approval_ru.md",
       "source_language": "ru"
+    },
+    {
+      "id": "reference-role-provenance",
+      "question": "How should an AI filmmaking agent use another director’s film as visual reference without copying it?",
+      "short_answer": "Assign each reference a limited role such as light direction, camera staging, material response or editing rhythm. Record source, authorship, extracted properties and forbidden transfers; reject a reference combination that silently changes character, location or protected imagery.",
+      "verification_limit": "Studying a frame grants no permission to reproduce its likeness, copyrighted still or original composition.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/reference-provenance-role-based-image-control.md",
+      "source_language": "en"
+    },
+    {
+      "id": "storyboard-timing",
+      "question": "How do I turn an AI-video storyboard into an animatic that actually cuts at frame-accurate timings?",
+      "short_answer": "Convert every beat to frame indices at the delivery timebase; note action onset, contact, reaction and cut margin. Place rough stills on a fixed-FPS timeline, mark missing beats and evaluate whether the render can fulfill the required duration.",
+      "verification_limit": "A storyboard description or generated clip duration does not prove a readable performance beat.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/storyboard-frame-accurate-generative-edit_ru.md",
+      "source_language": "ru"
+    },
+    {
+      "id": "authorial-shot-intent",
+      "question": "How do I tell whether an AI-generated cinematic image has a real dramatic purpose?",
+      "short_answer": "Write what the audience must learn or feel at that exact moment, why the camera is positioned there, how space and ordinary objects carry that purpose, and what changes between adjacent shots. Reject frames that serve only as disconnected mood images.",
+      "verification_limit": "Aesthetic plausibility is not evidence of a coherent scene or a strong film.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/the-frame-needs-a-reason-authorial-image-making.md",
+      "source_language": "en"
+    },
+    {
+      "id": "rights-provenance",
+      "question": "Does generating an image give me publication rights for every reference and visible person?",
+      "short_answer": "Build an element-by-element rights sheet covering source images, human likenesses, product marks, sound and derivative graphics. Separate provenance metadata from license, clearance and consent; release only reviewed deliverables.",
+      "verification_limit": "A C2PA or source-trace record is not a rights grant or a substitute for a model release.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/generative-media-rights-provenance-publication-gate.md",
+      "source_language": "en"
+    },
+    {
+      "id": "film-contact-sheet",
+      "question": "How should an AI agent analyze cinema references without collecting hundreds of decorative screenshots?",
+      "short_answer": "Research scene context and source credits, select a small representative set of frames, and tag each for camera, blocking, illumination, color, material or editing function. Preserve timecodes and citations, then convert findings into a shot-specific design decision.",
+      "verification_limit": "A contact sheet is a research index, not a license to distribute copied film frames.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/film-reference-contact-sheet-research-method.md",
+      "source_language": "en"
+    },
+    {
+      "id": "vfx-onset-prep",
+      "question": "Which reference materials must a VFX production collect on set before replacing a background with AI or CG?",
+      "short_answer": "Decide practical, CG and generative layers before shooting. Capture lens and camera metadata, scene geometry, lighting/gray-ball/chrome references when appropriate, clean plates, tracking detail, occlusion references and foreground interaction evidence.",
+      "verification_limit": "The precise capture plan depends on the shot; missing physical information cannot always be reconstructed afterward.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/vfx-shot-preproduction-on-set-capture-decision-matrix.md",
+      "source_language": "en"
+    },
+    {
+      "id": "color-pipeline-continuity",
+      "question": "Why do two shots grade differently even though the same LUT was applied?",
+      "short_answer": "Separate motivated scene lighting, camera/display transforms, color-management settings and compositing alpha. Audit OCIO/ACES assumptions, exposure and white balance continuity, straight versus premultiplied treatment and highlight roll-off before pushing saturation.",
+      "verification_limit": "A LUT cannot repair the wrong transform, inconsistent exposure or missing scene-light motivation.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/color-continuity-scene-lighting-ocio-aces-compositing.md",
+      "source_language": "en"
+    },
+    {
+      "id": "fashion-multiview",
+      "question": "How can a generative fashion catalogue maintain exact garment fit across front, profile and rear views?",
+      "short_answer": "Keep distinct locked identities for SKU, garment cut/seams/material, model anatomy and intended photography. Check hem position, closures, seam placement, folds and fit landmarks across a multi-view contact sheet against approved product imagery.",
+      "verification_limit": "A coherent generated model does not guarantee authentic SKU dimensions or fit.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/fashion-catalog-garment-body-multiview-continuity.md",
+      "source_language": "en"
+    },
+    {
+      "id": "puppet-motion-physics",
+      "question": "How can a digital puppet move like a physical handmade object instead of a smooth CG rig?",
+      "short_answer": "Specify scale, shell material, armature constraints, joint play, center of mass and contact surfaces. Animate anticipation, constrained travel, resisted bending, secondary lag and settle; light the figure so its scale and imperfections stay legible.",
+      "verification_limit": "Noise, grime and stop-motion cadence alone do not establish material weight.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/puppet-armature-material-inertia-uncanny-motion.md",
+      "source_language": "en"
+    },
+    {
+      "id": "city-variant-verification",
+      "question": "How do I create one video campaign for multiple cities without inventing local landmarks?",
+      "short_answer": "Lock master campaign timing, copy and product identity; isolate city-variable environments and local claims into audited packs. Verify places and signage against reliable location evidence, then QC every version for geometry, legality and consistent brand action.",
+      "verification_limit": "A location-looking landmark or street label generated by AI is not geographical evidence.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hyperlocal-video-city-variant-canon-location-verification.md",
+      "source_language": "en"
+    },
+    {
+      "id": "room-graph-topology",
+      "question": "Why does a corridor or doorway change position between AI-generated shots?",
+      "short_answer": "Represent rooms as a graph with stable doors, adjacency, walls, window orientation and camera routes. Validate any walk-through or reverse-angle against that graph, and separate perspective changes from genuine layout changes.",
+      "verification_limit": "A successful text topology check cannot certify pixel-level camera geometry.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/architectural-topology-door-space-camera-continuity.md",
+      "source_language": "en"
+    },
+    {
+      "id": "material-history",
+      "question": "How do I art-direct a believable lived-in synthetic location without random grunge?",
+      "short_answer": "Create an event-to-trace ledger: who used each surface, which physical action left each mark, how light and cleaning altered it, and which traces the camera should discover. Keep material history consistent between angles.",
+      "verification_limit": "Decorative scratches and procedural dirt do not establish an intelligible history.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/image-needs-a-past-material-history-production-design.md",
+      "source_language": "en"
+    },
+    {
+      "id": "acoustic-location-world",
+      "question": "How do I design sound for a generative room that was never physically built?",
+      "short_answer": "Write an acoustic world bible with room dimensions and surfaces, listener position, sound-source positions, absorption/reflection character and sync event times. Match Foley mass and contact to the pictured materials across shots.",
+      "verification_limit": "A plausible room tone cannot replace measured sync or actual surround-format delivery tests.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/synthetic-location-acoustic-sound-world-bible_ru.md",
+      "source_language": "ru"
+    },
+    {
+      "id": "shot-duration-design",
+      "question": "How do I choose shot duration in generative cinema without arbitrary pacing?",
+      "short_answer": "Identify the material event, audience discovery and character action that unfold during the shot. Define an entry state, meaningful change and exit condition before choosing seconds; test the cut against adjacent shots rather than treating duration as a style preset.",
+      "verification_limit": "No universal shot length or named director's style determines the correct edit.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/shot-duration-production-design-mise-en-scene.md",
+      "source_language": "en"
+    },
+    {
+      "id": "identity-vs-style",
+      "question": "How can I restyle the same performer across shots while preserving recognizability?",
+      "short_answer": "Lock independently observed craniofacial proportions, body silhouette, gaze and performance identity; treat wardrobe, lighting, texture and rendering style as separate controls. QC profiles, three-quarter views, occlusions and motion, not just the hero portrait.",
+      "verification_limit": "Prompt identity statements do not guarantee likeness consistency and do not authorize use of a real person's image.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/identity-continuity-generative-stylization.md",
+      "source_language": "en"
     }
   ]
 }
