@@ -4,9 +4,9 @@
   "unit": "one published GitHub issue comment, not one distribution channel or commercial lead",
   "role": "36.4",
   "ownerBrand": "objekts",
-  "externalPublishes": 11,
-  "uniqueGitHubRepos": 4,
-  "uniqueGitHubOrgs": 2,
+  "externalPublishes": 12,
+  "uniqueGitHubRepos": 5,
+  "uniqueGitHubOrgs": 3,
   "publicDomains": [
     "github.com"
   ],
@@ -177,6 +177,20 @@
       "externalReply": "none_observed_at_audit",
       "commercialOutcome": "none_verified",
       "reactionsAtSnapshot": 0
+    },
+    {
+      "platform": "github",
+      "repository": "apify/apify-mcp-server",
+      "issueNumber": 1621,
+      "issueUrl": "https://github.com/apify/apify-mcp-server/issues/1621",
+      "commentId": 6430696633,
+      "commentUrl": "https://github.com/apify/apify-mcp-server/issues/1621#issuecomment-6430696633",
+      "topic": "MCP tools/list outputSchema budget vs importer vs tool-call diagnosis",
+      "owner": "peach420fuzz",
+      "status": "published_readback_verified",
+      "externalReply": "none_observed_at_audit",
+      "commercialOutcome": "none_verified",
+      "reactionsAtSnapshot": 0
     }
   ],
   "historicalAgentCommunitySnapshot": {
@@ -248,7 +262,7 @@
   "reactionsSnapshot": {
     "checkedDate": "2026-10-27",
     "method": "GitHub issue-comment reactions API for each of the 11 exact posted comment IDs",
-    "commentsChecked": 11,
+    "commentsChecked": 12,
     "commentsWithReactions": 0,
     "totalReactions": 0,
     "caveat": "As-of snapshot; a textual reply was independently verified and counted separately. Zero reactions does not show zero readers."
