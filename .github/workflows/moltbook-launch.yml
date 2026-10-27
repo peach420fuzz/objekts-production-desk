@@ -7,6 +7,10 @@ on:
 
 jobs:
   launch:
+    # Historic one-shot attempt registered an existing agent but could not publish (HTTP 403).
+    # Fail closed: rerunning this job would register a duplicate and expose a claim link in public logs.
+    # Recover/claim the existing objekts-production-lab through Moltbook support instead.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     steps:
       - name: Register and publish
