@@ -134,3 +134,9 @@ Fetched current `.github/workflows` directory (48 YAML files) and read all **48*
 
 - [Published and readback-confirmed methodology note](../../docs/MCP_LISTING_SWAP_VS_CLIENT_CONSENT.md) added to README: comparison from upstream ATPP `count.py`, Registry spec and our Node guard. Distinction between population-scale registrable-domain/npm-scope swaps (first→latest) and exact per-install URL/path/query/package/version contract review (approved→current). Source review, not full corpus reproduction. 10 external GitHub messages unchanged.
 - Potential next implementation after consumer request: redacted granular reason codes for path/subdomain/query/owner changes, tested multiple-endpoint additions and static fixtures; **not** yet implemented in library, despite note's acceptance-test list.
+
+
+### 27-Oct 42-test completed privacy-safe classifier
+
+- Extended [MCP guard](../../scripts/mcp_registry_target_guard.cjs) with optional `targetSignals` to distinguish domain/subdomain, path, query, transport and package set changes without disclosing raw query/path/identifiers. Ten tests added, **42/42 actually PASS in-memory Node.js 24.22.1** with first-party manifest. Exact new GitHub sources read back. [Current docs](../../docs/MCP_REGISTRY_TARGET_DRIFT_GATE.md) and [comparison note](../../docs/MCP_LISTING_SWAP_VS_CLIENT_CONSENT.md) updated; README count corrected.
+- **Still missing to declare runtime usable:** persist consent-bound baseline, negotiate/fetch actual server `tools/list` and protocol version, enforce pre-call block/approve, test re-consent under realistic host session, compare output effective annotations without excess false positives. Role36.4 has no authority to claim Product Ops shipped these. Outbound technical comments **10**, no buyer lead.
