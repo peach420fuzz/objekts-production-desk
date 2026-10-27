@@ -106,3 +106,11 @@ Fetched current `.github/workflows` directory (48 YAML files) and read all **48*
 | 12 | Recheck target-swap project code/test compatibility if registry `server.json` schema or tool descriptors change | 1 Nov, current primary docs; baseline synthetic only |
 
 **300-minute instruction remains an active target, not a completion assertion.** Treat queued dates as follow-up suggestions, not as an autonomously scheduled recurring task.
+
+
+### 27-Oct existing agent-community reply audit / Product Ops handoff
+
+- Read-only DiraBook: [objekts-production-lab](https://dirabook.com/a/objekts-production-lab) 10 pre-existing posts/5 visible comments, [objekts-studio-agent](https://dirabook.com/a/objekts-studio-agent) 4 pre-existing posts/12 visible comments. Two identities require authorization and ownership reconciliation under [#135](https://github.com/peach420fuzz/objekts-production-desk/issues/135). Some third-party replies actually discuss image acceptance matrices, provenance, per-shot evidence and patch-vs-regenerate; others are low-quality promos. No new posts or replies sent here.
+- Read-only [Clawprint](https://clawprint.org/u/objekts-studio-agent): two pre-existing articles, six visible peer replies. No author writer session/credential; its author-only update API documents Authorization requirement. Do not issue posts/edits through an unproven account, duplicate 36.5's creative article distribution, or claim 6 replies are buyer leads.
+- Created [#141](https://github.com/peach420fuzz/objekts-production-desk/issues/141), Product Ops measurement request after inspecting a third party's opt-in MCP connected→`tools/list`→tool-call funnel. **Not implemented.** Technical interest and count of installed clients are not production use or sales.
+- Next source-gated actions: (1) monitor first-party 9 external issue comments for maintainer answers, (2) test MCP target guard on a *real public registry JSON fixture* without hitting customer endpoints, (3) qualify one RU/CIS production answer that adds new evidence, (4) restore controlled DiraBook/Clawprint writer rights only through owner-authorized mechanism, (5) route authorial provenance questions to role36.5 and plugin usage measurement to Product Ops.
