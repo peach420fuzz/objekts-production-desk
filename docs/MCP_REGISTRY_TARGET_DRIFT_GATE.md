@@ -10,7 +10,7 @@ A name, title or previously authorized install is not itself enduring permission
 
 This repository ships a small **offline review-signal utility**:
 
-- [Source](../scripts/mcp_registry_target_guard.cjs) · [30 tests incl. first-party `server.json`](../tests/mcp_registry_target_guard.test.cjs)
+- [Source](../scripts/mcp_registry_target_guard.cjs) · [32 tests incl. first-party `server.json`](../tests/mcp_registry_target_guard.test.cjs)
 - `assess(previousRegistryRecord, currentRegistryRecord, previousToolList, currentToolList)`
 - `snapshot(registryRecord, optionalToolList)`
 
@@ -95,4 +95,16 @@ node --test tests/mcp_registry_target_guard.test.cjs
 
 The tests now also import the repository's **real checked-in [`server.json`](../server.json)** (`ai.objekts.mcp/production-desk`, streamable HTTP at `https://mcp.objekts.ai/mcp`; observed version `0.1.4` during review). Four extra cases check parsing of the actual listing, missing `tools/list` remaining review-required even if the listing is identical, target-host migration, and a release-only version change. The version assertion tests a semantic version shape, not a permanently frozen release. Those tests run against the current source tree, so changed manifest content may require test review, but an intentional endpoint change must never go silently unnoticed.
 
-**Execution scope:** 30/30 tests passed in an in-memory Node v24.22.1 harness using the exact fetched source/test bodies and checked-in `server.json` as an injected fixture; this is not a production client intercept, live registry API check or consent UI. Real `tools/list`, authenticated user consent, signatures and endpoint provenance remain external integration work.
+**Execution scope:** 32/32 tests passed in an in-memory Node v24.22.1 harness using the exact fetched source/test bodies and checked-in `server.json` as an injected fixture; this is not a production client intercept, live registry API check or consent UI. Real `tools/list`, authenticated user consent, signatures and endpoint provenance remain external integration work.
+
+
+### SDK contract-surface interoperability cases · 27 October 2026
+
+The suite now includes two more explicit cases beyond the real-manifest checks:
+
+1. A change confined to `outputSchema` leaves the narrow `{name,description,inputSchema}` pin unchanged but changes the declared downstream result contract. Our all-fields raw `tools/list` snapshot triggers `tool_contract_changed`.
+2. Adding explicitly spelled **spec-default** annotations (e.g. `readOnlyHint:false`, `destructiveHint:true`) also changes our raw hash, *even though it should not count as an effective annotation-semantics change*. This is a deliberately conservative false positive, not a claim of semantic equivalence or reference-standard interoperability.
+
+The [MCP 2026-07-28 ToolAnnotations schema](https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/schema/2026-07-28/schema.ts) defines effective hint defaults. The [RugSnare PIN-SPEC](https://github.com/Paraphern/rugsnare/blob/main/docs/PIN-SPEC.md) specifies a three-field interoperable `surfaceHash` **plus separate output/annotation comparison**, including effective defaults. Our prototype does **not** implement or claim compatibility with that cross-language hashing profile. A Java SDK or real host should treat changed annotations as untrusted hints and separate detection from execution authorization.
+
+**Execution:** In-memory Node.js v24.22.1, exact GitHub-fetched current source/tests/manifest: **32/32 PASS**. Neither a Java implementation nor a Java/Javascript cross-runtime digest parity test was run.
