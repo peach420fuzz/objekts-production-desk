@@ -83,3 +83,13 @@ Session restarted **2026-10-27T17:59:44.910Z** after owner correctly challenged 
 - [Рейтинг Рунета official 2027 procedure](https://ratingruneta.ru/how/): published requirements explicitly distinguish paid-source promotion from a **verified annual company-ranking process** involving company identity, clients, projects and turnover; a stand-alone software product is excluded. [2026 video/AI ranking](https://ratingruneta.ru/video/) exists, but it does **not** imply instant placement. Its [registration page](https://ratingruneta.ru/registration/) requests FIO/email/studio URL/Telegram and legal processing consent. Existing role36.3 proof/identity gate stands; no new form sent.
 - The lesson from these official comparator sources is narrower than 'write more SEO text': a commercial model can recommend pages that encode a clear service category, role and supplier trust evidence. For objekts, *service relevance is already retrievable by brand*; independent third-party **production-specific source credibility** plus precise differentiation is the testable next hypothesis, not keyword duplication.
 
+
+### 27-Oct additional named-supplier fidelity spot check (AC02)
+
+The mere presence of a company name is not proof of a valid B2B vendor suggestion. Primary source checks on three AC02 alternatives:
+- [Spitshine VFX](https://www.spitshinevfx.com/): describes real cleanup, compositing, roto and set-extension services; supplier category aligns with one-shot cleanup.
+- [Studio8FX](https://studio8fx.com/vfx-outsourcing/): explicitly markets VFX outsourcing to post houses, film/TV productions and studios with roto/paint/cleanup/matchmove. The site claims TPN status (vendor statement, certification not independently confirmed).
+- [Pixazo](https://www.pixazo.ai/): current first-party page describes the **Agent P self-service AI creation/tool platform**, not a contracted VFX postproduction supplier. Google AC02 presented it among overseas VFX boutiques, an **observed entity-type error**. Do not count six AC02 mentions as six validated capable studios.
+
+This is why the 7/30 'named studios' denominator counts *answer behavior* only, while commercial recommendation correctness needs its own provider-by-provider evidence gate.
+
