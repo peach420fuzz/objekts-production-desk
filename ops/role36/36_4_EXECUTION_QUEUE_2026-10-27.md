@@ -163,3 +163,12 @@ Fetched current `.github/workflows` directory (48 YAML files) and read all **48*
 
 - Created, executed on synthetic fixtures (**10/10 in-memory Node 24.22.1 PASS**) and readback-verified [manifest profiler](../../scripts/mcp_manifest_profile.cjs), [tests](../../tests/mcp_manifest_profile.test.cjs), [guide](../../docs/MCP_TOOLS_LIST_MANIFEST_PROFILER.md). Reads local authorized `tools/list` files only, does no network calls, measures schema sizes and structural complexity, hides tool names/description by default, makes **no vendor token/byte limit assertion**. Added README link.
 - Targeted downstream use: if [Apify #1621](https://github.com/apify/apify-mcp-server/issues/1621) or OpenAI Developer Community user supplies a permitted sanitized manifest/client import, measure exact stage before suggesting trimming; otherwise no uninvited second comments. **No live client replay so far**. External comment count stays 12.
+
+
+### 27-Oct Registry author invited paired consent/target fixtures (#13)
+
+- Original issue author [bl014h followed up with a concrete `_targetDrift` proposal and test-fixture invitation](https://github.com/modelcontextprotocol/registry/issues/1706#issuecomment-6430648816); **not** official maintainer adoption. Verified from issue comments.
+- Inspected current [Registry OpenAPI](https://github.com/modelcontextprotocol/registry/blob/main/docs/reference/api/openapi.yaml): `ServerResponse={server,_meta}`, registry official namespace has `additionalProperties:false`; current listing sorted by version **text**, not release chronology. These affect the proposed field's placement and `comparedTo.previousVersion` semantics.
+- Published [20-case acceptance matrix](../../docs/MCP_REGISTRY_TARGET_DRIFT_MATCHED_PAIR.md), exact GitHub file readback; then published/readback-confirmed [follow-up #13](https://github.com/modelcontextprotocol/registry/issues/1706#issuecomment-6430874539) with source-backed edge cases and a scoped collaboration offer.
+- Cumulative outbound now **13** unique GitHub issue comments, **5** external repos, **3** independent orgs, one domain. Original issue-author continued substantive dialogue (two replies, one person). Reactions **0/13** at check. No lead, paid project, accepted PR, live Registry code, or deploy claimed.
+- Next: only implement cross-runner fixtures when Registry location and historical comparison policy selected; ask for sanitized permissioned historical records. Do not publish duplicate prompts into this thread.
