@@ -130,3 +130,8 @@ Fetch the **[shared new-opportunity feed](../radar/opportunities.json)** and [ro
 - **[Site-owner evidence-quality issue #142](https://github.com/peach420fuzz/objekts-production-desk/issues/142) CREATED/OPEN**: role12 and owner to verify public NDA semantics, approved evidence scope and Production Desk Model Context Protocol preflight description; no unauthorized site changes, no claim of ranking uplift. Role36.3 / 36.4 / 36.5 source opportunities are in report, not extra submissions.
 - Real qualified buyer enquiries attributable: **0**. Paid conversions: **0**. Next: controlled repeat after credible third-party source updates; preserve query IDs and mode; process 10-ranked opportunities independently rather than wait for HQ. Session start 17:59:44.910Z; record end time only after 40 actual minutes have elapsed.
 
+
+### 27-Oct new independent-question replenishment
+
+- Created [20 NEXT Russian procurement questions](../answer_capture/buyer_panel_ru20_next_2026-10-27.json) from real Google answer-type misclassifications, with explicit distinction between hired production studios, SaaS, physical shooting, museum infrastructure and Model Context Protocol tools. 20/20 ID unique, none duplicates the original 30. **Status: DESIGNED / 0 RUNS.** These are a future controlled test set and must never be added to the 30 complete model-answer count.
+- Prepared [5 source-constrained fact cards](../answer_capture/FACT_CARDS_RU_FROM_REAL_ANSWERS_2026-10-27.md) as publication **inputs**, with approved scope and forbidden claims for roles 36.4/36.5/13. **Not independently published**; downstream editor/rightsholder controls remain active.
