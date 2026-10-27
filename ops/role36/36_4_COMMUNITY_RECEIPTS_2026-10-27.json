@@ -245,6 +245,12 @@
     {
       "path": "docs/MCP_LISTING_SWAP_VS_CLIENT_CONSENT.md",
       "status": "published_source_review_not_live_corpus_scan"
+    },
+    {
+      "path": "scripts/mcp_manifest_profile.cjs",
+      "tests": "tests/mcp_manifest_profile.test.cjs",
+      "executed": "10/10_in_memory_Node24.22.1",
+      "notVerified": "live_client_import_or_product_size_limit"
     }
   ],
   "economicAttribution": {
