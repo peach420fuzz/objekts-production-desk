@@ -1,0 +1,24 @@
+# APE Product audit template
+
+- Product / owner / GitHub issue:
+- Evidence timestamp + inspected repository/branch/ref:
+- Connected host/platform and exact installation state:
+- Actual tools/list and candidate list ordering, annotated SHA:
+- Exact action capabilities and forbidden/unsupported operations:
+- Current user-visible product name, square-on-color logo and RU/EN copy:
+- Tool names, descriptions, input schema and annotations source links:
+- Positive direct intents (at least 10):
+- Indirect intents (at least 10):
+- Negative intents (at least 10):
+- External effects: read / send private data / spend / mutate / delete / publish:
+- Error codes and truthful recovery/fallback:
+- Actual free and paid alternatives, setup burden, cost and permissions:
+- User/owner-reported vs OBSERVED vs UNTESTED:
+- Golden 200-case fixture version, synthetic/real split:
+- One-field A/B intervention and preregistered falsifier:
+- Host/build, repeats, order control and approved spend:
+- Results: recall, precision, false activation, completion, consent errors (denominators):
+- Counterexamples and regressions:
+- Proposed minimal change and link to receiving owner request:
+- Owner acknowledgement and actual post-change replay:
+- Status: NEW / READY / EVIDENCED / HANDOFF / VERIFIED / REJECTED / BLOCKED.

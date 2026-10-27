@@ -1,0 +1,29 @@
+name: APE documentation validation
+
+on:
+  pull_request:
+    paths:
+      - 'ops/agent-preference-engineering/**'
+      - '.github/ISSUE_TEMPLATE/ape_*.md'
+      - '.github/workflows/ape-docs-validation.yml'
+      - 'AGENTS.md'
+      - 'README.md'
+  push:
+    branches:
+      - main
+    paths:
+      - 'ops/agent-preference-engineering/**'
+      - '.github/ISSUE_TEMPLATE/ape_*.md'
+      - '.github/workflows/ape-docs-validation.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate-ape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check APE roadmap, hypotheses and critical controls
+        run: node ops/agent-preference-engineering/scripts/validate.cjs
