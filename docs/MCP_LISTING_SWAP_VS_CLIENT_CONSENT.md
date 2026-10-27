@@ -19,7 +19,7 @@ The open [MCP Registry #1706](https://github.com/modelcontextprotocol/registry/i
 
 - [bl014h/atpp/research/listing-swap/count.py](https://github.com/bl014h/atpp/blob/main/research/listing-swap/count.py) and [the adjacent README](https://github.com/bl014h/atpp/blob/main/research/listing-swap/README.md), inspected 27 October. This code selects first/latest entries, reduces remote hosts through its own two-/three-label domain heuristic, reduces npm package names to owner/scope, then compares sets. No installed-client consent state or live tools are read. Its README excludes subdomains, paths and same-scope package renames as listing swaps.
 - [Official MCP Registry generic server.json](https://github.com/modelcontextprotocol/registry/blob/main/docs/reference/server-json/generic-server-json.md), including the registered remotes/package fields.
-- [objekts review-signal source](../scripts/mcp_registry_target_guard.cjs) and [32 test scenarios](../tests/mcp_registry_target_guard.test.cjs): uses URL origin+path+query and exact package identifier/transport; intentionally flags even version-only changes for *review* with separate reason. Tests are synthetic plus the first-party checked-in [server.json](../server.json); no authorization enforcement.
+- [objekts review-signal source](../scripts/mcp_registry_target_guard.cjs) and [42 test scenarios](../tests/mcp_registry_target_guard.test.cjs): uses URL origin+path+query and exact package identifier/transport; intentionally flags even version-only changes for *review* with separate reason. Tests are synthetic plus the first-party checked-in [server.json](../server.json); no authorization enforcement.
 - [MCP 2026-07-28 tools schema](https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/schema/2026-07-28/schema.ts) and [RugSnare PIN-SPEC](https://github.com/Paraphern/rugsnare/blob/main/docs/PIN-SPEC.md): live `tools/list` schemas and annotation defaults require an independently obtained snapshot, not a Registry descriptor.
 
 ## Exact comparison examples
@@ -47,7 +47,7 @@ The table compares **algorithmic definitions** as read, not sampled live false-p
 
 - Pin Registry server name, exact originally approved remote origin/path and transport or package publisher/identifier/resolved artifact; preserve the protocol version and source repository separately.
 - A trusted Registry change signal can accelerate review but must not silently bless a target; a valid Registry record is not a client authorization.
-- Show human-readable *redacted* structural reasons: `remote_origin_changed`, `remote_path_changed`, `remote_query_changed`, `package_identifier_changed`, `published_version_changed`, `source_changed`. The current objekts prototype collapses most of these into `deployment_target_changed` and does **not** yet implement the full reason set.
+- Show human-readable *redacted* structural reasons: `remote_origin_changed`, `remote_path_changed`, `remote_query_changed`, `package_identifier_changed`, `published_version_changed`, `source_changed`. The current objekts prototype preserves `deployment_target_changed` and now also emits redacted **`targetSignals`** for differences in remote origins, paths, queries and counts, transport and package identifiers/registries. It does not yet persist consent or guarantee precise old/new endpoint pairing when multiple endpoints change.
 - Do not echo URL tokens or query values into issue threads, telemetry or review receipts.
 
 ### Layer B — contract surface
@@ -77,7 +77,7 @@ The table compares **algorithmic definitions** as read, not sampled live false-p
 9. Persisted approval must bind server identity, target, tool surface, host policy version, timestamp and explicit user decision; reproduce the decision deterministically in a controlled test.
 10. Run genuine Java/TypeScript/Python cross-runtime canonicalization vectors and a host pre-call interception smoke test before claiming interoperable enforcement.
 
-**Evidence status (27 October):** the limited Node review signal and 32/32 in-memory tests passed on fetched sources and local first-party manifest injection. These tests do not implement all ten gates above. No live Registry population re-scan, full ATPP algorithm run, external account access, Java code execution, or verified re-consent UI test was performed.
+**Evidence status (27 October):** the limited Node review signal and 42/42 in-memory tests passed on fetched sources and local first-party manifest injection. These tests do not implement all ten gates above. No live Registry population re-scan, full ATPP algorithm run, external account access, Java code execution, or verified re-consent UI test was performed.
 
 ## Source map / roles
 
