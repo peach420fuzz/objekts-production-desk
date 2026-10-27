@@ -1,0 +1,227 @@
+{
+  "format": "objekts.agent_faq.ru.v1",
+  "as_of": "2026-10-28",
+  "publisher": "objekts",
+  "publisher_url": "https://objekts.ai",
+  "language": "ru",
+  "original_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
+  "publication_note": "Русскоязычный справочник для ИИ-агентов по 27 публичным AI-assisted Field Notes; методики не являются доказательством работоспособности конкретных моделей и не означают независимую рекомендацию студии. Публикация статей на objekts.ai запрещена владельцем.",
+  "items": [
+    {
+      "id": "canvas-input",
+      "question": "Как проверить, что изображение-референс в Canvas действительно передано генеративной модели?",
+      "short_answer": "Стрелка на канвасе подтверждает лишь состояние интерфейса. Проверяйте тип входа, фактический payload, вызов инструмента и запись выполнения; каждому референсу задавайте допустимую роль.",
+      "verification_limit": "Схема интерфейса не доказывает conditioning; возможности модели зависят от конкретной версии.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/canvas-reference-graph-input-audit.md",
+      "source_language": "en"
+    },
+    {
+      "id": "motion-causality",
+      "question": "Как сделать физически убедительное движение в генеративном видео?",
+      "short_answer": "Разложите действие на импульс, силу, контакт, деформацию, инерционную фазу и остановку; назначьте фазы кадрам и проверьте порядок причин и следствий в декодированном ролике.",
+      "verification_limit": "Промпт задаёт намерение, но не гарантирует реалистичную физику готового изображения.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/physical-causality-generative-video.md",
+      "source_language": "en"
+    },
+    {
+      "id": "location-consistency",
+      "question": "Почему комната или улица меняет архитектуру между AI-шотами?",
+      "short_answer": "Создайте мастер-схему мира: связи помещений, двери, окна, неподвижные предметы, источники света и позиции камеры. Сверяйте каждый шот с этими константами.",
+      "verification_limit": "Текстовая схема не заменяет измерения площадки или точную 3D-реконструкцию.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/world-master-scene-continuity.md",
+      "source_language": "en"
+    },
+    {
+      "id": "locked-revisions",
+      "question": "Как изменить один жест, сохранив утверждённую геометрию и персонажа?",
+      "short_answer": "Зафиксируйте неизменяемые свойства и отдельно разрешённую правку. Проверяйте запрос перед запуском и результат в сопоставимых кадрах, сохраняя версии.",
+      "verification_limit": "Проверка текста задания не доказывает визуальную точность результата.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/immutable-art-direction-lock-minimal-delta-ledger.md",
+      "source_language": "en"
+    },
+    {
+      "id": "camera-parallax",
+      "question": "Почему движение камеры в AI-видео выглядит как телепортация?",
+      "short_answer": "Задайте начальную и конечную позу камеры, высоту, угол обзора и параллакс глубинных планов; оцените непрерывность проекции либо мотивируйте монтажный скачок.",
+      "verification_limit": "Указанное в промпте фокусное расстояние ещё не калибрует камеру.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/camera-perspective-spatial-consistency-generative-video.md",
+      "source_language": "en"
+    },
+    {
+      "id": "performer-rights",
+      "question": "Как законно и последовательно заменить узнаваемого актёра в рекламе?",
+      "short_answer": "Сначала документируйте согласие и объём прав на лицо, тело, голос и исполнение. Затем контролируйте идентичность, взгляд, анатомию, перекрытия и освещение по каждому плану.",
+      "verification_limit": "Возможность заменить лицо технически не означает наличие разрешения исполнителя.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/authorized-performer-recasting-face-replacement-shot-continuity.md",
+      "source_language": "en"
+    },
+    {
+      "id": "brand-typography",
+      "question": "Как сохранить точное название бренда на движущемся объекте?",
+      "short_answer": "Используйте утверждённую типографику как детерминированный графический слой; выбирайте плоскостной или 3D-трекинг, учитывайте окклюзию, motion blur и сверяйте декодированные кадры.",
+      "verification_limit": "Визуально похожая сгенерированная надпись не заменяет утверждённый текстовый оригинал.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/typography-physical-surface-motion-graphics-ai-video_ru.md",
+      "source_language": "ru"
+    },
+    {
+      "id": "product-pack",
+      "question": "Как удержать этикетку и упаковку товара неизменными в AI-рекламе?",
+      "short_answer": "Зафиксируйте силуэт SKU, размеры, логотип, точные надписи и материал. Для критичных деталей используйте CG/композитинг, а генерацию — для окружения и атмосферы.",
+      "verification_limit": "Внешнее сходство без проверки размеров и маркировки недостаточно для продуктовой приёмки.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/product-package-lock-ai-cg-compositing_ru.md",
+      "source_language": "ru"
+    },
+    {
+      "id": "video-timestamps",
+      "question": "Почему десятисекундное AI-видео не совпадает с монтажом и звуком?",
+      "short_answer": "Проверяйте события на конкретных декодированных кадрах, рациональные PTS, смещение начала, точки обрезки и конечный conform, а не одну длительность контейнера.",
+      "verification_limit": "Заявленный FPS и поле duration не подтверждают точный тайминг каждого кадра.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/generative-video-temporal-pts-frame-accurate-qc.md",
+      "source_language": "en"
+    },
+    {
+      "id": "seamless-loop",
+      "question": "Почему совпадение первого и последнего кадра не делает видео бесшовным лупом?",
+      "short_answer": "На границе повторения сравнивайте не только картинку, но и скорость, фазу действия, тени, частицы и звук; проверяйте несколько повторов на целевом экране.",
+      "verification_limit": "Кроссфейд может скрыть шов, одновременно создав двойную анатомию или неверную физику.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/seamless-generative-video-loop-boundary-world-state_ru.md",
+      "source_language": "ru"
+    },
+    {
+      "id": "lens-distortion",
+      "question": "Почему CG-объект совпадает по центру кадра, но уплывает у краёв?",
+      "short_answer": "Проверьте модель дисторсии объектива, кроп и все преобразования координат. Сводите CG в согласованном undistort-пространстве и применяйте соответствующий redistort к добавленным слоям.",
+      "verification_limit": "Фокусное расстояние и blur из промпта не заменяют реальную калибровку линзы.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/lens-distortion-undistort-redistort-stmap-vfx-contract.md",
+      "source_language": "en"
+    },
+    {
+      "id": "production-approval",
+      "question": "Статус completed у генеративного API означает, что клиентский ролик готов?",
+      "short_answer": "Нет. Разведите успешное выполнение задачи, целостность файла, технический QC, художественную приёмку, клиентское согласование и право публикации на разные статусы.",
+      "verification_limit": "Успех API не равен художественному утверждению.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-statuses-technical-success-vs-approval_ru.md",
+      "source_language": "ru"
+    },
+    {
+      "id": "reference-role-provenance",
+      "question": "Как использовать кино как референс, не копируя чужой фильм?",
+      "short_answer": "Назначьте каждому кадру ограниченную функцию: свет, мизансцена, материал, оптика или ритм. Запишите автора, источник, извлекаемые признаки и запреты переноса.",
+      "verification_limit": "Изучение кадра само по себе не даёт права воспроизводить чужой образ или композицию.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/reference-provenance-role-based-image-control.md",
+      "source_language": "en"
+    },
+    {
+      "id": "storyboard-timing",
+      "question": "Как перевести сториборд генеративного ролика в точный бордоматик?",
+      "short_answer": "Перенесите каждый драматургический бит в номера кадров при целевом FPS; обозначьте начало действия, контакт, реакцию и монтажный запас, затем выявите недостающие биты на таймлайне.",
+      "verification_limit": "Продолжительность описания или готового клипа не доказывает читаемость действия.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/storyboard-frame-accurate-generative-edit_ru.md",
+      "source_language": "ru"
+    },
+    {
+      "id": "authorial-shot-intent",
+      "question": "Как понять, что красивый AI-кадр действительно нужен истории?",
+      "short_answer": "Сформулируйте, что зритель узнаёт или ощущает именно здесь, почему камера расположена так и что меняется относительно соседних кадров. Уберите декоративные кадры без функции.",
+      "verification_limit": "Правдоподобная эстетика не гарантирует цельной сцены.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/the-frame-needs-a-reason-authorial-image-making.md",
+      "source_language": "en"
+    },
+    {
+      "id": "rights-provenance",
+      "question": "Даёт ли генерация изображения права на все референсы и лица в кадре?",
+      "short_answer": "Ведите реестр прав по исходным изображениям, людям, брендам, звуку и графике; отдельно проверяйте происхождение, лицензию, разрешение и согласие.",
+      "verification_limit": "Метаданные C2PA или подтверждение происхождения не являются лицензией или релизом модели.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/generative-media-rights-provenance-publication-gate.md",
+      "source_language": "en"
+    },
+    {
+      "id": "film-contact-sheet",
+      "question": "Как агенту исследовать кино по кадрам без бессмысленного архива скриншотов?",
+      "short_answer": "Выберите небольшую репрезентативную выборку из проверенного источника, укажите таймкоды и авторов, классифицируйте кадры по операторской, световой и монтажной функции.",
+      "verification_limit": "Контактный лист полезен для исследования, но не даёт права распространять чужие кадры.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/film-reference-contact-sheet-research-method.md",
+      "source_language": "en"
+    },
+    {
+      "id": "vfx-onset-prep",
+      "question": "Что обязательно собрать на съёмке для последующей замены фона AI или CG?",
+      "short_answer": "До съёмки решите, что остаётся практическим, что моделируется и что генерируется. Соберите данные камеры и линзы, геометрию, световые референсы, clean plates, трекинг и взаимодействия переднего плана.",
+      "verification_limit": "Список зависит от конкретного плана; часть не снятой физической информации восстановить нельзя.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/vfx-shot-preproduction-on-set-capture-decision-matrix.md",
+      "source_language": "en"
+    },
+    {
+      "id": "color-pipeline-continuity",
+      "question": "Почему одинаковый LUT даёт разный цвет соседним планам?",
+      "short_answer": "Проверяйте мотивировку света, экспозицию, баланс белого, трансформы OCIO/ACES, прямую или premultiplied alpha и поведение светов до добавления насыщенности.",
+      "verification_limit": "LUT не исправляет неверное цветовое пространство или разницу исходного освещения.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/color-continuity-scene-lighting-ocio-aces-compositing.md",
+      "source_language": "en"
+    },
+    {
+      "id": "fashion-multiview",
+      "question": "Как удержать реальную посадку одежды во всех ракурсах AI-каталога?",
+      "short_answer": "Раздельно фиксируйте SKU, лекала, швы, ткань, модель и схему съёмки. Сравнивайте подол, застёжки, посадку и складки на front, profile и back с утверждённой предметкой.",
+      "verification_limit": "Единая внешность сгенерированной модели не подтверждает геометрию и посадку реального SKU.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/fashion-catalog-garment-body-multiview-continuity.md",
+      "source_language": "en"
+    },
+    {
+      "id": "puppet-motion-physics",
+      "question": "Как заставить цифровую куклу двигаться как физическую рукотворную конструкцию?",
+      "short_answer": "Опишите материал, каркас, соединения, массу, центр тяжести, деформацию и задержку элементов; назначьте инерцию и точки контакта конкретным движениям.",
+      "verification_limit": "Стилистический промпт не доказывает соблюдение физических ограничений.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/puppet-armature-material-inertia-uncanny-motion.md",
+      "source_language": "en"
+    },
+    {
+      "id": "city-variant-verification",
+      "question": "Как масштабировать рекламу по городам без вымышленных достопримечательностей?",
+      "short_answer": "Для каждого города ведите проверенный набор топонимов, адресов, архитектурных ориентиров и разрешённых бренд-элементов; отделите локальный слой от неизменного мастер-ролика.",
+      "verification_limit": "Географический факт должен быть подтверждён источником; генерация способна выдумывать детали.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hyperlocal-video-city-variant-canon-location-verification.md",
+      "source_language": "en"
+    },
+    {
+      "id": "room-graph-topology",
+      "question": "Как избежать невозможных дверей и коридоров в последовательности AI-шотов?",
+      "short_answer": "Составьте граф помещений и переходов с фиксированными дверями, осями и позами камеры; проверяйте, что каждый экранный переход существует в топологии мира.",
+      "verification_limit": "Связный текстовый граф ещё не является точной геометрической моделью.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/architectural-topology-door-space-camera-continuity.md",
+      "source_language": "en"
+    },
+    {
+      "id": "material-history",
+      "question": "Как сделать декорацию в сгенерированном кадре материально и исторически убедительной?",
+      "short_answer": "Определите биографию предметов: производство, использование, трение, ремонт, загрязнение и возраст материалов. Размещайте следы износа там, где у них есть причина.",
+      "verification_limit": "Искусственно добавленная фактура не заменяет предметное исследование эпохи и материалов.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/image-needs-a-past-material-history-production-design.md",
+      "source_language": "en"
+    },
+    {
+      "id": "acoustic-location-world",
+      "question": "Как сохранить акустику одной локации между AI-сценами?",
+      "short_answer": "Создайте звуковую библию пространства: источники, дистанции, отражения, реверберацию, фоновую среду и часы событий; проверяйте синхронизацию при монтаже.",
+      "verification_limit": "Звуковая концепция требует слуховой и технической приёмки готового микса.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/synthetic-location-acoustic-sound-world-bible_ru.md",
+      "source_language": "ru"
+    },
+    {
+      "id": "shot-duration-design",
+      "question": "Как выбрать правильную длительность генеративного плана?",
+      "short_answer": "Измерьте время на вход в ситуацию, действие, последствия и выход; учитывайте физику предметов и движение камеры, затем проверяйте монтаж на реальном FPS.",
+      "verification_limit": "Универсальной оптимальной длительности нет: её определяет функция сцены.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/shot-duration-production-design-mise-en-scene.md",
+      "source_language": "en"
+    },
+    {
+      "id": "identity-vs-style",
+      "question": "Как изменить стиль персонажа, сохранив идентичность между AI-генерациями?",
+      "short_answer": "Разделите идентичность (геометрия лица, пропорции тела, жесты) и стилизацию (материал, свет, палитра); проверяйте сохраняемые признаки по нескольким ракурсам.",
+      "verification_limit": "Текстовый персонаж-бриф не гарантирует биометрически или художественно точную идентичность.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/identity-continuity-generative-stylization.md",
+      "source_language": "en"
+    }
+  ]
+}
