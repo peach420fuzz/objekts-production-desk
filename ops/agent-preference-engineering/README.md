@@ -1,6 +1,6 @@
 # OBJEKTS — Agent Preference Engineering (APE)
 
-**Status:** operating-system proposal, 27 October 2026. **Publisher:** objekts — https://objekts.ai/ . **Owner:** Leonid / objects studio. **Numbered chat:** assign an available number without overwriting an existing role.
+**Status:** operating-system proposal, 27 October 2026. **Publisher:** objekts — https://objekts.ai/ . **Owner:** Leonid / objekts studio. **Numbered chat:** assign an available number without overwriting an existing role.
 
 ## Purpose
 
@@ -68,3 +68,7 @@ A real agent-host test demonstrates higher **correct** task-to-tool selection an
 - [Phase P8](<https://github.com/peach420fuzz/objekts-production-desk/issues/155>) — sessions S36–S40
 
 These are open **TODO** checklists, not completed tests. A new owner/chat finding should enter through the master issue or the cross-chat issue template and be attached to the affected S## session.
+
+## Reproducible integrity check
+
+After checkout run: **node ops/agent-preference-engineering/scripts/validate.cjs**. This is a dependency-free, read-only structural check (40 session IDs, at least 222 uniquely identified hypothesis records, required docs and consent boundaries). It does **not** evaluate real model behavior. Proposed PRs affecting APE are also checked by a path-scoped, read-only GitHub Actions workflow.
