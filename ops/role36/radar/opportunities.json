@@ -580,7 +580,7 @@
       "source_url": "https://www.moltbook.com/m/design",
       "source_checked_at": "2026-10-27",
       "source_type": "OFFICIAL_PUBLIC_AGENT_API_AND_LIVE_POSTS",
-      "evidence": "Public Moltbook API checked 27 Oct: objekts-production-lab and objekts-studio-agent profiles both 0 posts/0 comments, is_claimed:false, is_verified:false; no configured Moltbook API key. m/design had Oct25 legitimate discussion and Oct19 unanswered stylistic question with genuine peer comments; m/creative had Oct27 posts but low visible response; m/vfx/aivideo/filmmaking mostly inactive since early 2026. Studio-first drafts for two actual m/design threads and an original VFX shot acceptance opener are in ops/role36/36_4_MOLTBOOK_STUDIO_FIRST_CONTENT_2026-10-27.md. Github draft is NOT Moltbook publication.",
+      "evidence": "Public Moltbook API checked 27 Oct: objekts-production-lab and objekts-studio-agent profiles both 0 posts/0 comments, is_claimed:false, is_verified:false; no configured Moltbook API key. m/design had Oct25 legitimate discussion and Oct19 unanswered stylistic question with genuine peer comments; m/creative had Oct27 posts but low visible response; m/vfx/aivideo/filmmaking mostly inactive since early 2026. Studio-first drafts for two actual m/design threads and an original VFX shot acceptance opener are in ops/role36/36_4_MOLTBOOK_STUDIO_FIRST_CONTENT_2026-10-27.md. Github draft is NOT Moltbook publication. Root cause verified from GitHub Actions run 37429592976: 6 Oct registration produced claim URL, immediate POST failed HTTP403. The claim URL was printed in publicly visible logs and must be considered compromised; do not reuse. Official support recovery enquiry SENT from objekts-linked Gmail 27 Oct, id 1a17fa3f321cf5cf (no credentials in message).",
       "buyer_hypothesis": "Named first-party objekts AI/VFX expertise may be discovered/referenced by agents advising visual production buyers; qualified human traffic, LLM citations and commercial conversion not yet observed.",
       "status": "BLOCKED",
       "publication_proof": null,
@@ -592,9 +592,9 @@
         "Refresh post comments, submolt rules and duplication before posting; state studio affiliation",
         "After publishing, independently fetch exact Moltbook post/comment URL and register any real referral"
       ],
-      "next_action": "Owner-assisted claim of canonical objekts-production-lab; publish one useful reply to a real m/design thread about taste-through-time, then verify anonymous URL. Follow with selectively one studio-authored visual-production acceptance discussion if distinct. Studio-first, plugins secondary.",
+      "next_action": "WAIT for official Moltbook support reply to 27 Oct email and follow their ownership process; human owner may need email/X verification. Reclaim existing production-lab, invalidate old public claim token, rotate API key, verify identity by authenticated GET, then publish one relevant studio-attributed design reply and verify URL. No duplicate registration.",
       "due_for_first_review": "2026-10-28",
-      "last_action": "2026-10-27: LIVE_VISUAL_THREADS_VERIFIED; STUDIO_DRAFTS_CREATED_AND_READBACK; REAL_MOLTBOOK_POSTS_ZERO; OWNER_CLAIM_REQUIRED",
+      "last_action": "2026-10-27: GITHUB_WORKFLOW_ROOT_CAUSE_403_VERIFIED; CLAIM_URL_EXPOSED_IN_PUBLIC_ACTIONS_LOGS; SUPPORT_RECOVERY_ENQUIRY_SENT_GMAIL_ID_1a17fa3f321cf5cf; MOLTBOOK_POSTS_ZERO",
       "dedup_key": "moltbook.com|objekts-production-lab|studio-technical-presence"
     }
   ],
