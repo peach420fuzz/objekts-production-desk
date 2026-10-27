@@ -151,3 +151,9 @@ Fetched current `.github/workflows` directory (48 YAML files) and read all **48*
 ### 27-Oct verified community CRM index
 
 - Created and fetched exact [36_4_COMMUNITY_RECEIPTS_2026-10-27.json](36_4_COMMUNITY_RECEIPTS_2026-10-27.json), publicly accessible machine-readable registry of 11 unique GitHub comment IDs, one independently verified original-author response, historical distinct DiraBook/Clawprint interactions, 403 non-writes and attribution gaps. **Not another outbound post.** Use this for dedupe and response polling; never equate comments/profile views with revenue.
+
+
+### 27-Oct Apify external technical response #12
+
+- Posted and verified [apify/apify-mcp-server #1621 comment 6430696633](https://github.com/apify/apify-mcp-server/issues/1621#issuecomment-6430696633), a third organization's GitHub issue on large `outputSchema` and alleged client truncation. Method defines server wire → importer declaration → model call comparison, A/B exact schemas, unknown limits; **no claim of Devin reproduction**. Cumulative external **12** comments / **5** GitHub repos / **3** orgs. Reactions **0/12**, one peer acknowledgment elsewhere; no attributable buyer lead.
+- Follow-up gate: reply only if Apify author produces sanitized raw/imported schema fingerprint pair or requests a precise test fixture. No second promotional comment.
