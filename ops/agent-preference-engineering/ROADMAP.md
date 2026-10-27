@@ -103,3 +103,15 @@ States: TODO / READY / RUNNING / BLOCKED / EVIDENCED / HANDOFF / VERIFIED / REJE
 - [ ] Update WORKLOG, hypothesis statuses and PR with next date.
 
 Owner addition: append intake ID and Δ change; link it to session, hypothesis and product. Do not erase superseded decisions.
+## Linked phase checklist issues (created 27 October 2026)
+
+- [Phase P1](<https://github.com/peach420fuzz/objekts-production-desk/issues/148>) — sessions S01–S05
+- [Phase P2](<https://github.com/peach420fuzz/objekts-production-desk/issues/149>) — sessions S06–S10
+- [Phase P3](<https://github.com/peach420fuzz/objekts-production-desk/issues/150>) — sessions S11–S15
+- [Phase P4](<https://github.com/peach420fuzz/objekts-production-desk/issues/152>) — sessions S16–S20
+- [Phase P5](<https://github.com/peach420fuzz/objekts-production-desk/issues/151>) — sessions S21–S25
+- [Phase P6](<https://github.com/peach420fuzz/objekts-production-desk/issues/153>) — sessions S26–S30
+- [Phase P7](<https://github.com/peach420fuzz/objekts-production-desk/issues/154>) — sessions S31–S35
+- [Phase P8](<https://github.com/peach420fuzz/objekts-production-desk/issues/155>) — sessions S36–S40
+
+Every checkbox begins open. Issue completion requires a dated evidence artifact; a PR merely defining the workflow does not close a session.

@@ -50,3 +50,21 @@ objekts is an AI-first visual production studio: generative video, AI/VFX, CGI, 
 ## Definition of success
 
 A real agent-host test demonstrates higher **correct** task-to-tool selection and completion *without* higher false activation, unauthorized side effects, unnecessary expense or privacy leakage; qualified buyer inquiries and paid work are independently attributable. A GitHub star, indexed document, tools/list event or synthetic test pass alone is not revenue or independent validation.
+
+## Current GitHub work board
+
+- [Master APE hub and input queue](https://github.com/peach420fuzz/objekts-production-desk/issues/158)
+- [TinyFish paid-vs-free experiment](https://github.com/peach420fuzz/objekts-production-desk/issues/157)
+- [FAKE metadata audit](https://github.com/peach420fuzz/objekts-production-desk/issues/156)
+- [Production Desk metadata audit](https://github.com/peach420fuzz/objekts-production-desk/issues/159)
+
+- [Phase P1](<https://github.com/peach420fuzz/objekts-production-desk/issues/148>) — sessions S01–S05
+- [Phase P2](<https://github.com/peach420fuzz/objekts-production-desk/issues/149>) — sessions S06–S10
+- [Phase P3](<https://github.com/peach420fuzz/objekts-production-desk/issues/150>) — sessions S11–S15
+- [Phase P4](<https://github.com/peach420fuzz/objekts-production-desk/issues/152>) — sessions S16–S20
+- [Phase P5](<https://github.com/peach420fuzz/objekts-production-desk/issues/151>) — sessions S21–S25
+- [Phase P6](<https://github.com/peach420fuzz/objekts-production-desk/issues/153>) — sessions S26–S30
+- [Phase P7](<https://github.com/peach420fuzz/objekts-production-desk/issues/154>) — sessions S31–S35
+- [Phase P8](<https://github.com/peach420fuzz/objekts-production-desk/issues/155>) — sessions S36–S40
+
+These are open **TODO** checklists, not completed tests. A new owner/chat finding should enter through the master issue or the cross-chat issue template and be attached to the affected S## session.

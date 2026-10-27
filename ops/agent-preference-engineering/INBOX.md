@@ -17,3 +17,11 @@
 ## Intake rule
 
 For new inputs add: ID, date, original owner message or URL, what it changes, evidence type, affected product, current LOCK conflicts, privacy, expected outcome, issue link and decision. Never replace an earlier directive silently; append a dated **Δ change**. Keep private/transcript-sensitive material in an approved private surface, linking only a sanitized identifier here.
+
+## Linked issues for incoming directives
+
+- IN-001 / IN-002 → [TinyFish controlled comparison](https://github.com/peach420fuzz/objekts-production-desk/issues/157); S16–S18.
+- IN-003 → [Phase P4 experimentation](<https://github.com/peach420fuzz/objekts-production-desk/issues/152>); S20.
+- IN-004 → [FAKE metadata audit](https://github.com/peach420fuzz/objekts-production-desk/issues/156), [Production Desk metadata audit](https://github.com/peach420fuzz/objekts-production-desk/issues/159); S31–S35.
+- IN-005 / IN-006 → [Phase P2 taxonomy](<https://github.com/peach420fuzz/objekts-production-desk/issues/149>) and [Phase P5 surface evaluation](<https://github.com/peach420fuzz/objekts-production-desk/issues/151>).
+- IN-007 → [Master hub](https://github.com/peach420fuzz/objekts-production-desk/issues/158) and cross-chat issue template.
