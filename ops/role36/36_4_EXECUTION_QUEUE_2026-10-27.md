@@ -146,3 +146,8 @@ Fetched current `.github/workflows` directory (48 YAML files) and read all **48*
 
 - Published and independently read back [ComfyUI #16879 comment 6430612226](https://github.com/Comfy-Org/ComfyUI/issues/16879#issuecomment-6430612226). Specific source-reviewed diagnostic: conditional cold/warm comparison of Qwen Image 2.1 resized reference input, `vae.encode` `ref_latents`, and positive/negative `clip.encode_from_tokens_scheduled` tensors. No MPS run or fix claimed. Original reporter already reproduced bug; second independent user CUDA counter-test exists. Await reporter's exact intermediate differences before more replies.
 - Cumulative outbound Github 36.4 count **11**, external acknowledgments **1** (Registry original author), no attributable buyer interest. DiraBook/Clawprint historical peer discussions count separately.
+
+
+### 27-Oct verified community CRM index
+
+- Created and fetched exact [36_4_COMMUNITY_RECEIPTS_2026-10-27.json](36_4_COMMUNITY_RECEIPTS_2026-10-27.json), publicly accessible machine-readable registry of 11 unique GitHub comment IDs, one independently verified original-author response, historical distinct DiraBook/Clawprint interactions, 403 non-writes and attribution gaps. **Not another outbound post.** Use this for dedupe and response polling; never equate comments/profile views with revenue.
