@@ -12,14 +12,14 @@
 
 ### Panel by actual buyer job
 
-| Cohort | Actual answers | Named objekts | Evidence pattern |
-|---|---:|---:|---|
-| Agency / commercial VFX | 10 | 0 | Named studios for one-shot/prod. fidelity; elsewhere sourcing advice, crew lists, generic NDA and tooling |
-| Film & series | 5 | 0 | Named broad international studios for cleanup/seasons; crowd/background/continuity prompts mostly generic pipelines or software |
-| Museum / theatre / stage | 5 | 0 | Museum-projection/theatre suppliers named, but archive content questions often became methodology/legal guidance |
-| Retail / fashion SKU | 5 | 0 | Mostly SaaS try-on or physical photography/factory inspection, not specialist production studios |
-| Agent tools / preflight | 5 | 0 | MCP acronym misread, invented FastMCP code, new brief template, custom agent blueprints and generation tool suggestions |
-| **Total** | **30** | **0** | Single session, no statistical generalization |
+| Cohort | Actual answers | Named objekts | Named supplier lists | Any source link labels | Evidence pattern |
+|---|---:|---:|---:|---:|---|
+| Agency / commercial VFX | 10 | 0 | 2 | 5 | Named studios for one-shot/prod. fidelity; elsewhere sourcing advice, crew lists, generic NDA and tooling |
+| Film & series | 5 | 0 | 2 | 3 | Named broad international studios for cleanup/seasons; crowd/background/continuity prompts mostly generic pipelines or software |
+| Museum / theatre / stage | 5 | 0 | 3 | 5 | Museum-projection/theatre suppliers named, but archive content questions often became methodology/legal guidance |
+| Retail / fashion SKU | 5 | 0 | 0 | 4 | Mostly SaaS try-on or physical photography/factory inspection, not specialist production studios |
+| Agent tools / preflight | 5 | 0 | 0 | 1 | MCP acronym misread, invented FastMCP code, new brief template, custom agent blueprints and generation tool suggestions |
+| **Total** | **30** | **0** | **7** | **18** | Single session, no statistical generalization |
 
 ### Three high-impact paired observations
 
