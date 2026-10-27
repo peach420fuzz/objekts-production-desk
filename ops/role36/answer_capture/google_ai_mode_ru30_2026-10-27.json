@@ -73,7 +73,24 @@
       "exact_citation_destination_verified": false,
       "observed_outcome": "recommended competing suppliers for one-shot rescue comp; no objekts",
       "run_time_utc": "within 2026-10-27 17:59–18:16 UTC; per-query exact time not captured",
-      "source_url": "https://www.google.com/search?udm=50&q=%D0%BD%D1%83%D0%B6%D0%BD%D0%B0%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%B8%D0%BD%20%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9%20VFX%20%D1%88%D0%BE%D1%82%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B%20%D0%B1%D0%B5%D0%B7%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%8A%D0%B5%D0%BC%D0%BA%D0%B8%20%D0%BA%D1%82%D0%BE%20%D0%B2%D0%BE%D0%B7%D1%8C%D0%BC%D0%B5%D1%82%D1%81%D1%8F"
+      "source_url": "https://www.google.com/search?udm=50&q=%D0%BD%D1%83%D0%B6%D0%BD%D0%B0%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%B8%D0%BD%20%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9%20VFX%20%D1%88%D0%BE%D1%82%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B%20%D0%B1%D0%B5%D0%B7%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%8A%D0%B5%D0%BC%D0%BA%D0%B8%20%D0%BA%D1%82%D0%BE%20%D0%B2%D0%BE%D0%B7%D1%8C%D0%BC%D0%B5%D1%82%D1%81%D1%8F",
+      "independent_entity_type_spot_check_2026_10_27": [
+        {
+          "name": "Spitshine VFX",
+          "official_url": "https://www.spitshinevfx.com/",
+          "classification": "verified official VFX cleanup/compositing studio services"
+        },
+        {
+          "name": "Studio8FX",
+          "official_url": "https://studio8fx.com/vfx-outsourcing/",
+          "classification": "verified official VFX outsourcing/roto/paint studio service"
+        },
+        {
+          "name": "Pixazo AI",
+          "official_url": "https://www.pixazo.ai/",
+          "classification": "official site promotes Agent P self-service AI generation/tool platform, not commissioned film VFX post studio; model grouping was misleading"
+        }
+      ]
     },
     {
       "query_id": "R36.2-AC03",
@@ -754,6 +771,7 @@
     "brand_citations_observed": 0,
     "spanish_answers": 3,
     "russian_answers": 27,
-    "other_model_surface_equivalence": "none"
+    "other_model_surface_equivalence": "none",
+    "supplier_qualification_note": "7/30 named supplier lists reflect answer behavior, not seven validated lists; AC02 contains Pixazo category error confirmed by independent official source spot check"
   }
 }
