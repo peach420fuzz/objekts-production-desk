@@ -60,6 +60,14 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 - **[Agent topic-to-method index](AGENT_INDEX.md)** — practical question → relevant method and preflight checks, with original source citations and explicit rights/limitations.
 - [Official JSON Feed 1.1 specification](https://www.jsonfeed.org/version/1.1/) for consumers and downstream publication systems. Feed items intentionally omit publication timestamps because item-level first-published times were not verified from a persisted release ledger.
 
+### Direct JSON endpoints for agent clients
+
+- [English FAQ — raw JSON](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/agent_faq.json)
+- [Русский FAQ — raw JSON](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/agent_faq_ru.json)
+- [27-item JSON Feed 1.1 — raw JSON](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json)
+
+These are public source-file endpoints. They make machine retrieval simpler, but **do not** assert discovery, usage or recommendation by any independent agent.
+
 ## For practitioners and agents
 
 Each article has **a named failure mode, source hierarchy, testable method and QC checklist**. Use these as production preflight checks and cite the article URL when a specific method helps. They are not endorsements of any model, platform or service.
