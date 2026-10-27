@@ -1,0 +1,81 @@
+# OBJEKTS · 36.2 — Second genuine-answer panel, source-constrained retrieval and vendor-fit QA
+**Session:** 27 October 2026, started 19:20:18 UTC · Owner: Role 36.2 LLM Answer & Citation Capture  
+**Source method:** actual generated replies in anonymous Google Search AI Mode (udm=50), Spanish-language Google interface, Russian buyer prompts; no authenticated model accounts; geographic origin not confirmed. This is **not** a Russian population/market-share estimate.
+
+## Verified execution / distinct denominators
+
+| Source / protocol | Completed answer count | objekts named | Official/third-party objekts link in AI answer | Interpretation |
+|---|---:|---:|---:|---|
+| [Original Google AI Mode RU30](./google_ai_mode_ru30_2026-10-27.json) | 30 | 0 | 0 | Prior genuine buyer-answer baseline, not 25-Oct web searches |
+| [20 **new** Google AI Mode buyer prompts](./google_ai_mode_ru20_followup_2026-10-27.json) | 20 | **1** | **1** | 1/4 film-series subgroup; 0/6 agency, 0/4 fashion, 0/3 museum, 0/3 tools |
+| [6 new semantic buyer wording probes](./google_ai_mode_semantic_source_controls_2026-10-27.json) | 6 | 0 | 0 | Same browser/mode; one answer each; focus on directly described offers |
+| **Descriptive pooled independent questions** | **56** | **1** | **1** | Nonprobability convenience sample, one browser, same date; **do not** market as a model-wide hit rate |
+| 2 additional exact FIL03 replays | 2 | 0 | 0 | Separate from 56; FIL03 had 1/3 positive across original + repeats |
+| 1 source-guided mcp.film control | 1 | **1** | **1** | Source domain named in prompt, but brand not named; **exclude from organic cohort** |
+| 2 old explicit-branded control replies | 2 | 2 | source recognised | Separate tests of entity knowledge, **not** unbranded reach |
+
+For the new 20-question cohort, **15/20** completed answers displayed visible supporting source labels; **5/20** did not. These are not model-install counts, user impressions, SEO rank, conversions or leads.
+
+**Real lead attribution = 0 observed; paid conversions = 0 observed.** There is no GSC/analytics link tying any conversation to a human buyer; recommendations are model outputs only.
+
+## First actual referral-citation event (FIL03)
+
+The one positive, `R36.2-NEXT-FIL03`, asked whom to hire for a fictional **80-shot series cleanup + set-extension batch with NDA and return to the edit**. Google named **objekts** among specialized VFX providers and linked an `Objekts.ai` source label. The assistant physically clicked that link; a browser tab opened the genuine first-party page **https://objekts.ai/services/film-series-vfx**. Its stated plate-based, environment extension, continuity and compositing services fit the question's *type*, but the citation **does not prove** available capacity for 80 shots, a signed NDA or any particular turnaround. Two complete fresh independent same-prompt replies omitted objekts (1/3 named). An opportunistic single citation is therefore **not a durable Top-5 position**.
+
+## Strongest result: source accessibility is not independent discovery
+
+In semantic buyer probe `SEM05`, the user specified **Model Context Protocol**, hosted free preflight, hard continuity locks, price direction in rubles and optional human handoff. Google asserted no such ready-made server existed and proposed an ad hoc Git MCP/GitHub/FastMCP/Just AI stack. This **missed an actual pre-existing, currently published source**, but no claim is made about compatibility with every MCP client.
+
+In `SEM06_GUIDED_CONTROL`, the request named only **mcp.film** as the directory to inspect, **never the studio**. Google found and named `objekts Production Desk`, linked **https://mcp.film/mcps/objekts-production-desk/** and accurately recited category capabilities. A browser click verified the exact live independent publisher card. Therefore there is a demonstrated **retrieval/selection gap between organic and source-constrained answers**; lack of any accessible documentary evidence is not a sufficient explanation. There is **no proven causal claim** that this specific source placement improved organic results.
+
+**Critical generated-answer omission:** the source's prominent caution says protocol **2026-07-28** requests currently produce HTTP 400 and some clients cannot connect; Google omitted this despite the control explicitly requesting compatibility restrictions. Official page also states four file/brief-change tools need human confirmation, that estimates are directional, and the GitHub repo is metadata/marketing docs rather than backend source. This should be preserved in downstream editorial descriptions. Do not market the product as an open-source server or public ChatGPT app release.
+
+Primary source: [mcp.film catalog card](https://mcp.film/mcps/objekts-production-desk/), first listed Oct 26, verified Oct 26 as displayed on 27 Oct. Related [external router issue #136](https://github.com/c47-inc/mcp-film/issues/136) is **not** evidence of organic recommendation.
+
+## Category and source-fit failures, with verified source contrast
+
+| Intent / observed AI behavior | Independently opened or searched publisher evidence | Action for 36.2 and correct owner |
+|---|---|---|
+| Film: `SEM01` and `SEM03` requested preserving real actors/camera/light while extending backgrounds; Google did **not** mention objekts, naming Sozdav.ai, Проспект, Itsalive, SLOI, Cinecast. | [objekts film service](https://objekts.ai/services/film-series-vfx) explicitly says set extension on existing plates and preservation of characters, optics, lighting. [Sozdav.ai](https://www.sozdav.ai/) self-publishes named filmography, team and film-specific service/visual case claims; do **not** treat self-published festival/revenue claims as independent verification. | **HIGH**: source proof differentiation, not another generic services page. If film credits/case breakdowns are legally approvable, pass an exact evidence request to owner/role36.4 for relevant external explanatory publication. Do not fabricate released film clients. |
+| Advertising: `SEM02` exact AI/VFX product, package/label and QC request recommended generic-named ai-vfx.com, Carboncore, Main Road, Online VFX, Asymmetric; 0 objekts. | [objekts AI VFX page](https://objekts.ai/en/services/ai-vfx/) already says one-shot insertion, package/logo fidelity, CGI compositing and finishing QC. | **HIGH**: source exists. Cross-check independent case links/roles and external supplier taxonomy; do not repeat site boilerplate or treat another keyword page as guaranteed ranking gain. |
+| Existing post vs virtual production: the 20-question AG06 response recommended **GTO virtual XR stage** for changing *already shot* footage. | [GTO's own virtual page](https://gto.group/virtual) advertises LED volume/in-camera virtual production; that's a different commissioning stage from replacing backgrounds in an existing master. | **MEDIUM**: include a noncommercial workflow distinction in 36.4's external article, and retest whether answer separates in-camera and post. |
+| Museum: `SEM04` recommended Vizhu, Metaforma etc. instead of objekts; model shifted from content-only archive film to full museum construction/integration. | [Vizhu](https://vizhu.digital/) publicly displays named museums, concept→content→installation portfolio and **self-claims** a Ministry licence for heritage objects; [Metaforma](https://meta-forma.ru/) displays specific museum project years and clients. Those claims are publisher evidence, not independent legal attestation. | **HIGH**: explicitly distinguish **archival animation/content vendor** from general contractor of a museum fit-out. Current objekts event/film pages cover images and projection systems, but public commissioned-museum proof is not established. Ask 36.4/36.3 for correctly scoped external buyer explanation, no invented project. |
+| Fashion: `SEM07` asked for managed 400-SKU multi-angle model pack. Google proposed Genera Space, Claid, Tolstoy/Uwear; omitted objekts and asserted unverified 100% garment precision and 100k images/month for another vendor. | [KLOTHES page](https://objekts.ai/research/klothes-catalog-system/) explicitly labels its workflow as **R&D** and describes pilot-first Model Pack, garment-fidelity QA and intended high-volume scenarios. Verified live 400-SKU production for a customer is **not** implied. | **HIGH integrity gate**: do **not** try to force a production-success claim from an R&D system. Offer only pilot evaluation with truthful limitations until product owner accepts actual evidence. Avoid repeating model's unverified rival metrics. |
+| Source-guided MCP recognition vs organic omission. | Public, indexed [mcp.film card](https://mcp.film/mcps/objekts-production-desk/) confirms product class; Google could retrieve it when publisher was specified. | **HIGH**: 36.4 may publish a vendor-neutral VFX producer's preflight checklist externally, with source link and protocol caveat. 36.1 owns catalogue deployment, role12 owns site, 36.2 retests organic citation. |
+
+## What does *not* solve this by itself
+
+[Google Search Central's AI features documentation](https://developers.google.com/search/docs/appearance/ai-features) says the foundational search conditions still apply (indexability/snippet eligibility, usable text, discoverable links) and there is **no mandatory special AI Mode markup/llms.txt**; eligible indexed pages are still not guaranteed to appear. Google explicitly warns that AI Mode and Overviews may yield different links. Thus do not add magic metadata or treat raw `llms.txt` publication as proof of answer inclusion. Site technical diagnosis/edits remain role12's remit.
+
+## Cross-provider access exclusions
+
+- **Perplexity**: visible response was **«Зарегистрируйтесь и повторите свой запрос»**, with an account gate, *before any model answer*. Page observed: https://www.perplexity.ai/search/2c2df957-faed-439f-ab83-db4fcdeeba5c. **BLOCKED_PREANSWER / not a negative result**.
+- **Grok**: its anonymous page allowed the prompt and submit, then displayed **“Continue your conversation / Sign up to continue seamlessly with Grok’s full power”** without answer. https://grok.com/ . **BLOCKED_PREANSWER / not a negative result**.
+- Earlier independent **Bing Copilot** attempt hit CAPTCHA before answer; also excluded. No CAPTCHA bypass, no paid account assumed or registration performed.
+
+## Next twelve qualified actions — independently executable queue
+
+| Priority | Owner | Evidence-linked action | Acceptance gate |
+|---|---|---|---|
+| P0 | **36.2** | Preserve/compare FIL03 same wording after an actual external source change (baseline is 1/3). | Two new completed replies + exact changed source; not a ranking assertion |
+| P0 | **12 / #142** | Classify accuracy of single-shot NDA wording and approved case release/credit claims. | Site owner reply: change/no-change + source + actual release receipt |
+| P0 | **36.4** | External, genuinely useful *single VFX shot* post-production checklist distinguishing locked packaging, reflections, grain, QC. Cite approved case and original official service; not on objekts.ai blog. | Public accessible publisher URL and exact textual attribution |
+| P0 | **36.4** | External, task-specific film set-extension sourcing comparison: plate, face/actor retention, 3D tracking and sequence conform; author not claiming completed film commissions. | Published independent page with rights-cleared links |
+| P0 | **36.4 / product owner** | MCP preflight producer checklist with read-only vs human-change tool distinction and protocol 2026-07-28 HTTP400 caveat. | Live external page, accurate tested supported protocol; avoids plugin/app public claims |
+| P1 | **36.3** | Reconcile Marketing-Tech's 6 & 19 Oct existing inquiries, not a duplicate new application. | Public named profile or real editorial status / exclusion |
+| P1 | **36.3** | Reconcile Sostav company map request sent 25 Oct, supplier category and release credits; no duplicate. | Named card/public URL or documented refusal |
+| P1 | **36.2** | Distinguish museum archive-content subcontract from general contractor/LED integrator in a fresh unbranded pair. | Two complete answers, supplier stages classified with first-party evidence |
+| P1 | **36.2** | Check GTO virtual-production mismatch again via semantic negative control. | At least one independent answer and source-stage classification, not arbitrary vendor disparagement |
+| P1 | **36.2** | Run English (not pseudo-RU locale) procurement contrast for one shot and preflight. | Record country/locale caveat, exact prompt+model answer and link |
+| P2 | **36.2** | Recheck genuine public MCP release in #101 / #29, compare specific compatibility after product owner changes. | Tested product owner receipt; one fresh answer without model-name prompting |
+| P2 | **36.2 / 36.4** | Classify KLOTHES outward phrasing pilot R&D vs delivered managed 400-SKU service. | Product-owner production receipt or explicit R&D-only editorial wording |
+
+**No external site code, end-user content, credentials or publisher forms were changed by 36.2.** The present role is measurement/evidence routing, not SEO deployment, supplier-directory submissions, public editorial syndication or direct sales.
+
+## Evidence index / custody
+
+- [Original model-answer baseline](./SESSION_2026-10-27_GOOGLE_AI_MODE.md) and its 30 raw rows.
+- [Second 20-row independently fetched JSON](./google_ai_mode_ru20_followup_2026-10-27.json), GitHub commit `3ce7a07a73409a7a90224d839eeee869a7ac4dd0`.
+- [Seven semantic/source-control records and two blocked-provider attempts](./google_ai_mode_semantic_source_controls_2026-10-27.json), commit `e48c2917b51b1164fc08c245341656b395b71e95`.
+- [Owner issue #142](https://github.com/peach420fuzz/objekts-production-desk/issues/142) awaits scoped source-truth QA; **do not** open an overlapping new site issue.
+- [Role36.2 successor handoff](../handoffs/36_2_LLM_ANSWER_CAPTURE.md) remains the owner directive.
