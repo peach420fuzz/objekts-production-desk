@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "owner": "OBJEKTS 36.2",
+  "record_date_utc": "2026-10-27",
+  "surface": {
+    "provider": "Google Search AI Mode",
+    "mode": "udm=50",
+    "browser": "anonymous Chrome cloud browser",
+    "ui_locale": "Spanish",
+    "geo": "unverified",
+    "model_version": "not exposed",
+    "prompt_language": "Russian",
+    "independent_dialogues": true
+  },
+  "start_time_utc": "2026-10-27T19:20:18Z",
+  "case_count": 7,
+  "organic_nonbranded_case_count": 6,
+  "organic_nonbranded_brand_named": 0,
+  "source_guided_control_case_count": 1,
+  "source_guided_control_brand_named_and_linked": 1,
+  "results": [
+    {
+      "id": "SEM01",
+      "cohort": "film_series",
+      "prompt": "Какие российские AI-first студии делают для кино и сериалов VFX-достройку локаций вокруг уже снятых актеров? Хочу подрядчика, который сохранит игру, камеры и свет, а не заменит актеров генерацией. Дай ссылки на официальные услуги.",
+      "brand_named": false,
+      "brand_source_cited": false,
+      "named_sources": [
+        "Sozdav.ai",
+        "Студия Проспект",
+        "Itsalive",
+        "Main Road Post",
+        "Algous Studio"
+      ],
+      "note": "Google did not mention objekts despite official /services/film-series-vfx page matching set extension and preservation of plate/camera/lighting.",
+      "completed_model_answer": true,
+      "prompt_replay_url": "https://www.google.com/search?udm=50&q=%D0%9A%D0%B0%D0%BA%D0%B8%D0%B5%20%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B5%20AI-first%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20%D0%B4%D0%B5%D0%BB%D0%B0%D1%8E%D1%82%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%B8%D0%BD%D0%BE%20%D0%B8%20%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%BE%D0%B2%20VFX-%D0%B4%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D1%83%20%D0%BB%D0%BE%D0%BA%D0%B0%D1%86%D0%B8%D0%B9%20%D0%B2%D0%BE%D0%BA%D1%80%D1%83%D0%B3%20%D1%83%D0%B6%D0%B5%20%D1%81%D0%BD%D1%8F%D1%82%D1%8B%D1%85%20%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%BE%D0%B2%3F%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D1%80%D1%8F%D0%B4%D1%87%D0%B8%D0%BA%D0%B0%2C%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9%20%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%20%D0%B8%D0%B3%D1%80%D1%83%2C%20%D0%BA%D0%B0%D0%BC%D0%B5%D1%80%D1%8B%20%D0%B8%20%D1%81%D0%B2%D0%B5%D1%82%2C%20%D0%B0%20%D0%BD%D0%B5%20%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%20%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%BE%D0%B2%20%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B5%D0%B9.%20%D0%94%D0%B0%D0%B9%20%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8."
+    },
+    {
+      "id": "SEM02",
+      "cohort": "agency",
+      "prompt": "Кого из российских AI VFX-студий можно привлечь на один шот уже снятой рекламы: заменить фон и погоду, сохранить точную геометрию упаковки, этикетку и свет? Нужен подрядчик с композитингом и QC, а не сервис генерации. Дай официальные ссылки.",
+      "brand_named": false,
+      "brand_source_cited": false,
+      "named_sources": [
+        "AI-VFX (ai-vfx.com)",
+        "CARBONCORE VFX",
+        "Main Road Post",
+        "Online VFX",
+        "Asymmetric VFX"
+      ],
+      "note": "Official /en/services/ai-vfx/ already states single complex shot, product fidelity, hybrid compositing, QC; omission is observed, causation not inferred.",
+      "completed_model_answer": true,
+      "prompt_replay_url": "https://www.google.com/search?udm=50&q=%D0%9A%D0%BE%D0%B3%D0%BE%20%D0%B8%D0%B7%20%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D1%85%20AI%20VFX-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B9%20%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%20%D0%BF%D1%80%D0%B8%D0%B2%D0%BB%D0%B5%D1%87%D1%8C%20%D0%BD%D0%B0%20%D0%BE%D0%B4%D0%B8%D0%BD%20%D1%88%D0%BE%D1%82%20%D1%83%D0%B6%D0%B5%20%D1%81%D0%BD%D1%8F%D1%82%D0%BE%D0%B9%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B%3A%20%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C%20%D1%84%D0%BE%D0%BD%20%D0%B8%20%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D1%83%2C%20%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D1%8C%20%D1%82%D0%BE%D1%87%D0%BD%D1%83%D1%8E%20%D0%B3%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8E%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%2C%20%D1%8D%D1%82%D0%B8%D0%BA%D0%B5%D1%82%D0%BA%D1%83%20%D0%B8%20%D1%81%D0%B2%D0%B5%D1%82%3F%20%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D0%BF%D0%BE%D0%B4%D1%80%D1%8F%D0%B4%D1%87%D0%B8%D0%BA%20%D1%81%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%B8%D0%BD%D0%B3%D0%BE%D0%BC%20%D0%B8%20QC%2C%20%D0%B0%20%D0%BD%D0%B5%20%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%20%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8.%20%D0%94%D0%B0%D0%B9%20%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8."
+    },
+    {
+      "id": "SEM03",
+      "cohort": "film_series",
+      "prompt": "Какая российская AI-first студия может по готовому плейту киношной сцены заменить город за окнами, сохранив лицевую анимацию актёров, камеру, цвет и зерно? Дай конкретных поставщиков с ссылками на разделы услуги.",
+      "brand_named": false,
+      "brand_source_cited": false,
+      "named_sources": [
+        "SLOI AI STUDIO",
+        "Cinecast",
+        "Студия Проспект"
+      ],
+      "note": "Model again did not name objekts. This is a separate wording, not the FIL03 same-prompt repeat.",
+      "completed_model_answer": true,
+      "prompt_replay_url": "https://www.google.com/search?udm=50&q=%D0%9A%D0%B0%D0%BA%D0%B0%D1%8F%20%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%20AI-first%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%20%D0%BF%D0%BE%20%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BE%D0%BC%D1%83%20%D0%BF%D0%BB%D0%B5%D0%B9%D1%82%D1%83%20%D0%BA%D0%B8%D0%BD%D0%BE%D1%88%D0%BD%D0%BE%D0%B9%20%D1%81%D1%86%D0%B5%D0%BD%D1%8B%20%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%D0%B7%D0%B0%20%D0%BE%D0%BA%D0%BD%D0%B0%D0%BC%D0%B8%2C%20%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%B2%20%D0%BB%D0%B8%D1%86%D0%B5%D0%B2%D1%83%D1%8E%20%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D1%8E%20%D0%B0%D0%BA%D1%82%D1%91%D1%80%D0%BE%D0%B2%2C%20%D0%BA%D0%B0%D0%BC%D0%B5%D1%80%D1%83%2C%20%D1%86%D0%B2%D0%B5%D1%82%20%D0%B8%20%D0%B7%D0%B5%D1%80%D0%BD%D0%BE%3F%20%D0%94%D0%B0%D0%B9%20%D0%BA%D0%BE%D0%BD%D0%BA%D1%80%D0%B5%D1%82%D0%BD%D1%8B%D1%85%20%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D1%89%D0%B8%D0%BA%D0%BE%D0%B2%20%D1%81%20%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%D0%BC%D0%B8%20%D0%BD%D0%B0%20%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D1%8B%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8."
+    },
+    {
+      "id": "SEM04",
+      "cohort": "museum_stage",
+      "prompt": "В России музей готовит экспозицию: нужно по архивным фото восстановить историческую улицу и сделать несколько сцен для выставочного экрана, с проверкой деталей и источников. Какая AI/VFX студия реально берёт производство на заказ? Укажи сайты подрядчиков, не софт и оборудование.",
+      "brand_named": false,
+      "brand_source_cited": false,
+      "named_sources": [
+        "ВИЖУ / Vizhu Digital",
+        "Бюро музейной сценографии Метаформа",
+        "INTERSTELLAR production",
+        "Visuals"
+      ],
+      "note": "Vizhu / Metaforma official sites have specifically attributed museum portfolio/case claims, unlike a generic VFX offer. Vizhu claims Ministry of Culture licence for heritage preservation; no independent registry verification performed.",
+      "completed_model_answer": true,
+      "prompt_replay_url": "https://www.google.com/search?udm=50&q=%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%BC%D1%83%D0%B7%D0%B5%D0%B9%20%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D1%82%20%D1%8D%D0%BA%D1%81%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D1%8E%3A%20%D0%BD%D1%83%D0%B6%D0%BD%D0%BE%20%D0%BF%D0%BE%20%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%BD%D1%8B%D0%BC%20%D1%84%D0%BE%D1%82%D0%BE%20%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C%20%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D1%83%D1%8E%20%D1%83%D0%BB%D0%B8%D1%86%D1%83%20%D0%B8%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%81%D1%86%D0%B5%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D0%B2%D1%8B%D1%81%D1%82%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%2C%20%D1%81%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%BE%D0%B9%20%D0%B4%D0%B5%D1%82%D0%B0%D0%BB%D0%B5%D0%B9%20%D0%B8%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2.%20%D0%9A%D0%B0%D0%BA%D0%B0%D1%8F%20AI%2FVFX%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8F%20%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%20%D0%B1%D0%B5%D1%80%D1%91%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%3F%20%D0%A3%D0%BA%D0%B0%D0%B6%D0%B8%20%D1%81%D0%B0%D0%B9%D1%82%D1%8B%20%D0%BF%D0%BE%D0%B4%D1%80%D1%8F%D0%B4%D1%87%D0%B8%D0%BA%D0%BE%D0%B2%2C%20%D0%BD%D0%B5%20%D1%81%D0%BE%D1%84%D1%82%20%D0%B8%20%D0%BE%D0%B1%D0%BE%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5."
+    },
+    {
+      "id": "SEM05",
+      "cohort": "agent_tools",
+      "prompt": "Ищу бесплатный remote MCP сервер (Model Context Protocol) для кинопродюсера: диагностика готовности AI/VFX брифа, проверка continuity и immutable locks, оценка порядка бюджета в рублях, затем опционально передача брифа человеку. Какие конкретные действующие продукты подходят и где подключить?",
+      "brand_named": false,
+      "brand_source_cited": false,
+      "named_sources": [
+        "Git MCP Server",
+        "GitHub MCP Server",
+        "Just AI Agent Platform",
+        "FastMCP",
+        "Atlassian MCP",
+        "Slack MCP"
+      ],
+      "note": "Google claimed no single hosted public production-preflight MCP meets requirements, despite verified public catalog entry for objekts Production Desk. It proposed constructing a server. This is a source-discovery miss, not proof of product eligibility on every modern MCP protocol.",
+      "completed_model_answer": true,
+      "prompt_replay_url": "https://www.google.com/search?udm=50&q=%D0%98%D1%89%D1%83%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%20remote%20MCP%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%20(Model%20Context%20Protocol)%20%D0%B4%D0%BB%D1%8F%20%D0%BA%D0%B8%D0%BD%D0%BE%D0%BF%D1%80%D0%BE%D0%B4%D1%8E%D1%81%D0%B5%D1%80%D0%B0%3A%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20AI%2FVFX%20%D0%B1%D1%80%D0%B8%D1%84%D0%B0%2C%20%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0%20continuity%20%D0%B8%20immutable%20locks%2C%20%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BA%D0%B0%20%D0%B1%D1%8E%D0%B4%D0%B6%D0%B5%D1%82%D0%B0%20%D0%B2%20%D1%80%D1%83%D0%B1%D0%BB%D1%8F%D1%85%2C%20%D0%B7%D0%B0%D1%82%D0%B5%D0%BC%20%D0%BE%D0%BF%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B0%20%D0%B1%D1%80%D0%B8%D1%84%D0%B0%20%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D1%83.%20%D0%9A%D0%B0%D0%BA%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D0%BA%D1%80%D0%B5%D1%82%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D1%83%D1%8E%D1%89%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B%20%D0%BF%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D1%8F%D1%82%20%D0%B8%20%D0%B3%D0%B4%D0%B5%20%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C%3F"
+    },
+    {
+      "id": "SEM06_GUIDED_CONTROL",
+      "cohort": "agent_tools",
+      "prompt": "В каталоге mcp.film есть действующий бесплатный remote MCP для production-preflight AI/VFX брифов, continuity locks, budget estimates и добровольной передачи проекта человеку? Если да, назови его, приведи ссылку на карточку и ограничения совместимости; если нет, скажи честно.",
+      "brand_named": true,
+      "brand_source_cited": true,
+      "named_sources": [
+        "objekts Production Desk",
+        "mcp.film"
+      ],
+      "verified_clicked_url": "https://mcp.film/mcps/objekts-production-desk/",
+      "note": "Source-constrained positive control; not an organic unbranded recommendation. Google identified linked production-preflight capabilities but OMITTED the critical documented HTTP 400 incompatibility for MCP protocol 2026-07-28 even though compatibility caveats were asked.",
+      "completed_model_answer": true,
+      "prompt_replay_url": "https://www.google.com/search?udm=50&q=%D0%92%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%D0%B5%20mcp.film%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D1%83%D1%8E%D1%89%D0%B8%D0%B9%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%20remote%20MCP%20%D0%B4%D0%BB%D1%8F%20production-preflight%20AI%2FVFX%20%D0%B1%D1%80%D0%B8%D1%84%D0%BE%D0%B2%2C%20continuity%20locks%2C%20budget%20estimates%20%D0%B8%20%D0%B4%D0%BE%D0%B1%D1%80%D0%BE%D0%B2%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%20%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D1%83%3F%20%D0%95%D1%81%D0%BB%D0%B8%20%D0%B4%D0%B0%2C%20%D0%BD%D0%B0%D0%B7%D0%BE%D0%B2%D0%B8%20%D0%B5%D0%B3%D0%BE%2C%20%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B8%20%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D1%83%20%D0%BD%D0%B0%20%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D1%83%20%D0%B8%20%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8%3B%20%D0%B5%D1%81%D0%BB%D0%B8%20%D0%BD%D0%B5%D1%82%2C%20%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%20%D1%87%D0%B5%D1%81%D1%82%D0%BD%D0%BE."
+    },
+    {
+      "id": "SEM07",
+      "cohort": "retail_fashion",
+      "prompt": "Российскому fashion-ритейлеру нужен подрядчик на 400 SKU каталога: одна утвержденная цифровая модель, фото одежды только предметкой на входе, ракурсы front/3/4/profile/back, точная посадка, швы, принты и обязательный garment QA. Кто оказывает такую managed production услугу на заказ? Не предлагай приложения для самостоятельного virtual try-on.",
+      "brand_named": false,
+      "brand_source_cited": false,
+      "named_sources": [
+        "Genera Space",
+        "Claid.ai / Let’s Enhance",
+        "Tolstoy AI Studio",
+        "Uwear.ai"
+      ],
+      "note": "Model pivoted to global platforms/enterprise arms, included unverified exact statements about 100% garment accuracy and 100k monthly output. objekts KLOTHES public page is clearly marked R&D/pilot, not verified as a deployed catalog service, and must not be overrepresented.",
+      "completed_model_answer": true,
+      "prompt_replay_url": "https://www.google.com/search?udm=50&q=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%BC%D1%83%20fashion-%D1%80%D0%B8%D1%82%D0%B5%D0%B9%D0%BB%D0%B5%D1%80%D1%83%20%D0%BD%D1%83%D0%B6%D0%B5%D0%BD%20%D0%BF%D0%BE%D0%B4%D1%80%D1%8F%D0%B4%D1%87%D0%B8%D0%BA%20%D0%BD%D0%B0%20400%20SKU%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%D0%B0%3A%20%D0%BE%D0%B4%D0%BD%D0%B0%20%D1%83%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%2C%20%D1%84%D0%BE%D1%82%D0%BE%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D1%8B%20%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BC%D0%B5%D1%82%D0%BA%D0%BE%D0%B9%20%D0%BD%D0%B0%20%D0%B2%D1%85%D0%BE%D0%B4%D0%B5%2C%20%D1%80%D0%B0%D0%BA%D1%83%D1%80%D1%81%D1%8B%20front%2F3%2F4%2Fprofile%2Fback%2C%20%D1%82%D0%BE%D1%87%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BA%D0%B0%2C%20%D1%88%D0%B2%D1%8B%2C%20%D0%BF%D1%80%D0%B8%D0%BD%D1%82%D1%8B%20%D0%B8%20%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20garment%20QA.%20%D0%9A%D1%82%D0%BE%20%D0%BE%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B5%D1%82%20%D1%82%D0%B0%D0%BA%D1%83%D1%8E%20managed%20production%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D1%83%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%3F%20%D0%9D%D0%B5%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%B0%D0%B3%D0%B0%D0%B9%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%BC%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20virtual%20try-on."
+    }
+  ],
+  "excluded_provider_attempts": [
+    {
+      "provider": "Perplexity",
+      "status": "BLOCKED_PREANSWER",
+      "prompt_reference": "R36.2-NEXT-FIL03",
+      "observed": "Зарегистрируйтесь и повторите свой запрос.",
+      "url": "https://www.perplexity.ai/search/2c2df957-faed-439f-ab83-db4fcdeeba5c"
+    },
+    {
+      "provider": "Grok",
+      "status": "BLOCKED_PREANSWER",
+      "prompt_reference": "R36.2-NEXT-FIL03",
+      "observed": "Continue your conversation / Sign up to continue seamlessly with Grok’s full power",
+      "url": "https://grok.com/"
+    }
+  ],
+  "other_comparators": [
+    {
+      "file": "google_ai_mode_ru20_followup_2026-10-27.json",
+      "completed": 20,
+      "named": 1,
+      "linked": 1
+    },
+    {
+      "file": "google_ai_mode_ru30_2026-10-27.json",
+      "completed": 30,
+      "named": 0,
+      "linked": 0
+    },
+    {
+      "same_prompt_id": "R36.2-NEXT-FIL03",
+      "repeated_additional": 2,
+      "brand_named": 0,
+      "note": "Separate identical-prompt reruns; within three observed complete runs, named 1/3."
+    }
+  ],
+  "limitations": [
+    "These are not Russian market rankings; UI locale is Spanish and geo uncontrolled.",
+    "A new URL containing the same question reproduces the request, not a deterministic cached model answer.",
+    "Any mention of named competitors is an observation of AI output, not independent verification of those suppliers' project capacity or legal compliance.",
+    "A brand named under an explicitly constrained source is a source-access positive control, not organic discoverability.",
+    "No clickthrough or referral analytics and zero qualified human leads have been observed."
+  ]
+}
