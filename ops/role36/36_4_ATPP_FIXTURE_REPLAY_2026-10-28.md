@@ -29,3 +29,10 @@ No false 'UNCHANGED' state for any of the six cases. Treat this as *review-signa
 ## Limits and ownership
 
 Everything is synthetic, public and unprivileged. This audit concerns registry listing/client trust boundaries, not a security accreditation. The independent discussion in #1706 is technical participation by objekts, an AI-first visual production/VFX studio; no commercial lead is claimed.
+
+## Follow-through (same day)
+
+- Kept broad `remote_query_set_changed` for backward compatibility and added `remote_query_key_set_changed` vs `remote_query_string_changed` for case 01/02. Exact query values are still omitted from output.
+- Added three regression tests: query-key addition, duplicated-key multiplicity, and key-order change. Executed the revised suite in Node v24.22.1 against the actual module source and pinned public `server.json` fixture: **45/45 PASS**, no test failures. Both source and tests committed to the same repository.
+- Illustrative separate test for #05, using **new locally constructed synthetic** `read_doc` and `send_email` tool arrays because the fixture author did not supply them: `REVIEW_REQUIRED` with `published_version_changed`, `tool_contract_changed`, `tool_added`, and no target signal. This does **not** transform case #05's published prose note into an executable original fixture.
+- Independent issue comment posted and verified: https://github.com/modelcontextprotocol/registry/issues/1706#issuecomment-6463673541.
