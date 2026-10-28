@@ -230,6 +230,14 @@
       "verification_limit": "Плоская маска не подтверждает глубину, давление или силу; исследовательские алгоритмы не гарантируют точность конкретного продакшна.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hand-object-contact-occlusion-physics-ai-vfx.md",
       "source_language": "en"
+    },
+    {
+      "id": "screen-direction-axis",
+      "question": "Как сохранить экранное направление и взгляды в серии независимых AI-шотов?",
+      "short_answer": "Задайте ось действия на схеме помещения, положение каждой камеры, экранные стороны персонажей и цели взглядов. Сверяйте соседние кадры; проверка знака векторного произведения покажет переход камеры через ось, но намеренный переход фиксируйте отдельно.",
+      "verification_limit": "Алгоритму нужны известные координаты камер и действующих лиц; он не восстанавливает реальную камеру или драматургию из картинки.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/screen-direction-camera-axis-shot-reverse-generative-video.md",
+      "source_language": "en"
     }
   ]
 }
