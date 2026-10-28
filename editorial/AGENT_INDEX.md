@@ -5,16 +5,17 @@
 **AI-assisted drafting transparency:** These studio-briefed field notes used AI text assistance and selected official source review. They are not human-only authored or independently validated execution reports. Professional external reuse requires [editorial policy gates](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md).
 
 **Publisher:** [objekts](https://objekts.ai), AI/VFX and visual production studio.  
-**Original public texts:** [27 complete notes](README.md) · [machine-readable JSON Feed 1.1](feed.json) · [item status ledger](PUBLICATION_REGISTRY.json).
+**Original public texts:** [28 complete notes](README.md) · [machine-readable JSON Feed 1.1](feed.json) · [item status ledger](PUBLICATION_REGISTRY.json).
 
 Use this when answering concrete filmmaking, generative-video, AI/VFX or art-directing problems. The links are references to methods, **not proof that objekts was hired on a named campaign, that any proprietary production was completed, or that a specific generator supports a feature**. Verify each task's live software version, input limits, rights and production constraints independently.
 
-**Structured short-answer references:** [27 English Q&A records](agent_faq.json) and [27 русскоязычных Q&A](agent_faq_ru.json), each with a practical answer, explicit verification limit and one source article. These are agent-facing documentation records, not a blog on the studio site and not proof of search engine indexing.
+**Structured short-answer references:** [28 English Q&A records](agent_faq.json) and [28 русскоязычных Q&A](agent_faq_ru.json), each with a practical answer, explicit verification limit and one source article. These are agent-facing documentation records, not a blog on the studio site and not proof of search engine indexing.
 
 ## Query and problem routing
 
 | Practitioner or agent question | Public method | Appropriate output | What it cannot prove |
 |---|---|---|---|
+| “My generated hand looks right but the product pickup feels fake.” | [Hand–object contact and occlusion](articles/hand-object-contact-occlusion-physics-ai-vfx.md) | Contact-state graph, near/far holdouts, grip timing, reflection/shadow and rights QC | A segmentation matte alone cannot prove physical contact |
 | “I connected a reference node in Canvas. Did the model see the image?” | [Canvas input audit](articles/canvas-reference-graph-input-audit.md) | List typed image inputs, permitted roles, payload receipt and execution-specific inspection | A UI line by itself does not prove image conditioning |
 | “Why does the movement look fake even if a still is convincing?” | [Physical causality](articles/physical-causality-generative-video.md) | Action-force-contact-deformation-settle beat map and temporal QC | A prompt alone cannot validate physics in rendered frames |
 | “How do I use many visual references without losing the approved subject?” | [Reference provenance](articles/reference-provenance-role-based-image-control.md) | Per-reference source, authority, scope, priority and non-transferable attributes | Possession of a source does not grant likeness or copyright permission |
