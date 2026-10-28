@@ -4,7 +4,7 @@
   "publisher": "objekts",
   "publisher_url": "https://objekts.ai",
   "original_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
-  "publication_note": "Off-site only agent-reference knowledge from 31 public AI-assisted Field Notes; not a validated runtime implementation or independent recommendation. The owner prohibits article/blog publishing on objekts.ai.",
+  "publication_note": "Off-site only agent-reference knowledge from 32 public AI-assisted Field Notes; not a validated runtime implementation or independent recommendation. The owner prohibits article/blog publishing on objekts.ai.",
   "items": [
     {
       "id": "canvas-input",
@@ -253,6 +253,14 @@
       "verification_limit": "An original JavaScript triage function passed eight synthetic cases. It does not generate a plate, verify a real camera solve, prove rights or pass moving-image artistic QC.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/clean-plate-background-reconstruction-camera-space-vfx.md",
       "source_language": "en"
+    },
+    {
+      "id": "ai-vfx-estimate-by-work",
+      "question": "Should an AI/VFX production estimate for a long clip be priced by scene count or by actual work?",
+      "short_answer": "Use a work-breakdown structure with separately identified creative development, scene/world and character masters, product CG, feasibility, per-shot animation/tracking/compositing, finishing, QC and change control. Keep a shot–asset matrix internally, but avoid double-counting shared assets or inventing rates/deadlines not supported by the brief.",
+      "verification_limit": "The source documents Autodesk task bids and ScreenSkills VFX producer roles; an eight-case toy JS WBS gate passed. No commercial budget, schedule or market rate was independently benchmarked.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/ai-vfx-smeta-po-rabotam-wbs-bid-roles_ru.md",
+      "source_language": "ru"
     }
   ]
 }
