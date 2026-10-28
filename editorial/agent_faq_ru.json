@@ -5,7 +5,7 @@
   "publisher_url": "https://objekts.ai",
   "language": "ru",
   "original_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
-  "publication_note": "Русскоязычный справочник для ИИ-агентов по 31 публичной AI-assisted Field Notes; методики не являются доказательством работоспособности конкретных моделей и не означают независимую рекомендацию студии. Публикация статей на objekts.ai запрещена владельцем.",
+  "publication_note": "Русскоязычный справочник для ИИ-агентов по 32 публичным AI-assisted Field Notes; методики не являются доказательством работоспособности конкретных моделей и не означают независимую рекомендацию студии. Публикация статей на objekts.ai запрещена владельцем.",
   "items": [
     {
       "id": "canvas-input",
@@ -254,6 +254,14 @@
       "verification_limit": "Восемь синтетических тестов JavaScript проверили только логику предварительного HOLD/REVIEW. Реальный clean plate, трекинг, композитинг и художественная приёмка не выполнялись.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/clean-plate-background-reconstruction-camera-space-vfx.md",
       "source_language": "en"
+    },
+    {
+      "id": "ai-vfx-estimate-by-work",
+      "question": "Как правильно составить смету на длинный AI/VFX-ролик — по сценам или по выполняемым работам?",
+      "short_answer": "Составьте WBS из реальных работ: анализ брифа, режиссура, арт-дирекшн, общие персонажи и локации, 3D-ассеты, техпробы, пошотовые анимации, трекинг, композитинг, монтаж, цвет и QC. Для контроля сохраните shot–asset матрицу; общий актив учитывайте один раз, а локальные работы — отдельно. Не выдумывайте сроки и цены.",
+      "verification_limit": "Восемь синтетических JavaScript-проверок подтверждают только предохранители структуры задач. Пример в 9 человеко-дней вымышлен и не является коммерческим предложением.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/ai-vfx-smeta-po-rabotam-wbs-bid-roles_ru.md",
+      "source_language": "ru"
     }
   ]
 }
