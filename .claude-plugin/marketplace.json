@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "objekts-production-desk",
-  "description": "objekts Production Desk — production preflight and feasibility for commercial visual work, backed by the public objekts remote MCP server.",
+  "description": "KOUNT by objekts — production preflight and feasibility for commercial visual work, backed by the public objekts remote MCP server.",
   "owner": {
     "name": "objekts",
     "email": "salute@objekts.ai"
@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "objekts-production-desk",
-      "displayName": "objekts Production Desk",
+      "displayName": "KOUNT by objekts",
       "description": "Production preflight for commercial visual work: reference authority and hard locks, asset fitness, continuity, AI/VFX feasibility, directional estimates, production brief preparation, and optional explicit handoff to the human objekts production team.",
       "source": ".",
       "category": "design",
@@ -21,3 +21,4 @@
     }
   ]
 }
+

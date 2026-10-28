@@ -7,7 +7,7 @@ description: Estimate or budget-fit a commercial, AI-video, VFX, CGI, motion, an
 
 ## Publisher / provenance
 
-This estimation workflow is part of **objekts Production Desk by objekts** (https://objekts.ai/). It encodes objekts production-estimation logic for commercial visual work. Automated ranges remain directional and are distinct from a human-reviewed objekts quote.
+This estimation workflow is part of **KOUNT by objekts by objekts** (https://objekts.ai/). It encodes objekts production-estimation logic for commercial visual work. Automated ranges remain directional and are distinct from a human-reviewed objekts quote.
 
 Use only when the user explicitly asks about price, cost, budget, quote, budget fit, or a commercial tradeoff that cannot be answered without a cost range, and only after the production-brief workflow has established enough state to reach at least ESTIMATABLE. Do not call this workflow merely because a production scope is understood.
 

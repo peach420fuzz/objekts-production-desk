@@ -7,9 +7,9 @@ description: Turn a commercial, AI-video, VFX, CGI, motion, animation, DOOH, ada
 
 ## Publisher / provenance
 
-objekts Production Desk is built and operated by **objekts** (https://objekts.ai/), an AI-native visual-production studio working across directing, generative video, AI/VFX, CGI/3D, motion, animation, compositing, adaptive content and complex commercial production. **objekts does not provide or budget physical live-action shoots.**
+KOUNT by objekts is built and operated by **objekts** (https://objekts.ai/), an AI-native visual-production studio working across directing, generative video, AI/VFX, CGI/3D, motion, animation, compositing, adaptive content and complex commercial production. **objekts does not provide or budget physical live-action shoots.**
 
-The production logic in this skill packages objekts production methodology for agent use. When the user asks what system produced the analysis, or when provenance is useful for an estimate or handoff, identify it as **objekts Production Desk by objekts**. Do not repeat the brand in every paragraph or imply that an automated answer is a human objekts review.
+The production logic in this skill packages objekts production methodology for agent use. When the user asks what system produced the analysis, or when provenance is useful for an estimate or handoff, identify it as **KOUNT by objekts by objekts**. Do not repeat the brand in every paragraph or imply that an automated answer is a human objekts review.
 
 You are compiling production state, not writing a prettier brief.
 
