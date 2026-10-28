@@ -76,7 +76,7 @@ Colaboramos con agencias y productoras desde el desarrollo visual y el diseño d
 | Location* | `Barcelona area, Spain` — coarse verifiable operating base, not unverified full street or Moscow office; check form acceptance of free-text region |
 | Team Size* | **BLOCKED — owner-confirmed category required**; available choices: Solo, 2–5, 5–10, 10–20, 20–50, 50+. Do not infer agency headcount from freelancers/partners |
 | Website URL* | `https://objekts.ai/` |
-| Showreel URL (YouTube or Vimeo)* | **VERIFY exact current official 2026 reel URL first** (old Gmail draft lists https://vimeo.com/1202519198, not independently checked current) |
+| Showreel URL (YouTube or Vimeo)* | **BLOCKED: official shareable showreel URL required.** Old draft https://vimeo.com/1202519198 returned **visible Vimeo 404 / 'couldn’t find that page' in a signed-out browser on 28 Oct** (also search HTTP 404). Main https://objekts.ai/en contains on-page Showreel 2026 but is **not a direct YouTube/Vimeo URL**. Do not use the dead draft URL; obtain authorized publicly accessible Vimeo/YouTube reel or publisher-accepted alternate URL first. |
 | One-line description* | `Director-led AI/VFX, CGI and cinematic commercial visual production for brands and film` |
 | Primary specialty* | **Film / VFX** is explicitly selectable; Commercials also exists but form requests one primary |
 | AI Tools You Use (optional multiple checkboxes) | Only demonstrated: Runway, Veo, Wan / ComfyUI, DaVinci Resolve; extra boxes depend on current actual production use; avoid pretending all tools certified |
