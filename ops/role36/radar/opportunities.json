@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-27",
-  "generated_by": "OBJEKTS 36 HQ + role36.5 verified visual/editorial opportunity updates",
+  "generated_at": "2026-10-28",
+  "generated_by": "OBJEKTS 36 HQ + role36.5 verified visual/editorial opportunity updates + role36.3 StudioList supplier application evidence",
   "source_of_truth": "ops/role36/radar/opportunities.json",
   "methodology": "External source checked; no candidate below is a submission, acceptance, public listing or commercial lead. Branch checks existing ledger and live status before acting. Role36.5 appended verified primary-source art calls and Dprofile into PR #109; not submissions. 25 Oct second session: add six official art/editorial routes, including prior outbound suppression and explicit rights gates; never count mail as accepted publication.",
   "statuses": [
@@ -596,6 +596,34 @@
       "due_for_first_review": "2026-10-28",
       "last_action": "2026-10-27: GITHUB_WORKFLOW_ROOT_CAUSE_403_VERIFIED; CLAIM_URL_EXPOSED_IN_PUBLIC_ACTIONS_LOGS; SUPPORT_RECOVERY_ENQUIRY_SENT_GMAIL_ID_1a17fa3f321cf5cf; MOLTBOOK_POSTS_ZERO",
       "dedup_key": "moltbook.com|objekts-production-lab|studio-technical-presence"
+    },
+    {
+      "id": "R36-20261028-022",
+      "title": "StudioList — curated AI video studio buyer directory with matching briefs",
+      "owner_branch": "36.3",
+      "secondary_branch": "36.2",
+      "priority": "P1",
+      "score": 82,
+      "market": "GLOBAL with real brand/agency video buyers",
+      "category": "B2B_AI_VIDEO_STUDIO_DIRECTORY",
+      "source_url": "https://studiolist.co/get-listed/",
+      "source_checked_at": "2026-10-28",
+      "source_type": "OFFICIAL_CURRENT_STUDIO_APPLICATION_AND_TERMS",
+      "evidence": "Official https://studiolist.co/ lists 21 current studio cards and offers Get Matched buyer routing; FAQ calls it curated/not pay-to-play. The actual Studio application was opened in a browser on 28 Oct: studio name, location, website, showreel, specialty, director contact and TEAM SIZE required; tools/typical price optional; submission button says Sign in with Google to Submit. Studio account not created and no form submitted. Studio Gmail exact-domain search showed zero prior studiolist.co messages. This is an actual human studio directory, not an agent-tool registry.",
+      "buyer_hypothesis": "Brands/agencies post AI-video/VFX briefs and StudioList triages to 2–3 suitable suppliers; specific qualified lead yield unverified, claimed audience numbers are publisher statements only.",
+      "status": "BLOCKED",
+      "publication_proof": null,
+      "submission_id": null,
+      "eligibility_gates": [
+        "Verify exact true team-size and authorized corporate Google sign-in identity; do not invent headcount",
+        "Keep sole external case proof SberCity unless owner confirms additional rights",
+        "Do not assert founding, price, delivery time or named clients in optional fields without evidence",
+        "Submit via first-party studio form only with account authorization; verify public page independently after review"
+      ],
+      "next_action": "Prepare publisher-safe StudioList profile from ops/role36/36_3_PUBLISHER_SAFE_PROFILE_KIT_2026-10-28.md; resolve real team-size and authorized Google login. Then complete official application and inspect anonymous published URL; no account/submission claim now.",
+      "due_for_first_review": "2026-10-30",
+      "last_action": "2026-10-28: FIRST_PARTY_FORM_OPENED; TEAM_SIZE_REQUIRED; GOOGLE_SIGNIN_REQUIRED; NO_SUBMISSION",
+      "dedup_key": "studiolist.co|objekts|studio-directory"
     }
   ],
   "counts": {
