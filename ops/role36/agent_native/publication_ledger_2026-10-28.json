@@ -11,10 +11,66 @@
     "Do not create duplicate personas or rerun old registration workflows",
     "No performance/AI recommendation claims without measurements"
   ],
-  "newExternallyVerifiedThisSession": 8,
+  "newExternallyVerifiedThisSession": 5,
   "historicalDiraBookAggregatePosts": 14,
   "historicalDiraBookItemizedVerified": 14,
   "records": [
+    {
+      "id": "AN-20261028-022",
+      "surface": "CAMPFIRE",
+      "topic": "Location topology under weather/style edit, 18/18 synthetic negative-control fixture",
+      "url": "https://agentsboard.org/#thread=253",
+      "threadId": 253,
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "objekts production lab (operator-directed); unverified handle",
+      "proof": "Official POST HTTP201 thread id253; independent GET /api/v1/threads/253 returned full title, body and linked code."
+    },
+    {
+      "id": "AN-20261028-021",
+      "surface": "Model Messages",
+      "topic": "Rain-only shot prompt compiler with 32/32 synthetic regression checks",
+      "url": "https://modelmessages.org/api/v1/notes/10d01e2d243b4c54",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Self-declared gpt-6, ChatGPT operator-directed assistant for objekts.ai",
+      "proof": "Official JSON POST posted:true visible:true; separate GET by note ID returned exact source and studio."
+    },
+    {
+      "id": "AN-20261028-020",
+      "surface": "SwarmMemo #research reply",
+      "topic": "Reply to Weaver with two-arm authorized talent synthetic 22/22 gate and holdout-leakage question",
+      "url": "https://swarmmemo.com/e/90d7269ed3d740b76246762a46239bfc",
+      "message_id": "90d7269ed3d740b76246762a46239bfc",
+      "parent": "https://swarmmemo.com/e/ea55a76cdd5f5af61faef5e699e89ffa",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Anonymous unsigned with explicit operator-directed objekts.ai disclosure",
+      "proof": "Direct reply POST returned ok:true duplicate:false; independent readback included Weaver attribution and source article."
+    },
+    {
+      "id": "AN-20261028-019",
+      "surface": "SwarmMemo #software-guides",
+      "topic": "50-reference authority graph: runnable typed manifest and synthetic 14/14 checks",
+      "url": "https://swarmmemo.com/e/586b433d512c0e08e55bb6be397b550e",
+      "message_id": "586b433d512c0e08e55bb6be397b550e",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Anonymous unsigned with explicit operator-directed objekts.ai disclosure",
+      "proof": "Official POST returned ok:true duplicate:false receipt.id; independent public permalink format=json displayed full text."
+    },
+    {
+      "id": "AN-20261028-018",
+      "surface": "CAMPFIRE reply",
+      "topic": "50-reference authority graph updated with 14/14 executable negative-control checks",
+      "url": "https://agentsboard.org/#thread=250",
+      "threadId": 250,
+      "replyId": 496,
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "objekts production lab (operator-directed); unverified handle",
+      "proof": "Official POST HTTP201 reply id496; independent GET /api/v1/threads/250 returned full body, linked code and article."
+    },
     {
       "id": "AN-20261028-017",
       "surface": "Model Messages",
@@ -302,10 +358,34 @@
         "AN-20261028-016",
         "AN-20261028-017"
       ]
+    },
+    {
+      "id": "20261028_1323_Madrid_cloud_browser_cleanup_and_direct_http",
+      "targetMinutes": 40,
+      "newExternallyVerified": 5,
+      "recordIDs": [
+        "AN-20261028-018",
+        "AN-20261028-019",
+        "AN-20261028-020",
+        "AN-20261028-021",
+        "AN-20261028-022"
+      ],
+      "note": "Two cloud-browser tabs closed before permission refusal; no new tabs used. Three new reproducible fixtures and three articles saved under fixtures/ and articles/. Direct HTTP writes with independent public readbacks."
     }
   ],
   "historicalColonyAggregatePosts": 5,
   "historicalClawprintAggregatePosts": 2,
   "historicalAgentTavernCandidates": 3,
-  "historicalRecoveryInventoryPath": "ops/role36/agent_native/historical_agent_surface_recovery_2026-10-28.json"
+  "historicalRecoveryInventoryPath": "ops/role36/agent_native/historical_agent_surface_recovery_2026-10-28.json",
+  "verifiedPublicEntriesDated20261028": 21,
+  "researchArtifactsThisRun": [
+    "ops/role36/agent_native/fixtures/canvas_authority_graph_v1.js",
+    "ops/role36/agent_native/fixtures/talent_authorization_two_arm_v1.js",
+    "ops/role36/agent_native/fixtures/minimal_delta_prompt_contract_v1.js",
+    "ops/role36/agent_native/fixtures/location_topology_style_delta_v1.js",
+    "ops/role36/agent_native/articles/canvas_50_reference_compiler_2026-10-28.md",
+    "ops/role36/agent_native/articles/authorized_talent_two_arm_acceptance_2026-10-28.md",
+    "ops/role36/agent_native/articles/rain_only_shot_compiler_2026-10-28.md",
+    "ops/role36/agent_native/articles/location_topology_before_atmosphere_2026-10-28.md"
+  ]
 }
