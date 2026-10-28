@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0",
+  "owner": "OBJEKTS 36.2",
+  "date_utc": "2026-10-28",
+  "role": "Map buyer model prompt → publicly retrievable, permitted, honest evidence → limitations. This is a source fitness audit, NOT measured model selection or answer uplift.",
+  "baseline": {
+    "unique_unbranded_replies_total": 58,
+    "brand_named_total": 1,
+    "provider": "Google Search AI Mode, one anonymous browser, location unverified, 27 Oct",
+    "positive_selected_suite": 1,
+    "selected_suite_n": 14,
+    "frozen_suite_path": "ops/role36/answer_capture/frozen_buyer_answer_regression_suite_2026-10-27.json"
+  },
+  "references": [
+    {
+      "id": "OWN_SVC_AI_VFX",
+      "url": "https://objekts.ai/en/services/ai-vfx/",
+      "type": "OWN_OFFICIAL_SERVICE",
+      "observed_public": "2026-10-28",
+      "what_is_actually_said": "AI/CGI/live-action/compositing hybrid, product/identity/architecture/camera locks, environment/season, individual shots/sequences",
+      "limits": "Self-described capability, not independent client contract, budget, or proof of 80-shot throughput",
+      "case_tier": "PUBLIC_SERVICE_DESCRIPTION"
+    },
+    {
+      "id": "OWN_SVC_AGENCY",
+      "url": "https://objekts.ai/services/production-for-agencies",
+      "type": "OWN_OFFICIAL_SERVICE",
+      "observed_public": "2026-10-28",
+      "what_is_actually_said": "One shot or sequence, white-label/NDA and client communication/acceptance arrangements before production, review source assets",
+      "limits": "No public contractual specimen; verify specific NDA terms case by case",
+      "case_tier": "PUBLIC_SERVICE_DESCRIPTION"
+    },
+    {
+      "id": "OWN_SVC_ADAPTIVE",
+      "url": "https://objekts.ai/en/services/adaptive-content-localization/",
+      "type": "OWN_OFFICIAL_SERVICE",
+      "observed_public": "2026-10-28",
+      "what_is_actually_said": "Market/language/format, packaging/SKU, lipsync, text and graphics, related work",
+      "limits": "No public proof of 20-country or 400+ SKU delivery from this page",
+      "case_tier": "PUBLIC_SERVICE_DESCRIPTION"
+    },
+    {
+      "id": "OWN_SVC_FILM",
+      "url": "https://objekts.ai/services/film-series-vfx",
+      "type": "OWN_OFFICIAL_SERVICE",
+      "observed_public": "2026-10-28",
+      "what_is_actually_said": "Film/series VFX service page; model's only positively cited first-party target on 27 Oct",
+      "limits": "Service copy is not a verified 80-shot series completion record",
+      "case_tier": "PUBLIC_SERVICE_DESCRIPTION"
+    },
+    {
+      "id": "OWN_CASE_SBER",
+      "url": "https://objekts.ai/en/work/sbercity",
+      "type": "OWN_APPROVED_FIRST_PARTY_CASE",
+      "observed_public": "2026-10-28",
+      "what_is_actually_said": "Two public master films New Year 01:18 and Seasons 02:29, shot-layer approach, six labeled original video breakdowns and quality checklist, role AI VFX/graphics/AI scenes",
+      "limits": "Only self-published film data, no named serial 80-shot delivery, crew/shot count withheld; case page also links forbidden next-project case",
+      "case_tier": "FIRST_PARTY_PROJECT_EVIDENCE"
+    },
+    {
+      "id": "OWN_CASE_MAGNIT",
+      "url": "https://objekts.ai/en/work/magnit-2026",
+      "type": "OWN_APPROVED_FIRST_PARTY_CASE",
+      "observed_public": "2026-10-28",
+      "what_is_actually_said": "Film frames and separate corridor development, preserved photographed performers/camera/scene geometry and store replacement brief",
+      "limits": "Self-published, no international 20-city throughput, no independent rights check; user-approved project title",
+      "case_tier": "FIRST_PARTY_PROJECT_EVIDENCE"
+    },
+    {
+      "id": "OWN_CASE_VOTING",
+      "url": "https://objekts.ai/en/work/voting",
+      "type": "OWN_APPROVED_FIRST_PARTY_CASE",
+      "observed_public": "2026-10-28",
+      "what_is_actually_said": "Three named working-title films: Stepan continuity, Thriller face transformation, Choir music timing; frames stated from final supplied master",
+      "limits": "First-party evidence; not proof of full-film mass VFX delivery or fashion catalog scale",
+      "case_tier": "FIRST_PARTY_PROJECT_EVIDENCE"
+    },
+    {
+      "id": "OWN_RND_KLOTHES",
+      "url": "https://objekts.ai/research/klothes-catalog-system/",
+      "type": "OWN_R_AND_D_PAGE",
+      "observed_public": "2026-10-28",
+      "what_is_actually_said": "Model Pack, garment/pose QC logic and SKU pipeline diagrams; states up-to-1000-SKU target scenario and pilot first",
+      "limits": "Explicitly NOT delivered 1000 SKU catalog, diagrams illustrate states rather than completed catalog",
+      "case_tier": "R_AND_D_NOT_DELIVERED"
+    },
+    {
+      "id": "EXT_DIR_MCP_FILM",
+      "url": "https://mcp.film/mcps/objekts-production-desk/",
+      "type": "INDEPENDENT_THIRD_PARTY_TECHNICAL_CURATOR",
+      "observed_public": "2026-10-28",
+      "what_is_actually_said": "Real hosted MCP URL seven tools; older protocol compatibility, client credentials consent caveat, HTTP400 on protocol 2026-07-28; server version 0.1.0 vs registry 0.1.3 vs repo manifest 0.1.4",
+      "limits": "Product compatibility fails for new-protocol-only clients, commercial brief transfer needs explicit user confirmation; creator's owned docs are not independent server-source proof",
+      "case_tier": "CURATED_DIRECTORY_WITH_CRITICAL_COMPATIBILITY_CAVEAT"
+    },
+    {
+      "id": "COMP_CGF_OFFICIAL",
+      "url": "https://www.cgfww.com/films",
+      "type": "COMPETITOR_OFFICIAL_FILMOGRAPHY",
+      "observed_public": "2026-10-28",
+      "what_is_actually_said": "Per-film titles, dates, director/cinematographer, VFX producer/supervisor, studios, specialties; named individual projects",
+      "limits": "Self-published; does not prove CGF availability for individual small briefs; some future-dated film entries",
+      "case_tier": "PUBLIC_PORTFOLIO_STRUCTURAL_COMPARATOR"
+    },
+    {
+      "id": "COMP_SLOI_CASE",
+      "url": "https://sloi.ai/cases/realme_c85pro_1",
+      "type": "COMPETITOR_OFFICIAL_AD_CASE",
+      "observed_public": "2026-10-28",
+      "what_is_actually_said": "Named realme C85 Pro commercial, agency Ferox, direction Vladislav Lutiy, AI shots scope, enquiry form",
+      "limits": "Self-published; no independently verified performance or delivery capacity",
+      "case_tier": "PUBLIC_PORTFOLIO_STRUCTURAL_COMPARATOR"
+    }
+  ],
+  "retest_map": [
+    {
+      "query_id": "R36.2-NEXT-AG01",
+      "cohort": "agency",
+      "baseline_brand_named": false,
+      "baseline_date_utc": "2026-10-27",
+      "status": "SOURCE_FIT_ASSESSED_NO_NEW_MODEL_RETEST",
+      "primary_and_curated_source_ids": [
+        "OWN_SVC_AI_VFX",
+        "OWN_CASE_MAGNIT",
+        "OWN_CASE_SBER"
+      ],
+      "source_fit_class": "RELEVANT_INDIVIDUAL_SHOT_PUBLIC_EVIDENCE",
+      "qualification_and_gap": [
+        "No verifiable product-label QC spec or client acceptance metrics on source",
+        "Public case match does not force model selection"
+      ]
+    },
+    {
+      "query_id": "R36.2-NEXT-AG03",
+      "cohort": "agency",
+      "baseline_brand_named": false,
+      "baseline_date_utc": "2026-10-27",
+      "status": "SOURCE_FIT_ASSESSED_NO_NEW_MODEL_RETEST",
+      "primary_and_curated_source_ids": [
+        "OWN_SVC_AGENCY",
+        "OWN_CASE_SBER",
+        "OWN_CASE_MAGNIT"
+      ],
+      "source_fit_class": "EXPLICIT_WHITE_LABEL_NDA_SERVICE",
+      "qualification_and_gap": [
+        "NDA is offered, not an executed legal agreement visible publicly",
+        "Model answer failed despite matching service copy"
+      ]
+    },
+    {
+      "query_id": "R36.2-NEXT-AG06",
+      "cohort": "agency",
+      "baseline_brand_named": false,
+      "baseline_date_utc": "2026-10-27",
+      "status": "SOURCE_FIT_ASSESSED_NO_NEW_MODEL_RETEST",
+      "primary_and_curated_source_ids": [
+        "OWN_SVC_ADAPTIVE",
+        "OWN_CASE_SBER"
+      ],
+      "source_fit_class": "SERVICE_FIT_SCALE_UNPROVEN",
+      "qualification_and_gap": [
+        "20-city/20-market batch, tracking and fixed-character scale not evidenced",
+        "No buyer-supplied real source media QA"
+      ]
+    },
+    {
+      "query_id": "R36.2-NEXT-FIL01",
+      "cohort": "film_series",
+      "baseline_brand_named": false,
+      "baseline_date_utc": "2026-10-27",
+      "status": "SOURCE_FIT_ASSESSED_NO_NEW_MODEL_RETEST",
+      "primary_and_curated_source_ids": [
+        "OWN_SVC_FILM",
+        "OWN_CASE_SBER",
+        "OWN_CASE_MAGNIT"
+      ],
+      "source_fit_class": "TECHNIQUE_ANALOGY_ONLY_NO_SERIAL_CREDIT",
+      "qualification_and_gap": [
+        "No approved publicly verifiable episodic VFX project credit for series",
+        "Competing filmography credit structure more explicit; no causal inference"
+      ]
+    },
+    {
+      "query_id": "R36.2-NEXT-FIL03",
+      "cohort": "film_series",
+      "baseline_brand_named": true,
+      "baseline_date_utc": "2026-10-27",
+      "status": "SOURCE_FIT_ASSESSED_NO_NEW_MODEL_RETEST",
+      "primary_and_curated_source_ids": [
+        "OWN_SVC_FILM",
+        "OWN_CASE_SBER"
+      ],
+      "source_fit_class": "OFFICIAL_MODEL_CITATION_ONCE_CAPACITY_UNPROVEN",
+      "qualification_and_gap": [
+        "80-shot capacity unknown",
+        "Repeated frozen prompt 0/2 brand mentions; one-time source citation stochastic"
+      ]
+    },
+    {
+      "query_id": "R36.2-NEXT-FAS03",
+      "cohort": "retail_fashion",
+      "baseline_brand_named": false,
+      "baseline_date_utc": "2026-10-27",
+      "status": "SOURCE_FIT_ASSESSED_NO_NEW_MODEL_RETEST",
+      "primary_and_curated_source_ids": [
+        "OWN_RND_KLOTHES"
+      ],
+      "source_fit_class": "PILOT_RESEARCH_NOT_DELIVERED",
+      "qualification_and_gap": [
+        "No verified on-model completed 400-SKU commercial program",
+        "Must not turn 1000-SKU target into claimed outcome"
+      ]
+    },
+    {
+      "query_id": "R36.2-NEXT-MUS02",
+      "cohort": "museum_stage",
+      "baseline_brand_named": false,
+      "baseline_date_utc": "2026-10-27",
+      "status": "SOURCE_FIT_ASSESSED_NO_NEW_MODEL_RETEST",
+      "primary_and_curated_source_ids": [
+        "OWN_SVC_FILM",
+        "OWN_CASE_SBER"
+      ],
+      "source_fit_class": "GENERIC_ENVIRONMENT_TECHNIQUE",
+      "qualification_and_gap": [
+        "No published approved museum commission or historically supervised production evidence"
+      ]
+    },
+    {
+      "query_id": "R36.2-NEXT-MCP02",
+      "cohort": "agent_tools",
+      "baseline_brand_named": false,
+      "baseline_date_utc": "2026-10-27",
+      "status": "SOURCE_FIT_ASSESSED_NO_NEW_MODEL_RETEST",
+      "primary_and_curated_source_ids": [
+        "EXT_DIR_MCP_FILM"
+      ],
+      "source_fit_class": "DIRECTORY_EXISTS_NEW_PROTOCOL_INCOMPATIBLE",
+      "qualification_and_gap": [
+        "HTTP400 for protocol 2026-07-28",
+        "User consent required before outbound human-review brief submission"
+      ]
+    },
+    {
+      "query_id": "SEM01",
+      "cohort": "film_series",
+      "baseline_brand_named": false,
+      "baseline_date_utc": "2026-10-27",
+      "status": "SOURCE_FIT_ASSESSED_NO_NEW_MODEL_RETEST",
+      "primary_and_curated_source_ids": [
+        "OWN_SVC_FILM",
+        "OWN_CASE_SBER"
+      ],
+      "source_fit_class": "GENERIC_ENVIRONMENT_TECHNIQUE",
+      "qualification_and_gap": [
+        "No approved actual film or series VFX credit matching composite request"
+      ]
+    },
+    {
+      "query_id": "SEM04",
+      "cohort": "museum_stage",
+      "baseline_brand_named": false,
+      "baseline_date_utc": "2026-10-27",
+      "status": "SOURCE_FIT_ASSESSED_NO_NEW_MODEL_RETEST",
+      "primary_and_curated_source_ids": [
+        "OWN_SVC_FILM"
+      ],
+      "source_fit_class": "MUSEUM_COMMISSION_UNPROVEN",
+      "qualification_and_gap": [
+        "No historical fidelity expert verification or museum work approval"
+      ]
+    },
+    {
+      "query_id": "SEM05",
+      "cohort": "agent_tools",
+      "baseline_brand_named": false,
+      "baseline_date_utc": "2026-10-27",
+      "status": "SOURCE_FIT_ASSESSED_NO_NEW_MODEL_RETEST",
+      "primary_and_curated_source_ids": [
+        "EXT_DIR_MCP_FILM"
+      ],
+      "source_fit_class": "DIRECTORY_EXISTS_NEW_PROTOCOL_INCOMPATIBLE",
+      "qualification_and_gap": [
+        "Cannot recommend as universally functional to all remote MCP clients"
+      ]
+    },
+    {
+      "query_id": "SEM07",
+      "cohort": "retail_fashion",
+      "baseline_brand_named": false,
+      "baseline_date_utc": "2026-10-27",
+      "status": "SOURCE_FIT_ASSESSED_NO_NEW_MODEL_RETEST",
+      "primary_and_curated_source_ids": [
+        "OWN_RND_KLOTHES"
+      ],
+      "source_fit_class": "RND_TARGET_ONLY",
+      "qualification_and_gap": [
+        "No verified production of 400 SKU",
+        "Offer technical pilot, not proof of full contract completion"
+      ]
+    },
+    {
+      "query_id": "EN01",
+      "cohort": "english_test",
+      "baseline_brand_named": false,
+      "baseline_date_utc": "2026-10-27",
+      "status": "SOURCE_FIT_ASSESSED_NO_NEW_MODEL_RETEST",
+      "primary_and_curated_source_ids": [
+        "OWN_SVC_AI_VFX",
+        "OWN_SVC_AGENCY",
+        "OWN_CASE_MAGNIT"
+      ],
+      "source_fit_class": "BOUTIQUE_AI_VFX_BID_RELEVANCE",
+      "qualification_and_gap": [
+        "No independent supplier ranking or procurement validation"
+      ]
+    },
+    {
+      "query_id": "EN02",
+      "cohort": "english_test",
+      "baseline_brand_named": false,
+      "baseline_date_utc": "2026-10-27",
+      "status": "SOURCE_FIT_ASSESSED_NO_NEW_MODEL_RETEST",
+      "primary_and_curated_source_ids": [
+        "EXT_DIR_MCP_FILM"
+      ],
+      "source_fit_class": "TECH_DIRECTORY_WITH_PROTOCOL_CAVEAT",
+      "qualification_and_gap": [
+        "Clear newest protocol limitation in buyer-facing answer"
+      ]
+    }
+  ],
+  "structural_comparison": {
+    "method": "Two official competitor source types selected as illustrations from observed model source labels; NOT a representative market sample or causal explanation",
+    "cgf": "filmography metadata per project is conspicuously explicit compared with generic film-series service copy",
+    "sloi": "named realme ad case includes brand, agency, director and AI shot scope; stronger project-specific buyer evidence than undifferentiated capability claims",
+    "recommendation": "Editorial owner may publish factual, approved project-specific external material linked to real objekts SberCity/Magnit/Voting pages; never invent client approvals, throughput or measured recommendation effects."
+  },
+  "active_locks": [
+    "No Cordiant/Made Sense/SmartFruits as public proof",
+    "No new article publication on objekts.ai",
+    "No 80-shot film series/400 SKU claim without evidence",
+    "No MCP full compatibility claim while 2026-07-28 protocol fails",
+    "No source-guided response counted as organic recommendation",
+    "Do not re-run frozen suite before owner-approved intervention and model access"
+  ],
+  "release_dependency_issues": [
+    "#101 MCP protocol",
+    " #143 website first-party cleanup",
+    "#162 public canonical and external source claims"
+  ],
+  "verification": "Official site and mcp.film pages public fetched 28 Oct; source URLs preserve snapshots via publicly retrievable links; live edit and future model indexing unknown.",
+  "counts": {
+    "frozen_queries_mapped": 14,
+    "source_records": 11,
+    "new_model_answers": 0,
+    "completed_website_fixes": 0
+  }
+}
