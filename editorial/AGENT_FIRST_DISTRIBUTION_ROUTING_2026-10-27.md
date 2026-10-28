@@ -4,7 +4,7 @@
 
 ## What has actually shipped
 
-- [31 complete Field Notes](README.md) in public GitHub, source of record.
+- [32 complete Field Notes](README.md) in public GitHub, source of record.
 - [Task-oriented agent index](AGENT_INDEX.md) and [JSON Feed](feed.json).
 - [Publication registry](PUBLICATION_REGISTRY.json). Own-site article status deliberately `OWN_DOMAIN_PROHIBITED`, not pending.
 - External native posts: **0 independently verified from this program**, despite separate editor conversations. Pitches and Gmail drafts are not posts; don't conflate them.
@@ -19,7 +19,7 @@
 | Habr sandbox | **DO NOT SEND AI-GENERATED OR BRAND-PROMOTIONAL ARTICLES** | [Official Habr sandbox](https://habr.com/ru/docs/help/sandbox/) disallows generated and advertising submissions | New directly authored/tested original research only, submitted by properly authorized human account |
 | DEV Community | HOLD advertising republish | [Official DEV guidelines](https://dev.to/guidelines-for-ai-assisted-articles-on-dev/) disallow AI-assisted business promotion | Non-promotional, transparently assisted technical content only if owner/editor personally reviews and platform fit established |
 | Medium | CONDITIONAL | [Official Medium AI policy](https://help.medium.com/hc/en-us/articles/22576852947223-Artificial-Intelligence-AI-content-policy) requires disclosure; editorial/account approval pending | Separate original essay rather than mirrored link-bait |
-| Dprofile | VISUAL PORTFOLIO ONLY, not agent-document dump | [Official help](https://dprofile.ru/help) documents studio/company account and moderation | Approved self-authored visual case with cleared images, not 31 text articles |
+| Dprofile | VISUAL PORTFOLIO ONLY, not agent-document dump | [Official help](https://dprofile.ru/help) documents studio/company account and moderation | Approved self-authored visual case with cleared images, not 32 text articles |
 | Render.ru / «CG Up» | SUBMITTED 28 OCT, NOT PUBLISHED | [Official free CG Up call](https://render.ru/ru/news/post/24707); studio Gmail SENT id `1a1818f6f0e7f09d` | One adapted Russian article on clean plates and moving-camera background replacement, with human editorial review and original diagrams; wait for reply, do not repeat |
 | 3DNews | NOT SUITABLE FOR MIRRORING CURRENT CORPUS | [Author terms](https://3dnews.ru/authors) require exclusive original work and transfer of rights upon publication | A distinct, independently authored manuscript requires separate decision on terms; current GitHub notes cannot be sent as if exclusive |
 | Specialist editors (existing correspondences) | DEDUPLICATE BEFORE NEW PITCH | Gmail: SEOnews active discussion; OOH Mag draft; prior pitches to Kinometro, Creative Bloq, postPerspective, No Film School, Motionographer, before&afters, etc. | Editorially distinct manuscript with proper attribution, no repeat solicitation |
@@ -57,6 +57,6 @@ Use URLs rather than vanity counts; don't write unverified platform posts into t
 - P0 Read replies from previously contacted publishers; avoid duplicate pitches. Record distinctions between an email, editor acceptance and a live permalink.
 - P1 Add structured task-answer examples and schema/documentation to GitHub directly; no website deploy needed.
 - P1 Test crawlable stable public GitHub URLs and monitor independent references via existing tools, with evidence limits.
-- P2 Map new directories only for actual usable tools / creative case studies; do not mass-submit 31 generic articles.
+- P2 Map new directories only for actual usable tools / creative case studies; do not mass-submit 32 generic articles.
 
 Owner mandate: no first-party editorial section, no paid distribution without explicit decision, no invented publication, no references to prohibited portfolio clients as outward proof.
