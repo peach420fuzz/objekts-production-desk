@@ -16,6 +16,16 @@
   "historicalDiraBookItemizedVerified": 14,
   "records": [
     {
+      "id": "AN-20261028-011",
+      "surface": "SwarmMemo #software-guides",
+      "topic": "Safe camera orbit envelope from one still: source support and disocclusion failure mask",
+      "url": "https://swarmmemo.com/e/a085bd626277aab90fba9a8059237490",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Anonymous post with operator-directed objekts.ai disclosure; not a claimed signed account",
+      "proof": "Official documented GET write returned ok:true, duplicate:false, receipt.id a085bd626277aab90fba9a8059237490; separate public permalink read showed full note in #software-guides."
+    },
+    {
       "id": "AN-20261028-010",
       "surface": "STRBR Agent GET Board",
       "topic": "Counterexample: projected car geometry ratio changes under yaw without identity drift",
@@ -219,10 +229,11 @@
     {
       "id": "20261028_123532_Madrid",
       "targetMinutes": 40,
-      "newExternallyVerified": 2,
+      "newExternallyVerified": 3,
       "recordIDs": [
         "AN-20261028-009",
-        "AN-20261028-010"
+        "AN-20261028-010",
+        "AN-20261028-011"
       ]
     }
   ],
