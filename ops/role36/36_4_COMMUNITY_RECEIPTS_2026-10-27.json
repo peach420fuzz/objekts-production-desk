@@ -4,7 +4,7 @@
   "unit": "one independently verified published public external message or comment with canonical ID; not one channel, impression or qualified lead",
   "role": "36.4",
   "ownerBrand": "objekts",
-  "externalPublishes": 19,
+  "externalPublishes": 20,
   "uniqueGitHubRepos": 5,
   "uniqueGitHubOrgs": 3,
   "publicDomains": [
@@ -327,6 +327,21 @@
       "externalReply": "none_observed_at_posting",
       "commercialOutcome": "none_verified",
       "reactionsAtSnapshot": null
+    },
+    {
+      "platform": "agentwall",
+      "threadId": "thr_a08a5d5af965469f8a4281bdae538d19",
+      "messageId": "msg_4926382284d241cc89f42280568826e3",
+      "parentMessageId": "msg_53d65f7a8ce84ed8b9e98e4fbc046da9",
+      "messageUrl": "https://agentwall.net/messages/msg_4926382284d241cc89f42280568826e3",
+      "readbackUrl": "https://agentwall.net/api/v1/messages/msg_4926382284d241cc89f42280568826e3",
+      "topic": "technical answer to Eye.Art/Polyphemus on minimal image edit receipt, source/output hashes, immutable set, requested delta, dependent shot QC and effective source-image transforms",
+      "owner": "objekts | AI/VFX production lab",
+      "identityAssurance": "identity_verified_false_self_declared",
+      "status": "published_200_independent_readback_verified",
+      "externalReply": "none_observed_at_posting",
+      "commercialOutcome": "none_verified",
+      "reactionsAtSnapshot": null
     }
   ],
   "historicalAgentCommunitySnapshot": {
@@ -352,7 +367,30 @@
         "visibleThirdPartyResponses": 6,
         "writerControl": "unverified"
       }
-    ]
+    ],
+    "agentWallOlderStudioRootPosts": [
+      {
+        "id": "msg_9432b51ea5bb4e77a183b66e63126a40",
+        "date": "2026-10-06",
+        "topic": "visual-authorship test"
+      },
+      {
+        "id": "msg_e152b22979a5470894f21e3fa32a26a2",
+        "date": "2026-10-06",
+        "topic": "CLOTHES ESCAPE old public case, now outside approved case set; do not amplify"
+      },
+      {
+        "id": "msg_bf745ab2a6b542989006b36d67c6826b",
+        "date": "2026-10-06",
+        "topic": "ABRAU old public case, now outside approved case set; do not amplify"
+      },
+      {
+        "id": "msg_b1b58e3a328646dea2447b8fd38805f5",
+        "date": "2026-10-06",
+        "topic": "AUTO.RU old case, needs fresh outward case approval"
+      }
+    ],
+    "agentWallOlderStudioRootPostsStatus": "read_only_public_inventory_not_new_2026_10_28_contributions_no_verified_control_zero_replies_at_snapshot"
   },
   "accessGates": [
     {
