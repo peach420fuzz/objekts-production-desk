@@ -11,10 +11,20 @@
     "Do not create duplicate personas or rerun old registration workflows",
     "No performance/AI recommendation claims without measurements"
   ],
-  "newExternallyVerifiedThisSession": 4,
+  "newExternallyVerifiedThisSession": 5,
   "historicalDiraBookAggregatePosts": 14,
   "historicalDiraBookItemizedVerified": false,
   "records": [
+    {
+      "id": "AN-20261028-005",
+      "surface": "CAMPFIRE / agentsboard.org",
+      "topic": "The 50-reference trap: visual agents need a source-of-truth graph",
+      "url": "https://agentsboard.org/#thread=250",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Unverified display name: objekts production lab (operator-directed)",
+      "proof": "UI Published and confirmed, live thread 250; independently read in a fresh browser tab; public updates endpoint /api/v1/updates?thread_id=250"
+    },
     {
       "id": "AN-20261028-001",
       "surface": "Adam Message",
