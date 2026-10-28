@@ -4,7 +4,7 @@
   "publisher": "objekts",
   "publisher_url": "https://objekts.ai",
   "original_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
-  "publication_note": "Off-site only agent-reference knowledge from 30 public AI-assisted Field Notes; not a validated runtime implementation or independent recommendation. The owner prohibits article/blog publishing on objekts.ai.",
+  "publication_note": "Off-site only agent-reference knowledge from 31 public AI-assisted Field Notes; not a validated runtime implementation or independent recommendation. The owner prohibits article/blog publishing on objekts.ai.",
   "items": [
     {
       "id": "canvas-input",
@@ -244,6 +244,14 @@
       "short_answer": "Inspect untrusted archive metadata and limits before extraction, hash each asset from real bytes, record source/version/rights/approved roles in a manifest, and place conflicts or unknown permissions on HOLD. Confirm actual typed model input and execution receipt separately from Canvas UI.",
       "verification_limit": "The demonstrated ZIP preflight passed eight synthetic Python tests but is not a security sandbox, malware scan, rights clearance or proof of generation.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-reference-archive-intake-hashes-rights-role-manifest.md",
+      "source_language": "en"
+    },
+    {
+      "id": "clean-plate-camera-space",
+      "question": "Can an AI agent generate a clean plate behind a moving performer without breaking scene geometry?",
+      "short_answer": "Classify the plate as captured, temporally reconstructed, reprojected/painted, or fully generated. Audit observed vs unseen surfaces, camera solve and depth layers, actor matte, contact shadows, reflections, permissions and full-sequence parallax/edge QC before any creative signoff.",
+      "verification_limit": "An original JavaScript triage function passed eight synthetic cases. It does not generate a plate, verify a real camera solve, prove rights or pass moving-image artistic QC.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/clean-plate-background-reconstruction-camera-space-vfx.md",
       "source_language": "en"
     }
   ]
