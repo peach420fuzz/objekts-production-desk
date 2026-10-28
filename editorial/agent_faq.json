@@ -221,6 +221,14 @@
       "verification_limit": "Prompt identity statements do not guarantee likeness consistency and do not authorize use of a real person's image.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/identity-continuity-generative-stylization.md",
       "source_language": "en"
+    },
+    {
+      "id": "hand-object-contact",
+      "question": "Why does a generated hand and product look convincing separately but fail when they touch?",
+      "short_answer": "Specify a frame-indexed contact graph: approach, first touch, grasp, transfer and release. Preserve hand anatomy and exact product geometry, annotate foreground/background finger order, check shadows/reflections and verify object movement begins after a plausible grip.",
+      "verification_limit": "A 2D mask does not prove depth, pressure, force or consent; reconstruction research is not a guarantee of production accuracy.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hand-object-contact-occlusion-physics-ai-vfx.md",
+      "source_language": "en"
     }
   ]
 }
