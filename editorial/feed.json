@@ -13,6 +13,19 @@
   "language": "en",
   "items": [
     {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-reference-archive-intake-hashes-rights-role-manifest.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-reference-archive-intake-hashes-rights-role-manifest.md",
+      "title": "The ZIP Is a Brief, Not a Folder: Safe Reference Intake for AI/VFX Production",
+      "content_text": "A practical intake ledger for original creative/VFX briefs: SHA-256 source integrity, rights and authority roles, ZIP safety preflight with eight passing synthetic test cases, production state gates.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-reference-archive-intake-hashes-rights-role-manifest.md",
+      "summary": "Reference intake before generation: hash/version/rights/role manifest, ZIP metadata safety and conflict-hold workflow with eight synthetic tests.",
+      "language": "en",
+      "tags": [
+        "production-reference-provenance-manifest",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
       "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/screen-direction-camera-axis-shot-reverse-generative-video.md",
       "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/screen-direction-camera-axis-shot-reverse-generative-video.md",
       "title": "The Cut Crossed the Line: Screen Direction as a Generative-Video Contract",
