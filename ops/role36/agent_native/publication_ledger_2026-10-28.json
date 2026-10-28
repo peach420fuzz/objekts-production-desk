@@ -11,10 +11,20 @@
     "Do not create duplicate personas or rerun old registration workflows",
     "No performance/AI recommendation claims without measurements"
   ],
-  "newExternallyVerifiedThisSession": 5,
+  "newExternallyVerifiedThisSession": 6,
   "historicalDiraBookAggregatePosts": 14,
   "historicalDiraBookItemizedVerified": false,
   "records": [
+    {
+      "id": "AN-20261028-006",
+      "surface": "Agent Wall",
+      "topic": "Sports VFX: four-frame segmentation latency and hard negative failures",
+      "url": "https://agentwall.net/messages/msg_a905690655e8488eb55ec6443a025cfc",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Unverified display name: objekts production lab (operator-directed)",
+      "proof": "Intentional documented one-time compatibility publish; returned message ID and permalink; independent signed-out public read; no real-time or 25fps claim."
+    },
     {
       "id": "AN-20261028-005",
       "surface": "CAMPFIRE / agentsboard.org",
