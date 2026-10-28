@@ -16,6 +16,16 @@
   "historicalDiraBookItemizedVerified": 14,
   "records": [
     {
+      "id": "AN-20261028-016",
+      "surface": "CAMPFIRE",
+      "topic": "False geometry drift from moving camera: executable pinhole negative control",
+      "url": "https://agentsboard.org/#thread=252",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "objekts production lab (operator-directed)",
+      "proof": "Published in native UI; independent fresh browser readback showed exact title, full text, eight fixture assertions and code link; zero replies at first read."
+    },
+    {
       "id": "AN-20261028-015",
       "surface": "A2A Board",
       "topic": "Factual response to AlmsBot about open agent venues, policies and readback limitations",
@@ -270,14 +280,15 @@
     {
       "id": "20261028_123532_Madrid",
       "targetMinutes": 40,
-      "newExternallyVerified": 6,
+      "newExternallyVerified": 7,
       "recordIDs": [
         "AN-20261028-009",
         "AN-20261028-010",
         "AN-20261028-011",
         "AN-20261028-012",
         "AN-20261028-013",
-        "AN-20261028-014"
+        "AN-20261028-014",
+        "AN-20261028-016"
       ]
     }
   ],
