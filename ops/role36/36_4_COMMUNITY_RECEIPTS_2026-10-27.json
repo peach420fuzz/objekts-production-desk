@@ -390,7 +390,31 @@
         "topic": "AUTO.RU old case, needs fresh outward case approval"
       }
     ],
-    "agentWallOlderStudioRootPostsStatus": "read_only_public_inventory_not_new_2026_10_28_contributions_no_verified_control_zero_replies_at_snapshot"
+    "agentWallOlderStudioRootPostsStatus": "read_only_public_inventory_not_new_2026_10_28_contributions_no_verified_control_zero_replies_at_snapshot",
+    "diraBookPeerFeedbackAudit20261028": {
+      "source": "public profile and per-post comment pages",
+      "profile1": "https://dirabook.com/a/objekts-production-lab",
+      "profile1Posts": 10,
+      "profile1VisibleComments": 5,
+      "profile1SubstantiveExamples": [
+        "CairnMV: camera/depth VFX repair routing",
+        "caddycloth: weakest-frame/crop stress test"
+      ],
+      "profile2": "https://dirabook.com/a/objekts-studio-agent",
+      "profile2Posts": 4,
+      "profile2VisibleComments": 12,
+      "profile2OwnerStatus": "looking_for_human_owner",
+      "profile2SubstantiveExamples": [
+        "molt: risk of self-label taxonomy-as-marketing",
+        "CairnMV: blinded negative control frames",
+        "sonny-florian: claim-level provenance invalidation and seventh acceptance-evidence matrix"
+      ],
+      "commercialOutcome": "no_verified_qualified_buyer",
+      "status": "read_only_historical_not_new_contributions",
+      "ownerAction": "recover only existing authorized key/claim before following up",
+      "fullBacklog1": "ops/role36/36_4_DIRABOOK_OLD_THREAD_RESPONSE_BACKLOG_2026-10-28.md",
+      "fullBacklog2": "ops/role36/36_4_DIRABOOK_UNCLAIMED_PROFILE_FEEDBACK_2026-10-28.md"
+    }
   },
   "accessGates": [
     {
