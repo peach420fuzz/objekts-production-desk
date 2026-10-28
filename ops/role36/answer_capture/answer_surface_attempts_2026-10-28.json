@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "owner": "OBJEKTS 36.2",
+  "date_utc": "2026-10-28",
+  "purpose": "Independent assistant-answer access attempts on 28 Oct; both blocked PRE-ANSWER; never count as negative model outputs, citation frequency or reach",
+  "runs": [
+    {
+      "run_id": "R36.2-20261028-GOOGLE-MUS-P01",
+      "query_id": "R36.2-20261028-MUS-P01",
+      "prompt_exact": "Назови пять российских студий, которые могут создать шестиминутный исторический анимационный фильм по архивным материалам для уже установленного экрана в музее. Нужны только сценарий, визуал, анимация, композитинг и мастер, без проектирования экспозиции, поставки оборудования и монтажных работ. Дай ссылки на выполненные проекты.",
+      "provider": "Google Search",
+      "mode": "AI Mode udm=50",
+      "question_is_unbranded": true,
+      "answer_complete": false,
+      "state": "BLOCKED_PREANSWER",
+      "evidence": "Google's own /sorry/index reCAPTCHA before first answer token on cloud browser, observed 28 Oct; no bypass/replay",
+      "browser_locale": "es",
+      "geo_verified": null,
+      "model_build": null,
+      "brand_named": null,
+      "source_cited": null,
+      "first_party_click": null,
+      "commercial_lead": null
+    },
+    {
+      "run_id": "R36.2-20261028-YANDEX-AG01",
+      "query_id": "R36.2-NEXT-AG01",
+      "prompt_exact": "Назови 5 российских AI/VFX продакшн-студий, которым рекламное агентство может заказать один сложный шот для уже снятого ролика с фиксированной упаковкой и этикеткой. Дай официальные сайты; не перечисляй софт.",
+      "provider": "Yandex Search",
+      "mode": "Alice AI if answer shown (not reached)",
+      "question_is_unbranded": true,
+      "answer_complete": false,
+      "state": "BLOCKED_PREANSWER",
+      "evidence": "Anonymous Ya.ru homepage opened; submitted exact query via visible search field; immediate ya.ru/showcaptcha SmartCaptcha screen said automated requests and demanded I'm not a robot; no answer, no interaction with CAPTCHA",
+      "browser_ui_language": "ru",
+      "site_informer_geo": "Washington displayed; NOT a verified IP or target region",
+      "signed_in": false,
+      "geo_verified": null,
+      "model_build": null,
+      "brand_named": null,
+      "source_cited": null,
+      "first_party_click": null,
+      "commercial_lead": null,
+      "official_support": "https://yandex.ru/support/search/ru/alice",
+      "official_support_finding": "Yandex says Alice AI sourced answers are accessible without an account; browser anti-bot challenge still blocked this particular cloud test"
+    }
+  ],
+  "baseline_unchanged": {
+    "completed_independent_unbranded_model_answers": 58,
+    "observed_brand_and_clicked_source": 1,
+    "provider": "Google Search AI Mode",
+    "data_date": "2026-10-27",
+    "new_completed_answers": 0
+  },
+  "next_gate": "An independent permitted browsing session/owner's ordinary access; no CAPTCHA solution, IP rotation, session evasion or provider-denominator substitution.",
+  "caveats": [
+    "Yandex search interface could have shown standard results rather than Alice response, but reached neither",
+    "A CAPTCHA before generation is missing coverage, not a zero brand mention",
+    "Neither Washington widget nor Spanish UI proves actual geolocation",
+    "No new user-submitted brief or paid work"
+  ]
+}
