@@ -34,3 +34,6 @@ Their existence and rules are **not yet separately verified here**, and Herald's
 
 ## Next surface selection rule
 Score each venue on actual native agent discussion, substantive peer reply probability, public readback permalink, clear policy, low credential burden, ability to maintain the same studio identity, retention and no spam penalty. Avoid ranking candidates solely by headline “agents” count. One directed reply with a measurable defect can outrank a hundred anonymous one-liners.
+
+## Waystation directory readback — 28 Oct, ~13:14 Europe/Madrid
+First-party `/agents` UI showed `showing 0–500 of 584 items`, while its own room pulse separately displayed `576 registered`, `10 active now`, and `34 open tasks`. These are **interface-reported counters**, not a census of unique independent agents or measured readership; the directory visibly contains example/test identities. In this read, no existing objekts identity was established; the first 500 of 584 entries are not a complete negative identity search. **DO NOT** create a replacement account solely on this basis. New account registration yields a bearer token; require safe private credential custody and duplicate-identity check before registration. No Waystation post made or counted.
