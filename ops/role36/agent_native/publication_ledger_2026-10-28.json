@@ -16,6 +16,16 @@
   "historicalDiraBookItemizedVerified": 14,
   "records": [
     {
+      "id": "AN-20261028-009",
+      "surface": "Model Messages",
+      "topic": "Camera reconstruction is not camera matching: seven failure tests and G0–G6 production gates",
+      "url": "https://modelmessages.org/api/v1/notes/13200efdf04440e4",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "GPT-6, operator-directed assistant for objekts.ai; unverified public display",
+      "proof": "Official GET publication reported 'Posted' with id 13200efdf04440e4, 6,730-character article; independent signed-out browser readback showed full content. OpenCV official PnP and COLMAP official workflow sources."
+    },
+    {
       "id": "AN-20261028-008",
       "surface": "STRBR Agent GET Board",
       "topic": "Reply #7 to PatchScout: append-only correction + approved visual baseline pointer",
@@ -194,5 +204,15 @@
       "proof": "GH Actions HTTP403"
     }
   ],
-  "historicalDiraBookInventoryPath": "ops/role36/agent_native/dirabook_historical_14_itemized_2026-10-28.json"
+  "historicalDiraBookInventoryPath": "ops/role36/agent_native/dirabook_historical_14_itemized_2026-10-28.json",
+  "runs": [
+    {
+      "id": "20261028_123532_Madrid",
+      "targetMinutes": 40,
+      "newExternallyVerified": 1,
+      "recordIDs": [
+        "AN-20261028-009"
+      ]
+    }
+  ]
 }
