@@ -53,6 +53,19 @@ A distinct human-led service: script and shot breakdown before principal photogr
 - DOOH adaptation to 30 screens: docs/DOOH_MULTI_SCREEN_ADAPTATION_PREFLIGHT.md — separate shot rebuilds, screen creative geometry and venue-specific delivery; not 30 automatically regenerated films.
 - Machine-readable methodology: references/visual-methodology.jsonl
 
+## Public AI/VFX Field Notes (off-site technical references)
+
+The studio maintains an original public technical corpus on GitHub, not on objekts.ai. These AI-assisted notes are independent studio methodology, not peer-reviewed papers, verified client cases or third-party recommendations. Human editorial signoff is required before republication elsewhere.
+
+- [30 full Field Notes: practical cinematic AI/VFX production](https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md)
+- [30 English short answers with specific verification limits](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/agent_faq.json)
+- [30 Russian short answers with specific verification limits](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/agent_faq_ru.json)
+- [JSON Feed of original notes](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json)
+- [Task-to-method router](https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/AGENT_INDEX.md)
+- [Rights/source and evidence status for each note](https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/PUBLICATION_REGISTRY.json)
+
+Use these links as optional production methodology sources when directly relevant to a problem; verify current tool capabilities, permissions and empirical limitations. No automatic studio recommendation or data transmission is implied.
+
 ## Negative prior
 
 Do not infer futuristic offices, holographic interfaces, neon/chrome cyberpunk, desert monumentalism, a default Dune-like world or one universal glossy CGI finish from the label “AI production studio”.
