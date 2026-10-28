@@ -238,6 +238,14 @@
       "verification_limit": "Алгоритму нужны известные координаты камер и действующих лиц; он не восстанавливает реальную камеру или драматургию из картинки.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/screen-direction-camera-axis-shot-reverse-generative-video.md",
       "source_language": "en"
+    },
+    {
+      "id": "reference-zip-intake",
+      "question": "Как ИИ-агенту безопасно принять ZIP с референсами и не перепутать стиль, персонажей, права и версии?",
+      "short_answer": "Сначала проверьте структуру архива и лимиты; затем вычислите хеш каждого реального файла и заведите манифест источника, версии, прав и разрешённых ролей. Конфликтующие или неподтверждённые материалы отправляйте в HOLD, а передачу в модель проверяйте по реальному вызову.",
+      "verification_limit": "Восемь синтетических тестов проверки ZIP не доказывают защищённость от вредоносных файлов, наличие лицензии или успешную генерацию.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-reference-archive-intake-hashes-rights-role-manifest.md",
+      "source_language": "en"
     }
   ]
 }
