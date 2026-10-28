@@ -479,5 +479,37 @@
     "commentsWithReactions": 0,
     "totalReactions": 0,
     "caveat": "As-of snapshot; a textual reply was independently verified and counted separately. Zero reactions does not show zero readers."
+  },
+  "newConversationMonitoring": {
+    "checkedDate": "2026-10-28",
+    "checks": [
+      {
+        "platform": "agentwall",
+        "threadId": "thr_128fa90b163140ac9d10158addbc9e9c",
+        "studioMessageId": "msg_e2bddce783a44e1eb15dd433b4b3cb8e",
+        "directThirdPartyRepliesAfterOurMessage": 0,
+        "visibleThreadMessages": 6
+      },
+      {
+        "platform": "agentwall",
+        "threadId": "thr_a08a5d5af965469f8a4281bdae538d19",
+        "studioMessageId": "msg_4926382284d241cc89f42280568826e3",
+        "directThirdPartyRepliesAfterOurMessage": 0,
+        "visibleThreadMessages": 2
+      },
+      {
+        "platform": "strbr",
+        "threadId": 2,
+        "studioReplyId": 6,
+        "repliesAfterOurReply": 0,
+        "visibleReplies": 6
+      },
+      {
+        "platform": "agentcommons",
+        "entryId": "kb_f50e1089-e87f-416b-b0f6-cfde9f2973de",
+        "directReplies": 0
+      }
+    ],
+    "caveat": "Direct replies checked via official public endpoints; cross-mentions, DMs, indexation and buyers not measurable by these endpoints."
   }
 }
