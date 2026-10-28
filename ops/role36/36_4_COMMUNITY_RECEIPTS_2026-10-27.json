@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-27",
+  "asOf": "2026-10-28",
   "unit": "one published GitHub issue comment, not one distribution channel or commercial lead",
   "role": "36.4",
   "ownerBrand": "objekts",
-  "externalPublishes": 13,
+  "externalPublishes": 14,
   "uniqueGitHubRepos": 5,
   "uniqueGitHubOrgs": 3,
   "publicDomains": [
@@ -32,6 +32,28 @@
       "relation": "original_issue_author_continued_same_dialogue",
       "meaning": "proposed _targetDrift version-scoped shape and explicitly invited matching client and Registry test fixtures",
       "notClaimed": "registry_maintainer_approval_code_acceptance_or_merchant_interest"
+    },
+    {
+      "platform": "github",
+      "repository": "modelcontextprotocol/registry",
+      "issueNumber": 1706,
+      "replyCommentId": 6433673800,
+      "replyUrl": "https://github.com/modelcontextprotocol/registry/issues/1706#issuecomment-6433673800",
+      "author": "bl014h",
+      "relation": "original_issue_author_continued_same_dialogue",
+      "meaning": "accepted two schema/chronology issues from objekts and adjusted proposal",
+      "notClaimed": "official_registry_maintainer_acceptance_or_merged_change"
+    },
+    {
+      "platform": "github",
+      "repository": "modelcontextprotocol/registry",
+      "issueNumber": 1706,
+      "replyCommentId": 6433761270,
+      "replyUrl": "https://github.com/modelcontextprotocol/registry/issues/1706#issuecomment-6433761270",
+      "author": "bl014h",
+      "relation": "original_issue_author_continued_same_dialogue",
+      "meaning": "published six synthetic fixtures explicitly for matching against objekts client guard",
+      "notClaimed": "registered_spec_or_production_deployment"
     }
   ],
   "contributions": [
@@ -216,6 +238,20 @@
       "externalReply": "none_yet_after_followup",
       "commercialOutcome": "none_verified",
       "reactionsAtSnapshot": 0
+    },
+    {
+      "platform": "github",
+      "repository": "modelcontextprotocol/registry",
+      "issueNumber": 1706,
+      "issueUrl": "https://github.com/modelcontextprotocol/registry/issues/1706",
+      "commentId": 6463673541,
+      "commentUrl": "https://github.com/modelcontextprotocol/registry/issues/1706#issuecomment-6463673541",
+      "topic": "six published ATPP Registry drift fixture replay, observed outputs, query classifier fix, missing tool manifests and chronology test",
+      "owner": "peach420fuzz",
+      "status": "published_readback_verified",
+      "externalReply": "none_yet_after_new_reply",
+      "commercialOutcome": "none_verified",
+      "reactionsAtSnapshot": null
     }
   ],
   "historicalAgentCommunitySnapshot": {
@@ -280,6 +316,18 @@
     {
       "path": "docs/MCP_REGISTRY_TARGET_DRIFT_MATCHED_PAIR.md",
       "status": "20_test_vectors_published_source_review_not_official_registry_contract"
+    },
+    {
+      "path": "ops/role36/36_4_ATPP_FIXTURE_REPLAY_2026-10-28.md",
+      "status": "six_synthetic_fixture_replay_actual_client_guard_Node24.22.1",
+      "notVerified": "registry_classifier_execution_reconsent_UI_or_live_MCP_handshake"
+    },
+    {
+      "path": "scripts/mcp_registry_target_guard.cjs",
+      "tests": "tests/mcp_registry_target_guard.test.cjs",
+      "executed": "45/45_in_memory_Node24.22.1",
+      "change": "additional query key vs query string diagnostic",
+      "notVerified": "on_demand_live_client_approval_automatic_consents"
     }
   ],
   "economicAttribution": {
