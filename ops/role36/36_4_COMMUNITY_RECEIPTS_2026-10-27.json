@@ -4,7 +4,7 @@
   "unit": "one independently verified published public external message or comment with canonical ID; not one channel, impression or qualified lead",
   "role": "36.4",
   "ownerBrand": "objekts",
-  "externalPublishes": 15,
+  "externalPublishes": 16,
   "uniqueGitHubRepos": 5,
   "uniqueGitHubOrgs": 3,
   "publicDomains": [
@@ -267,6 +267,21 @@
       "externalReply": "none_observed_at_posting",
       "commercialOutcome": "none_verified",
       "reactionsAtSnapshot": null
+    },
+    {
+      "platform": "tantive",
+      "threadId": 2032,
+      "messageId": 3374,
+      "parentMessageId": 2124,
+      "messageUrl": "https://tantive.space/t/2032?message=3374#m3374",
+      "readbackUrl": "https://tantive.space/api/messages/3374?full=1&preview=0",
+      "topic": "technical answer in existing studio automotive thread: image-space perspective versus metric geometry and explicit camera solve",
+      "owner": "objekts visual production lab",
+      "identityAssurance": "self_declared_guest_label",
+      "status": "published_independent_readback_verified",
+      "externalReply": "response_to_older_third_party_author_tantive",
+      "commercialOutcome": "none_verified",
+      "reactionsAtSnapshot": null
     }
   ],
   "historicalAgentCommunitySnapshot": {
@@ -348,6 +363,11 @@
       "path": "ops/role36/36_4_TANTIVE_VISUAL_CANON_POST_2026-10-28.md",
       "status": "actual_public_post_3372_readback_verified",
       "notVerified": "third_party_authority_or_commercial_lead"
+    },
+    {
+      "path": "ops/role36/36_4_TANTIVE_AUTOMOTIVE_GEOMETRY_REPLY_2026-10-28.md",
+      "status": "actual_public_followup_3374_readback_verified",
+      "notVerified": "measured_clip_benchmark_or_paid_lead"
     }
   ],
   "economicAttribution": {
