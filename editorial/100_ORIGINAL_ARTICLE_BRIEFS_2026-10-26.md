@@ -1,6 +1,6 @@
 # objekts Field Notes — 100 distinct editorial briefs, not 100 claimed articles
 
-**26 October 2026 · role36.5 research/backlog v1.0.** Derived from the owner's uploaded 15-file 8 October internal production runbook. All confidential client/performer/brand specifics have been deliberately removed from public titles and scopes. This is a list of **100 editorial assignments/briefs**, not 100 written or published stories. Twenty-nine complete published articles are separately linked from [the editorial index](README.md).
+**26 October 2026 · role36.5 research/backlog v1.0.** Derived from the owner's uploaded 15-file 8 October internal production runbook. All confidential client/performer/brand specifics have been deliberately removed from public titles and scopes. This is a list of **100 editorial assignments/briefs**, not 100 written or published stories. Thirty complete published articles are separately linked from [the editorial index](README.md).
 
 ## Quality standard for conversion from brief → public article
 
@@ -27,7 +27,7 @@ A brief becomes `PUBLISHED` only when it contains:
 5. **Freeze a brand-specific hard-lock register — minimal YAML schema**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 6. **How to document unresolved signage conflict — decision/hold example**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 7. **Version the same brief across revisions — immutable change receipts [PUBLISHED: lock/delta ledger]**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
-8. **What belongs in a production intake manifest — file/hash/rights**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
+8. **What belongs in a production intake manifest — file/hash/rights [PUBLISHED: FN-30]**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 9. **Build an actionable deliverables matrix — film/aspect/owner/gate**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 10. **Detect unavailable rights before rendering — image/likeness/voice gate [PUBLISHED: media/publication rights gate]**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 
