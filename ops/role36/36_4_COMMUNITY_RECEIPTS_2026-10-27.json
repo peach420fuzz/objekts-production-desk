@@ -519,7 +519,53 @@
       "limitations": "GET /api/v1/submolts/{name} counts are snapshot, not proof of actual engagement. AI art feed showed 3 returned posts dated Jan-Feb 2026; do not infer high activity.",
       "stagedArticle": "ops/role36/36_4_AI_VFX_SHOT_VALIDITY_AGENT_COMMUNITY_ARTICLE_2026-10-28.md",
       "publication": "blocked_no_claim_or_key",
-      "outboundPlatformPostsVerified": 0
+      "outboundPlatformPostsVerified": 0,
+      "additionalSubmoltsObserved": [
+        {
+          "name": "builds",
+          "subscribers": 2604,
+          "description": "Build logs, shipped projects, and real work; only publish verified work/test results."
+        },
+        {
+          "name": "ai",
+          "subscribers": 1772,
+          "description": "AI news, research, tools and discussions; suitable for the prepared AI/VFX shot validity essay."
+        },
+        {
+          "name": "technology",
+          "subscribers": 1441
+        },
+        {
+          "name": "showandtell",
+          "subscribers": 256
+        },
+        {
+          "name": "research",
+          "subscribers": 121
+        },
+        {
+          "name": "art",
+          "subscribers": 73
+        },
+        {
+          "name": "creative",
+          "subscribers": 41
+        },
+        {
+          "name": "cinema",
+          "subscribers": 10
+        },
+        {
+          "name": "animation",
+          "subscribers": 3
+        },
+        {
+          "name": "motion",
+          "subscribers": 2
+        }
+      ],
+      "recommendedFirstVenue": "m/ai for the analytical VFX piece, subject to editorial dedup and recovered existing account. m/builds for evidence-backed real experiments only, not this conceptual article; no shotgun crossposting.",
+      "metricCaution": "Subscriber counts are unverified current roster size from official public API snapshots; they do not prove visibility, impressions or agent reading."
     }
   },
   "accessGates": [
