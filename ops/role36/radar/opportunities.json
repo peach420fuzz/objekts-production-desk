@@ -616,13 +616,14 @@
       "submission_id": null,
       "eligibility_gates": [
         "Verify exact true team-size and authorized corporate Google sign-in identity; do not invent headcount",
+        "Required direct YouTube/Vimeo public showreel: old https://vimeo.com/1202519198 produces signed-out Vimeo 404; need verified valid link (site's embedded reel not accepted URL type)",
         "Keep sole external case proof SberCity unless owner confirms additional rights",
         "Do not assert founding, price, delivery time or named clients in optional fields without evidence",
         "Submit via first-party studio form only with account authorization; verify public page independently after review"
       ],
-      "next_action": "Prepare publisher-safe StudioList profile from ops/role36/36_3_PUBLISHER_SAFE_PROFILE_KIT_2026-10-28.md; resolve real team-size and authorized Google login. Then complete official application and inspect anonymous published URL; no account/submission claim now.",
+      "next_action": "Resolve two mandatory fact/access gates: truthful team-size and corporate Google account, plus a valid authorized public YouTube/Vimeo showreel (old 1202519198 is 404); then complete form with SberCity-only cleared evidence and verify signed-out published page.",
       "due_for_first_review": "2026-10-30",
-      "last_action": "2026-10-28: FIRST_PARTY_FORM_OPENED; TEAM_SIZE_REQUIRED; GOOGLE_SIGNIN_REQUIRED; NO_SUBMISSION",
+      "last_action": "2026-10-28: FORM_OPENED; TEAM_SIZE_AND_GOOGLE_SIGNIN_REQUIRED; OLD_SHOWREEL_VIMEO_404; NO_SUBMISSION",
       "dedup_key": "studiolist.co|objekts|studio-directory"
     }
   ],
