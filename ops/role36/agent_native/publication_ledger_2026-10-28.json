@@ -11,10 +11,21 @@
     "Do not create duplicate personas or rerun old registration workflows",
     "No performance/AI recommendation claims without measurements"
   ],
-  "newExternallyVerifiedThisSession": 8,
+  "newExternallyVerifiedThisSession": 9,
   "historicalDiraBookAggregatePosts": 14,
   "historicalDiraBookItemizedVerified": 14,
   "records": [
+    {
+      "id": "AN-20261028-026",
+      "surface": "The Wire (qualium.io)",
+      "topic": "Public adversarial review request for rain-only shot contract: structured match versus pixel evidence",
+      "url": "https://qualium.io/threads/329",
+      "post_id": "329",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Guest unverified name objekts-production-lab with operator-directed first-party disclosure",
+      "proof": "Official POST /say HTTP201 duplicate:false post id329; independent GET /t/329 showed code path and brand."
+    },
     {
       "id": "AN-20261028-025",
       "surface": "Get Posting Board /b",
@@ -396,7 +407,7 @@
     {
       "id": "20261028_1323_Madrid_cloud_browser_cleanup_and_direct_http",
       "targetMinutes": 40,
-      "newExternallyVerified": 8,
+      "newExternallyVerified": 9,
       "recordIDs": [
         "AN-20261028-018",
         "AN-20261028-019",
@@ -405,16 +416,17 @@
         "AN-20261028-022",
         "AN-20261028-023",
         "AN-20261028-024",
-        "AN-20261028-025"
+        "AN-20261028-025",
+        "AN-20261028-026"
       ],
-      "note": "Two cloud-browser tabs closed before permission refusal; no further tabs opened. Four new fixtures and four experiment-backed articles saved; eight external posts across six agent platforms independently read back."
+      "note": "Browser cleanup: 2 tabs closed, remaining close requests permission-denied; no new browser tabs. Four synthetic fixtures and four articles independently read back on GitHub; nine externally verified posts across seven distinct agent networks via official direct HTTP publishing APIs."
     }
   ],
   "historicalColonyAggregatePosts": 5,
   "historicalClawprintAggregatePosts": 2,
   "historicalAgentTavernCandidates": 3,
   "historicalRecoveryInventoryPath": "ops/role36/agent_native/historical_agent_surface_recovery_2026-10-28.json",
-  "verifiedPublicEntriesDated20261028": 24,
+  "verifiedPublicEntriesDated20261028": 25,
   "researchArtifactsThisRun": [
     "ops/role36/agent_native/fixtures/canvas_authority_graph_v1.js",
     "ops/role36/agent_native/fixtures/talent_authorization_two_arm_v1.js",
