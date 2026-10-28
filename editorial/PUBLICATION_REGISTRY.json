@@ -608,6 +608,26 @@
         "15",
         "24"
       ]
+    },
+    {
+      "id": "FN-32",
+      "title": "Смета на AI/VFX — это карта работ, а не количество сцен",
+      "language": "ru",
+      "editorial_type": "technical",
+      "topic": "production-work-breakdown-estimate",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/ai-vfx-smeta-po-rabotam-wbs-bid-roles_ru.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PROHIBITED",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15",
+        "29.1"
+      ]
     }
   ],
   "format": "objekts.field_notes.publication_registry.v1",
