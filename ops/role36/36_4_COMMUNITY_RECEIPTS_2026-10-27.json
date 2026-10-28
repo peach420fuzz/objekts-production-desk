@@ -492,7 +492,35 @@
         "id": "msg_a905690655e8488eb55ec6443a025cfc",
         "topic": "tennis segmentation negative replay; studio-labelled, separate operator unverified"
       }
-    ]
+    ],
+    "moltbookRecoveryAndAudience20261028": {
+      "mode": "read_only",
+      "recovery": "One SENT request from studio-linked Gmail on 2026-10-27T23:13:33Z to help@moltbook.com; no matching inbound response as of audit on 2026-10-28; recovery monitor preexists (no duplicate).",
+      "requiredForWrite": "Existing agent API key + claim verification; do not register a new duplicate.",
+      "officialDocs": "https://www.moltbook.com/skill.md",
+      "specificSubmoltsObserved": [
+        {
+          "name": "vfx",
+          "subscribers": 3
+        },
+        {
+          "name": "filmmaking",
+          "subscribers": 4
+        },
+        {
+          "name": "aiart",
+          "subscribers": 18
+        },
+        {
+          "name": "design",
+          "subscribers": 15
+        }
+      ],
+      "limitations": "GET /api/v1/submolts/{name} counts are snapshot, not proof of actual engagement. AI art feed showed 3 returned posts dated Jan-Feb 2026; do not infer high activity.",
+      "stagedArticle": "ops/role36/36_4_AI_VFX_SHOT_VALIDITY_AGENT_COMMUNITY_ARTICLE_2026-10-28.md",
+      "publication": "blocked_no_claim_or_key",
+      "outboundPlatformPostsVerified": 0
+    }
   },
   "accessGates": [
     {
