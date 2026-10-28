@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "owner": "OBJEKTS 36.2",
+  "date_utc": "2026-10-28",
+  "purpose": "Separate studio-as-vendor entity from own MCP-product entity across public citation candidates. Public source accuracy audit, NOT a model citation or lead claim.",
+  "entities": {
+    "studio": "objekts / commissioned AI-first visual production studio; buyer route salute@objekts.ai",
+    "product": "objekts Production Desk / remote MCP preflight tool made by objekts; no media generation, human brief consent required"
+  },
+  "records": [
+    {
+      "id": "ENTITY01",
+      "url": "https://inite.ai/en/atlas/objekts.ai",
+      "type": "STUDIO_AND_TOOL_COLLIDED",
+      "public_class": "Marketing software/tool directory",
+      "observed": "2026-10-28 direct",
+      "verdict": "MISCLASSIFIED_COMPARATORS",
+      "evidence": "Correct studio one-line visual-production summary but compares it with Brew, Influee.co, Supermetrics, TubeChop, TokPortal, AdCreative.ai software; MCP appears as company-level use case; 'little sign of use' software rubric.",
+      "owner": "36.3 + 36.1",
+      "remedy": "Claim/suggest factual separation of service company from distinct MCP product, with owner account attestation; issue #166",
+      "confidence": "HIGH_FOR_SOURCE_CLAIM_ONLY"
+    },
+    {
+      "id": "ENTITY02",
+      "url": "https://amworldgroup.com/directory/video-production-companies/objekts",
+      "type": "STUDIO",
+      "public_class": "Video Production Companies",
+      "observed": "2026-10-28 direct",
+      "verdict": "CORRECT_STUDIO_CATEGORY",
+      "evidence": "Accurate commissioned AI/VFX, CGI, compositing, white-label project description. No reviews. Premium paid options for case studies and direct enquiry.",
+      "owner": "36.3",
+      "remedy": "Retain free accurate profile; do not purchase premium without owner choice; no recommendation proof",
+      "confidence": "HIGH_FOR_SOURCE_CLAIM_ONLY"
+    },
+    {
+      "id": "ENTITY03",
+      "url": "https://www.sortlist.es/agency/objekts",
+      "type": "STUDIO",
+      "public_class": "Agency/supplier directory",
+      "observed": "2026-10-28 direct",
+      "verdict": "CORRECT_CATEGORY_BUT_UNAPPROVED_CASE_EXPOSURE",
+      "evidence": "Spanish description correctly offers AI video/VFX/localization and first-party portfolio, but names a forbidden outward case in company bio and services; profile marked claimed, portfolio projects listed.",
+      "owner": "36.3",
+      "remedy": "Edit prohibited outward proof with account owner using platform-native profile tools, retain approved cases only; #162",
+      "confidence": "HIGH_FOR_SOURCE_CLAIM_ONLY"
+    },
+    {
+      "id": "ENTITY04",
+      "url": "https://agentscouthq.com/tools/objekts-production-desk.html",
+      "type": "PRODUCT",
+      "public_class": "MCP servers",
+      "observed": "2026-10-28 direct",
+      "verdict": "CORRECT_PRODUCT_CATEGORY_WITH_FACT_ERRORS",
+      "evidence": "Accurate preflight and explicit human confirmation, but FAQ presents marketing/manifest GitHub repo as source code and lacks documented 2026-07-28 HTTP400 caveat. Free $0 claim/edit official link verified.",
+      "owner": "36.1 + role29 runtime",
+      "remedy": "Use https://agentscouthq.com/submit.html?tool=objekts-production-desk&type=update after dedup and owner-authorized details; correct 'source code' and mention protocol caveat; issue #101",
+      "confidence": "HIGH_FOR_SOURCE_CLAIM_ONLY"
+    },
+    {
+      "id": "ENTITY05",
+      "url": "https://mcp.film/mcps/objekts-production-desk/",
+      "type": "PRODUCT",
+      "public_class": "MCP / Story & Pre-Production",
+      "observed": "2026-10-28 direct",
+      "verdict": "CORRECT_CURATED_TOOL_CATEGORY_WITH_CRITICAL_CAVEATS",
+      "evidence": "Seven tools and human brief consent, live 0.1.0 vs registry 0.1.3 vs server.json 0.1.4, rejected modern 2026-07-28 400; independent source-guided AI citation positive was excluded from organic metric.",
+      "owner": "36.1 + role29 + 36.2 retest",
+      "remedy": "Fix protocol in product; external router bug #136 separate, retest only after maintainer updates",
+      "confidence": "HIGH_FOR_SOURCE_CLAIM_ONLY"
+    },
+    {
+      "id": "ENTITY06",
+      "url": "https://registry.asabove.tech/",
+      "type": "PRODUCT",
+      "public_class": "Agent Discovery Network directory-only",
+      "observed": "2026-10-28 public search and direct listing",
+      "verdict": "CORRECT_DIRECTORY_ENTRY_NO_LIVE_EXECUTION_CLAIM",
+      "evidence": "objekts Production Desk listed as directory only with canonical site, remote MCP link and preflight description. Directory listing is not proof of working ACP handshake or model use.",
+      "owner": "36.1",
+      "remedy": "Monitor exact listing accuracy; no new duplicate registration or unverified execution claim",
+      "confidence": "MEDIUM_FOR_SOURCE_CLAIM_ONLY"
+    },
+    {
+      "id": "ENTITY07",
+      "url": "https://mcpservers.org/servers/peach420fuzz/objekts-production-desk",
+      "type": "PRODUCT_MIRROR",
+      "public_class": "MCP catalog / README mirror",
+      "observed": "2026-10-28 direct",
+      "verdict": "PRODUCT_RELATED_BUT_CANONICAL_CASE_LEAK",
+      "evidence": "Mirrors public repository README including now-disallowed client case names; no organic recommendation counted.",
+      "owner": "36 HQ repo owner + 36.1",
+      "remedy": "Canonical README correction first; verify mirror refreshed then contact maintainer if stale; #162",
+      "confidence": "HIGH_FOR_SOURCE_CLAIM_ONLY"
+    },
+    {
+      "id": "ENTITY08",
+      "url": "https://odel.app/modules/objekts/production-desk",
+      "type": "PRODUCT_MIRROR",
+      "public_class": "MCP catalog / README mirror",
+      "observed": "2026-10-28 direct",
+      "verdict": "PRODUCT_RELATED_BUT_CANONICAL_CASE_LEAK",
+      "evidence": "Mirrors repository description with disallowed outward examples; independent retrieval does not prove model uptake.",
+      "owner": "36 HQ repo owner + 36.1",
+      "remedy": "Canonical README correction first and signed-out mirror recrawl check; #162",
+      "confidence": "HIGH_FOR_SOURCE_CLAIM_ONLY"
+    }
+  ],
+  "interpretation": "Observed category and facts on each public webpage. Not evidence that any LLM selected, indexed, recommended or sent a buyer from it. Never conflate studio business with Product Desk MCP. One user facing brand can have two distinct entities.",
+  "issues": [
+    "https://github.com/peach420fuzz/objekts-production-desk/issues/166",
+    "https://github.com/peach420fuzz/objekts-production-desk/issues/162",
+    "https://github.com/peach420fuzz/objekts-production-desk/issues/101"
+  ],
+  "model_retest_gate": "Meaningful and live correction, then original unbranded buyer question in independent model with clicked citation and known provider/geo limitations.",
+  "counts": {
+    "external_directory_cards": 8,
+    "new_model_runs": 0,
+    "completed_external_edits": 0,
+    "verified_commercial_enquiries": 0
+  }
+}
