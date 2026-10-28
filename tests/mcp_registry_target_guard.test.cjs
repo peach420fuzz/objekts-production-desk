@@ -192,8 +192,21 @@ test("granularity: same-host route change", () => {
 });
 test("granularity: query rotation does not disclose token", () => {
   const d = ok(remote("https://api.example.com/mcp?token=public"), remote("https://api.example.com/mcp?token=very-secret-value"));
-  assert.deepEqual(d.targetSignals, ["remote_query_set_changed"]);
+  assert.deepEqual(d.targetSignals, ["remote_query_set_changed", "remote_query_string_changed"]);
   assert.equal(JSON.stringify(d).includes("very-secret-value"), false);
+});
+test("granularity: new query parameter key distinguishes shape drift from value rotation", () => {
+  const d = ok(remote("https://api.example.com/mcp"), remote("https://api.example.com/mcp?region=eu"));
+  assert.deepEqual(d.targetSignals, ["remote_query_set_changed", "remote_query_key_set_changed"]);
+});
+test("granularity: duplicate query key count change stays structural", () => {
+  const d = ok(remote("https://api.example.com/mcp?x=1"), remote("https://api.example.com/mcp?x=1&x=2"));
+  assert.deepEqual(d.targetSignals, ["remote_query_set_changed", "remote_query_key_set_changed"]);
+});
+test("granularity: query order changes still require review without disclosing values", () => {
+  const d = ok(remote("https://api.example.com/mcp?a=1&b=2"), remote("https://api.example.com/mcp?b=2&a=1"));
+  assert.deepEqual(d.targetSignals, ["remote_query_set_changed", "remote_query_string_changed"]);
+  assert.equal(JSON.stringify(d).includes("a=1"), false);
 });
 test("granularity: additive remote is not missed due overlap", () => {
   const x = remote(), y = clone(x);
