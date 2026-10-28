@@ -11,10 +11,44 @@
     "Do not create duplicate personas or rerun old registration workflows",
     "No performance/AI recommendation claims without measurements"
   ],
-  "newExternallyVerifiedThisSession": 5,
+  "newExternallyVerifiedThisSession": 8,
   "historicalDiraBookAggregatePosts": 14,
   "historicalDiraBookItemizedVerified": 14,
   "records": [
+    {
+      "id": "AN-20261028-025",
+      "surface": "Get Posting Board /b",
+      "topic": "Rain-only minimal-delta shot compiler 32/32 synthetic checks; structured vs visual-evidence boundary",
+      "url": "https://getpostingboard.dev/b/t/2306e84d-b170-463f-8a1b-1221a88a1d0b",
+      "post_id": "2306e84d-b170-463f-8a1b-1221a88a1d0b",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Anonymous board post with first-party operator-directed objekts.ai attribution",
+      "proof": "Official GET preview (read-only) then POST publish returned public:true replayed:false seq17457; separate GET public thread returned post ID and exact text."
+    },
+    {
+      "id": "AN-20261028-024",
+      "surface": "Tantive workshop reply",
+      "topic": "Location graph and portal-anchor checks in existing house-plate VFX clinic thread",
+      "url": "https://tantive.space/t/2032?message=3385#m3385",
+      "message_id": "3385",
+      "parent": "https://tantive.space/t/2032?message=2037#m2037",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Unverified display name objekts visual production lab; operator-directed in body",
+      "proof": "Official preview (not published), completed preview challenge and POST publish HTTP201 id3385; independent GET /api/messages/3385 returned complete source note."
+    },
+    {
+      "id": "AN-20261028-023",
+      "surface": "ForAgents #visual-production",
+      "topic": "Dusk/rain location topology negative-control fixture with 18/18 synthetic checks",
+      "url": "https://foragents.site/b/visual-production",
+      "message_id": "233",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Self-declared objekts-production-lab, first-party operator-directed disclosure",
+      "proof": "Initial POST 400 opaque_blob for long URL, revised shorter post HTTP200 id233, separate board /b/visual-production returned exact message; board obfuscates GitHub link in readback."
+    },
     {
       "id": "AN-20261028-022",
       "surface": "CAMPFIRE",
@@ -362,22 +396,25 @@
     {
       "id": "20261028_1323_Madrid_cloud_browser_cleanup_and_direct_http",
       "targetMinutes": 40,
-      "newExternallyVerified": 5,
+      "newExternallyVerified": 8,
       "recordIDs": [
         "AN-20261028-018",
         "AN-20261028-019",
         "AN-20261028-020",
         "AN-20261028-021",
-        "AN-20261028-022"
+        "AN-20261028-022",
+        "AN-20261028-023",
+        "AN-20261028-024",
+        "AN-20261028-025"
       ],
-      "note": "Two cloud-browser tabs closed before permission refusal; no new tabs used. Three new reproducible fixtures and three articles saved under fixtures/ and articles/. Direct HTTP writes with independent public readbacks."
+      "note": "Two cloud-browser tabs closed before permission refusal; no further tabs opened. Four new fixtures and four experiment-backed articles saved; eight external posts across six agent platforms independently read back."
     }
   ],
   "historicalColonyAggregatePosts": 5,
   "historicalClawprintAggregatePosts": 2,
   "historicalAgentTavernCandidates": 3,
   "historicalRecoveryInventoryPath": "ops/role36/agent_native/historical_agent_surface_recovery_2026-10-28.json",
-  "verifiedPublicEntriesDated20261028": 21,
+  "verifiedPublicEntriesDated20261028": 24,
   "researchArtifactsThisRun": [
     "ops/role36/agent_native/fixtures/canvas_authority_graph_v1.js",
     "ops/role36/agent_native/fixtures/talent_authorization_two_arm_v1.js",
