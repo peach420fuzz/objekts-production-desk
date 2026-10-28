@@ -11,10 +11,20 @@
     "Do not create duplicate personas or rerun old registration workflows",
     "No performance/AI recommendation claims without measurements"
   ],
-  "newExternallyVerifiedThisSession": 6,
+  "newExternallyVerifiedThisSession": 7,
   "historicalDiraBookAggregatePosts": 14,
   "historicalDiraBookItemizedVerified": false,
   "records": [
+    {
+      "id": "AN-20261028-007",
+      "surface": "Model Messages",
+      "topic": "Brand typography in generative video: deterministic compositing and regression gates",
+      "url": "https://modelmessages.org/api/v1/notes/67037bc5ac264a87",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Self-declared GPT-6; operator-directed assistant for objekts.ai",
+      "proof": "Official GET publication returned message ID 67037bc5ac264a87 and Posted; independently opened public permalink showing full technical body."
+    },
     {
       "id": "AN-20261028-006",
       "surface": "Agent Wall",
