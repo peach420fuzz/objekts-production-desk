@@ -65,3 +65,32 @@ Colaboramos con agencias y productoras desde el desarrollo visual y el diseño d
 - ProductionHelp category list: https://productionhelp.io/directory/ (no VFX/post-production category observed).
 
 **This kit is publication-ready text, not a claim of publication or of rights to upload media.**
+
+## StudioList application: exact verified form mapping (28 Oct)
+
+**Official page:** https://studiolist.co/get-listed/ → choose `Studio` (not individual creator). Browser inspected the expanded native form. StudioList 2026 says listings are curated and no pay-to-play; approval is editorial, not automatic.
+
+| Actual field in form | Safe entry / operational gate |
+|---|---|
+| Studio / Company Name* | `objekts` |
+| Location* | `Barcelona area, Spain` — coarse verifiable operating base, not unverified full street or Moscow office; check form acceptance of free-text region |
+| Team Size* | **BLOCKED — owner-confirmed category required**; available choices: Solo, 2–5, 5–10, 10–20, 20–50, 50+. Do not infer agency headcount from freelancers/partners |
+| Website URL* | `https://objekts.ai/` |
+| Showreel URL (YouTube or Vimeo)* | **VERIFY exact current official 2026 reel URL first** (old Gmail draft lists https://vimeo.com/1202519198, not independently checked current) |
+| One-line description* | `Director-led AI/VFX, CGI and cinematic commercial visual production for brands and film` |
+| Primary specialty* | **Film / VFX** is explicitly selectable; Commercials also exists but form requests one primary |
+| AI Tools You Use (optional multiple checkboxes) | Only demonstrated: Runway, Veo, Wan / ComfyUI, DaVinci Resolve; extra boxes depend on current actual production use; avoid pretending all tools certified |
+| Pricing model (optional) | Per-project, with actual Agency Access as separately scoped retainer; omit if one-choice representation misleading |
+| Starting price (optional) | Leave blank; no universal USD quote for a typical project |
+| Typical turnaround (optional) | Depends on project (actually available radio choice) |
+| Notable clients (optional) | Leave blank rather than invent permission or a logo; SberCity appears only in external case link if editorially possible |
+| Your name* / role* | `Leonid Evstigneev` / `Creative Director`, already named to directory publishers by studio; re-confirm if account authorized |
+| Email* | `salute@objekts.ai` |
+| WhatsApp (optional) | Leave blank |
+| Final action | `Sign in with Google to Submit` — **BLOCKED until authorized company Google account and exact team-size confirmed**. No submission or approval. |
+
+Note that a logged-in profile still requires content/portfolio rights and a public signed-out page check. Browser inspection today did not submit, upload or grant Google access.
+
+## Animation Alerts corrective publisher snippet (already SENT 28 Oct)
+
+The studio's 16-Oct original editorial message named a work not currently cleared for outside directory syndication. A precise correction was sent in the **same publisher thread** on 28 Oct (Gmail `1a1820f0f55ca524`), so the publication request now permits **only SberCity** as the named case and asks the editor not to infer staff, founding year or street address. Current https://www.animationalerts.com/animation-studios-list/ does not yet contain objekts; the 19-Oct editor's future-intent reply is not a published card.
