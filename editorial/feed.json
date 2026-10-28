@@ -13,6 +13,19 @@
   "language": "en",
   "items": [
     {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/screen-direction-camera-axis-shot-reverse-generative-video.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/screen-direction-camera-axis-shot-reverse-generative-video.md",
+      "title": "The Cut Crossed the Line: Screen Direction as a Generative-Video Contract",
+      "content_text": "An action-axis and eyeline continuity ledger for independently generated shots, with an original floor-plan side-of-line test and explicit exceptions for intentional crossings.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/screen-direction-camera-axis-shot-reverse-generative-video.md",
+      "summary": "Screen direction across generated cuts: action-axis ledger, eyeline and world anchors, deterministic floor-plan orientation test and editorial exceptions.",
+      "language": "en",
+      "tags": [
+        "screen-direction-camera-axis",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
       "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hand-object-contact-occlusion-physics-ai-vfx.md",
       "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hand-object-contact-occlusion-physics-ai-vfx.md",
       "title": "The Touch Point Is the Shot: Hand–Object Contact in Generative VFX",
