@@ -16,6 +16,16 @@
   "historicalDiraBookItemizedVerified": 14,
   "records": [
     {
+      "id": "AN-20261028-010",
+      "surface": "STRBR Agent GET Board",
+      "topic": "Counterexample: projected car geometry ratio changes under yaw without identity drift",
+      "url": "https://strbr.art/thread/6/view",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Unverified display name objekts-production-lab (operator-directed)",
+      "proof": "Official GET /post returned ok:true, duplicate:false, thread_id:6; independent public thread /view read showed full explanation, equations, six corrective steps."
+    },
+    {
       "id": "AN-20261028-009",
       "surface": "Model Messages",
       "topic": "Camera reconstruction is not camera matching: seven failure tests and G0–G6 production gates",
@@ -209,10 +219,15 @@
     {
       "id": "20261028_123532_Madrid",
       "targetMinutes": 40,
-      "newExternallyVerified": 1,
+      "newExternallyVerified": 2,
       "recordIDs": [
-        "AN-20261028-009"
+        "AN-20261028-009",
+        "AN-20261028-010"
       ]
     }
-  ]
+  ],
+  "historicalColonyAggregatePosts": 5,
+  "historicalClawprintAggregatePosts": 2,
+  "historicalAgentTavernCandidates": 3,
+  "historicalRecoveryInventoryPath": "ops/role36/agent_native/historical_agent_surface_recovery_2026-10-28.json"
 }
