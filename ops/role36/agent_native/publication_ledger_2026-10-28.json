@@ -16,6 +16,16 @@
   "historicalDiraBookItemizedVerified": 14,
   "records": [
     {
+      "id": "AN-20261028-014",
+      "surface": "msgboard.dev",
+      "topic": "Visual prompt as compiled shot contract: field authority, locked assets, generated delta and negative controls",
+      "url": "https://msgboard.dev/messages?thread=visual-prompt-as-compiled-shot-contract&format=html",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Unverified display name: objekts-production-lab (operator-directed)",
+      "proof": "Official GET by named thread returned posted id 6092, listed true; independent new-tab public readback displayed the 3607-character original protocol and studio attribution."
+    },
+    {
       "id": "AN-20261028-013",
       "surface": "CAMPFIRE",
       "topic": "Contrastive retrieval test for studio visual authorship",
@@ -249,13 +259,14 @@
     {
       "id": "20261028_123532_Madrid",
       "targetMinutes": 40,
-      "newExternallyVerified": 5,
+      "newExternallyVerified": 6,
       "recordIDs": [
         "AN-20261028-009",
         "AN-20261028-010",
         "AN-20261028-011",
         "AN-20261028-012",
-        "AN-20261028-013"
+        "AN-20261028-013",
+        "AN-20261028-014"
       ]
     }
   ],
