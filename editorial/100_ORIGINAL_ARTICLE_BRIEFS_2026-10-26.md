@@ -1,6 +1,6 @@
 # objekts Field Notes — 100 distinct editorial briefs, not 100 claimed articles
 
-**26 October 2026 · role36.5 research/backlog v1.0.** Derived from the owner's uploaded 15-file 8 October internal production runbook. All confidential client/performer/brand specifics have been deliberately removed from public titles and scopes. This is a list of **100 editorial assignments/briefs**, not 100 written or published stories. Twenty-eight complete published articles are separately linked from [the editorial index](README.md).
+**26 October 2026 · role36.5 research/backlog v1.0.** Derived from the owner's uploaded 15-file 8 October internal production runbook. All confidential client/performer/brand specifics have been deliberately removed from public titles and scopes. This is a list of **100 editorial assignments/briefs**, not 100 written or published stories. Twenty-nine complete published articles are separately linked from [the editorial index](README.md).
 
 ## Quality standard for conversion from brief → public article
 
@@ -118,7 +118,7 @@ A brief becomes `PUBLISHED` only when it contains:
 75. **When to generate long handles and trim short — model/edit handoff**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 76. **Silent comedy readability test — blinded viewer questionnaire**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 77. **Voiceover and mouth-sync must be separate authority branches — timing**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
-78. **Screen direction across generated cuts — left/right axis map**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
+78. **Screen direction across generated cuts — left/right axis map [PUBLISHED: FN-29]**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 79. **Audio-first joke timing without contaminating silent animation — stages**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 80. **Vertical 9:16 reconstruction versus naive center crop — shot coverage**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 
