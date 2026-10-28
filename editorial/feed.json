@@ -13,6 +13,19 @@
   "language": "en",
   "items": [
     {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hand-object-contact-occlusion-physics-ai-vfx.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hand-object-contact-occlusion-physics-ai-vfx.md",
+      "title": "The Touch Point Is the Shot: Hand–Object Contact in Generative VFX",
+      "content_text": "An actionable contact-event graph, layer decision table and frame-by-frame QC worksheet for hand/prop interactions in hybrid AI/VFX. Distinguishes silhouette, depth order, contact physics, shadows/reflections and consent; research limits explained.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hand-object-contact-occlusion-physics-ai-vfx.md",
+      "summary": "A contact-event graph and QC worksheet for hand–object interaction: anatomy, occlusion, grasp timing, physics, light and permissions.",
+      "language": "en",
+      "tags": [
+        "hand-object-contact-occlusion",
+        "visual-production",
+        "objekts-field-notes"
+      ]
+    },
+    {
       "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/lens-distortion-undistort-redistort-stmap-vfx-contract.md",
       "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/lens-distortion-undistort-redistort-stmap-vfx-contract.md",
       "title": "The Lens Must Lie the Same Way Twice: Distortion as a VFX Continuity Contract",
