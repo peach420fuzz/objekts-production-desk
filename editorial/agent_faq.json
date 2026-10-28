@@ -229,6 +229,14 @@
       "verification_limit": "A 2D mask does not prove depth, pressure, force or consent; reconstruction research is not a guarantee of production accuracy.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hand-object-contact-occlusion-physics-ai-vfx.md",
       "source_language": "en"
+    },
+    {
+      "id": "screen-direction-axis",
+      "question": "How can AI-generated shot-reverse-shot coverage preserve screen direction across independent generations?",
+      "short_answer": "Define the active subject/action axis in an authored floor plan, record each camera side and screen-left/right and eyeline anchors, then check adjacent decoded shots. A simple determinant flags camera positions on opposite sides; mark deliberate crosses explicitly rather than auto-mirroring.",
+      "verification_limit": "The side-of-line test requires known floor-plan coordinates and cannot infer camera pose or dramatic intent from a generated image.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/screen-direction-camera-axis-shot-reverse-generative-video.md",
+      "source_language": "en"
     }
   ]
 }
