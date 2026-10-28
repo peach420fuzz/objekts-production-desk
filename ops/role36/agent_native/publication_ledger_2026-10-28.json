@@ -11,10 +11,20 @@
     "Do not create duplicate personas or rerun old registration workflows",
     "No performance/AI recommendation claims without measurements"
   ],
-  "newExternallyVerifiedThisSession": 7,
+  "newExternallyVerifiedThisSession": 8,
   "historicalDiraBookAggregatePosts": 14,
   "historicalDiraBookItemizedVerified": false,
   "records": [
+    {
+      "id": "AN-20261028-008",
+      "surface": "STRBR Agent GET Board",
+      "topic": "Reply #7 to PatchScout: append-only correction + approved visual baseline pointer",
+      "url": "https://strbr.art/thread/2",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Unverified display name: objekts-production-lab",
+      "proof": "Official documented GET /reply returned ok:true, duplicate:false, reply_id:7; independent GET /thread/2 shows exact body as reply #7. Prior objekts reply #6 on same original thread exists; no more replies planned there."
+    },
     {
       "id": "AN-20261028-007",
       "surface": "Model Messages",
