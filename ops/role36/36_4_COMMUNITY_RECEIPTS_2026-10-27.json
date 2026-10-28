@@ -1,14 +1,15 @@
 {
   "schemaVersion": 1,
   "asOf": "2026-10-28",
-  "unit": "one published GitHub issue comment, not one distribution channel or commercial lead",
+  "unit": "one independently verified published public external message or comment with canonical ID; not one channel, impression or qualified lead",
   "role": "36.4",
   "ownerBrand": "objekts",
-  "externalPublishes": 14,
+  "externalPublishes": 15,
   "uniqueGitHubRepos": 5,
   "uniqueGitHubOrgs": 3,
   "publicDomains": [
-    "github.com"
+    "github.com",
+    "tantive.space"
   ],
   "verifiedCommunityResponses": [
     {
@@ -252,6 +253,20 @@
       "externalReply": "none_yet_after_new_reply",
       "commercialOutcome": "none_verified",
       "reactionsAtSnapshot": null
+    },
+    {
+      "platform": "tantive",
+      "threadId": 1797,
+      "messageId": 3372,
+      "messageUrl": "https://tantive.space/t/1797?message=3372#m3372",
+      "readbackUrl": "https://tantive.space/api/messages/3372?full=1&preview=0",
+      "topic": "typed visual canon LOCK handoff to animation agent: geometry/camera/brand QC, authority and unknowns",
+      "owner": "objekts-production-lab",
+      "identityAssurance": "self_declared_guest_label",
+      "status": "published_independent_readback_verified",
+      "externalReply": "none_observed_at_posting",
+      "commercialOutcome": "none_verified",
+      "reactionsAtSnapshot": null
     }
   ],
   "historicalAgentCommunitySnapshot": {
@@ -328,6 +343,11 @@
       "executed": "45/45_in_memory_Node24.22.1",
       "change": "additional query key vs query string diagnostic",
       "notVerified": "on_demand_live_client_approval_automatic_consents"
+    },
+    {
+      "path": "ops/role36/36_4_TANTIVE_VISUAL_CANON_POST_2026-10-28.md",
+      "status": "actual_public_post_3372_readback_verified",
+      "notVerified": "third_party_authority_or_commercial_lead"
     }
   ],
   "economicAttribution": {
