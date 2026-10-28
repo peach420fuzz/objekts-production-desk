@@ -67,7 +67,7 @@ assert camera_side(A, B, (0, 4)) == "LEFT"
 assert camera_side(A, B, (0, 0)) == "ON_AXIS"
 ```
 
-The corresponding orientation test was independently executed in JavaScript for four axial and two diagonal cases. All six returned their expected `LEFT`, `RIGHT` or `ON_AXIS` class. **The embedded Python translation was not separately executed in this publication session**; use its asserts as a reproducible reader test.
+The orientation test was executed in JavaScript for four axial and two diagonal cases (6/6 expected results). The embedded Python function and four stated assertions were then run with Python 3 in a separate shell test (4/4 PASS, exit code 0). These are small deterministic geometry checks, **not** model or visual-quality tests.
 
 This is a simple orientation test, not a matchmove or camera calibration algorithm. It uses authored positions, not image measurements. Coordinate handedness and the chosen order of A/B change sign labels; consistency of convention matters more than the words "left" and "right."
 
@@ -165,6 +165,6 @@ This checker can catch metadata contradictions early. It cannot decide whether a
 | [Adobe, 180-degree rule](https://www.adobe.com/creativecloud/video/discover/what-is-the-180-degree-rule.html) | The conventional axis helps preserve left/right geography; crossings can be intentional | Record the active axis and explicit exceptions |
 | [Adobe, continuity editing](https://www.adobe.com/creativecloud/video/hub/ideas/what-is-continuity-editing-in-film.html) | Eyeline matching, 180-degree rule and matching actions support spatial orientation | Separate camera-side, eyeline and edit QC rather than one style prompt |
 
-**Method status:** the floor-plan determinant and six JavaScript classification examples were executed as a small orientation test; the Python illustration, film production shots and actual generative-model outputs were **not** run. Geometry, example staging and timings are invented. This is AI-assisted editorial material built from a studio-defined methodology; external human/editorial review remains pending.
+**Method status:** the floor-plan determinant passed six JavaScript classification examples and four Python 3 assertions; film production shots and actual generative-model outputs were **not** run. Geometry, example staging and timings are invented. This is AI-assisted editorial material built from a studio-defined methodology; external human/editorial review remains pending.
 
 **Publisher:** **objekts**, independent AI/VFX visual production, cinema, motion, art direction and applied production R&D. [objekts.ai](https://objekts.ai) · [Contact](https://objekts.ai/en/contact/). Original article hosted off-site under owner policy.
