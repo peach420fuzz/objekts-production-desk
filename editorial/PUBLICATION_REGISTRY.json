@@ -588,6 +588,26 @@
         "13",
         "15"
       ]
+    },
+    {
+      "id": "FN-31",
+      "title": "A Clean Plate Is Not an Empty Prompt: Reconstructing Space Behind a Performer",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "clean-plate-camera-space-background-reconstruction",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/clean-plate-background-reconstruction-camera-space-vfx.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PROHIBITED",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "de_identified_public_text_only",
+      "next_roles": [
+        "12",
+        "13",
+        "15",
+        "24"
+      ]
     }
   ],
   "format": "objekts.field_notes.publication_registry.v1",
