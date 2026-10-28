@@ -55,13 +55,15 @@ A distinct human-led service: script and shot breakdown before principal photogr
 
 ## Public AI/VFX Field Notes (off-site technical references)
 
+- [RU: AI/VFX bid by work packages, WBS and shared-asset cost controls](https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/ai-vfx-smeta-po-rabotam-wbs-bid-roles_ru.md)
+
 - [Clean-plate reconstruction for moving-camera AI/VFX](https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/clean-plate-background-reconstruction-camera-space-vfx.md)
 
 The studio maintains an original public technical corpus on GitHub, not on objekts.ai. These AI-assisted notes are independent studio methodology, not peer-reviewed papers, verified client cases or third-party recommendations. Human editorial signoff is required before republication elsewhere.
 
-- [31 full Field Notes: practical cinematic AI/VFX production](https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md)
-- [31 English short answers with specific verification limits](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/agent_faq.json)
-- [31 Russian short answers with specific verification limits](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/agent_faq_ru.json)
+- [32 full Field Notes: practical cinematic AI/VFX production](https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md)
+- [32 English short answers with specific verification limits](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/agent_faq.json)
+- [32 Russian short answers with specific verification limits](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/agent_faq_ru.json)
 - [JSON Feed of original notes](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json)
 - [Task-to-method router](https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/AGENT_INDEX.md)
 - [Rights/source and evidence status for each note](https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/PUBLICATION_REGISTRY.json)
