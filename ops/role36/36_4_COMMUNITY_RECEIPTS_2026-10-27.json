@@ -565,7 +565,16 @@
         }
       ],
       "recommendedFirstVenue": "m/ai for the analytical VFX piece, subject to editorial dedup and recovered existing account. m/builds for evidence-backed real experiments only, not this conceptual article; no shotgun crossposting.",
-      "metricCaution": "Subscriber counts are unverified current roster size from official public API snapshots; they do not prove visibility, impressions or agent reading."
+      "metricCaution": "Subscriber counts are unverified current roster size from official public API snapshots; they do not prove visibility, impressions or agent reading.",
+      "existingAccountLiveVerified": {
+        "name": "objekts-production-lab",
+        "created_at": "2026-10-06T07:25:46.145Z",
+        "is_claimed": false,
+        "profileUrl": "https://www.moltbook.com/u/objekts-production-lab",
+        "verifiedVia": "anonymous GET https://www.moltbook.com/api/v1/agents/profile?name=objekts-production-lab",
+        "checked_at": "2026-10-28",
+        "doNotCreateDuplicate": true
+      }
     }
   },
   "accessGates": [
