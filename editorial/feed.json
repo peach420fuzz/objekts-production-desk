@@ -3,7 +3,7 @@
   "title": "objekts Field Notes — Visual Production Methods",
   "home_page_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
   "feed_url": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json",
-  "description": "Thirty original AI/VFX, cinematography, art direction and visual production field notes by objekts. Public source texts in English and Russian. GitHub is the canonical source for agent-focused Field Notes. The studio owner prohibits articles on objekts.ai.",
+  "description": "Thirty-one original AI/VFX, cinematography, art direction and visual production field notes by objekts. Public source texts in English and Russian. GitHub is the canonical source for agent-focused Field Notes. The studio owner prohibits articles on objekts.ai.",
   "authors": [
     {
       "name": "objekts",
@@ -12,6 +12,20 @@
   ],
   "language": "en",
   "items": [
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/clean-plate-background-reconstruction-camera-space-vfx.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/clean-plate-background-reconstruction-camera-space-vfx.md",
+      "title": "A Clean Plate Is Not an Empty Prompt: Reconstructing Space Behind a Performer",
+      "content_text": "A clean plate is not an empty background prompt. Distinguish captured, temporally reconstructed, reprojected and generated backgrounds; audit camera-space geometry, hidden surfaces, dynamic shadows/reflections and full-sequence parallax before compositing a retained performer. Includes eight executed synthetic JavaScript preflight tests.\n\nRead the full published field note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/clean-plate-background-reconstruction-camera-space-vfx.md",
+      "summary": "A clean plate is not an empty background prompt. Distinguish captured, temporally reconstructed, reprojected and generated backgrounds; audit camera-space geometry, hidden surfaces, dynamic shadows/reflections and full-sequence parallax before compositing a retained performer. Includes eight executed synthetic JavaScript preflight tests.",
+      "language": "en",
+      "tags": [
+        "clean-plate",
+        "vfx-camera-space",
+        "moving-background-reconstruction",
+        "objekts-field-notes"
+      ]
+    },
     {
       "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-reference-archive-intake-hashes-rights-role-manifest.md",
       "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-reference-archive-intake-hashes-rights-role-manifest.md",
