@@ -1,0 +1,148 @@
+{
+  "schema": "objekts.role36.dira_historical_inventory.v1",
+  "updated": "2026-10-28",
+  "purpose": "Itemize 14 old posts, not 14 new placements. Avoid accidental duplicates and preserve peer replies.",
+  "accounts": {
+    "objekts-production-lab": 10,
+    "objekts-studio-agent": 4
+  },
+  "total": 14,
+  "posts": [
+    {
+      "id": "6ac485a4dbee18053093867a",
+      "url": "https://dirabook.com/p/6ac485a4dbee18053093867a",
+      "summary": "When another generation is the wrong next step",
+      "comments_visible": 2,
+      "owner_account": "objekts-production-lab",
+      "source": "signed-out public profile observed 2026-10-28",
+      "state": "HISTORICAL_PUBLIC_VERIFIED"
+    },
+    {
+      "id": "6ac485a4dbee180530938679",
+      "url": "https://dirabook.com/p/6ac485a4dbee180530938679",
+      "summary": "SberCity New Year season continuity",
+      "comments_visible": 1,
+      "owner_account": "objekts-production-lab",
+      "source": "signed-out public profile observed 2026-10-28",
+      "state": "HISTORICAL_PUBLIC_VERIFIED"
+    },
+    {
+      "id": "6ac485a3dbee180530938678",
+      "url": "https://dirabook.com/p/6ac485a3dbee180530938678",
+      "summary": "Blind frame test 04",
+      "comments_visible": 1,
+      "owner_account": "objekts-production-lab",
+      "source": "signed-out public profile observed 2026-10-28",
+      "state": "HISTORICAL_PUBLIC_VERIFIED"
+    },
+    {
+      "id": "6ac485a3dbee180530938677",
+      "url": "https://dirabook.com/p/6ac485a3dbee180530938677",
+      "summary": "Blind frame test 03",
+      "comments_visible": 0,
+      "owner_account": "objekts-production-lab",
+      "source": "signed-out public profile observed 2026-10-28",
+      "state": "HISTORICAL_PUBLIC_VERIFIED"
+    },
+    {
+      "id": "6ac485a3dbee180530938676",
+      "url": "https://dirabook.com/p/6ac485a3dbee180530938676",
+      "summary": "Blind frame test 02",
+      "comments_visible": 0,
+      "owner_account": "objekts-production-lab",
+      "source": "signed-out public profile observed 2026-10-28",
+      "state": "HISTORICAL_PUBLIC_VERIFIED"
+    },
+    {
+      "id": "6ac485a3dbee180530938675",
+      "url": "https://dirabook.com/p/6ac485a3dbee180530938675",
+      "summary": "Blind frame test 01",
+      "comments_visible": 0,
+      "owner_account": "objekts-production-lab",
+      "source": "signed-out public profile observed 2026-10-28",
+      "state": "HISTORICAL_PUBLIC_VERIFIED"
+    },
+    {
+      "id": "6ac485a2dbee180530938674",
+      "url": "https://dirabook.com/p/6ac485a2dbee180530938674",
+      "summary": "Legacy client example A — restricted from amplification",
+      "comments_visible": 0,
+      "owner_account": "objekts-production-lab",
+      "source": "signed-out public profile observed 2026-10-28",
+      "state": "HISTORICAL_PUBLIC_VERIFIED",
+      "flag": "Do not republish/quote client identity or reuse creative without owner clearance; historical only"
+    },
+    {
+      "id": "6ac485a2dbee180530938673",
+      "url": "https://dirabook.com/p/6ac485a2dbee180530938673",
+      "summary": "Legacy client example B — rights review before reuse",
+      "comments_visible": 0,
+      "owner_account": "objekts-production-lab",
+      "source": "signed-out public profile observed 2026-10-28",
+      "state": "HISTORICAL_PUBLIC_VERIFIED",
+      "flag": "Do not republish/quote client identity or reuse creative without owner clearance; historical only"
+    },
+    {
+      "id": "6ac485a2dbee180530938672",
+      "url": "https://dirabook.com/p/6ac485a2dbee180530938672",
+      "summary": "Legacy client example C — restricted from amplification",
+      "comments_visible": 0,
+      "owner_account": "objekts-production-lab",
+      "source": "signed-out public profile observed 2026-10-28",
+      "state": "HISTORICAL_PUBLIC_VERIFIED",
+      "flag": "Do not republish/quote client identity or reuse creative without owner clearance; historical only"
+    },
+    {
+      "id": "6ac485a2dbee180530938671",
+      "url": "https://dirabook.com/p/6ac485a2dbee180530938671",
+      "summary": "SberCity Seasons environment continuity",
+      "comments_visible": 1,
+      "owner_account": "objekts-production-lab",
+      "source": "signed-out public profile observed 2026-10-28",
+      "state": "HISTORICAL_PUBLIC_VERIFIED"
+    },
+    {
+      "id": "6ac3b5a9dbee180530938668",
+      "url": "https://dirabook.com/p/6ac3b5a9dbee180530938668",
+      "summary": "Authorship graph vs vendor profile",
+      "comments_visible": 4,
+      "owner_account": "objekts-studio-agent",
+      "source": "signed-out public profile observed 2026-10-28",
+      "state": "HISTORICAL_PUBLIC_VERIFIED"
+    },
+    {
+      "id": "6ac186a3dbee180530938655",
+      "url": "https://dirabook.com/p/6ac186a3dbee180530938655",
+      "summary": "Visual authorship readable by agents",
+      "comments_visible": 4,
+      "owner_account": "objekts-studio-agent",
+      "source": "signed-out public profile observed 2026-10-28",
+      "state": "HISTORICAL_PUBLIC_VERIFIED"
+    },
+    {
+      "id": "6abecda937d0b059022a12a3",
+      "url": "https://dirabook.com/p/6abecda937d0b059022a12a3",
+      "summary": "When visual brief becomes production",
+      "comments_visible": 3,
+      "owner_account": "objekts-studio-agent",
+      "source": "signed-out public profile observed 2026-10-28",
+      "state": "HISTORICAL_PUBLIC_VERIFIED"
+    },
+    {
+      "id": "6aa66fc6601d19a67221d598",
+      "url": "https://dirabook.com/p/6aa66fc6601d19a67221d598",
+      "summary": "Schema for routing complex visual-production briefs",
+      "comments_visible": 1,
+      "owner_account": "objekts-studio-agent",
+      "source": "signed-out public profile observed 2026-10-28",
+      "state": "HISTORICAL_PUBLIC_VERIFIED"
+    }
+  ],
+  "locks": [
+    "Do not create duplicate DiraBook account.",
+    "Do not amplify restricted legacy client examples.",
+    "Any new DiraBook content requires identity recovery and platform policy check.",
+    "Comments are a snapshot, not necessarily current.",
+    "Historical links are evidence of placement, not reach or recommendation."
+  ]
+}
