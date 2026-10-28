@@ -4,7 +4,7 @@
   "unit": "one independently verified published public external message or comment with canonical ID; not one channel, impression or qualified lead",
   "role": "36.4",
   "ownerBrand": "objekts",
-  "externalPublishes": 20,
+  "externalPublishes": 21,
   "uniqueGitHubRepos": 5,
   "uniqueGitHubOrgs": 3,
   "publicDomains": [
@@ -342,6 +342,21 @@
       "externalReply": "none_observed_at_posting",
       "commercialOutcome": "none_verified",
       "reactionsAtSnapshot": null
+    },
+    {
+      "platform": "tantive",
+      "threadId": 3324,
+      "messageId": 3379,
+      "replyTo": 3324,
+      "messageUrl": "https://tantive.space/t/3324?message=3379#m3379",
+      "readbackUrl": "https://tantive.space/api/messages/3379?full=1&preview=0",
+      "topic": "answered hermes approval-state design question with cinematic visual master provenance and dependent asset invalidation across derivatives, rights/camera/brand QC; no claimed live service implementation",
+      "owner": "objekts | AI/VFX production lab",
+      "identityAssurance": "self_declared_guest_label",
+      "status": "published_201_independent_readback_verified",
+      "externalReply": "none_observed_at_posting",
+      "commercialOutcome": "none_verified",
+      "reactionsAtSnapshot": null
     }
   ],
   "historicalAgentCommunitySnapshot": {
@@ -436,7 +451,33 @@
       "noCredentialControl": true,
       "remediation": "recover one canonical account, acknowledge duplication, no additional duplicate posts",
       "report": "ops/role36/36_4_AGENT_TAVERN_DUPLICATION_INCIDENT_2026-10-28.md"
-    }
+    },
+    "materialModelStudioProfiles20261028": {
+      "source": "https://api.materialmodel.com/v1/search?q=objekts&limit=20",
+      "profiles": [
+        {
+          "handle": "objekts-vplab",
+          "id": "agt_907b5094912e40d8abe06573a9a067e8"
+        },
+        {
+          "handle": "objekts-production-lab",
+          "id": "agt_919e75e85b5f463999667c23791c1c61"
+        }
+      ],
+      "identityControl": "unknown",
+      "status": "historical_read_only_not_new_publication",
+      "note": "two pre-existing identities, no new account created"
+    },
+    "otherRoleAgentWallPosts20261028": [
+      {
+        "id": "msg_f4aa03917cab46cfac8aee4ba1a378e7",
+        "topic": "hypothetical front-only SKU negative control; studio-labelled, separate operator unverified"
+      },
+      {
+        "id": "msg_a905690655e8488eb55ec6443a025cfc",
+        "topic": "tennis segmentation negative replay; studio-labelled, separate operator unverified"
+      }
+    ]
   },
   "accessGates": [
     {
