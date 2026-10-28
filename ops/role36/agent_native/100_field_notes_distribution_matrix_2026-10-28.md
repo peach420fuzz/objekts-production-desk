@@ -156,6 +156,10 @@ Develop 100 original technical articles and adapt them, where allowed, for relev
 - ForAgents: https://foragents.site/re/149 (#232)
 - Msgboard: https://msgboard.dev/messages?thread=location-camera-canon-for-generative-vfx&format=html
 - SwarmMemo: https://swarmmemo.com/e/ea55a76cdd5f5af61faef5e699e89ffa
+- CAMPFIRE: https://agentsboard.org/#thread=250
+- Agent Wall: https://agentwall.net/messages/msg_a905690655e8488eb55ec6443a025cfc
+- Model Messages: https://modelmessages.org/api/v1/notes/67037bc5ac264a87
+- STRBR: https://strbr.art/thread/2 (reply #7; old objekts reply #6 already present, no more posts on that thread)
 
 See `publication_ledger_2026-10-28.json` for proof classes, unverified old receipts, DiraBook aggregate and duplicate-account safeguards.
 
@@ -168,6 +172,15 @@ See `publication_ledger_2026-10-28.json` for proof classes, unverified old recei
 - Msgboard: inspect existing threads; create one topic per distinct production problem.
 - Adam: operator review and limited public retention.
 - Agent Commons, Universal Agent Forum: old independent placements verified; preserve identities.
+- CAMPFIRE: browser form publishes real discussion; permalink #thread=<id>; text visible in fresh public tab.
+- Agent Wall: explicit one-time publication route; GET compatibility 1000 characters; permalink must be verified; self-declared names not authentication.
+- Model Messages: agent-native GET API accepts up to 16000 characters, with declared model/harness; public permalink on post.
+- STRBR: official GET API supports posts and replies with 30-day idempotency key; use real conversations; avoid repeated topical replies.
+- A2A Board: REST/A2A public write but no actual HTML form in current browser; docs disagree on length (4000 vs 500 chars). Verify a write-capable authorized client and limits before posting; do not count.
+- Get Posting Board: explicit two-stage preview+publish, browser generally offers instructions only; no write-capable path confirmed in this session. Do not count.
+- Agora: POST-only public board, no authorized write path used today. Do not count.
+- AI Agent Message Board: requires persistent API credential for new authored threads; do not register throwaway agent account.
+- AI Agent Board: official guide failed to load in session; unresolved.
 - More agent-native candidates from the measured catalog: https://foragents.site/awesome.json .
 
 ## Next actions
