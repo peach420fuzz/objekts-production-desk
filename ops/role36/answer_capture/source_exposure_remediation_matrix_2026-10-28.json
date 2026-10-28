@@ -1,0 +1,331 @@
+{
+  "schema_version": "1.0",
+  "owner": "OBJEKTS 36.2 LLM Answer & Citation Capture",
+  "as_of_utc": "2026-10-28",
+  "purpose": "Evidence-based remediation map for owner-disallowed outward case claims and source-to-model answer contamination. Audit artifact ONLY, not promotional copy, LLM citation evidence, or proof of completed edit.",
+  "policy": {
+    "disallowed_outward_case_names": [
+      "Cordiant",
+      "Made Sense",
+      "SmartFruits"
+    ],
+    "allowed_public_evidence_qualified": [
+      "SberCity",
+      "Magnit-2026",
+      "Voting (Stepan)",
+      "Auto.ru development images 019/020: development only, never claim delivered campaign"
+    ],
+    "private_archives": "Preserve original records privately for traceability; any public correction must be performed or approved by owning lane."
+  },
+  "status_codes": {
+    "DIRECT_PUBLIC_FETCH": "Public source content was actually fetched/inspected",
+    "GITHUB_API_CONFIRMED": "Canonical GitHub source or public issue body inspected via API",
+    "SEARCH_SNIPPET_ONLY": "Search extract suggests contamination; page-level occurrence has not been reverified",
+    "OWNER_ACTION_REQUIRED": "No correction performed by role36.2",
+    "UNKNOWN_EDIT_RIGHTS": "Do not assert edit capability without owning account/API"
+  },
+  "sources": [
+    {
+      "id": "SRC001",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/README.md",
+      "kind": "first_party_canonical_repository_readme",
+      "verified": "GITHUB_API_CONFIRMED",
+      "disallowed": [
+        "Cordiant",
+        "SmartFruits"
+      ],
+      "where": "README lines 140,142,147 in 28-Oct audit",
+      "propagation": "Mirrored by external MCP/agent directories",
+      "action_owner": "36 HQ/repository owner",
+      "priority": "P0",
+      "action": "Remove public success claims and dependent citations; preserve private provenance; verify canonical text and mirror refresh",
+      "done": false
+    },
+    {
+      "id": "SRC002",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/skills/visual-production-evidence-brief/SKILL.md",
+      "kind": "first_party_canonical_agent_skill",
+      "verified": "GITHUB_API_CONFIRMED",
+      "disallowed": [
+        "Cordiant",
+        "SmartFruits"
+      ],
+      "where": "SKILL lines 57-58; observed blob SHA 8b75f706b33e2b56c6430d66c58ea2d06421bea6",
+      "propagation": "Skill directory indexed copy, agents may retrieve instruction body",
+      "action_owner": "36 HQ/skill owner",
+      "priority": "P0",
+      "action": "Rewrite examples using approved public projects or neutral anonymous patterns; publish new version and verify mirrored copy",
+      "done": false
+    },
+    {
+      "id": "SRC003",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/issues",
+      "kind": "first_party_public_issue_history",
+      "verified": "GITHUB_API_CONFIRMED",
+      "disallowed": [
+        "Cordiant",
+        "SmartFruits"
+      ],
+      "where": "12 public Production Lab issues: Cordiant #4 #16 #37 #38 #39 #40; SmartFruits #2 #14 #29 #30 #31 #32. Diagnostic mentions #119/#122 separately.",
+      "propagation": "Issue search, GitHub API and snippets",
+      "action_owner": "36 HQ/product issue owners",
+      "priority": "P0",
+      "action": "Review each public issue for removal/redaction, edit history and link integrity; do not silently delete user discussions",
+      "done": false
+    },
+    {
+      "id": "SRC004",
+      "url": "https://objekts.ai/llms.txt",
+      "kind": "first_party_machine_readable_discovery",
+      "verified": "DIRECT_PUBLIC_FETCH",
+      "disallowed": [
+        "Cordiant",
+        "Made Sense",
+        "SmartFruits"
+      ],
+      "where": "Lines 37-39 on a public fetch crawled 28 Oct",
+      "propagation": "Direct retrieval by answer engines/agents, not measured ingestion",
+      "action_owner": "12 Search & AI Visibility / site owner",
+      "priority": "P0",
+      "action": "Remove banned case rows from canonical llms.txt, deploy, verify fresh 200 content and versioned fetch",
+      "done": false
+    },
+    {
+      "id": "SRC005",
+      "url": "https://objekts.ai/",
+      "kind": "first_party_public_homepage",
+      "verified": "DIRECT_PUBLIC_FETCH",
+      "disallowed": [
+        "Cordiant",
+        "Made Sense",
+        "SmartFruits"
+      ],
+      "where": "Shared global navigation around line14, portfolio tiles around lines53-63, and image caption around line158; public fetch crawled 28 Oct",
+      "propagation": "Website crawl and internal sitewide link graph",
+      "action_owner": "12 / web site owner",
+      "priority": "P0",
+      "action": "Coordinate with existing website issue #143 to remediate global navigation, portfolio/captions and assets without changing site IA unasked",
+      "done": false
+    },
+    {
+      "id": "SRC006",
+      "url": "https://objekts.ai/services/film-series-vfx",
+      "kind": "first_party_public_service_page",
+      "verified": "DIRECT_PUBLIC_FETCH",
+      "disallowed": [
+        "Cordiant",
+        "Made Sense",
+        "SmartFruits"
+      ],
+      "where": "Shared global navigation around line14 on 28-Oct public fetch",
+      "propagation": "Sitewide repeated misleading evidence",
+      "action_owner": "12 / web site owner",
+      "priority": "P0",
+      "action": "Verify global shared navigation fix on this and representative service pages",
+      "done": false
+    },
+    {
+      "id": "SRC007",
+      "url": "https://www.promoteindex.com/skills/commercial-ai-vfx-shot-feasibility-supplier-evid",
+      "kind": "external_redistribution_agent_skill",
+      "verified": "DIRECT_PUBLIC_FETCH",
+      "disallowed": [
+        "Cordiant",
+        "SmartFruits"
+      ],
+      "where": "Reproduced skills evidence text in inspected public page",
+      "propagation": "Agent-readable directory mirror; views are not installations or answer citations",
+      "action_owner": "36.1/36.5 directory listing account owner",
+      "priority": "P0",
+      "action": "After canonical skill correction, request/edit promoted entry, provide timestamped before-after captures, avoid unsupported reach claims",
+      "edit_mechanism": "Unknown until authenticated owner verifies",
+      "done": false
+    },
+    {
+      "id": "SRC008",
+      "url": "https://mcpservers.org/servers/peach420fuzz/objekts-production-desk",
+      "kind": "external_repository_readme_mirror",
+      "verified": "DIRECT_PUBLIC_FETCH",
+      "disallowed": [
+        "Cordiant",
+        "SmartFruits"
+      ],
+      "where": "Mirrored repository description/README",
+      "propagation": "MCP search result can re-expose old canonical content",
+      "action_owner": "36.1 agent distribution + repo owner",
+      "priority": "P0",
+      "action": "Update source README and inspect whether crawler refreshes automatically; contact directory maintainer if stale",
+      "edit_mechanism": "Crawler refresh unverified",
+      "done": false
+    },
+    {
+      "id": "SRC009",
+      "url": "https://odel.app/modules/objekts/production-desk",
+      "kind": "external_repository_readme_mirror",
+      "verified": "DIRECT_PUBLIC_FETCH",
+      "disallowed": [
+        "Cordiant",
+        "SmartFruits"
+      ],
+      "where": "Public web result with mirrored README content",
+      "propagation": "Secondary MCP catalog",
+      "action_owner": "36.1 agent distribution + repo owner",
+      "priority": "P0",
+      "action": "Canonical README correction followed by public mirror verification and maintainers if necessary",
+      "edit_mechanism": "Unknown",
+      "done": false
+    },
+    {
+      "id": "SRC010",
+      "url": "https://clawprint.org/p/how-an-agent-should-route-a-complex-visual-production-brief",
+      "kind": "first_party_on_external_publication",
+      "verified": "DIRECT_PUBLIC_FETCH",
+      "disallowed": [
+        "Cordiant",
+        "Made Sense",
+        "SmartFruits"
+      ],
+      "where": "13 Sep article, prohibited examples in audit",
+      "propagation": "Agent community search and excerpts",
+      "action_owner": "36.4/36.5 editorial publishing account owner",
+      "priority": "P1",
+      "action": "Use documented platform version/edit path if account owner confirms; preserve correction log and avoid redirecting to new unapproved claims",
+      "edit_mechanism": "Clawprint proof/version semantics seen, editing permission not tested",
+      "done": false
+    },
+    {
+      "id": "SRC011",
+      "url": "https://clawprint.org/p/when-a-studio-is-legible-as-a-vendor-but-invisible-as-an-author",
+      "kind": "first_party_on_external_publication",
+      "verified": "DIRECT_PUBLIC_FETCH",
+      "disallowed": [
+        "Cordiant",
+        "Made Sense",
+        "SmartFruits"
+      ],
+      "where": "3-4 Oct public article inspected during 28-Oct audit",
+      "propagation": "Public author/editorial article",
+      "action_owner": "36.4/36.5 editorial publishing account owner",
+      "priority": "P1",
+      "action": "Owner review and platform-native revision or a visible correction if edit impossible",
+      "edit_mechanism": "Unknown for this account",
+      "done": false
+    },
+    {
+      "id": "SRC012",
+      "url": "https://dirabook.com/a/objekts-production-lab",
+      "kind": "first_party_on_external_agent_board",
+      "verified": "DIRECT_PUBLIC_FETCH",
+      "disallowed": [
+        "Cordiant",
+        "SmartFruits"
+      ],
+      "where": "Agent board profile/feed content",
+      "propagation": "Public agent-to-agent surface",
+      "action_owner": "36.4 agent community owner",
+      "priority": "P1",
+      "action": "Audit source post IDs, use documented profile patch where applicable; official docs did not establish public post edit/delete, so request moderation/correction instead of inventing API",
+      "edit_mechanism": "Official DiraBook skill documents profile patch, not post edit/delete",
+      "done": false
+    },
+    {
+      "id": "SRC013",
+      "url": "https://www.sortlist.es/agency/objekts",
+      "kind": "first_party_external_commercial_profile",
+      "verified": "DIRECT_PUBLIC_FETCH",
+      "disallowed": [
+        "Cordiant",
+        "Made Sense",
+        "SmartFruits"
+      ],
+      "where": "Public portfolio/profile descriptions",
+      "propagation": "Third-party B2B search and profile evidence",
+      "action_owner": "36.3 B2B directories / profile account owner",
+      "priority": "P0",
+      "action": "Edit portfolio items using account access, then signed-out live fetch; Sortlist official help describes editing works",
+      "edit_mechanism": "Official help article https://help.sortlist.com/en/articles/1714406-how-to-add-new-works-on-your-profile",
+      "done": false
+    },
+    {
+      "id": "SRC014",
+      "url": "https://moltychan.org/work/9",
+      "kind": "first_party_on_external_agent_board",
+      "verified": "SEARCH_SNIPPET_ONLY",
+      "disallowed": [
+        "Cordiant",
+        "SmartFruits"
+      ],
+      "where": "Public indexed excerpt in 28-Oct audit; direct detailed author edit not tested",
+      "propagation": "Secondary agent-network excerpt",
+      "action_owner": "36.4 agent community owner",
+      "priority": "P2",
+      "action": "First reopen exact work URL and record live text; then identify platform-native correction route",
+      "edit_mechanism": "Unknown",
+      "done": false
+    },
+    {
+      "id": "SRC015",
+      "url": "https://vimeo.com/1155979753",
+      "kind": "first_party_external_media_title",
+      "verified": "SEARCH_SNIPPET_ONLY",
+      "disallowed": [
+        "Made Sense"
+      ],
+      "where": "Search result for public title observed 28 Oct; needs signed-out page-level access confirmation",
+      "propagation": "Video search snippets and media metadata",
+      "action_owner": "36.5/media publishing owner",
+      "priority": "P1",
+      "action": "Verify exact video title/description and client approval; change metadata or privacy only with media owner",
+      "edit_mechanism": "Account-owner only, not exercised",
+      "done": false
+    },
+    {
+      "id": "SRC016",
+      "url": "https://agentboard.ai/",
+      "kind": "external_agent_board_search_result",
+      "verified": "SEARCH_SNIPPET_ONLY",
+      "disallowed": [
+        "Cordiant",
+        "SmartFruits"
+      ],
+      "where": "Search snippet, exact item URL and direct article not validated",
+      "propagation": "Unproven until direct source inspection",
+      "action_owner": "36.4 agent community owner",
+      "priority": "P3",
+      "action": "Resolve exact post URL and fetch before assigning edit owner",
+      "edit_mechanism": "Unknown",
+      "done": false
+    },
+    {
+      "id": "SRC017",
+      "url": "https://msgboard.dev/",
+      "kind": "external_agent_board_search_result",
+      "verified": "SEARCH_SNIPPET_ONLY",
+      "disallowed": [
+        "Cordiant",
+        "SmartFruits"
+      ],
+      "where": "Search snippet, direct page occurrence not confirmed",
+      "propagation": "Unproven until direct source inspection",
+      "action_owner": "36.4 agent community owner",
+      "priority": "P3",
+      "action": "Resolve original message/thread URL and direct fetch",
+      "edit_mechanism": "Unknown",
+      "done": false
+    }
+  ],
+  "coordination": {
+    "github_issue_source": "https://github.com/peach420fuzz/objekts-production-desk/issues/162",
+    "site_owner_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/143",
+    "measurement_regression": "ops/role36/answer_capture/frozen_buyer_answer_regression_suite_2026-10-27.json",
+    "direct_model_retest_gate": "Only after actual source fixes and independent access to model answers; do not treat source cleanup as recommendation lift."
+  },
+  "counts": {
+    "source_rows": 17,
+    "direct_public_fetch": 10,
+    "github_api_confirmed": 3,
+    "search_snippet_only": 4,
+    "completed_source_remediations": 0
+  },
+  "limits": "Sources here are audit signals, not external publication by role36.2; individual third-party editing rights, recrawl lag, and downstream LLM uptake are unknown. No removal, edit, model retest or lead has been claimed."
+}
