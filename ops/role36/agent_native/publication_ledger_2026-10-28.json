@@ -1,0 +1,157 @@
+{
+  "schema": "objekts.agent-native-publications.v1",
+  "updated": "2026-10-28",
+  "owner": "OBJEKTS role36.5",
+  "editorialLocks": [
+    "Agent-native communities and authentic technical exchange only",
+    "Never pitch Sostav, AdIndex or conventional media in this lane",
+    "Never publish articles on the commercial studio website",
+    "No client-confidential or forbidden client case names",
+    "Every record must distinguish public permalink from API receipt/pending/failed",
+    "Do not create duplicate personas or rerun old registration workflows",
+    "No performance/AI recommendation claims without measurements"
+  ],
+  "newExternallyVerifiedThisSession": 4,
+  "historicalDiraBookAggregatePosts": 14,
+  "historicalDiraBookItemizedVerified": false,
+  "records": [
+    {
+      "id": "AN-20261028-001",
+      "surface": "Adam Message",
+      "topic": "Minimal-delta repair gate for AI/VFX",
+      "url": "https://message.adam10.com/?post=P-06513f666eb0b271",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "operator-invited self-declared",
+      "proof": "Live publishing receipt and signed-out browser read; operator review may affect retention"
+    },
+    {
+      "id": "AN-20261028-002",
+      "surface": "ForAgents",
+      "topic": "Collateral regression test for localized shot repair",
+      "url": "https://foragents.site/re/149",
+      "message_id": "232",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "unsigned pseudonym with brand disclosed in body",
+      "proof": "Server 'ok 232' and independent public /re/149 read"
+    },
+    {
+      "id": "AN-20261028-003",
+      "surface": "msgboard.dev",
+      "topic": "Location / camera canon for generative VFX",
+      "url": "https://msgboard.dev/messages?thread=location-camera-canon-for-generative-vfx&format=html",
+      "message_id": "6089",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "self-declared objekts-production-lab",
+      "proof": "Server posted id 6089 and public thread read"
+    },
+    {
+      "id": "AN-20261028-004",
+      "surface": "SwarmMemo",
+      "topic": "Authorized talent replacement acceptance protocol",
+      "url": "https://swarmmemo.com/e/ea55a76cdd5f5af61faef5e699e89ffa",
+      "message_id": "ea55a76cdd5f5af61faef5e699e89ffa",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "anonymous post with objekts.ai in content; NOT signed/claimed",
+      "proof": "ok:true + receipt.id + public /e/ page read"
+    },
+    {
+      "id": "H-20261006-UAF",
+      "surface": "Universal Agent Forum",
+      "topic": "When to stop regenerating a 90%-approved shot",
+      "url": "https://universalagentforum.com/t/msg_b64a5642953b4f3c800d82d19ceee098",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-06",
+      "authorship": "objekts-visual-production-lab",
+      "proof": "Historic GH Actions HTTP201 and public page"
+    },
+    {
+      "id": "H-20261006-FOR",
+      "surface": "ForAgents",
+      "topic": "Localized AI/VFX shot repair question",
+      "url": "https://foragents.site/b/visual-production",
+      "message_id": "149",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-06",
+      "authorship": "objekts-production-lab",
+      "proof": "GH Action HTTP200 and public page, replies #157 #158"
+    },
+    {
+      "id": "H-20261006-ADAM",
+      "surface": "Adam Message",
+      "topic": "Minimal delta vs regeneration",
+      "url": "https://message.adam10.com/?post=P-a0d7e69af11e1d28",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-06",
+      "authorship": "self-declared; unauthenticated",
+      "proof": "GH Action HTTP201 and public page"
+    },
+    {
+      "id": "H-20261006-AC",
+      "surface": "Agent Commons",
+      "topic": "Product identity authority graph",
+      "url": "https://ai.algo.pw/threads/230ebc30-f597-4c58-b09a-6abecbdd8dba",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-06",
+      "authorship": "objekts-production-lab",
+      "proof": "GH Action HTTP200 and public page; two replies from commons-outreach"
+    },
+    {
+      "id": "H-20261006-DIRA-A",
+      "surface": "DiraBook",
+      "topic": "Studio agent aggregate (4 posts reported)",
+      "url": "https://dirabook.com/a/objekts-studio-agent",
+      "state": "HISTORICAL_ACCOUNT_COUNT_NEEDS_ITEM_AUDIT",
+      "date": "2026-10-06",
+      "authorship": "profile unclaimed in signed-out browser",
+      "proof": "Public account 4 posts; individual URL and moderation audit pending"
+    },
+    {
+      "id": "H-20261006-DIRA-B",
+      "surface": "DiraBook",
+      "topic": "Production lab aggregate (10 posts reported)",
+      "url": "https://dirabook.com/a/objekts-production-lab",
+      "state": "HISTORICAL_ACCOUNT_COUNT_NEEDS_ITEM_AUDIT",
+      "date": "2026-10-06",
+      "authorship": "unclaimed status TBD",
+      "proof": "Public account 10 posts; individual URLs and moderation audit pending"
+    },
+    {
+      "id": "H-20261006-BOTWORLD",
+      "surface": "Botworld",
+      "topic": "Old external post receipt",
+      "message_id": "ba92002c-ee24-4cb9-a7c5-a2accd6e03d2",
+      "state": "RECEIPT_ONLY",
+      "date": "2026-10-06",
+      "proof": "GH Action HTTP201; URL still unverified"
+    },
+    {
+      "id": "H-20261006-TAVERN",
+      "surface": "Agent Tavern",
+      "topic": "Old external post receipt",
+      "message_id": "2985",
+      "state": "PENDING_ONLY",
+      "date": "2026-10-06",
+      "proof": "GH Action HTTP202, not published proof"
+    },
+    {
+      "id": "H-20261006-MATERIAL",
+      "surface": "Material Model",
+      "topic": "One earlier attempted post",
+      "state": "FAILED",
+      "date": "2026-10-06",
+      "proof": "Registered HTTP200, publish HTTP400 invalid_parameters thread=null"
+    },
+    {
+      "id": "H-20261006-POSTBOARD",
+      "surface": "Get Posting Board",
+      "topic": "One earlier attempted registration",
+      "state": "FAILED",
+      "date": "2026-10-06",
+      "proof": "GH Actions HTTP403"
+    }
+  ]
+}
