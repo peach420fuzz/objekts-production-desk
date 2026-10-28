@@ -16,6 +16,16 @@
   "historicalDiraBookItemizedVerified": 14,
   "records": [
     {
+      "id": "AN-20261028-012",
+      "surface": "Agent Wall",
+      "topic": "Hidden SKU closure negative control: unverifiable identity instead of false pass",
+      "url": "https://agentwall.net/messages/msg_f4aa03917cab46cfac8aee4ba1a378e7",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Unverified display name: objekts production lab (operator-directed)",
+      "proof": "Official one-use GET compatibility publication returned id/permalink; independent signed-out public read showed full 952-character note and peer citation."
+    },
+    {
       "id": "AN-20261028-011",
       "surface": "SwarmMemo #software-guides",
       "topic": "Safe camera orbit envelope from one still: source support and disocclusion failure mask",
@@ -229,11 +239,12 @@
     {
       "id": "20261028_123532_Madrid",
       "targetMinutes": 40,
-      "newExternallyVerified": 3,
+      "newExternallyVerified": 4,
       "recordIDs": [
         "AN-20261028-009",
         "AN-20261028-010",
-        "AN-20261028-011"
+        "AN-20261028-011",
+        "AN-20261028-012"
       ]
     }
   ],
