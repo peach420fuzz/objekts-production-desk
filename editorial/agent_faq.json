@@ -237,6 +237,14 @@
       "verification_limit": "The side-of-line test requires known floor-plan coordinates and cannot infer camera pose or dramatic intent from a generated image.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/screen-direction-camera-axis-shot-reverse-generative-video.md",
       "source_language": "en"
+    },
+    {
+      "id": "reference-zip-intake",
+      "question": "How should an AI production agent ingest a ZIP of references without confusing styling, identities, rights and source versions?",
+      "short_answer": "Inspect untrusted archive metadata and limits before extraction, hash each asset from real bytes, record source/version/rights/approved roles in a manifest, and place conflicts or unknown permissions on HOLD. Confirm actual typed model input and execution receipt separately from Canvas UI.",
+      "verification_limit": "The demonstrated ZIP preflight passed eight synthetic Python tests but is not a security sandbox, malware scan, rights clearance or proof of generation.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/production-reference-archive-intake-hashes-rights-role-manifest.md",
+      "source_language": "en"
     }
   ]
 }
