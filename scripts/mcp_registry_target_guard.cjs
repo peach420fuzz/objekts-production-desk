@@ -131,7 +131,10 @@ function targetGranularity(previousRecord, currentRecord) {
     const remotes = (entry.remotes || []).map(remote => {
       const url = new URL(remote.url); // Snapshot already validated URL and rejected credentials.
       return { type: remote.type, origin: url.origin,
-        route: url.origin + url.pathname, exact: url.origin + url.pathname + url.search };
+        route: url.origin + url.pathname, exact: url.origin + url.pathname + url.search,
+        // Query values may be credentials; only compare names, never return them.
+        queryKeys: url.origin + url.pathname + "|" +
+          JSON.stringify([...url.searchParams.keys()].sort()) };
     });
     const packages = (entry.packages || []).map(pkg => {
       const registry = pkg.registryType + "|" +
@@ -152,7 +155,14 @@ function targetGranularity(previousRecord, currentRecord) {
   } else if (differs(a.remotes.map(x => x.route), b.remotes.map(x => x.route))) {
     signals.push("remote_path_set_changed");
   } else if (differs(a.remotes.map(x => x.exact), b.remotes.map(x => x.exact))) {
+    // Legacy broad signal remains for existing consumers; the second signal
+    // separates a changed parameter-name set from a changed query string.
     signals.push("remote_query_set_changed");
+    signals.push(
+      differs(a.remotes.map(x => x.queryKeys), b.remotes.map(x => x.queryKeys))
+        ? "remote_query_key_set_changed"
+        : "remote_query_string_changed"
+    );
   }
   if (a.packages.length !== b.packages.length) signals.push("package_target_count_changed");
   if (differs(a.packages.map(x => x.registry), b.packages.map(x => x.registry))) {
