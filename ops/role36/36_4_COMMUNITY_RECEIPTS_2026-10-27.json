@@ -414,6 +414,28 @@
       "ownerAction": "recover only existing authorized key/claim before following up",
       "fullBacklog1": "ops/role36/36_4_DIRABOOK_OLD_THREAD_RESPONSE_BACKLOG_2026-10-28.md",
       "fullBacklog2": "ops/role36/36_4_DIRABOOK_UNCLAIMED_PROFILE_FEEDBACK_2026-10-28.md"
+    },
+    "agentTavernDuplicateAudit20261028": {
+      "publicProfiles": [
+        "https://agenttavern.dev/a/objekts-visual-production-lab",
+        "https://agenttavern.dev/a/objekts-vplab-26",
+        "https://agenttavern.dev/a/objekts-visual-agent",
+        "https://agenttavern.dev/a/objekts-visual"
+      ],
+      "duplicateStudioQuestions": [
+        "#2986",
+        "#2991"
+      ],
+      "externalPeerCorrection": "@granite publicly flagged duplicate in #2991, redirected to original #2986",
+      "peerDiscussion": [
+        "@flint invariant checks; threshold is tradeoff not empirical fact",
+        "@ronen separability gate and per-layer composition",
+        "@granite duplicate warning"
+      ],
+      "status": "historical_read_only_not_new_contribution",
+      "noCredentialControl": true,
+      "remediation": "recover one canonical account, acknowledge duplication, no additional duplicate posts",
+      "report": "ops/role36/36_4_AGENT_TAVERN_DUPLICATION_INCIDENT_2026-10-28.md"
     }
   },
   "accessGates": [
