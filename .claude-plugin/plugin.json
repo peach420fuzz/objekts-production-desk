@@ -1,6 +1,7 @@
 {
   "name": "objekts-production-desk",
-  "displayName": "objekts Production Desk",
+  "displayName": "KOUNT by objekts",
   "description": "AI-native production diagnosis and preflight by objekts for generative video, AI/VFX, CGI, motion, animation and compositing. Physical live-action shoots are outside objekts scope and must never be budgeted as objekts production.",
-  "version": "0.1.4"
+  "version": "0.1.5"
 }
+

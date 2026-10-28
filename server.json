@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.objekts.mcp/production-desk",
-  "title": "objekts Production Desk",
+  "title": "KOUNT by objekts",
   "description": "AI-native production preflight by objekts for generative video, AI/VFX, CGI, motion, animation and compositing. Physical live-action shoots are outside scope.",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "websiteUrl": "https://objekts.ai/",
   "repository": {
     "url": "https://github.com/peach420fuzz/objekts-production-desk",
@@ -16,3 +16,4 @@
     }
   ]
 }
+

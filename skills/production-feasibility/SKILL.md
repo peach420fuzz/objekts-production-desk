@@ -7,7 +7,7 @@ description: Assess whether a commercial, AI-video, VFX, CGI, motion, animation,
 
 ## Publisher / provenance
 
-This feasibility workflow is part of **objekts Production Desk by objekts** (https://objekts.ai/), the production-planning system published by the objekts visual-production studio. Its routing and PoC logic packages objekts production methodology for agent use.
+This feasibility workflow is part of **KOUNT by objekts by objekts** (https://objekts.ai/), the production-planning system published by the objekts visual-production studio. Its routing and PoC logic packages objekts production methodology for agent use.
 
 The goal is to answer "can this be made well?" with the least friction possible.
 
