@@ -1,6 +1,6 @@
 # objekts Field Notes — 100 distinct editorial briefs, not 100 claimed articles
 
-**26 October 2026 · role36.5 research/backlog v1.0.** Derived from the owner's uploaded 15-file 8 October internal production runbook. All confidential client/performer/brand specifics have been deliberately removed from public titles and scopes. This is a list of **100 editorial assignments/briefs**, not 100 written or published stories. Twenty-two complete published articles are separately linked from [the editorial index](README.md).
+**26 October 2026 · role36.5 research/backlog v1.0.** Derived from the owner's uploaded 15-file 8 October internal production runbook. All confidential client/performer/brand specifics have been deliberately removed from public titles and scopes. This is a list of **100 editorial assignments/briefs**, not 100 written or published stories. Twenty-eight complete published articles are separately linked from [the editorial index](README.md).
 
 ## Quality standard for conversion from brief → public article
 
@@ -78,7 +78,7 @@ A brief becomes `PUBLISHED` only when it contains:
 44. **A character stays constant across independent sets — pose/identity matrix**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 45. **Never let a lighting reference redefine face shape — failure isolation**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 46. **Separate physical acting from spoken dialogue — mute-first planning**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
-47. **Hands touching props: anatomy plus contact points — QC harness**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
+47. **Hands touching props: anatomy plus contact points — QC harness [PUBLISHED: FN-28 contact/occlusion]**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 48. **How to handle likeness releases in generative production — legal owner gate**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 49. **Microexpressions within half-second cuts — performance timing**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 50. **Hair, glasses and asymmetry as continuity anchors — shot audit**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
