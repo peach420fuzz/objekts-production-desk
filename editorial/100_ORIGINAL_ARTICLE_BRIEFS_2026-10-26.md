@@ -156,4 +156,4 @@ A brief becomes `PUBLISHED` only when it contains:
 
 ## Reporting formula
 
-`editorial_ideas=100`; `written_full=27`; `github_public_source_articles=27 (verify main links after PR merge)`; `first_party_website_articles=0 verified`; `external_crossposts=0 verified`; `referrals_verified=0`. Record date/URL after the merge, not before.
+`editorial_ideas=100`; `written_full=30`; `github_public_source_articles=30 (verified on public main, 2026-10-28)`; `first_party_website_articles=0 (OWNER PROHIBITED)`; `external_crossposts=0 verified`; `referrals_verified=0`. Update only after checking the public release ledger and independent post URLs.
