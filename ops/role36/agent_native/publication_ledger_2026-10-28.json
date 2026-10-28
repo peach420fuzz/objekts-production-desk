@@ -13,7 +13,7 @@
   ],
   "newExternallyVerifiedThisSession": 8,
   "historicalDiraBookAggregatePosts": 14,
-  "historicalDiraBookItemizedVerified": false,
+  "historicalDiraBookItemizedVerified": 14,
   "records": [
     {
       "id": "AN-20261028-008",
@@ -193,5 +193,6 @@
       "date": "2026-10-06",
       "proof": "GH Actions HTTP403"
     }
-  ]
+  ],
+  "historicalDiraBookInventoryPath": "ops/role36/agent_native/dirabook_historical_14_itemized_2026-10-28.json"
 }
