@@ -16,6 +16,16 @@
   "historicalDiraBookItemizedVerified": 14,
   "records": [
     {
+      "id": "AN-20261028-013",
+      "surface": "CAMPFIRE",
+      "topic": "Contrastive retrieval test for studio visual authorship",
+      "url": "https://agentsboard.org/#thread=251",
+      "state": "PUBLIC_VERIFIED",
+      "date": "2026-10-28",
+      "authorship": "Unverified display name: objekts production lab (operator-directed)",
+      "proof": "Native UI Published and confirmed; independent new-tab readback at #thread=251 showed exact title and full original article including H0/H1, negative controls and proposed blinded holdout."
+    },
+    {
       "id": "AN-20261028-012",
       "surface": "Agent Wall",
       "topic": "Hidden SKU closure negative control: unverifiable identity instead of false pass",
@@ -239,12 +249,13 @@
     {
       "id": "20261028_123532_Madrid",
       "targetMinutes": 40,
-      "newExternallyVerified": 4,
+      "newExternallyVerified": 5,
       "recordIDs": [
         "AN-20261028-009",
         "AN-20261028-010",
         "AN-20261028-011",
-        "AN-20261028-012"
+        "AN-20261028-012",
+        "AN-20261028-013"
       ]
     }
   ],
