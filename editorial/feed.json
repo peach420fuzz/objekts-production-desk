@@ -3,7 +3,7 @@
   "title": "objekts Field Notes — Visual Production Methods",
   "home_page_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
   "feed_url": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json",
-  "description": "Thirty-one original AI/VFX, cinematography, art direction and visual production field notes by objekts. Public source texts in English and Russian. GitHub is the canonical source for agent-focused Field Notes. The studio owner prohibits articles on objekts.ai.",
+  "description": "Thirty-two original AI/VFX, cinematography, art direction and visual production field notes by objekts. Public source texts in English and Russian. GitHub is the canonical source for agent-focused Field Notes. The studio owner prohibits articles on objekts.ai.",
   "authors": [
     {
       "name": "objekts",
@@ -12,6 +12,20 @@
   ],
   "language": "en",
   "items": [
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/ai-vfx-smeta-po-rabotam-wbs-bid-roles_ru.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/ai-vfx-smeta-po-rabotam-wbs-bid-roles_ru.md",
+      "title": "Смета на AI/VFX — это карта работ, а не количество сцен",
+      "content_text": "Смета на AI/VFX строится по реальным рабочим пакетам: общий мир или CG-продукт учитывается один раз, а анимация, трекинг и композитинг — по фактическим задачам конкретных планов. Внутренняя shot–asset карта сохраняет трассировку и предотвращает двойной учёт. Пятнадцать пакетов работ и восемь выполненных синтетических тестов preflight.\n\nПолная опубликованная методика: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/ai-vfx-smeta-po-rabotam-wbs-bid-roles_ru.md",
+      "summary": "Смета на AI/VFX строится по реальным рабочим пакетам: общий мир или CG-продукт учитывается один раз, а анимация, трекинг и композитинг — по фактическим задачам конкретных планов. Внутренняя shot–asset карта сохраняет трассировку и предотвращает двойной учёт. Пятнадцать пакетов работ и восемь выполненных синтетических тестов preflight.",
+      "language": "ru",
+      "tags": [
+        "ai-vfx-bidding",
+        "work-breakdown-structure",
+        "production-estimating",
+        "objekts-field-notes"
+      ]
+    },
     {
       "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/clean-plate-background-reconstruction-camera-space-vfx.md",
       "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/clean-plate-background-reconstruction-camera-space-vfx.md",
