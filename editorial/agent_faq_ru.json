@@ -222,6 +222,14 @@
       "verification_limit": "Текстовый персонаж-бриф не гарантирует биометрически или художественно точную идентичность.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/identity-continuity-generative-stylization.md",
       "source_language": "en"
+    },
+    {
+      "id": "hand-object-contact",
+      "question": "Почему сгенерированная рука и предмет по отдельности выглядят реалистично, но захват неубедителен?",
+      "short_answer": "Разметьте контакт по кадрам: приближение, первое касание, захват, перенос и отпускание. Зафиксируйте анатомию и геометрию товара, порядок перекрытия пальцев, тени и отражения; движение предмета должно следовать за правдоподобным захватом.",
+      "verification_limit": "Плоская маска не подтверждает глубину, давление или силу; исследовательские алгоритмы не гарантируют точность конкретного продакшна.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/hand-object-contact-occlusion-physics-ai-vfx.md",
+      "source_language": "en"
     }
   ]
 }
