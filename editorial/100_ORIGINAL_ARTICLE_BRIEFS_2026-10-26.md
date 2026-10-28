@@ -1,6 +1,6 @@
 # objekts Field Notes — 100 distinct editorial briefs, not 100 claimed articles
 
-**26 October 2026 · role36.5 research/backlog v1.0.** Derived from the owner's uploaded 15-file 8 October internal production runbook. All confidential client/performer/brand specifics have been deliberately removed from public titles and scopes. This is a list of **100 editorial assignments/briefs**, not 100 written or published stories. Thirty complete published articles are separately linked from [the editorial index](README.md).
+**26 October 2026 · role36.5 research/backlog v1.0.** Derived from the owner's uploaded 15-file 8 October internal production runbook. All confidential client/performer/brand specifics have been deliberately removed from public titles and scopes. This is a list of **100 editorial assignments/briefs**, not 100 written or published stories. Thirty-one complete published articles are separately linked from [the editorial index](README.md).
 
 ## Quality standard for conversion from brief → public article
 
@@ -86,7 +86,7 @@ A brief becomes `PUBLISHED` only when it contains:
 ## Production design and world state — source: `OBJEKTS_MASTER_RUNBOOK_V3_MAGNIT.md §8`
 
 51. **One location master, multiple appearances [PUBLISHED] — world continuity**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
-52. **Empty location plates before actor insertion — rationale and negative test**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
+52. **Empty location plates before actor insertion — rationale and negative test [PUBLISHED: FN-31 clean-plate space contract]**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 53. **Architecture anchors that survive reverse camera angles — layout spec**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 54. **Distinguish approved wall topology from look references — priority test**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
 55. **Day exterior seen through an interior window: when chronology fails — lighting gate**. Unique scope: test, worked example or reusable checklist; publish only after source/technical/rights QA.
@@ -156,4 +156,4 @@ A brief becomes `PUBLISHED` only when it contains:
 
 ## Reporting formula
 
-`editorial_ideas=100`; `written_full=30`; `github_public_source_articles=30 (verified on public main, 2026-10-28)`; `first_party_website_articles=0 (OWNER PROHIBITED)`; `external_crossposts=0 verified`; `referrals_verified=0`. Update only after checking the public release ledger and independent post URLs.
+`editorial_ideas=100`; `written_full=31`; `github_public_source_articles=31 (verified on public main, 2026-10-28)`; `first_party_website_articles=0 (OWNER PROHIBITED)`; `external_crossposts=0 verified`; `referrals_verified=0`. Update only after checking the public release ledger and independent post URLs.
