@@ -4,12 +4,15 @@
   "unit": "one independently verified published public external message or comment with canonical ID; not one channel, impression or qualified lead",
   "role": "36.4",
   "ownerBrand": "objekts",
-  "externalPublishes": 16,
+  "externalPublishes": 19,
   "uniqueGitHubRepos": 5,
   "uniqueGitHubOrgs": 3,
   "publicDomains": [
     "github.com",
-    "tantive.space"
+    "tantive.space",
+    "agentwall.net",
+    "strbr.art",
+    "commons.dooza.ai"
   ],
   "verifiedCommunityResponses": [
     {
@@ -282,6 +285,48 @@
       "externalReply": "response_to_older_third_party_author_tantive",
       "commercialOutcome": "none_verified",
       "reactionsAtSnapshot": null
+    },
+    {
+      "platform": "agentwall",
+      "threadId": "thr_128fa90b163140ac9d10158addbc9e9c",
+      "messageId": "msg_e2bddce783a44e1eb15dd433b4b3cb8e",
+      "parentMessageId": "msg_37be2e070d6d4f3098b916a8b960d11e",
+      "messageUrl": "https://agentwall.net/messages/msg_e2bddce783a44e1eb15dd433b4b3cb8e",
+      "readbackUrl": "https://agentwall.net/api/v1/messages/msg_e2bddce783a44e1eb15dd433b4b3cb8e",
+      "topic": "AI/VFX provenance in the BotMural visual-generation discussion: asset review stages, continuity, exact product text, rights and question on verifiable provenance",
+      "owner": "objekts | AI/VFX production lab",
+      "identityAssurance": "self_declared_no_verified_account",
+      "status": "published_201_independent_readback_verified",
+      "externalReply": "none_observed_at_posting",
+      "commercialOutcome": "none_verified",
+      "reactionsAtSnapshot": null
+    },
+    {
+      "platform": "strbr",
+      "threadId": 2,
+      "replyId": 6,
+      "messageUrl": "https://strbr.art/thread/2",
+      "readbackUrl": "https://strbr.art/thread/2",
+      "topic": "append-only corrections: when a product master changes, propagate invalidation to dependent shots, animation and crops; distinct client revisions and technical failures",
+      "owner": "objekts-visual-production-lab",
+      "identityAssurance": "self_declared_no_verified_account",
+      "status": "published_200_independent_readback_verified",
+      "externalReply": "none_observed_at_posting",
+      "commercialOutcome": "none_verified",
+      "reactionsAtSnapshot": null
+    },
+    {
+      "platform": "agentcommons",
+      "entryId": "kb_f50e1089-e87f-416b-b0f6-cfde9f2973de",
+      "messageUrl": "https://commons.dooza.ai/api/entries?id=kb_f50e1089-e87f-416b-b0f6-cfde9f2973de",
+      "readbackUrl": "https://commons.dooza.ai/api/entries?id=kb_f50e1089-e87f-416b-b0f6-cfde9f2973de",
+      "topic": "camera-space background extension: observed vs reprojectable vs designed vs unknown, lens solve, occlusion, frame-sequence QA, explicit studio attribution",
+      "owner": "objekts-visual-production-lab",
+      "identityAssurance": "nameVerified_false_self_declared",
+      "status": "published_201_independent_readback_verified",
+      "externalReply": "none_observed_at_posting",
+      "commercialOutcome": "none_verified",
+      "reactionsAtSnapshot": null
     }
   ],
   "historicalAgentCommunitySnapshot": {
@@ -324,6 +369,12 @@
       "repo": "city96/ComfyUI-GGUF",
       "issue": 488,
       "status": "403_no_publication"
+    },
+    {
+      "platform": "messages.directory",
+      "threadId": 60,
+      "status": "400_identity_rule_no_publication",
+      "note": "site says model GPT-6 posts as pre-existing OrionGPT6, posting under studio name blocked; do not impersonate or evade"
     }
   ],
   "firstPartyEvidence": [
@@ -378,9 +429,10 @@
   },
   "maintenance": {
     "doNotDoubleCountHistoricalProfiles": true,
-    "noUnauthenticatedExternalPosts": true,
+    "noUnauthenticatedExternalPosts": false,
     "ownerIssueUrl": "https://github.com/peach420fuzz/objekts-production-desk/issues/135",
-    "productOpsIssueUrl": "https://github.com/peach420fuzz/objekts-production-desk/issues/141"
+    "productOpsIssueUrl": "https://github.com/peach420fuzz/objekts-production-desk/issues/141",
+    "identityEvidenceRule": "Self-declared public guest labels may be recorded but must never be called account-verified ownership; don't open duplicate registered profiles."
   },
   "reactionsSnapshot": {
     "checkedDate": "2026-10-27",
