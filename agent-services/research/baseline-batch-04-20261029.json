@@ -1,0 +1,282 @@
+{
+  "part": 4,
+  "recorded_at": "2026-10-29",
+  "engine": "TinyFish",
+  "queries": [
+    {
+      "query": "агент подобрать AI VFX студию для рекламы",
+      "language": "ru",
+      "control": false,
+      "status": "retrieved",
+      "results": [
+        {
+          "position": 1,
+          "url": "https://sloi.ai/",
+          "title": "SLOI AI — Студия AI-контента | ИИ Продакшн"
+        },
+        {
+          "position": 2,
+          "url": "https://cinecast.ru/ai",
+          "title": "AI Видеопродакшн в Москве - Cinecast"
+        },
+        {
+          "position": 3,
+          "url": "https://www.vilkaservice.com/",
+          "title": "VILKA - Креативная продакшн студия | Снять видеоролик ..."
+        },
+        {
+          "position": 4,
+          "url": "https://www.alladvertising.ru/info/sloi_ai.html",
+          "title": "SLOI AI — 3D графика и анимация, Москва."
+        },
+        {
+          "position": 5,
+          "url": "https://www.krea.ai/ru/krea-agent",
+          "title": "Передовой AI творческий агент для визуалов, готовых к ..."
+        },
+        {
+          "position": 6,
+          "url": "https://marketing-tech.ru/company_tags/video-production/vfx/",
+          "title": "Агентства по созданию VFX и CGI эффектов"
+        },
+        {
+          "position": 7,
+          "url": "https://videozayac.ru/",
+          "title": "Студия Графики и Анимации ВидеоЗаяц | CG Студия"
+        },
+        {
+          "position": 8,
+          "url": "https://play.google.com/store/apps/details?id=mostick.cgiadsstudiocgivideos.com&hl=ru",
+          "title": "AI CGI Ads Studio : VFX Video"
+        },
+        {
+          "position": 9,
+          "url": "https://studio210.ru/uslugi",
+          "title": "Услуги видеопродакшна CG/VFX AI-студии Studio 210"
+        },
+        {
+          "position": 10,
+          "url": "https://objekts.ai/",
+          "title": "objekts — студия визуальных решений"
+        }
+      ]
+    },
+    {
+      "query": "видеопродакшн AI видео сохранение лица костюма между кадрами",
+      "language": "ru",
+      "control": false,
+      "status": "retrieved",
+      "results": [
+        {
+          "position": 1,
+          "url": "https://www.visionstory.ai/ru/tools/face-swap-video",
+          "title": "ИИ-замена лица в видео"
+        },
+        {
+          "position": 2,
+          "url": "https://www.instagram.com/reel/DS_ixR0gc88/",
+          "title": "Как сохранить внешность персонажа в видео #нейросети"
+        },
+        {
+          "position": 3,
+          "url": "https://pixo.video/ru/blog/ai-character-consistency",
+          "title": "Как сохранить консистентность персонажей в AI-видео ..."
+        },
+        {
+          "position": 4,
+          "url": "https://cdance.ai/ru/blog/ai-video-character-consistency-workflow",
+          "title": "Один персонаж в ИИ-видео: 7 шагов | C Dance AI"
+        },
+        {
+          "position": 5,
+          "url": "https://www.youtube.com/watch?v=a2t8tOTaMXY",
+          "title": "The best way to make a video with your face"
+        },
+        {
+          "position": 6,
+          "url": "https://dtf.ru/howto/5324504-zamena-cheloveka-na-video-cherez-ii",
+          "title": "Заменить человека на видео: как сделать через ИИ"
+        },
+        {
+          "position": 7,
+          "url": "https://kling.ai/ru/explore/clothes_swap_ai_video",
+          "title": "видео об обмене одеждой с ИИ — смена лица и выход ..."
+        },
+        {
+          "position": 8,
+          "url": "https://www.instagram.com/reel/DWZLNwDDSyP/",
+          "title": "Секрет ИИ-креаторов: как сохранить лицо модели в ..."
+        },
+        {
+          "position": 9,
+          "url": "https://www.sostav.ru/blogs/286896/89898",
+          "title": "Добавить себя в кадр фильма: как сделать видео с ..."
+        },
+        {
+          "position": 10,
+          "url": "https://www.gptunnel.ru/ru/blog/best-ai-tools-for-video-generation",
+          "title": "ИИ для генерации видео: сравнение 6 моделей"
+        }
+      ]
+    },
+    {
+      "query": "CGI студия рекламный packshot упаковка геометрия",
+      "language": "ru",
+      "control": false,
+      "status": "retrieved",
+      "results": [
+        {
+          "position": 1,
+          "url": "https://sharprod.com/services/cgi-commercial-production.html",
+          "title": "Производство CGI-рекламы и CGI-роликов"
+        },
+        {
+          "position": 2,
+          "url": "https://xn----7sbassajik9a.xn--p1ai/journal/cgi-rolik-ili-3d-packshot.html",
+          "title": "CGI-ролик или 3D-packshot — практический разбор | SHAR"
+        },
+        {
+          "position": 3,
+          "url": "https://on-line.studio/cgi/",
+          "title": "Рекламные ролики с CGI графикой"
+        },
+        {
+          "position": 4,
+          "url": "https://mosvideo.org/services/cgi-reklama/",
+          "title": "CGI-реклама и CGI-ролики в Москве — цена"
+        },
+        {
+          "position": 5,
+          "url": "https://sxema3d.com/",
+          "title": "Создаем стильные CGI видеоролики для вашего бизнеса ..."
+        },
+        {
+          "position": 6,
+          "url": "https://svyazi-agency.ru/landing/motion/cgi",
+          "title": "Создание 3D и CGI видеороликов в Москве"
+        },
+        {
+          "position": 7,
+          "url": "https://timeweb.com/ru/blog/authors/elena-altcraft/articles/chto-takoe-cgi-i-kak-eto-ispolzovat-v-reklame/",
+          "title": "Что такое CGI и как это использовать в рекламе"
+        },
+        {
+          "position": 8,
+          "url": "https://skillbox.ru/media/design/cgi_chto_eto_takoe_i_zachem_dizayneru/",
+          "title": "CGI: что это такое и как это используют в дизайне"
+        }
+      ]
+    },
+    {
+      "query": "objekts ai vfx studio",
+      "language": "en",
+      "control": true,
+      "status": "retrieved",
+      "results": [
+        {
+          "position": 1,
+          "url": "https://numalis.com/the-magic-of-ai-in-vfx-enhancing-visual-effects/",
+          "title": "The Magic of AI in VFX: Enhancing Visual Effects Like ..."
+        },
+        {
+          "position": 2,
+          "url": "https://www.youtube.com/watch?v=B2wF909Iyto",
+          "title": "9 AI Tools That Are Changing VFX Right Now"
+        },
+        {
+          "position": 3,
+          "url": "https://invideo.io/make/ai-vfx/",
+          "title": "AI VFX | invideo Agent"
+        },
+        {
+          "position": 4,
+          "url": "https://www.reddit.com/r/vfx/comments/1gb25r3/ai_in_vfx/",
+          "title": "AI in VFX : r/vfx"
+        },
+        {
+          "position": 5,
+          "url": "https://www.autodesk.com/solutions/media-entertainment/ai-visual-effects",
+          "title": "Streamlining VFX with AI in Visual Effects"
+        },
+        {
+          "position": 6,
+          "url": "https://www.rolandberger.com/en/Insights/Publications/AI-Innovations-for-VFX-and-animation.html",
+          "title": "AI Innovations for VFX and animation"
+        },
+        {
+          "position": 7,
+          "url": "https://www.actionvfx.com/blog/top-10-ai-tools-for-vfx-workflows",
+          "title": "Top 10 AI Tools Transforming VFX Workflows in 2026"
+        },
+        {
+          "position": 8,
+          "url": "https://www.youtube.com/watch?v=UCV692sxr_Q&vl=en",
+          "title": "Can AI Video Beat a VFX Artist?"
+        },
+        {
+          "position": 9,
+          "url": "https://armox.ai/blog/ai-vfx",
+          "title": "AI VFX: Master Modern Visual Effects & Workflows"
+        },
+        {
+          "position": 10,
+          "url": "https://medium.com/@Praxen/from-hollywood-to-home-5-ai-vfx-tools-anyone-can-use-7bf64e8aff23",
+          "title": "From Hollywood to Home: 5 AI VFX Tools Anyone Can Use"
+        }
+      ]
+    },
+    {
+      "query": "From Social to Agentic Networks objekts research",
+      "language": "en",
+      "control": true,
+      "status": "retrieved",
+      "results": [
+        {
+          "position": 1,
+          "url": "https://www.sciencedirect.com/science/article/pii/S1566253525006712",
+          "title": "AI Agents vs. Agentic AI: A Conceptual taxonomy, ..."
+        },
+        {
+          "position": 2,
+          "url": "https://xuchuangw.com/blog/2026/agentic-networking/",
+          "title": "Agentic networks: many AI agents that learn and act together"
+        },
+        {
+          "position": 3,
+          "url": "https://medium.com/@gravity7/does-socialization-emerge-in-ai-agent-society-a-case-study-of-moltbook-bbb439381c62",
+          "title": "Does Socialization Emerge in AI Agent Society? A Case ..."
+        },
+        {
+          "position": 4,
+          "url": "https://www.ericsson.com/en/reports-and-papers/white-papers/adapting-agentic-ai",
+          "title": "Agentic AI for autonomous telecom networks"
+        },
+        {
+          "position": 5,
+          "url": "https://mitsloan.mit.edu/ideas-made-to-matter/agentic-ai-explained",
+          "title": "Agentic AI, explained"
+        },
+        {
+          "position": 6,
+          "url": "https://arxiv.org/html/2601.06064v1",
+          "title": "Socio-technical aspects of Agentic AI"
+        },
+        {
+          "position": 7,
+          "url": "https://www.cisco.com/c/dam/en/us/solutions/artificial-intelligence/the-impact-of-agentic-ai-on-network-operations.pdf",
+          "title": "The Impact of Agentic AI on Network Operations"
+        },
+        {
+          "position": 8,
+          "url": "https://ieeexplore.ieee.org/iel8/6287639/10820123/11071266.pdf",
+          "title": "Agentic AI: A Comprehensive Survey of Technologies, ..."
+        },
+        {
+          "position": 9,
+          "url": "https://www.researchgate.net/publication/400025520_Social_Network_Analysis_of_AI_Agent_Organizations",
+          "title": "(PDF) Social Network Analysis of AI Agent Organizations"
+        }
+      ]
+    }
+  ]
+}
