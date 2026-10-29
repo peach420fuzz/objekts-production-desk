@@ -36,4 +36,11 @@
     <updated>2026-10-29T19:54:26Z</updated>
     <summary>Frozen EN/RU task queries, raw public-web search results, provider limitations and a dependency-free replay scorer. Not an AI agent recommendation measurement.</summary>
   </entry>
+  <entry xml:lang="en">
+    <title>Creative Service Agent Triage — 32 Synthetic Evaluation Cases</title>
+    <id>https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/creative-service-agent-triage-benchmark.md</id>
+    <link rel="alternate" type="text/markdown" href="https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/creative-service-agent-triage-benchmark.md"/>
+    <updated>2026-10-29T21:20:00Z</updated>
+    <summary>Thirty-two fictional VFX and CGI production inquiries with manually assigned triage outcomes for scope fit, missing inputs, exclusions and consent. No independent agent evaluation is claimed.</summary>
+  </entry>
 </feed>
