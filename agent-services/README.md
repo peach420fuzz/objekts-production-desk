@@ -1,12 +1,16 @@
 # Agent Service Access · public research by objekts
 
-**Publisher:** [objekts](https://objekts.ai) · **First published:** 2026-10-29 · **Language:** RU, with English abstract.
+**Publisher:** [objekts](https://objekts.ai) · **First published:** 2026-10-29 · **Languages:** RU and EN; case studies and research metadata are first-party, source-qualified.
 
 This directory publishes source-qualified analysis of professional visual-production services in AI-agent discovery environments. All material is first-party research, not an independent supplier ranking, active registry endorsement, an autonomous production agent or a production quote.
 
 ## Research essays
 
 1. **[Когда заказчика представляет агент: зачем видеопродакшну GitHub](essays/github-agent-era-brand-marketing-video-production_ru.md)** (RU, 29 Oct 2026). Analytical article on GitHub as evidence infrastructure, the ARD/GitHub agent-finder discovery shift, Blender Studio/Framestore/OpenMontage comparisons, object-level cases, measurable agent visibility versus qualified production requests and a 30-day experiment.
+
+2. **[From Social to Agentic Networks](essays/from-social-to-agentic-networks_en.md)** (EN, 29 Oct 2026). A 3,700-word evidence-led analysis of attention, B2B AI-assisted research, agent discovery infrastructure and creative production vendor evaluation; first-party micro-audit of eight public VFX/animation GitHub repository entry points, reproducible methods, explicit uncertainty and five falsifiable 2027 propositions.
+
+   - [Original data (JSON)](research/2026-10-29-studio-github-readme-audit.json) · [Methods and evidence ledger](research/from-social-to-agentic-networks-methodology.md) · [Shareable research cover](figures/from-social-to-agentic-networks-cover.svg)
 
 ## Current service access references
 
