@@ -12,6 +12,13 @@ This directory publishes source-qualified analysis of professional visual-produc
 
    - [Original data (JSON)](research/2026-10-29-studio-github-readme-audit.json) · [Methods and evidence ledger](research/from-social-to-agentic-networks-methodology.md) · [Shareable research cover](figures/from-social-to-agentic-networks-cover.svg)
 
+## Open verification and supplemental research — 29 October 2026
+
+- [25 curated AI/VFX/CGI service-page source inventory](research/2026-10-29-creative-provider-service-page-scan.json) — first-party public pages, literal counts and sample limits; **not a market census**
+- [What commercial production pages already explain](research/2026-10-29-service-page-followup.md) — six manually reviewed supplier-source examples, credit and rights caveats
+- [Frozen 20-query bilingual public-web baseline](research/2026-10-29-public-search-baseline-protocol.md) · [results and interpretation](research/2026-10-29-public-search-baseline-report.md) · [offline scoring script](research/score-public-search-baseline.mjs) — web retrieval only, **no AI assistant recommendation tested**
+- [Open call for independent reproduction and negative examples](https://github.com/peach420fuzz/objekts-production-desk/issues/168) — public technical discussion, not an agency endorsement
+
 ## Current service access references
 
 - [Evidence-based production brief skill](../skills/visual-production-evidence-brief/SKILL.md) — source, fit, limits, rights and explicit human consent.
