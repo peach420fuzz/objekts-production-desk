@@ -12,6 +12,8 @@ This directory publishes source-qualified analysis of professional visual-produc
 
    - [Original data (JSON)](research/2026-10-29-studio-github-readme-audit.json) · [Methods and evidence ledger](research/from-social-to-agentic-networks-methodology.md) · [Shareable research cover](figures/from-social-to-agentic-networks-cover.svg)
 
+**[Subscribe to the research Atom feed](research/feed.xml)** — static GitHub-hosted XML feed of the two studies and the open follow-up reports. Aggregator compatibility and third-party subscription are unverified.
+
 ## Open verification and supplemental research — 29 October 2026
 
 - [25 curated AI/VFX/CGI service-page source inventory](research/2026-10-29-creative-provider-service-page-scan.json) — first-party public pages, literal counts and sample limits; **not a market census**
