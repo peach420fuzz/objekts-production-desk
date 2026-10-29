@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>objekts — Agentic Service Research</title>
+  <subtitle>Source-linked public research on AI/VFX production, supplier discovery and human-safe agent referral</subtitle>
+  <id>https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/README.md</id>
+  <link rel="alternate" href="https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/README.md"/>
+  <link rel="self" type="application/atom+xml" href="https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/agent-services/research/feed.xml"/>
+  <updated>2026-10-29T19:54:26Z</updated>
+  <author><name>objekts</name><uri>https://objekts.ai</uri></author>
+  <rights>Original research summaries by objekts; third-party cited studies retain their respective ownership. No redistribution rights for client footage are granted.</rights>
+  <entry xml:lang="en">
+    <title>From Social to Agentic Networks</title>
+    <id>https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/essays/from-social-to-agentic-networks_en.md</id>
+    <link rel="alternate" type="text/markdown" href="https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/essays/from-social-to-agentic-networks_en.md"/>
+    <updated>2026-10-29T19:54:26Z</updated>
+    <summary>An evidence-led 2026 field report on how agent systems may evaluate professional production vendors, combining published studies, source-coded case limitations and a narrow GitHub audit.</summary>
+  </entry>
+  <entry xml:lang="ru">
+    <title>Когда заказчика представляет агент: зачем видеопродакшну GitHub</title>
+    <id>https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/essays/github-agent-era-brand-marketing-video-production_ru.md</id>
+    <link rel="alternate" type="text/markdown" href="https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/essays/github-agent-era-brand-marketing-video-production_ru.md"/>
+    <updated>2026-10-29T19:54:26Z</updated>
+    <summary>Исследование GitHub как источника проверяемых компетенций AI/VFX-студии, с описаниями применимости, ограничениями кейсов и передачей запроса живому продюсеру.</summary>
+  </entry>
+  <entry xml:lang="en">
+    <title>Creative production service pages: 25-page open source inventory</title>
+    <id>https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/2026-10-29-service-page-followup.md</id>
+    <link rel="alternate" type="text/markdown" href="https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/2026-10-29-service-page-followup.md"/>
+    <updated>2026-10-29T19:54:26Z</updated>
+    <summary>A transparently purposive set of public AI/VFX/CGI service sources with lexical inventory, six manual examples, and explicit research limitations.</summary>
+  </entry>
+  <entry xml:lang="en">
+    <title>Agentic studio discoverability: a twenty-query web baseline</title>
+    <id>https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/2026-10-29-public-search-baseline-report.md</id>
+    <link rel="alternate" type="text/markdown" href="https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/2026-10-29-public-search-baseline-report.md"/>
+    <updated>2026-10-29T19:54:26Z</updated>
+    <summary>Frozen EN/RU task queries, raw public-web search results, provider limitations and a dependency-free replay scorer. Not an AI agent recommendation measurement.</summary>
+  </entry>
+</feed>
