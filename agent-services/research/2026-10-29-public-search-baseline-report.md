@@ -23,6 +23,12 @@ Four exact result-page records, each with query, language, URL, title and source
 
 *Strict scoring:* URL hostname must be `objekts.ai` or a subdomain. `github.com/peach420fuzz/...` can be useful article visibility but is excluded from the precise website-domain rate. The main source original English/Russian essays and GitHub datasets were published earlier today; fresh indexing is not guaranteed.
 
+## What the result-page sources looked like
+
+Across the **18 generic queries** the provider returned **168 individual result positions**, spanning **109 distinct hostname strings**. This is a count of *listed URLs*, so repeated appearances count more than once. The URLs included **14 YouTube**, **12 Instagram**, **9 Facebook**, **8 Reddit**, and **1 LinkedIn** placements — **44 of 168 result slots** from those five platforms. No `github.com` result appeared in these particular generic-query lists. The counts follow exact hostnames in the [four public result datasets](baseline-batch-01-20261029.json); repeated URL positions and host aliases are not audience or popularity measurements.
+
+**Interpretation:** in this small, provider-dependent sample, production-intent web search often returned social/video/forum pages alongside supplier sites and technical sources. That makes cross-surface publishing a plausible *distribution experiment*. It does **not** prove social posts outrank GitHub in AI-agent recommendations, nor that any specific repost would have increased objekts traffic. The mechanism requires independent multi-engine and host tests.
+
 ## Operational learning
 
 1. **Check the domain and the article separately.** A site may be discoverable on one specific production-intent query and absent in others. Exact article-title searches require title/URL matching across GitHub, not just website-domain filtering.
