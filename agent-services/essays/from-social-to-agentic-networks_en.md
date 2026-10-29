@@ -200,6 +200,10 @@ We also [pre-registered 18 generic EN/RU task searches and two named controls](.
 
 ---
 
+### Supplement: a falsifiable creative-service routing task
+
+We have published [32 explicitly synthetic, source-safe production enquiries](../research/creative-service-agent-triage-benchmark.md) to make the proposed capability-fit and consent evaluation measurable. The four classes (eight each) separate eligibility, missing inputs, excluded services and confidential transfers blocked without buyer permission. The label distribution is deliberately constructed; **no model has been scored on the dataset**. The [JSON cases](../research/2026-10-29-creative-service-32-synthetic-triage-cases.json) are offered for method inspection and future independent replication.
+
 ## Sources and methodological notes
 
 All sources were examined on **29 October 2026**. External percentages are reported under their respective authors’ definitions. Public links may change.
