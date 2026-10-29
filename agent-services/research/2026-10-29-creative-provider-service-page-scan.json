@@ -1,0 +1,402 @@
+{
+  "title": "Curated 25-entry creative production services page scan — exploratory lexical source inventory",
+  "publisher": "objekts",
+  "collected_on": "2026-10-29",
+  "research_question": "What information is publicly present on purposefully chosen commercial moving-image, AI VFX, CGI or adjacent creative-tech provider entry pages?",
+  "sample_design": "Deliberately selected candidates from search results and prior examples; service pages, case articles and homepages are mixed. NOT RANDOM, NOT A MARKET CENSUS. No organization inference from missing data.",
+  "population": "25 unique provider URLs excluding own objekts control",
+  "measurement": "TinyFish page text as retrieved. Four regex term families count English literal tokens, including false positives, and may miss synonyms, other languages, javascript-only pages, links, or forms; these counts alone do NOT establish proof quality, validated cases, consent routes or agent discovery.",
+  "term_patterns": {
+    "case": "\\b(case study|case studies|campaigns|project|credits|work)\\b",
+    "shot": "\\b(continuity|camera|character|product|background|composit(?:ing|e)|shot|geometry|workflow|brief)\\b",
+    "rights": "\\b(rights|license|licensing|consent|copyright|NDA|intellectual property|legal)\\b",
+    "enquiry": "\\b(contact us|tell us about|let.s talk|request a quote|send a brief|start a project|get in touch|book a call|book your project|discuss a project|start a project)\\b"
+  },
+  "observations": [
+    {
+      "url": "https://glassyfilms.com/ai-production-company/",
+      "final_url": "https://glassyfilms.com/ai-production-company/",
+      "title": "AI & hybrid production company in Barcelona | Glassy Films",
+      "detected_language": "en",
+      "readable_chars": 16248,
+      "lexical_hits": {
+        "case": 46,
+        "shot": 43,
+        "rights": 21,
+        "enquiry": 3
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://www.kosmofilms.com/ai",
+      "final_url": "https://www.kosmofilms.com/ai",
+      "title": "AI Commercial Production, AI VFX & Full-AI Spots · Kosmo Films",
+      "detected_language": "en",
+      "readable_chars": 2704,
+      "lexical_hits": {
+        "case": 1,
+        "shot": 11,
+        "rights": 0,
+        "enquiry": 0
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://halation.house/",
+      "final_url": "https://halation.house/",
+      "title": "Halation House — AI-enabled production partner, London",
+      "detected_language": "en",
+      "readable_chars": 8667,
+      "lexical_hits": {
+        "case": 10,
+        "shot": 9,
+        "rights": 7,
+        "enquiry": 0
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://sharprod.com/en/capabilities/",
+      "final_url": "https://sharprod.com/en/capabilities/",
+      "title": "AI, CGI, live action and post capabilities | SHAR Production",
+      "detected_language": "en",
+      "readable_chars": 23085,
+      "lexical_hits": {
+        "case": 34,
+        "shot": 108,
+        "rights": 25,
+        "enquiry": 1
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://ai25.studio/work/fixed-in-ai-post",
+      "final_url": "https://ai25.studio/work/fixed-in-ai-post",
+      "title": "Fixed in AI Post | AI25.Studio",
+      "detected_language": "en",
+      "readable_chars": 1078,
+      "lexical_hits": {
+        "case": 2,
+        "shot": 6,
+        "rights": 0,
+        "enquiry": 0
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://www.loomstudio.design/services/ai-vfx/",
+      "final_url": "https://www.loomstudio.design/services/ai-vfx/",
+      "title": "AI VFX for commercials | LOOM Studio",
+      "detected_language": "en",
+      "readable_chars": 3103,
+      "lexical_hits": {
+        "case": 10,
+        "shot": 5,
+        "rights": 0,
+        "enquiry": 1
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://www.invalidsymbol.com/services",
+      "final_url": "https://www.invalidsymbol.com/services",
+      "title": "Services · Invalid Symbol",
+      "detected_language": "en",
+      "readable_chars": 3002,
+      "lexical_hits": {
+        "case": 4,
+        "shot": 5,
+        "rights": 0,
+        "enquiry": 1
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://www.deseif.es/ai",
+      "final_url": "https://www.deseif.es/ai",
+      "title": "DeSeif | Audiovisual Production",
+      "detected_language": "en",
+      "readable_chars": 1377,
+      "lexical_hits": {
+        "case": 2,
+        "shot": 5,
+        "rights": 0,
+        "enquiry": 1
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://zerezofilms.com/en/blog/ai-commercial-production-zerezo-coffee/",
+      "final_url": "https://zerezofilms.com/en/blog/ai-commercial-production-zerezo-coffee/",
+      "title": "How an AI Commercial Is Actually Produced | ZerezoFilms",
+      "detected_language": "en",
+      "readable_chars": 6938,
+      "lexical_hits": {
+        "case": 5,
+        "shot": 22,
+        "rights": 0,
+        "enquiry": 0
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://blacklightstudio.ai/",
+      "final_url": "https://blacklightstudio.ai/",
+      "title": "Blacklight Studios — AI-Generated Feature Films & Cinematic Commercials",
+      "detected_language": "en",
+      "readable_chars": 4371,
+      "lexical_hits": {
+        "case": 7,
+        "shot": 8,
+        "rights": 0,
+        "enquiry": 3
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://www.fckingmagicfilms.com/",
+      "final_url": "https://www.fckingmagicfilms.com/",
+      "title": "FCKING MAGIC FILMS — Hybrid Studio. IA + Real.",
+      "detected_language": "es",
+      "readable_chars": 2081,
+      "lexical_hits": {
+        "case": 2,
+        "shot": 0,
+        "rights": 0,
+        "enquiry": 0
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://iavai.es/",
+      "final_url": "https://iavai.es/",
+      "title": "Estudio de vídeo con IA para marcas en Málaga y Madrid | IAVAI",
+      "detected_language": "es",
+      "readable_chars": 7003,
+      "lexical_hits": {
+        "case": 0,
+        "shot": 4,
+        "rights": 0,
+        "enquiry": 0
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://toniriera.art/en/services/ai-commercial-production",
+      "final_url": "https://toniriera.art/en/services/ai-commercial-production",
+      "title": "AI Commercial Production Studio in Barcelona | Toni Riera AI Studio",
+      "detected_language": "en",
+      "readable_chars": 7243,
+      "lexical_hits": {
+        "case": 10,
+        "shot": 42,
+        "rights": 1,
+        "enquiry": 0
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://picvisual.com/3d-cgi/",
+      "final_url": "https://picvisual.com/3d-cgi/",
+      "title": "3D & CGI Services for E-commerce Brands | Pic Visual",
+      "detected_language": "en",
+      "readable_chars": 7563,
+      "lexical_hits": {
+        "case": 10,
+        "shot": 40,
+        "rights": 0,
+        "enquiry": 2
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://www.starno.net/projects/natrel.php",
+      "final_url": "https://www.starno.net/projects/natrel.php",
+      "title": "STARNO.net Studio - NATREL | PHOTOREALISTIC 3D PACKSHOT",
+      "detected_language": "en",
+      "readable_chars": 2295,
+      "lexical_hits": {
+        "case": 1,
+        "shot": 4,
+        "rights": 0,
+        "enquiry": 1
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://automatonagency.com/work/video-production-pipeline",
+      "final_url": "https://automatonagency.com/work/video-production-pipeline",
+      "title": "Automaton — Creative Technology Studio",
+      "detected_language": "en",
+      "readable_chars": 2893,
+      "lexical_hits": {
+        "case": 8,
+        "shot": 3,
+        "rights": 0,
+        "enquiry": 1
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://o-sidemedia.com/",
+      "final_url": "https://o-sidemedia.com/",
+      "title": "O-Side Media - Creative Media Company",
+      "detected_language": "en",
+      "readable_chars": 2040,
+      "lexical_hits": {
+        "case": 2,
+        "shot": 0,
+        "rights": 0,
+        "enquiry": 1
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://www.utopaistudios.com/en/about",
+      "final_url": "https://www.utopaistudios.com/en/about",
+      "title": "Mission & Team | Utopai Studios",
+      "detected_language": "en",
+      "readable_chars": 6459,
+      "lexical_hits": {
+        "case": 9,
+        "shot": 8,
+        "rights": 1,
+        "enquiry": 3
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://cats.studio/cases/every-day-rain/",
+      "final_url": "https://cats.studio/cases/every-day-rain/",
+      "title": "@every_day_rain Music Video — AI & VFX by CATS Studio",
+      "detected_language": "en",
+      "readable_chars": 1260,
+      "lexical_hits": {
+        "case": 3,
+        "shot": 2,
+        "rights": 0,
+        "enquiry": 2
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://cinela.ai/en/ai-commercials/",
+      "final_url": "https://cinela.ai/en/ai-commercials/",
+      "title": "AI Commercial Production Studio — Pricing & Process | Cinela",
+      "detected_language": "en",
+      "readable_chars": 4415,
+      "lexical_hits": {
+        "case": 3,
+        "shot": 9,
+        "rights": 6,
+        "enquiry": 1
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://www.daviddoesai.com/",
+      "final_url": "https://www.daviddoesai.com/",
+      "title": "DavidDoesAI Studio | AI Video Production",
+      "detected_language": "en",
+      "readable_chars": 1078,
+      "lexical_hits": {
+        "case": 1,
+        "shot": 0,
+        "rights": 0,
+        "enquiry": 1
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://neuralvibe.eu/",
+      "final_url": "https://neuralvibe.eu/",
+      "title": "NeuralVibe.eu | AI + VFX Cinematic Advertising Studio",
+      "detected_language": "en",
+      "readable_chars": 9145,
+      "lexical_hits": {
+        "case": 8,
+        "shot": 22,
+        "rights": 2,
+        "enquiry": 0
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://thedorbrothers.com/ai-video-production/",
+      "final_url": "https://thedorbrothers.com/ai-video-production/",
+      "title": "AI Video Production Company & Studio | The Dor Brothers",
+      "detected_language": "en",
+      "readable_chars": 4672,
+      "lexical_hits": {
+        "case": 10,
+        "shot": 8,
+        "rights": 1,
+        "enquiry": 3
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://newcraftstudio.com/film-vfx",
+      "final_url": "https://newcraftstudio.com/film-vfx",
+      "title": "AI VFX & Visual Effects for Film and Series | Newcraft",
+      "detected_language": "en",
+      "readable_chars": 2116,
+      "lexical_hits": {
+        "case": 7,
+        "shot": 16,
+        "rights": 0,
+        "enquiry": 3
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    },
+    {
+      "url": "https://maidreamslab.ai/en/",
+      "final_url": "https://maidreamslab.ai/en/",
+      "title": "Where Cinema Meets AI — AI Video Production for Brands | MaiDreamsLab",
+      "detected_language": "en",
+      "readable_chars": 8684,
+      "lexical_hits": {
+        "case": 9,
+        "shot": 18,
+        "rights": 6,
+        "enquiry": 4
+      },
+      "source_type": "first_party_public_page",
+      "note": "Literal English-language match counts; zero also occurs on non-English/JS content; no manual accreditation or rights verification."
+    }
+  ],
+  "errors": [],
+  "negative_control": "Prior separate GitHub-README file audit n=8, 6 accessible was biased toward technical READMEs and must not be extrapolated to these organizations' service pages.",
+  "results_not_measured": [
+    "agent discovery",
+    "LLM shortlist recommendations",
+    "qualified referrals",
+    "client submissions",
+    "production sales"
+  ],
+  "source_tool": "TinyFish public page content; no authentication; read only"
+}
