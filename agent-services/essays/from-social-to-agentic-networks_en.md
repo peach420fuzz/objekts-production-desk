@@ -204,6 +204,14 @@ We also [pre-registered 18 generic EN/RU task searches and two named controls](.
 
 We have published [32 explicitly synthetic, source-safe production enquiries](../research/creative-service-agent-triage-benchmark.md) to make the proposed capability-fit and consent evaluation measurable. The four classes (eight each) separate eligibility, missing inputs, excluded services and confidential transfers blocked without buyer permission. The label distribution is deliberately constructed; **no model has been scored on the dataset**. The [JSON cases](../research/2026-10-29-creative-service-32-synthetic-triage-cases.json) are offered for method inspection and future independent replication.
 
+### Related 2026 research: compliance signals and recommendation error
+
+A [2026 study in *Journal of Business Logistics*](https://onlinelibrary.wiley.com/doi/10.1111/jbl.70072) compared three reasoning models with human evaluations of **123 government supplier bids across 31 Ohio procurement projects**. Its reported finding distinguishes relatively stable compliance assessments from more volatile evaluation of competitive value claims. That procurement setting is materially different from film production, yet it identifies a question worth measuring in our domain: does an agent read a precise VFX credit and rights condition reliably while overestimating an attractive but poorly specified creative promise?
+
+A separate [ICML 2026 AgentSelect paper](https://proceedings.mlr.press/v306/shi26ac.html) builds a benchmark for narrative query-to-**deployable AI-agent** recommendation. It concerns configurations of software agents; it does not validate recommendations of human-delivered creative services. Both works strengthen the case for testing the **exact task and decision boundary**, without borrowing their accuracy scores or sample sizes for our study.
+
+We published a first [32-case synthetic creative-service routing set](../research/creative-service-agent-triage-benchmark.md) with human-written labels for four classes. It is a task specification and invites replication, **not** a measured model result.
+
 ## Sources and methodological notes
 
 All sources were examined on **29 October 2026**. External percentages are reported under their respective authors’ definitions. Public links may change.
