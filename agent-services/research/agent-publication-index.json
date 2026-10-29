@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "publisher": "objekts",
+  "publisher_website": "https://objekts.ai",
+  "created_on": "2026-10-29",
+  "format_note": "Custom research manifest intended for audit and future adapter building. Not an approved ARD/MCP registry, Schema.org markup embedded on a webpage, nor proof that any named agent can discover these entries.",
+  "editorial_contact": "salute@objekts.ai",
+  "canonical_research_index": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/README.md",
+  "publications": [
+    {
+      "id": "OBJEKTS101-EN-20261029",
+      "title": "From Social to Agentic Networks",
+      "language": "en",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/essays/from-social-to-agentic-networks_en.md",
+      "research_type": "external published studies synthesis plus nonrepresentative own GitHub README file audit",
+      "methods": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/from-social-to-agentic-networks-methodology.md",
+      "dataset": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/2026-10-29-studio-github-readme-audit.json",
+      "status": "PUBLIC_GITHUB",
+      "limitations": [
+        "eight intentionally selected GitHub technical repositories; six READMEs readable",
+        "no independent agent recommendation or qualified client enquiry measured",
+        "third-party published studies have separate sampling frames"
+      ]
+    },
+    {
+      "id": "OBJEKTS101-RU-20261029",
+      "title": "Когда заказчика представляет агент: зачем видеопродакшну GitHub",
+      "language": "ru",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/essays/github-agent-era-brand-marketing-video-production_ru.md",
+      "research_type": "technical analysis with source-qualified first-party studio cases",
+      "status": "PUBLIC_GITHUB",
+      "limitations": [
+        "four case details from first-party materials, exact individual credits and rights pending owner verification",
+        "no measured agent-mediated qualified leads"
+      ]
+    }
+  ],
+  "supplements": [
+    {
+      "type": "curated_research_dataset",
+      "id": "OBJEKTS101-25P",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/2026-10-29-creative-provider-service-page-scan.json",
+      "frame_size": 25,
+      "verified": "25 readable pages; lexical tokens only",
+      "limitation": "purposive nonrepresentative selection"
+    },
+    {
+      "type": "research_note",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/2026-10-29-service-page-followup.md",
+      "method": "six qualitative first-party website examples"
+    },
+    {
+      "type": "search_baseline",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/2026-10-29-public-search-baseline-report.md",
+      "query_count": 20,
+      "nonbrand_queries": 18,
+      "exact_objekts_site_urls_found_in_first_page": 1,
+      "limitations": "one public web search provider, not agent recommendations; controls flawed"
+    },
+    {
+      "type": "offline_scorer",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/score-public-search-baseline.mjs",
+      "runtime_status": "STATIC_DATA_VALIDATED; STANDALONE_RUNTIME_NOT_EXECUTED"
+    },
+    {
+      "type": "public_discussion",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/issues/168",
+      "status": "OPEN_TO_REPLICATION"
+    },
+    {
+      "type": "atom_feed",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/feed.xml",
+      "status": "PUBLIC_DIRECT_URL_READBACK; EXTERNAL_SUBSCRIPTION_UNVERIFIED"
+    }
+  ],
+  "current_kpis": {
+    "independent_agent_host_recommendations": "NOT_MEASURED",
+    "qualified_production_leads_from_research": "NOT_MEASURED",
+    "third_party_editorial_publications": "NONE_VERIFIED",
+    "third_party_news_tip_sends": 1
+  },
+  "prohibited_claims": [
+    "agent endorsement inferred from GitHub URL",
+    "market-wide conclusions from selected service pages",
+    "validated legal usage rights inferred from first-party website copy",
+    "title-search control failure proves global indexing absence"
+  ]
+}
