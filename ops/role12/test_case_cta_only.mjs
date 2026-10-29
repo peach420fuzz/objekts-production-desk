@@ -53,8 +53,33 @@ test("middleware neither invents localized machine Markdown nor modifies non-GET
   assert.equal(calls,4);
 });
 
+
+/** Buyer-facing invariant check. Differences in unrelated upstream HTML
+ * (e.g. separately deployed /.webmcp/bridge.js) must not create false red CI.
+ * Do not normalize away CTA/canonical/visibility differences.
+ */
+function pageInvariants(html, path, marker) {
+  const sections=[...html.matchAll(/<section\b[^>]*data-objekts-role12="case-brief-v1"[\s\S]*?<\/section>/gi)];
+  assert.equal(sections.length,1,path+": exactly one SSR case-brief section");
+  const section=sections[0][0];
+  const mainOpen=html.search(/<main(?:\s|>)/i),mainClose=html.lastIndexOf("</main>");
+  assert.ok(mainOpen>=0 && mainClose>mainOpen,path+": main must exist");
+  assert.ok(sections[0].index>mainOpen && sections[0].index+section.length<mainClose,path+": CTA inside main");
+  assert.ok(section.includes("mailto:salute@objekts.ai?subject="+marker),path+": exact human opt-in subject");
+  assert.ok(section.includes("/tools/production-desk"),path+": live production preflight");
+  assert.ok(html.includes('data-r12-hydration="case-brief-v1"'),path+": hydration recovery script preserved");
+  assert.ok(html.includes('src="/__markets/client-v27.mjs"'),path+": markets navigation preserved");
+  const canonical=[...html.matchAll(/<link\b[^>]*>/gi)]
+    .map(m=>m[0]).filter(tag=>/\brel=["']canonical["']/i.test(tag))
+    .map(tag=>tag.match(/\bhref=["']([^"']+)["']/i)?.[1]);
+  assert.deepEqual(canonical,[ROOT+path],path+": expected exact one self-canonical");
+  const title=html.match(/<title(?:\s[^>]*)?>([\s\S]*?)<\/title>/i)?.[1]?.trim();
+  assert.ok(title,path+": page title retained");
+  return {canonical:canonical[0],title,section,hasNextLayout:html.includes("<main")};
+}
+
 if(process.env.R12_LIVE==="1") {
-  test("released main-site routes match noindex preview exactly with four production CTAs",async()=>{
+  test("released main-site and noindex preview preserve four buyer-visible case invariants",async()=>{
     const got=await Promise.all(CASES.map(async ([path,tag])=>{
       const [pub,stage]=await Promise.all([ROOT,PREVIEW].map(u=>fetch(u+path,{signal:AbortSignal.timeout(20000)})));
       assert.equal(pub.status,200,path+": main-site 200");
@@ -67,10 +92,17 @@ if(process.env.R12_LIVE==="1") {
       assert.ok(!(pub.headers.get('x-robots-tag')||'').includes('noindex'),path+": public case may be indexed");
       assert.ok(b.includes('data-objekts-role12="case-brief-v1"'));
       assert.ok(b.includes('src="/__markets/client-v27.mjs"'),path+": existing markets header preserved");
-      const clean=b.replace('<base href="https://objekts.ai/"><meta name="robots" content="noindex,nofollow">',"");
-      assert.equal(clean,a,path+": released HTML and preview must be byte-identical except preview robots/base");
-      assert.equal((a.match(/data-objekts-role12="case-brief-v1"/g)||[]).length,1,path+": exactly one CTA section");
-      return {path,original_length:a.length,preview_length:b.length,match:true};
+      const source=pageInvariants(a,path,tag);
+      const preview=pageInvariants(b,path,tag);
+      assert.equal(preview.canonical,source.canonical,path+": canonical parity");
+      assert.equal(preview.title,source.title,path+": article title parity");
+      assert.equal(preview.section,source.section,path+": exact factual CTA text/links parity");
+      // Diagnostic only: unrelated upstream injections can differ in time or host.
+      // This never certifies all body content as identical.
+      return {path,original_length:a.length,preview_length:b.length,
+        stable_case_invariants:true,full_html_bytes_equal:a===b,
+        webmcp_in_source:a.includes("/.webmcp/bridge.js"),
+        webmcp_in_preview:b.includes("/.webmcp/bridge.js")};
     }));
     const official=await fetch(ROOT+"/reference/en/work/sbercity.md",{signal:AbortSignal.timeout(18000)});
     assert.equal(official.status,200,"real 1p machine-readable reference is not missing");
