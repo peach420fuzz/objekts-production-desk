@@ -35,3 +35,9 @@ Four exact result-page records, each with query, language, URL, title and source
 The separate [25-page supplier source inventory](2026-10-29-creative-provider-service-page-scan.json) finds substantial **first-party published service content** among competitors, and [manual source note](2026-10-29-service-page-followup.md) documents relevant examples. It is a different sample and cannot be combined into a single percentage with this search experiment.
 
 **Next legitimate tests:** predeclared equivalent query sets in other search providers and host-authorized AI assistants, unbiased source/excerpt review, equal control vs enriched service-card comparisons, and opt-in human production referral measurements. No third-party assistant selection was tested by this protocol.
+
+## Cross-provider sanity check (different search backend)
+
+A separate public web search on the same date for `objekts.ai AI VFX studio` **did** retrieve the official [objekts homepage](https://objekts.ai/) and [AI/VFX service page](https://objekts.ai/en/services/ai-vfx/), along with other first-party services. This corrects a possible overinterpretation of the TinyFish name-control failure: **absence from one provider's first result page is not proof that the site cannot be indexed or found elsewhere**. The second provider was queried with explicit brand terms and is not a control for generic query eligibility. Cross-engine positions and results were not pooled.
+
+**Research implication:** the next benchmark should include multiple providers, comparable query wording, positive controls that demonstrably retrieve the subject on each provider, and an explicit ranking-availability gate before calculating any share-of-voice percentage.
