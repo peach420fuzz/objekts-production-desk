@@ -14,6 +14,8 @@ This directory publishes source-qualified analysis of professional visual-produc
 
 **[Subscribe to the research Atom feed](research/feed.xml)** — static GitHub-hosted XML feed of the two studies and the open follow-up reports. Aggregator compatibility and third-party subscription are unverified.
 
+**[32-case synthetic Agent Service Triage Benchmark](research/creative-service-agent-triage-benchmark.md)** — rights-safe fictional production briefs, four routing states, refusal/consent cases and a transparent scoring guide. [Full JSON](research/2026-10-29-creative-service-32-synthetic-triage-cases.json). No model-host evaluation claimed.
+
 ## Open verification and supplemental research — 29 October 2026
 
 - [25 curated AI/VFX/CGI service-page source inventory](research/2026-10-29-creative-provider-service-page-scan.json) — first-party public pages, literal counts and sample limits; **not a market census**
