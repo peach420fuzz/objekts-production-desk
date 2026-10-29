@@ -1,7 +1,7 @@
 # From Social to Agentic Networks
 ## How brands become discoverable when software builds the shortlist
 
-*An evidence-led field report by [objekts](https://objekts.ai) · 29 October 2026 · English · Research edition 1.0*
+*An evidence-led field report by [objekts](https://objekts.ai) · 29 October 2026 · English · Research edition 1.1*
 
 ![From Social to Agentic Networks — objekts research cover](../figures/from-social-to-agentic-networks-cover.svg)
 
@@ -187,6 +187,16 @@ For brands, this creates work that often sits between marketing, technical docum
 For objekts, publishing service boundaries and production evidence is one experiment in that direction. The GitHub article you are reading is an observable publication; agent selection, verified business referrals and revenue remain future measurements.
 
 **A studio earns an agent’s recommendation only when the facts justify that recommendation.**
+
+---
+
+## Research update — 29 October 2026: commercial service pages
+
+After the original GitHub README sample, we conducted a separate **purposive scan of 25 public commercial and adjacent creative-production pages**. All 25 yielded readable text. Literal English rights/legal/consent keywords occurred in 9/25, and selected enquiry phrases in 17/25. These are strictly lexical observations; they do not assess source licenses, actual contact forms, service availability or the broader industry. In six close-read examples, suppliers already published useful task detail, stage-specific evidence, usage-rights statements and/or explicit separation of sample films from client commissions.
+
+The [new source note](../research/2026-10-29-service-page-followup.md) and [full 25-URL inventory](../research/2026-10-29-creative-provider-service-page-scan.json) clarify the earlier finding: **the technical README sample should never be used to characterize a company's entire commercial-facing presence**.
+
+We also [pre-registered 18 generic EN/RU task searches and two named controls](../research/2026-10-29-public-search-baseline-protocol.md) in one public web-search provider. An exact `objekts.ai` URL appeared on one generic result page, at position 10. The named controls failed to retrieve the official domain on that provider, while another web engine did find it. This makes provider-specific retrieval bias explicit. See the [complete results, raw records and scoring tool](../research/2026-10-29-public-search-baseline-report.md). **No independent AI-agent supplier recommendation or commercial attribution has been measured.**
 
 ---
 
