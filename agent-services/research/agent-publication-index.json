@@ -71,6 +71,17 @@
       "type": "atom_feed",
       "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/feed.xml",
       "status": "PUBLIC_DIRECT_URL_READBACK; EXTERNAL_SUBSCRIPTION_UNVERIFIED"
+    },
+    {
+      "type": "synthetic_brief_benchmark",
+      "id": "OBJEKTS101-TRIAGE-32",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/creative-service-agent-triage-benchmark.md",
+      "dataset_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/2026-10-29-creative-service-32-synthetic-triage-cases.json",
+      "cases": 32,
+      "labels_per_class": 8,
+      "evaluation": "human-authored synthetic expected outcomes; no live agent test",
+      "privacy": "no real customer briefs",
+      "license": "no separate license authorized"
     }
   ],
   "current_kpis": {
