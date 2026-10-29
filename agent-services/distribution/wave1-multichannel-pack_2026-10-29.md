@@ -71,3 +71,34 @@ Record `asset_id, host, account_owner, rules_url, duplicate_check, payload_revis
 ## Review / ownership
 
 Role 101 provides source-qualified text and methods; 36.x owns distribution, 13/editorial owns external editorial placement where assigned. Current role101 state is `awaiting_reconciliation`; no third-party actions are authorized by this file alone.
+
+## Wave-one source update and revised social variants · 29 October 2026
+
+### EN / research-oriented social post, v2 (DRAFT — NOT POSTED)
+
+We examined 25 public webpages from AI/VFX, CGI and adjacent creative-production providers. Many already describe real production tasks; the more interesting question is whether an AI assistant can use those facts without misidentifying a producer's exact contribution or sending private material without permission.
+
+In a separate, frozen 18-query EN/RU public-web search experiment, our own studio website appeared on one result page (#10). This one-provider test had an important control failure: an exact-name query missed the official site, although a separate search backend found it. We publish the raw rankings, the failure, and the method.
+
+A small GitHub technical-README scan alone cannot describe the commercial presence of entire studios. We therefore opened a public replication question for developers, producers and researchers.
+
+All sources and limitations: https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/essays/from-social-to-agentic-networks_en.md
+Open replication: https://github.com/peach420fuzz/objekts-production-desk/issues/168
+
+Research by **objekts**. The observations are exploratory, not a market census or verified client referrals.
+
+### RU / industry social post, v2 (ЧЕРНОВИК — НЕ ОПУБЛИКОВАН)
+
+AI-агенту поручили найти студию для замены окружения в снятой рекламе. Актёр, камера и продукт остаются неизменными. Каких доказательств достаточно, чтобы рекомендовать конкретную команду?
+
+Мы в **objekts** опубликовали исследование агентной доступности услуг и провели два дополнительных открытых эксперимента. Проверили 25 страниц AI/VFX- и CGI-производителей: у ряда компаний уже подробно описаны ограничения, примеры и порядок оценки брифа. Отдельно сделали 18 поисковых запросов без названия студии. В одном поисковом провайдере сайт objekts появился только по одному запросу — на десятом месте; однако сам провайдер плохо отработал контрольный поиск по точному имени. Это показывает ограничение измерения, а не общую долю видимости в AI.
+
+Исходные данные, методика и новая редакция статьи: https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/essays/github-agent-era-brand-marketing-video-production_ru.md
+Английское исследование и дополнения: https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/README.md
+
+### Editorial and channel receipt delta
+
+- Actual verified external email in this session: VentureBeat general newsroom **one SENT Gmail receipt**, no reply or publication confirmed.
+- Pre-existing studio editorial contacts (do not repeat blindly): Creative Bloq, The Drum, VFX Voice, HollywoodCGFX; Sostav and AdIndex remain owner-blocked for unsolicited free placement.
+- Connected social publishing is blocked: Metricool has no linked studio networks; Opera/Browser connectors and TinyFish social credentials unavailable. All posts in this document remain **DRAFT**, not off-GitHub publications.
+- Research source URLs: [25-page scan](../research/2026-10-29-creative-provider-service-page-scan.json), [retrieval report](../research/2026-10-29-public-search-baseline-report.md), [public discussion](https://github.com/peach420fuzz/objekts-production-desk/issues/168).
