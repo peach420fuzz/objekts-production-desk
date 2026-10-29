@@ -64,7 +64,7 @@ function pageInvariants(html, path, marker) {
   const section=sections[0][0];
   const mainOpen=html.search(/<main(?:\s|>)/i),mainClose=html.lastIndexOf("</main>");
   assert.ok(mainOpen>=0 && mainClose>mainOpen,path+": main must exist");
-  assert.ok(sections[0].index>mainOpen && sections[0].index+section.length<mainClose,path+": CTA inside main");
+  assert.ok(sections[0].index>mainOpen && sections[0].index+section.length<=mainClose,path+": CTA inside main");
   assert.ok(section.includes("mailto:salute@objekts.ai?subject="+marker),path+": exact human opt-in subject");
   assert.ok(section.includes("/tools/production-desk"),path+": live production preflight");
   assert.ok(html.includes('data-r12-hydration="case-brief-v1"'),path+": hydration recovery script preserved");
