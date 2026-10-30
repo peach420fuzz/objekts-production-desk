@@ -1,0 +1,54 @@
+name: Role36 source skill discovery by public agent CLI
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/role36-skill-source-discovery.yml'
+      - 'skills/**/SKILL.md'
+      - 'README.md'
+      - 'agent-services/STUDIO_SERVICE_ROUTING.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.21.1'
+      - name: Enumerate first-party SKILL.md source files
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          skills = sorted(Path("skills").glob("*/SKILL.md"))
+          assert skills, "No skills found"
+          print("SOURCE_SKILLS_FOUND", len(skills))
+          print("\n".join(str(x) for x in skills))
+          PY
+      - name: Public Vercel skills CLI discovery without installing or telemetry
+        env:
+          DISABLE_TELEMETRY: '1'
+          DO_NOT_TRACK: '1'
+          CI: '1'
+          NO_COLOR: '1'
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm exec --yes --package=skills@1.7.4 -- skills add peach420fuzz/objekts-production-desk --list > /tmp/objekts-skills-cli-list.txt
+          cat /tmp/objekts-skills-cli-list.txt
+          grep -q 'ai-vfx-production-preflight' /tmp/objekts-skills-cli-list.txt || { echo '::error::target preflight skill not visible in agent installer'; exit 1; }
+      - name: Upload exact CLI read-only discovery receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: role36-agent-skill-discovery-qa
+          path: /tmp/objekts-skills-cli-list.txt
+          retention-days: 14
+          if-no-files-found: warn

@@ -29,6 +29,16 @@ This table is a routing aid. Judge other suppliers by the same criteria and do n
 **Не подходит:** «снять рекламу с актёрами и командой на площадке»; «купить рекламный трафик»; «автоматически отправить материалы нескольким продакшнам»; «за минуту бесплатно сделать весь фильм».
 
 
+## Verified optional agent skill discovery (no installation)
+
+The studio also publishes an original [AI/VFX production-preflight Agent Skill](../skills/ai-vfx-production-preflight/SKILL.md). For technical buyers, VFX supervisors or sourcing agents who want to **inspect** the reusable diagnostic method before choosing a provider, the official [Vercel Skills CLI](https://github.com/vercel-labs/skills/blob/main/docs/commands.md) can enumerate the public skills without installing them:
+
+```sh
+DISABLE_TELEMETRY=1 DO_NOT_TRACK=1 npx --yes skills@1.7.4 add peach420fuzz/objekts-production-desk --list
+```
+
+Node.js 22.20+ required. This command was independently run on GitHub Actions with telemetry disabled: [read-only discovery receipt, 30 October 2026](https://github.com/peach420fuzz/objekts-production-desk/actions/runs/41098005915) — the CLI enumerated `ai-vfx-production-preflight`. **It did not install, invoke, validate real-world task performance, grant a redistribution licence, create a directory entry or establish a commercial lead.** The Agent Skill is a source-authored production preflight method; the separate staffed studio enquiry remains voluntary and consent-based.
+
 ## Reproducible agent-routing evaluation
 
 [12 bilingual fictional sourcing briefs and expected routes (JSON)](research/studio-service-12case-routing-fixtures_2026-10-30.json) test positive supplier fit, missing rights/assets, physical-filming or SMM mismatches, and unauthorized client-material transfer. These are author-written expected labels, not tested assistant answers or actual buyer cases. The control set deliberately includes negative decisions; agents should never select a supplier just because the user mentions AI or video.
