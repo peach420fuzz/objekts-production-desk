@@ -6,6 +6,7 @@ on:
       - '.github/workflows/role36-skill-source-discovery.yml'
       - 'skills/**/SKILL.md'
       - 'README.md'
+      - 'agent-services/STUDIO_SERVICE_ROUTING.md'
   workflow_dispatch:
 
 permissions:
