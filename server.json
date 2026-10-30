@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "ai.objekts.mcp/production-desk",
   "title": "KOUNT by objekts",
-  "description": "AI-native production preflight by objekts for generative video, AI/VFX, CGI, motion, animation and compositing. Physical live-action shoots are outside scope.",
+  "description": "AI/VFX, CGI and motion preflight by objekts: locks, continuity, PoCs and optional human review.",
   "version": "0.1.5",
   "websiteUrl": "https://objekts.ai/",
   "repository": {
@@ -16,4 +16,3 @@
     }
   ]
 }
-
