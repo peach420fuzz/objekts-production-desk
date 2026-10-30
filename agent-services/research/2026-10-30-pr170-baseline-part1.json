@@ -1,0 +1,197 @@
+{
+  "study": "PR170 source retrieval, provider TinyFish",
+  "part": 1,
+  "cases": [
+    {
+      "id": "ru-01",
+      "query": "Нужно заменить окружение магазина в отснятой рекламе, актёры и движение камеры неизменны.",
+      "lang": "ru",
+      "expected_route_for_future_only": "CONSIDER",
+      "status": "retrieved",
+      "results": [
+        {
+          "rank": 1,
+          "url": "https://emko.academy/blog/16-tipov-dvizheniya-kamery/",
+          "title": "16 типов движения камеры | Ёмко!"
+        },
+        {
+          "rank": 2,
+          "url": "https://theway-pro.com/article009",
+          "title": "Монтаж по направлению движения. - The Way"
+        },
+        {
+          "rank": 3,
+          "url": "https://textzone.ru/publ/grammatika_kinojazyka/osnovnye_pravial_dvizhenija_kamery/dvadcat_osnovnykh_pravil_dvizhenija_kamery/133-1-0-866",
+          "title": "Двадцать основных правил движения камеры - Каталог статей"
+        },
+        {
+          "rank": 4,
+          "url": "https://new-retail.ru/marketing/reklama/kak_otmeny_i_vozvraty_iskazhayut_effektivnost_reklamy_internet_magazina/",
+          "title": "Как отмены и возвраты искажают эффективность рекламы ..."
+        },
+        {
+          "rank": 5,
+          "url": "https://vk.ru/wall-726232_136156",
+          "title": "20 операторских приёмов"
+        },
+        {
+          "rank": 6,
+          "url": "https://bmreklama.ru/tpost/903ld3u701-pochemu-reklamu-zamechayut-no-ne-zapomin",
+          "title": "7 ошибок наружной рекламы: как сделать рекламу эффективной"
+        },
+        {
+          "rank": 7,
+          "url": "https://hvac-school.ru/upload/files/pdf/juler_creativ_strateg.pdf",
+          "title": "10. Камера фиксирует то, что Торнхил видит по мере своего движе"
+        },
+        {
+          "rank": 8,
+          "url": "https://elar.urfu.ru/bitstream/10995/90822/1/pr_2004_033.pdf",
+          "title": "[PDF] Монтаж в рекламе"
+        },
+        {
+          "rank": 9,
+          "url": "https://7universum.com/ru/philology/archive/item/13646",
+          "title": "ДВИЖЕНИЕ КАМЕРЫ КАК ДОПОЛНИТЕЛЬНЫЙ СПОСОБ ..."
+        },
+        {
+          "rank": 10,
+          "url": "https://blog.cybermarketing.ru/medijnaya-reklama/",
+          "title": "Медийная реклама: какие задачи решает, где размещается и как ..."
+        }
+      ]
+    },
+    {
+      "id": "ru-02",
+      "query": "Сменить сезон в реальном городском видео и сохранить людей и архитектуру.",
+      "lang": "ru",
+      "expected_route_for_future_only": "CONSIDER",
+      "status": "retrieved",
+      "results": [
+        {
+          "rank": 1,
+          "url": "https://www.instagram.com/reel/DRrY18-iLCI/",
+          "title": "как технологии меняют стиль частной архитектуры. Полный ..."
+        },
+        {
+          "rank": 2,
+          "url": "https://vk.ru/wall-218725391_1196",
+          "title": "🍂 Осень в архитектуре: как сезон меняет восприятие ..."
+        },
+        {
+          "rank": 3,
+          "url": "https://www.youtube.com/watch?v=J0PJZdd4b5Y",
+          "title": "Comments"
+        }
+      ]
+    },
+    {
+      "id": "ru-03",
+      "query": "Для серии рекламы требуется неизменный персонаж, мокрый костюм и непрерывность между сценами.",
+      "lang": "ru",
+      "expected_route_for_future_only": "CONSIDER",
+      "status": "retrieved",
+      "results": [
+        {
+          "rank": 1,
+          "url": "https://petr-panda.ru/prompty-dlya-kostyumera/",
+          "title": "Промпты для костюмера. 27 готовых примеров - NeuroPanda"
+        },
+        {
+          "rank": 2,
+          "url": "https://vk.ru",
+          "title": "Приемы в кино, которые вы возможно не замечали, но ..."
+        },
+        {
+          "rank": 3,
+          "url": "https://mmu-otvety.ru/rezhissura-serialov-klipov-reklamnykh-rolikov/",
+          "title": "Режиссура сериалов, клипов, рекламных роликов"
+        },
+        {
+          "rank": 4,
+          "url": "https://baike.baidu.com",
+          "title": "пространственно-временная непрерывность"
+        },
+        {
+          "rank": 5,
+          "url": "https://gotquestions.online/question/217751",
+          "title": "Вопрос 43 | Командум | Есть вопросы?"
+        },
+        {
+          "rank": 6,
+          "url": "https://lagunadivers.ru",
+          "title": "Гидрокостюмы мокрые"
+        },
+        {
+          "rank": 7,
+          "url": "https://lms.hsedesign.ru",
+          "title": "Ответь"
+        },
+        {
+          "rank": 8,
+          "url": "https://habr.com",
+          "title": "Runway AI на русском: нейросеть Ранвей для создания ..."
+        },
+        {
+          "rank": 9,
+          "url": "https://vc.ru",
+          "title": "Персонажи в рекламе: почему нужно согласие и как его ..."
+        }
+      ]
+    },
+    {
+      "id": "en-04",
+      "query": "We need a product CGI spot with perfectly fixed packaging labels, material finish and multiple crops.",
+      "lang": "en",
+      "expected_route_for_future_only": "CLARIFY",
+      "status": "retrieved",
+      "results": [
+        {
+          "rank": 1,
+          "url": "https://7cgi.com/3d-packaging-rendering/",
+          "title": "3D Packaging Rendering Services | Photorealistic Product Visuals ..."
+        },
+        {
+          "rank": 2,
+          "url": "https://www.cgvizstudio.com/packaging-visualization?srsltid=AYCX9vLt4sbjDFm9msGaibbfSFRazrVh7fVKURVK2UvRFFzY1kNNNXCA",
+          "title": "Packaging Visualization Services | CG Viz Studio"
+        },
+        {
+          "rank": 3,
+          "url": "https://bmproduccions.com/en/blog/cgi-packaging-design",
+          "title": "CGI for Packaging Design: Visualise, Validate and Launch Faster"
+        },
+        {
+          "rank": 4,
+          "url": "https://maverickframe.com/solutions/marketing-agencies/",
+          "title": "White-Label CGI Production for Marketing Agencies"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.madcgi.com/blog-posts/cgi-product-video-guide",
+          "title": "CGI Product Video: The Complete Guide for Brands - MAD CGI"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.cadesignform.com/services/3d-images/product-images",
+          "title": "Product Images (CGI) & Packshots | Cadesign form"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.jpgglobal.net/us/packaging-graphics-services/cgi-packshots-and-3d-product-images/",
+          "title": "CGI Packshots and 3D Product Imagery - Jupiter Prestige Group"
+        },
+        {
+          "rank": 8,
+          "url": "https://www.youtube.com/playlist?list=PLc6NCp8iAPDbhsNDTECttWATL0vRU7Sm7",
+          "title": "CGI & VFX Animated Commercial Spots & Ads | CGMeetup - YouTube"
+        },
+        {
+          "rank": 9,
+          "url": "https://anivoramedia.com/services/cgi-product-videos/",
+          "title": "CGI Product Videos for Product Launches - Anivora Media"
+        }
+      ]
+    }
+  ]
+}
