@@ -1,0 +1,110 @@
+name: Validate and manually publish Production Desk MCP Registry
+
+on:
+  pull_request:
+    paths:
+      - 'server.json'
+      - '.github/workflows/publish-production-desk-mcp-registry.yml'
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: 'Publish server.json to the official Registry if it is newer'
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  registry-sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Assert first-party manifest and public endpoint identity
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path("server.json").read_text(encoding="utf-8"))
+          assert d.get("name")=="ai.objekts.mcp/production-desk", "wrong namespace"
+          assert d.get("version")=="0.1.5", "reconcile source version before release"
+          assert d.get("title")=="KOUNT by objekts", "product name drift"
+          assert d.get("remotes")==[{"type":"streamable-http","url":"https://mcp.objekts.ai/mcp"}], "endpoint changed"
+          assert d.get("repository",{}).get("url")=="https://github.com/peach420fuzz/objekts-production-desk"
+          print("IDENTITY_OK",d["name"],d["version"])
+          PY
+      - name: Install pinned official MCP Registry publisher and check its archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --silent --show-error --retry 2 --max-time 55 \
+            https://github.com/modelcontextprotocol/registry/releases/download/v1.8.7/mcp-publisher_linux_amd64.tar.gz \
+            --output /tmp/mcp-publisher_linux_amd64.tar.gz
+          echo '00b21004149a4ce66f0782508ae4a2bce67d1bea395a8da0bd8028159fb59579  /tmp/mcp-publisher_linux_amd64.tar.gz' | sha256sum --check
+          tar -xzf /tmp/mcp-publisher_linux_amd64.tar.gz mcp-publisher
+          ./mcp-publisher --help > /dev/null
+      - name: Validate production-desk server.json (never publishes on PR)
+        run: ./mcp-publisher validate server.json
+      - name: Compare pinned source with official latest
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish == true }}
+        id: latest
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --silent --show-error --retry 2 --max-time 30 \
+            'https://registry.modelcontextprotocol.io/v0.1/servers/ai.objekts.mcp%2Fproduction-desk/versions/latest' \
+            --output /tmp/objekts_registry_latest.json
+          python3 - <<'PY'
+          import json, os, re
+          from pathlib import Path
+          local=json.loads(Path("server.json").read_text(encoding="utf-8"))
+          remote=json.loads(Path("/tmp/objekts_registry_latest.json").read_text(encoding="utf-8"))
+          actual=remote.get("server",{}).get("name")
+          assert actual==local["name"],"registry namespace mismatch"
+          def semver(v):
+              if not isinstance(v,str) or not re.fullmatch(r"\d+\.\d+\.\d+",v):
+                  raise ValueError("Refuse non-simple semver comparison")
+              return tuple(map(int,v.split(".")))
+          desired,previous=local["version"],remote["server"]["version"]
+          if semver(desired)<semver(previous):
+              raise RuntimeError(f"Refuse stale registry downgrade {desired} < {previous}")
+          publish=semver(desired)>semver(previous)
+          print(f"REGISTRY_LATEST={previous}; SOURCE={desired}; NEED_PUBLISH={publish}")
+          with open(os.environ["GITHUB_OUTPUT"],"a",encoding="utf-8") as out:
+              out.write(f"needed={'true' if publish else 'false'}\n")
+          PY
+      - name: Authenticate and publish only on explicit manual request
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish == true && steps.latest.outputs.needed == 'true' }}
+        shell: bash
+        env:
+          MCP_PRIVATE_KEY: ${{ secrets.MCP_PRIVATE_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${MCP_PRIVATE_KEY:-}" ]; then
+            echo '::error::MCP_PRIVATE_KEY secret is unavailable; do not invent a registry login or publish.'
+            exit 1
+          fi
+          ./mcp-publisher login http --domain=mcp.objekts.ai --private-key="$MCP_PRIVATE_KEY"
+          ./mcp-publisher publish server.json
+      - name: Verify official latest after manual publish
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish == true }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --silent --show-error --retry 2 --max-time 30 \
+            'https://registry.modelcontextprotocol.io/v0.1/servers/ai.objekts.mcp%2Fproduction-desk/versions/latest' \
+            --output /tmp/objekts_registry_after.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          local=json.loads(Path("server.json").read_text(encoding="utf-8"))
+          remote=json.loads(Path("/tmp/objekts_registry_after.json").read_text(encoding="utf-8"))
+          assert remote.get("server",{}).get("version")==local["version"],"registry latest has not updated to source version"
+          assert remote.get("_meta",{}).get("io.modelcontextprotocol.registry/official",{}).get("status")=="active"
+          print("REGISTRY_LATEST_VERIFIED",local["name"],local["version"])
+          PY
