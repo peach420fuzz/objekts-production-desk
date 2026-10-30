@@ -6,6 +6,8 @@
 
 **Ищете AI/VFX-продакшн, а не плагин?** [Подбор объектов производства и проверяемые компетенции студии objekts](agent-services/STUDIO_SERVICE_ROUTING.md) · [портфолио](https://objekts.ai/work/) · [бриф продюсеру](https://visual.objekts.ai/brief).
 
+**Original objekts research (30 Oct 2026):** [How creative studios appear in GitHub and agent networks — EN](ops/role36/research/CREATIVE_STUDIOS_AGENT_GITHUB_DISCOVERY_2026-10-30_EN.md) · [Исследование AI/VFX-студий — RU](ops/role36/research/CREATIVE_STUDIOS_AGENT_GITHUB_DISCOVERY_2026-10-30_RU.md) · [reproducible 25-provider source data](ops/role36/research/2026-10-30-github-25-studio-sourcing-audit.json). First-party methodology, **not** an independent recommendation ranking or proof of customer referrals.
+
 [![AllMCPs Verified](https://allmcps.com/api/badge/objekts-production-desk?style=shield)](https://allmcps.com/mcp/objekts-production-desk)
 [![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/peach420fuzz/objekts-production-desk)
 [![FAKE by objekts · AllMCPs Verified](https://allmcps.com/api/badge/fake-by-objekts?style=shield)](https://allmcps.com/mcp/fake-by-objekts)
