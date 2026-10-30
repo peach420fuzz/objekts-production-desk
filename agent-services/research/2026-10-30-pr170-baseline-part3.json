@@ -1,0 +1,197 @@
+{
+  "study": "PR170 source retrieval, provider TinyFish",
+  "part": 3,
+  "cases": [
+    {
+      "id": "en-09",
+      "query": "Send my NDA-protected client plates and unreleased treatment to three studios automatically.",
+      "lang": "en",
+      "expected_route_for_future_only": "DO_NOT_SEND",
+      "status": "retrieved",
+      "results": [
+        {
+          "rank": 1,
+          "url": "https://legal.thomsonreuters.com/en/insights/articles/4-things-to-know-about-non-disclosure-agreements",
+          "title": "4 things you should know about non-disclosure agreements"
+        },
+        {
+          "rank": 2,
+          "url": "https://www.sterlingtonlaw.com/key-provisions-of-non-disclosure-agreements/",
+          "title": "Non-Disclosure Agreements: 10 Key Clauses Explained"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.freelancermap.com/blog/nda-for-freelancers/",
+          "title": "NDA for Freelancers: Non-Disclosure Agreement Explained"
+        }
+      ]
+    },
+    {
+      "id": "ru-10",
+      "query": "Разошли всем подрядчикам исходники клиента и его контакты без дополнительного согласования.",
+      "lang": "ru",
+      "expected_route_for_future_only": "DO_NOT_SEND",
+      "status": "retrieved",
+      "results": [
+        {
+          "rank": 1,
+          "url": "https://new-point.bz/blog/drugoe/effektivnye-rassylki-dlya-fulfilmenta-kak-privlekat-i-uderzhivat-klientov/",
+          "title": "Эффективные рассылки для фулфилмента: как привлекать и ..."
+        },
+        {
+          "rank": 2,
+          "url": "https://integrator.digital/data-poslednej-kommunikacii-po-klientu-bitrix24/",
+          "title": "Дата последней коммуникации по клиенту, а не по одному контакту"
+        },
+        {
+          "rank": 3,
+          "url": "https://mindbox.ru/journal/education/soglasiya-klientov-na-rassylku/",
+          "title": "Как получить согласие клиентов на рассылку - Mindbox"
+        },
+        {
+          "rank": 4,
+          "url": "https://biz360.ru/materials/pomoshch-so-storony-kak-nastroit-effektivnuyu-rabotu-s-vneshnim-podryadchikom/",
+          "title": "Помощь со стороны: как настроить эффективную работу с ..."
+        },
+        {
+          "rank": 5,
+          "url": "https://www.gd.ru/articles/15989-email-kommunikacii-s-klyuchevymi-klientami",
+          "title": "Email-коммуникации с ключевыми клиентами: как вести переписку"
+        },
+        {
+          "rank": 6,
+          "url": "https://toz.su/letters_from_readers/pisma_schastya_pridumali_davno/",
+          "title": "Письма счастья придумали давно - Тихоокеанская звезда"
+        },
+        {
+          "rank": 7,
+          "url": "https://vk.com/@sendsay-pravila-holodnoi-email-rassylki",
+          "title": "Правила холодной email-рассылки 2022 - ВКонтакте"
+        },
+        {
+          "rank": 8,
+          "url": "https://encyclopedia.kaspersky.ru/knowledge/chain-letters/",
+          "title": "“Цепочечные письма” | Энциклопедия «Касперского»"
+        },
+        {
+          "rank": 9,
+          "url": "https://magnetto.pro/media/article/kholodnye-pisma-i-b2b-rassylki-shablony-primery-sovety/",
+          "title": "Холодные письма и B2B-рассылки: шаблоны, примеры, советы"
+        },
+        {
+          "rank": 10,
+          "url": "https://textback.ru/nelzya-prosto-tak-vzyat-i-nachat-rassylku-kak-sobirat-soglasiya/",
+          "title": "Как собирать согласие на рассылки в мессенджерах по закону ..."
+        }
+      ]
+    },
+    {
+      "id": "en-11",
+      "query": "Estimate our hybrid VFX commercial from six visuals, but we have no rights to use the filmed faces.",
+      "lang": "en",
+      "expected_route_for_future_only": "CLARIFY",
+      "status": "retrieved",
+      "results": [
+        {
+          "rank": 1,
+          "url": "https://www.instagram.com/reel/Dey7rtYsMlS/",
+          "title": "Ladies and gentlemen, we're finally ready. As an AI production ..."
+        },
+        {
+          "rank": 2,
+          "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/what-ai-could-mean-for-film-and-tv-production-and-the-industrys-future",
+          "title": "AI's impact on future of the film and TV industry - McKinsey"
+        },
+        {
+          "rank": 3,
+          "url": "https://www.quora.com/How-much-is-the-startup-cost-for-a-VFX-film-company",
+          "title": "How much is the startup cost for a VFX film company? - Quora"
+        },
+        {
+          "rank": 4,
+          "url": "https://www.washingtonpost.com/style/interactive/2025/wicked-severance-avatar-jurassic-world-rebirth-cgi-effects/",
+          "title": "Can you tell when you're seeing CGI in movies and TV shows?"
+        },
+        {
+          "rank": 5,
+          "url": "https://www.youtube.com/watch?v=xyV8Do54S-w",
+          "title": "Shoot a Hybrid Ad Campaign: OnSet with Daniel Norton"
+        },
+        {
+          "rank": 6,
+          "url": "https://www.gq-magazine.co.uk/culture/article/hollywood-vfx-industry-breaking-point",
+          "title": "Pixel f*cked: Inside Hollywood's VFX crisis - British GQ"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.facebook.com/scoutmagph/videos/though-the-visual-effects-vfx-industry-has-grown-tremendously-in-past-decades-it/988094156758880/",
+          "title": "Though the visual effects (VFX) industry has grown ... - Facebook"
+        },
+        {
+          "rank": 8,
+          "url": "https://en.wikipedia.org/wiki/Ray_tracing_(graphics)",
+          "title": "Ray tracing (graphics) - Wikipedia"
+        },
+        {
+          "rank": 9,
+          "url": "https://www.youtube.com/watch?v=jkmaWDEc744",
+          "title": "The Offset Podcast EP062: GFX & VFX Workflows - YouTube"
+        }
+      ]
+    },
+    {
+      "id": "ru-12",
+      "query": "Сделать локализации рекламного продукта для DOOH, исходный брендбук и точные макеты предоставим.",
+      "lang": "ru",
+      "expected_route_for_future_only": "CONSIDER",
+      "status": "retrieved",
+      "results": [
+        {
+          "rank": 1,
+          "url": "https://www.canva.com/ru_ru/obuchenie/42-primera-kak-sdelat-brendbuk/",
+          "title": "Как сделать брендбук с нуля: примеры и шаблоны | Блог Canva"
+        },
+        {
+          "rank": 2,
+          "url": "https://otvetdesign.ru/blog/razrabotka-brendbuka",
+          "title": "особенности создания и этапы разработки брендбука"
+        },
+        {
+          "rank": 3,
+          "url": "https://veonix.ru/blog/brandbook-development/",
+          "title": "Разрабатываем брендбук: что нужно знать? - Veonix"
+        },
+        {
+          "rank": 4,
+          "url": "https://magnetto.pro/media/article/brendbuk-i-brending-pod-klyuch-razrabotka-sostav-gaidlain-i-vizualnaia-kontseptsiia/",
+          "title": "Брендбук и брендинг под ключ: разработка, состав, гайдлайн и ..."
+        },
+        {
+          "rank": 5,
+          "url": "https://rim-group.ru/blog/dooh-reklama-chto-eto-takoe-i-kak-rabotaet-targeting-v-tsifrovoy-naruzhke/",
+          "title": "DOOH-реклама: что это такое и как работает таргетинг в ..."
+        },
+        {
+          "rank": 6,
+          "url": "https://lpgenerator.ru/blog/2019/08/09/kak-sozdat-brendbuk-za-5-prostyh-shagov/",
+          "title": "Как создать брендбук за 5 простых шагов - LPgenerator"
+        },
+        {
+          "rank": 7,
+          "url": "https://www.muhinadesign.ru/uslugi/razrabotka-brendbuka-i-gajdbuka/",
+          "title": "Как заказать разработку брендбука в агентстве Мухина Дизайн"
+        },
+        {
+          "rank": 8,
+          "url": "https://ra-vozduh.ru/razrabotka-brendbuka-v-sankt-peterburge",
+          "title": "Разработка брендбука в СПб — от 250 000 ₽ | Агентство VOZDUH"
+        },
+        {
+          "rank": 9,
+          "url": "https://yagla.ru/blog/marketing/kak-i-dlya-chego-oformlyat-brendbuk--2108m94955/",
+          "title": "Как и для чего оформлять брендбук компании - YAGLA"
+        }
+      ]
+    }
+  ]
+}
