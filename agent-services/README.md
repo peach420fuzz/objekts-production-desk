@@ -20,6 +20,8 @@ This directory publishes source-qualified analysis of professional visual-produc
 
 **[PR #170 pre-merge discoverability pilot — 12 bilingual briefs](research/2026-10-30-pr170-retrieval-baseline-report.md)** — fixed queries, 100 first-page source URLs and a failed brand-name positive control. One web provider only; no agent-host recommendations measured.
 
+**[Post-merge studio-source QA (30 October)](research/2026-10-30-postmerge-agent-service-source-qa.md)** — verified root→studio guide→case links, GitHub Actions skill discovery, source-credit gaps and human-contact consent caveats. [Structured audit (12 checks)](research/2026-10-30-merged-agent-service-source-qa.json). No independent AI-agent recommendation measured.
+
 ## Open verification and supplemental research — 29 October 2026
 
 - [25 curated AI/VFX/CGI service-page source inventory](research/2026-10-29-creative-provider-service-page-scan.json) — first-party public pages, literal counts and sample limits; **not a market census**
