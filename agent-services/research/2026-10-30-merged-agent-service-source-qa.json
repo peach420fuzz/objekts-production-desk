@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "publisher": "objekts / Agent Service Access role101",
+  "as_of": "2026-10-30",
+  "basis": "post-merge first-party static source and host support audit",
+  "source_repo": "https://github.com/peach420fuzz/objekts-production-desk",
+  "merged_pr": 170,
+  "merged_commit": "1f95cae4598d31f0dd49a463fb9df9beb7b4537d",
+  "observed_main_head": "d476bd32bdd3db26fd07eed785f28c46920c2a63",
+  "release_checks": [
+    {
+      "id": "R1",
+      "name": "Primary GitHub README contains EN/RU service route",
+      "result": "PASS",
+      "evidence": "Main README retrieved directly; route link in first-screen copy",
+      "source": "https://github.com/peach420fuzz/objekts-production-desk"
+    },
+    {
+      "id": "R2",
+      "name": "Buyer service guide in main branch readable anonymously",
+      "result": "PASS",
+      "evidence": "Main branch Markdown received by GitHub connector and an independent public fetcher",
+      "source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/STUDIO_SERVICE_ROUTING.md"
+    },
+    {
+      "id": "R3",
+      "name": "Public 12 synthetic buyer briefs JSON accessible",
+      "result": "PASS",
+      "evidence": "12 records retrieved through independently accessible public raw GitHub path",
+      "source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/studio-service-12case-routing-fixtures_2026-10-30.json"
+    },
+    {
+      "id": "R4",
+      "name": "AI VFX Agent Skill public source exists",
+      "result": "PASS",
+      "evidence": "Public SKILL.md readable; source skill enumeration workflow succeeded separately",
+      "source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/skills/ai-vfx-production-preflight/SKILL.md"
+    },
+    {
+      "id": "R5",
+      "name": "Studio-service CI validation run",
+      "result": "PASS",
+      "evidence": "GitHub Actions run 41098211188 concluded success; static-studio-proof step success",
+      "source": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/41098211188"
+    },
+    {
+      "id": "R6",
+      "name": "Vercel official skill CLI enumeration CI",
+      "result": "PASS",
+      "evidence": "GitHub Actions run 41098211171 concluded success; only skill list, not full production workflow",
+      "source": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/41098211171"
+    },
+    {
+      "id": "R7",
+      "name": "Canonical case pages retrieve",
+      "result": "PASS",
+      "evidence": "Magnit 2026, SberCity, Voting, Tic Tac publicly returned readable content",
+      "sources": [
+        "https://objekts.ai/en/work/magnit-2026",
+        "https://objekts.ai/en/work/sbercity",
+        "https://objekts.ai/en/work/voting",
+        "https://objekts.ai/en/work/tic-tac"
+      ]
+    },
+    {
+      "id": "R8",
+      "name": "Human brief instructions available RU/EN",
+      "result": "PASS_WITH_CAVEAT",
+      "evidence": "Both human-contact landing pages publicly readable; no actual form/email submission or secure upload independently tested",
+      "sources": [
+        "https://visual.objekts.ai/brief",
+        "https://visual.objekts.ai/en/brief"
+      ]
+    },
+    {
+      "id": "R9",
+      "name": "Machine-readable relevant case evidence on every conditional positive fixture",
+      "result": "PARTIAL",
+      "evidence": "Three of four CONSIDER fixtures provide exact canonical proof URLs; ru-12 DOOH/localization expected CONSIDER but has null proof. Capability plausibility does not imply comparable commissioned example.",
+      "source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/studio-service-12case-routing-fixtures_2026-10-30.json"
+    },
+    {
+      "id": "R10",
+      "name": "GitHub repository topics accurately describe AI VFX and agent service source",
+      "result": "NOT_DONE",
+      "evidence": "GitHub API topics has only gemini-cli-extension; owner must approve any topics change",
+      "source": "https://github.com/peach420fuzz/objekts-production-desk"
+    },
+    {
+      "id": "R11",
+      "name": "Actual autonomous vendor sourcing and recommendation",
+      "result": "NOT_TESTED",
+      "evidence": "No independent LLM vendor-fit test or buyer referral; public-web TinyFish positive control failed"
+    },
+    {
+      "id": "R12",
+      "name": "Root README buyer opt-in CTA semantically precise",
+      "result": "OPEN_CORRECTION",
+      "evidence": "Root labels /brief link opt-in production brief despite tested landing pages providing contact instructions and no observed form submission. No claim of actual customer data transmission.",
+      "source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/README.md"
+    }
+  ],
+  "candidate_improvements": [
+    {
+      "priority": "P0",
+      "owner": "root README/product owner",
+      "change": "Rename /brief links as contact and brief instructions in EN/RU; make explicit that clicking does not submit anything; no auto transfer."
+    },
+    {
+      "priority": "P1",
+      "owner": "studio-source entry owner",
+      "change": "Change product row's generic portfolio source to precise first-party Tic Tac 2025 product VFX 8 sec / Ballpark Production credited limited scope, with careful separation from full film."
+    },
+    {
+      "priority": "P1",
+      "owner": "fixture/test owner",
+      "change": "For ru-12 DOOH with null proof, retain conditional status only with capability caveat and human source check; do not infer historical delivered DOOH credit."
+    },
+    {
+      "priority": "P1",
+      "owner": "repo metadata owner",
+      "change": "Review useful truthfully accurate GitHub topics; current one tag does not describe production or AI VFX."
+    },
+    {
+      "priority": "P2",
+      "owner": "role36.2 independent agent evaluator",
+      "change": "Record real A/B/C host runs, frozen 12 briefs, positive retrieval control, exact proof credit and consent; public-web search is insufficient."
+    }
+  ],
+  "limits": "This is source-release QA only. Passing 7 static checks does not establish ranking, commercial referral, approval, contractual rights or a safe working form."
+}
