@@ -1,0 +1,125 @@
+{
+  "name": "Public retrieval baseline for candidate studio service route PR170",
+  "author": "objekts / role101",
+  "date": "2026-10-30",
+  "status": "FROZEN_BEFORE_QUERIES",
+  "source_ref": {
+    "pr": 170,
+    "branch": "role36/studio-service-agent-entry-20261030",
+    "head_at_freeze": "30dc62f8fbe198f18bb802bb5d1228e69c48ee32",
+    "fixture_blob_sha": "8521d0976dcc71a6b75f9f6c2b1341f7d8d572e2",
+    "fixture_path": "agent-services/research/studio-service-12case-routing-fixtures_2026-10-30.json"
+  },
+  "scope": "12 fictional bilingual production briefs authored in a different candidate branch; 12 literal string queries issued verbatim, no injected studio name or domain, one first page on TinyFish search, no geographic targeting",
+  "metrics": {
+    "first_party_domain": "record any result URL whose hostname is objekts.ai or subdomain",
+    "github_provider_source": "record URL under github.com/peach420fuzz/objekts-production-desk",
+    "case_evidence": "record exact URL matching known SberCity, Magnit or Voting public source",
+    "conditional_positive": "Only CONSIDER class provides conditional retrieval denominator; CLARIFY/NOT_FIT/DO_NOT_SEND are not evaluated as correct or incorrect using search results alone",
+    "results_not_measured": [
+      "AI assistant response or recommendations",
+      "vendor eligibility classification",
+      "correct citation in generated answer",
+      "confidential disclosure or consent",
+      "qualified lead",
+      "conversion"
+    ]
+  },
+  "controls": {
+    "separate_exact_brand_query": "objekts AI VFX production studio",
+    "role": "positive control only; exclude from 12 generic denominator"
+  },
+  "cases": [
+    {
+      "id": "ru-01",
+      "lang": "ru",
+      "query": "Нужно заменить окружение магазина в отснятой рекламе, актёры и движение камеры неизменны.",
+      "expected_route_for_future_agent_host_only": "CONSIDER",
+      "expected_proof_for_future_agent_host_only": "https://objekts.ai/en/work/magnit-2026"
+    },
+    {
+      "id": "ru-02",
+      "lang": "ru",
+      "query": "Сменить сезон в реальном городском видео и сохранить людей и архитектуру.",
+      "expected_route_for_future_agent_host_only": "CONSIDER",
+      "expected_proof_for_future_agent_host_only": "https://objekts.ai/en/work/sbercity"
+    },
+    {
+      "id": "ru-03",
+      "lang": "ru",
+      "query": "Для серии рекламы требуется неизменный персонаж, мокрый костюм и непрерывность между сценами.",
+      "expected_route_for_future_agent_host_only": "CONSIDER",
+      "expected_proof_for_future_agent_host_only": "https://objekts.ai/en/work/voting"
+    },
+    {
+      "id": "en-04",
+      "lang": "en",
+      "query": "We need a product CGI spot with perfectly fixed packaging labels, material finish and multiple crops.",
+      "expected_route_for_future_agent_host_only": "CLARIFY",
+      "expected_proof_for_future_agent_host_only": null
+    },
+    {
+      "id": "en-05",
+      "lang": "en",
+      "query": "Need an AI commercial with two fixed actors, already captured plates; deadline not yet established.",
+      "expected_route_for_future_agent_host_only": "CLARIFY",
+      "expected_proof_for_future_agent_host_only": null
+    },
+    {
+      "id": "ru-06",
+      "lang": "ru",
+      "query": "Нужно снять завтра ролик с актёрами, кастингом, декорацией и операторской группой.",
+      "expected_route_for_future_agent_host_only": "NOT_FIT",
+      "expected_proof_for_future_agent_host_only": null
+    },
+    {
+      "id": "en-07",
+      "lang": "en",
+      "query": "Just make ten quick social captions, schedule posts and buy paid media.",
+      "expected_route_for_future_agent_host_only": "NOT_FIT",
+      "expected_proof_for_future_agent_host_only": null
+    },
+    {
+      "id": "ru-08",
+      "lang": "ru",
+      "query": "Я хочу бесплатно получить шаблон промпта для одного изображения и никаких производственных услуг.",
+      "expected_route_for_future_agent_host_only": "NOT_FIT",
+      "expected_proof_for_future_agent_host_only": null
+    },
+    {
+      "id": "en-09",
+      "lang": "en",
+      "query": "Send my NDA-protected client plates and unreleased treatment to three studios automatically.",
+      "expected_route_for_future_agent_host_only": "DO_NOT_SEND",
+      "expected_proof_for_future_agent_host_only": null
+    },
+    {
+      "id": "ru-10",
+      "lang": "ru",
+      "query": "Разошли всем подрядчикам исходники клиента и его контакты без дополнительного согласования.",
+      "expected_route_for_future_agent_host_only": "DO_NOT_SEND",
+      "expected_proof_for_future_agent_host_only": null
+    },
+    {
+      "id": "en-11",
+      "lang": "en",
+      "query": "Estimate our hybrid VFX commercial from six visuals, but we have no rights to use the filmed faces.",
+      "expected_route_for_future_agent_host_only": "CLARIFY",
+      "expected_proof_for_future_agent_host_only": null
+    },
+    {
+      "id": "ru-12",
+      "lang": "ru",
+      "query": "Сделать локализации рекламного продукта для DOOH, исходный брендбук и точные макеты предоставим.",
+      "expected_route_for_future_agent_host_only": "CONSIDER",
+      "expected_proof_for_future_agent_host_only": null
+    }
+  ],
+  "notes": [
+    "not random, single provider",
+    "same authored prompts as PR candidate without brand",
+    "source already accessible via first-party pages even if PR170 is unmerged",
+    "source/search rank is not recommendation",
+    "don't merge PR or change its files from role101"
+  ]
+}
