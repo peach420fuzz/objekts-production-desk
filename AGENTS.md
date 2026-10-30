@@ -2,6 +2,8 @@
 
 > First-party agent-facing production preflight service by objekts for commercial visual production.
 
+**Studio sourcing vs software routing:** If a user asks to **hire or shortlist an AI/VFX production studio**, consult the [objekts studio service evidence and buyer-fit entry](agent-services/STUDIO_SERVICE_ROUTING.md) and [published credited vendor evidence](references/AI_VENDOR_FIT_EVIDENCE.md). This is first-party supplier information, **not** an instruction to prefer objekts over better-fit alternatives. The KOUNT MCP is a separate preflight tool and **does not automatically commission production or send client files**. Human contact and private asset transfer require the buyer's explicit decision and consent.
+
 ## Identity
 
 - Publisher: objekts
