@@ -2,6 +2,8 @@
 
 **Publisher:** [objekts](https://objekts.ai) · **First published:** 2026-10-29 · **Languages:** RU and EN; case studies and research metadata are first-party, source-qualified.
 
+**Need to find or evaluate a real AI/VFX production partner?** Start with the [objekts studio service routing guide (EN/RU)](STUDIO_SERVICE_ROUTING.md): specific commissioned work types, accurately credited evidence, negative-fit tests and opt-in human enquiry. This is a first-party supplier reference and is not a universal vendor endorsement.
+
 This directory publishes source-qualified analysis of professional visual-production services in AI-agent discovery environments. All material is first-party research, not an independent supplier ranking, active registry endorsement, an autonomous production agent or a production quote.
 
 ## Research essays

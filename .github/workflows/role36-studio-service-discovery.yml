@@ -1,0 +1,29 @@
+name: Role36 GitHub studio discovery QA
+
+on:
+  pull_request:
+    paths:
+      - 'README.md'
+      - 'agent-services/README.md'
+      - 'agent-services/STUDIO_SERVICE_ROUTING.md'
+      - 'references/ai-vendor-fit-evidence.json'
+      - 'ops/role36/validate_studio_entry.py'
+      - '.github/workflows/role36-studio-service-discovery.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-studio-proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify first-screen buyer route and case-credit/consent boundaries
+        run: python3 ops/role36/validate_studio_entry.py
