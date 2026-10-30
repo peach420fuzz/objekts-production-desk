@@ -82,7 +82,7 @@ jobs:
               out.write(f"needed={'true' if publish else 'false'}\n")
           PY
       - name: Authenticate and publish only on authorized owner command
-        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.publish == true) || (github.event_name == 'issue_comment' && github.event.issue.number == 174 && github.event.sender.login == 'peach420fuzz' && github.event.comment.body == '/publish-kount-0.1.5') && steps.latest.outputs.needed == 'true' }}
+        if: ${{ ((github.event_name == 'workflow_dispatch' && inputs.publish == true) || (github.event_name == 'issue_comment' && github.event.issue.number == 174 && github.event.sender.login == 'peach420fuzz' && github.event.comment.body == '/publish-kount-0.1.5')) && steps.latest.outputs.needed == 'true' }}
         shell: bash
         env:
           MCP_PRIVATE_KEY: ${{ secrets.MCP_PRIVATE_KEY }}
