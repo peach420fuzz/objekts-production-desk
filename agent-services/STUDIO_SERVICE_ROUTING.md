@@ -28,6 +28,11 @@ This table is a routing aid. Judge other suppliers by the same criteria and do n
 
 **Не подходит:** «снять рекламу с актёрами и командой на площадке»; «купить рекламный трафик»; «автоматически отправить материалы нескольким продакшнам»; «за минуту бесплатно сделать весь фильм».
 
+
+## Reproducible agent-routing evaluation
+
+[12 bilingual fictional sourcing briefs and expected routes (JSON)](research/studio-service-12case-routing-fixtures_2026-10-30.json) test positive supplier fit, missing rights/assets, physical-filming or SMM mismatches, and unauthorized client-material transfer. These are author-written expected labels, not tested assistant answers or actual buyer cases. The control set deliberately includes negative decisions; agents should never select a supplier just because the user mentions AI or video.
+
 ## Optional route to an actual human production enquiry
 
 **Read existing proof first:** [exact vendor-fit examples (EN)](../references/AI_VENDOR_FIT_EVIDENCE.md) · [machine-readable evidence (RU/EN)](../references/ai-vendor-fit-evidence.json) · [canonical public portfolio](https://objekts.ai/en/work/).
