@@ -1,0 +1,181 @@
+{
+  "dataset": "objekts-gh-creative-provider-lexical-v1",
+  "date": "2026-10-30",
+  "publisher": "objekts",
+  "study_type": "Exploratory purposive sample, exact GitHub repository name/description queries; not a market census or independently validated studio ownership list",
+  "sample_n": 25,
+  "source_cohort": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/agent-services/research/2026-10-29-creative-provider-service-page-scan.json",
+  "git_search_protocol": "For each first-party creative-service domain, issue one chosen brand/string `in:name,description` query through authenticated first-party GitHub connector; inspect up to 20 candidate repositories. Candidate lexical match is not a verified corporate repo.",
+  "count_zero_first20": 10,
+  "count_nonzero_first20": 15,
+  "critical_recall_correction": {
+    "provider": "SHAR Production",
+    "initial_query": "\"sharprod\" in:name,description",
+    "initial_first20_contained_actual_repo": false,
+    "alternate_query": "\"SHARProduction\" in:name,description",
+    "actual_repo_position_in_alternate_first20": 20,
+    "exact_query": "repo:SHARProduction/production-metadata-mcp",
+    "exact_found": true,
+    "verified_repo": "https://github.com/SHARProduction/production-metadata-mcp",
+    "publisher_homepage": "https://sharprod.com/"
+  },
+  "claim_boundaries": [
+    "Search responses are not company GitHub inventories, assistant recommendations, SDK installations or leads",
+    "Zero lexical results do not mean absence of GitHub accounts, aliases, organization code or private repositories",
+    "Positive lexical results can be unrelated owners and are never automatically assigned to the studio",
+    "Source cases and production credits are self-published assertions, not independent certification",
+    "The 25 commercial provider websites were selected intentionally; not a random or population-representative sample"
+  ],
+  "observations": [
+    {
+      "provider_and_domain": "Glassy Films / glassyfilms.com",
+      "query": "\"glassyfilms\" in:name,description",
+      "returned_first_20": 0,
+      "qualification_note": "No exact-keyword match observed; alternate-name repos unknown"
+    },
+    {
+      "provider_and_domain": "Kosmo Films / kosmofilms.com",
+      "query": "\"kosmofilms\" in:name,description",
+      "returned_first_20": 0,
+      "qualification_note": "Same limitation"
+    },
+    {
+      "provider_and_domain": "Halation House / halation.house",
+      "query": "\"halation.house\" in:description",
+      "returned_first_20": 0,
+      "qualification_note": "Domain-only query, not a comprehensive company lookup"
+    },
+    {
+      "provider_and_domain": "SHAR Production / sharprod.com",
+      "query": "\"sharprod\" in:name,description",
+      "returned_first_20": 20,
+      "qualification_note": "**CORRECTED upon secondary discovery:** first 20 missed the proper studio repository. [SHARProduction/production-metadata-mcp](https://github.com/SHARProduction/production-metadata-mcp) explicitly links `sharprod.com` and published MCP skill; see note below."
+    },
+    {
+      "provider_and_domain": "AI25 Studio / ai25.studio",
+      "query": "\"ai25\" in:name,description",
+      "returned_first_20": 20,
+      "qualification_note": "Generic substring and unrelated projects; brand owner unproven"
+    },
+    {
+      "provider_and_domain": "LOOM Studio / loomstudio.design",
+      "query": "\"loomstudio\" in:name,description",
+      "returned_first_20": 11,
+      "qualification_note": "Multiple unrelated account candidates; no verified source"
+    },
+    {
+      "provider_and_domain": "Invalid Symbol / invalidsymbol.com",
+      "query": "\"invalidsymbol\" in:name,description",
+      "returned_first_20": 0,
+      "qualification_note": "Lexical miss only"
+    },
+    {
+      "provider_and_domain": "DeSeif / deseif.es",
+      "query": "\"deseif\" in:name,description",
+      "returned_first_20": 1,
+      "qualification_note": "Candidate `darren00k0deseif`, ownership unproven"
+    },
+    {
+      "provider_and_domain": "ZerezoFilms / zerezofilms.com",
+      "query": "\"zerezofilms\" in:name,description",
+      "returned_first_20": 0,
+      "qualification_note": "Lexical miss only"
+    },
+    {
+      "provider_and_domain": "Blacklight Studios / blacklightstudio.ai",
+      "query": "\"blacklightstudio\" in:name,description",
+      "returned_first_20": 2,
+      "qualification_note": "Account names collide; no exact verified site provenance"
+    },
+    {
+      "provider_and_domain": "FCKING MAGIC FILMS / fckingmagicfilms.com",
+      "query": "\"fckingmagic\" in:name,description",
+      "returned_first_20": 0,
+      "qualification_note": "Lexical miss only"
+    },
+    {
+      "provider_and_domain": "IAVAI / iavai.es",
+      "query": "\"iavai\" in:name,description",
+      "returned_first_20": 6,
+      "qualification_note": "Mostly generic substring hits"
+    },
+    {
+      "provider_and_domain": "Toni Riera / toniriera.art",
+      "query": "\"toniriera\" in:name,description",
+      "returned_first_20": 2,
+      "qualification_note": "`toniriera2025/tonirierasite` explicitly describes the `toniriera.art` website; appears to be relevant website code, not a discoverable agent skill"
+    },
+    {
+      "provider_and_domain": "Pic Visual / picvisual.com",
+      "query": "\"picvisual\" in:name,description",
+      "returned_first_20": 1,
+      "qualification_note": "Unverified unrelated owner"
+    },
+    {
+      "provider_and_domain": "STARNO / starno.net",
+      "query": "\"starno\" in:name,description",
+      "returned_first_20": 20,
+      "qualification_note": "Many different unrelated owners, e.g. Starnodes; not a valid studio match"
+    },
+    {
+      "provider_and_domain": "Automaton / automatonagency.com",
+      "query": "\"automatonagency\" in:name,description",
+      "returned_first_20": 0,
+      "qualification_note": "Lexical miss only"
+    },
+    {
+      "provider_and_domain": "O-Side Media / o-sidemedia.com",
+      "query": "\"osidemedia\" in:name,description",
+      "returned_first_20": 8,
+      "qualification_note": "[OSideMedia/higgsfield-ai-prompt-skill](https://github.com/OSideMedia/higgsfield-ai-prompt-skill) is clearly creator-branded, but corporate-domain ownership not independently authenticated in this pass"
+    },
+    {
+      "provider_and_domain": "Utopai Studios / utopaistudios.com",
+      "query": "\"utopai\" in:name,description",
+      "returned_first_20": 20,
+      "qualification_note": "[Utopai-Research/pai-code](https://github.com/Utopai-Research/pai-code) README explicitly links `utopaistudios.com` and PAI hosted service; first-party affiliation claimed in source"
+    },
+    {
+      "provider_and_domain": "CATS Studio / cats.studio",
+      "query": "\"cats.studio\" in:description",
+      "returned_first_20": 0,
+      "qualification_note": "Domain-query lexical miss only"
+    },
+    {
+      "provider_and_domain": "Cinela / cinela.ai",
+      "query": "\"cinela\" in:name,description",
+      "returned_first_20": 20,
+      "qualification_note": "Generic substring/collision; no verified owner"
+    },
+    {
+      "provider_and_domain": "DavidDoesAI / daviddoesai.com",
+      "query": "\"daviddoesai\" in:name,description",
+      "returned_first_20": 1,
+      "qualification_note": "`daviddoesai/hud-drop-downloads` contains a 41-character assets README; not meaningful service discovery"
+    },
+    {
+      "provider_and_domain": "NeuralVibe / neuralvibe.eu",
+      "query": "\"neuralvibe\" in:name,description",
+      "returned_first_20": 13,
+      "qualification_note": "`NeuralVibe/MemoriaTrace` is a Korean-language Android/Obsidian tool, not evidence of this advertising-studio affiliation"
+    },
+    {
+      "provider_and_domain": "Dor Brothers / thedorbrothers.com",
+      "query": "\"dorbrothers\" in:name,description",
+      "returned_first_20": 0,
+      "qualification_note": "Lexical miss only"
+    },
+    {
+      "provider_and_domain": "Newcraft / newcraftstudio.com",
+      "query": "\"newcraftstudio\" in:name,description",
+      "returned_first_20": 1,
+      "qualification_note": "Different named owner; no source-backed identity"
+    },
+    {
+      "provider_and_domain": "MaiDreamsLab / maidreamslab.ai",
+      "query": "\"maidreamslab\" in:name,description",
+      "returned_first_20": 0,
+      "qualification_note": "Lexical miss only"
+    }
+  ]
+}
