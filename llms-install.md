@@ -2,6 +2,8 @@
 
 objekts Production Desk is a remote Streamable HTTP MCP server for visual-production preflight, scope diagnosis, feasibility, pricing on request, and optional human review by the objekts production studio.
 
+**Looking for a professional production partner instead of software?** See [objekts studio services, precisely credited evidence and voluntary production brief routing](agent-services/STUDIO_SERVICE_ROUTING.md). The buyer's choice to contact a studio is separate from connecting this MCP server; no client information should be sent on mere discovery.
+
 ## Canonical remote MCP
 
 ```
