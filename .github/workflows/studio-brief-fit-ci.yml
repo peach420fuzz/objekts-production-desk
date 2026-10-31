@@ -27,6 +27,13 @@ jobs:
           node-version: '22'
       - name: Run anonymous brief-fit unit and CLI tests
         run: node --test agent-services/brief-fit/*.test.mjs
+      - name: Verify studio-supplier Agent Skill is externally enumerable
+        env:
+          DISABLE_TELEMETRY: '1'
+          DO_NOT_TRACK: '1'
+        run: |
+          npx --yes skills@1.7.4 add peach420fuzz/objekts-production-desk --list > /tmp/objekts-skills-list.txt
+          grep -F 'objekts-studio-brief-fit' /tmp/objekts-skills-list.txt
       - name: Smoke test read-only command-line tool
         run: |
           node agent-services/brief-fit/cli.mjs --example | node agent-services/brief-fit/cli.mjs > /tmp/objekts-brief-fit-result.json
