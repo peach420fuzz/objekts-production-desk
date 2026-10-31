@@ -2,9 +2,9 @@
 
 # KOUNT by objekts
 
-**Looking for a production studio, not a software tool?** [objekts — agent-readable studio services and evidence (EN/RU)](agent-services/STUDIO_SERVICE_ROUTING.md) · [canonical portfolio](https://objekts.ai/en/work/) · [opt-in production brief](https://visual.objekts.ai/en/brief). This studio route is separate from KOUNT's read-only preflight and does not imply automatic acceptance or submission.
+**Looking for a production studio, not a software tool?** [objekts — agent-readable studio services and evidence (EN/RU)](agent-services/STUDIO_SERVICE_ROUTING.md) · [canonical portfolio](https://objekts.ai/en/work/) · [producer contact and brief instructions](https://visual.objekts.ai/en/brief). This studio route is separate from KOUNT's read-only preflight and does not imply automatic acceptance or submission.
 
-**Ищете AI/VFX-продакшн, а не плагин?** [Подбор объектов производства и проверяемые компетенции студии objekts](agent-services/STUDIO_SERVICE_ROUTING.md) · [портфолио](https://objekts.ai/work/) · [бриф продюсеру](https://visual.objekts.ai/brief).
+**Ищете AI/VFX-продакшн, а не плагин?** [Подбор объектов производства и проверяемые компетенции студии objekts](agent-services/STUDIO_SERVICE_ROUTING.md) · [портфолио](https://objekts.ai/work/) · [контакты продюсера и инструкция для брифа](https://visual.objekts.ai/brief).
 
 [![AllMCPs Verified](https://allmcps.com/api/badge/objekts-production-desk?style=shield)](https://allmcps.com/mcp/objekts-production-desk)
 [![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/peach420fuzz/objekts-production-desk)
