@@ -4,6 +4,8 @@
 
 **Кто мы:** objekts — студия AI/VFX, генеративного видео, CGI, motion design и комплексного визуального производства для рекламы, кино и брендированного контента. Это не автоматический сервис производства ролика по запросу, не съёмочная группа и не маркетинговое агентство.
 
+**Buyer wants a human producer?** [Open the RU/EN producer contact and opt-in enquiry guide](REQUEST_PRODUCER_REVIEW.md). A browser visit never sends anything; the buyer must deliberately send the email from their own account. For a quick anonymous test use [Brief Fit](brief-fit/README.md).
+
 ## For a buyer's agent: which briefs justify considering this studio?
 
 | Actual commissioning problem | Relevant first-party proof | Smallest useful verification | Selection boundary |
