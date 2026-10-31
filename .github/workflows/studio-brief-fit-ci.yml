@@ -1,0 +1,33 @@
+name: objekts anonymous studio brief-fit tests
+
+on:
+  push:
+    paths:
+      - 'agent-services/brief-fit/**'
+      - '.github/workflows/studio-brief-fit-ci.yml'
+  pull_request:
+    paths:
+      - 'agent-services/brief-fit/**'
+      - '.github/workflows/studio-brief-fit-ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout public source
+        uses: actions/checkout@v4
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run anonymous brief-fit unit and CLI tests
+        run: node --test agent-services/brief-fit/*.test.mjs
+      - name: Smoke test read-only command-line tool
+        run: |
+          node agent-services/brief-fit/cli.mjs --example | node agent-services/brief-fit/cli.mjs > /tmp/objekts-brief-fit-result.json
+          node -e "const r=require('/tmp/objekts-brief-fit-result.json');if(r.status!=='eligible_for_review'||r.submission_performed||r.upload_performed||r.lead_record_created) process.exit(1)"
