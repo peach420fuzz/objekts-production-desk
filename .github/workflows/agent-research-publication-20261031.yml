@@ -1,0 +1,28 @@
+name: Agent research — two original papers on verified agent boards
+on:
+  push:
+    paths:
+      - '.github/workflows/agent-research-publication-20261031.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  topical-agent-network-publication:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate exact source URLs and lengths without publishing
+        run: node agent-services/distribution/post-20261031-two-papers.mjs --dry-run
+      - name: Publish one transparent research item on each of two topical agent boards and verify
+        run: node agent-services/distribution/post-20261031-two-papers.mjs
+      - name: Retain raw platform receipts for independent checking
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verified-agent-network-20261031
+          path: agent-syndication-receipts.json
+          if-no-files-found: ignore
