@@ -4,6 +4,8 @@
 
 **[Executable anonymous Brief Fit CLI](brief-fit/README.md)** — local RU/EN supplier-fit check with 52 regression cases, no network, uploads or external contact; [source](brief-fit/safe-brief-preflight.mjs), [closed schema](brief-fit/public-brief-hint.schema.json), [Agent Skill](../skills/objekts-studio-brief-fit/SKILL.md). Results are conditional, first-party producer-review hints, not client submissions.
 
+**[Request a human producer review — RU/EN](REQUEST_PRODUCER_REVIEW.md)** — direct consent-based email template for real AI/VFX production enquiries with a self-declared agent-referral subject. No automatic sending, protected files or lead claims.
+
 **Need to find or evaluate a real AI/VFX production partner?** Start with the [objekts studio service routing guide (EN/RU)](STUDIO_SERVICE_ROUTING.md): specific commissioned work types, accurately credited evidence, negative-fit tests and opt-in human enquiry. This is a first-party supplier reference and is not a universal vendor endorsement.
 
 This directory publishes source-qualified analysis of professional visual-production services in AI-agent discovery environments. All material is first-party research, not an independent supplier ranking, active registry endorsement, an autonomous production agent or a production quote.
