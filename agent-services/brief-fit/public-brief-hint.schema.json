@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "objekts | Anonymous service fit hint | public preview",
+  "$id": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/agent-services/brief-fit/public-brief-hint.schema.json",
+  "description": "Local anonymous preview. No names, emails, uploads, client source links, free text or implied consent. This does not contact the studio.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "language",
+    "service_id",
+    "deliverable_kind",
+    "source_rights_status",
+    "confidential_assets_present"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1-internal"
+    },
+    "language": {
+      "enum": [
+        "ru",
+        "en"
+      ]
+    },
+    "service_id": {
+      "enum": [
+        "AI_VFX_SHOT",
+        "AI_COMMERCIAL",
+        "PRODUCT_CGI_LOOKDEV",
+        "VISUAL_RD",
+        "UNKNOWN"
+      ]
+    },
+    "deliverable_kind": {
+      "enum": [
+        "single_shot",
+        "sequence",
+        "commercial_film",
+        "key_visual_or_lookdev",
+        "feasibility_test",
+        "unknown"
+      ]
+    },
+    "shot_count_band": {
+      "enum": [
+        "1",
+        "2-5",
+        "6-10",
+        "11+",
+        "unknown"
+      ]
+    },
+    "duration_band": {
+      "enum": [
+        "under_10s",
+        "10-30s",
+        "31-60s",
+        "over_60s",
+        "unknown"
+      ]
+    },
+    "target_channel": {
+      "enum": [
+        "online",
+        "broadcast",
+        "dooh",
+        "cinema",
+        "internal_pitch",
+        "unknown"
+      ]
+    },
+    "source_rights_status": {
+      "enum": [
+        "confirmed",
+        "unknown",
+        "blocked"
+      ]
+    },
+    "confidential_assets_present": {
+      "type": "boolean"
+    },
+    "camera_geometry_lock": {
+      "type": "boolean"
+    },
+    "product_label_lock": {
+      "type": "boolean"
+    },
+    "performer_identity_lock": {
+      "type": "boolean"
+    },
+    "buyer_requested_contact_link": {
+      "type": "boolean"
+    },
+    "producer_review_needed": {
+      "const": true
+    }
+  }
+}

@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+const file=fileURLToPath(new URL('./cli.mjs',import.meta.url));
+const run=(input,extra=[])=>spawnSync(process.execPath,[file,...extra],{input,encoding:'utf8',timeout:5000});
+test('Piped anonymous hint yields conditional producer review',()=>{const example=run(null,['--example']);assert.equal(example.status,0);const a=run(example.stdout);assert.equal(a.status,0);const j=JSON.parse(a.stdout);assert.equal(j.status,'eligible_for_review');assert.equal(j.submission_performed,false);assert.equal(j.upload_performed,false);assert.equal(j.contact_instructions_url,'https://visual.objekts.ai/brief')});
+test('Confidential media hint blocks recipient route',()=>{const a=run(JSON.stringify({schema_version:'0.1-internal',language:'en',service_id:'AI_VFX_SHOT',deliverable_kind:'single_shot',source_rights_status:'confirmed',confidential_assets_present:true,buyer_requested_contact_link:true}));assert.equal(a.status,0);const j=JSON.parse(a.stdout);assert.equal(j.status,'stop_no_consent');assert.equal(j.contact_instructions_url,null)});
+test('Unknown field is rejected by the closed public gate',()=>{const a=run(JSON.stringify({schema_version:'0.1-internal',language:'en',service_id:'AI_VFX_SHOT',deliverable_kind:'single_shot',source_rights_status:'confirmed',confidential_assets_present:false,email:'private@example.invalid'}));assert.equal(a.status,0);const j=JSON.parse(a.stdout);assert.equal(j.status,'needs_more_info');assert.equal(j.evidence.length,0)});
+test('Invalid JSON input rejects without reflection',()=>{const a=run('{invalid: secret-value');assert.equal(a.status,2);assert.ok(!a.stderr.includes('secret-value'))});
+test('Oversized hint rejected',()=>{const a=run('a'.repeat(8193));assert.equal(a.status,2);assert.match(a.stderr,/size limit/)});
+test('Invalid argument rejected',()=>{const a=run(null,['--send']);assert.equal(a.status,2)});
