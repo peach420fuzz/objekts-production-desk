@@ -78,8 +78,13 @@ const routes=[
     await navPage.waitForTimeout(1500);
     const direct=inventory(await navPage.locator('script[type="application/ld+json"]').allTextContents());
     await navPage.goto("https://objekts.ai/en/work",{waitUntil:"domcontentloaded",timeout:25000});
-    const card=navPage.locator('a[href$="/work/tic-tac"]').first();
-    await card.click({timeout:20000});
+    // The same case link exists in both a hidden responsive menu and the
+    // real catalogue. .first() selected the hidden one and timed out.
+    // Follow only an actually visible, pointer-accessible catalogue link.
+    const candidates=navPage.locator('a[href$="/work/tic-tac"]');
+    const card=navPage.locator('a[href$="/work/tic-tac"]:visible').first();
+    if(!(await card.count()))throw Error("no-visible-tic-tac-catalogue-card; matches="+await candidates.count());
+    await card.click({timeout:12000});
     await navPage.waitForURL(/\/work\/tic-tac(?:[?#]|$)/,{timeout:20000});
     await navPage.waitForTimeout(1500);
     const fromCard=inventory(await navPage.locator('script[type="application/ld+json"]').allTextContents());
