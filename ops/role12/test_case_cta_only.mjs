@@ -12,6 +12,18 @@ const CASES=[
 ];
 const HTML='<html><head><title>Studio</title></head><body><main><article>Film proof</article></main></body></html>';
 
+// An independent upstream WebMCP overlay may add this exact optional script to
+// the public hostname while the workers.dev noindex preview bypasses that layer.
+// Ignore ONLY this literal insertion; keep byte-exact comparison for everything
+// else, including canonical, conversion copy, scripts and media markup.
+const OPTIONAL_WEBMCP_BRIDGE='<script type="module" async fetchpriority="low" src="https://objekts.ai/.webmcp/bridge.js" data-packs="c2pa"></script>';
+function withoutKnownWebMcpOverlay(html) {
+  const parts=html.split(OPTIONAL_WEBMCP_BRIDGE);
+  assert.ok(parts.length<=2,"Unexpected duplicate WebMCP overlay scripts");
+  return parts.join("");
+}
+
+
 test("case CTA remains voluntary, after proof, inside main",()=>{
   for(const [path,marker] of CASES){
     const r=injectCaseQuote(path,HTML);
@@ -24,6 +36,15 @@ test("case CTA remains voluntary, after proof, inside main",()=>{
     assert.equal((r.html.match(/<section data-objekts-role12=/g)||[]).length,1);
     assert.equal(injectCaseQuote(path,r.html).changed,false);
   }
+});
+
+test("ignore only the single known WebMCP script; preserve all other differences",()=>{
+  const source='<head><meta charset="utf-8"></head><main>Proof</main>';
+  const withScript=source.replace("</head>", OPTIONAL_WEBMCP_BRIDGE+"</head>");
+  assert.equal(withoutKnownWebMcpOverlay(withScript),source);
+  assert.equal(withoutKnownWebMcpOverlay(source),source);
+  assert.throws(()=>withoutKnownWebMcpOverlay(OPTIONAL_WEBMCP_BRIDGE.repeat(2)),/duplicate/);
+  assert.notEqual(withoutKnownWebMcpOverlay(withScript+"<!--unapproved-change-->"),source);
 });
 
 test("unrelated routes/unsafe HTML return unchanged",()=>{
@@ -68,7 +89,8 @@ if(process.env.R12_LIVE==="1") {
       assert.ok(b.includes('data-objekts-role12="case-brief-v1"'));
       assert.ok(b.includes('src="/__markets/client-v27.mjs"'),path+": existing markets header preserved");
       const clean=b.replace('<base href="https://objekts.ai/"><meta name="robots" content="noindex,nofollow">',"");
-      assert.equal(clean,a,path+": released HTML and preview must be byte-identical except preview robots/base");
+      assert.equal(withoutKnownWebMcpOverlay(clean),withoutKnownWebMcpOverlay(a),
+        path+": production and preview must match except for preview noindex/base and the exact known WebMCP script");
       assert.equal((a.match(/data-objekts-role12="case-brief-v1"/g)||[]).length,1,path+": exactly one CTA section");
       return {path,original_length:a.length,preview_length:b.length,match:true};
     }));
