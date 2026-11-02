@@ -1,15 +1,17 @@
 {
   "schema_version": "objekts.role12.roadmap_state.v1",
-  "updated_on": "2026-10-22",
+  "updated_on": "2026-11-02",
   "mandate": "Organic search and AI-assisted buyer discovery, evidence-backed qualification and inbound attribution; Russia first, SEA and global additional. No editorial outreach and no agent-registry duplication.",
   "owner_constraints": [
     "Free channels; no paid API or registration",
     "No unsolicited mail or confidential submissions",
     "Do not deploy production changes without permission",
     "Case sources: SberCity, Magnit, Voting/Stepan; Auto.ru development only",
-    "Do not use Cordiant, Made Sense, SmartFruits in role12 assets"
+    "Do not use Cordiant, Made Sense, SmartFruits in role12 assets",
+    "Owner-cancelled first-party technical articles/blog/Field Notes: GitHub issue #126 CLOSED, no site publication.",
+    "Ubersuggest does not provide Russia results (owner LOCK); do not rerun Russia query."
   ],
-  "current_stage": "R12-03 case CTA released on four canonical pages, issue #103 CLOSED, confirmed live 200/canonical/index+CTA. Primary remaining objective is attribution: turn real nonbranded AI/VFX search traffic into human-sent qualified brief + estimate + payment. Post-release Chromium live visual workflow still executing.",
+  "current_stage": "R12-07/09 verified source-to-brief conversion: four case CTAs live and tested post-hydration; Google source measurable; real qualified organic/agent enquiry not yet attributed. PR #178 restores valid scheduled buyer monitor; issues #119/#122 remain scoped; owner-cancelled #126 must not be reactivated.",
   "completed": {
     "R12-00": {
       "status": "done",
@@ -86,8 +88,8 @@
   "open": [
     {
       "id": "R12-04",
-      "status": "canonical_alias_regression_checks_updated__site_owner_localization_pending",
-      "next": "Live canonical and sitemap QA passing in CI. English machine Markdown is already live under /reference/en/work/sbercity.md; mistaken /en/reference form 404 is expected, no main-site localization deploy needed."
+      "status": "grouped_canonical_verified__video_error_and_spa_schema_open",
+      "next": "Case CTA/canonicals now verified after hydration. Source-level player issue #119 and client-navigation schema duplication issue #122 remain; avoid fake fix and preserve author credits."
     },
     {
       "id": "R12-05",
@@ -97,14 +99,14 @@
     },
     {
       "id": "R12-07",
-      "status": "Cloudflare_RUM_and_Windsor_GSC_read_available__attribution_not_confirmed",
-      "next": "Use Windsor.ai searchconsole for settled impressions/clicks/queries/pages (account sc-domain:objekts.ai) and Cloudflare exact-host RUM for browser referrers. Do not claim URL indexing from sitemap counts or infer leads from crawls.",
+      "status": "gsc_windsor_and_rum_read_available__no_human_source_attribution",
+      "next": "Use already-connected sc-domain:objekts.ai for settled daily/country/page queries; no new paid data provider. Require human-sent tagged enquiry before claiming lead; unknown referrers remain unknown.",
       "source_tool": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role12/rum_attribution.py"
     },
     {
       "id": "R12-09",
-      "status": "active",
-      "next": "Review opt-in qualified briefs, human estimates and receipts weekly"
+      "status": "active_zero_tagged_leads",
+      "next": "Review qualified source-attributed inbound and actual proposal/won events, not page loads; focus existing high-intent service/case paths."
     }
   ],
   "observed_proxies_2026_10_18": {
@@ -288,5 +290,40 @@
       "objekts.ai/en/work/magnit-2026": "e0bb1172a2424b13a24933fe5286ab8a"
     },
     "reviewer_caveat": "Automated Chromium geometry and accessibility checks passed 8/8 on preview; independent production run initiated. Screenshot artifact stored, no manual design approval."
+  },
+  "verified_checkpoint_2026_11_02": {
+    "evidence_date": "2026-11-02",
+    "role": "OBJEKTS 12 Search & AI Visibility",
+    "live_worker": "objekts-r12-case-edge-v1",
+    "verified_cloudflare_version": "b9f73061-5a17-4029-83f8-101fca460686",
+    "live_case_paths": [
+      "/work/sbercity",
+      "/work/magnit-2026",
+      "/en/work/sbercity",
+      "/en/work/magnit-2026"
+    ],
+    "primary_release_pr": "https://github.com/peach420fuzz/objekts-production-desk/pull/137",
+    "ci_bridge_correction_pr": "https://github.com/peach420fuzz/objekts-production-desk/pull/178",
+    "ci_bridge_correction_merged_commit": "8d4c5698912620e3c013fc0843487735259707a7",
+    "independent_buyer_ci": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/41534650664",
+    "visual_qa": "https://github.com/peach420fuzz/objekts-production-desk/actions/runs/41534682786",
+    "main_mobile_desktop_after_hydration": "8/8 PASS, but JSON-LD SPA link diagnosis inconclusive (hidden navigation target)",
+    "jsonld_navigation_fix_review": "https://github.com/peach420fuzz/objekts-production-desk/pull/179",
+    "gsc_existing_source": "Windsor.ai searchconsole sc-domain:objekts.ai",
+    "gsc_private_metrics_policy": "Small low-volume click/query aggregates not copied into public repo",
+    "consented_tagged_enquiries_observed": 0,
+    "new_paid_work_attributed_to_role12": 0,
+    "unrelated_mcp_2026_discovery": "still delegated issue #101 (legacy usable; modern 2026-07-28 rejects)",
+    "issues_open": [
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/119",
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/122"
+    ],
+    "issues_closed": [
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/103",
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/105",
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/126"
+    ],
+    "production_mutations_this_checkpoint": 0,
+    "git_change_scope": "CI and read-only diagnostics only; no case/media/page/trackers changed"
   }
 }
