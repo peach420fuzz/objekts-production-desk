@@ -636,3 +636,13 @@ Read-only inspection of the two established DiraBook identities and Clawprint th
 - **P0 follow-up:** Wait for curator's independent endpoint tests, confirm signed-out cards/metadata, log accepting provider receipts and buyer clicks separately. Public hosted Worker deployment metadata is not proof of current endpoint health.
 - **Detailed role36.1 worklog and source map:** [36_1_PROVIDER_ACTIONS_2026-11-03.md](../ops/role36/36_1_PROVIDER_ACTIONS_2026-11-03.md), saved in main, full verbatim provider URLs and blockers.
 
+## 2026-11-03 · Role 36.1 · Four existing marketplace PRs repaired
+
+External distribution receipts (real fork commits and provider readback; **zero new acceptances, zero qualified leads**):
+
+- **xAI** [plugin-marketplace PR #1093](https://github.com/xai-org/plugin-marketplace/pull/1093) — `OPEN / mergeable=true`; KOUNT manifest 0.1.5, two changed JSON catalog/index files, upstream catalog entries preserved incl. Expo. Current PR head `203331f9af856b61a735c5f191a0c71db8a15d38`.
+- **GitHub Copilot** [copilot-plugins PR #101](https://github.com/github/copilot-plugins/pull/101) — `OPEN / mergeable=true`; repaired original invalid full symlink replacement, now **one** canonical catalog file changed and one KOUNT entry. Head `9c4a0e0bbaeb97d6e58bfa0017a32b4aec874d94`.
+- **TRAE** [trae-mcp PR #6](https://github.com/trae-community/trae-mcp/pull/6) — `OPEN / mergeable=true`; fixed literal `\\n` between Markdown table rows, EN/ZH KOUNT naming and explicit untested client limitation. Head `6d2bc8a6f05d5f97274a25ecec9de5e5f07e3c09`.
+- **Kilo** [kilo-marketplace PR #313](https://github.com/Kilo-Org/kilo-marketplace/pull/313) — `OPEN / mergeable=true`; KOUNT title/description updated; bot review flagged invalid compatibility note in setup `prerequisites`, which was then removed. Head `45f34b983c2e015ede6ac2e53be9c7184c9901e9`. Kilo host test **NOT_VERIFIED** and bot review thread marked outdated, not resolved.
+
+This is **existing-PR rehabilitation**, not 4 new directory submissions. No PR merged, no provider independent acceptance, and no client compatibility/agent install demonstrated. Complete receipts, limitations and owner routing: [Role36.1 provider log](../ops/role36/36_1_PROVIDER_ACTIONS_2026-11-03.md). No new right to modify product/runtime or expand unpublished case canon.
