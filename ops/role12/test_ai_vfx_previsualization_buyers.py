@@ -47,6 +47,12 @@ market = (base / "COMMERCIAL_MARKET_2026-11-03.md").read_text("utf-8")
 assert offers["schema_version"] == "objekts.role12.creative-preproduction-offers.v1"
 assert offers["contact"]["auto_send"] is False
 assert offers["contact"]["verified_search_referral"] is False
+assert offers["public_visual_development_reference"]["source_ru"] == "https://objekts.ai/services/film-series-vfx/"
+assert offers["public_visual_development_reference"]["start_price_ru"] == "от 150 000 ₽"
+assert offers["public_visual_development_reference"]["tax_treatment"] == "before tax"
+assert "от 150 000 ₽ до налогов" in sales
+assert "Стоимость отдельного AI-аниматика" in sales or "стоимость отдельного AI-аниматика" in sales
+
 assert len(offers["offers"]) == 3
 assert {x["id"] for x in offers["offers"]} == {
     "director_animatic", "vfx_graphic_poc", "pitchvis_previs"
