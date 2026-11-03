@@ -1,0 +1,98 @@
+{
+  "schema_version": "objekts.role12.creative-preproduction-offers.v1",
+  "publisher": "objekts",
+  "published_as_of": "2026-11-03",
+  "first_party": true,
+  "markets": [
+    "Russia",
+    "CIS",
+    "international by brief"
+  ],
+  "canonical_source": "references/ai-vfx-creative-preproduction/ORDER_CREATIVE_PREVIS.md",
+  "contact": {
+    "email": "salute@objekts.ai",
+    "subject_marker": "OBJ-R12-AIVIS-OFFER-2026",
+    "opt_in": true,
+    "auto_send": false,
+    "verified_search_referral": false
+  },
+  "budget": "custom human estimate after licensed materials and scope; no public fixed rate for these packages",
+  "offers": [
+    {
+      "id": "director_animatic",
+      "name_ru": "Режиссёрский AI-аниматик",
+      "buyer": [
+        "director",
+        "film producer",
+        "advertising agency"
+      ],
+      "job": "Validate rhythm, editing, action, cast and scene continuity before final production",
+      "deliverables": [
+        "timed animatic review MP4 with shot IDs",
+        "reference/beat board",
+        "temp sound with confirmed rights",
+        "decision and changes log"
+      ],
+      "acceptance": [
+        "duration and beats grounded in edit timeline",
+        "review notes address named shots and locked references"
+      ],
+      "boundary": "not the final film"
+    },
+    {
+      "id": "vfx_graphic_poc",
+      "name_ru": "AI/VFX и CGI визуальные тесты",
+      "buyer": [
+        "VFX producer",
+        "production company",
+        "art director"
+      ],
+      "job": "Select approved graphics/motion/material strategy via limited temporal proof",
+      "deliverables": [
+        "source linked styleframes",
+        "scoped motion proof",
+        "asset and rights assumptions",
+        "technical risk and next-method note"
+      ],
+      "acceptance": [
+        "motion behavior and contacts can be reviewed",
+        "identity product and typography restrictions explicit"
+      ],
+      "boundary": "not necessarily production-ready long-form VFX"
+    },
+    {
+      "id": "pitchvis_previs",
+      "name_ru": "Режиссёрский previs / pitchvis",
+      "buyer": [
+        "director",
+        "film producer",
+        "studio development"
+      ],
+      "job": "Present directorial intent, scope and spatial assumptions before funding or filming",
+      "deliverables": [
+        "sequence/shotboard",
+        "scene bible",
+        "key motion previews",
+        "camera assumption and decision sheet"
+      ],
+      "acceptance": [
+        "human review of dramatic function and blocking",
+        "technical accuracy separately verified if required"
+      ],
+      "boundary": "generative camera is not measurable camera/rig techvis"
+    }
+  ],
+  "adjacent_service": {
+    "postvis": "temporary effects after photography, quoted separately",
+    "technical_shoot_prep": "lens/on-set data/camera constraints, separately scoped",
+    "full_production": "final film and live-action physical production not included by default"
+  },
+  "lead_stage_definitions": [
+    "public source",
+    "search/index visibility",
+    "provider received opted-in brief",
+    "qualified commercial scope",
+    "paid production"
+  ],
+  "seo_limit": "No claim of indexing, rank or buyers from creation of these descriptions"
+}
