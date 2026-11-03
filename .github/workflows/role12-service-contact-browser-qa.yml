@@ -1,0 +1,40 @@
+name: R12 service to contact browser QA (read-only)
+on:
+  push:
+    paths:
+      - "ops/role12/browser_service_contact_qa.cjs"
+      - ".github/workflows/role12-service-contact-browser-qa.yml"
+  pull_request:
+    paths:
+      - "ops/role12/browser_service_contact_qa.cjs"
+      - ".github/workflows/role12-service-contact-browser-qa.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare preinstalled Chrome and Playwright API
+        shell: bash
+        run: |
+          set -euo pipefail
+          CHROME_PATH="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || true)"
+          test -n "$CHROME_PATH"
+          echo "CHROME_PATH=$CHROME_PATH" >> "$GITHUB_ENV"
+          npm install --no-save --no-audit --no-fund --prefix /tmp/role12serviceqa playwright-core@1.56.1
+          echo "NODE_PATH=/tmp/role12serviceqa/node_modules" >> "$GITHUB_ENV"
+      - name: Parse source before live browser QA
+        run: node --check ops/role12/browser_service_contact_qa.cjs
+      - name: Verify real human-visible CTA navigation to /contact on desktop and mobile
+        run: node ops/role12/browser_service_contact_qa.cjs
+      - name: Attach first-party public-site QA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r12-service-contact-qa
+          path: out/role12-service-contact-qa/
+          if-no-files-found: warn
+          retention-days: 3
