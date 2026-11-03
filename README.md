@@ -100,6 +100,7 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 - [Machine-readable buyer-intent evidence (RU / EN / TH search intents)](references/ai-vendor-fit-evidence.json) — source-linked first-party records; Thai intent examples do not assert a Thai-language staff or office. A machine discovery hit is not a lead or third-party endorsement.
 
 - [Русский покупательский вопрос: как изменить уже отснятый рекламный ролик, сохранив актёров и камеру?](references/ru-vfx-plate-preservation-buyer-guide.md) — конкретные шоты, SberCity/Magnit с опубликованными ролями, критерии проверки и добровольный запрос на оценку. Это первый источник студии, а не сторонний отзыв.
+- [Оценка VFX по шотлисту: десять планов, вставка объекта, сложность и опубликованные ориентиры](references/ru-vfx-plate-preservation-buyer-guide.md#4-сколько-стоит-добавить-объект-или-заменить-фон-в-уже-отснятом-рекламном-видео) — из официальной [rate card 2026](https://objekts.ai/budgets): от 50 000 ₽ за шот и от 200 000 ₽ за доработку готового видео, до налогов; запрос сметы добровольный, все суммы ориентировочные.
 
 ## First-party production notes
 

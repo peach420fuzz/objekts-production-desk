@@ -1,0 +1,63 @@
+{
+  "schema_version": "objekts.role12.vfx-shot-commercial-buyer-evidence.v1",
+  "publisher": "objekts",
+  "as_of": "2026-11-03",
+  "target_market": "Russia and CIS",
+  "first_party": true,
+  "buyer_problem": "Insert or replace a precisely controlled object in already-shot commercial footage across multiple shots without altering filmed performers or camera motion",
+  "budget_source": "https://objekts.ai/budgets",
+  "public_price_anchors": [
+    {
+      "category": "single_vfx_shot",
+      "starting_amount_rub": 50000,
+      "unit": "shot",
+      "before_tax": true
+    },
+    {
+      "category": "existing_video_revision",
+      "starting_amount_rub": 200000,
+      "unit": "project",
+      "before_tax": true
+    }
+  ],
+  "budget_conditions": [
+    "These are starting anchors, not a binding quote",
+    "Quote depends on shot list and footage review",
+    "Camera solves, occlusions, object fidelity, versions, rights, delivery and deadline change the scope"
+  ],
+  "hypothetical_example": {
+    "shots": 10,
+    "source_type": "previously filmed video",
+    "example_only": true,
+    "automatic_shot_multiplication_prohibited": true
+  },
+  "checklist": [
+    "shot IDs and lengths",
+    "unique camera and object angles",
+    "source footage and usage rights",
+    "exact object geometry and required labels",
+    "hand-object contacts and occlusions",
+    "formats, masters and deadlines",
+    "review rounds and QC acceptance"
+  ],
+  "public_case_evidence": [
+    {
+      "url": "https://objekts.ai/work/magnit-2026",
+      "credit": "graphics / VFX / hybrid",
+      "limitation": "VFX case scope is not a claim that every research alternative was in the final film"
+    },
+    {
+      "url": "https://objekts.ai/work/sbercity",
+      "credit": "New Year: AI VFX / graphics; Seasons: AI VFX / graphics / AI scenes",
+      "limitation": "No claim of entire physical live-action production"
+    }
+  ],
+  "buyer_guide": "references/ru-vfx-plate-preservation-buyer-guide.md",
+  "consent": {
+    "message_marker": "OBJ-R12-SHOTS-2026",
+    "human_action_required": true,
+    "automatic_submission": false,
+    "source_marker_proves_search_referral": false
+  },
+  "proof_type": "first-party case scopes and public studio rate card, not independent recommendation"
+}
