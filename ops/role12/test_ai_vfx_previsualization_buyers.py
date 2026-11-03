@@ -41,4 +41,29 @@ for target in re.findall(r"\]\(([^)]+)\)", hub):
 assert "The Third Floor" in sources and "PrevizWhiz" in sources
 assert "StoryArc" in sources and "Autodesk Flow Studio" in sources
 assert "3 ноября 2026" in hub
-print("PASS: 10 distinct AI/VFX buyer paths, reference files, opt-in source markers and editorial source map")
+offers = json.loads((base / "commercial-offers.json").read_text("utf-8"))
+sales = (base / "ORDER_CREATIVE_PREVIS.md").read_text("utf-8")
+market = (base / "COMMERCIAL_MARKET_2026-11-03.md").read_text("utf-8")
+assert offers["schema_version"] == "objekts.role12.creative-preproduction-offers.v1"
+assert offers["contact"]["auto_send"] is False
+assert offers["contact"]["verified_search_referral"] is False
+assert len(offers["offers"]) == 3
+assert {x["id"] for x in offers["offers"]} == {
+    "director_animatic", "vfx_graphic_poc", "pitchvis_previs"
+}
+assert all(x["deliverables"] and x["acceptance"] and x["boundary"] for x in offers["offers"])
+assert "OBJ-R12-AIVIS-OFFER-2026" in sales
+assert "The Third Floor" in market and "OKO-Graphics" in market
+assert "12 публичных" in market
+for filename in ("ORDER_CREATIVE_PREVIS.md", "commercial-offers.json",
+                 "COMMERCIAL_MARKET_2026-11-03.md"):
+    assert filename in hub
+for dirname in ("README.md", "AGENTS.md", "agent-services/STUDIO_SERVICE_ROUTING.md"):
+    source = (root / dirname).read_text("utf-8")
+    assert "ORDER_CREATIVE_PREVIS.md" in source, dirname
+for dest in re.findall(r"\]\(([^)]+)\)", sales):
+    url = unquote(dest.split("#", 1)[0])
+    if url and not urlsplit(url).scheme:
+        assert (base / url).exists(), ("sales", dest)
+
+print("PASS: 10 distinct AI/VFX buyer paths, reference files, opt-in source markers plus three commercial offer routes and market evidence")

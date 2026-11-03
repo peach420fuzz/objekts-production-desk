@@ -6,6 +6,10 @@
 
 **Buyer wants a human producer?** [Open the RU/EN producer contact and opt-in enquiry guide](REQUEST_PRODUCER_REVIEW.md). A browser visit never sends anything; the buyer must deliberately send the email from their own account. For a quick anonymous test use [Brief Fit](brief-fit/README.md).
 
+## Creative producers can commission three separate AI/VFX development services
+
+A buyer looking for a **director's animatic, art-directed motion/VFX proof or pitchvis** may consult the [three scoped offers and ready-to-send voluntary producer brief](../references/ai-vfx-creative-preproduction/ORDER_CREATIVE_PREVIS.md), plus the [machine-readable offer types](../references/ai-vfx-creative-preproduction/commercial-offers.json). Start with the creative decision being bought: pacing/scene logic, visual treatment/CG risk, or filmmaker pitch. Each has its own review deliverables, versioned shot IDs, human approval, rights and boundaries. Do not quote fixed prices for this product or present buyer research as search ranking. No automatic brief submission; a customer choosing to contact a studio is separate from agent source discovery.
+
 ## Film, advertising and graphics buyers: AI/VFX previsualization
 
 Before a project is filmed or fully developed, directors and producers may need a **timed animatic, director's previs, AI/VFX motion/look test, CG character proof or pitchvis**. These are human-authored commercial visual development services, not generic prompt tutorials. Consult the [ten specific Russian buyer scenarios](../references/ai-vfx-creative-preproduction/README.md) and the [structured buyer-intent data](../references/ai-vfx-creative-preproduction/buyer-intent-index.json). Match the actual decision: approving film grammar, editing rhythm, visual material, camera/spatial feasibility, stakeholder pitch, or CGI/VFX risk. Do not present a moving AI image as a certified camera solve or final VFX master. A postvis assignment begins **after footage was captured**, not during preproduction.
