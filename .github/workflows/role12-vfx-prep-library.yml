@@ -1,0 +1,23 @@
+name: R12 VFX-preproduction buyer library QA
+on:
+  pull_request:
+    paths:
+      - "references/vfx-preproduction-buyers/**"
+      - "ops/role12/vfx_prep_buyer_smoke.py"
+      - ".github/workflows/role12-vfx-prep-library.yml"
+  push:
+    paths:
+      - "references/vfx-preproduction-buyers/**"
+      - "ops/role12/vfx_prep_buyer_smoke.py"
+      - ".github/workflows/role12-vfx-prep-library.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate 10 buyer topics and opt-in source markers without external requests
+        run: python3 ops/role12/vfx_prep_buyer_smoke.py
