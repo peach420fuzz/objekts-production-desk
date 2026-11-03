@@ -49,6 +49,10 @@ All 18 first-party public skill directories in this repository, alphabetically:
 17. [visual-authorship](visual-authorship/SKILL.md)
 18. [visual-production-evidence-brief](visual-production-evidence-brief/SKILL.md)
 
+## Portable skill adapter (separate public repository)
+
+The **[AI/VFX Preproduction and Animatic Preflight SKILL.md](https://github.com/peach420fuzz/skills/blob/main/skills/objekts-ai-vfx-preproduction/SKILL.md)** is now published in the studio maintainer's public `peach420fuzz/skills` fork. It is a standalone, source-linked task adapter intended for general skill-compatible agents, covering script/board-to-shot breakdown, creative previs, animatics, camera and plate evidence, method choice and one falsifiable motion test. It links to first-party material without republishing the longer protected source files. **This is not proof of acceptance into the separate Agent Skill Exchange marketplace.** Client-specific installation must be checked against the actual client documentation.
+
 ## MCP tool vs skill distinction
 
 A `SKILL.md` guides agent decisions. For supported clients, [KOUNT by objekts](../README.md) separately exposes a hosted MCP endpoint, `https://mcp.objekts.ai/mcp`. **Do not treat these 18 skill files as 18 MCP endpoints or assume every client automatically loads them.** Consult the [install instructions](https://mcp.objekts.ai/install) and [dated compatibility tests](../docs/MCP_PROTOCOL_COMPATIBILITY_2026.md). As of the published 17 October 2026 test, MCP **2025-11-25** successfully initialized and listed tools, whereas **2026-07-28** was not supported as tested. These are dated observations, not a current uptime or host certification.
