@@ -22,7 +22,7 @@ function canonicalPath(href){
 async function inspect(browser,shape,[source,contact]){
  const context=await browser.newContext({viewport:shape.viewport,isMobile:shape.isMobile,hasTouch:shape.hasTouch,deviceScaleFactor:1,acceptDownloads:false,permissions:[],serviceWorkers:"block"});
  const page=await context.newPage();
- const t={viewport:shape.name,source,expected:contact,sourceStatus:null,finalPath:null,contactEmailVisible:false,ctaText:null,ctaSize:null,smallTouchTarget:false,provenanceCarried:false,issues:[]};
+ const t={viewport:shape.name,source,expected:contact,sourceStatus:null,finalPath:null,contactEmailVisible:false,ctaText:null,ctaSize:null,smallTouchTarget:false,provenanceCarried:false,contactUi:null,issues:[]};
  try{
   const response=await page.goto(ROOT+source,{waitUntil:"domcontentloaded",timeout:30000});
   t.sourceStatus=response?.status()??null;
@@ -56,6 +56,55 @@ async function inspect(browser,shape,[source,contact]){
   const text=await page.locator("body").innerText({timeout:12000});
   t.contactEmailVisible=/salute@objekts\.ai/i.test(text);
   t.provenanceCarried=!!new URL(page.url()).searchParams.get("source");
+
+  // Source-origin readback on the rendered contact page. No outbound links
+  // are clicked and no form fields are read, populated, or submitted.
+  // Only counters and boolean presence reach logs/artifacts: never raw hrefs,
+  // message bodies, addresses, sender identities, or user-entered data.
+  t.contactUi=await page.evaluate(sourcePath=>{
+   const token=sourcePath.replace(/^\/+/,"").toLowerCase();
+   const counters={
+    visibleStudioMailtoLinks:0,
+    mailtoSubjectPresent:0,
+    mailtoBodyPresent:0,
+    mailtoSourcePathPresent:0,
+    visibleTelegramLinks:0,
+    telegramSourcePathPresent:0,
+    contactFormCount:document.querySelectorAll("form").length,
+    urlQueryKeyNames:Array.from(new URL(location.href).searchParams.keys())
+      .filter(k=>/^(?:source|utm_[a-z_]+|ref|referrer)$/i.test(k))
+      .sort().slice(0,12)
+   };
+   const visible=a=>{
+    const rect=a.getBoundingClientRect();
+    return !!rect && rect.width>0 && rect.height>0 &&
+      getComputedStyle(a).visibility!=="hidden" &&
+      getComputedStyle(a).display!=="none";
+   };
+   for(const a of document.querySelectorAll('a[href]')){
+    if(!visible(a))continue;
+    const href=a.getAttribute("href")||"";
+    if(/^mailto:/i.test(href)){
+     if(!/^mailto:salute@objekts\.ai(?:\?|$)/i.test(href))continue;
+     counters.visibleStudioMailtoLinks++;
+     const q=new URLSearchParams((href.split("?")[1]||""));
+     const subject=q.get("subject")||"", body=q.get("body")||"";
+     if(subject)counters.mailtoSubjectPresent++;
+     if(body)counters.mailtoBodyPresent++;
+     if((subject+"\n"+body).toLowerCase().includes(token))counters.mailtoSourcePathPresent++;
+    }else{
+     try{
+      const u=new URL(href,location.origin);
+      if(!/^(?:t\.me|telegram\.me)$/i.test(u.hostname))continue;
+      counters.visibleTelegramLinks++;
+      const args=u.searchParams.toString().toLowerCase();
+      if(args.includes(token))counters.telegramSourcePathPresent++;
+     }catch(_){}
+    }
+   }
+   return counters;
+  },source);
+
   if(!t.contactEmailVisible)t.issues.push("CONTACT_EMAIL_NOT_VISIBLE");
  }catch(error){t.issues.push(String(error?.message||error).slice(0,210));}
  finally{await context.close();}
