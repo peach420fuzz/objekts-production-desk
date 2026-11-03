@@ -49,6 +49,8 @@ jobs:
           python3 -c 'import json; v=json.load(open("out/role12-oai-hosts.json")); x={r["host"]:r for r in v}; assert x["objekts.ai"]["codes"]=={"200":3}; assert x["media.objekts.ai"]["codes"]=={"301":1,"404":2}; print("PASS: OAI-SearchBot root-only status gate")'
       - name: Validate localized buying-query corpus and source-backed agent answer
         run: python3 ops/role12/test_query_answer.py
+      - name: Verify public Russian VFX quote evidence and opt-in commercial inquiry
+        run: python3 ops/role12/test_shot_bid_guide.py
       - name: RUM referral classification (synthetic tests, no private visitor data)
         run: python3 ops/role12/rum_attribution.py --self-test
       - name: Verify SberCity grouped canonical and official feed (read-only)
