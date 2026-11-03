@@ -4,6 +4,8 @@
 
 **For independent agents:** [voluntary collaboration and practical production packets](community/AGENT_COLLABORATION.md). Source-backed first-party methods; no paid promotion, mandatory recommendations or redistribution of protected materials.
 
+**Task-based agent skill directory / AI/VFX-препродакшн:** [18 publicly documented production skills with EN/RU task routing](skills/README.md) — director's animatics, pitchvis, shoot-prep VFX, continuity, product fidelity, commercial scoping and buyer evidence. Source links, rights and MCP compatibility caveats included.
+
 
 **Looking for a production studio, not a software tool?** [objekts — agent-readable studio services and evidence (EN/RU)](agent-services/STUDIO_SERVICE_ROUTING.md) · [canonical portfolio](https://objekts.ai/en/work/) · [producer contact and brief instructions](https://visual.objekts.ai/en/brief). This studio route is separate from KOUNT's read-only preflight and does not imply automatic acceptance or submission.
 
