@@ -70,3 +70,25 @@
 **Next prioritized action:** (1) obtain a *legitimate current compatible host* MCP handshake before recommending these as supported installs, with product owner/runtime #101 and registry publication #174; (2) editorial follow-ups only when provider has changed or accepted, do not spam old PRs; (3) track Glama claimed-card category edit [#187](https://github.com/peach420fuzz/objekts-production-desk/issues/187) and [FAKE mcp.film #171](https://github.com/c47-inc/mcp-film/issues/171); (4) verify attributed installs/clicks/qualified briefs instead of extrapolating from listings.
 
 **Commercial result of this pass:** 4 pre-existing external PRs repaired, 4 still pending, 0 new accepted listings, 0 independently verified buyer enquiries, €0 spent.
+
+## Measured live MCP endpoint traffic and targeted follow-ups · 2026-11-03
+
+**Real first-party Cloudflare edge evidence** (not a new third-party acceptance): [full reproducible report](36_1_MCP_TRAFFIC_EVIDENCE_20261103.md), [commit b763956812c0fa3b4408e7765d2f7fba21ede68c](https://github.com/peach420fuzz/objekts-production-desk/commit/b763956812c0fa3b4408e7765d2f7fba21ede68c). Window Nov 2 00:00–Nov 3 22:00 UTC:
+
+- **KOUNT `mcp.objekts.ai`:** 4,973 reported hostname requests; exact `POST /mcp`: HTTP 200 **2,729**, HTTP 202 **1,099**, HTTP 400 **226**, HTTP 403 **15**. `OPTIONS /mcp`: 8 HTTP 405. Cannot assign 400 to MCP modern-version failure without payload/version metadata. Cannot count successful tool calls, agents or sales.
+- **FAKE `fake.objekts.ai`:** 858 reported hostname requests; exact `POST /mcp`: HTTP 200 **153**, HTTP 202 **37**; no HTTP 400 observed in this date-scoped query. `GET /about` includes 13 HTTP 200 and 3 HTTP 504; availability not perfect.
+- **Seven-day trend:** from Oct 28 00:00 through Nov 3 22:00 UTC, Cloudflare-reported POST `/mcp` HTTP 200+202 totals: **14,132 KOUNT**, **1,194 FAKE**. These include potential client tests and crawlers. No causal attribution to directory listings.
+- **Free publisher prerequisite still blocked:** FAKE `GET /.well-known/mcp.json` returned **8 HTTP 404** from Oct 28–Nov 3. [mcpub official submission README](https://github.com/roverbird/mcpub#-for-humans) requires that file. Created product-owner [issue #189](https://github.com/peach420fuzz/objekts-production-desk/issues/189), verified OPEN; this is a real implementation gate, not a publication. KOUNT's same well-known path had four HTTP 200 GETs in Window A, but no mcpub provider submission was made.
+
+**Real writes with verified readback this pass** (only first-party evidence and an editorial follow-up):
+
+1. [FAKE mcp.film active issue #171, comment 6616825450](https://github.com/c47-inc/mcp-film/issues/171#issuecomment-6616825450): added 153 POST200/37 POST202 and explicit inability to prove JSON-RPC tool calls, asked editor to independently re-run legacy `initialize`/`tools/list`. Real external comment created; **review pending, not accepted**.
+2. [KOUNT protocol issue #101, comment 6616875158](https://github.com/peach420fuzz/objekts-production-desk/issues/101#issuecomment-6616875158): gave 226 POST400 and valid-status baseline, specific staging/compatibility test gate.
+3. [KOUNT browser OPTIONS issue #107, comment 6616876167](https://github.com/peach420fuzz/objekts-production-desk/issues/107#issuecomment-6616876167): documented 8 OPTIONS405 and requested actual header reproduction before scoped CORS fix.
+4. [FAKE well-known file owner issue #189](https://github.com/peach420fuzz/objekts-production-desk/issues/189): one precise operational prerequisite to unlock free mcpub.
+
+**New target not sent:** [Hermes Skill Atlas](https://github.com/codesstar/hermes-skill-atlas) explicitly accepts a public skill submission issue. Dedup found no objekts, verified official issue template and relevant creative category; tried to submit `objekts-ai-vfx-preproduction` but connector returned **GitHub 403 Resource not accessible by integration**. `NOT_SUBMITTED`; no fake receipt. AgentSkillsDir already hosts [objekts Production Desk](https://agentskillsdir.com/mcp/objekts-production-desk) pinned to **21 October 2026**, pre-existing public card; do not count as this session's acceptance or new indexed skill.
+
+**Browser/write limits:** Firecrawl had 0 remaining credits for the billing period; TinyFish wallet has negative balance; browser extensions missing originating context. **No paid automation/charge triggered.** Other GitHub third-party issue/PR writes hitting 403 were not bypassed.
+
+**Measured user adoption:** 0 identifiable consented qualified buyer handoffs / purchases. Next acceptance gates: first-party FAKE well-known 200, legitimate free mcpub submission and public record; independent curator's mcp.film handshake; modern KOUNT protocol test and corrected client classification. No direction to hack around connectors or self-deploy other product owners' runtimes.
