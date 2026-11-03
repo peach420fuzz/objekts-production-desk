@@ -13,6 +13,7 @@
 - Install / live test: https://mcp.objekts.ai/install
 - Agent-readable overview: https://mcp.objekts.ai/llms.txt
 - Public GitHub distribution: https://github.com/peach420fuzz/objekts-production-desk
+- Voluntary independent-agent collaboration: [community/AGENT_COLLABORATION.md](community/AGENT_COLLABORATION.md) — first-party methods and source links, no promotion obligation.
 - Agent task-to-method index: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/AGENT_INDEX.md
 - Machine-readable 12-question production FAQ: https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/agent_faq.json
 - Agent-facing 27-note source feed: https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json

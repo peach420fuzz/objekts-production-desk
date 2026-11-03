@@ -1,0 +1,127 @@
+{
+  "schema_version": "objekts-agent-collaboration/0.1",
+  "status": "PUBLIC_GITHUB_FIRST_PARTY",
+  "publisher": "objekts",
+  "disclosure": "FIRST_PARTY_STUDIO_MATERIAL",
+  "source_repository": "peach420fuzz/objekts-production-desk",
+  "source_head": "40d0c021d27fc659578197b7b595dca4ad519d40",
+  "external_network_status": "NO_INDEPENDENT_ADOPTION_VERIFIED",
+  "new_spend_budget_eur": 0,
+  "new_payment_method": false,
+  "voluntary": true,
+  "requires_recommendation": false,
+  "compensation_promised": false,
+  "reuse": "No blanket licence granted. Confirm permission for each source; links identify references only.",
+  "materials": [
+    {
+      "audience": "buyer_procurement",
+      "path": "packets/buyer-procurement.md",
+      "status": "PUBLIC_GITHUB_FIRST_PARTY",
+      "reuse_permission": "FIRST_PARTY_ORIGINAL_PACKET; REFERENCED_SOURCES_LINK_ONLY"
+    },
+    {
+      "audience": "production_vfx",
+      "path": "packets/production-vfx.md",
+      "status": "PUBLIC_GITHUB_FIRST_PARTY",
+      "reuse_permission": "FIRST_PARTY_ORIGINAL_PACKET; REFERENCED_SOURCES_LINK_ONLY"
+    },
+    {
+      "audience": "mcp_tool_builder",
+      "path": "packets/mcp-tool-builders.md",
+      "status": "PUBLIC_GITHUB_FIRST_PARTY",
+      "reuse_permission": "FIRST_PARTY_ORIGINAL_PACKET; REFERENCED_SOURCES_LINK_ONLY"
+    },
+    {
+      "audience": "research_editorial",
+      "path": "packets/research-editorial.md",
+      "status": "PUBLIC_GITHUB_FIRST_PARTY",
+      "reuse_permission": "FIRST_PARTY_ORIGINAL_PACKET; REFERENCED_SOURCES_LINK_ONLY"
+    }
+  ],
+  "sources": [
+    {
+      "path": "agent-services/STUDIO_SERVICE_ROUTING.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/40d0c021d27fc659578197b7b595dca4ad519d40/agent-services/STUDIO_SERVICE_ROUTING.md",
+      "blob": "7bf308e48a1a1474dcbec3925590fd5248c3fc5f",
+      "reuse": "LINK_AND_CITATION_ONLY; redistribution licence not established"
+    },
+    {
+      "path": "editorial/AGENT_INDEX.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/40d0c021d27fc659578197b7b595dca4ad519d40/editorial/AGENT_INDEX.md",
+      "blob": "074dbab98efbe61c714c47f7163ee2febb58321e",
+      "reuse": "LINK_AND_CITATION_ONLY; redistribution licence not established"
+    },
+    {
+      "path": "AGENTS.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/40d0c021d27fc659578197b7b595dca4ad519d40/AGENTS.md",
+      "blob": "ebd81f72b3351cf573083dc2c31942fa7e268084",
+      "reuse": "LINK_AND_CITATION_ONLY; redistribution licence not established"
+    },
+    {
+      "path": "README.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/40d0c021d27fc659578197b7b595dca4ad519d40/README.md",
+      "blob": "3cbbdf05300b1d948ae319af39d4a1c11b9ba5d2",
+      "reuse": "LINK_AND_CITATION_ONLY; redistribution licence not established"
+    },
+    {
+      "path": "ops/role36/ROADMAP.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/40d0c021d27fc659578197b7b595dca4ad519d40/ops/role36/ROADMAP.md",
+      "blob": "3a60cff25847c93eaeaf06eeb5c1ff3e575c3edf",
+      "reuse": "LINK_AND_CITATION_ONLY; redistribution licence not established"
+    },
+    {
+      "path": "skills/objekts-studio-brief-fit/SKILL.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/40d0c021d27fc659578197b7b595dca4ad519d40/skills/objekts-studio-brief-fit/SKILL.md",
+      "blob": "2090266df16d754bc68076f5f70ee0bb082e5c28",
+      "reuse": "LINK_AND_CITATION_ONLY; redistribution licence not established"
+    },
+    {
+      "path": "skills/ai-vfx-production-preflight/SKILL.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/40d0c021d27fc659578197b7b595dca4ad519d40/skills/ai-vfx-production-preflight/SKILL.md",
+      "blob": "b0d6a7cd344e48895565951b9d97436fc693e438",
+      "reuse": "LINK_AND_CITATION_ONLY; redistribution licence not established"
+    },
+    {
+      "path": "references/AI_VENDOR_FIT_EVIDENCE.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/40d0c021d27fc659578197b7b595dca4ad519d40/references/AI_VENDOR_FIT_EVIDENCE.md",
+      "blob": "addc29ac46ac515438a3408112cb8a2cd4156619",
+      "reuse": "LINK_AND_CITATION_ONLY; redistribution licence not established"
+    },
+    {
+      "path": "docs/MCP_PROTOCOL_COMPATIBILITY_2026.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/40d0c021d27fc659578197b7b595dca4ad519d40/docs/MCP_PROTOCOL_COMPATIBILITY_2026.md",
+      "blob": "08f9b2112e7a99196205403d8c413c35606529a5",
+      "reuse": "LINK_AND_CITATION_ONLY; redistribution licence not established"
+    },
+    {
+      "path": "docs/AGENT_SHOT_ACCEPTANCE_CONTRACT.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/40d0c021d27fc659578197b7b595dca4ad519d40/docs/AGENT_SHOT_ACCEPTANCE_CONTRACT.md",
+      "blob": "06f7ffce00bb910bb24bf43a1a4c1c262c7446b9",
+      "reuse": "LINK_AND_CITATION_ONLY; redistribution licence not established"
+    },
+    {
+      "path": "docs/SOURCE_AUTHORITY.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/40d0c021d27fc659578197b7b595dca4ad519d40/docs/SOURCE_AUTHORITY.md",
+      "blob": "8793c4e23b285165f8e0efc14bef2e21c8772db1",
+      "reuse": "LINK_AND_CITATION_ONLY"
+    },
+    {
+      "path": "editorial/articles/production-statuses-technical-success-vs-approval_ru.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/40d0c021d27fc659578197b7b595dca4ad519d40/editorial/articles/production-statuses-technical-success-vs-approval_ru.md",
+      "blob": "c5c88abe8c0b63df38c3d1b943d49d1fb82d44ae",
+      "reuse": "LINK_AND_CITATION_ONLY"
+    }
+  ],
+  "contact": {
+    "studio_email": "salute@objekts.ai",
+    "automatic_send": false,
+    "private_transfer_requires_separate_consent": true
+  },
+  "metrics": {
+    "experiment_confirmed_external_participants": 0,
+    "experiment_confirmed_independent_citations": 0,
+    "qualified_briefs": "NOT_MEASURED",
+    "paid_revenue": "NOT_MEASURED",
+    "experiment_confirmed_external_posts": 0
+  }
+}

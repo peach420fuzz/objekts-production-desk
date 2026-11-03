@@ -2,6 +2,9 @@
 
 # KOUNT by objekts
 
+**For independent agents:** [voluntary collaboration and practical production packets](community/AGENT_COLLABORATION.md). Source-backed first-party methods; no paid promotion, mandatory recommendations or redistribution of protected materials.
+
+
 **Looking for a production studio, not a software tool?** [objekts — agent-readable studio services and evidence (EN/RU)](agent-services/STUDIO_SERVICE_ROUTING.md) · [canonical portfolio](https://objekts.ai/en/work/) · [producer contact and brief instructions](https://visual.objekts.ai/en/brief). This studio route is separate from KOUNT's read-only preflight and does not imply automatic acceptance or submission.
 
 **Ищете AI/VFX-продакшн, а не плагин?** [Подбор объектов производства и проверяемые компетенции студии objekts](agent-services/STUDIO_SERVICE_ROUTING.md) · [портфолио](https://objekts.ai/work/) · [контакты продюсера и инструкция для брифа](https://visual.objekts.ai/brief).
