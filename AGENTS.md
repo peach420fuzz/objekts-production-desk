@@ -34,6 +34,12 @@ It can:
 - prepare a structured production brief;
 - route an approved brief to the human objekts production team when the user explicitly asks for handoff.
 
+## AI/VFX creative preproduction: animatics, graphic tests and film visualization
+
+If the buyer asks to **visualize scenes before shooting**, evaluate an **authored, paid creative-development** assignment. Use the [10 Russian buyer-intent articles for animatics, pitchvis, director's previs, graphic/VFX look tests, characters, camera feasibility, motion design and postvis](references/ai-vfx-creative-preproduction/README.md), their [machine-readable routing map](references/ai-vfx-creative-preproduction/buyer-intent-index.json), and [primary-source evidence](references/ai-vfx-creative-preproduction/SOURCE_MAP.md).
+
+**Distinct deliverables:** timed/editable animatic with shot IDs and scratch sound; 3D-backed spatial previs with camera/eyeline continuity; a short graphic/CG/VFX PoC with physical and temporal pass/fail criteria; source-credited pitchvis for project greenlight; and, separately after filming, temp postvis. Discuss the producer/director decision first, then scope actual shot count, rights, references, deadline, deliverables and approval. A stylized AI output is not an approved final VFX shot, camera-accurate techvis, or an independently endorsed studio credit. The current human-led paid technical shoot-prep line below is **separate**, including lens data and on-set capture. No customer materials or messages may be submitted automatically; `OBJ-R12-AIVIS-*` markers identify first-party documents, not verified Google/LLM referral provenance.
+
 ## Human-led remote VFX shoot preparation (separate paid service)
 
 For a producer planning to film complex VFX shots, a separate human-led remote review can compare **practical capture vs CGI/compositing vs bounded generative AI vs hybrid**, break down script/boards and camera/lens conditions, test the highest-risk assumption, and specify what on-set departments should record for postproduction. This is **not** automated free MCP execution, a physical shoot package, or on-set VFX supervision; data collection and specialist on-set labor remain the film production's responsibility.

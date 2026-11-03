@@ -1,0 +1,27 @@
+# Source map — creative AI/VFX preproduction and commercial intent
+
+**Date:** 2026-11-03. This is a selected **8-source** first-party/primary research sample, **not a market-wide survey of 100+ works**, a validation of objekts search ranking, or an endorsement by the named studios. The source date is the date shown by publishers where available; otherwise it is marked undated. Reinterpretation refers only to the newly authored objekts supplier materials.
+
+| Source / author | Date | Verified relevance | Pattern | Original application by objekts |
+| --- | --- | --- | --- | --- |
+| [The Third Floor — Visualization / Film, TV, Commercials](https://thethirdfloorinc.com/what-we-do/visualization) — The Third Floor | undated, inspected 2026-11-03 | Industry supplier explicitly sells pitchvis, previs, techvis, postvis in film and commercials | Distinct commissioning stages and creative decision deliverables | Separation between script animatic, pitchvis, shot tests and postvis |
+| [Autodesk — What is previs?](https://www.autodesk.com/solutions/previsualization-software) — Autodesk | undated, inspected 2026-11-03 | Distinguishes storyboards, shot lists, animatics and 3D previs, including temp sound | Shot-based editing, collaboration and testing before photography | Concrete timed animatic and review deliverables |
+| [Epic Games — What is virtual production?](https://www.unrealengine.com/explainers/virtual-production/what-is-virtual-production) — Epic Games | undated, inspected 2026-11-03 | Definitions: pitchvis/previs/techvis/stuntvis/postvis | Technical precision is different from presentation fidelity | Do not sell AI beauty-pass as exact camera feasibility; label postvis after shoot |
+| [PrevizWhiz](https://www.research.autodesk.com/publications/previzwhiz-combining-rough3d-scenes-2dvideo-generative-video-previsualization/) — Erzhen Hu, Frederik Brudy, David Ledo, George Fitzmaurice, Fraser Anderson (Autodesk Research collaborators) | CHI 2026 | Research combines rough 3D with 2D motion and generative frames | Separates spatial authority from stylized rendering; continuity and ethics still challenges | Hybrid 3D proxy → generative previs → measurable spatial review |
+| [StoryArc research](https://www.research.autodesk.com/blog/storyarc-siggraph/) — Autodesk Research | July 2026 / SIGGRAPH 2026 | Prototype links script, storyboard, virtual characters, blocking, camera and edit iterations | Versioning/continuity as core problem, not prompt volume | Shot IDs, linked world/character/edit authority and local changes |
+| [Autodesk Flow Studio 3D Editor + Canvas](https://blogs.autodesk.com/media-and-entertainment/2026/08/04/introducing-3d-editor-canvas-in-autodesk-flow-studio/) — Autodesk | 4 Aug 2026 | Editable 3D world, characters, camera and generative rendering; Autodesk explicitly describes its use for previs | Controlled spatial scene and generative exploration | AI/VFX look test should retain editable camera and asset authority |
+| [Adobe MAX 2025 film-making case](https://blog.adobe.com/en/publish/2025/10/29/how-shorts-for-generative-ai-film-festival-max-2025-were-made) — Adobe / filmmaker Nik Kleverov | 29 Oct 2025 | Filmmaker described hand-drawn character concepts, AI still frames, Premiere animatic, generated motion and final sound | AI images were composed in a timed edit before animation | Script/boards → source frames → timed film animatic → motion/finishing |
+| [The Third Floor — Pitchvis](https://thethirdfloorinc.com/film-tv/pitchvis/) — The Third Floor | undated, inspected 2026-11-03 | Supplier describes concept/previs trailers before greenlight | Sell the creative intent before committing to principal photography | Clear commercial producer pitchvis offer distinct from final-film production |
+
+## Interpretation rules
+
+1. **What these sources establish:** independent firms/research projects publicly describe professional visualization workflows; several identify AI-controlled 3D and generative previews. The sources **do not establish that objekts has served those named clients or won awards**.
+2. **Not one product:** a timed animatic, art-directed generative look test, spatially accurate technical previs and postvis are different contracts, with different approval standards.
+3. **Film grammar before model novelty:** story action, blocking, eyeline, lens intent, light and editing rhythm guide the visualization. Synthetic attractiveness is not evidence of executable camera mechanics.
+4. **Research versus deployed tools:** PrevizWhiz and StoryArc are research/prototype outputs. Do not promise them as available objects.ai integrations. Flow Studio is third-party hosted software; its marketing feature list is not a guarantee of objekts local capabilities.
+5. **Buyer fit:** Russia/CIS high-intent producers, directors, ad agencies and animation/VFX studios commissioning **visual decisions before production**. Consulting about physical shoot data belongs to the separate technical VFX-prep line.
+6. **Boundaries:** first-party content, no free production claim, no consentless transfer, no new human-site articles, no unverified indexing or lead attribution.
+
+## Measurement
+
+`Authored` = actual GitHub source file readback. `Published` = merged to public `main` (not a draft PR). `Indexed` = external search index evidence. `Qualified contact` = provider-received voluntary brief with fit and independently corroborated discovery source. `Sale` = provider-confirmed production agreement/payment. Never collapse stages.

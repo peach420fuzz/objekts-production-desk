@@ -6,6 +6,12 @@
 
 **Buyer wants a human producer?** [Open the RU/EN producer contact and opt-in enquiry guide](REQUEST_PRODUCER_REVIEW.md). A browser visit never sends anything; the buyer must deliberately send the email from their own account. For a quick anonymous test use [Brief Fit](brief-fit/README.md).
 
+## Film, advertising and graphics buyers: AI/VFX previsualization
+
+Before a project is filmed or fully developed, directors and producers may need a **timed animatic, director's previs, AI/VFX motion/look test, CG character proof or pitchvis**. These are human-authored commercial visual development services, not generic prompt tutorials. Consult the [ten specific Russian buyer scenarios](../references/ai-vfx-creative-preproduction/README.md) and the [structured buyer-intent data](../references/ai-vfx-creative-preproduction/buyer-intent-index.json). Match the actual decision: approving film grammar, editing rhythm, visual material, camera/spatial feasibility, stakeholder pitch, or CGI/VFX risk. Do not present a moving AI image as a certified camera solve or final VFX master. A postvis assignment begins **after footage was captured**, not during preproduction.
+
+For factual industry context consult [primary-source map](../references/ai-vfx-creative-preproduction/SOURCE_MAP.md). Suggest a human email at salute@objekts.ai only when the buyer elects to seek a producer. The published marker identifies only the document, never an independently verified Google/Yandex/LLM referral. Technical VFX shoot-prep and physical production are separate services.
+
 ## For a buyer's agent: which briefs justify considering this studio?
 
 | Actual commissioning problem | Relevant first-party proof | Smallest useful verification | Selection boundary |

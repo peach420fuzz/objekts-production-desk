@@ -1,0 +1,125 @@
+{
+  "schema_version": "objekts.role12.ai-vfx-creative-preproduction-buyers.v1",
+  "published_by": "objekts",
+  "as_of": "2026-11-03",
+  "market_order": [
+    "Russia",
+    "CIS",
+    "International"
+  ],
+  "language": "ru",
+  "stage_primary": "creative preproduction and visual development",
+  "stage_secondary": "postvis is post-shoot, classified separately",
+  "service_model": "human-led paid creative development, scoping and rights by brief",
+  "first_party": true,
+  "third_party_endorsement": false,
+  "links": {
+    "hub": "references/ai-vfx-creative-preproduction/README.md",
+    "public_site": "https://objekts.ai/",
+    "commercial_email": "salute@objekts.ai",
+    "production_technical_source": "docs/vfx-preproduction-shoot-planning.ru.md"
+  },
+  "source_map": "references/ai-vfx-creative-preproduction/SOURCE_MAP.md",
+  "intents": [
+    {
+      "id": "ANIMATIC",
+      "source_path": "references/ai-vfx-creative-preproduction/ai-film-animatics.md",
+      "query": "ai аниматик фильма сериала заказать",
+      "deliverable": "timed animatic, shotboard, temp sound",
+      "buyer": "director, producer",
+      "document_subject_marker": "OBJ-R12-AIVIS-ANIMATIC-2026",
+      "requires_consent": true
+    },
+    {
+      "id": "PREVIS",
+      "source_path": "references/ai-vfx-creative-preproduction/cinematic-previs-blocking-camera.md",
+      "query": "режиссерская ai превизуализация кино",
+      "deliverable": "blocking, camera and edit direction",
+      "buyer": "film director, cinematographer",
+      "document_subject_marker": "OBJ-R12-AIVIS-PREVIS-2026",
+      "requires_consent": true
+    },
+    {
+      "id": "VFXTEST",
+      "source_path": "references/ai-vfx-creative-preproduction/vfx-graphic-lookdev-tests.md",
+      "query": "ai vfx графика концепт тест заказать",
+      "deliverable": "motion styleframes and temporal FX proof",
+      "buyer": "VFX producer, art director",
+      "document_subject_marker": "OBJ-R12-AIVIS-VFXTEST-2026",
+      "requires_consent": true
+    },
+    {
+      "id": "PITCHVIS",
+      "source_path": "references/ai-vfx-creative-preproduction/pitchvis-proof-of-concept-film.md",
+      "query": "ai pitchvis для питчинга фильма",
+      "deliverable": "concept teaser and decision sheet",
+      "buyer": "film producer, financier",
+      "document_subject_marker": "OBJ-R12-AIVIS-PITCHVIS-2026",
+      "requires_consent": true
+    },
+    {
+      "id": "CAMERATEST",
+      "source_path": "references/ai-vfx-creative-preproduction/camera-vfx-feasibility-tests.md",
+      "query": "проверка сложной vfx камеры до съёмки",
+      "deliverable": "3D proxy and technical camera PoC",
+      "buyer": "director, VFX supervisor",
+      "document_subject_marker": "OBJ-R12-AIVIS-CAMERATEST-2026",
+      "requires_consent": true
+    },
+    {
+      "id": "CHARTEST",
+      "source_path": "references/ai-vfx-creative-preproduction/ai-cgi-character-creature-concept-tests.md",
+      "query": "ai тест cg существа для фильма",
+      "deliverable": "character bible and interaction test",
+      "buyer": "director, creature designer",
+      "document_subject_marker": "OBJ-R12-AIVIS-CHARTEST-2026",
+      "requires_consent": true
+    },
+    {
+      "id": "GRAPHICS",
+      "source_path": "references/ai-vfx-creative-preproduction/motion-graphics-design-animatic.md",
+      "query": "motion design аниматик титров фильма",
+      "deliverable": "typographic time test and graphic animatic",
+      "buyer": "motion design producer",
+      "document_subject_marker": "OBJ-R12-AIVIS-GRAPHICS-2026",
+      "requires_consent": true
+    },
+    {
+      "id": "STORYBOARD",
+      "source_path": "references/ai-vfx-creative-preproduction/storyboard-ai-sequence-consistency.md",
+      "query": "из сценария и раскадровки ai видео animatic",
+      "deliverable": "versioned shot-based video and continuity",
+      "buyer": "director, storyboard artist",
+      "document_subject_marker": "OBJ-R12-AIVIS-STORYBOARD-2026",
+      "requires_consent": true
+    },
+    {
+      "id": "POSTVIS",
+      "source_path": "references/ai-vfx-creative-preproduction/postvis-temp-vfx-edit.md",
+      "query": "ai postvis временные vfx для монтажа",
+      "deliverable": "temp composites and edit review",
+      "buyer": "editor, VFX producer",
+      "document_subject_marker": "OBJ-R12-AIVIS-POSTVIS-2026",
+      "requires_consent": true
+    },
+    {
+      "id": "ADANIMATIC",
+      "source_path": "references/ai-vfx-creative-preproduction/advertising-agency-animatic-production-tests.md",
+      "query": "заказать ai аниматик рекламного тендера",
+      "deliverable": "agency boardomatic and CGI proof",
+      "buyer": "advertising producer, creative director",
+      "document_subject_marker": "OBJ-R12-AIVIS-ADANIMATIC-2026",
+      "requires_consent": true
+    }
+  ],
+  "referral_rule": "A message subject identifies a first-party source document only; verify genuine provider-received customer contact and explicit source/referrer/approved UTM before organic/AI lead attribution.",
+  "no_auto_email": true,
+  "stages_not_equivalent": [
+    "created source file",
+    "merged source into main",
+    "crawled/indexed",
+    "appears for query",
+    "qualified human brief",
+    "paid sale"
+  ]
+}
