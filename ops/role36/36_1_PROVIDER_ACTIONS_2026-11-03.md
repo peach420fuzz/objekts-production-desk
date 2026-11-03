@@ -38,3 +38,18 @@
 - **Glama pending owner action:** [issue #187](https://github.com/peach420fuzz/objekts-production-desk/issues/187) created 2026-11-03 20:13:32 UTC, verified OPEN. This gives existing claimed connector owner concrete Admin steps for correct KOUNT name and AI/VFX/media categories. **No actual Glama edit yet.**
 - **AI Director Tools naming correction:** Gmail send tool twice returned `GmailConnectorError: Failed to send email`; earlier readback found no matching SENT and no newly transmitted threaded reply. **NOT_SENT; suppress further retries pending tool repair**. The existing public editorial entry remains in legacy name.
 - **First-party Cloudflare infrastructure:** `objekts.ai` zone active, primary FAKE Worker and recovery Worker deployed latest on 2026-10-28; deployment evidence is not proof of current public HTTP health. No changes were made to Workers.
+
+## Additional distribution outputs · 2026-11-03 · public skills
+
+**Actually published on owner-controlled GitHub main (new standalone assets, not editorial acceptances):**
+
+1. Task-to-skill directory: [objekts-production-desk/skills/README.md](https://github.com/peach420fuzz/objekts-production-desk/blob/main/skills/README.md) — mapping 18 existing published skill files to EN/RU film/AI-VFX buyer tasks, including animatics, pre-shoot capture, pitchvis and continuity. Source creation commit `588826252ef36e82307e6551556540a984e50b32`. Root README entrypoint added in `fc512c4dc6d970e35d5ff4420339269e4fc1abbf`. Independently fetched and verified visible. This is a repository publication, **not proof of crawler adoption, installs, leads or external listing**.
+2. Portable AI/VFX Preproduction adapter: [peach420fuzz/skills on main](https://github.com/peach420fuzz/skills/blob/main/skills/objekts-ai-vfx-preproduction/SKILL.md), original structured agent skill, source-linked without wholesale copying protected parent corpus; commit `647c61571bc940918cc3996229313732ec389a22`, blob `02b2f27eaaf16482f2eaf5dce890cc5853a30f28`. Product skill index links this owner-controlled external repository now; link commit `287782618560669c0eafc4e6df12244b803c854c`.
+
+**Third-party submissions attempted but NOT sent:**
+
+- `remotemcplist/servers`: after documented issue-based submission permission in README, dedup on GitHub search found no objects, but issue creation returned **HTTP 403 Resource not accessible by integration**. `NOT_SUBMITTED`, no provider-issued issue URL.
+- `agentskillexchange/skills`: exact required skill frontmatter prepared in existing owner fork, new branch `role36-1-ai-vfx-preproduction-20261103` and source file committed (`b8b29f6974aeb322a09146d0cdc5244763cbe138`), but opening cross-repo PR returned **HTTP 403** from GitHub integration. `NOT_SUBMITTED_TO_UPSTREAM`. The independent adapter is subsequently published to owner's fork `main` as noted above; do not claim marketplace inclusion.
+- Related free skills/MCP directories reviewed: [AgentSkillsDir](https://agentskillsdir.com/submit) accepts public source links without fee, [SkillForAgents](https://skillforagents.com/) uses an external GitHub issue template, [MCP.Directory](https://mcp.directory/submit) has a free form. These were **not submitted** this session because the authorized browser/form runner is unavailable; do not invent POST receipts.
+
+**Next action:** check editor status for mcp.film FAKE #171; obtain permitted GitHub app installation for external pull requests or an authorized first-party browser form route for AgentSkillsDir; submit only after dedup/terms. Existing Glama task #187 remains product-owner pending. Qualified briefs/referrals attributable to this work: **0 verified**.
