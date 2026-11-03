@@ -32,3 +32,9 @@
 - Commercial metrics: no verified referred brief, paid job, AI agent use, or delivered email in this session. Cash outlay **0**.
 
 **Historical charter:** [role36.1 full successor handoff](handoffs/36_1_AGENT_DISTRIBUTION.md) v1.0 Git blob `dc9a6b0d5e372d3f0e52fa1af9e09ca981370ce0`. Retain immutable original roadmap and source-level limitations.
+
+## Follow-up · 2026-11-03 · product-owner handoff and mail gate
+
+- **Glama pending owner action:** [issue #187](https://github.com/peach420fuzz/objekts-production-desk/issues/187) created 2026-11-03 20:13:32 UTC, verified OPEN. This gives existing claimed connector owner concrete Admin steps for correct KOUNT name and AI/VFX/media categories. **No actual Glama edit yet.**
+- **AI Director Tools naming correction:** Gmail send tool twice returned `GmailConnectorError: Failed to send email`; earlier readback found no matching SENT and no newly transmitted threaded reply. **NOT_SENT; suppress further retries pending tool repair**. The existing public editorial entry remains in legacy name.
+- **First-party Cloudflare infrastructure:** `objekts.ai` zone active, primary FAKE Worker and recovery Worker deployed latest on 2026-10-28; deployment evidence is not proof of current public HTTP health. No changes were made to Workers.
