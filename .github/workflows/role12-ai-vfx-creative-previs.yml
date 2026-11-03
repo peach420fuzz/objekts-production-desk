@@ -1,0 +1,23 @@
+name: R12 AI/VFX creative previs buyer-source QA
+on:
+  pull_request:
+    paths:
+      - "references/ai-vfx-creative-preproduction/**"
+      - "ops/role12/test_ai_vfx_previsualization_buyers.py"
+      - ".github/workflows/role12-ai-vfx-creative-previs.yml"
+  push:
+    paths:
+      - "references/ai-vfx-creative-preproduction/**"
+      - "ops/role12/test_ai_vfx_previsualization_buyers.py"
+      - ".github/workflows/role12-ai-vfx-creative-previs.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Offline check of buyer guides, relative links and opt-in source markers
+        run: python3 ops/role12/test_ai_vfx_previsualization_buyers.py
