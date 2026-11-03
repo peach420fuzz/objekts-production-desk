@@ -31,4 +31,4 @@
 - Third: identify a **free high-intent RU/CIS** MCP directory accepting remote proprietary endpoints and routine submissions *without* legal/IP claims. Preserve dedup and consent gates.
 - Commercial metrics: no verified referred brief, paid job, AI agent use, or delivered email in this session. Cash outlay **0**.
 
-**Historical charter:** [role36.1 full successor handoff](ops/role36/handoffs/36_1_AGENT_DISTRIBUTION.md) v1.0 Git blob `dc9a6b0d5e372d3f0e52fa1af9e09ca981370ce0`. Retain immutable original roadmap and source-level limitations.
+**Historical charter:** [role36.1 full successor handoff](handoffs/36_1_AGENT_DISTRIBUTION.md) v1.0 Git blob `dc9a6b0d5e372d3f0e52fa1af9e09ca981370ce0`. Retain immutable original roadmap and source-level limitations.
