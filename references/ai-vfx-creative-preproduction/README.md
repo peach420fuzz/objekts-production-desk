@@ -29,7 +29,7 @@
 
 Объём, стоимость, число вариантов и передаваемые права согласуются на конкретном проекте. Эти услуги **не тождественны готовому рекламному фильму, финальному VFX или физической съёмке**.
 
-**Связанный, отдельный продукт:** [технический VFX-preproduction: breakdown, камеры, HDRI, on-set capture и vendor handoff](../vfx-preproduction-buyers/README.md) — ещё 10 тем в отдельном [PR #183](https://github.com/peach420fuzz/objekts-production-desk/pull/183), до объединения не является материалом публичного `main`. [Ранее опубликованный разбор VFX существующего plate](../ru-vfx-plate-preservation-buyer-guide.md) — другой этап производства.
+**Связанный, отдельный продукт:** [технический VFX-preproduction: breakdown, камеры, HDRI, on-set capture и vendor handoff](https://github.com/peach420fuzz/objekts-production-desk/blob/role12-vfx-preproduction-buyer-library-20261103/references/vfx-preproduction-buyers/README.md) — ещё 10 тем в отдельном [PR #183](https://github.com/peach420fuzz/objekts-production-desk/pull/183), до объединения не является материалом публичного `main`. [Ранее опубликованный разбор VFX существующего plate](../ru-vfx-plate-preservation-buyer-guide.md) — другой этап производства.
 
 ## Первичные источники по подходу
 
