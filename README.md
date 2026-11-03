@@ -7,6 +7,8 @@
 
 **Looking for a production studio, not a software tool?** [objekts — agent-readable studio services and evidence (EN/RU)](agent-services/STUDIO_SERVICE_ROUTING.md) · [canonical portfolio](https://objekts.ai/en/work/) · [producer contact and brief instructions](https://visual.objekts.ai/en/brief). This studio route is separate from KOUNT's read-only preflight and does not imply automatic acceptance or submission.
 
+**VFX-препродакшн для продюсеров:** [10 русскоязычных решений по breakdown, VFX-смете, камере, CGI/AI, данным площадки, techvis, сериалам и рекламе](references/vfx-preproduction-buyers/README.md) · [машиночитаемый список коммерческих запросов](references/vfx-preproduction-buyers/search-intent-index.json). Отдельная оплачиваемая услуга подготовки до съёмки; заявка только по инициативе заказчика.
+
 **Ищете AI/VFX-продакшн, а не плагин?** [Подбор объектов производства и проверяемые компетенции студии objekts](agent-services/STUDIO_SERVICE_ROUTING.md) · [портфолио](https://objekts.ai/work/) · [контакты продюсера и инструкция для брифа](https://visual.objekts.ai/brief).
 
 [![AllMCPs Verified](https://allmcps.com/api/badge/objekts-production-desk?style=shield)](https://allmcps.com/mcp/objekts-production-desk)
