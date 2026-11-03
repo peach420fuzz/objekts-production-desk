@@ -646,3 +646,23 @@ External distribution receipts (real fork commits and provider readback; **zero 
 - **Kilo** [kilo-marketplace PR #313](https://github.com/Kilo-Org/kilo-marketplace/pull/313) — `OPEN / mergeable=true`; KOUNT title/description updated; bot review flagged invalid compatibility note in setup `prerequisites`, which was then removed. Head `45f34b983c2e015ede6ac2e53be9c7184c9901e9`. Kilo host test **NOT_VERIFIED** and bot review thread marked outdated, not resolved.
 
 This is **existing-PR rehabilitation**, not 4 new directory submissions. No PR merged, no provider independent acceptance, and no client compatibility/agent install demonstrated. Complete receipts, limitations and owner routing: [Role36.1 provider log](../ops/role36/36_1_PROVIDER_ACTIONS_2026-11-03.md). No new right to modify product/runtime or expand unpublished case canon.
+
+## 2026-11-03 · Role36.1 · real MCP edge activity and FAKE submission blocker
+
+**New dated evidence source:** [Role36.1 Cloudflare MCP traffic evidence](../ops/role36/36_1_MCP_TRAFFIC_EVIDENCE_20261103.md), 2026-11-02 00:00 to Nov3 22:00 UTC. Authenticated Cloudflare zone aggregated HTTP data `httpRequestsAdaptiveGroups`, not marketplace analytics, not buyer attribution:
+
+- KOUNT hostname `mcp.objekts.ai` **4,973** HTTP requests; exact `POST /mcp`: 2,729 HTTP 200, 1,099 HTTP 202, 226 HTTP 400; 8 OPTIONS405. HTTP 200/202 does **not** mean a user successfully executed a tool.
+- FAKE hostname `fake.objekts.ai` **858** HTTP requests; exact `POST /mcp`: 153 HTTP 200, 37 HTTP 202; observed `GET /about` 13×200, 3×504 (intermittent failures). No recent full read-only external JSON-RPC handshake independently captured in this session.
+- 28 Oct – 3 Nov 22:00 UTC seven-day edge sample: KOUNT 14,132 and FAKE 1,194 HTTP 200+202 `POST /mcp` responses. No known users, sales or referral attribution. Treat these as traffic baselines rather than a victory claim.
+
+**New external editorial action:** [FAKE mcp.film issue #171, additional evidence comment](https://github.com/c47-inc/mcp-film/issues/171#issuecomment-6616825450) submitted and subsequently updated with public first-party report. **OPEN / not approved** as of last verified provider readback.
+
+**New concrete free-directory gate:** [FAKE product-owner issue #189](https://github.com/peach420fuzz/objekts-production-desk/issues/189): Cloudflare recorded 8× `GET /.well-known/mcp.json` HTTP 404 over 28 Oct–3 Nov; official free [mcpub submission guidance](https://github.com/roverbird/mcpub#-for-humans) requires the file. Do not submit until correct, publicly verified well-known file and actual endpoint; no product runtime deployment by role36.1. First-party KOUNT well-known file has reported 200s, but the mcpub submission call was **not** run.
+
+**Runtime owner measurements delivered:** KOUNT protocol [issue #101 comment](https://github.com/peach420fuzz/objekts-production-desk/issues/101#issuecomment-6616875158) and browser OPTIONS [issue #107 comment](https://github.com/peach420fuzz/objekts-production-desk/issues/107#issuecomment-6616876167), both readback verified.
+
+**Existing public card rediscovered, not new placement:** [objekts Production Desk at AgentSkillsDir](https://agentskillsdir.com/mcp/objekts-production-desk) is pinned to upstream commit dated **21 Oct 2026**, shows remote MCP install and source terms, independently indexed. This is a historical organic editorial listing and not acceptance for this session's new standalone AI/VFX skill.
+
+**New third-party submission attempted but NOT SENT:** [Hermes Skill Atlas](https://github.com/codesstar/hermes-skill-atlas) would accept a creative skill issue; current matching objekts skill issue creation returned 403 permission from GitHub integration, no issue created. Firecrawl 0 credits and TinyFish negative wallet preclude authenticated form automation; no payment or workaround. Avoid retrying blocked writes absent account/tool change.
+
+**Commercial conversion:** 0 verified consented producer handoffs or qualified buyers attributable to these entries. No new external accepted publication.
