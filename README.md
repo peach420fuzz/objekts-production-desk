@@ -11,6 +11,8 @@
 
 **Заказать режиссёрский AI-аниматик, VFX-тест или pitchvis:** [три услуги с конкретной выдачей и брифом продюсеру](references/ai-vfx-creative-preproduction/ORDER_CREATIVE_PREVIS.md) · [машиночитаемая карта услуг](references/ai-vfx-creative-preproduction/commercial-offers.json) · [рыночный обзор 12 публичных описаний](references/ai-vfx-creative-preproduction/COMMERCIAL_MARKET_2026-11-03.md). **AI/VFX-препродакшн для кино, рекламы и графики:** [10 коммерческих направлений](references/ai-vfx-creative-preproduction/README.md) · [AI-agent buyer-intent index](references/ai-vfx-creative-preproduction/buyer-intent-index.json) · [первичные источники и ограничения](references/ai-vfx-creative-preproduction/SOURCE_MAP.md). Это оплачиваемая творческая разработка с ясными результатами для режиссёра/продюсера, не бесплатное автопроизводство.
 
+**VFX-препродакшн для продюсеров:** [10 русскоязычных решений по breakdown, VFX-смете, камере, CGI/AI, данным площадки, techvis, сериалам и рекламе](references/vfx-preproduction-buyers/README.md) · [машиночитаемый список коммерческих запросов](references/vfx-preproduction-buyers/search-intent-index.json). Отдельная оплачиваемая услуга подготовки до съёмки; заявка только по инициативе заказчика.
+
 **Ищете AI/VFX-продакшн, а не плагин?** [Подбор объектов производства и проверяемые компетенции студии objekts](agent-services/STUDIO_SERVICE_ROUTING.md) · [портфолио](https://objekts.ai/work/) · [контакты продюсера и инструкция для брифа](https://visual.objekts.ai/brief).
 
 [![AllMCPs Verified](https://allmcps.com/api/badge/objekts-production-desk?style=shield)](https://allmcps.com/mcp/objekts-production-desk)
