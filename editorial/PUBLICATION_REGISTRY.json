@@ -771,6 +771,26 @@
         "VFX",
         "post-production"
       ]
+    },
+    {
+      "id": "FN-35",
+      "title": "A Sampler Cannot Create Recall — Risk Priors and Blind Holdouts in AI/VFX Frame QC",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "defect-prior-conditioning-blinded-agent-frame-qc",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/sampler_recall_priors_blind_holdouts.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PROHIBITED",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "synthetic_math_and_public_source_only",
+      "next_roles": [
+        "36.5",
+        "VFX",
+        "post-production",
+        "agent_eval"
+      ]
     }
   ],
   "format": "objekts.field_notes.publication_registry.v1",
