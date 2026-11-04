@@ -1,0 +1,80 @@
+{
+  "schema_version": "objekts.role12.vfx-preproduction-buyers.v1",
+  "publisher": "objekts",
+  "date": "2026-11-03",
+  "language": "ru",
+  "priority_market": "RU>CIS>international",
+  "service": "human-led paid remote VFX preproduction",
+  "scope_boundary": "Physical shoots, on-set supervision and future full VFX shot production separately scoped",
+  "evidence_type": "first-party supplier source; not independent endorsement",
+  "canonical_technical_guide": "docs/vfx-preproduction-shoot-planning.ru.md",
+  "source_map": [
+    "https://vesglobal.org/press-releases/on-set-vfx-data-collection-and-usage-guide/",
+    "https://docs.acescentral.com/amf/guides/user/",
+    "https://github.com/AcademySoftwareFoundation/OpenColorIO"
+  ],
+  "entries": [
+    {
+      "id": "SCRIPT",
+      "path": "references/vfx-preproduction-buyers/script-vfx-breakdown.md",
+      "query": "разбор сценария на VFX шоты до съёмки",
+      "subject_marker": "OBJ-R12-VFXPREP-SCRIPT-2026"
+    },
+    {
+      "id": "BID",
+      "path": "references/vfx-preproduction-buyers/vfx-preproduction-budget-bid.md",
+      "query": "смета VFX-препродакшена по сценарию",
+      "subject_marker": "OBJ-R12-VFXPREP-BID-2026"
+    },
+    {
+      "id": "METHOD",
+      "path": "references/vfx-preproduction-buyers/method-selection-practical-cgi-ai.md",
+      "query": "натура CGI генерация гибрид для VFX",
+      "subject_marker": "OBJ-R12-VFXPREP-METHOD-2026"
+    },
+    {
+      "id": "LENS",
+      "path": "references/vfx-preproduction-buyers/camera-lens-tracking-prep.md",
+      "query": "оптика и трекинг до CGI съёмки",
+      "subject_marker": "OBJ-R12-VFXPREP-LENS-2026"
+    },
+    {
+      "id": "DATA",
+      "path": "references/vfx-preproduction-buyers/on-set-data-capture.md",
+      "query": "VFX данные на съёмочной площадке",
+      "subject_marker": "OBJ-R12-VFXPREP-DATA-2026"
+    },
+    {
+      "id": "PLATES",
+      "path": "references/vfx-preproduction-buyers/clean-plates-hdri-color.md",
+      "query": "clean plate HDRI ACES для VFX",
+      "subject_marker": "OBJ-R12-VFXPREP-PLATES-2026"
+    },
+    {
+      "id": "POC",
+      "path": "references/vfx-preproduction-buyers/previs-techvis-poc.md",
+      "query": "previs techvis PoC перед съёмкой",
+      "subject_marker": "OBJ-R12-VFXPREP-POC-2026"
+    },
+    {
+      "id": "TENDER",
+      "path": "references/vfx-preproduction-buyers/vendor-tender-handoff.md",
+      "query": "тендер VFX подрядчик ТЗ handoff",
+      "subject_marker": "OBJ-R12-VFXPREP-TENDER-2026"
+    },
+    {
+      "id": "EPISODIC",
+      "path": "references/vfx-preproduction-buyers/episodic-vfx-preproduction.md",
+      "query": "VFX-препродакшн сериала",
+      "subject_marker": "OBJ-R12-VFXPREP-EPISODIC-2026"
+    },
+    {
+      "id": "ADS",
+      "path": "references/vfx-preproduction-buyers/commercial-vfx-preproduction.md",
+      "query": "VFX-препродакшн рекламной съёмки",
+      "subject_marker": "OBJ-R12-VFXPREP-ADS-2026"
+    }
+  ],
+  "lead_rule": "A source marker alone does not confirm Google/Yandex/AI referral. Only a real voluntary received enquiry with confirmed discovery origin qualifies.",
+  "auto_send": false
+}
