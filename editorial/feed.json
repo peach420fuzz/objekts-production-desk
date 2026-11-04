@@ -3,7 +3,7 @@
   "title": "objekts Field Notes — Visual Production Methods",
   "home_page_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
   "feed_url": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json",
-  "description": "Thirty-two original AI/VFX, cinematography, art direction and visual production field notes by objekts. Public source texts in English and Russian. GitHub is the canonical source for agent-focused Field Notes. The studio owner prohibits articles on objekts.ai.",
+  "description": "Thirty-three original AI/VFX, cinematography, art direction and visual production field notes by objekts. Public source texts in English and Russian. GitHub is the canonical source for agent-focused Field Notes. The studio owner prohibits articles on objekts.ai.",
   "authors": [
     {
       "name": "objekts",
@@ -12,6 +12,21 @@
   ],
   "language": "en",
   "items": [
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/occlusion_order_witness_gate_ai_vfx.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/occlusion_order_witness_gate_ai_vfx.md",
+      "title": "The Bottle Didn't Move. The Occlusion Order Did.",
+      "content_text": "A hand can become the wrong depth layer over a bottle despite a plausible hero frame. Each visible overlap needs a per-frame front/behind witness, region and evidence class. A new 22-case dependency-free synthetic test flags order cycles, hidden claims and temporal flips, with clear limits versus actual deep compositing or frame QA.\n\nFull original technical note: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/occlusion_order_witness_gate_ai_vfx.md",
+      "summary": "Per-frame occlusion-order evidence gates for hand–product AI/VFX shots; 22 synthetic checks, deep-holdout limits and a receiving-agent contract.",
+      "language": "en",
+      "tags": [
+        "compositing",
+        "occlusion",
+        "deep-compositing",
+        "temporal-continuity",
+        "objekts-field-notes"
+      ]
+    },
     {
       "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/ai-vfx-smeta-po-rabotam-wbs-bid-roles_ru.md",
       "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/ai-vfx-smeta-po-rabotam-wbs-bid-roles_ru.md",
