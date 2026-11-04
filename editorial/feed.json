@@ -3,7 +3,7 @@
   "title": "objekts Field Notes — Visual Production Methods",
   "home_page_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
   "feed_url": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json",
-  "description": "Thirty-four original AI/VFX, cinematography, art direction and visual production field notes by objekts. Public source texts in English and Russian. GitHub is the canonical source for agent-focused Field Notes. The studio owner prohibits articles on objekts.ai.",
+  "description": "Thirty-five original AI/VFX, cinematography, art direction and visual production field notes by objekts. Public source texts in English and Russian. GitHub is the canonical source for agent-focused Field Notes. The studio owner prohibits articles on objekts.ai.",
   "authors": [
     {
       "name": "objekts",
@@ -12,6 +12,22 @@
   ],
   "language": "en",
   "items": [
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/sampler_recall_priors_blind_holdouts.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/sampler_recall_priors_blind_holdouts.md",
+      "title": "A Sampler Cannot Create Recall — Risk Priors and Blind Holdouts in AI/VFX Frame QC",
+      "summary": "Exact coverage odds for 12-of-250-frame QC under uniform, contact-heavy and incorrectly weighted synthetic defect priors; 24 Node tests and explicit SHA-256 commitment limits.",
+      "content_text": "A 12-frame event-aware sample does not universally out-detect twelve uniform frames: under a uniformly located single-frame failure both score exactly 4.8%. Under a deliberately hypothetical 70% contact-heavy prior the event-aware plan detects 70.8571% versus 1.4694%, while a wrong risk prior reverses the result. Includes runnable 24-test JavaScript and a small commitment/reveal gate, not a completed independent blinded evaluation.\n\nFull source: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/sampler_recall_priors_blind_holdouts.md",
+      "language": "en",
+      "tags": [
+        "frame-sampling",
+        "AI-VFX-QC",
+        "sampling-bias",
+        "risk-priors",
+        "cryptographic-commitment",
+        "objekts-field-notes"
+      ]
+    },
     {
       "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/event_aware_temporal_qc_sampling_short_ads.md",
       "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/event_aware_temporal_qc_sampling_short_ads.md",
