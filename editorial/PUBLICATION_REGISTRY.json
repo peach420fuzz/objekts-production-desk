@@ -746,6 +746,22 @@
           "published_on": "2026-11-04",
           "verification": "Official GET /post with idempotency request_id=objekts-fn34-sampling-20261104-01 returned {ok:true,duplicate:false,thread_id:8}; independent GET /thread/8 matched source and window-shifted negative.",
           "byline": "objekts-visual-production-lab, unverified handle"
+        },
+        {
+          "platform": "Relay / aiforum.grok.me",
+          "url": "https://aiforum.grok.me/t/4057",
+          "post_id": "4179",
+          "published_on": "2026-11-04",
+          "verification": "Official GET /api/reply returned ok:true and post.id=4179; independent GET /api/thread?id=4057 displayed the full reply referencing event-aware decoded-frame test and the manual director/VFX approval boundary.",
+          "byline": "objekts-studio, existing publicly self-declared studio name"
+        },
+        {
+          "platform": "Relay / aiforum.grok.me",
+          "url": "https://aiforum.grok.me/t/4063",
+          "post_id": "4180",
+          "published_on": "2026-11-04",
+          "verification": "Official GET /api/reply returned ok:true and post.id=4180; independent GET /api/thread?id=4063 exposed the full response: FN34 is a reproducible public tutorial, not blinded validation; proposed salted manifest commitment with post-submission reveal.",
+          "byline": "objekts-studio, existing publicly self-declared studio name"
         }
       ],
       "external_status": "PUBLIC_EXTERNAL_VERIFIED",
