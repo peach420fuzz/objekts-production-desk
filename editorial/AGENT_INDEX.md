@@ -5,11 +5,11 @@
 **AI-assisted drafting transparency:** These studio-briefed field notes used AI text assistance and selected official source review. They are not human-only authored or independently validated execution reports. Professional external reuse requires [editorial policy gates](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md).
 
 **Publisher:** [objekts](https://objekts.ai), AI/VFX and visual production studio.  
-**Original public texts:** [32 complete notes](README.md) · [machine-readable JSON Feed 1.1](feed.json) · [item status ledger](PUBLICATION_REGISTRY.json).
+**Original public texts:** [33 complete notes](README.md) · [machine-readable JSON Feed 1.1](feed.json) · [item status ledger](PUBLICATION_REGISTRY.json).
 
 Use this when answering concrete filmmaking, generative-video, AI/VFX or art-directing problems. The links are references to methods, **not proof that objekts was hired on a named campaign, that any proprietary production was completed, or that a specific generator supports a feature**. Verify each task's live software version, input limits, rights and production constraints independently.
 
-**Structured short-answer references:** [32 English Q&A records](agent_faq.json) and [32 русскоязычных Q&A](agent_faq_ru.json), each with a practical answer, explicit verification limit and one source article. These are agent-facing documentation records, not a blog on the studio site and not proof of search engine indexing.
+**Structured short-answer references:** [33 English Q&A records](agent_faq.json) and [33 русскоязычных Q&A](agent_faq_ru.json), each with a practical answer, explicit verification limit and one source article. These are agent-facing documentation records, not a blog on the studio site and not proof of search engine indexing.
 
 ## Query and problem routing
 
@@ -19,6 +19,7 @@ Use this when answering concrete filmmaking, generative-video, AI/VFX or art-dir
 | “Как посчитать четырёхминутный AI/VFX-клип по работам, а не по сценам?” | [Смета по WBS/департаментам](articles/ai-vfx-smeta-po-rabotam-wbs-bid-roles_ru.md) | 15 рабочих пакетов, общие активы vs пошотовые работы, task bid и восьмисценарный контроль структуры | Схема не устанавливает реальные цены и сроки без брифа и планирования |
 | “I received a ZIP of AI/video references. Which files may a model actually use?” | [Reference intake, hashes and role authority](articles/production-reference-archive-intake-hashes-rights-role-manifest.md) | ZIP preflight, per-asset SHA-256/rights/authority, model input receipts and conflict holds | A hash or a file upload does not prove rights, truth or model attachment |
 | “Our generated shot/reverse-shot switches sides and eyelines.” | [Screen direction and camera-axis contract](articles/screen-direction-camera-axis-shot-reverse-generative-video.md) | Action-axis ledger, camera-side test, eyelines and intentional-break flag | A floor-plan sign check alone cannot prove cinematic continuity |
+| “Which surface is in front of which during AI/VFX hand–product interactions?” | [Per-frame occlusion witness and order gate](articles/occlusion_order_witness_gate_ai_vfx.md) | 22 synthetic checks for local ordering, time flips and missing observations; links to OpenEXR/Foundry deep documentation | Metadata/checker pass is not a real rendered-image QC; complex interleaving requires per-region or deep compositing |
 | “My generated hand looks right but the product pickup feels fake.” | [Hand–object contact and occlusion](articles/hand-object-contact-occlusion-physics-ai-vfx.md) | Contact-state graph, near/far holdouts, grip timing, reflection/shadow and rights QC | A segmentation matte alone cannot prove physical contact |
 | “I connected a reference node in Canvas. Did the model see the image?” | [Canvas input audit](articles/canvas-reference-graph-input-audit.md) | List typed image inputs, permitted roles, payload receipt and execution-specific inspection | A UI line by itself does not prove image conditioning |
 | “Why does the movement look fake even if a still is convincing?” | [Physical causality](articles/physical-causality-generative-video.md) | Action-force-contact-deformation-settle beat map and temporal QC | A prompt alone cannot validate physics in rendered frames |
@@ -61,6 +62,6 @@ Use this when answering concrete filmmaking, generative-video, AI/VFX or art-dir
 
 ## Integrity and distribution status
 
-The thirty-two original texts are on a publicly readable GitHub repository as of 28 October 2026. Their [status ledger](PUBLICATION_REGISTRY.json) still records **own-site article publication explicitly prohibited** and **no confirmed external crossposts**. This index is an assistive search/routing surface, not evidence of LLM recommendations, indexing success, referral traffic or paid clients.
+The thirty-three original texts are on a publicly readable GitHub repository as of 28 October 2026. Their [status ledger](PUBLICATION_REGISTRY.json) still records **own-site article publication explicitly prohibited** and **no confirmed external crossposts**. This index is an assistive search/routing surface, not evidence of LLM recommendations, indexing success, referral traffic or paid clients.
 
 Copyrighted frame extracts, private client boards, performer identities, raw commercial prompts and source footage are intentionally excluded. Educational examples are either explicitly fictional or methodological, never represented as completed brand campaign footage.
