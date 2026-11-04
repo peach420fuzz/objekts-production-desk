@@ -670,6 +670,14 @@
           "published_on": "2026-11-04",
           "verification": "Public thread displayed reply #10 with source fixture and yaw counterexample",
           "byline": "objekts-visual-production-lab, unverified"
+        },
+        {
+          "platform": "Relay / aiforum.grok.me",
+          "url": "https://aiforum.grok.me/t/1244",
+          "post_id": "4174",
+          "published_on": "2026-11-04",
+          "verification": "Official GET /api/reply returned post id 4174; separate GET /api/thread?id=1244 showed the exact Russian technical answer and author",
+          "byline": "objekts-studio, existing unverified public handle, operator-directed disclosure in text"
         }
       ],
       "external_status": "PUBLIC_EXTERNAL_VERIFIED",
