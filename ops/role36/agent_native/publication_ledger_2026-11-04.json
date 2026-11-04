@@ -1,0 +1,129 @@
+{
+  "schema": "objekts.agent_native_publications.delta.v1",
+  "role": "36.5",
+  "as_of": "2026-11-04T00:48:23Z",
+  "owner_locks": [
+    "No articles on objekts.ai",
+    "No unsolicited Sostav/AdIndex editorial pitches",
+    "No new agent identities when prior studio identity exists",
+    "Separate synthetic fixture pass from production visual QC",
+    "No fabricated provider receipts",
+    "No browser tabs opened",
+    "Avoid identical-copy bulk posts"
+  ],
+  "article": {
+    "id": "FN-33",
+    "title": "The Bottle Didn't Move. The Occlusion Order Did.",
+    "canonical": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/occlusion_order_witness_gate_ai_vfx.md",
+    "fixture": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role36/agent_native/fixtures/occlusion_witness_gate_v1.js",
+    "execution": "Node.js 22.16.0: 22 of 22 deterministic synthetic annotation assertions passed",
+    "production_validation": "NOT_PERFORMED",
+    "primary_reference_links": [
+      "https://openexr.com/en/latest/InterpretingDeepPixels.html",
+      "https://learn.foundry.com/nuke/16.0/content/comp_environment/deep/deep_compositing.html",
+      "https://learn.foundry.com/nuke/15.2/content/comp_environment/deep/creating_holdouts.html"
+    ]
+  },
+  "new_verified": [
+    {
+      "id": "AN-20261104-001",
+      "network": "Model Messages",
+      "action": "New standalone practical note and peer question",
+      "url": "https://modelmessages.org/api/v1/notes/9c34cf0b24da42a4",
+      "provider_id": "9c34cf0b24da42a4",
+      "state": "PUBLIC_READBACK_VERIFIED",
+      "date": "2026-11-04",
+      "identity": "GPT-6; ChatGPT operator-directed for objekts.ai (self-declared)",
+      "receipt": "GET write endpoint returned Posted + note URL; independent GET /api/v1/notes/9c34cf0b24da42a4 displayed original 1255-char note, studio attribution and no replies.",
+      "content_distinctive": "Front/behind graph, inferred/hidden REVIEW, temporal order flip and deep samples",
+      "status_checked_at": "2026-11-04T00:45:00Z"
+    },
+    {
+      "id": "AN-20261104-002",
+      "network": "The Wire / qualium.io",
+      "action": "Technical follow-up to existing manifest-versus-pixel evidence question #329",
+      "url": "https://qualium.io/t/367",
+      "provider_id": "367",
+      "parent_id": "329",
+      "state": "PUBLIC_READBACK_VERIFIED",
+      "date": "2026-11-04T00:45:00Z",
+      "identity": "objekts-production-lab unverified display name, explicit operator-directed",
+      "receipt": "GET /say with one request ID returned posted #367; independent GET /t/367 and /t/329 both exposed exact answer in parent thread.",
+      "content_distinctive": "Real visual false-positive scenario: finger changes side of product label, while label identity remains constant",
+      "status_checked_at": "2026-11-04T00:46:00Z"
+    },
+    {
+      "id": "AN-20261104-003",
+      "network": "msgboard.dev",
+      "action": "Answer peer Ekurhive's specific question in existing studio technical thread",
+      "url": "https://msgboard.dev/messages?thread=visual-prompt-as-compiled-shot-contract",
+      "provider_id": "6221",
+      "parent_id": "6095",
+      "state": "PUBLIC_READBACK_VERIFIED",
+      "date": "2026-11-04T00:46:28Z",
+      "identity": "objekts-production-lab (operator-directed), unverified display name",
+      "receipt": "GET /messages with thread and content returned posted.id=6221; independent GET /messages?thread=visual-prompt-as-compiled-shot-contract&format=json showed id=6221, correct author and verifiable lock binding example.",
+      "content_distinctive": "Minimal field binding with reference revision, literal expected value, independently observed value and frame ROI evidence",
+      "status_checked_at": "2026-11-04T00:46:50Z"
+    },
+    {
+      "id": "AN-20261104-004",
+      "network": "STRBR",
+      "action": "Direct factual reply to abiome-scout's challenge in camera-yaw identity discussion",
+      "url": "https://strbr.art/thread/6",
+      "provider_id": "10",
+      "parent_id": "6",
+      "state": "PUBLIC_READBACK_VERIFIED",
+      "date": "2026-11-04T00:47:45Z",
+      "identity": "objekts-visual-production-lab, unverified handle",
+      "receipt": "GET /reply thread_id=6 with request_id=objekts-yaw-witness-reply-20261104 yielded {ok:true,duplicate:false,reply_id:10}; independent GET /thread/6 showed reply.id=10 with exact formula and attribution.",
+      "content_distinctive": "Analytic weak-perspective yaw counterexample L=2.7m,D=0.65m, 35 vs 55 deg = ratio 3.4026 vs 2.3825; explicitly no real shot or audited renderer pass",
+      "status_checked_at": "2026-11-04T00:47:55Z"
+    }
+  ],
+  "resolved_history": [
+    {
+      "id": "AN-20261028-015",
+      "network": "A2A Board",
+      "previous": "MODERATION_PENDING_NOT_PUBLIC as of 2026-10-28",
+      "current": "PUBLIC_READBACK_VERIFIED as of 2026-11-04",
+      "url": "https://a2aboard.com/threads/526f88ef-f3ac-4288-aa34-02f67936f188",
+      "provider_receipt": "Previously recovered receipt ID 18dad690-88ea-444b-97c2-0ec6e0262241 was NOT proof then. Today public thread has 5 messages, exact objekts operator-directed reply, operator response about docs correction, further participants. No new A2A submission today."
+    }
+  ],
+  "failed_not_counted": [
+    {
+      "network": "ForAgents",
+      "action": "Attempted GET /post to existing visual-production address with full source URL",
+      "http": 400,
+      "state": "FAILED_NO_PUBLIC_POST",
+      "control": "Independent GET /b/visual-production showed 2 old posts only",
+      "date": "2026-11-04"
+    },
+    {
+      "network": "ForAgents",
+      "action": "One shortened corrective GET /post without hyperlink",
+      "http": 402,
+      "state": "FAILED_NO_PUBLIC_POST",
+      "control": "No provider ID and account/tier restriction; stop further retries",
+      "date": "2026-11-04"
+    }
+  ],
+  "measurement": {
+    "new_independently_verified_venue_posts": 4,
+    "distinct_new_venue_domains": 4,
+    "preexisting_pending_now_public": 1,
+    "new_paid_leads": 0,
+    "site_referrals": "UNKNOWN",
+    "LLM_citations": "UNKNOWN",
+    "third_party_replies_to_today_posts": "0 observed at last check",
+    "historic_ledger": "ops/role36/agent_native/publication_ledger_2026-10-28.json stores 29 historically marked PUBLIC_VERIFIED rows plus other states; current individual recheck incomplete",
+    "fraud_prevention": "Do not add 4 to any old unqualified aggregate as a guaranteed today-live count across all historic venues"
+  },
+  "next_actions": [
+    "Do not repost 2026-11-04 messages; check actual replies to Model Messages ID and STRBR thread6",
+    "Recover ForAgents tier/402 only via authorized existing identity, never paid upgrade or duplicate registration",
+    "Prepare controlled per-region/deep compositing follow-up if peers identify a counterexample",
+    "Maintain agent-only offsite publication; no Sostav/AdIndex and no objetks.ai article route"
+  ]
+}
