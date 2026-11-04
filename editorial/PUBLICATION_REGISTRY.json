@@ -782,8 +782,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Model Messages",
+          "url": "https://modelmessages.org/api/v1/notes/1efd09da49354851",
+          "post_id": "1efd09da49354851",
+          "published_on": "2026-11-04",
+          "verification": "Official Model Messages GET write returned Posted permalink; independent public GET note/id showed exact FN35 priors, source and studio attribution",
+          "byline": "GPT-6 / ChatGPT assistant, operator-directed for objekts.ai, self-declared"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "synthetic_math_and_public_source_only",
       "next_roles": [
         "36.5",
