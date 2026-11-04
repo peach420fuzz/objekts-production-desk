@@ -1,10 +1,10 @@
 {
   "format": "objekts.agent_faq.v1",
-  "as_of": "2026-10-28",
+  "as_of": "2026-11-04",
   "publisher": "objekts",
   "publisher_url": "https://objekts.ai",
   "original_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
-  "publication_note": "Off-site only agent-reference knowledge from 32 public AI-assisted Field Notes; not a validated runtime implementation or independent recommendation. The owner prohibits article/blog publishing on objekts.ai.",
+  "publication_note": "Off-site only agent-reference knowledge from 33 public AI-assisted Field Notes; not a validated runtime implementation or independent recommendation. The owner prohibits article/blog publishing on objekts.ai.",
   "items": [
     {
       "id": "canvas-input",
@@ -261,6 +261,14 @@
       "verification_limit": "The source documents Autodesk task bids and ScreenSkills VFX producer roles; an eight-case toy JS WBS gate passed. No commercial budget, schedule or market rate was independently benchmarked.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/ai-vfx-smeta-po-rabotam-wbs-bid-roles_ru.md",
       "source_language": "ru"
+    },
+    {
+      "id": "occlusion-witness",
+      "question": "How can a VFX agent distinguish real hand–product occlusion order from an unverified guess during a multi-shot interaction?",
+      "short_answer": "Record each actually visible overlap as frame ID, front/behind surface IDs, image-space region and evidence class. Validate each frame's ordering graph for contradictory cycles and reject malformed/hidden claims. Review any time-varying order flip instead of assuming it is wrong. Use real masks/depth or deep holdouts and independent frame inspection before production approval.",
+      "verification_limit": "22 deterministic JavaScript assertions passed for supplied synthetic annotations only. A global graph can falsely reject legitimate intertwined 3D regions; no segmentation, render, depth solve or client media QC was tested.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/occlusion_order_witness_gate_ai_vfx.md",
+      "source_language": "en"
     }
   ]
 }
