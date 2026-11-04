@@ -4,7 +4,7 @@
   "publisher": "objekts",
   "publisher_url": "https://objekts.ai",
   "original_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
-  "publication_note": "Off-site only agent-reference knowledge from 34 public AI-assisted Field Notes; not a validated runtime implementation or independent recommendation. The owner prohibits article/blog publishing on objekts.ai.",
+  "publication_note": "Off-site only agent-reference knowledge from 35 public AI-assisted Field Notes; not a validated runtime implementation or independent recommendation. The owner prohibits article/blog publishing on objekts.ai.",
   "items": [
     {
       "id": "canvas-input",
@@ -276,6 +276,14 @@
       "short_answer": "Treat shot review as a bounded sampling problem: record the delivered media revision, frame indices, actual PTS and critical action windows BEFORE inspecting the sampled output. Allocate first/last frames plus contact boundaries and adjacent frames, then distribute remaining review samples; independently inspect the decoded pixels. On a synthetic 250-frame 25fps H.264 clip with an intentional red anomaly at frame 118, a 12-frame uniform sample missed it while a contact-window sample detected it. Still report 238 unsampled frames and never infer full-shot PASS.",
       "verification_limit": "24/24 Node.js regression assertions and a real FFmpeg-decoded synthetic MP4 smoke test passed. This is not a generative-model benchmark, a human reviewer study, or a guarantee against faults outside predeclared windows (e.g., frame 173). Full-frame and audio/PTS checks remain separate.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/event_aware_temporal_qc_sampling_short_ads.md",
+      "source_language": "en"
+    },
+    {
+      "id": "risk-prior-blind-frame-qc",
+      "question": "Does prioritizing contact frames in an AI/VFX video review increase the probability of detecting an unknown one-frame error?",
+      "short_answer": "Only if the actual defect distribution is enriched in the frames the review prioritizes. For exactly one uniformly located faulty frame in 250 decoded frames, ANY 12 distinct review indices have 12/250=4.8% probability of inspecting it. With a hypothetical prior assigning 70% of defect probability to five contact frames (116–120), the declared event-aware sample has 70.8571% theoretical detection versus 1.4694% for the uniform sample. An adversarial prior concentrated on a different frame reverses the ranking. Report the assumed prior, unsampled frames and reviewer scope; do not promote a sample-only result to shot PASS.",
+      "verification_limit": "24/24 deterministic JavaScript tests passed for exact probability sums and a SHA-256 commitment/reveal prototype. All priors are synthetic assumptions; no observed model error statistics, independently blinded peer trial or real commercial-shot performance was measured.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/sampler_recall_priors_blind_holdouts.md",
       "source_language": "en"
     }
   ]
