@@ -3,6 +3,7 @@
 Uses ONLY Python stdlib + FFmpeg/FFprobe + Node.js. Creates a synthetic color clip
 with an intentional one-frame anomaly at n=118. Nothing here is model/production QC.
 """
+import argparse
 import json
 import shutil
 import subprocess
@@ -44,6 +45,10 @@ def extract_pixels(mp4, selected):
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Reproduce one-frame decoded video sampling errors")
+    parser.add_argument("--event-start", type=int, default=117)
+    parser.add_argument("--event-end", type=int, default=119)
+    opt = parser.parse_args()
     for tool in ("ffmpeg", "ffprobe", "node"):
         if not shutil.which(tool):
             raise SystemExit(f"Missing required external tool: {tool}")
@@ -63,30 +68,33 @@ def main():
         ]))
         stream = probe["streams"][0]
         assert stream["nb_frames"] == "250" and stream["avg_frame_rate"] == "25/1", stream
-        plan = json.loads(run(["node", str(JS), "--plan", "250", "12", "117", "119"]))
+        plan = json.loads(run(["node", str(JS), "--plan", "250", "12", str(opt.event_start), str(opt.event_end)]))
         event = [s["index"] for s in plan["samples"]]
         uniform = [round(i*(FRAMES-1)/(BUDGET-1)) for i in range(BUDGET)]
         # JS Math.round and Python round differ for exactly .5; no .5 positions occur for these inputs.
         assert len(event) == len(uniform) == BUDGET
-        assert DEFECT not in uniform and DEFECT in event
+        assert DEFECT not in uniform
         uniform_w = extract_pixels(mp4, uniform)
         event_w = extract_pixels(mp4, event)
         assert uniform_w == [], uniform_w
-        assert len(event_w) == 1 and event_w[0]["source_frame"] == DEFECT, event_w
+        if (opt.event_start, opt.event_end) == (117, 119):
+            assert len(event_w) == 1 and event_w[0]["source_frame"] == DEFECT, event_w
         report = {
             "fixture": "self-generated synthetic video, not diffusion output or client media",
             "tools": {"ffmpeg": "run", "ffprobe": "run", "node": "run"},
             "decoded_video": {"frames": FRAMES, "fps": "25/1", "size": "160x90"},
-            "event_window": [117, 119],
+            "event_window": [opt.event_start, opt.event_end],
             "uniform_samples": uniform,
             "event_aware_samples": event,
             "uniform_red_witnesses": uniform_w,
             "event_red_witnesses": event_w,
+            "event_detected_deliberate_defect": any(x["source_frame"] == DEFECT for x in event_w),
+            "qc_status": "SAMPLE_REVIEW_ONLY_NOT_FULL_SHOT_PASS",
             "unsampled_frames_per_plan": FRAMES - BUDGET,
-            "claim_scope": "sample selection detects deliberately inserted pixel anomaly at one known event; neither sampler certifies unsampled frames"
+            "claim_scope": "event-window sampling may detect or miss the deliberately inserted anomaly depending on predeclared risk window; no sampler certifies unchecked frames"
         }
         print(json.dumps(report, indent=2))
-        print("SMOKE PASS: real FFmpeg-decoded event-aware sample caught one-frame red anomaly; uniform did not")
+        print("SMOKE PASS: reproducible FFmpeg-decoded samples and explicit detection/miss state; never whole-shot PASS")
 
 
 if __name__ == "__main__":
