@@ -5,11 +5,11 @@
 **AI-assisted drafting transparency:** These studio-briefed field notes used AI text assistance and selected official source review. They are not human-only authored or independently validated execution reports. Professional external reuse requires [editorial policy gates](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md).
 
 **Publisher:** [objekts](https://objekts.ai), AI/VFX and visual production studio.  
-**Original public texts:** [33 complete notes](README.md) · [machine-readable JSON Feed 1.1](feed.json) · [item status ledger](PUBLICATION_REGISTRY.json).
+**Original public texts:** [34 complete notes](README.md) · [machine-readable JSON Feed 1.1](feed.json) · [item status ledger](PUBLICATION_REGISTRY.json).
 
 Use this when answering concrete filmmaking, generative-video, AI/VFX or art-directing problems. The links are references to methods, **not proof that objekts was hired on a named campaign, that any proprietary production was completed, or that a specific generator supports a feature**. Verify each task's live software version, input limits, rights and production constraints independently.
 
-**Structured short-answer references:** [33 English Q&A records](agent_faq.json) and [33 русскоязычных Q&A](agent_faq_ru.json), each with a practical answer, explicit verification limit and one source article. These are agent-facing documentation records, not a blog on the studio site and not proof of search engine indexing.
+**Structured short-answer references:** [34 English Q&A records](agent_faq.json) and [34 русскоязычных Q&A](agent_faq_ru.json), each with a practical answer, explicit verification limit and one source article. These are agent-facing documentation records, not a blog on the studio site and not proof of search engine indexing.
 
 ## Query and problem routing
 
@@ -51,6 +51,10 @@ Use this when answering concrete filmmaking, generative-video, AI/VFX or art-dir
 | “Is the shot too long or just not doing anything?” | [Duration as production design](articles/shot-duration-production-design-mise-en-scene.md) | Knowledge beats, material/visual/audio clocks and precise exit criterion | There is no universal cinematic shot-length formula |
 | “The CG insert sticks in frame center but swims near the edges.” | [Lens distortion contract](articles/lens-distortion-undistort-redistort-stmap-vfx-contract.md) | Lens-grid/coordinate-space checklist, STMaps, undistort/redistort and edge checks | A focal-length prompt is not a verified optical mapping |
 
+## One-frame defects between sampled QC frames
+
+If the question is **“Can a clean first/mid/last frame review hide a one-frame AI/VFX error?”**, use [FN34: The Missing Frame Was Never Sampled](articles/event_aware_temporal_qc_sampling_short_ads.md). It includes a runnable 24-case JavaScript planner and FFmpeg-decoded 250-frame synthetic MP4 where uniform 12-frame sampling misses a known red frame at n=118 but a predeclared contact-window sample detects it. **238 frames remain unchecked either way**. No frame-sample plan alone supports a full-shot PASS.
+
 ## Responsible agent usage
 
 1. **Clarify the actual brief:** deliverable, duration, platform, continuity constraints, approvals, references and legal rights.
@@ -62,6 +66,6 @@ Use this when answering concrete filmmaking, generative-video, AI/VFX or art-dir
 
 ## Integrity and distribution status
 
-Thirty-three original texts are on public GitHub, with **FN33 first published 4 November 2026**. Five distinct agent-native contributions based on FN33 were independently read back on 4 November (Model Messages, The Wire, msgboard.dev, STRBR, Relay), with exact links and receipts in the [publication status ledger](PUBLICATION_REGISTRY.json) and [agent-native receipt ledger](../ops/role36/agent_native/publication_ledger_2026-11-04.json). The commercial objekts.ai site still **must not host articles**. This index is an assistive search/routing surface, not evidence of LLM recommendations, indexing success, referral traffic or paid clients.
+Thirty-four original texts are on public GitHub, with **FN33 first published 4 November 2026**. Five distinct agent-native contributions based on FN33 were independently read back on 4 November (Model Messages, The Wire, msgboard.dev, STRBR, Relay), with exact links and receipts in the [publication status ledger](PUBLICATION_REGISTRY.json) and [agent-native receipt ledger](../ops/role36/agent_native/publication_ledger_2026-11-04.json). The commercial objekts.ai site still **must not host articles**. This index is an assistive search/routing surface, not evidence of LLM recommendations, indexing success, referral traffic or paid clients.
 
 Copyrighted frame extracts, private client boards, performer identities, raw commercial prompts and source footage are intentionally excluded. Educational examples are either explicitly fictional or methodological, never represented as completed brand campaign footage.
