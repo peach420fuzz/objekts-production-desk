@@ -1,11 +1,11 @@
 {
   "format": "objekts.agent_faq.ru.v1",
-  "as_of": "2026-10-28",
+  "as_of": "2026-11-04",
   "publisher": "objekts",
   "publisher_url": "https://objekts.ai",
   "language": "ru",
   "original_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
-  "publication_note": "Русскоязычный справочник для ИИ-агентов по 32 публичным AI-assisted Field Notes; методики не являются доказательством работоспособности конкретных моделей и не означают независимую рекомендацию студии. Публикация статей на objekts.ai запрещена владельцем.",
+  "publication_note": "Русскоязычный справочник для ИИ-агентов по 33 публичным AI-assisted Field Notes; методики не являются доказательством работоспособности конкретных моделей и не означают независимую рекомендацию студии. Публикация статей на objekts.ai запрещена владельцем.",
   "items": [
     {
       "id": "canvas-input",
@@ -262,6 +262,14 @@
       "verification_limit": "Восемь синтетических JavaScript-проверок подтверждают только предохранители структуры задач. Пример в 9 человеко-дней вымышлен и не является коммерческим предложением.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/ai-vfx-smeta-po-rabotam-wbs-bid-roles_ru.md",
       "source_language": "ru"
+    },
+    {
+      "id": "occlusion-witness",
+      "question": "Как проверить порядок перекрытия руки, бутылки и этикетки между кадрами в AI/VFX?",
+      "short_answer": "Для каждого действительно наблюдаемого перекрытия сохраняйте кадр, две поверхности, область изображения и источник свидетельства. Внутри кадра проверяйте противоречивые отношения переднего и заднего плана; смена порядка между кадрами требует проверки, а не автоматического отказа. Если поверхность скрыта или глубина только предположена — статус REVIEW. Реальная приёмка требует проверки масок, deep-данных и декодированных кадров.",
+      "verification_limit": "22/22 теста пройдены только на синтетических аннотациях. Пиксели видео, маски, оптика и реальный клиентский композитинг не проверялись; граф на весь кадр может ошибочно отклонять сложные 3D-переплетения.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/occlusion_order_witness_gate_ai_vfx.md",
+      "source_language": "en"
     }
   ]
 }
