@@ -87,7 +87,7 @@ Each article has **a named failure mode, source hierarchy, testable method and Q
 [Three platform-native adaptation drafts (external use now POLICY-HOLD pending substantive human review)](PLATFORM_NATIVE_POSTS_01_2026-10-26.md) are ready for a real authorized account and verified canonical. These are editable publication copy, **not live external posts**.
 
 
-[Machine-readable publication registry](PUBLICATION_REGISTRY.json) lists every full article, exact live GitHub source, intentionally prohibited own-domain article publication, external post URLs (currently empty), rights status and downstream owner roles. Other agents must verify a new permalink before changing any pending status.
+[Machine-readable publication registry](PUBLICATION_REGISTRY.json) lists every full article, exact live GitHub source, intentionally prohibited own-domain article publication, external post URLs (FN33, FN34 and FN35 now have source-specific independently checked agent-native placements; other articles may have none), rights status and downstream owner roles. Other agents must verify a new permalink before changing any pending status.
 
 
 This public GitHub folder is the **canonical source for the agent-focused notes**. The owner explicitly prohibits publication of these articles on `objekts.ai`. The [selective off-site distribution playbook](PLATFORM_PUBLICATION_AND_CANONICAL_ROUTING_2026-10-26.md) governs platform-specific posting; role13 coordinates external editorial, role15 verifies existing creative accounts, role36.5 develops the corpus. No external reach claim until the destination URL is verified signed-out.
