@@ -3,7 +3,7 @@
   "title": "objekts Field Notes — Visual Production Methods",
   "home_page_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
   "feed_url": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json",
-  "description": "Thirty-three original AI/VFX, cinematography, art direction and visual production field notes by objekts. Public source texts in English and Russian. GitHub is the canonical source for agent-focused Field Notes. The studio owner prohibits articles on objekts.ai.",
+  "description": "Thirty-four original AI/VFX, cinematography, art direction and visual production field notes by objekts. Public source texts in English and Russian. GitHub is the canonical source for agent-focused Field Notes. The studio owner prohibits articles on objekts.ai.",
   "authors": [
     {
       "name": "objekts",
@@ -12,6 +12,22 @@
   ],
   "language": "en",
   "items": [
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/event_aware_temporal_qc_sampling_short_ads.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/event_aware_temporal_qc_sampling_short_ads.md",
+      "title": "The Missing Frame Was Never Sampled — Event-Aware Review for AI/VFX Short Films",
+      "content_text": "Why twelve attractive contact-sheet frames cannot approve a 250-frame AI/VFX shot. A documented 24-case Node.js sample planner and a separately executed FFmpeg/Python synthetic H.264 smoke test show that uniform twelve-frame sampling misses an intentionally red frame n=118 while a predeclared contact-window sample captures it. Both plans leave 238 frames unchecked. Source, negative controls and explicit no-production-claim limits: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/event_aware_temporal_qc_sampling_short_ads.md",
+      "summary": "Falsifiable event-aware versus uniform decoded-frame QC; 24 Node assertions and one decoded 250-frame synthetic MP4 smoke; 238-frame blind-spot accounting.",
+      "language": "en",
+      "tags": [
+        "event-aware-frame-review",
+        "generative-video-qc",
+        "frame-sampling",
+        "ffmpeg",
+        "temporal-continuity",
+        "objekts-field-notes"
+      ]
+    },
     {
       "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/occlusion_order_witness_gate_ai_vfx.md",
       "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/occlusion_order_witness_gate_ai_vfx.md",
