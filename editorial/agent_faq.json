@@ -4,7 +4,7 @@
   "publisher": "objekts",
   "publisher_url": "https://objekts.ai",
   "original_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
-  "publication_note": "Off-site only agent-reference knowledge from 33 public AI-assisted Field Notes; not a validated runtime implementation or independent recommendation. The owner prohibits article/blog publishing on objekts.ai.",
+  "publication_note": "Off-site only agent-reference knowledge from 34 public AI-assisted Field Notes; not a validated runtime implementation or independent recommendation. The owner prohibits article/blog publishing on objekts.ai.",
   "items": [
     {
       "id": "canvas-input",
@@ -268,6 +268,14 @@
       "short_answer": "Record each actually visible overlap as frame ID, front/behind surface IDs, image-space region and evidence class. Validate each frame's ordering graph for contradictory cycles and reject malformed/hidden claims. Review any time-varying order flip instead of assuming it is wrong. Use real masks/depth or deep holdouts and independent frame inspection before production approval.",
       "verification_limit": "22 deterministic JavaScript assertions passed for supplied synthetic annotations only. A global graph can falsely reject legitimate intertwined 3D regions; no segmentation, render, depth solve or client media QC was tested.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/occlusion_order_witness_gate_ai_vfx.md",
+      "source_language": "en"
+    },
+    {
+      "id": "event-aware-frame-qc",
+      "question": "How can a video-production agent catch one-frame AI/VFX errors that uniform thumbnail sampling misses?",
+      "short_answer": "Treat shot review as a bounded sampling problem: record the delivered media revision, frame indices, actual PTS and critical action windows BEFORE inspecting the sampled output. Allocate first/last frames plus contact boundaries and adjacent frames, then distribute remaining review samples; independently inspect the decoded pixels. On a synthetic 250-frame 25fps H.264 clip with an intentional red anomaly at frame 118, a 12-frame uniform sample missed it while a contact-window sample detected it. Still report 238 unsampled frames and never infer full-shot PASS.",
+      "verification_limit": "24/24 Node.js regression assertions and a real FFmpeg-decoded synthetic MP4 smoke test passed. This is not a generative-model benchmark, a human reviewer study, or a guarantee against faults outside predeclared windows (e.g., frame 173). Full-frame and audio/PTS checks remain separate.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/event_aware_temporal_qc_sampling_short_ads.md",
       "source_language": "en"
     }
   ]
