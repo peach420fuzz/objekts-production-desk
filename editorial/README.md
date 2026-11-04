@@ -6,7 +6,7 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 
 **[objekts.ai](https://objekts.ai) · [Creative work](https://objekts.ai/en/work/) · [AI/VFX production](https://objekts.ai/en/services/ai-vfx/) · [Contact](https://objekts.ai/en/contact/)**
 
-## Start here: thirty-three complete field notes
+## Start here: thirty-four complete field notes
 
 | # | Article | Core practical result | Language |
 |---|---|---|---|
@@ -43,10 +43,11 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 | 31 | [A Clean Plate Is Not an Empty Prompt](articles/clean-plate-background-reconstruction-camera-space-vfx.md) | Captured vs reconstructed vs generated backgrounds, camera-space projection, dynamic-effect holdouts and eight tested preflight gates | EN |
 | 32 | [Смета на AI/VFX — карта работ](articles/ai-vfx-smeta-po-rabotam-wbs-bid-roles_ru.md) | Пятнадцать рабочих пакетов, трассировка шотов/ассетов, защита от двойного учёта и восемь тестов WBS | RU |
 | 33 | [The Bottle Didn't Move. The Occlusion Order Did.](articles/occlusion_order_witness_gate_ai_vfx.md) | Per-frame surface/holdout witnesses, contradictory occlusion ordering and 22 synthetic tests; not a pixel/production result | EN |
+| 34 | [The Missing Frame Was Never Sampled](articles/event_aware_temporal_qc_sampling_short_ads.md) | Risk-window vs uniform 12/250-frame QC; 24 Node tests + FFmpeg-decoded one-frame anomaly smoke test | EN |
 
-**These thirty-three are complete AI-assisted studio field notes, not human-only authored or independently peer-reviewed articles.** Research and drafts were prepared with AI assistance from the studio's brief and reviewed against selected public references; they require qualified human editorial and technical signoff before external syndication. Worked examples are illustrative unless an execution receipt is included. See the [editorial integrity and platform policy](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md).
+**These thirty-four are complete AI-assisted studio field notes, not human-only authored or independently peer-reviewed articles.** Research and drafts were prepared with AI assistance from the studio's brief and reviewed against selected public references; they require qualified human editorial and technical signoff before external syndication. Worked examples are illustrative unless an execution receipt is included. See the [editorial integrity and platform policy](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md).
 
-**These thirty-three are full articles.** The [100 original article briefs](100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md) form the future editorial backlog and **do not count as published articles**. Articles are original studio methodology with self-contained, illustrative examples; they do not contain raw production client data, client likeness, proprietary boards or submitted generative assets.
+**These thirty-four are full articles.** The [100 original article briefs](100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md) form the future editorial backlog and **do not count as published articles**. Articles are original studio methodology with self-contained, illustrative examples; they do not contain raw production client data, client likeness, proprietary boards or submitted generative assets.
 
 ## Evidentiary standards
 
@@ -59,9 +60,9 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 
 ## Machine-readable subscriptions
 
-- **[JSON Feed 1.1](feed.json)** — 33 distinct, source-linked, language-tagged notes. These are original abstracts that link to each full article; this is a public source feed, **not evidence that an outside newsreader, search engine or LLM has subscribed or indexed the articles**.
-- **[Agent-ready FAQ (33 production questions)](agent_faq.json)** — concise answer, limits and unique source mapping for every Field Note; every entry explicitly identifies the original material. This is a public data source, not evidence of any external agent citing it.
-- **[Русскоязычный FAQ для ИИ-агентов — 33 вопроса](agent_faq_ru.json)** — отдельные русские формулировки, проверочные ограничения и ссылки на те же 32 оригинальные методики. Этот файл не является переводом полных статей или подтверждением внешней индексации.
+- **[JSON Feed 1.1](feed.json)** — 34 distinct, source-linked, language-tagged notes. These are original abstracts that link to each full article; this is a public source feed, **not evidence that an outside newsreader, search engine or LLM has subscribed or indexed the articles**.
+- **[Agent-ready FAQ (34 production questions)](agent_faq.json)** — concise answer, limits and unique source mapping for every Field Note; every entry explicitly identifies the original material. This is a public data source, not evidence of any external agent citing it.
+- **[Русскоязычный FAQ для ИИ-агентов — 34 вопроса](agent_faq_ru.json)** — отдельные русские формулировки, проверочные ограничения и ссылки на те же 32 оригинальные методики. Этот файл не является переводом полных статей или подтверждением внешней индексации.
 - **[Context7 documentation-indexing configuration](../context7.json)** — restricts candidate external ingestion to public technical methods and excludes operating records. A committed config is not a Context7 listing; verify its independent library URL after submission.
 - **[Agent topic-to-method index](AGENT_INDEX.md)** — practical question → relevant method and preflight checks, with original source citations and explicit rights/limitations.
 - [Official JSON Feed 1.1 specification](https://www.jsonfeed.org/version/1.1/) for consumers and downstream publication systems. Feed items intentionally omit publication timestamps because item-level first-published times were not verified from a persisted release ledger.
@@ -70,7 +71,7 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 
 - [English FAQ — raw JSON](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/agent_faq.json)
 - [Русский FAQ — raw JSON](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/agent_faq_ru.json)
-- [33-item JSON Feed 1.1 — raw JSON](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json)
+- [34-item JSON Feed 1.1 — raw JSON](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json)
 
 These are public source-file endpoints. They make machine retrieval simpler, but **do not** assert discovery, usage or recommendation by any independent agent.
 
