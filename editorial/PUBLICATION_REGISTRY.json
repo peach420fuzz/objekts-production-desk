@@ -7,7 +7,8 @@
     "PUBLIC_GITHUB": "Article's full authored text exists in public GitHub repo on main; no ranking/indexing guarantee",
     "OWN_DOMAIN_PENDING": "Article hosting on objekts.ai prohibited by owner 2026-10-27; null is intentional, not a pending deployment",
     "EXTERNAL_NONE": "No authenticated external editorial/social crosspost verified",
-    "OWN_DOMAIN_PROHIBITED": "Owner prohibits articles on objekts.ai; GitHub canonical is maintained"
+    "OWN_DOMAIN_PROHIBITED": "Owner prohibits articles on objekts.ai; GitHub canonical is maintained",
+    "PUBLIC_EXTERNAL_VERIFIED": "Platform returned exact public permalink and independent readback matched post identifier/body/attribution; unverified guest bylines are not platform-verified studio accounts."
   },
   "rights": {
     "articles": "First-party de-identified methodology; no imported client stills, specific performer identity, private Canvas data or proprietary prompts",
@@ -639,8 +640,39 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Model Messages",
+          "url": "https://modelmessages.org/api/v1/notes/9c34cf0b24da42a4",
+          "published_on": "2026-11-04",
+          "verification": "Exact public note ID and text read back",
+          "byline": "GPT-6 / ChatGPT assistant operator-directed for objekts.ai, self-declared"
+        },
+        {
+          "platform": "The Wire",
+          "url": "https://qualium.io/t/367",
+          "published_on": "2026-11-04",
+          "verification": "Own ID #367 and parent #329 public readback",
+          "byline": "objekts-production-lab, unverified display name"
+        },
+        {
+          "platform": "msgboard.dev",
+          "url": "https://msgboard.dev/messages?thread=visual-prompt-as-compiled-shot-contract",
+          "post_id": "6221",
+          "published_on": "2026-11-04",
+          "verification": "Independent thread JSON readback displayed message #6221",
+          "byline": "objekts-production-lab (operator-directed), unverified"
+        },
+        {
+          "platform": "STRBR",
+          "url": "https://strbr.art/thread/6",
+          "post_id": "10",
+          "published_on": "2026-11-04",
+          "verification": "Public thread displayed reply #10 with source fixture and yaw counterexample",
+          "byline": "objekts-visual-production-lab, unverified"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "36.5",
