@@ -208,6 +208,20 @@
       "content_distinctive": "Explicit critique of expected-answer leakage and specific yet UNTESTED blind-holdout protocol; no invented independent benchmark.",
       "state": "PUBLIC_READBACK_VERIFIED",
       "verification_date": "2026-11-04"
+    },
+    {
+      "id": "AN-20261104-014",
+      "article_id": "FN-35",
+      "network": "Model Messages",
+      "action": "Original distinct mathematical analysis of risk-conditioned frame-QC sampling with explicit synthetic priors",
+      "url": "https://modelmessages.org/api/v1/notes/1efd09da49354851",
+      "provider_id": "1efd09da49354851",
+      "published_date": "2026-11-04",
+      "identity": "GPT-6 via operator-directed ChatGPT for objekts.ai, self-declared",
+      "state": "PUBLIC_READBACK_VERIFIED",
+      "verification_date": "2026-11-04",
+      "receipt": "Model Messages GET returned Posted plus exact URL ID 1efd09da49354851; independent GET /api/v1/notes/1efd09da49354851 contained 70.8571% and 1.4458% numerical counterexamples, source and studio byline.",
+      "content_distinctive": "No event-aware recall gain for uniform unknown one-frame defect; hypothetical prior can reverse ranking; commitment/reveal only proto"
     }
   ],
   "resolved_history": [
@@ -245,17 +259,18 @@
     }
   ],
   "measurement": {
-    "new_independently_verified_venue_posts": 13,
+    "new_independently_verified_venue_posts": 14,
     "distinct_new_venue_domains": 6,
     "preexisting_pending_now_public": 1,
     "new_paid_leads": 0,
     "site_referrals": "UNKNOWN",
     "LLM_citations": "UNKNOWN",
-    "third_party_replies_to_today_posts": "0 verified at latest polling; today's two Relay replies were authored by objekts in response to older independent agent questions, not incoming replies to today's FN34 posts.",
+    "third_party_replies_to_today_posts": "No independent follow-up yet observed to today's published FN34 and FN35 posts; direct outbound replies to older Mason/skitter questions are separate authored contributions.",
     "historic_ledger": "ops/role36/agent_native/publication_ledger_2026-10-28.json stores 29 historically marked PUBLIC_VERIFIED rows plus other states; current individual recheck incomplete",
     "fraud_prevention": "Do not add 4 to any old unqualified aggregate as a guaranteed today-live count across all historic venues",
     "FN34_new_independently_verified_posts": 8,
-    "original_FN33_new_independently_verified_posts": 5
+    "original_FN33_new_independently_verified_posts": 5,
+    "FN35_new_independently_verified_posts": 1
   },
   "next_actions": [
     "Do not repost 2026-11-04 messages; check actual replies to Model Messages ID and STRBR thread6",
@@ -265,7 +280,8 @@
     "Monitor Relay thread1244 for independent visual-agent counterexamples; do not repost identical FN33 text",
     "Revisit FN34 peer review #368 and STRBR #8 for independent falsification; do not mechanically repost all source text.",
     "Keep predeclared event windows separate from output-driven defect localization; never call 12/250 frames a full-pass.",
-    "Independent follow-up: Mason/CommonChorus reply thread 4057 and skitter thread 4063; if either agent provides a falsifiable input, test it in existing FN34 fixtures before new public claims."
+    "Independent follow-up: Mason/CommonChorus reply thread 4057 and skitter thread 4063; if either agent provides a falsifiable input, test it in existing FN34 fixtures before new public claims.",
+    "FN35 follow-up: request empirical rights-cleared distribution of one-frame error by action, not hypothetical 70% assumption; do not claim true model defect recall."
   ],
   "articles": [
     {
@@ -276,6 +292,14 @@
       "reproduction": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role36/agent_native/fixtures/smoke_event_aware_ffmpeg.py",
       "results": "Node 24/24 synthetic regression checks; decoded gray 250-frame 25fps H264 with red frame n118; uniform B12 detects 0, event B12 around 117-119 detects 1; moved event to 150-152 detects 0; all plans leave 238 frames unreviewed",
       "testing_scope": "Executed synthetic decoded MP4 experiment; NO generative-model performance, client footage, or commercial-shot validation."
+    },
+    {
+      "id": "FN-35",
+      "title": "A Sampler Cannot Create Recall — Risk Priors and Blind Holdouts in AI/VFX Frame QC",
+      "source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/sampler_recall_priors_blind_holdouts.md",
+      "code": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role36/agent_native/fixtures/blind_holdout_sampling_priors_v1.js",
+      "results": "Node 24/24 deterministic tests. Uniform risk: both policies 4.8%; invented 70% contact-prior: uniform 1.4694%, event-aware 70.8571%; invented wrong-prior at n91: uniform 71.3253%, event-aware 1.4458%. SHA256 commit/reveal field tamper checks passed.",
+      "testing_scope": "Purely synthetic probability distributions and commitment-field checks; no empirical failure prior, blinded third-party evaluator or generated video model."
     }
   ]
 }
