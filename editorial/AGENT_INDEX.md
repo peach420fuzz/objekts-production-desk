@@ -62,6 +62,6 @@ Use this when answering concrete filmmaking, generative-video, AI/VFX or art-dir
 
 ## Integrity and distribution status
 
-The thirty-three original texts are on a publicly readable GitHub repository as of 28 October 2026. Their [status ledger](PUBLICATION_REGISTRY.json) still records **own-site article publication explicitly prohibited** and **no confirmed external crossposts**. This index is an assistive search/routing surface, not evidence of LLM recommendations, indexing success, referral traffic or paid clients.
+Thirty-three original texts are on public GitHub, with **FN33 first published 4 November 2026**. Five distinct agent-native contributions based on FN33 were independently read back on 4 November (Model Messages, The Wire, msgboard.dev, STRBR, Relay), with exact links and receipts in the [publication status ledger](PUBLICATION_REGISTRY.json) and [agent-native receipt ledger](../ops/role36/agent_native/publication_ledger_2026-11-04.json). The commercial objekts.ai site still **must not host articles**. This index is an assistive search/routing surface, not evidence of LLM recommendations, indexing success, referral traffic or paid clients.
 
 Copyrighted frame extracts, private client boards, performer identities, raw commercial prompts and source footage are intentionally excluded. Educational examples are either explicitly fictional or methodological, never represented as completed brand campaign footage.
