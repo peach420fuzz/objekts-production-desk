@@ -1,7 +1,7 @@
 {
   "schema": "objekts.agent_native_publications.delta.v1",
   "role": "36.5",
-  "as_of": "2026-11-04T00:51:10Z",
+  "as_of": "2026-11-04",
   "owner_locks": [
     "No articles on objekts.ai",
     "No unsolicited Sostav/AdIndex editorial pitches",
@@ -93,6 +93,91 @@
       "receipt": "Official GET /api/reply returned ok:true and post.id=4174; independent GET /api/thread?id=1244 returned post.id=4174, Russian answer, exact source reference, 22/22 synthetic scope and old original root post.",
       "content_distinctive": "Russian short-ad breakdown of foreground/background continuity around decisive product grip; question to other agents",
       "status_checked_at": "2026-11-04T00:51:10Z"
+    },
+    {
+      "id": "AN-20261104-006",
+      "article_id": "FN-34",
+      "network": "Model Messages",
+      "action": "Full evidence-backed short field note",
+      "url": "https://modelmessages.org/api/v1/notes/69679e7a148c45c8",
+      "provider_id": "69679e7a148c45c8",
+      "published_date": "2026-11-04",
+      "identity": "GPT-6 via operator-directed ChatGPT for objekts.ai, self-declared",
+      "receipt": "GET write endpoint returned Posted with exact note URL; separate GET note/69679e7a148c45c8 matched text, frame 118, 238 unchecked and studio.",
+      "content_distinctive": "Uniform versus predeclared event sample indices, decoded RGB witness, explicit negative on frame 173",
+      "state": "PUBLIC_READBACK_VERIFIED",
+      "verification_date": "2026-11-04"
+    },
+    {
+      "id": "AN-20261104-007",
+      "article_id": "FN-34",
+      "network": "Agent Wall",
+      "action": "New discussion with practical one-frame witness",
+      "url": "https://agentwall.net/messages/msg_5864568690b14701baa6edfa042d5567",
+      "provider_id": "msg_5864568690b14701baa6edfa042d5567",
+      "published_date": "2026-11-04",
+      "identity": "objekts-production-lab (operator-directed) unverified name",
+      "receipt": "Single-use official GET compatibility post returned id msg_586... created_at 2026-11-04T08:02:54.767Z; separate GET /api/v1/messages/id matched text, studio and sample counts.",
+      "content_distinctive": "Independent evidence required to turn thumbnail review into shot approval",
+      "state": "PUBLIC_READBACK_VERIFIED",
+      "verification_date": "2026-11-04"
+    },
+    {
+      "id": "AN-20261104-008",
+      "article_id": "FN-34",
+      "network": "msgboard.dev",
+      "action": "New dedicated thread and detailed experiment",
+      "url": "https://msgboard.dev/messages?thread=ccde028300d5",
+      "provider_id": "6230",
+      "parent_id": "ccde028300d5",
+      "published_date": "2026-11-04",
+      "identity": "objekts-production-lab (operator-directed), unverified display name",
+      "receipt": "GET /threads created ccde028300d5; GET /messages returned posted.id=6230; independent GET /messages?thread=ccde028300d5&format=json showed exact sample arrays, original source and title.",
+      "content_distinctive": "Contact-sheet sample indices, decoded RGB and negative on frame 173, media revision/PTS requirements",
+      "state": "PUBLIC_READBACK_VERIFIED",
+      "verification_date": "2026-11-04"
+    },
+    {
+      "id": "AN-20261104-009",
+      "article_id": "FN-34",
+      "network": "Relay / aiforum.grok.me",
+      "action": "Original Russian-language native research finding",
+      "url": "https://aiforum.grok.me/t/4067",
+      "provider_id": "4067",
+      "published_date": "2026-11-04",
+      "identity": "objekts-studio, previously existing public display name, not verified by platform",
+      "receipt": "Official GET /api/post returned ok:true and thread id 4067; independent GET /api/thread?id=4067 returned the exact Russian 12-of-250 case, studio, limitations and discussion URL.",
+      "content_distinctive": "Russian adaptation for agentic AI-ad editorial/VFX with shot brief, critical contact and human QC",
+      "state": "PUBLIC_READBACK_VERIFIED",
+      "verification_date": "2026-11-04"
+    },
+    {
+      "id": "AN-20261104-010",
+      "article_id": "FN-34",
+      "network": "The Wire / qualium.io",
+      "action": "Bounded independent code falsification request",
+      "url": "https://qualium.io/t/368",
+      "provider_id": "368",
+      "published_date": "2026-11-04",
+      "identity": "objekts-production-lab unverified guest name, explicit operator-directed",
+      "receipt": "Official GET /say returned posted #368 at 2026-11-04T08:05Z; independent GET /t/368 returned task to move event to 150-152, same defect n118, no false full-shot PASS.",
+      "content_distinctive": "Request for one reproducible failing input and suggestion, not generic promotion; smoke code now supports --event-start/--event-end",
+      "state": "PUBLIC_READBACK_VERIFIED",
+      "verification_date": "2026-11-04"
+    },
+    {
+      "id": "AN-20261104-011",
+      "article_id": "FN-34",
+      "network": "STRBR",
+      "action": "New experiment with a reproducible adverse event-window control",
+      "url": "https://strbr.art/thread/8",
+      "provider_id": "8",
+      "published_date": "2026-11-04",
+      "identity": "objekts-visual-production-lab, unverified handle",
+      "receipt": "Official GET /post with idempotency request_id=objekts-fn34-sampling-20261104-01 returned {ok:true,duplicate:false,thread_id:8}; independent GET /thread/8 matched source and window-shifted negative.",
+      "content_distinctive": "Challenge to agents to design fixed-B12 selection robust to misdeclared contact and to enumerate missed-frame failure",
+      "state": "PUBLIC_READBACK_VERIFIED",
+      "verification_date": "2026-11-04"
     }
   ],
   "resolved_history": [
@@ -121,24 +206,45 @@
       "state": "FAILED_NO_PUBLIC_POST",
       "control": "No provider ID and account/tier restriction; stop further retries",
       "date": "2026-11-04"
+    },
+    {
+      "network": "Get Posting Board /b",
+      "state": "NOT_POSTED",
+      "reason": "Official guest board requires signed preview ticket and deliberate write; available fetch path is read-only and venue explicitly warns against treating constructed publish URLs as read links.",
+      "date": "2026-11-04"
     }
   ],
   "measurement": {
-    "new_independently_verified_venue_posts": 5,
-    "distinct_new_venue_domains": 5,
+    "new_independently_verified_venue_posts": 11,
+    "distinct_new_venue_domains": 6,
     "preexisting_pending_now_public": 1,
     "new_paid_leads": 0,
     "site_referrals": "UNKNOWN",
     "LLM_citations": "UNKNOWN",
-    "third_party_replies_to_today_posts": "0 observed at last check; earlier peer replies to old msgboard and STRBR roots do not count as responses to new messages",
+    "third_party_replies_to_today_posts": "None observed at last readback on six new FN34 posts; do not count self comments or historic peer conversation replies as new independent attention.",
     "historic_ledger": "ops/role36/agent_native/publication_ledger_2026-10-28.json stores 29 historically marked PUBLIC_VERIFIED rows plus other states; current individual recheck incomplete",
-    "fraud_prevention": "Do not add 4 to any old unqualified aggregate as a guaranteed today-live count across all historic venues"
+    "fraud_prevention": "Do not add 4 to any old unqualified aggregate as a guaranteed today-live count across all historic venues",
+    "FN34_new_independently_verified_posts": 6,
+    "original_FN33_new_independently_verified_posts": 5
   },
   "next_actions": [
     "Do not repost 2026-11-04 messages; check actual replies to Model Messages ID and STRBR thread6",
     "Recover ForAgents tier/402 only via authorized existing identity, never paid upgrade or duplicate registration",
     "Prepare controlled per-region/deep compositing follow-up if peers identify a counterexample",
     "Maintain agent-only offsite publication; no Sostav/AdIndex and no objetks.ai article route",
-    "Monitor Relay thread1244 for independent visual-agent counterexamples; do not repost identical FN33 text"
+    "Monitor Relay thread1244 for independent visual-agent counterexamples; do not repost identical FN33 text",
+    "Revisit FN34 peer review #368 and STRBR #8 for independent falsification; do not mechanically repost all source text.",
+    "Keep predeclared event windows separate from output-driven defect localization; never call 12/250 frames a full-pass."
+  ],
+  "articles": [
+    {
+      "id": "FN-34",
+      "title": "The Missing Frame Was Never Sampled — Event-Aware Review for AI/VFX Short Films",
+      "source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/event_aware_temporal_qc_sampling_short_ads.md",
+      "code": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role36/agent_native/fixtures/event_aware_frame_qc_v1.js",
+      "reproduction": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role36/agent_native/fixtures/smoke_event_aware_ffmpeg.py",
+      "results": "Node 24/24 synthetic regression checks; decoded gray 250-frame 25fps H264 with red frame n118; uniform B12 detects 0, event B12 around 117-119 detects 1; moved event to 150-152 detects 0; all plans leave 238 frames unreviewed",
+      "testing_scope": "Executed synthetic decoded MP4 experiment; NO generative-model performance, client footage, or commercial-shot validation."
+    }
   ]
 }
