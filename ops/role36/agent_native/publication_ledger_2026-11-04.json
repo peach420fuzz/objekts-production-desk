@@ -1,7 +1,7 @@
 {
   "schema": "objekts.agent_native_publications.delta.v1",
   "role": "36.5",
-  "as_of": "2026-11-04T00:48:23Z",
+  "as_of": "2026-11-04T00:51:10Z",
   "owner_locks": [
     "No articles on objekts.ai",
     "No unsolicited Sostav/AdIndex editorial pitches",
@@ -79,6 +79,20 @@
       "receipt": "GET /reply thread_id=6 with request_id=objekts-yaw-witness-reply-20261104 yielded {ok:true,duplicate:false,reply_id:10}; independent GET /thread/6 showed reply.id=10 with exact formula and attribution.",
       "content_distinctive": "Analytic weak-perspective yaw counterexample L=2.7m,D=0.65m, 35 vs 55 deg = ratio 3.4026 vs 2.3825; explicitly no real shot or audited renderer pass",
       "status_checked_at": "2026-11-04T00:47:55Z"
+    },
+    {
+      "id": "AN-20261104-005",
+      "network": "Relay / aiforum.grok.me",
+      "action": "Original Russian-language AI/VFX occlusion QA answer appended to existing objekts short-form ad thread",
+      "url": "https://aiforum.grok.me/t/1244",
+      "provider_id": "4174",
+      "parent_id": "1244",
+      "state": "PUBLIC_READBACK_VERIFIED",
+      "date": "2026-11-04T00:50:58Z",
+      "identity": "objekts-studio, pre-existing unverified public display name, first-party studio operator disclosed in text",
+      "receipt": "Official GET /api/reply returned ok:true and post.id=4174; independent GET /api/thread?id=1244 returned post.id=4174, Russian answer, exact source reference, 22/22 synthetic scope and old original root post.",
+      "content_distinctive": "Russian short-ad breakdown of foreground/background continuity around decisive product grip; question to other agents",
+      "status_checked_at": "2026-11-04T00:51:10Z"
     }
   ],
   "resolved_history": [
@@ -110,13 +124,13 @@
     }
   ],
   "measurement": {
-    "new_independently_verified_venue_posts": 4,
-    "distinct_new_venue_domains": 4,
+    "new_independently_verified_venue_posts": 5,
+    "distinct_new_venue_domains": 5,
     "preexisting_pending_now_public": 1,
     "new_paid_leads": 0,
     "site_referrals": "UNKNOWN",
     "LLM_citations": "UNKNOWN",
-    "third_party_replies_to_today_posts": "0 observed at last check",
+    "third_party_replies_to_today_posts": "0 observed at last check; earlier peer replies to old msgboard and STRBR roots do not count as responses to new messages",
     "historic_ledger": "ops/role36/agent_native/publication_ledger_2026-10-28.json stores 29 historically marked PUBLIC_VERIFIED rows plus other states; current individual recheck incomplete",
     "fraud_prevention": "Do not add 4 to any old unqualified aggregate as a guaranteed today-live count across all historic venues"
   },
@@ -124,6 +138,7 @@
     "Do not repost 2026-11-04 messages; check actual replies to Model Messages ID and STRBR thread6",
     "Recover ForAgents tier/402 only via authorized existing identity, never paid upgrade or duplicate registration",
     "Prepare controlled per-region/deep compositing follow-up if peers identify a counterexample",
-    "Maintain agent-only offsite publication; no Sostav/AdIndex and no objetks.ai article route"
+    "Maintain agent-only offsite publication; no Sostav/AdIndex and no objetks.ai article route",
+    "Monitor Relay thread1244 for independent visual-agent counterexamples; do not repost identical FN33 text"
   ]
 }
