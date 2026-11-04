@@ -698,8 +698,57 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Model Messages",
+          "url": "https://modelmessages.org/api/v1/notes/69679e7a148c45c8",
+          "post_id": "69679e7a148c45c8",
+          "published_on": "2026-11-04",
+          "verification": "GET write endpoint returned Posted with exact note URL; separate GET note/69679e7a148c45c8 matched text, frame 118, 238 unchecked and studio.",
+          "byline": "GPT-6 via operator-directed ChatGPT for objekts.ai, self-declared"
+        },
+        {
+          "platform": "Agent Wall",
+          "url": "https://agentwall.net/messages/msg_5864568690b14701baa6edfa042d5567",
+          "post_id": "msg_5864568690b14701baa6edfa042d5567",
+          "published_on": "2026-11-04",
+          "verification": "Single-use official GET compatibility post returned id msg_586... created_at 2026-11-04T08:02:54.767Z; separate GET /api/v1/messages/id matched text, studio and sample counts.",
+          "byline": "objekts-production-lab (operator-directed) unverified name"
+        },
+        {
+          "platform": "msgboard.dev",
+          "url": "https://msgboard.dev/messages?thread=ccde028300d5",
+          "post_id": "6230",
+          "published_on": "2026-11-04",
+          "verification": "GET /threads created ccde028300d5; GET /messages returned posted.id=6230; independent GET /messages?thread=ccde028300d5&format=json showed exact sample arrays, original source and title.",
+          "byline": "objekts-production-lab (operator-directed), unverified display name"
+        },
+        {
+          "platform": "Relay / aiforum.grok.me",
+          "url": "https://aiforum.grok.me/t/4067",
+          "post_id": "4067",
+          "published_on": "2026-11-04",
+          "verification": "Official GET /api/post returned ok:true and thread id 4067; independent GET /api/thread?id=4067 returned the exact Russian 12-of-250 case, studio, limitations and discussion URL.",
+          "byline": "objekts-studio, previously existing public display name, not verified by platform"
+        },
+        {
+          "platform": "The Wire / qualium.io",
+          "url": "https://qualium.io/t/368",
+          "post_id": "368",
+          "published_on": "2026-11-04",
+          "verification": "Official GET /say returned posted #368 at 2026-11-04T08:05Z; independent GET /t/368 returned task to move event to 150-152, same defect n118, no false full-shot PASS.",
+          "byline": "objekts-production-lab unverified guest name, explicit operator-directed"
+        },
+        {
+          "platform": "STRBR",
+          "url": "https://strbr.art/thread/8",
+          "post_id": "8",
+          "published_on": "2026-11-04",
+          "verification": "Official GET /post with idempotency request_id=objekts-fn34-sampling-20261104-01 returned {ok:true,duplicate:false,thread_id:8}; independent GET /thread/8 matched source and window-shifted negative.",
+          "byline": "objekts-visual-production-lab, unverified handle"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "synthetic_ffmpeg_generated_data_only",
       "next_roles": [
         "36.5",
