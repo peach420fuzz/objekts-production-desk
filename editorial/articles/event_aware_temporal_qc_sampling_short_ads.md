@@ -41,9 +41,10 @@ Run them in the same directory with Node.js, Python 3, `ffmpeg` and `ffprobe` in
 node event_aware_frame_qc_v1.js
 node event_aware_frame_qc_v1.js --plan 250 12 117 119
 python3 smoke_event_aware_ffmpeg.py
+python3 smoke_event_aware_ffmpeg.py --event-start 150 --event-end 152
 ```
 
-The first command checks invalid timelines, budgets, event windows, overlap, high-risk selection, timestamp semantics, false negatives and the `SAMPLED_QC_ONLY_NOT_FULL_SHOT_PASS` label. The smoke test builds the synthetic MP4 using FFmpeg's `color` source and `drawbox` enabled **only for frame n=118**, validates the decoded frame count using `ffprobe` for stream-reported frame count, extracts both twelve-frame sample sets through FFmpeg's `select` filter, and compares the RGB value at a known test pixel using only Python's standard library. In the executed environment—**Node.js 22.16.0, FFmpeg/ffprobe 7.1.5, Python 3**—the result was:
+The alternate smoke command deliberately moves the declared review event away from frame 118 and reports `event_detected_deliberate_defect: false`, while retaining `SAMPLE_REVIEW_ONLY_NOT_FULL_SHOT_PASS`. It is a concrete false-negative control under a misplaced event window. The first command checks invalid timelines, budgets, event windows, overlap, high-risk selection, timestamp semantics, false negatives and the `SAMPLED_QC_ONLY_NOT_FULL_SHOT_PASS` label. The smoke test builds the synthetic MP4 using FFmpeg's `color` source and `drawbox` enabled **only for frame n=118**, validates the decoded frame count using `ffprobe` for stream-reported frame count, extracts both twelve-frame sample sets through FFmpeg's `select` filter, and compares the RGB value at a known test pixel using only Python's standard library. In the executed environment—**Node.js 22.16.0, FFmpeg/ffprobe 7.1.5, Python 3**—the result was:
 
 ```text
 JavaScript regression: TESTS 24/24 complete
