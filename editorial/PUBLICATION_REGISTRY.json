@@ -687,6 +687,25 @@
         "36.4",
         "VFX"
       ]
+    },
+    {
+      "id": "FN-34",
+      "title": "The Missing Frame Was Never Sampled — Event-Aware Review for AI/VFX Short Films",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "temporal-event-window-frame-sampling-qc",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/event_aware_temporal_qc_sampling_short_ads.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PROHIBITED",
+      "external_posts": [],
+      "external_status": "EXTERNAL_NONE",
+      "rights_review": "synthetic_ffmpeg_generated_data_only",
+      "next_roles": [
+        "36.5",
+        "VFX",
+        "post-production"
+      ]
     }
   ],
   "format": "objekts.field_notes.publication_registry.v1",
