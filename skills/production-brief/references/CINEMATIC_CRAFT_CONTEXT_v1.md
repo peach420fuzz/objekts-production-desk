@@ -31,3 +31,11 @@ Do not silently transfer private project source material across SKRIPT/REMAKE/Pr
 ```
 
 A valid route does NOT mean `PF-014` is supported in this context without checking `registry/craft-prompt-family-map.json`; the receiving host must reject unsupported mode mappings and choose an actually compatible route, rather than silently forcing an arbitrary family. The example is a review fixture, not a tested service invocation.
+
+## Decision receipt for production feasibility (local-only)
+
+After the project's **actual source assets** and all approved LOCKs are established, the authorized host may use `objekts.craft-context/1` to select or reject a camera, lighting, audio, spatial or editing research hypothesis. Record any actual use in `objekts.craft-consumer-receipt/1` via the private OPS `tools/craft_consumer_receipt.mjs`: `consumer:"production-desk"`, effect types `asset_preflight`, `poc_hypothesis`, `continuity_risk`, or `model_routing`. Supply a precise shot/asset/plate locator, a physically meaningful action or test, source KN-ID, causal rationale and counterexample check. The tool rejects source IDs that are present only in `downstream_research_options` and not selected.
+
+Role100's 46 curated problem routes are navigation, not owner-approved rules. Secondary cross-craft suggestions identify likely additional proofs (e.g. C27 perspective needing C31 light continuity) but cannot be counted as applied craft. A passing static source/LOCK check does **not** establish lens, lighting, moving-image or audio consistency. Real PoC media must be independently measured; the receipt is permanently labelled unverified until a separately authenticated media acceptance stage exists.
+
+The public first-party Production Desk skills contain no private Atlas records and do not automatically access or transfer it. No paid renders, browser actions, client submissions, website edits or live MCP deployment are triggered by this guide.

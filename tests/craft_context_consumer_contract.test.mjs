@@ -24,3 +24,16 @@ test('public SKILL has no embedded private KN corpus',()=>{
  const x=read('skills/production-brief/references/CINEMATIC_CRAFT_CONTEXT_v1.md');
  assert(!x.includes('KN-20261104-100-'));
 });
+
+test('authorized production decisions are separated from exploratory secondary craft',()=>{
+ const x=read('skills/production-brief/references/CINEMATIC_CRAFT_CONTEXT_v1.md');
+ assert(x.includes('objekts.craft-consumer-receipt/1'));
+ assert(x.includes('downstream_research_options'));
+ assert(x.includes('poc_hypothesis'));
+ assert(x.includes('cannot be counted as applied craft'));
+});
+test('feasibility retains separate media validation and receipts',()=>{
+ const x=read('skills/production-feasibility/SKILL.md');
+ assert(x.includes('actually used in an authored preflight decision'));
+ assert(x.includes('never be represented as an executed test'));
+});

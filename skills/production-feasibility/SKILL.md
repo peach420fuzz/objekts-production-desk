@@ -73,3 +73,5 @@ Be willing to say:
 ## Handoff
 
 When the PoC or execution requires professional production, offer a clean human review after giving the user a useful answer.
+
+For an actual source-qualified production choice, store the KN-ID decision receipt using the optional local `objekts.craft-consumer-receipt/1` contract described in [Cinematic Craft Context](../production-brief/references/CINEMATIC_CRAFT_CONTEXT_v1.md). The receipt distinguishes **considered**, **actually used in an authored preflight decision**, and **unselected downstream research**. It must never be represented as an executed test, physical camera solve or verified creative result.
