@@ -38,6 +38,10 @@ Consider:
 - required versions;
 - deadline.
 
+## Source-qualified craft candidates
+
+When explicitly supplied by an authorized host, a `objekts.craft-context/1` packet may help identify *what* to test: camera/eyeline topology, illumination geometry, motion, sound perspective, edit logic or material physics. Its 869 raw research entries (last checked S36) are neither production-tested nor canonically accepted. Use [production-brief craft context guide](../production-brief/references/CINEMATIC_CRAFT_CONTEXT_v1.md). Do not infer test feasibility, labor, duration, model support or paid services from source-card counts; the actual PoC remains mandatory.
+
 ## PoC rule
 
 A PoC must collapse expensive uncertainty.

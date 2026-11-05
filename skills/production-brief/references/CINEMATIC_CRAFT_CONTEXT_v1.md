@@ -1,0 +1,33 @@
+# Production Desk · Film Craft Context Preflight v1
+
+**Source:** private OBJEKTS role100 Cinematic Craft Atlas draft, not a public skill corpus. **Status:** consumer source candidate, not deployed in live Production Desk. The last directly checked Atlas contained 869 raw entries, 866 provisional mechanisms, 0 owner-adopted, 0 production validated. A number of researched mechanisms is not evidence of successful production.
+
+## Correct order for KOUNT / Production Desk
+
+1. **First: authority and source assets.** Confirm the actual brief, source plates, approved actor/identity, product packshot/labels, set, camera, architecture, sound and immutable LOCKs. Identify which user-provided asset owns each truth. Do not retroactively replace owner approvals with theoretical film precedent.
+2. **Then: scene question and actual obstacle.** Is the issue camera path, eyeline and optical geography; focus/DOF; motivated lighting and spectrally correct material; tactile action and material inertia; offscreen sound; reaction cut; or generative continuity? Match source evidence to the obstacle, not to a fashionable technique.
+3. **Only with authorized local source access** use `tools/craft_bridge.mjs --atlas <authorized-role100-checkout>/roles/100 --brief <private-brief.json>`. The brief must set `consumer:"production-desk"`, a known mode, applicable PF IDs, immutable locks and reference-role authority. The source corpus is private. Do not send private research or client assets to a public MCP as a substitute for local retrieval.
+4. **Cross-department dependency sweep.** Read selected KN-ID, primary source, evidence status, recorded limitation and check, plus proposed `dependency_handoffs`. Require a plausible causal chain across performer action → 3D scene/camera perspective → illumination/material response → audio/edit → VFX/grade as applicable. A camera-geometry precedent cannot establish that an AI model can reproduce that move.
+5. **Feasibility separates evidence types.** Record what was actually observed in original footage; what is user-stated; what the creator or cinematographer reported; what is an untested source extraction; and what the candidate model currently supports. Never claim that merely reading a primary source was a verified media replay or on-set feasibility test.
+6. **Minimal PoC.** Derive one measurable risky shot or shot pair, target media/fps/timecodes, expected invariant and failure check. For first/last-frame video: exact endpoint geometry and optical state, intermediate physical plausibility. For video edit: untouched plate action/geometry and only allowed delta. For Canvas: distinct reference-role authority, no accidental merging. For image edit: precise local change, preserved approved identity and light.
+7. **Real output QA.** Inspect actual generated moving frames, compositing, shadows/occlusion, optical continuity, color/gamut, grain/blur, prop contact and audio sync/PTS before recording PASS. If absent, status `NOT_RUN`.
+8. **Handoff.** Record source corpus digest, considered/used/rejected KN-IDs, selected Pf routes, human-authorized method, actual model/version, PoC input/output IDs and downstream dependencies. Craft records never authorize cost, external publishing, email, upload, bid or client handoff.
+
+## Legal/privacy/UX boundaries
+
+Do not silently transfer private project source material across SKRIPT/REMAKE/Production Desk. Do not force the user to fill an internal template just because the corpus supports a detailed state machine. Keep any internal evidence ledger separate from the concise human-facing production judgment.
+
+**Example research route (not execution):**
+
+```json
+{
+  "consumer": "production-desk",
+  "mode": "video-edit",
+  "problem": "Keep original running actor and moving camera while replacing a stadium environment without changing score graphics",
+  "prompt_family_ids": ["PF-009", "PF-014"],
+  "locks": ["Original actor and camera move immutable", "Original score graphics immutable"],
+  "reference_roles": {"base_video": "owner-approved plate", "graphics_master": "approved score overlay"}
+}
+```
+
+A valid route does NOT mean `PF-014` is supported in this context without checking `registry/craft-prompt-family-map.json`; the receiving host must reject unsupported mode mappings and choose an actually compatible route, rather than silently forcing an arbitrary family. The example is a review fixture, not a tested service invocation.
