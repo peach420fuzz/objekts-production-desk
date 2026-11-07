@@ -44,14 +44,26 @@ assert "3 ноября 2026" in hub
 offers = json.loads((base / "commercial-offers.json").read_text("utf-8"))
 sales = (base / "ORDER_CREATIVE_PREVIS.md").read_text("utf-8")
 market = (base / "COMMERCIAL_MARKET_2026-11-03.md").read_text("utf-8")
-assert offers["schema_version"] == "objekts.role12.creative-preproduction-offers.v1"
+assert offers["schema_version"] == "objekts.role12.creative-preproduction-offers.v1.1"
 assert offers["contact"]["auto_send"] is False
 assert offers["contact"]["verified_search_referral"] is False
-assert offers["public_visual_development_reference"]["source_ru"] == "https://objekts.ai/services/film-series-vfx/"
-assert offers["public_visual_development_reference"]["start_price_ru"] == "от 150 000 ₽"
-assert offers["public_visual_development_reference"]["tax_treatment"] == "before tax"
-assert "от 150 000 ₽ до налогов" in sales
-assert "Стоимость отдельного AI-аниматика" in sales or "стоимость отдельного AI-аниматика" in sales
+reference = offers["public_visual_development_reference"]
+assert reference["source_ru"] == "https://objekts.ai/services/film-series-vfx"
+assert reference["source_en"] == "https://objekts.ai/en/services/film-series-vfx"
+assert reference["start_price_ru"] is None and reference["start_price_en"] is None
+assert reference["current_budgets_ru"] == "https://objekts.ai/budgets"
+assert reference["current_budgets_en"] == "https://objekts.ai/en/budgets"
+assert reference["adjacent_start_price_ru"] == "от 150 000 ₽"
+assert reference["adjacent_start_price_en"] == "from 150,000 ₽"
+assert "not equivalent" in reference["adjacent_category"]
+assert reference["tax_treatment"] == "before tax, nonbinding"
+assert "7 ноября 2026" in sales
+assert "Креатив и тритмент — от 150 000 ₽" in sales
+assert "стоимость определяется отдельно" in sales
+# Regression: a historical site category rate must not be marketed as an animatic
+# or pitchvis starting price, and removed USD prices must not reappear as current.
+assert "от $1,900" not in sales and "from $1,900" not in json.dumps(offers)
+assert "стартовый ориентир Visual development / previs — от 150 000 ₽" not in sales
 
 assert len(offers["offers"]) == 3
 assert {x["id"] for x in offers["offers"]} == {
