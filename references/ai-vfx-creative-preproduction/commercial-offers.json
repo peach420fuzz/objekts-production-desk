@@ -1,5 +1,5 @@
 {
-  "schema_version": "objekts.role12.creative-preproduction-offers.v1",
+  "schema_version": "objekts.role12.creative-preproduction-offers.v1.1",
   "publisher": "objekts",
   "published_as_of": "2026-11-03",
   "first_party": true,
@@ -96,13 +96,19 @@
   ],
   "seo_limit": "No claim of indexing, rank or buyers from creation of these descriptions",
   "public_visual_development_reference": {
-    "service_category": "visual development / previs",
-    "start_price_ru": "от 150 000 ₽",
-    "start_price_en": "from $1,900",
-    "tax_treatment": "before tax",
-    "source_ru": "https://objekts.ai/services/film-series-vfx/",
-    "source_en": "https://objekts.ai/en/services/film-series-vfx/",
-    "as_of": "2026-11-03",
-    "scope": "First-party indicative starting price for category visual development / previs only. Not a committed standalone animatic or graphics/VFX PoC tariff and not a final quote."
-  }
+    "service_category": "Visual development / previs / director's animatic: individually scoped, no separate current published category tariff",
+    "start_price_ru": null,
+    "start_price_en": null,
+    "source_ru": "https://objekts.ai/services/film-series-vfx",
+    "source_en": "https://objekts.ai/en/services/film-series-vfx",
+    "current_budgets_ru": "https://objekts.ai/budgets",
+    "current_budgets_en": "https://objekts.ai/en/budgets",
+    "adjacent_category": "Creative & treatment (broader category, not equivalent to an animatic, VFX motion test or pitchvis)",
+    "adjacent_start_price_ru": "от 150 000 ₽",
+    "adjacent_start_price_en": "from 150,000 ₽",
+    "tax_treatment": "before tax, nonbinding",
+    "verified_at": "2026-11-07",
+    "scope": "No fixed standalone animatic, pitchvis or motion/VFX test price is stated on current live film-services pages; public budgets list the broader Creative & treatment category. Request human estimate per deliverables, duration, references, rights and revisions."
+  },
+  "pricing_source_reconciled_at": "2026-11-07"
 }
