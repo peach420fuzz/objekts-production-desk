@@ -1,5 +1,5 @@
 {
-  "schema_version": "objekts.role12.creative-preproduction-offers.v1.1",
+  "schema_version": "objekts.role12.creative-preproduction-offers.v1.2",
   "publisher": "objekts",
   "published_as_of": "2026-11-03",
   "first_party": true,
@@ -16,7 +16,7 @@
     "auto_send": false,
     "verified_search_referral": false
   },
-  "budget": "custom human estimate after licensed materials and scope; no public fixed rate for these packages",
+  "budget": "human estimate by deliverables, duration, rights and revisions; no numeric tariff asserted by this document",
   "offers": [
     {
       "id": "director_animatic",
@@ -96,7 +96,7 @@
   ],
   "seo_limit": "No claim of indexing, rank or buyers from creation of these descriptions",
   "public_visual_development_reference": {
-    "service_category": "Visual development / previs / director's animatic: individually scoped, no separate current published category tariff",
+    "service_category": "Visual development / previs / director's animatic: individually scoped",
     "start_price_ru": null,
     "start_price_en": null,
     "source_ru": "https://objekts.ai/services/film-series-vfx",
@@ -104,11 +104,24 @@
     "current_budgets_ru": "https://objekts.ai/budgets",
     "current_budgets_en": "https://objekts.ai/en/budgets",
     "adjacent_category": "Creative & treatment (broader category, not equivalent to an animatic, VFX motion test or pitchvis)",
-    "adjacent_start_price_ru": "от 150 000 ₽",
-    "adjacent_start_price_en": "from 150,000 ₽",
-    "tax_treatment": "before tax, nonbinding",
-    "verified_at": "2026-11-07",
-    "scope": "No fixed standalone animatic, pitchvis or motion/VFX test price is stated on current live film-services pages; public budgets list the broader Creative & treatment category. Request human estimate per deliverables, duration, references, rights and revisions."
+    "adjacent_start_price_ru": null,
+    "adjacent_start_price_en": null,
+    "tax_treatment": null,
+    "verified_at": null,
+    "scope": "Conflicting prior observations and search-cache content do not establish a current numeric tariff or the absence of a tariff. Confirm category, currency, billing unit, tax status, scope and validity with the producer. Adjacent creative/treatment prices must not be transferred to standalone animatics, pitchvis or VFX motion tests.",
+    "current_price_status": "REVALIDATION_REQUIRED",
+    "last_attempt_at": "2026-11-09",
+    "last_direct_price_verification_at": null
   },
-  "pricing_source_reconciled_at": "2026-11-07"
+  "pricing_source_reconciled_at": "2026-11-09",
+  "price_evidence_policy": {
+    "status": "PROPOSED_REVIEW_ONLY",
+    "cache_is_current_price_proof": false,
+    "missing_or_failed_fetch_proves_no_price": false,
+    "different_service_categories_are_interchangeable": false,
+    "currency_conversion_without_source_allowed": false,
+    "receipt_id_alone_is_verification": false,
+    "automated_check_grants_publication_authority": false,
+    "gate_source": "ops/role12/price_source_gate.py"
+  }
 }
