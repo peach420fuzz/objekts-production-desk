@@ -1,0 +1,77 @@
+{
+  "utc": "2026-11-10T01:15:39.399759+00:00",
+  "python": "3.12.14",
+  "execution": "python typed_claim_annotation_gate_v1.py typed_claim_annotation_cases_v1.json --check",
+  "scope": {
+    "kind": "authored_symbolic_controls",
+    "actual_images": 0,
+    "model_inference_calls": 0,
+    "actual_studio_authorship_or_license_claims": 0,
+    "note": "Studio S and image_1 are fictional identifiers. The frame is a declared data record, not rendered or observed imagery. The CC0 proposition is a test claim, not a license assigned to an image."
+  },
+  "cases": 8,
+  "checks": [
+    {
+      "check": "all eight expected classes",
+      "passed": true
+    },
+    {
+      "check": "chrome_to_maybe_chrome preserves propositions and support counts",
+      "passed": true
+    },
+    {
+      "check": "selection_to_probable_authorship preserves propositions and support counts",
+      "passed": true
+    },
+    {
+      "check": "lower_confidence_without_license_source preserves propositions and support counts",
+      "passed": true
+    },
+    {
+      "check": "explicit numeric confidence changes only on the rights example",
+      "passed": true
+    },
+    {
+      "check": "a supported replacement is separately recognized",
+      "passed": true
+    },
+    {
+      "check": "withdrawal earns no new supported replacement",
+      "passed": true
+    },
+    {
+      "check": "source scope repair improves support without word/proposition change",
+      "passed": true
+    },
+    {
+      "check": "changed input blocked",
+      "passed": true
+    },
+    {
+      "check": "invalid quote span blocked",
+      "passed": true
+    }
+  ],
+  "status": "PASS",
+  "files": [
+    {
+      "file": "typed_claim_annotation_gate_v1.py",
+      "bytes": 11539,
+      "sha256": "068719f7e59136105fab3aacd17ab82534fb8612d2615b76f871759cefe254c3"
+    },
+    {
+      "file": "typed_claim_annotation_cases_v1.json",
+      "bytes": 32407,
+      "sha256": "1bb962e97388868bf9a0918596c1f32cd37ef1f58a2ac58cd77dd3dce83e348c"
+    },
+    {
+      "file": "typed_claim_annotation_results_20261110.json",
+      "bytes": 26895,
+      "sha256": "4df8da999f70cd60751bf8cfa3d8ce9075132f684f4a3753320c4be0da8d135a"
+    }
+  ],
+  "semantic_extraction": "manual authored fixture annotations; not evaluated",
+  "actual_images": 0,
+  "model_calls": 0,
+  "remote_writes": 0
+}

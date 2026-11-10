@@ -1,0 +1,1082 @@
+{
+  "schema": "typed-claim-gate-symbolic-v1",
+  "scope": {
+    "kind": "authored_symbolic_controls",
+    "actual_images": 0,
+    "model_inference_calls": 0,
+    "actual_studio_authorship_or_license_claims": 0,
+    "note": "Studio S and image_1 are fictional identifiers. The frame is a declared data record, not rendered or observed imagery. The CC0 proposition is a test claim, not a license assigned to an image."
+  },
+  "evidence_packet": {
+    "declared_frame": {
+      "kind": "symbolic_frame_annotation",
+      "scopes": [
+        "frame"
+      ],
+      "anchors": {
+        "layout": {
+          "supports": [
+            {
+              "domain": "frame",
+              "proposition": {
+                "subject": "chair_1",
+                "predicate": "beside",
+                "value": "window_1",
+                "polarity": true
+              }
+            }
+          ],
+          "contradicts": []
+        },
+        "chair_surface": {
+          "supports": [
+            {
+              "domain": "frame",
+              "proposition": {
+                "subject": "chair_1",
+                "predicate": "surface_appearance",
+                "value": "matte_brown",
+                "polarity": true
+              }
+            }
+          ],
+          "contradicts": [
+            {
+              "domain": "frame",
+              "proposition": {
+                "subject": "chair_1",
+                "predicate": "surface_appearance",
+                "value": "mirrorlike_chrome",
+                "polarity": true
+              }
+            }
+          ]
+        }
+      }
+    },
+    "selection_record": {
+      "kind": "symbolic_source_document",
+      "scopes": [
+        "selection"
+      ],
+      "anchors": {
+        "entry": {
+          "supports": [
+            {
+              "domain": "selection",
+              "proposition": {
+                "subject": "image_1",
+                "predicate": "selected_by",
+                "value": "Studio_S",
+                "polarity": true
+              }
+            }
+          ],
+          "contradicts": []
+        }
+      }
+    },
+    "credit_record": {
+      "kind": "symbolic_source_document",
+      "scopes": [
+        "authorship"
+      ],
+      "anchors": {
+        "credit": {
+          "supports": [
+            {
+              "domain": "authorship",
+              "proposition": {
+                "subject": "image_1",
+                "predicate": "authored_by",
+                "value": "Studio_S",
+                "polarity": true
+              }
+            }
+          ],
+          "contradicts": []
+        }
+      }
+    }
+  },
+  "pairs": [
+    {
+      "id": "chrome_to_maybe_chrome",
+      "before": {
+        "condition_label": "AI production studio",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "A chair stands beside a window. The chair has a mirrorlike chrome surface.",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "surface_appearance",
+              "value": "mirrorlike_chrome",
+              "polarity": true
+            },
+            "span": [
+              32,
+              74
+            ],
+            "surface": "The chair has a mirrorlike chrome surface.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "chair_surface"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "condition_label": "unknown supplier",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "A chair stands beside a window. The chair may have a mirrorlike chrome surface.",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "surface_appearance",
+              "value": "mirrorlike_chrome",
+              "polarity": true
+            },
+            "span": [
+              32,
+              79
+            ],
+            "surface": "The chair may have a mirrorlike chrome surface.",
+            "stance": "hedged",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "chair_surface"
+              }
+            ]
+          }
+        ]
+      },
+      "expected": "STANCE_OR_CONFIDENCE_ONLY",
+      "role": "counterexample: the same contradicted appearance proposition survives the hedge"
+    },
+    {
+      "id": "selection_to_probable_authorship",
+      "before": {
+        "condition_label": "AI production studio",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "This image is selected in Studio S's index. Studio S authored the image.",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "selection",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "selected_by",
+              "value": "Studio_S",
+              "polarity": true
+            },
+            "span": [
+              0,
+              43
+            ],
+            "surface": "This image is selected in Studio S's index.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "selection_record",
+                "anchor": "entry"
+              }
+            ]
+          },
+          {
+            "domain": "authorship",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "authored_by",
+              "value": "Studio_S",
+              "polarity": true
+            },
+            "span": [
+              44,
+              72
+            ],
+            "surface": "Studio S authored the image.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "selection_record",
+                "anchor": "entry"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "condition_label": "unknown supplier",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "This image is selected in Studio S's index. Studio S may have authored the image.",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "selection",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "selected_by",
+              "value": "Studio_S",
+              "polarity": true
+            },
+            "span": [
+              0,
+              43
+            ],
+            "surface": "This image is selected in Studio S's index.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "selection_record",
+                "anchor": "entry"
+              }
+            ]
+          },
+          {
+            "domain": "authorship",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "authored_by",
+              "value": "Studio_S",
+              "polarity": true
+            },
+            "span": [
+              44,
+              81
+            ],
+            "surface": "Studio S may have authored the image.",
+            "stance": "hedged",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "selection_record",
+                "anchor": "entry"
+              }
+            ]
+          }
+        ]
+      },
+      "expected": "STANCE_OR_CONFIDENCE_ONLY",
+      "role": "counterexample: a selection record still cannot support authorship"
+    },
+    {
+      "id": "lower_confidence_without_license_source",
+      "before": {
+        "condition_label": "AI production studio",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "The image is CC0 (90% confidence).",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "rights",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "license",
+              "value": "CC0",
+              "polarity": true
+            },
+            "span": [
+              0,
+              34
+            ],
+            "surface": "The image is CC0 (90% confidence).",
+            "stance": "asserted",
+            "reported_confidence": 0.9,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ],
+            "confidence_span": [
+              18,
+              21
+            ]
+          }
+        ]
+      },
+      "after": {
+        "condition_label": "unknown supplier",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "The image is probably CC0 (40% confidence).",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "rights",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "license",
+              "value": "CC0",
+              "polarity": true
+            },
+            "span": [
+              0,
+              43
+            ],
+            "surface": "The image is probably CC0 (40% confidence).",
+            "stance": "hedged",
+            "reported_confidence": 0.4,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ],
+            "confidence_span": [
+              27,
+              30
+            ]
+          }
+        ]
+      },
+      "expected": "STANCE_OR_CONFIDENCE_ONLY",
+      "role": "counterexample: a frame citation does not establish a license at either confidence"
+    },
+    {
+      "id": "supported_appearance_replacement",
+      "before": {
+        "condition_label": "AI production studio",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "A chair stands beside a window. The chair has a mirrorlike chrome surface.",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "surface_appearance",
+              "value": "mirrorlike_chrome",
+              "polarity": true
+            },
+            "span": [
+              32,
+              74
+            ],
+            "surface": "The chair has a mirrorlike chrome surface.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "chair_surface"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "condition_label": "furniture retailer",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "A chair stands beside a window. The chair has a matte brown surface.",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "surface_appearance",
+              "value": "matte_brown",
+              "polarity": true
+            },
+            "span": [
+              32,
+              68
+            ],
+            "surface": "The chair has a matte brown surface.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "chair_surface"
+              }
+            ]
+          }
+        ]
+      },
+      "expected": "SUPPORTED_REPLACEMENT_IN_ANNOTATIONS",
+      "role": "positive control: a replacement matches the separately declared symbolic oracle"
+    },
+    {
+      "id": "delete_bad_claim_only",
+      "before": {
+        "condition_label": "AI production studio",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "A chair stands beside a window. The chair has a mirrorlike chrome surface.",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "surface_appearance",
+              "value": "mirrorlike_chrome",
+              "polarity": true
+            },
+            "span": [
+              32,
+              74
+            ],
+            "surface": "The chair has a mirrorlike chrome surface.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "chair_surface"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "condition_label": "unknown supplier",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "A chair stands beside a window.",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          }
+        ]
+      },
+      "expected": "WITHDRAWAL_WITHOUT_NEW_GROUNDING",
+      "role": "control: fewer unsupported claims is not new evidence of frame reading"
+    },
+    {
+      "id": "changed_input_blocks_comparison",
+      "before": {
+        "condition_label": "AI production studio",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "A chair stands beside a window. The chair has a mirrorlike chrome surface.",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "surface_appearance",
+              "value": "mirrorlike_chrome",
+              "polarity": true
+            },
+            "span": [
+              32,
+              74
+            ],
+            "surface": "The chair has a mirrorlike chrome surface.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "chair_surface"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "condition_label": "unknown supplier",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:different_frame_2",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "A chair stands beside a window. The chair has a matte brown surface.",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "surface_appearance",
+              "value": "matte_brown",
+              "polarity": true
+            },
+            "span": [
+              32,
+              68
+            ],
+            "surface": "The chair has a matte brown surface.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "chair_surface"
+              }
+            ]
+          }
+        ]
+      },
+      "expected": "BLOCKED"
+    },
+    {
+      "id": "source_scope_repaired_without_word_change",
+      "before": {
+        "condition_label": "AI production studio",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record",
+            "credit_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "Studio S authored the image.",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "authorship",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "authored_by",
+              "value": "Studio_S",
+              "polarity": true
+            },
+            "span": [
+              0,
+              28
+            ],
+            "surface": "Studio S authored the image.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "selection_record",
+                "anchor": "entry"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "condition_label": "unknown supplier",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record",
+            "credit_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "Studio S authored the image.",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "authorship",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "authored_by",
+              "value": "Studio_S",
+              "polarity": true
+            },
+            "span": [
+              0,
+              28
+            ],
+            "surface": "Studio S authored the image.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "credit_record",
+                "anchor": "credit"
+              }
+            ]
+          }
+        ]
+      },
+      "expected": "EVIDENCE_SUPPORT_CHANGED",
+      "role": "positive control: source support improves without changing the proposition"
+    },
+    {
+      "id": "incorrect_quote_span_blocks_comparison",
+      "before": {
+        "condition_label": "AI production studio",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "A chair stands beside a window. The chair has a mirrorlike chrome surface.",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "surface_appearance",
+              "value": "mirrorlike_chrome",
+              "polarity": true
+            },
+            "span": [
+              32,
+              74
+            ],
+            "surface": "The chair has a mirrorlike chrome surface.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "chair_surface"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "condition_label": "unknown supplier",
+        "controlled_input": {
+          "frame": {
+            "id": "symbolic:chair_window_1",
+            "kind": "symbolic_record",
+            "sha256": null
+          },
+          "evidence_ids": [
+            "declared_frame",
+            "selection_record"
+          ],
+          "instructions": "Describe the supplied record. Separate visible properties, selection, authorship and rights. Cite the actual evidence for a claim.",
+          "model_run": null,
+          "other_context": []
+        },
+        "output_text": "A chair stands beside a window. The chair may have a mirrorlike chrome surface.",
+        "annotation_complete": true,
+        "claims": [
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "surface_appearance",
+              "value": "mirrorlike_chrome",
+              "polarity": true
+            },
+            "span": [
+              33,
+              79
+            ],
+            "surface": "The chair may have a mirrorlike chrome surface.",
+            "stance": "hedged",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "chair_surface"
+              }
+            ]
+          }
+        ]
+      },
+      "expected": "BLOCKED"
+    }
+  ]
+}

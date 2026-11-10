@@ -1,0 +1,17 @@
+{
+  "reviewer": "root independent source read and local replay",
+  "python": "3.12.14",
+  "command": "python annotation_gate_work/checker/typed_claim_gate.py annotation_gate_work/checker/symbolic_cases.json --check",
+  "cases": {
+    "cases": 8,
+    "passed": 8,
+    "failures": []
+  },
+  "script_sha256": "068719f7e59136105fab3aacd17ab82534fb8612d2615b76f871759cefe254c3",
+  "root_output_sha256": "4df8da999f70cd60751bf8cfa3d8ce9075132f684f4a3753320c4be0da8d135a",
+  "scope": "Manually authored symbolic annotation contract only; no images, model inference, source authentication or semantic extraction test.",
+  "primary_methodological_records": [
+    "https://aclanthology.org/2023.emnlp-main.741/",
+    "https://aclanthology.org/2023.cl-4.2/"
+  ]
+}
