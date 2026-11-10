@@ -1,0 +1,5 @@
+Info: Saved "synthetic_cameras.blend"
+{"all_declared_checks_passed": true, "ground_separations_px": [35.89744262695705, 37.10217355310415], "max_projection_component_error_px": 5.764431423926908e-05, "results": "/workspace/scratch/1ff91a3a20c2/planar_depth_blender_work/outputs/RESULTS.json"}
+Blender 4.3.2
+
+Blender quit
