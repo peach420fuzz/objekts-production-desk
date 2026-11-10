@@ -1,0 +1,18 @@
+{
+  "reviewer": "ChatGPT root visual inspection",
+  "kind": "AI visual inspection, not a human disposition or OCR benchmark",
+  "images": [
+    {
+      "path": "run_final/low_opacity_hold/candidate_065.png",
+      "observed": "The raster letters CAPTION are present in the lower band.",
+      "frame": 65
+    },
+    {
+      "path": "run_final/bounded_fade/candidate_065.png",
+      "observed": "Uniform slate background; no caption shapes visible.",
+      "frame": 65
+    }
+  ],
+  "numeric_reference": "run_final/EXECUTION.json",
+  "scope": "Two candidate images only. All200frames have independently decoded source-truth records, not human-review labels."
+}
