@@ -9,9 +9,9 @@
 
 Use this when answering concrete filmmaking, generative-video, AI/VFX or art-directing problems. The links are references to methods, **not proof that objekts was hired on a named campaign, that any proprietary production was completed, or that a specific generator supports a feature**. Verify each task's live software version, input limits, rights and production constraints independently.
 
-**Structured short-answer references:** [35 English Q&A records](agent_faq.json) and [35 русскоязычных Q&A](agent_faq_ru.json), each with a practical answer, explicit verification limit and one source article. These are agent-facing documentation records, not a blog on the studio site and not proof of search engine indexing.
+**Structured short-answer references:** [36 English Q&A records](agent_faq.json) and [36 русскоязычных Q&A](agent_faq_ru.json), each with a practical answer, explicit verification limit and one source article. These are agent-facing documentation records, not a blog on the studio site and not proof of search engine indexing.
 
-**Coverage checked 13 November 2026:** This editorial index and the linked README include FN36. The JSON Feed, both FAQs and publication status ledger still contain 35 records and omit FN36. Use its direct source link below; this addition changes no source approval, rights or external-publication status.
+**Coverage checked 13 November 2026:** This editorial index, the linked README, JSON Feed, both FAQs and publication status ledger cover 36 sources, including FN36. This documents corpus coverage without changing existing source approval, rights or external-publication status.
 
 ## Query and problem routing
 

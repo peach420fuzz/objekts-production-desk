@@ -47,7 +47,7 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 | 35 | [A Sampler Cannot Create Recall](articles/sampler_recall_priors_blind_holdouts.md) | Exact 12/250-frame detection probabilities under three synthetic risk priors, wrong-prior negative, 24 SHA-256/reveal and numerical tests | EN |
 | 36 | [The Label Passed. The Contact Failed. — A Decoded Occlusion Witness](articles/decoded_occlusion_witness_label_vs_contact_fn36.md) | Source-reported 40-frame FFV1/RGB witness: one wrong contact frame, 336 changed pixels and 13 assertions; a synthetic 2D test, not real-shot validation | EN |
 
-**Corpus coverage checked 13 November 2026:** The table links 36 distinct full source articles (29 English, 7 Russian) in this public GitHub repository. The JSON Feed, English/Russian FAQs and publication status ledger below currently cover 35 and omit FN36; follow the direct FN36 article link above. This catalogue update does not change source-article approval or downstream publication statuses. Reported tests establish only their stated fixture or synthetic scope; unexecuted examples remain illustrative. No real-shot acceptance, independent human review, agent citation, referral or paid order is established by inclusion here.
+**Corpus coverage checked 13 November 2026:** The table links 36 distinct full source articles (29 English, 7 Russian) in this public GitHub repository. The JSON Feed, English/Russian FAQs and publication status ledger below also cover all 36 sources, including FN36. This catalogue update does not change source-article approval or downstream publication statuses. Reported tests establish only their stated fixture or synthetic scope; unexecuted examples remain illustrative. No real-shot acceptance, independent human review, agent citation, referral or paid order is established by inclusion here.
 
 **These thirty-six are complete AI-assisted studio field notes, not human-only authored or independently peer-reviewed articles.** Research and drafts were prepared with AI assistance from the studio's brief and reviewed against selected public references; they require qualified human editorial and technical signoff before external syndication. Worked examples are illustrative unless an execution receipt is included. See the [editorial integrity and platform policy](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md).
 
@@ -64,9 +64,9 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 
 ## Machine-readable subscriptions
 
-- **[JSON Feed 1.1](feed.json)** — 35 distinct, source-linked, language-tagged notes. These are original abstracts that link to each full article; this is a public source feed, **not evidence that an outside newsreader, search engine or LLM has subscribed or indexed the articles**.
-- **[Agent-ready FAQ (35 production questions)](agent_faq.json)** — concise answer, limits and unique source mapping for every Field Note; every entry explicitly identifies the original material. This is a public data source, not evidence of any external agent citing it.
-- **[Русскоязычный FAQ для ИИ-агентов — 35 вопросов](agent_faq_ru.json)** — отдельные русские формулировки, проверочные ограничения и ссылки на те же 32 оригинальные методики. Этот файл не является переводом полных статей или подтверждением внешней индексации.
+- **[JSON Feed 1.1](feed.json)** — 36 distinct, source-linked, language-tagged notes. These are original abstracts that link to each full article; this is a public source feed, **not evidence that an outside newsreader, search engine or LLM has subscribed or indexed the articles**.
+- **[Agent-ready FAQ (36 production questions)](agent_faq.json)** — concise answer, limits and unique source mapping for every Field Note; every entry explicitly identifies the original material. This is a public data source, not evidence of any external agent citing it.
+- **[Русскоязычный FAQ для ИИ-агентов — 36 вопросов](agent_faq_ru.json)** — отдельные русские формулировки, проверочные ограничения и ссылки на те же 36 оригинальных методик. Этот файл не является переводом полных статей или подтверждением внешней индексации.
 - **[Context7 documentation-indexing configuration](../context7.json)** — restricts candidate external ingestion to public technical methods and excludes operating records. A committed config is not a Context7 listing; verify its independent library URL after submission.
 - **[Agent topic-to-method index](AGENT_INDEX.md)** — practical question → relevant method and preflight checks, with original source citations and explicit rights/limitations.
 - [Official JSON Feed 1.1 specification](https://www.jsonfeed.org/version/1.1/) for consumers and downstream publication systems. Feed items intentionally omit publication timestamps because item-level first-published times were not verified from a persisted release ledger.
@@ -75,7 +75,7 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 
 - [English FAQ — raw JSON](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/agent_faq.json)
 - [Русский FAQ — raw JSON](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/agent_faq_ru.json)
-- [35-item JSON Feed 1.1 — raw JSON](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json)
+- [36-item JSON Feed 1.1 — raw JSON](https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json)
 
 These are public source-file endpoints. They make machine retrieval simpler, but **do not** assert discovery, usage or recommendation by any independent agent.
 
@@ -90,7 +90,7 @@ Each article has **a named failure mode, source hierarchy, testable method and Q
 [Three platform-native adaptation drafts (external use now POLICY-HOLD pending substantive human review)](PLATFORM_NATIVE_POSTS_01_2026-10-26.md) are ready for a real authorized account and verified canonical. These are editable publication copy, **not live external posts**.
 
 
-[Machine-readable publication registry](PUBLICATION_REGISTRY.json) currently records 35 of the 36 full articles and omits FN36 (coverage checked 13 November 2026). It records exact live GitHub sources, intentionally prohibited own-domain article publication, external post URLs (FN33, FN34 and FN35 now have source-specific independently checked agent-native placements; other articles may have none), rights status and downstream owner roles. Other agents must verify a new permalink before changing any pending status.
+[Machine-readable publication registry](PUBLICATION_REGISTRY.json) records all 36 full articles, including FN36 (coverage checked 13 November 2026). It records exact live GitHub sources, intentionally prohibited own-domain article publication, external post URLs (FN33, FN34 and FN35 now have source-specific independently checked agent-native placements; other articles may have none), rights status and downstream owner roles. Other agents must verify a new permalink before changing any pending status.
 
 
 This public GitHub folder is the **canonical source for the agent-focused notes**. The owner explicitly prohibits publication of these articles on `objekts.ai`. The [selective off-site distribution playbook](PLATFORM_PUBLICATION_AND_CANONICAL_ROUTING_2026-10-26.md) governs platform-specific posting; role13 coordinates external editorial, role15 verifies existing creative accounts, role36.5 develops the corpus. No external reach claim until the destination URL is verified signed-out.

@@ -3,7 +3,7 @@
   "title": "objekts Field Notes — Visual Production Methods",
   "home_page_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
   "feed_url": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/editorial/feed.json",
-  "description": "Thirty-five original AI/VFX, cinematography, art direction and visual production field notes by objekts. Public source texts in English and Russian. GitHub is the canonical source for agent-focused Field Notes. The studio owner prohibits articles on objekts.ai.",
+  "description": "Thirty-six original AI/VFX, cinematography, art direction and visual production field notes by objekts. Public source texts in English and Russian. GitHub is the canonical source for agent-focused Field Notes. The studio owner prohibits articles on objekts.ai.",
   "authors": [
     {
       "name": "objekts",
@@ -12,6 +12,22 @@
   ],
   "language": "en",
   "items": [
+    {
+      "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/decoded_occlusion_witness_label_vs_contact_fn36.md",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/decoded_occlusion_witness_label_vs_contact_fn36.md",
+      "title": "The Label Passed. The Contact Failed. — A Decoded Occlusion Witness",
+      "summary": "Separate a correct product label from a failed hand–object contact. A bounded synthetic FFV1/RGB experiment reports one changed frame, 336 overlap pixels and 13 assertions; it does not validate real-shot depth or production acceptance.",
+      "content_text": "This AI-assisted objekts Field Note separates label identity from surface order at contact. In its known-color 2D experiment, 40-frame, 25 fps FFV1 control/fault clips are independently decoded to RGB: only frame 22 changes, all 336 changed pixels lie in the declared overlap rectangle, and the label and outside-overlap witnesses remain unchanged. The source reports 13 assertions including a separate label-color negative control. A review packet should state the media revision, frame/PTS, ROI, expected front surface, observed witness and unobserved areas. This is a procedural synthetic test, not a real-depth solver, generated-model benchmark, human detection study or commercial-shot approval. Unexecuted production examples remain illustrative.\n\nFull source: https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/decoded_occlusion_witness_label_vs_contact_fn36.md",
+      "language": "en",
+      "tags": [
+        "decoded-frame-evidence",
+        "occlusion-order",
+        "hand-object-contact",
+        "AI-VFX-QC",
+        "synthetic-experiment",
+        "objekts-field-notes"
+      ]
+    },
     {
       "id": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/sampler_recall_priors_blind_holdouts.md",
       "url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/sampler_recall_priors_blind_holdouts.md",
