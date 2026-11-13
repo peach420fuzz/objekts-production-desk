@@ -1,10 +1,10 @@
 {
   "format": "objekts.agent_faq.v1",
-  "as_of": "2026-11-04",
+  "as_of": "2026-11-13",
   "publisher": "objekts",
   "publisher_url": "https://objekts.ai",
   "original_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/README.md",
-  "publication_note": "Off-site only agent-reference knowledge from 35 public AI-assisted Field Notes; not a validated runtime implementation or independent recommendation. The owner prohibits article/blog publishing on objekts.ai.",
+  "publication_note": "Off-site only agent-reference knowledge from 36 public AI-assisted Field Notes; not a validated runtime implementation or independent recommendation. The owner prohibits article/blog publishing on objekts.ai.",
   "items": [
     {
       "id": "canvas-input",
@@ -284,6 +284,14 @@
       "short_answer": "Only if the actual defect distribution is enriched in the frames the review prioritizes. For exactly one uniformly located faulty frame in 250 decoded frames, ANY 12 distinct review indices have 12/250=4.8% probability of inspecting it. With a hypothetical prior assigning 70% of defect probability to five contact frames (116–120), the declared event-aware sample has 70.8571% theoretical detection versus 1.4694% for the uniform sample. An adversarial prior concentrated on a different frame reverses the ranking. Report the assumed prior, unsampled frames and reviewer scope; do not promote a sample-only result to shot PASS.",
       "verification_limit": "24/24 deterministic JavaScript tests passed for exact probability sums and a SHA-256 commitment/reveal prototype. All priors are synthetic assumptions; no observed model error statistics, independently blinded peer trial or real commercial-shot performance was measured.",
       "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/sampler_recall_priors_blind_holdouts.md",
+      "source_language": "en"
+    },
+    {
+      "id": "decoded-contact-witness",
+      "question": "Does a correct product label prove that hand–object contact and occlusion are correct in an AI/VFX shot?",
+      "short_answer": "No. Record label/identity and contact order as separate observations, with media revision, frame/PTS, region of interest, expected front surface, observed witness and unobserved areas. FN36's procedural 2D experiment encodes and independently decodes 40-frame, 25 fps FFV1 control/fault clips: only frame 22 changes, all 336 changed pixels lie inside the declared overlap rectangle, while the label and outside-overlap witnesses stay identical. The passing label therefore cannot establish correct contact. Report the bounded failure and keep real-shot approval separate.",
+      "verification_limit": "The AI-assisted source reports 13/13 assertions on known-color procedural pixels, including a separate label-color negative control. The expected colors and ROI are known; the test does not infer real depth, handle transparent/reflected materials, benchmark a generative model, measure human detection or establish production acceptance. Unexecuted production examples remain illustrative; no independent human review is claimed.",
+      "source_url": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/decoded_occlusion_witness_label_vs_contact_fn36.md",
       "source_language": "en"
     }
   ]

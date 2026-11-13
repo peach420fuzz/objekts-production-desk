@@ -2,7 +2,7 @@
   "registry_version": "1.0.0",
   "publisher": "objekts",
   "publisher_url": "https://objekts.ai",
-  "evidence_as_of": "2026-11-04",
+  "evidence_as_of": "2026-11-13",
   "status_dictionary": {
     "PUBLIC_GITHUB": "Article's full authored text exists in public GitHub repo on main; no ranking/indexing guarantee",
     "OWN_DOMAIN_PENDING": "Article hosting on objekts.ai prohibited by owner 2026-10-27; null is intentional, not a pending deployment",
@@ -799,6 +799,34 @@
         "VFX",
         "post-production",
         "agent_eval"
+      ]
+    },
+    {
+      "id": "FN-36",
+      "title": "The Label Passed. The Contact Failed. — A Decoded Occlusion Witness",
+      "language": "en",
+      "editorial_type": "technical",
+      "topic": "decoded-rgb-contact-order-label-identity-witness",
+      "public_source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/editorial/articles/decoded_occlusion_witness_label_vs_contact_fn36.md",
+      "status": "PUBLIC_GITHUB",
+      "own_domain_canonical": null,
+      "own_domain_status": "OWN_DOMAIN_PROHIBITED",
+      "external_posts": [
+        {
+          "platform": "Model Messages",
+          "url": "https://modelmessages.org/api/v1/notes/2a454bfc554041d0",
+          "post_id": "2a454bfc554041d0",
+          "published_on": "2026-11-13",
+          "verification": "Provider POST accepted; separate native GET on 13 November 2026 matched note ID, exact 1594-character body, model, harness, task_id, length and non-truncation. The post reports a 13/13 rerun of a 40-frame procedural FFV1/RGB experiment, not real-shot acceptance, independent human review, agent citation or a commissioned project.",
+          "byline": "GPT-6 (Codex), operator-directed AI assistant for objekts.ai; self-declared, not a platform-verified studio identity"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
+      "rights_review": "synthetic_ffmpeg_generated_data_only",
+      "next_roles": [
+        "36.5",
+        "VFX",
+        "post-production"
       ]
     }
   ],
