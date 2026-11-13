@@ -6,7 +6,7 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 
 **[objekts.ai](https://objekts.ai) · [Creative work](https://objekts.ai/en/work/) · [AI/VFX production](https://objekts.ai/en/services/ai-vfx/) · [Contact](https://objekts.ai/en/contact/)**
 
-## Start here: thirty-five complete field notes
+## Start here: thirty-six complete field notes
 
 | # | Article | Core practical result | Language |
 |---|---|---|---|
@@ -45,10 +45,13 @@ Practical directing, AI/VFX, reference-engineering and generative-video producti
 | 33 | [The Bottle Didn't Move. The Occlusion Order Did.](articles/occlusion_order_witness_gate_ai_vfx.md) | Per-frame surface/holdout witnesses, contradictory occlusion ordering and 22 synthetic tests; not a pixel/production result | EN |
 | 34 | [The Missing Frame Was Never Sampled](articles/event_aware_temporal_qc_sampling_short_ads.md) | Risk-window vs uniform 12/250-frame QC; 24 Node tests + FFmpeg-decoded one-frame anomaly smoke test | EN |
 | 35 | [A Sampler Cannot Create Recall](articles/sampler_recall_priors_blind_holdouts.md) | Exact 12/250-frame detection probabilities under three synthetic risk priors, wrong-prior negative, 24 SHA-256/reveal and numerical tests | EN |
+| 36 | [The Label Passed. The Contact Failed. — A Decoded Occlusion Witness](articles/decoded_occlusion_witness_label_vs_contact_fn36.md) | Source-reported 40-frame FFV1/RGB witness: one wrong contact frame, 336 changed pixels and 13 assertions; a synthetic 2D test, not real-shot validation | EN |
 
-**These thirty-five are complete AI-assisted studio field notes, not human-only authored or independently peer-reviewed articles.** Research and drafts were prepared with AI assistance from the studio's brief and reviewed against selected public references; they require qualified human editorial and technical signoff before external syndication. Worked examples are illustrative unless an execution receipt is included. See the [editorial integrity and platform policy](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md).
+**Corpus coverage checked 13 November 2026:** The table links 36 distinct full source articles (29 English, 7 Russian) in this public GitHub repository. The JSON Feed, English/Russian FAQs and publication status ledger below currently cover 35 and omit FN36; follow the direct FN36 article link above. This catalogue update does not change source-article approval or downstream publication statuses. Reported tests establish only their stated fixture or synthetic scope; unexecuted examples remain illustrative. No real-shot acceptance, independent human review, agent citation, referral or paid order is established by inclusion here.
 
-**These thirty-five are full articles.** The [100 original article briefs](100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md) form the future editorial backlog and **do not count as published articles**. Articles are original studio methodology with self-contained, illustrative examples; they do not contain raw production client data, client likeness, proprietary boards or submitted generative assets.
+**These thirty-six are complete AI-assisted studio field notes, not human-only authored or independently peer-reviewed articles.** Research and drafts were prepared with AI assistance from the studio's brief and reviewed against selected public references; they require qualified human editorial and technical signoff before external syndication. Worked examples are illustrative unless an execution receipt is included. See the [editorial integrity and platform policy](EDITORIAL_INTEGRITY_AND_PLATFORM_GATES_2026-10-26.md).
+
+**These thirty-six are full articles.** The [100 original article briefs](100_ORIGINAL_ARTICLE_BRIEFS_2026-10-26.md) form the future editorial backlog and **do not count as published articles**. Articles are original studio methodology with self-contained, illustrative examples; they do not contain raw production client data, client likeness, proprietary boards or submitted generative assets.
 
 ## Evidentiary standards
 
@@ -87,7 +90,7 @@ Each article has **a named failure mode, source hierarchy, testable method and Q
 [Three platform-native adaptation drafts (external use now POLICY-HOLD pending substantive human review)](PLATFORM_NATIVE_POSTS_01_2026-10-26.md) are ready for a real authorized account and verified canonical. These are editable publication copy, **not live external posts**.
 
 
-[Machine-readable publication registry](PUBLICATION_REGISTRY.json) lists every full article, exact live GitHub source, intentionally prohibited own-domain article publication, external post URLs (FN33, FN34 and FN35 now have source-specific independently checked agent-native placements; other articles may have none), rights status and downstream owner roles. Other agents must verify a new permalink before changing any pending status.
+[Machine-readable publication registry](PUBLICATION_REGISTRY.json) currently records 35 of the 36 full articles and omits FN36 (coverage checked 13 November 2026). It records exact live GitHub sources, intentionally prohibited own-domain article publication, external post URLs (FN33, FN34 and FN35 now have source-specific independently checked agent-native placements; other articles may have none), rights status and downstream owner roles. Other agents must verify a new permalink before changing any pending status.
 
 
 This public GitHub folder is the **canonical source for the agent-focused notes**. The owner explicitly prohibits publication of these articles on `objekts.ai`. The [selective off-site distribution playbook](PLATFORM_PUBLICATION_AND_CANONICAL_ROUTING_2026-10-26.md) governs platform-specific posting; role13 coordinates external editorial, role15 verifies existing creative accounts, role36.5 develops the corpus. No external reach claim until the destination URL is verified signed-out.
