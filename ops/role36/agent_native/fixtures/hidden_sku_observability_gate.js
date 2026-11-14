@@ -14,10 +14,11 @@ const PRODUCT_B = Object.freeze({
   sku: "B", frontText: "ORBIT", frontColor: "red", rearClosure: "cap-B"
 });
 
-function evaluateCandidate({authority, locks, observation, visibleKeys, rightsCleared=true}) {
+function evaluateCandidate({authority, locks, observation, visibleKeys, rightsCleared=false}) {
   // This is a logical test for complete requirements and *observability*.
   // Real vision systems must establish observations and visibility separately.
-  if (!rightsCleared) return {status:"BLOCKED",reason:"rights not established",results:[]};
+  // true is an explicit caller declaration, not proof of real publication rights.
+  if (rightsCleared !== true) return {status:"BLOCKED",reason:"rights not established",results:[]};
   if (!authority || !Array.isArray(locks) || !observation ||
       !Array.isArray(visibleKeys)) return {status:"BLOCKED",reason:"missing manifest",results:[]};
   const aKeys=Object.keys(authority).filter(k=>k!=="sku");
@@ -44,18 +45,19 @@ function naiveVisibleOnly(authority, observation, visibleKeys) {
   return available.length>0 && available.every(k=>observation[k]===authority[k])?"PASS":"FAIL";
 }
 function runFixture() {
+  // Known CC0 synthetic inventory; declare the prerequisite explicitly in this demo.
   const front=["frontText","frontColor"];
   const full=["frontText","frontColor","rearClosure"];
-  const goodFront=evaluateCandidate({authority:APPROVED,locks:LOCKS,observation:APPROVED,visibleKeys:front});
-  const badFront=evaluateCandidate({authority:APPROVED,locks:LOCKS,observation:PRODUCT_B,visibleKeys:front});
-  const goodFull=evaluateCandidate({authority:APPROVED,locks:LOCKS,observation:APPROVED,visibleKeys:full});
-  const badFull=evaluateCandidate({authority:APPROVED,locks:LOCKS,observation:PRODUCT_B,visibleKeys:full});
-  const badLabel=evaluateCandidate({authority:APPROVED,locks:LOCKS,
+  const goodFront=evaluateCandidate({rightsCleared:true,authority:APPROVED,locks:LOCKS,observation:APPROVED,visibleKeys:front});
+  const badFront=evaluateCandidate({rightsCleared:true,authority:APPROVED,locks:LOCKS,observation:PRODUCT_B,visibleKeys:front});
+  const goodFull=evaluateCandidate({rightsCleared:true,authority:APPROVED,locks:LOCKS,observation:APPROVED,visibleKeys:full});
+  const badFull=evaluateCandidate({rightsCleared:true,authority:APPROVED,locks:LOCKS,observation:PRODUCT_B,visibleKeys:full});
+  const badLabel=evaluateCandidate({rightsCleared:true,authority:APPROVED,locks:LOCKS,
     observation:{...APPROVED,frontText:"ORBT"},visibleKeys:front});
-  const droppedLock=evaluateCandidate({authority:APPROVED,locks:front,observation:PRODUCT_B,visibleKeys:front});
-  const rightsMissing=evaluateCandidate({authority:APPROVED,locks:LOCKS,
-    observation:APPROVED,visibleKeys:full,rightsCleared:false});
-  const noObservability=evaluateCandidate({authority:APPROVED,locks:LOCKS,
+  const droppedLock=evaluateCandidate({rightsCleared:true,authority:APPROVED,locks:front,observation:PRODUCT_B,visibleKeys:front});
+  const rightsMissing=evaluateCandidate({rightsCleared:false,authority:APPROVED,locks:LOCKS,
+    observation:APPROVED,visibleKeys:full});
+  const noObservability=evaluateCandidate({rightsCleared:true,authority:APPROVED,locks:LOCKS,
     observation:APPROVED,visibleKeys:[]});
   assert(naiveVisibleOnly(APPROVED,PRODUCT_B,front)==="PASS","bad baseline hides rear mismatch");
   assert(goodFront.status==="UNVERIFIABLE","approved item front-only cannot prove rear");
