@@ -1,0 +1,63 @@
+{
+  "scope": "Historical local original synthetic4sAV case; UTF-8 text-only publication",
+  "measured_at_utc": "2026-11-13T17:08:16Z",
+  "historical_ffmpeg_version": "9.0.2",
+  "historical_ffprobe_version": "9.0.2",
+  "original_inputs": {
+    "video": {
+      "logical_name": "loop.mp4",
+      "sha256": "473bc490c6da517d4d7b1c68151d46de52b7b01a40778ab3b00ce4f0ea2d0a06",
+      "frames": 96,
+      "fps": "24/1",
+      "dimensions": [
+        640,
+        360
+      ],
+      "duration_s": 4
+    },
+    "audio": {
+      "logical_name": "tone.wav",
+      "wav_sha256": "a2b9d3820d40ed6bad920295b2f58f255f0eca5c8097b467ec65bb1b933b90be",
+      "pcm_sha256": "71a03c8397e7611cac7bbd581ebecf720483c7a36ba95a3802b1d24c1d516e0a",
+      "mono_samples": 192000,
+      "sample_rate": 48000,
+      "pcm_bits": 16
+    }
+  },
+  "local_exports_not_included": {
+    "AAC_MP4": {
+      "logical_name": "aac.mp4",
+      "sha256": "6b8de24533e1be58e146b922387b660bce3471fba0322d039e95fbdf1a02452e",
+      "bytes": 549855,
+      "decoded_mono_samples": 192000
+    },
+    "PCM_MOV": {
+      "logical_name": "pcm.mov",
+      "sha256": "f7d36b259501cf500c7ba150b6225e0f6c0e3490072eee0df0b0bbacb1a9fe62",
+      "bytes": 870411,
+      "decoded_mono_samples": 192000
+    }
+  },
+  "source_receipt_hashes": {
+    "original_RESULT_json_sha256": "f23122582ad53dc377cb464b1e545a23e784d860a28c57932a6352476d7e8342",
+    "original_SOURCE_MANIFEST_json_sha256": "3dbee45c3786b78ad775434c23f9500555b1e37cf700a5b35679a0f0d07bf708",
+    "original_COMMAND_LOG_json_sha256": "cb3051cb54b594a4cd057eaef661db0977fb519463019d9794688312d1aed8e7",
+    "original_executed_AV_probe_script_sha256": "66f27b2b25125a0b0e61fc5d985494ffa2fa672312ed2bc3ad3c2e8a97f9a513"
+  },
+  "published_measurement_snapshot_sha256": "da5307aee98fcde97abef9efa1702a1ba15ef960d4c8ec24bb0335232131a7b5",
+  "portable_code": {
+    "generation": "../generate_sources.py",
+    "measurement": "../measure_exports.py",
+    "status": "SOURCE_AND_SYNTAX_CHECKED_NOT_MEDIA_RERUN_DURING_PACKAGING"
+  },
+  "binaries_included": false,
+  "binary_download_promised": false,
+  "media_run_during_text_packaging": false,
+  "constraints": {
+    "no_speech_or_external_music": true,
+    "no_client_or_closed_project_media": true,
+    "no_listening_or_playback_test": true,
+    "no_perceptual_seamless_or_zero_drift_claim": true,
+    "no_human_or_production_acceptance_claim": true
+  }
+}
