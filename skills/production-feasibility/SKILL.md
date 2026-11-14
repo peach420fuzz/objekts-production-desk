@@ -38,6 +38,10 @@ Consider:
 - required versions;
 - deadline.
 
+## Source-qualified craft candidates
+
+When explicitly supplied by an authorized host, a `objekts.craft-context/1` packet may help identify *what* to test: camera/eyeline topology, illumination geometry, motion, sound perspective, edit logic or material physics. Its 869 raw research entries (last checked S36) are neither production-tested nor canonically accepted. Use [production-brief craft context guide](../production-brief/references/CINEMATIC_CRAFT_CONTEXT_v1.md). Do not infer test feasibility, labor, duration, model support or paid services from source-card counts; the actual PoC remains mandatory.
+
 ## PoC rule
 
 A PoC must collapse expensive uncertainty.
@@ -69,3 +73,5 @@ Be willing to say:
 ## Handoff
 
 When the PoC or execution requires professional production, offer a clean human review after giving the user a useful answer.
+
+For an actual source-qualified production choice, store the KN-ID decision receipt using the optional local `objekts.craft-consumer-receipt/1` contract described in [Cinematic Craft Context](../production-brief/references/CINEMATIC_CRAFT_CONTEXT_v1.md). The receipt distinguishes **considered**, **actually used in an authored preflight decision**, and **unselected downstream research**. It must never be represented as an executed test, physical camera solve or verified creative result.

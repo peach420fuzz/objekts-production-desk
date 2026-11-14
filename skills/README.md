@@ -70,3 +70,7 @@ The hosted system supports read-only production diagnosis and optional cost expl
 - For filmmakers needing no vendor decision, start with the relevant SKILL.md above and compare alternative methods/suppliers.
 
 **Navigation only.** This is a public, reusable task map; no new skill was installed, run or accepted by a third-party catalogue merely because this index was published.
+
+## Optional cinematic Craft Context — prototype only
+
+An authorized local/Work environment can supply source-qualified cinematography, screenplay, lighting, sound, editing and animation candidates from the private role100 Atlas through `objekts.craft-context/1`. [Production brief integration guide](production-brief/references/CINEMATIC_CRAFT_CONTEXT_v1.md) explains the boundary between a research precedent and a feasible VFX/AI production decision. This public source repository does not embed the Atlas, automatically request GitHub access, change the production MCP server, or make creative quality claims.
