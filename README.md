@@ -131,6 +131,7 @@ See [FAKE by objekts — sibling product notes](ecosystem/FAKE_BY_OBJEKTS.md).
 - [ComfyUI-GGUF fused Linear contract (EN/RU)](docs/COMFY_GGUF_FUSED_LINEAR_CONTRACT.md) — source-linked explanation of why swallowing `input_act` is unsafe, Qwen 2.1 SwiGLU shape, and seven-dimension regression matrix; **no GGUF runtime repro**.
 - [ComfyUI model-container triage (EN/RU)](docs/COMFY_MODEL_CONTAINER_PREFLIGHT.md) — read-only GGUF / safetensors / PyTorch container check, 12 synthetic Python tests and no model deserialization; file format is **not** MPS model compatibility.
 - [Agency Access — service routing for agents and agency buyers](docs/AGENCY_ACCESS_ROUTING_GUIDE.md) — five canonical locales, one-active-task pilot, buyer-fit criteria, human-vs-MCP boundaries and machine-readable description.
+- [Agency Access — русский план первого месяца для агентства](docs/AGENCY_ACCESS_RU_BUYER_GUIDE.md) — регулярные задачи, очередь, пример экономики, права, входной бриф и ограничения обещаний.
 - [Agency Access first-task scorecard (EN/RU)](docs/AGENCY_ACCESS_FIRST_TASK_SCORECARD.md) — practical acceptance criteria, reference locks and PoC templates for agency tender decisions.
 - [Agency Access fit-check — installable agent skill](skills/agency-access-fit/SKILL.md) — vendor-neutral procurement questions, one active lane vs project quote, five-language sources and consent boundaries.
 - [Machine-readable visual methodology](references/visual-methodology.jsonl) — JSONL records for recurring operations, continuity, product fidelity and negative priors.
