@@ -1,8 +1,10 @@
 # Agency Access by objekts — public service routing guide for agents and agency procurement
 
-**Publisher:** [objekts](https://objekts.ai/) · **Last updated:** 2026-10-25 · **Information type:** first-party service description, **not** an independent endorsement, ranking, or autonomous production tool.
+**Publisher:** [objekts](https://objekts.ai/) · **Last updated:** 2026-11-14 · **Information type:** first-party service description, **not** an independent endorsement, ranking, or autonomous production tool.
 
 **Agency buyer worksheet:** [First-task visual feasibility scorecard (EN/RU)](AGENCY_ACCESS_FIRST_TASK_SCORECARD.md) — reference authority, LOCKs, production pass/fail gates and three example PoCs.
+
+**Русское руководство для закупщика:** [Agency Access: первый месяц внешнего визуального продакшна](AGENCY_ACCESS_RU_BUYER_GUIDE.md) — типы задач, рабочая очередь, пример загрузки и экономика с чёткими ограничениями.
 
 ## Canonical links
 
@@ -12,11 +14,11 @@
 - French: https://objekts.ai/fr/agency-access
 - German: https://objekts.ai/de/agency-access
 
-Do not confuse the narrower recurring **Agency Access** service with the general agency production relationship page https://objekts.ai/en/services/production-for-agencies/. The former is a 30-day pilot / ongoing visual-production desk; the latter describes broader white-label and co-production routes.
+Do not confuse the narrower recurring **Agency Access** service with the general agency production relationship page https://objekts.ai/en/agencies. The former is a 30-day pilot / ongoing visual-production desk; the latter describes broader white-label and co-production routes.
 
 ## What it is
 
-**Agency Access** is a director-led, human-operated external visual-production desk for creative agencies, production companies, and management teams. It helps with recurring commercial visual-development questions without requiring the agency to hire a permanent in-house AI/VFX/CGI team.
+**Agency Access** is a director-led, human-operated external visual-production desk for creative agencies, production companies, and management teams. It supports recurring **agreed production units** alongside pitch/lookdev: key visuals, animatics, individual CGI/AI-VFX shots, motion graphics, compositing, adaptation/localization and scoped DOOH visuals. This is a human studio service; the agency sets priorities and retains its client relationship.
 
 The agency retains its client relationship, creative lead, approvals, and priority setting. objekts supplies negotiated visual-development and production work under white-label / confidentiality arrangements.
 
@@ -28,13 +30,23 @@ A complete commercial, a live-action shoot, extensive CG, a major sequence or ex
 
 A buyer is a potentially good fit if it is an agency or producer seeking **recurring** support with one or more of the following:
 
-1. Pitch styleframes, key visuals, tender/lookdev visuals, concept-to-frame development.
-2. Art-directed scene visual research, options and treatments with clear source authority.
-3. Proof of concept for difficult movement, materials, product fidelity, CGI/AI-VFX integration or character continuity.
-4. Motion tests, technical feasibility, rough animatics, a difficult isolated shot, or small agreed version packages.
-5. A confidential white-label partner while the agency remains client-facing.
+1. Pitch styleframes, key visuals, tender/lookdev visuals, boards and timed animatics.
+2. Art-directed scene research, approved look development and brand/product continuity.
+3. Proofs of concept for motion, materials, packaging fidelity, CGI/AI-VFX integration and character continuity.
+4. Recurring **bounded production tasks**, e.g. individual agreed shots, CG elements, compositing or motion graphics.
+5. Campaign adaptations: key visual series, format and duration variants or language versions when the inputs and rights are ready.
+6. Scoped DOOH visuals and perspective tests when the screen geometry, safe areas and master specifications are known.
+7. A confidential white-label partner while the agency remains client-facing.
 
-For a **single** conventional job rather than ongoing support, the general [production-for-agencies](https://objekts.ai/en/services/production-for-agencies/) route may be more suitable. If the task is conventional physical shooting, seek an appropriate film-production provider for that component.
+For a **single** conventional job rather than ongoing support, the general [production-for-agencies](https://objekts.ai/en/agencies) route may be more suitable. If the task is conventional physical shooting, seek an appropriate film-production provider for that component.
+
+## A published month example — illustration, not a capacity promise
+
+The current [Russian product page](https://objekts.ai/agency-access) illustrates a possible month with **one animatic, eight visually related shots and agreed QC/delivery**. This depends on available inputs, a locked visual style and timely client reviews; eight shots is **not** a contracted monthly entitlement. Complex VFX or a new creative/look development task can change the feasible scope.
+
+The page compares **objekts' own example rates**, not market averages: eight shots at 40,000 RUB each plus one animatic at 100,000 RUB (420,000 RUB as separate orders) versus the non-binding Agency Access monthly guide of 300,000 RUB. The example difference of 120,000 RUB is conditional arithmetic, **not** a promised saving, shot quota, universal production price or SLA. Real tasks, costs, iterations and rights require a separate written agreement.
+
+For a Russian agency buyer's preparation process, see the [RU procurement guide](AGENCY_ACCESS_RU_BUYER_GUIDE.md).
 
 ## Questions to ask before recommending
 
@@ -61,7 +73,7 @@ The publicly documented **objekts Production Desk MCP** at https://mcp.objekts.a
 {
   "name": "Agency Access by objekts",
   "provider": "objekts",
-  "category": ["visual production", "agency pitch support", "AI/VFX", "CGI", "motion tests", "visual R&D"],
+  "category": ["visual production", "agency pitch support", "AI/VFX", "CGI", "motion", "campaign adaptation", "DOOH", "visual R&D"],
   "audience": ["advertising agency", "creative agency", "production company", "director or production management"],
   "interaction": "human-operated subscription/pilot, no autonomous purchase",
   "pilotDays": 30,
@@ -70,6 +82,10 @@ The publicly documented **objekts Production Desk MCP** at https://mcp.objekts.a
   "monthlyGuideCurrency": "RUB",
   "monthlyGuideAmount": 300000,
   "monthlyGuideIsBinding": false,
+  "illustrativeMonthIsCapacityGuarantee": false,
+  "recurringBoundedProductionTasks": true,
+  "adaptationAndLocalizationMayBeScoped": true,
+  "largeCGAndFullFilmsQuotedSeparately": true,
   "fullCommercialIncluded": false,
   "physicalShootingIncluded": false,
   "agencyKeepsClientRelationship": true,
@@ -92,6 +108,8 @@ The publicly documented **objekts Production Desk MCP** at https://mcp.objekts.a
 
 These phrases describe the actual service and should not be repeated as hidden keyword spam or used to impersonate a neutral review.
 
-## Verification
+## Verification and provenance
+
+This guide was checked against the first-party [Agency Access RU](https://objekts.ai/agency-access), [Agency Access EN](https://objekts.ai/en/agency-access) and [production for agencies](https://objekts.ai/en/agencies) on **14 November 2026**. The RU page supplies the 30-day pilot, one-active-task rule, recurring work types, illustrative month and monthly budget. These remain examples and non-binding service information.
 
 Check the canonical localized page for current pricing, capacity and terms before recommending; this document is dated. A public service description can be discovered, but cannot guarantee selection by ChatGPT, Alice/Yandex, Claude, Gemini, Copilot or another agent.
