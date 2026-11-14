@@ -1,0 +1,894 @@
+{
+  "schema": "objekts.synthetic-planar-depth-control.v1",
+  "started_utc": "2026-11-10T01:29:39.102840+00:00",
+  "runtime": {
+    "blender": "4.3.2",
+    "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+    "executable": "/usr/bin/blender"
+  },
+  "contract_sha256": "04ed5b28f42c17073be299192ce9eec91539fcd29547c1678bc7aee714eaf363",
+  "script_sha256": "fe2da173f6e1faa866797af0e621d289c642903d13c7b5823c401541946dbe2a",
+  "projection_helper_source_sha256": "4c4918a27584ab972e82e7d7456b089b54a33d1a73e594f7c9dc68175f2a8ccb",
+  "scene": {
+    "width": 512,
+    "height": 512,
+    "percentage": 100,
+    "pixel_aspect": [
+      1.0,
+      1.0
+    ],
+    "units": "METRIC",
+    "scale_length": 1.0
+  },
+  "camera_states": {
+    "A": {
+      "location": [
+        0.0,
+        -5.0,
+        2.0
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -5.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "type": "PERSP",
+      "lens_mm": 35.0,
+      "sensor_width_mm": 36.0,
+      "sensor_height_mm": 36.0,
+      "sensor_fit": "HORIZONTAL",
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "clip_m": [
+        0.009999999776482582,
+        100.0
+      ],
+      "right_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "up_world": [
+        0.0,
+        -4.371138828673793e-08,
+        1.0
+      ],
+      "forward_world": [
+        0.0,
+        1.0,
+        4.371138828673793e-08
+      ]
+    },
+    "B": {
+      "location": [
+        0.0,
+        -10.0,
+        2.0
+      ],
+      "rotation_euler": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -10.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "type": "PERSP",
+      "lens_mm": 70.0,
+      "sensor_width_mm": 36.0,
+      "sensor_height_mm": 36.0,
+      "sensor_fit": "HORIZONTAL",
+      "shift": [
+        0.0,
+        0.0
+      ],
+      "clip_m": [
+        0.009999999776482582,
+        100.0
+      ],
+      "right_world": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "up_world": [
+        0.0,
+        -4.371138828673793e-08,
+        1.0
+      ],
+      "forward_world": [
+        0.0,
+        1.0,
+        4.371138828673793e-08
+      ]
+    }
+  },
+  "projections": {
+    "A": {
+      "facade_bottom_left": {
+        "set": "facade_four",
+        "world": [
+          -2.0,
+          0.0,
+          0.0
+        ],
+        "ndc": [
+          0.1111111044883728,
+          0.11111105978488922,
+          5.0
+        ],
+        "pixel": [
+          56.888885498046875,
+          455.1111373901367
+        ],
+        "oracle": {
+          "pixel": [
+            56.888888888888886,
+            455.1111111111111
+          ],
+          "pixel_exact": [
+            "512/9",
+            "4096/9"
+          ],
+          "depth_m": 5.0,
+          "depth_exact": "5",
+          "focal_scale_px_exact": "4480/9"
+        },
+        "absolute_pixel_error": [
+          3.390842010730921e-06,
+          2.627902563290263e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      },
+      "facade_bottom_right": {
+        "set": "facade_four",
+        "world": [
+          2.0,
+          0.0,
+          0.0
+        ],
+        "ndc": [
+          0.8888888955116272,
+          0.11111105978488922,
+          5.0
+        ],
+        "pixel": [
+          455.1111145019531,
+          455.1111373901367
+        ],
+        "oracle": {
+          "pixel": [
+            455.1111111111111,
+            455.1111111111111
+          ],
+          "pixel_exact": [
+            "4096/9",
+            "4096/9"
+          ],
+          "depth_m": 5.0,
+          "depth_exact": "5",
+          "focal_scale_px_exact": "4480/9"
+        },
+        "absolute_pixel_error": [
+          3.3908420391526306e-06,
+          2.627902563290263e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      },
+      "facade_top_right": {
+        "set": "facade_four",
+        "world": [
+          2.0,
+          0.0,
+          4.0
+        ],
+        "ndc": [
+          0.8888888955116272,
+          0.8888888359069824,
+          5.0
+        ],
+        "pixel": [
+          455.1111145019531,
+          56.888916015625
+        ],
+        "oracle": {
+          "pixel": [
+            455.1111111111111,
+            56.888888888888886
+          ],
+          "pixel_exact": [
+            "4096/9",
+            "512/9"
+          ],
+          "depth_m": 5.0,
+          "depth_exact": "5",
+          "focal_scale_px_exact": "4480/9"
+        },
+        "absolute_pixel_error": [
+          3.3908420391526306e-06,
+          2.712673611426908e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      },
+      "facade_top_left": {
+        "set": "facade_four",
+        "world": [
+          -2.0,
+          0.0,
+          4.0
+        ],
+        "ndc": [
+          0.1111111044883728,
+          0.8888888359069824,
+          5.0
+        ],
+        "pixel": [
+          56.888885498046875,
+          56.888916015625
+        ],
+        "oracle": {
+          "pixel": [
+            56.888888888888886,
+            56.888888888888886
+          ],
+          "pixel_exact": [
+            "512/9",
+            "512/9"
+          ],
+          "depth_m": 5.0,
+          "depth_exact": "5",
+          "focal_scale_px_exact": "4480/9"
+        },
+        "absolute_pixel_error": [
+          3.390842010730921e-06,
+          2.712673611426908e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      },
+      "same_plane_heldout_centre": {
+        "set": "same_plane_heldout",
+        "world": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "ndc": [
+          0.5,
+          0.4999999403953552,
+          5.0
+        ],
+        "pixel": [
+          256.0,
+          256.0000305175781
+        ],
+        "oracle": {
+          "pixel": [
+            256.0,
+            256.0
+          ],
+          "pixel_exact": [
+            "256",
+            "256"
+          ],
+          "depth_m": 5.0,
+          "depth_exact": "5",
+          "focal_scale_px_exact": "4480/9"
+        },
+        "absolute_pixel_error": [
+          0.0,
+          3.0517578125e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      },
+      "same_plane_heldout_lower_right": {
+        "set": "same_plane_heldout",
+        "world": [
+          1.0,
+          0.0,
+          1.0
+        ],
+        "ndc": [
+          0.6944444179534912,
+          0.3055554926395416,
+          5.0
+        ],
+        "pixel": [
+          355.5555419921875,
+          355.5555877685547
+        ],
+        "oracle": {
+          "pixel": [
+            355.55555555555554,
+            355.55555555555554
+          ],
+          "pixel_exact": [
+            "3200/9",
+            "3200/9"
+          ],
+          "depth_m": 5.0,
+          "depth_exact": "5",
+          "focal_scale_px_exact": "4480/9"
+        },
+        "absolute_pixel_error": [
+          1.3563368042923685e-05,
+          3.2212999144576315e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      },
+      "ground_offset_3m": {
+        "set": "off_plane_heldout",
+        "world": [
+          -1.5,
+          3.0,
+          0.0
+        ],
+        "ndc": [
+          0.3177083432674408,
+          0.2569443881511688,
+          8.0
+        ],
+        "pixel": [
+          162.6666717529297,
+          380.44447326660156
+        ],
+        "oracle": {
+          "pixel": [
+            162.66666666666666,
+            380.44444444444446
+          ],
+          "pixel_exact": [
+            "488/3",
+            "3424/9"
+          ],
+          "depth_m": 8.0,
+          "depth_exact": "8",
+          "focal_scale_px_exact": "4480/9"
+        },
+        "absolute_pixel_error": [
+          5.0862630303072365e-06,
+          2.8822157105423685e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      },
+      "ground_offset_5m": {
+        "set": "off_plane_heldout",
+        "world": [
+          1.0,
+          5.0,
+          0.0
+        ],
+        "ndc": [
+          0.5972222089767456,
+          0.3055554926395416,
+          10.0
+        ],
+        "pixel": [
+          305.77777099609375,
+          355.5555877685547
+        ],
+        "oracle": {
+          "pixel": [
+            305.77777777777777,
+            355.55555555555554
+          ],
+          "pixel_exact": [
+            "2752/9",
+            "3200/9"
+          ],
+          "depth_m": 10.0,
+          "depth_exact": "10",
+          "focal_scale_px_exact": "4480/9"
+        },
+        "absolute_pixel_error": [
+          6.781684021461842e-06,
+          3.2212999144576315e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      }
+    },
+    "B": {
+      "facade_bottom_left": {
+        "set": "facade_four",
+        "world": [
+          -2.0,
+          0.0,
+          0.0
+        ],
+        "ndc": [
+          0.1111111044883728,
+          0.11111101508140564,
+          10.0
+        ],
+        "pixel": [
+          56.888885498046875,
+          455.1111602783203
+        ],
+        "oracle": {
+          "pixel": [
+            56.888888888888886,
+            455.1111111111111
+          ],
+          "pixel_exact": [
+            "512/9",
+            "4096/9"
+          ],
+          "depth_m": 10.0,
+          "depth_exact": "10",
+          "focal_scale_px_exact": "8960/9"
+        },
+        "absolute_pixel_error": [
+          3.390842010730921e-06,
+          4.916720922665263e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      },
+      "facade_bottom_right": {
+        "set": "facade_four",
+        "world": [
+          2.0,
+          0.0,
+          0.0
+        ],
+        "ndc": [
+          0.8888888955116272,
+          0.11111101508140564,
+          10.0
+        ],
+        "pixel": [
+          455.1111145019531,
+          455.1111602783203
+        ],
+        "oracle": {
+          "pixel": [
+            455.1111111111111,
+            455.1111111111111
+          ],
+          "pixel_exact": [
+            "4096/9",
+            "4096/9"
+          ],
+          "depth_m": 10.0,
+          "depth_exact": "10",
+          "focal_scale_px_exact": "8960/9"
+        },
+        "absolute_pixel_error": [
+          3.3908420391526306e-06,
+          4.916720922665263e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      },
+      "facade_top_right": {
+        "set": "facade_four",
+        "world": [
+          2.0,
+          0.0,
+          4.0
+        ],
+        "ndc": [
+          0.8888888955116272,
+          0.8888887763023376,
+          10.0
+        ],
+        "pixel": [
+          455.1111145019531,
+          56.888946533203125
+        ],
+        "oracle": {
+          "pixel": [
+            455.1111111111111,
+            56.888888888888886
+          ],
+          "pixel_exact": [
+            "4096/9",
+            "512/9"
+          ],
+          "depth_m": 10.0,
+          "depth_exact": "10",
+          "focal_scale_px_exact": "8960/9"
+        },
+        "absolute_pixel_error": [
+          3.3908420391526306e-06,
+          5.764431423926908e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      },
+      "facade_top_left": {
+        "set": "facade_four",
+        "world": [
+          -2.0,
+          0.0,
+          4.0
+        ],
+        "ndc": [
+          0.1111111044883728,
+          0.8888887763023376,
+          10.0
+        ],
+        "pixel": [
+          56.888885498046875,
+          56.888946533203125
+        ],
+        "oracle": {
+          "pixel": [
+            56.888888888888886,
+            56.888888888888886
+          ],
+          "pixel_exact": [
+            "512/9",
+            "512/9"
+          ],
+          "depth_m": 10.0,
+          "depth_exact": "10",
+          "focal_scale_px_exact": "8960/9"
+        },
+        "absolute_pixel_error": [
+          3.390842010730921e-06,
+          5.764431423926908e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      },
+      "same_plane_heldout_centre": {
+        "set": "same_plane_heldout",
+        "world": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "ndc": [
+          0.5,
+          0.49999991059303284,
+          10.0
+        ],
+        "pixel": [
+          256.0,
+          256.0000457763672
+        ],
+        "oracle": {
+          "pixel": [
+            256.0,
+            256.0
+          ],
+          "pixel_exact": [
+            "256",
+            "256"
+          ],
+          "depth_m": 10.0,
+          "depth_exact": "10",
+          "focal_scale_px_exact": "8960/9"
+        },
+        "absolute_pixel_error": [
+          0.0,
+          4.57763671875e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      },
+      "same_plane_heldout_lower_right": {
+        "set": "same_plane_heldout",
+        "world": [
+          1.0,
+          0.0,
+          1.0
+        ],
+        "ndc": [
+          0.6944444179534912,
+          0.30555546283721924,
+          10.0
+        ],
+        "pixel": [
+          355.5555419921875,
+          355.55560302734375
+        ],
+        "oracle": {
+          "pixel": [
+            355.55555555555554,
+            355.55555555555554
+          ],
+          "pixel_exact": [
+            "3200/9",
+            "3200/9"
+          ],
+          "depth_m": 10.0,
+          "depth_exact": "10",
+          "focal_scale_px_exact": "8960/9"
+        },
+        "absolute_pixel_error": [
+          1.3563368042923685e-05,
+          4.7471788207076315e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      },
+      "ground_offset_3m": {
+        "set": "off_plane_heldout",
+        "world": [
+          -1.5,
+          3.0,
+          0.0
+        ],
+        "ndc": [
+          0.2756410539150238,
+          0.2008546143770218,
+          13.0
+        ],
+        "pixel": [
+          141.1282196044922,
+          409.16243743896484
+        ],
+        "oracle": {
+          "pixel": [
+            141.12820512820514,
+            409.1623931623932
+          ],
+          "pixel_exact": [
+            "5504/39",
+            "47872/117"
+          ],
+          "depth_m": 13.0,
+          "depth_exact": "13",
+          "focal_scale_px_exact": "8960/9"
+        },
+        "absolute_pixel_error": [
+          1.4476287049092207e-05,
+          4.427657165706478e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      },
+      "ground_offset_5m": {
+        "set": "off_plane_heldout",
+        "world": [
+          1.0,
+          5.0,
+          0.0
+        ],
+        "ndc": [
+          0.6296296119689941,
+          0.24074065685272217,
+          15.0
+        ],
+        "pixel": [
+          322.370361328125,
+          388.74078369140625
+        ],
+        "oracle": {
+          "pixel": [
+            322.3703703703704,
+            388.74074074074076
+          ],
+          "pixel_exact": [
+            "8704/27",
+            "10496/27"
+          ],
+          "depth_m": 15.0,
+          "depth_exact": "15",
+          "focal_scale_px_exact": "8960/9"
+        },
+        "absolute_pixel_error": [
+          9.04224538089693e-06,
+          4.295066548820614e-05
+        ],
+        "absolute_depth_error_m": 0.0,
+        "positive_depth_inside_frame": true
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "point": "facade_bottom_left",
+      "set": "facade_four",
+      "B_minus_A_px": [
+        0.0,
+        2.288818359375e-05
+      ],
+      "B_minus_A_exact_rational_px": [
+        "0",
+        "0"
+      ],
+      "separation_px": 2.288818359375e-05,
+      "expected_relation": "same",
+      "passed": true
+    },
+    {
+      "point": "facade_bottom_right",
+      "set": "facade_four",
+      "B_minus_A_px": [
+        0.0,
+        2.288818359375e-05
+      ],
+      "B_minus_A_exact_rational_px": [
+        "0",
+        "0"
+      ],
+      "separation_px": 2.288818359375e-05,
+      "expected_relation": "same",
+      "passed": true
+    },
+    {
+      "point": "facade_top_right",
+      "set": "facade_four",
+      "B_minus_A_px": [
+        0.0,
+        3.0517578125e-05
+      ],
+      "B_minus_A_exact_rational_px": [
+        "0",
+        "0"
+      ],
+      "separation_px": 3.0517578125e-05,
+      "expected_relation": "same",
+      "passed": true
+    },
+    {
+      "point": "facade_top_left",
+      "set": "facade_four",
+      "B_minus_A_px": [
+        0.0,
+        3.0517578125e-05
+      ],
+      "B_minus_A_exact_rational_px": [
+        "0",
+        "0"
+      ],
+      "separation_px": 3.0517578125e-05,
+      "expected_relation": "same",
+      "passed": true
+    },
+    {
+      "point": "same_plane_heldout_centre",
+      "set": "same_plane_heldout",
+      "B_minus_A_px": [
+        0.0,
+        1.52587890625e-05
+      ],
+      "B_minus_A_exact_rational_px": [
+        "0",
+        "0"
+      ],
+      "separation_px": 1.52587890625e-05,
+      "expected_relation": "same",
+      "passed": true
+    },
+    {
+      "point": "same_plane_heldout_lower_right",
+      "set": "same_plane_heldout",
+      "B_minus_A_px": [
+        0.0,
+        1.52587890625e-05
+      ],
+      "B_minus_A_exact_rational_px": [
+        "0",
+        "0"
+      ],
+      "separation_px": 1.52587890625e-05,
+      "expected_relation": "same",
+      "passed": true
+    },
+    {
+      "point": "ground_offset_3m",
+      "set": "off_plane_heldout",
+      "B_minus_A_px": [
+        -21.5384521484375,
+        28.71796417236328
+      ],
+      "B_minus_A_exact_rational_px": [
+        "-280/13",
+        "1120/39"
+      ],
+      "separation_px": 35.89744262695705,
+      "expected_relation": "different",
+      "passed": true
+    },
+    {
+      "point": "ground_offset_5m",
+      "set": "off_plane_heldout",
+      "B_minus_A_px": [
+        16.59259033203125,
+        33.18519592285156
+      ],
+      "B_minus_A_exact_rational_px": [
+        "448/27",
+        "896/27"
+      ],
+      "separation_px": 37.10217355310415,
+      "expected_relation": "different",
+      "passed": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "actual_Blender_vs_independent_rational_pinhole",
+      "passed": true,
+      "max_absolute_component_error_px": 5.764431423926908e-05,
+      "predeclared_tolerance_px": 0.001
+    },
+    {
+      "name": "camera_axis_depth_vs_independent_depth",
+      "passed": true,
+      "max_absolute_error_m": 0.0
+    },
+    {
+      "name": "synthetic_points_in_front_and_inside_frame",
+      "passed": true
+    },
+    {
+      "name": "all_six_facade_labels_agree_two_ground_controls_diverge",
+      "passed": true
+    }
+  ],
+  "all_declared_checks_passed": true,
+  "claim_limits": {
+    "intrinsics_status": "focal length deliberately unknown between the two hypotheses",
+    "point_provenance": "Own synthetic coordinates fixed before execution; no real survey or image measurements.",
+    "same_plane_holdout_meaning": "Labels excluded from the four facade corners; no fitting is performed on either set.",
+    "off_plane_holdout_meaning": "Coordinates never used to choose or fit the cameras; illustrative independently declared controls.",
+    "occlusion": "NOT_TESTED; no opaque facade mesh or ray test; real visibility would need separate evidence.",
+    "real_plate_solve": "NOT_RUN",
+    "homography_fit": "NOT_RUN",
+    "render": "NOT_RUN",
+    "general_calibrated_pnp_claim": false
+  }
+}

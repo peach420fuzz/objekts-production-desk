@@ -1,0 +1,24 @@
+{
+  "recorded_before_execution_utc": "2026-11-10T01:29:33.925756+00:00",
+  "command": [
+    "/usr/bin/blender",
+    "--background",
+    "--factory-startup",
+    "--python-exit-code",
+    "1",
+    "--python",
+    "/workspace/scratch/1ff91a3a20c2/planar_depth_blender_work/planar_depth_control.py"
+  ],
+  "sha256": {
+    "/workspace/scratch/1ff91a3a20c2/planar_depth_blender_work/CONTRACT.json": "04ed5b28f42c17073be299192ce9eec91539fcd29547c1678bc7aee714eaf363",
+    "/workspace/scratch/1ff91a3a20c2/planar_depth_blender_work/planar_depth_control.py": "fe2da173f6e1faa866797af0e621d289c642903d13c7b5823c401541946dbe2a",
+    "/usr/share/blender/scripts/modules/bpy_extras/object_utils.py": "4c4918a27584ab972e82e7d7456b089b54a33d1a73e594f7c9dc68175f2a8ccb"
+  },
+  "predeclared_checks": {
+    "absolute_pixel_tolerance": 0.001,
+    "absolute_camera_depth_tolerance_m": 1e-05,
+    "minimum_off_plane_hypothesis_separation_px": 30,
+    "facade_expected_equal_exact_rational": true,
+    "all_points_expected_in_front_and_in_frame": true
+  }
+}
