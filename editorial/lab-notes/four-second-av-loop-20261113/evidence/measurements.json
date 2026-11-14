@@ -1,0 +1,541 @@
+{
+  "scope": "New original4s/48kHz non-AAC-frame-aligned audio delivery case, video stream copied unchanged",
+  "created_at_utc": "2026-11-13T17:08:16Z",
+  "source_pcm": {
+    "decoded_samples_mono": 192000,
+    "decoded_bytes": 384000,
+    "sha256_pcm_bytes": "71a03c8397e7611cac7bbd581ebecf720483c7a36ba95a3802b1d24c1d516e0a",
+    "decoded_duration_samples_over_48000": "4",
+    "decoded_duration_seconds": 4.0,
+    "first12_samples": [
+      0,
+      158,
+      316,
+      473,
+      630,
+      786,
+      941,
+      1095,
+      1248,
+      1399,
+      1549,
+      1697
+    ],
+    "last12_samples": [
+      -1842,
+      -1697,
+      -1549,
+      -1399,
+      -1248,
+      -1095,
+      -941,
+      -786,
+      -630,
+      -473,
+      -316,
+      -158
+    ],
+    "full_decoded_loop_boundary_delta_pcm16": 158,
+    "ordinary_adjacent_delta_min": 0,
+    "ordinary_adjacent_delta_median": 48,
+    "ordinary_adjacent_delta_max": 158,
+    "intended4s_window_samples": 192000,
+    "intended4s_window_boundary_delta_pcm16": 158,
+    "extra_samples_after_intended4s": 0,
+    "extra_tail_peak_pcm16": 0,
+    "extra_tail_rms_pcm16": 0,
+    "interpretation": "Sample counts/deltas only; no listening, playback synchronization or perceptual-seamless claim."
+  },
+  "source_samples": 192000,
+  "sample_rate": 48000,
+  "samples_mod1024": 512,
+  "exports": {
+    "AAC_MP4": {
+      "file": "ORIGINAL_LOOP_WITH_AAC.mp4",
+      "bytes": 549855,
+      "sha256": "6b8de24533e1be58e146b922387b660bce3471fba0322d039e95fbdf1a02452e",
+      "container_duration_s": "4.000000",
+      "audio_stream": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 1,
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 192000,
+        "duration": "4.000000",
+        "nb_frames": "189"
+      },
+      "audio_packet_count": 189,
+      "first3_audio_packets": [
+        {
+          "codec_type": "audio",
+          "stream_index": 1,
+          "pts": -1024,
+          "pts_time": "-0.021333",
+          "dts": -1024,
+          "dts_time": "-0.021333",
+          "duration": 1024,
+          "duration_time": "0.021333",
+          "size": "492",
+          "pos": "3399",
+          "flags": "KD_",
+          "data_hash": "SHA256:5e1231c74aa651eaf3b4d7c46bd4689ed6d120f5276fdc7cbc29431ec87c91a2",
+          "side_data_list": [
+            {
+              "side_data_type": "Skip Samples",
+              "skip_samples": 1024,
+              "discard_padding": 0,
+              "skip_reason": 0,
+              "discard_reason": 0
+            }
+          ]
+        },
+        {
+          "codec_type": "audio",
+          "stream_index": 1,
+          "pts": 0,
+          "pts_time": "0.000000",
+          "dts": 0,
+          "dts_time": "0.000000",
+          "duration": 1024,
+          "duration_time": "0.021333",
+          "size": "267",
+          "pos": "13632",
+          "flags": "K__",
+          "data_hash": "SHA256:ca3682dc0ef5781018ed577be4e2608678a721d039ed7f0cca7ae4420837cb50"
+        },
+        {
+          "codec_type": "audio",
+          "stream_index": 1,
+          "pts": 1024,
+          "pts_time": "0.021333",
+          "dts": 1024,
+          "dts_time": "0.021333",
+          "duration": 1024,
+          "duration_time": "0.021333",
+          "size": "443",
+          "pos": "13899",
+          "flags": "K__",
+          "data_hash": "SHA256:018f6813f4b527adb2c7dbe847c4eb4868159085b9b94071a7fbd1a93fc567ae"
+        }
+      ],
+      "last3_audio_packets": [
+        {
+          "codec_type": "audio",
+          "stream_index": 1,
+          "pts": 189440,
+          "pts_time": "3.946667",
+          "dts": 189440,
+          "dts_time": "3.946667",
+          "duration": 1024,
+          "duration_time": "0.021333",
+          "size": "328",
+          "pos": "543867",
+          "flags": "K__",
+          "data_hash": "SHA256:dd9be373b6926b4cbef6937e4d4210ae6b3caf51dac28c576b31e6c72b8cf069"
+        },
+        {
+          "codec_type": "audio",
+          "stream_index": 1,
+          "pts": 190464,
+          "pts_time": "3.968000",
+          "dts": 190464,
+          "dts_time": "3.968000",
+          "duration": 1024,
+          "duration_time": "0.021333",
+          "size": "311",
+          "pos": "549260",
+          "flags": "K__",
+          "data_hash": "SHA256:090952179224704feef503f218a335f68fbba115bfb4d76baf51292f05998aef"
+        },
+        {
+          "codec_type": "audio",
+          "stream_index": 1,
+          "pts": 191488,
+          "pts_time": "3.989333",
+          "dts": 191488,
+          "dts_time": "3.989333",
+          "duration": 512,
+          "duration_time": "0.010667",
+          "size": "284",
+          "pos": "549571",
+          "flags": "K__",
+          "data_hash": "SHA256:4f8b491546693372b27990f52f74197a6c9cbc688de99794bc7721b35ae26f72",
+          "side_data_list": [
+            {
+              "side_data_type": "Skip Samples",
+              "skip_samples": 0,
+              "discard_padding": 512,
+              "skip_reason": 0,
+              "discard_reason": 0
+            }
+          ]
+        }
+      ],
+      "audio_side_data": [
+        {
+          "packet_index": 0,
+          "pts": -1024,
+          "side_data_list": [
+            {
+              "side_data_type": "Skip Samples",
+              "skip_samples": 1024,
+              "discard_padding": 0,
+              "skip_reason": 0,
+              "discard_reason": 0
+            }
+          ]
+        },
+        {
+          "packet_index": 188,
+          "pts": 191488,
+          "side_data_list": [
+            {
+              "side_data_type": "Skip Samples",
+              "skip_samples": 0,
+              "discard_padding": 512,
+              "skip_reason": 0,
+              "discard_reason": 0
+            }
+          ]
+        }
+      ],
+      "audio_frames": {
+        "count": 188,
+        "sum_nb_samples": 192000,
+        "first3": [
+          {
+            "pts": 0,
+            "best_effort_timestamp": 0,
+            "duration": 1024,
+            "nb_samples": 1024
+          },
+          {
+            "pts": 1024,
+            "best_effort_timestamp": 1024,
+            "duration": 1024,
+            "nb_samples": 1024
+          },
+          {
+            "pts": 2048,
+            "best_effort_timestamp": 2048,
+            "duration": 1024,
+            "nb_samples": 1024
+          }
+        ],
+        "last3": [
+          {
+            "pts": 189440,
+            "best_effort_timestamp": 189440,
+            "duration": 1024,
+            "nb_samples": 1024
+          },
+          {
+            "pts": 190464,
+            "best_effort_timestamp": 190464,
+            "duration": 1024,
+            "nb_samples": 1024
+          },
+          {
+            "pts": 191488,
+            "best_effort_timestamp": 191488,
+            "duration": 512,
+            "nb_samples": 512
+          }
+        ],
+        "nb_samples_values": [
+          512,
+          1024
+        ],
+        "packet_coverage_end_seconds_exact": "4",
+        "decoded_frame_coverage_end_seconds_exact": "4"
+      },
+      "actual_default_audio_decode": {
+        "decoded_samples_mono": 192000,
+        "decoded_bytes": 384000,
+        "sha256_pcm_bytes": "91e6a85bc4c0bb728dd97e54e46d9c746833762a1f3b6cf3b0c45a872c69b299",
+        "decoded_duration_samples_over_48000": "4",
+        "decoded_duration_seconds": 4.0,
+        "first12_samples": [
+          31,
+          163,
+          331,
+          478,
+          631,
+          786,
+          933,
+          1087,
+          1235,
+          1378,
+          1529,
+          1671
+        ],
+        "last12_samples": [
+          -1837,
+          -1691,
+          -1544,
+          -1395,
+          -1249,
+          -1095,
+          -945,
+          -785,
+          -637,
+          -477,
+          -325,
+          -153
+        ],
+        "full_decoded_loop_boundary_delta_pcm16": 184,
+        "ordinary_adjacent_delta_min": 0,
+        "ordinary_adjacent_delta_median": 48,
+        "ordinary_adjacent_delta_max": 172,
+        "intended4s_window_samples": 192000,
+        "intended4s_window_boundary_delta_pcm16": 184,
+        "extra_samples_after_intended4s": 0,
+        "extra_tail_peak_pcm16": 0,
+        "extra_tail_rms_pcm16": 0,
+        "interpretation": "Sample counts/deltas only; no listening, playback synchronization or perceptual-seamless claim.",
+        "equals_source_pcm_bytes": false,
+        "common_prefix_samples": 192000,
+        "common_prefix_error_rms_pcm16": 21.97047900972272
+      },
+      "video": {
+        "decoded_frames": 96,
+        "decoded_RGB_hashes_equal_existing_video": true,
+        "packet_payload_hashes_and_sizes_equal_source": true,
+        "packet_presentation_times_and_durations_equal_source": true,
+        "codec_name": "h264",
+        "time_base": "1/12288",
+        "duration": "4.000000"
+      }
+    },
+    "PCM_MOV": {
+      "file": "ORIGINAL_LOOP_WITH_PCM.mov",
+      "bytes": 870411,
+      "sha256": "f7d36b259501cf500c7ba150b6225e0f6c0e3490072eee0df0b0bbacb1a9fe62",
+      "container_duration_s": "4.000000",
+      "audio_stream": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 1,
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 192000,
+        "duration": "4.000000",
+        "nb_frames": "192000"
+      },
+      "audio_packet_count": 188,
+      "first3_audio_packets": [
+        {
+          "codec_type": "audio",
+          "stream_index": 1,
+          "pts": 0,
+          "pts_time": "0.000000",
+          "dts": 0,
+          "dts_time": "0.000000",
+          "duration": 1024,
+          "duration_time": "0.021333",
+          "size": "2048",
+          "pos": "11847",
+          "flags": "K__",
+          "data_hash": "SHA256:e60b8a3b590c0cbc72a40dbc75a87d76924c3eb3beec6526d7e4524448c87ea6"
+        },
+        {
+          "codec_type": "audio",
+          "stream_index": 1,
+          "pts": 1024,
+          "pts_time": "0.021333",
+          "dts": 1024,
+          "dts_time": "0.021333",
+          "duration": 1024,
+          "duration_time": "0.021333",
+          "size": "2048",
+          "pos": "13895",
+          "flags": "K__",
+          "data_hash": "SHA256:a310705349d8725e382b0535e872cdd1087d2949264cb710dc8abbdb530bcc7b"
+        },
+        {
+          "codec_type": "audio",
+          "stream_index": 1,
+          "pts": 2048,
+          "pts_time": "0.042667",
+          "dts": 2048,
+          "dts_time": "0.042667",
+          "duration": 1024,
+          "duration_time": "0.021333",
+          "size": "2048",
+          "pos": "15943",
+          "flags": "K__",
+          "data_hash": "SHA256:6f15eefb9b9f925af7046c19660adfbdbebc9323e76c5f2fbb32da4a29e12a7b"
+        }
+      ],
+      "last3_audio_packets": [
+        {
+          "codec_type": "audio",
+          "stream_index": 1,
+          "pts": 189440,
+          "pts_time": "3.946667",
+          "dts": 189440,
+          "dts_time": "3.946667",
+          "duration": 1024,
+          "duration_time": "0.021333",
+          "size": "2048",
+          "pos": "860226",
+          "flags": "K__",
+          "data_hash": "SHA256:cb98bfc7ea207f670e6d8398369cedbce4e715aadaa5cd8475b12c20caa34a08"
+        },
+        {
+          "codec_type": "audio",
+          "stream_index": 1,
+          "pts": 190464,
+          "pts_time": "3.968000",
+          "dts": 190464,
+          "dts_time": "3.968000",
+          "duration": 1024,
+          "duration_time": "0.021333",
+          "size": "2048",
+          "pos": "862274",
+          "flags": "K__",
+          "data_hash": "SHA256:fbea5a1a091ecfea1959808b409bb78d41a1be61b79e5b2d51a0c3c281c40c7a"
+        },
+        {
+          "codec_type": "audio",
+          "stream_index": 1,
+          "pts": 191488,
+          "pts_time": "3.989333",
+          "dts": 191488,
+          "dts_time": "3.989333",
+          "duration": 512,
+          "duration_time": "0.010667",
+          "size": "1024",
+          "pos": "864322",
+          "flags": "K__",
+          "data_hash": "SHA256:c2c3e95b44c9d43ac034db850d12c62bd2c7eb2db85f44d801124bbf6fc4aa2e"
+        }
+      ],
+      "audio_side_data": [],
+      "audio_frames": {
+        "count": 188,
+        "sum_nb_samples": 192000,
+        "first3": [
+          {
+            "pts": 0,
+            "best_effort_timestamp": 0,
+            "duration": 1024,
+            "nb_samples": 1024
+          },
+          {
+            "pts": 1024,
+            "best_effort_timestamp": 1024,
+            "duration": 1024,
+            "nb_samples": 1024
+          },
+          {
+            "pts": 2048,
+            "best_effort_timestamp": 2048,
+            "duration": 1024,
+            "nb_samples": 1024
+          }
+        ],
+        "last3": [
+          {
+            "pts": 189440,
+            "best_effort_timestamp": 189440,
+            "duration": 1024,
+            "nb_samples": 1024
+          },
+          {
+            "pts": 190464,
+            "best_effort_timestamp": 190464,
+            "duration": 1024,
+            "nb_samples": 1024
+          },
+          {
+            "pts": 191488,
+            "best_effort_timestamp": 191488,
+            "duration": 512,
+            "nb_samples": 512
+          }
+        ],
+        "nb_samples_values": [
+          512,
+          1024
+        ],
+        "packet_coverage_end_seconds_exact": "4",
+        "decoded_frame_coverage_end_seconds_exact": "4"
+      },
+      "actual_default_audio_decode": {
+        "decoded_samples_mono": 192000,
+        "decoded_bytes": 384000,
+        "sha256_pcm_bytes": "71a03c8397e7611cac7bbd581ebecf720483c7a36ba95a3802b1d24c1d516e0a",
+        "decoded_duration_samples_over_48000": "4",
+        "decoded_duration_seconds": 4.0,
+        "first12_samples": [
+          0,
+          158,
+          316,
+          473,
+          630,
+          786,
+          941,
+          1095,
+          1248,
+          1399,
+          1549,
+          1697
+        ],
+        "last12_samples": [
+          -1842,
+          -1697,
+          -1549,
+          -1399,
+          -1248,
+          -1095,
+          -941,
+          -786,
+          -630,
+          -473,
+          -316,
+          -158
+        ],
+        "full_decoded_loop_boundary_delta_pcm16": 158,
+        "ordinary_adjacent_delta_min": 0,
+        "ordinary_adjacent_delta_median": 48,
+        "ordinary_adjacent_delta_max": 158,
+        "intended4s_window_samples": 192000,
+        "intended4s_window_boundary_delta_pcm16": 158,
+        "extra_samples_after_intended4s": 0,
+        "extra_tail_peak_pcm16": 0,
+        "extra_tail_rms_pcm16": 0,
+        "interpretation": "Sample counts/deltas only; no listening, playback synchronization or perceptual-seamless claim.",
+        "equals_source_pcm_bytes": true,
+        "common_prefix_samples": 192000,
+        "common_prefix_error_rms_pcm16": 0.0
+      },
+      "video": {
+        "decoded_frames": 96,
+        "decoded_RGB_hashes_equal_existing_video": true,
+        "packet_payload_hashes_and_sizes_equal_source": true,
+        "packet_presentation_times_and_durations_equal_source": true,
+        "codec_name": "h264",
+        "time_base": "1/12288",
+        "duration": "4.000000"
+      }
+    }
+  },
+  "boundaries": {
+    "scene_rerender": false,
+    "speech_or_external_music": false,
+    "audio_listened": false,
+    "user_speakers_used": false,
+    "real_playback_sync_test": false,
+    "perceptual_seamless": false,
+    "zero_drift_claim": false,
+    "external_writes": 0,
+    "paid_calls": 0,
+    "new_dependencies": 0
+  },
+  "interpretation": "Compare raw decoded exports and declared timeline separately. Decoder tail samples are not proof that every player emits the same audible padding.",
+  "record_status": "HISTORICAL_LOCAL_SYNTHETIC_MEASUREMENTS_NOT_A_NEW_PORTABLE_HARNESS_RUN"
+}
