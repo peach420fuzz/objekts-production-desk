@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-10",
+  "source_base": "8ec9a02f214409f13a6cca71217986bf5c0f7a74",
+  "original_projection_blob": "7be74d64dd284a32341db2137de8f7d94c96d2f6",
+  "runtime": "v24.22.1",
+  "review": "A second session executor inspected the diff and reran the complete new regression script.",
+  "counts": {
+    "original_manifest_checks": 18,
+    "new_projection_checks": 9,
+    "new_reflection_checks": 3
+  },
+  "original_negative_control": {
+    "status": "FAILED_AS_EXPECTED",
+    "case": "quarter-turn point on +Y optical axis",
+    "actual": null,
+    "expected": 0
+  },
+  "corrected_result": "PASS",
+  "off_axis_case": {
+    "point": [
+      10,
+      5
+    ],
+    "camera": [
+      0,
+      0
+    ],
+    "yaw_radians": "pi/4",
+    "focal_scale_px": 1000,
+    "old_px": -499.9999999999999,
+    "corrected_px": -333.33333333333326,
+    "analytic_px": "-1000/3"
+  },
+  "reflection_case": {
+    "pairwise_lengths_preserved": true,
+    "signed_twice_area_reference": -98,
+    "signed_twice_area_reflected": 98,
+    "labeled_oriented_frame_comparator": "REJECT/world-metric-change"
+  },
+  "scope": "Synthetic two-dimensional ground-plane coordinates and declared manifests only; no real camera solve, image landmarks, 3D occlusion or generative-model result.",
+  "files": [
+    {
+      "path": "ops/role36/agent_native/fixtures/location_topology_style_delta_v1.js",
+      "sha256": "8a93d6d0d286a0460aa46acd40bcaeae60e5cd757278a556eae6eb05870f3c02",
+      "git_blob_sha": "7617add3f2c498ed24d17281d74917764cb7bd2f"
+    },
+    {
+      "path": "ops/role36/agent_native/fixtures/location_projection_regression_v1.js",
+      "sha256": "b7bfef08b7c9bdbe7090c4641704aa917a93eb1a24de4dc34e9dab98164b62ae",
+      "git_blob_sha": "5cab40c8e7a51578134a34db23b6195bf9d25f7c"
+    },
+    {
+      "path": "ops/role36/agent_native/articles/location_topology_before_atmosphere_2026-10-28.md",
+      "sha256": "269553ad0ae350efa3526b9cb0051574df1645adef010358070a657f3f5164d5",
+      "git_blob_sha": "fa3585c4ba9b6d8d032eadf794f1437203d5e688"
+    }
+  ]
+}

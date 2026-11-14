@@ -18,7 +18,7 @@ function checkGraph(g) {
  return rule("PASS","valid-graph");
 }
 function project(n,c){
- const dx=n.x-c.x,dy=n.y-c.y,depth=dx*Math.cos(c.yaw)+dy*Math.sin(c.y);
+ const dx=n.x-c.x,dy=n.y-c.y,depth=dx*Math.cos(c.yaw)+dy*Math.sin(c.yaw);
  if(depth<=0.001)return null;
  return c.focalPx*(-dx*Math.sin(c.yaw)+dy*Math.cos(c.yaw))/depth;
 }
