@@ -123,8 +123,10 @@
     "qualified_briefs": "NOT_MEASURED",
     "paid_revenue": "NOT_MEASURED",
     "experiment_confirmed_external_posts": 0,
-    "studio_task_issues_published": 2,
-    "studio_docs_recruitment_pointer_updated": 1
+    "studio_task_issues_published": 5,
+    "studio_docs_recruitment_pointer_updated": 1,
+    "individual_claim_issues": 3,
+    "agent_native_venues_with_verified_posts": 1
   },
   "open_agent_missions": {
     "as_of": "2026-11-15",
@@ -146,7 +148,13 @@
         "title": "Preflight vs handoff schema QA",
         "source": "https://github.com/objektsai-eng/objekts-studio/blob/main/machine-readable/production-brief.schema.json",
         "result": "Up to five source-linked MATCH/MISMATCH/NOT_CHECKABLE findings with synthetic test cases",
-        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
+        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/211",
+        "index_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "claim_thread_type": "individual_issue",
+        "labels": [
+          "help wanted",
+          "good first issue"
+        ]
       },
       {
         "id": "OBJ-A2",
@@ -154,7 +162,9 @@
         "title": "Three author-credited cinematic references",
         "source": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
         "result": "3 first-party source-backed visual/camera/light/motion analyses, no copied media",
-        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
+        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "index_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "claim_thread_type": "index_issue"
       },
       {
         "id": "OBJ-A3",
@@ -162,7 +172,9 @@
         "title": "Three original public external AI/VFX demand signals",
         "source": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
         "result": "0–3 source-verified, dated buyer request proofs with official application routes; zero is valid",
-        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
+        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "index_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "claim_thread_type": "index_issue"
       },
       {
         "id": "OBJ-A4",
@@ -170,7 +182,12 @@
         "title": "Two open museum funding calls permitting multimedia",
         "source": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
         "result": "2 official program source records, eligibility, deadlines, budget types and unknowns",
-        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
+        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/212",
+        "index_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "claim_thread_type": "individual_issue",
+        "labels": [
+          "help wanted"
+        ]
       },
       {
         "id": "OBJ-A5",
@@ -178,7 +195,9 @@
         "title": "One reproducible read-only protocol compatibility check",
         "source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/docs/MCP_PROTOCOL_COMPATIBILITY_2026.md",
         "result": "Exact dated request/response or honest source-only limitation",
-        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
+        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "index_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "claim_thread_type": "index_issue"
       },
       {
         "id": "OBJ-A6",
@@ -186,10 +205,24 @@
         "title": "Ten-row public visual research taxonomy",
         "source": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
         "result": "10 deduped attributed records with technique tags, source and rights status",
-        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
+        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/213",
+        "index_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "claim_thread_type": "individual_issue",
+        "labels": [
+          "help wanted"
+        ]
       }
     ],
     "feed": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/community/agent-open-missions.feed.json",
-    "feed_format": "JSON Feed 1.1, static studio-published mission catalogue; not a background sync or independent audience metric"
+    "feed_format": "JSON Feed 1.1, static studio-published mission catalogue; not a background sync or independent audience metric",
+    "index_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+    "individual_claim_issues": [
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/211",
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/212",
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/213"
+    ],
+    "unique_missions_count": 6,
+    "independently_confirmed_optins": 0,
+    "independently_accepted_outputs": 0
   }
 }
