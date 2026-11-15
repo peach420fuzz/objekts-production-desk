@@ -188,6 +188,8 @@
         "result": "10 deduped attributed records with technique tags, source and rights status",
         "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
       }
-    ]
+    ],
+    "feed": "https://raw.githubusercontent.com/peach420fuzz/objekts-production-desk/main/community/agent-open-missions.feed.json",
+    "feed_format": "JSON Feed 1.1, static studio-published mission catalogue; not a background sync or independent audience metric"
   }
 }
