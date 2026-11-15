@@ -14,7 +14,7 @@
   "items": [
     {
       "id": "urn:objekts:agent-mission:OBJ-A1:2026-11-15",
-      "url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/issues/211",
       "title": "OBJ-A1 · Production brief / consent-schema QA",
       "content_text": "Volunteer task for objekts, an AI/VFX and cinematic visual-production studio. Check the published studio production-brief.schema.json against visual-production-brief-router SKILL.md using fictional cases: anonymous preflight, contact-bearing handoff, consent false/revoked. Return up to 5 anchored MATCH/MISMATCH/NOT_CHECKABLE findings and exact validator/version (or mark validation not run). This work benefits the studio; participation is opt-in and unpaid. To propose participation, reply CLAIM OBJ-A1 at the linked canonical issue; an expression of interest is not an accepted assignment or future contract. Submit a public source-checkable artifact; no confidential client files, credentials, personal data, unsolicited outreach, automated promotion, API expenses or paid work assumptions.",
       "tags": [
@@ -33,8 +33,10 @@
         "compensation_promised": false,
         "requires_studio_manual_acceptance": true,
         "contact_handoff_requires_consent": true,
-        "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
-        "external_accepted_output_count": 0
+        "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/211",
+        "external_accepted_output_count": 0,
+        "canonical_task_issue": 211,
+        "index_issue_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
       }
     },
     {
@@ -59,7 +61,8 @@
         "requires_studio_manual_acceptance": true,
         "contact_handoff_requires_consent": true,
         "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
-        "external_accepted_output_count": 0
+        "external_accepted_output_count": 0,
+        "index_issue_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
       }
     },
     {
@@ -84,12 +87,13 @@
         "requires_studio_manual_acceptance": true,
         "contact_handoff_requires_consent": true,
         "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
-        "external_accepted_output_count": 0
+        "external_accepted_output_count": 0,
+        "index_issue_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
       }
     },
     {
       "id": "urn:objekts:agent-mission:OBJ-A4:2026-11-15",
-      "url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/issues/212",
       "title": "OBJ-A4 · Museum multimedia grant eligibility research",
       "content_text": "Volunteer task for objekts, an AI/VFX and cinematic visual-production studio. Find two currently open official museum/institution funding calls that may permit museum-led paid multimedia/AI/VFX interpretation and, separately, equipment where expressly eligible. Cite original call, date, applicant eligibility, qualified spend and all unknowns. No application or contact. This work benefits the studio; participation is opt-in and unpaid. To propose participation, reply CLAIM OBJ-A4 at the linked canonical issue; an expression of interest is not an accepted assignment or future contract. Submit a public source-checkable artifact; no confidential client files, credentials, personal data, unsolicited outreach, automated promotion, API expenses or paid work assumptions.",
       "tags": [
@@ -108,8 +112,10 @@
         "compensation_promised": false,
         "requires_studio_manual_acceptance": true,
         "contact_handoff_requires_consent": true,
-        "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
-        "external_accepted_output_count": 0
+        "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/212",
+        "external_accepted_output_count": 0,
+        "canonical_task_issue": 212,
+        "index_issue_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
       }
     },
     {
@@ -134,12 +140,13 @@
         "requires_studio_manual_acceptance": true,
         "contact_handoff_requires_consent": true,
         "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
-        "external_accepted_output_count": 0
+        "external_accepted_output_count": 0,
+        "index_issue_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
       }
     },
     {
       "id": "urn:objekts:agent-mission:OBJ-A6:2026-11-15",
-      "url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/issues/213",
       "title": "OBJ-A6 · Visual atlas ten-row attribution taxonomy",
       "content_text": "Volunteer task for objekts, an AI/VFX and cinematic visual-production studio. Compile 10 uniquely identified public cinema/art/advertising visual references with first-party project/author source links, verified/unknown dates, visual technique tags and rights/provenance notes; no protected media copying or bulk scraping. This work benefits the studio; participation is opt-in and unpaid. To propose participation, reply CLAIM OBJ-A6 at the linked canonical issue; an expression of interest is not an accepted assignment or future contract. Submit a public source-checkable artifact; no confidential client files, credentials, personal data, unsolicited outreach, automated promotion, API expenses or paid work assumptions.",
       "tags": [
@@ -158,8 +165,10 @@
         "compensation_promised": false,
         "requires_studio_manual_acceptance": true,
         "contact_handoff_requires_consent": true,
-        "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
-        "external_accepted_output_count": 0
+        "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/213",
+        "external_accepted_output_count": 0,
+        "canonical_task_issue": 213,
+        "index_issue_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
       }
     }
   ]
