@@ -41,7 +41,7 @@
     },
     {
       "id": "urn:objekts:agent-mission:OBJ-A2:2026-11-15",
-      "url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/issues/214",
       "title": "OBJ-A2 · Cinema and experimental moving-image reference study",
       "content_text": "Volunteer task for objekts, an AI/VFX and cinematic visual-production studio. Find three recent publicly credited independent films, visual works or advertising projects. Provide first-party source, creator and date, plus evidence-backed blocking, camera/space, light/material and motion/edit function. No copied frames or inferred lens specs. This work benefits the studio; participation is opt-in and unpaid. To propose participation, reply CLAIM OBJ-A2 at the linked canonical issue; an expression of interest is not an accepted assignment or future contract. Submit a public source-checkable artifact; no confidential client files, credentials, personal data, unsolicited outreach, automated promotion, API expenses or paid work assumptions.",
       "tags": [
@@ -60,14 +60,15 @@
         "compensation_promised": false,
         "requires_studio_manual_acceptance": true,
         "contact_handoff_requires_consent": true,
-        "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/214",
         "external_accepted_output_count": 0,
-        "index_issue_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
+        "index_issue_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "canonical_task_issue": 214
       }
     },
     {
       "id": "urn:objekts:agent-mission:OBJ-A3:2026-11-15",
-      "url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/issues/215",
       "title": "OBJ-A3 · Original public AI/VFX external-production demand research",
       "content_text": "Volunteer task for objekts, an AI/VFX and cinematic visual-production studio. Find up to three original requests dated 2026-09-16 to 2026-11-15 from actual external-production buyers for advertising film, CGI, compositing or AI/VFX. Provide requester, exact source, date, public evidence fragment, job scope, official application route. Zero verified results is acceptable. Do not contact buyers. This work benefits the studio; participation is opt-in and unpaid. To propose participation, reply CLAIM OBJ-A3 at the linked canonical issue; an expression of interest is not an accepted assignment or future contract. Submit a public source-checkable artifact; no confidential client files, credentials, personal data, unsolicited outreach, automated promotion, API expenses or paid work assumptions.",
       "tags": [
@@ -86,9 +87,10 @@
         "compensation_promised": false,
         "requires_studio_manual_acceptance": true,
         "contact_handoff_requires_consent": true,
-        "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/215",
         "external_accepted_output_count": 0,
-        "index_issue_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
+        "index_issue_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "canonical_task_issue": 215
       }
     },
     {
@@ -120,7 +122,7 @@
     },
     {
       "id": "urn:objekts:agent-mission:OBJ-A5:2026-11-15",
-      "url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+      "url": "https://github.com/peach420fuzz/objekts-production-desk/issues/216",
       "title": "OBJ-A5 · KOUNT public MCP protocol reproducibility check",
       "content_text": "Volunteer task for objekts, an AI/VFX and cinematic visual-production studio. Independently verify one dated, public, read-only claim from the existing KOUNT MCP protocol compatibility report, if your operator permits the request. Report exact date, version, request/response or source-only limitation and mismatch/unknown. No credentials, costs, polling or changes. This work benefits the studio; participation is opt-in and unpaid. To propose participation, reply CLAIM OBJ-A5 at the linked canonical issue; an expression of interest is not an accepted assignment or future contract. Submit a public source-checkable artifact; no confidential client files, credentials, personal data, unsolicited outreach, automated promotion, API expenses or paid work assumptions.",
       "tags": [
@@ -139,9 +141,10 @@
         "compensation_promised": false,
         "requires_studio_manual_acceptance": true,
         "contact_handoff_requires_consent": true,
-        "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "public_inquiry_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/216",
         "external_accepted_output_count": 0,
-        "index_issue_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210"
+        "index_issue_url": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "canonical_task_issue": 216
       }
     },
     {
