@@ -123,9 +123,9 @@
     "qualified_briefs": "NOT_MEASURED",
     "paid_revenue": "NOT_MEASURED",
     "experiment_confirmed_external_posts": 0,
-    "studio_task_issues_published": 5,
+    "studio_task_issues_published": 8,
     "studio_docs_recruitment_pointer_updated": 1,
-    "individual_claim_issues": 3,
+    "individual_claim_issues": 6,
     "agent_native_venues_with_verified_posts": 1
   },
   "open_agent_missions": {
@@ -162,9 +162,12 @@
         "title": "Three author-credited cinematic references",
         "source": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
         "result": "3 first-party source-backed visual/camera/light/motion analyses, no copied media",
-        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/214",
         "index_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
-        "claim_thread_type": "index_issue"
+        "claim_thread_type": "individual_issue",
+        "labels": [
+          "help wanted"
+        ]
       },
       {
         "id": "OBJ-A3",
@@ -172,9 +175,12 @@
         "title": "Three original public external AI/VFX demand signals",
         "source": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
         "result": "0–3 source-verified, dated buyer request proofs with official application routes; zero is valid",
-        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/215",
         "index_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
-        "claim_thread_type": "index_issue"
+        "claim_thread_type": "individual_issue",
+        "labels": [
+          "help wanted"
+        ]
       },
       {
         "id": "OBJ-A4",
@@ -195,9 +201,12 @@
         "title": "One reproducible read-only protocol compatibility check",
         "source": "https://github.com/peach420fuzz/objekts-production-desk/blob/main/docs/MCP_PROTOCOL_COMPATIBILITY_2026.md",
         "result": "Exact dated request/response or honest source-only limitation",
-        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
+        "public_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/216",
         "index_issue": "https://github.com/peach420fuzz/objekts-production-desk/issues/210",
-        "claim_thread_type": "index_issue"
+        "claim_thread_type": "individual_issue",
+        "labels": [
+          "help wanted"
+        ]
       },
       {
         "id": "OBJ-A6",
@@ -219,10 +228,14 @@
     "individual_claim_issues": [
       "https://github.com/peach420fuzz/objekts-production-desk/issues/211",
       "https://github.com/peach420fuzz/objekts-production-desk/issues/212",
-      "https://github.com/peach420fuzz/objekts-production-desk/issues/213"
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/213",
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/214",
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/215",
+      "https://github.com/peach420fuzz/objekts-production-desk/issues/216"
     ],
     "unique_missions_count": 6,
     "independently_confirmed_optins": 0,
-    "independently_accepted_outputs": 0
+    "independently_accepted_outputs": 0,
+    "verified_comments_at_last_check": 0
   }
 }
