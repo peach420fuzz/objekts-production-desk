@@ -1,0 +1,121 @@
+{
+  "kind": "HISTORICAL_MEASUREMENTS_NOT_REEXECUTED_DURING_PACKAGING",
+  "measured_at_utc": [
+    "2026-11-13T16:49:15Z",
+    "2026-11-13T16:51:21Z"
+  ],
+  "scope": "One encoding change motivated by measured seam outlier; same original source frames, no rerender",
+  "geometry": {
+    "width": 640,
+    "height": 360,
+    "fps": "24/1",
+    "frames": 96,
+    "duration_seconds": 4,
+    "audio": "none"
+  },
+  "metric": {
+    "roi_half_open": [
+      0,
+      34,
+      640,
+      327
+    ],
+    "denominator": 562560,
+    "unit": "8-bit RGB code-value mean absolute difference",
+    "ordinary_transition_count": 95,
+    "boundary": [
+      95,
+      0
+    ]
+  },
+  "source_rgb": {
+    "wrap95_to0_mae": 0.21211781854379977,
+    "interior_min": 0.19914675767918089,
+    "interior_median": 0.2217487912400455,
+    "interior_max": 0.2504532849829352,
+    "wrap_over_interior_median": 0.9565680938218954,
+    "wrap_over_interior_max": 0.8469356613080662,
+    "unique_frame_hashes": 96
+  },
+  "gop96_rgb": {
+    "wrap95_to0_mae": 0.3755563850967008,
+    "interior_min": 0.2239814419795222,
+    "interior_median": 0.26365720989761093,
+    "interior_max": 0.30011021046643915,
+    "wrap_over_interior_median": 1.4244115882229997,
+    "unique_frame_hashes": 96
+  },
+  "gop1_rgb": {
+    "wrap95_to0_mae": 0.39571245733788396,
+    "interior_min": 0.3046875,
+    "interior_median": 0.33760310011376565,
+    "interior_max": 0.408169795221843,
+    "wrap_over_interior_median": 1.1721232927201692,
+    "wrap_over_interior_max": 0.9694800104520512,
+    "unique_frame_hashes": 96
+  },
+  "historical_file_bytes": {
+    "gop96": 76461,
+    "gop1": 485507
+  },
+  "inspection": {
+    "recorded_at_utc": "2026-11-13T16:55:01Z",
+    "status": "ACTUAL_SELECTED_DECODED_FRAME_VIEW_COMPLETED",
+    "viewing_method": "functions.view_image; image blocks actually inspected by creative_delivery",
+    "images": [
+      {
+        "path": "qa/decoded_contact.png",
+        "sha256": "fba5b1e0f403c089e23eb977431b7691d28de87f26e61d0e78c466a457ccfb48"
+      },
+      {
+        "path": "qa/seam_95_0_1.png",
+        "sha256": "0418f1f1329c1d090429ddbe189407f4391ea80c1dd4c65942d8810dcba6c324"
+      },
+      {
+        "path": "qa/all_intra_seam_95_0_1.png",
+        "sha256": "b68020f49db97f5e13852169c0d1ce5ce9efcd64adc21aa6586889cd0d4db6d7"
+      }
+    ],
+    "GOP96_unique_frame_indices_viewed": [
+      0,
+      1,
+      2,
+      24,
+      48,
+      72,
+      92,
+      93,
+      94,
+      95
+    ],
+    "GOP1_wrap_indices_viewed": [
+      95,
+      0,
+      1
+    ],
+    "observation": "Soft abstract cloud shapes retain comparable positions and topology across selected95->0->1 views; no gross geometric jump observed in these stills. Captions identify synthetic fixture and no client input.",
+    "motion_playback_viewed": false,
+    "all96frames_visually_viewed": false,
+    "audio_stream_present": false,
+    "blind_perceptual_review": false,
+    "limits": "No universal perceptual-seamless threshold or production/client/photoreal approval. Decoder completeness is separate from frame inspection."
+  },
+  "not_measured": [
+    "Continuous motion/playback and target-player restart",
+    "Blind perceptual review or detection threshold",
+    "Audience/client/production acceptance",
+    "Complete original FFmpeg/libx264 build configuration",
+    "Per-frame decoded GOP1 PTS in saved probe",
+    "Universal codec performance or optimal preset"
+  ],
+  "source_receipt_sha256": {
+    "RESULT.json": "4e5325ffd7a31c1b229c7424ef8eb308e78f280f7560712375b238e045ee1d9f",
+    "ENCODING_COMPARISON.json": "c7e24924eb0a4f9ae883d9b324cf95cacd095d35e9aea664f2d100930730647b",
+    "SOURCE_MANIFEST.json": "b93dd54d3f91d2a6b33d16528ad2e5fc811b49c4136d1ec25046cdccbdab39e8",
+    "INSPECTION.json": "4bce21874816725e810bd4fe53b6adbaa4c2953f404b1f74c7a38ba45e6dbc77",
+    "COMMAND_LOG.json": "cfdb17050b7e441b5e34398d4b5176b3f8fc5890e7a12500dd4f5218030006ef",
+    "ENCODING_COMPARISON_COMMANDS.json": "a4b15ced8155e98d62230256e55509f8cece13fb41884b313a0316090a8d057d",
+    "FFPROBE.json": "aae0923839a87b9cf5c7e04921b348ac7fe1debafafe9cccfa7f061584378785",
+    "ALL_INTRA_FFPROBE.json": "06dde67b0a4f11ba5be47efe61fe31d9da2f5b5ac459112025fd6ddb49d61062"
+  }
+}

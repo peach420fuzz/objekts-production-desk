@@ -1,0 +1,108 @@
+{
+  "kind": "TEXT_ONLY_PUBLICATION_PACKET_FROM_ORIGINAL_SYNTHETIC_20261113",
+  "prepared_at_utc": "2026-11-16T16:57:57.016641+00:00",
+  "not_a_new_media_run": true,
+  "rights_scope": "Original mathematical pixels and text only; no third-party or client media",
+  "historical_sources": [
+    {
+      "file": "render_loop_fixture.py",
+      "bytes": 14607,
+      "sha256": "90fa3bbbef1d69bd3ba7b4f08bbe5d3e6d6839fbe3c277c153e24e692e2e01d0"
+    },
+    {
+      "file": "render_loop_fixture.before_ffmpeg9_decode_fix.py",
+      "bytes": 13550,
+      "sha256": "59227171879e7090a03b294c8d222713e520d18c8c9a4f9b499e977698826b7d"
+    },
+    {
+      "file": "compare_original_loop_encodings.py",
+      "bytes": 4947,
+      "sha256": "0c91678f9c19393feb8b2ada8ec352021f88871f7bf378c5600e48a86cc09052"
+    },
+    {
+      "file": "RESULT.json",
+      "bytes": 10935,
+      "sha256": "4e5325ffd7a31c1b229c7424ef8eb308e78f280f7560712375b238e045ee1d9f"
+    },
+    {
+      "file": "ENCODING_COMPARISON.json",
+      "bytes": 2206,
+      "sha256": "c7e24924eb0a4f9ae883d9b324cf95cacd095d35e9aea664f2d100930730647b"
+    },
+    {
+      "file": "SOURCE_MANIFEST.json",
+      "bytes": 16226,
+      "sha256": "b93dd54d3f91d2a6b33d16528ad2e5fc811b49c4136d1ec25046cdccbdab39e8"
+    },
+    {
+      "file": "INSPECTION.json",
+      "bytes": 1339,
+      "sha256": "4bce21874816725e810bd4fe53b6adbaa4c2953f404b1f74c7a38ba45e6dbc77"
+    },
+    {
+      "file": "COMMAND_LOG.json",
+      "bytes": 3149,
+      "sha256": "cfdb17050b7e441b5e34398d4b5176b3f8fc5890e7a12500dd4f5218030006ef"
+    },
+    {
+      "file": "ENCODING_COMPARISON_COMMANDS.json",
+      "bytes": 3303,
+      "sha256": "a4b15ced8155e98d62230256e55509f8cece13fb41884b313a0316090a8d057d"
+    },
+    {
+      "file": "FFPROBE.json",
+      "bytes": 70384,
+      "sha256": "aae0923839a87b9cf5c7e04921b348ac7fe1debafafe9cccfa7f061584378785"
+    },
+    {
+      "file": "ALL_INTRA_FFPROBE.json",
+      "bytes": 2260,
+      "sha256": "06dde67b0a4f11ba5be47efe61fe31d9da2f5b5ac459112025fd6ddb49d61062"
+    }
+  ],
+  "historical_media_not_included": [
+    {
+      "file": "ORIGINAL_SYNTHETIC_CLOUD_LOOP_4S.mp4",
+      "bytes": 76461,
+      "sha256": "cce7fbd83e15be2796ccb2efe290ba5a0d22911a25b63ae1a8d60f7294e229e5"
+    },
+    {
+      "file": "ORIGINAL_SYNTHETIC_CLOUD_LOOP_4S_ALL_INTRA.mp4",
+      "bytes": 485507,
+      "sha256": "473bc490c6da517d4d7b1c68151d46de52b7b01a40778ab3b00ce4f0ea2d0a06"
+    },
+    {
+      "file": "QA_THREE_CYCLES_12S.mp4",
+      "bytes": 227824,
+      "sha256": "33d6492eb3547385e958ce2234cce3c7f0e959c2cdcf7c203fdf95565f20481d"
+    },
+    {
+      "file": "QA_ALL_INTRA_THREE_CYCLES_12S.mp4",
+      "bytes": 1464981,
+      "sha256": "da5ec7927e87a5d4a5a809432c75633ff25dc002923fc507e65774724027730e"
+    }
+  ],
+  "historical_version_limit": "Complete original FFmpeg/libx264 version/build not retained; container metadata says Lavf63.1.102",
+  "renderer_revision_note": "SOURCE_MANIFEST binds the pre-decode-fix renderer; RESULT binds the corrected decode pipeline. Pixel functions are AST-identical in the portable generator.",
+  "reproduction_scripts": [
+    {
+      "file": "generate_frames.py",
+      "bytes": 6052,
+      "sha256": "17a355e7b6c2087aee570b678844bbf37c070453403475d34bcbe97add7386fe",
+      "media_executed_during_packaging": false
+    },
+    {
+      "file": "measure_decoded.py",
+      "bytes": 3191,
+      "sha256": "55a81b50e6aaf0da1bcf78531f4cca220d0f0f3b5a084b85019029f32f11c1e1",
+      "media_executed_during_packaging": false
+    }
+  ],
+  "scope_limits": [
+    "No playback/perceptual or client/production claim",
+    "No new Field Note number or adopted craft rule",
+    "No claim, external publication or source-canon mutation",
+    "Binary media/QA PNG/raw/PPM excluded"
+  ],
+  "self_hash": "Excluded to avoid recursive hashing"
+}
