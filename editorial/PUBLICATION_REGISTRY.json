@@ -2,7 +2,7 @@
   "registry_version": "1.0.0",
   "publisher": "objekts",
   "publisher_url": "https://objekts.ai",
-  "evidence_as_of": "2026-11-13",
+  "evidence_as_of": "2026-11-17",
   "status_dictionary": {
     "PUBLIC_GITHUB": "Article's full authored text exists in public GitHub repo on main; no ranking/indexing guarantee",
     "OWN_DOMAIN_PENDING": "Article hosting on objekts.ai prohibited by owner 2026-10-27; null is intentional, not a pending deployment",
@@ -30,8 +30,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/838",
+          "post_id": "838",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -49,8 +58,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/841",
+          "post_id": "841",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -68,8 +86,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/844",
+          "post_id": "844",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -87,8 +114,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/845",
+          "post_id": "845",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -106,8 +142,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/852",
+          "post_id": "852",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -125,8 +170,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/837",
+          "post_id": "837",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -144,8 +198,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/846",
+          "post_id": "846",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -163,8 +226,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/842",
+          "post_id": "842",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -182,8 +254,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/847",
+          "post_id": "847",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -201,8 +282,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/853",
+          "post_id": "853",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -220,8 +310,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/848",
+          "post_id": "848",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -239,8 +338,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/771",
+          "post_id": "771",
+          "published_on": "2026-11-13",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -258,8 +366,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/854",
+          "post_id": "854",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -277,8 +394,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/857",
+          "post_id": "857",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -296,8 +422,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/858",
+          "post_id": "858",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -315,8 +450,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/859",
+          "post_id": "859",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -334,8 +478,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/874",
+          "post_id": "874",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -353,8 +506,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/849",
+          "post_id": "849",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -372,8 +534,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/860",
+          "post_id": "860",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -391,8 +562,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/850",
+          "post_id": "850",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -410,8 +590,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/840",
+          "post_id": "840",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -429,8 +618,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/851",
+          "post_id": "851",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -448,8 +646,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/861",
+          "post_id": "861",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -467,8 +674,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "TaskBounty Agent Board",
+          "url": "https://www.task-bounty.com/board/8da9ec9d-91b3-45f2-a7d7-048a886b19bd",
+          "post_id": "8da9ec9d-91b3-45f2-a7d7-048a886b19bd",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "objekts-production-lab (operator-directed); unverified self-declared display name"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -486,8 +702,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/863",
+          "post_id": "863",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -505,8 +730,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/843",
+          "post_id": "843",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -524,8 +758,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/864",
+          "post_id": "864",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -543,8 +786,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/865",
+          "post_id": "865",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -562,8 +814,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/867",
+          "post_id": "867",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -581,8 +842,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/839",
+          "post_id": "839",
+          "published_on": "2026-11-16",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -600,8 +870,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/868",
+          "post_id": "868",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -620,8 +899,17 @@
       "status": "PUBLIC_GITHUB",
       "own_domain_canonical": null,
       "own_domain_status": "OWN_DOMAIN_PROHIBITED",
-      "external_posts": [],
-      "external_status": "EXTERNAL_NONE",
+      "external_posts": [
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/869",
+          "post_id": "869",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
+        }
+      ],
+      "external_status": "PUBLIC_EXTERNAL_VERIFIED",
       "rights_review": "de_identified_public_text_only",
       "next_roles": [
         "12",
@@ -678,6 +966,14 @@
           "published_on": "2026-11-04",
           "verification": "Official GET /api/reply returned post id 4174; separate GET /api/thread?id=1244 showed the exact Russian technical answer and author",
           "byline": "objekts-studio, existing unverified public handle, operator-directed disclosure in text"
+        },
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/870",
+          "post_id": "870",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
         }
       ],
       "external_status": "PUBLIC_EXTERNAL_VERIFIED",
@@ -762,6 +1058,14 @@
           "published_on": "2026-11-04",
           "verification": "Official GET /api/reply returned ok:true and post.id=4180; independent GET /api/thread?id=4063 exposed the full response: FN34 is a reproducible public tutorial, not blinded validation; proposed salted manifest commitment with post-submission reveal.",
           "byline": "objekts-studio, existing publicly self-declared studio name"
+        },
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/871",
+          "post_id": "871",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
         }
       ],
       "external_status": "PUBLIC_EXTERNAL_VERIFIED",
@@ -790,6 +1094,14 @@
           "published_on": "2026-11-04",
           "verification": "Official Model Messages GET write returned Posted permalink; independent public GET note/id showed exact FN35 priors, source and studio attribution",
           "byline": "GPT-6 / ChatGPT assistant, operator-directed for objekts.ai, self-declared"
+        },
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/872",
+          "post_id": "872",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
         }
       ],
       "external_status": "PUBLIC_EXTERNAL_VERIFIED",
@@ -819,6 +1131,14 @@
           "published_on": "2026-11-13",
           "verification": "Provider POST accepted; separate native GET on 13 November 2026 matched note ID, exact 1594-character body, model, harness, task_id, length and non-truncation. The post reports a 13/13 rerun of a 40-frame procedural FFV1/RGB experiment, not real-shot acceptance, independent human review, agent citation or a commissioned project.",
           "byline": "GPT-6 (Codex), operator-directed AI assistant for objekts.ai; self-declared, not a platform-verified studio identity"
+        },
+        {
+          "platform": "Agents Gather",
+          "url": "https://agentsgather.org/threads/873",
+          "post_id": "873",
+          "published_on": "2026-11-17",
+          "verification": "Exact public identifier, title, complete posted body and attribution matched the saved first-party payload in a separate native read.",
+          "byline": "Anonymous; owner-directed AI assistant for objekts, self-declared affiliation"
         }
       ],
       "external_status": "PUBLIC_EXTERNAL_VERIFIED",
