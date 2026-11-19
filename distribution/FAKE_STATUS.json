@@ -1,10 +1,10 @@
 {
   "product": "FAKE by objekts",
   "publisher": "objekts",
-  "updated": "2026-10-05",
+  "updated": "2026-11-14",
   "canonical_mcp": "https://fake.objekts.ai/mcp",
   "chatgpt_mcp_alias": "https://fake.objekts.ai/mcp/chatgpt",
-  "live_backend_version": "0.4.6",
+  "live_backend_version": "0.4.9",
   "surfaces": [
     {
       "surface": "OpenAI ChatGPT Plugin Directory",
@@ -22,9 +22,27 @@
     },
     {
       "surface": "mcp.film",
-      "status": "SUBMITTED",
-      "issue": "https://github.com/c47-inc/mcp-film/issues/85",
-      "category": "avatars-performance"
+      "status": "PUBLIC_VERIFIED",
+      "issue": "https://github.com/c47-inc/mcp-film/issues/171",
+      "category": "story-preproduction",
+      "curator_comment": "https://github.com/c47-inc/mcp-film/issues/171#issuecomment-6717888473",
+      "curator_pull_request": "https://github.com/c47-inc/mcp-film/pull/185",
+      "curator_pull_request_head": "52aa211d387e5eb25b66a6d636df6e586953d8b2",
+      "curator_pull_request_state_at_readback": "closed",
+      "curator_pull_request_merged_at_readback": true,
+      "readback_on": "2026-11-14",
+      "independent_public_listing_verified": true,
+      "public_listing_url": "https://mcp.film/mcps/fake-by-objekts/",
+      "historical_issue": "https://github.com/c47-inc/mcp-film/issues/85",
+      "historical_issue_state": "closed; original endpoint-unreachable rejection",
+      "authoring_and_host_render_loop_tested": false,
+      "editor_requested_improvement": "Clarify consent and likeness handling, retention and deletion for real-face reference photos. Product owner must verify actual implementation before stating new retention, deletion or other privacy commitments.",
+      "source_ref": "https://github.com/c47-inc/mcp-film/blob/52aa211d387e5eb25b66a6d636df6e586953d8b2/data/registry/preproduction.json",
+      "curator_pull_request_merged_at_utc": "2026-11-10T12:22:29Z",
+      "listing_first_added_metadata": "2026-11-07",
+      "issue_state_at_readback": "closed",
+      "identity": "FAKE by objekts",
+      "publication_proof": "Merged provider PR185 plus independent public named card and mcp.film changelog on 2026-11-14"
     },
     {
       "surface": "Official MCP Registry",
@@ -101,5 +119,38 @@
     "gemini_cli": "READY_HTTPURL",
     "vscode_copilot": "READY_PORTABLE_MCP_JSON",
     "generic_mcp": "READY_STREAMABLE_HTTP"
+  },
+  "update_scope": "Scoped role36.1 proposal: only mcp.film publication state and dated FAKE independent runtime evidence. Other surface statuses, QA and host compatibility are historical 2026-10-05/Nov10 observations not refreshed here; this does not change deployed server or privacy policy.",
+  "live_backend_version_evidence": {
+    "evidence_type": "independent_curator_initialize_and_tools_list",
+    "observed_on": "2026-11-07",
+    "readback_on": "2026-11-14",
+    "observer": "mcp.film curator kohterai",
+    "source_ref": "https://github.com/c47-inc/mcp-film/issues/171#issuecomment-6717888473",
+    "pinned_source_ref": "https://github.com/c47-inc/mcp-film/blob/52aa211d387e5eb25b66a6d636df6e586953d8b2/data/registry/preproduction.json",
+    "tool_count": 8,
+    "model_visible_tools": [
+      "open_character_studio",
+      "about_objekts",
+      "read_portrait_request"
+    ],
+    "app_only_tools": [
+      "get_character_project",
+      "update_character_state",
+      "upload_reference_photo",
+      "approve_identity_master",
+      "prepare_portrait_request"
+    ],
+    "legacy_protocols_checked": [
+      "2025-11-25",
+      "2025-06-18",
+      "2025-03-26"
+    ],
+    "protocol_2026_07_28": "tools/list HTTP 400 reported in the curator test",
+    "end_to_end_authoring_tested": false,
+    "image_render_tested": false,
+    "validity_limit": "Independent curator observed 0.4.9 on 2026-11-07; no newer live initialize/tools/list probe on 2026-11-14, so 0.4.9 is last observed, not asserted current runtime.",
+    "previous_historical_value": "0.4.6",
+    "previous_historical_record_updated": "2026-10-05"
   }
 }

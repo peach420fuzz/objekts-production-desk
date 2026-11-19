@@ -63,9 +63,16 @@ FAKE is an objekts R&D product. An approved character can be carried into a broa
 
 - OpenAI ChatGPT Plugin Directory: **1.0.0 in review / configured**.
 - AllMCPs: https://allmcps.com/mcp/fake-by-objekts
-- mcp.film submission: https://github.com/c47-inc/mcp-film/issues/85
+- mcp.film: **PUBLIC_VERIFIED** — [independent named FAKE listing](https://mcp.film/mcps/fake-by-objekts/) under Story & Pre-Production; [provider PR #185](https://github.com/c47-inc/mcp-film/pull/185) **merged 10 November 2026 at 12:22:29 UTC**, after curator review of [active issue #171](https://github.com/c47-inc/mcp-film/issues/171). The [historical #85](https://github.com/c47-inc/mcp-film/issues/85) was an earlier endpoint-unreachable rejection; it was not silently rewritten. This is **editorial acceptance only**; no client-side Studio/rendering test or qualified buyer attributed.
 - Official MCP Registry manifest: `registry/fake/server.json` (`ai.objekts.mcp/fake`), publish workflow prepared.
 - Machine-readable rollout state: [distribution/FAKE_STATUS.json](../distribution/FAKE_STATUS.json)
 - Human-action blockers only: [distribution/NEXT_EXTERNAL_ACTIONS.md](../distribution/NEXT_EXTERNAL_ACTIONS.md)
+
+
+### Dated independent compatibility evidence
+
+The [mcp.film curator](https://github.com/c47-inc/mcp-film/issues/171#issuecomment-6717888473) reported a 7 November 2026 initialization as FAKE **0.4.9**, with **eight tools**. Three are model-visible (`open_character_studio`, `about_objekts`, `read_portrait_request`); five are app-only actions inside the Studio widget. Clients without the required interactive UI and a host rendering handoff must not be described as providing the complete character-authoring workflow. The curator reported successful legacy initialization at `2025-11-25`, `2025-06-18` and `2025-03-26`; `tools/list` using `2026-07-28` returned HTTP 400. No project creation, reference-photo upload, end-to-end authoring or final portrait generation was performed in that check.
+
+The same review requested clearer real-person likeness/consent, retention and deletion documentation. Those product-policy and implementation questions remain with the FAKE product owner. This distribution note adds **no new privacy guarantee, retention period, deletion deadline or source licence**. [Pinned curator record](https://github.com/c47-inc/mcp-film/blob/52aa211d387e5eb25b66a6d636df6e586953d8b2/data/registry/preproduction.json).
 
 The public repository runs a scheduled live smoke test against FAKE's health, public metadata pages, canonical MCP endpoint, ChatGPT MCP alias, tool visibility and native-image-generation contract.
