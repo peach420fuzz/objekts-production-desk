@@ -171,6 +171,10 @@ direction, AI generation, generative video, AI/VFX, CGI/3D, motion, animation, c
 
 Exact repeated geometry, screens, logos and typography should not be left to uncontrolled generation when a controlled method is available.
 
+## Optional source-qualified cinematic craft context
+
+When an authorized host actually supplies a private `objekts.craft-context/1` packet, use the [Cinematic Craft Context preflight](references/CINEMATIC_CRAFT_CONTEXT_v1.md) *after* source authority, LOCKs and basic asset fitness. This is a handoff from role100's draft research, not a production-validity signal, owner-approved studio canon or automatic dependency. A project should never be declared camera-safe, lighting-safe, actor-continuous or generatively feasible because a film-technique card was retrieved. Verify on actual plates/frames/sound and within the selected model or compositing pipeline. If no authorized packet exists, do not claim Atlas knowledge was consulted; follow this skill's ordinary feasibility logic.
+
 ## Temporal topology
 
 Classify the shot instead of assuming start/end frames.
