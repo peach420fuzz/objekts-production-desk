@@ -1,0 +1,38 @@
+{
+  "role": "36.5",
+  "experiment": "hidden-sku-explicit-boolean-prerequisite-v1",
+  "recorded_at": "2026-11-10T00:38:22.279258+00:00",
+  "source_original_git_blob": "317646cea7e334536cebe9dff22e26aa71b835e1",
+  "source_base_commit": "8ec9a02f214409f13a6cca71217986bf5c0f7a74",
+  "runtime": "v24.22.1",
+  "old_original_assertions": 10,
+  "old_original_assertions_passed": 10,
+  "new_contract_cases": 14,
+  "old_source_new_cases_passed": 7,
+  "old_source_regression_exit": 1,
+  "corrected_original_assertions_passed": 10,
+  "corrected_new_cases_passed": 14,
+  "corrected_regression_exit": 0,
+  "separate_root_replay": true,
+  "front_only_required_fields": 3,
+  "front_only_observed_fields": 2,
+  "source_contract": "Only literal true opens manifest checks; omission and all tested non-Boolean JSON types block. This Boolean is caller declaration, not actual rights proof.",
+  "scope": "Synthetic JSON input/observability only; no image,OCR,real-product,legal-rights or external permission verification",
+  "source_files": [
+    {
+      "path": "ops/role36/agent_native/articles/hidden_sku_boolean_gate_correction_2026-11-10.md",
+      "sha256": "83d76fb31ecd49d7ac83eadd4647ec99ed544038328bda97dd4420c78c7f4040",
+      "git_blob_sha": "ff4543dba0f48364d46e18017742658eaea8a40c"
+    },
+    {
+      "path": "ops/role36/agent_native/fixtures/hidden_sku_observability_gate.js",
+      "sha256": "1c2b48ca274a545ef0439a6e23b0aa831257c485b30ea68dcf67ac6af7e6b2af",
+      "git_blob_sha": "32d8fd0eedbce3c903d3fd89ec04e776279c4c6e"
+    },
+    {
+      "path": "ops/role36/agent_native/fixtures/hidden_sku_rights_gate_regression_v1.js",
+      "sha256": "f2d352a7860eb570f752142005f80f5658c273250d97b121fae44cd72f9ec299",
+      "git_blob_sha": "821e745a4bb9716d2325d3230ca01bf42e8078c6"
+    }
+  ]
+}
