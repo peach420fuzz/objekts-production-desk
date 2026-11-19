@@ -1,0 +1,21 @@
+{
+  "role": "36.5",
+  "experiment": "FN35-randomized-sampling-addendum-v1",
+  "tests": 20,
+  "failures": 0,
+  "errors": 0,
+  "exact_enumeration_parameter_cases": 852,
+  "defect_placement_cases": 56,
+  "N": 250,
+  "B": 12,
+  "uniform_random_one_defect_percent": 4.8,
+  "uniform_random_five_defects_percent": 21.963473755055837,
+  "five_defects_half_sensitivity_percent": 11.480470388099892,
+  "required_endpoints_interior_percent": 4.032258064516129,
+  "scope": "Exact analytic probability and exhaustive small-population checks. No real video/model recall or human approval measured.",
+  "assumptions": [
+    "sample selection independent of the fixed defect set",
+    "uniform sampling without replacement for the hypergeometric formula",
+    "detector sensitivity and independent per-frame detections are hypothetical"
+  ]
+}
