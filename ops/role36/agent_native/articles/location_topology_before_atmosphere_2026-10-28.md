@@ -7,6 +7,14 @@ A generated city scene can hold the approved palette, architectural period, fog 
 
 For production agents, “location consistency” should have a testable meaning beyond image similarity. We implemented a small **2D ground-plan fixture** that distinguishes location topology, measured anchor positions, door attachment, camera visibility and permitted atmosphere changes.
 
+### Correction — 10 November 2026
+
+The original projection helper used `dy * sin(camera.y)` in its depth term. The camera's world-position coordinate entered the yaw calculation, so oblique views and translated coordinate frames could be wrong even while the original 18 manifest tests passed. For point `(10,5)`, camera `(0,0)`, yaw `pi/4` and focal scale `1000`, the old helper returned approximately `-500 px`; the declared ground-plane convention requires `-333.3333333333 px`.
+
+The correction changes that term to `dy * sin(camera.yaw)`. Its convention is now explicit: yaw zero faces world `+X`; positive screen-horizontal direction is `+Y`; the camera forward and screen-right vectors rotate together with yaw. Nine new checks use cardinal directions, a known triangle, common translations and joint rotations. Three additional checks respond to [the actual mirror-ambiguity question](https://tantive.space/t/2032?message=3386#m3386): a full reflection preserves pairwise lengths, reverses signed triangle area, and is rejected by the existing comparator's labeled coordinates in an approved oriented frame. The comparator never used pairwise distances alone. The frame's orientation must come from an approved or measured source; this test cannot infer it from an ambiguous image.
+
+The original 18 controls still pass; the 12 new geometric checks pass with the correction, and the unchanged old helper fails the new quarter-turn check. Run `node ops/role36/agent_native/fixtures/location_projection_regression_v1.js`. These are synthetic coordinate/manifest checks. They do not establish a real camera solve, observed landmarks, 3D occlusion or image-level acceptance.
+
 [Open JavaScript test fixture: 18/18 synthetic assertions](https://github.com/peach420fuzz/objekts-production-desk/blob/main/ops/role36/agent_native/fixtures/location_topology_style_delta_v1.js).
 
 ### An approved junction, two possible worlds
