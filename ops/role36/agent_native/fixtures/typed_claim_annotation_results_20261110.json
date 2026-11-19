@@ -1,0 +1,1018 @@
+{
+  "scope": {
+    "kind": "authored_symbolic_controls",
+    "actual_images": 0,
+    "model_inference_calls": 0,
+    "actual_studio_authorship_or_license_claims": 0,
+    "note": "Studio S and image_1 are fictional identifiers. The frame is a declared data record, not rendered or observed imagery. The CC0 proposition is a test claim, not a license assigned to an image."
+  },
+  "input_sha256": "9b6a10f0e1dda71090f4a7f845f283f8927199b38b8143769761d0c6e8aecce3",
+  "evidence_packet_sha256": "57f0ab829b236a82bdf4a49b40b7d074f074e42b468abbaec402ddb396fc8328",
+  "cases": [
+    {
+      "case": "chrome_to_maybe_chrome",
+      "classification": "STANCE_OR_CONFIDENCE_ONLY",
+      "input_manifest_sha256": "121b1b1d072f9697ea09d2402cfb5519d3e1618bc4bb19c2d3f4cbe6ff23f85a",
+      "labels": [
+        "AI production studio",
+        "unknown supplier"
+      ],
+      "before": {
+        "claims": 2,
+        "active_claims": 2,
+        "active_by_domain_status": {
+          "authorship": {},
+          "frame": {
+            "SUPPORTED": 1,
+            "CONTRADICTED": 1
+          },
+          "rights": {},
+          "selection": {}
+        },
+        "scope_mismatches": 0
+      },
+      "after": {
+        "claims": 2,
+        "active_claims": 2,
+        "active_by_domain_status": {
+          "authorship": {},
+          "frame": {
+            "SUPPORTED": 1,
+            "CONTRADICTED": 1
+          },
+          "rights": {},
+          "selection": {}
+        },
+        "scope_mismatches": 0
+      },
+      "propositions_changed": false,
+      "removed": [],
+      "added": [],
+      "stance_changes": [
+        [
+          "frame",
+          "chair_1",
+          "surface_appearance",
+          "mirrorlike_chrome",
+          true
+        ]
+      ],
+      "confidence_changes": [],
+      "support_changes": [],
+      "supported_replacements": [],
+      "claim_results_before": [
+        {
+          "claim": {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          "status": "SUPPORTED",
+          "evidence_used": [
+            {
+              "id": "declared_frame",
+              "anchor": "layout",
+              "relation": "supports"
+            }
+          ],
+          "pointer_problems": []
+        },
+        {
+          "claim": {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "surface_appearance",
+              "value": "mirrorlike_chrome",
+              "polarity": true
+            },
+            "span": [
+              32,
+              74
+            ],
+            "surface": "The chair has a mirrorlike chrome surface.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "chair_surface"
+              }
+            ]
+          },
+          "status": "CONTRADICTED",
+          "evidence_used": [
+            {
+              "id": "declared_frame",
+              "anchor": "chair_surface",
+              "relation": "contradicts"
+            }
+          ],
+          "pointer_problems": []
+        }
+      ],
+      "claim_results_after": [
+        {
+          "claim": {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          "status": "SUPPORTED",
+          "evidence_used": [
+            {
+              "id": "declared_frame",
+              "anchor": "layout",
+              "relation": "supports"
+            }
+          ],
+          "pointer_problems": []
+        },
+        {
+          "claim": {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "surface_appearance",
+              "value": "mirrorlike_chrome",
+              "polarity": true
+            },
+            "span": [
+              32,
+              79
+            ],
+            "surface": "The chair may have a mirrorlike chrome surface.",
+            "stance": "hedged",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "chair_surface"
+              }
+            ]
+          },
+          "status": "CONTRADICTED",
+          "evidence_used": [
+            {
+              "id": "declared_frame",
+              "anchor": "chair_surface",
+              "relation": "contradicts"
+            }
+          ],
+          "pointer_problems": []
+        }
+      ],
+      "scope": "Supplied symbolic/manual annotations only; not evidence that a model read an image correctly."
+    },
+    {
+      "case": "selection_to_probable_authorship",
+      "classification": "STANCE_OR_CONFIDENCE_ONLY",
+      "input_manifest_sha256": "121b1b1d072f9697ea09d2402cfb5519d3e1618bc4bb19c2d3f4cbe6ff23f85a",
+      "labels": [
+        "AI production studio",
+        "unknown supplier"
+      ],
+      "before": {
+        "claims": 2,
+        "active_claims": 2,
+        "active_by_domain_status": {
+          "authorship": {
+            "UNVERIFIABLE": 1
+          },
+          "frame": {},
+          "rights": {},
+          "selection": {
+            "SUPPORTED": 1
+          }
+        },
+        "scope_mismatches": 1
+      },
+      "after": {
+        "claims": 2,
+        "active_claims": 2,
+        "active_by_domain_status": {
+          "authorship": {
+            "UNVERIFIABLE": 1
+          },
+          "frame": {},
+          "rights": {},
+          "selection": {
+            "SUPPORTED": 1
+          }
+        },
+        "scope_mismatches": 1
+      },
+      "propositions_changed": false,
+      "removed": [],
+      "added": [],
+      "stance_changes": [
+        [
+          "authorship",
+          "image_1",
+          "authored_by",
+          "Studio_S",
+          true
+        ]
+      ],
+      "confidence_changes": [],
+      "support_changes": [],
+      "supported_replacements": [],
+      "claim_results_before": [
+        {
+          "claim": {
+            "domain": "selection",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "selected_by",
+              "value": "Studio_S",
+              "polarity": true
+            },
+            "span": [
+              0,
+              43
+            ],
+            "surface": "This image is selected in Studio S's index.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "selection_record",
+                "anchor": "entry"
+              }
+            ]
+          },
+          "status": "SUPPORTED",
+          "evidence_used": [
+            {
+              "id": "selection_record",
+              "anchor": "entry",
+              "relation": "supports"
+            }
+          ],
+          "pointer_problems": []
+        },
+        {
+          "claim": {
+            "domain": "authorship",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "authored_by",
+              "value": "Studio_S",
+              "polarity": true
+            },
+            "span": [
+              44,
+              72
+            ],
+            "surface": "Studio S authored the image.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "selection_record",
+                "anchor": "entry"
+              }
+            ]
+          },
+          "status": "UNVERIFIABLE",
+          "evidence_used": [],
+          "pointer_problems": [
+            "evidence_scope_mismatch"
+          ]
+        }
+      ],
+      "claim_results_after": [
+        {
+          "claim": {
+            "domain": "selection",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "selected_by",
+              "value": "Studio_S",
+              "polarity": true
+            },
+            "span": [
+              0,
+              43
+            ],
+            "surface": "This image is selected in Studio S's index.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "selection_record",
+                "anchor": "entry"
+              }
+            ]
+          },
+          "status": "SUPPORTED",
+          "evidence_used": [
+            {
+              "id": "selection_record",
+              "anchor": "entry",
+              "relation": "supports"
+            }
+          ],
+          "pointer_problems": []
+        },
+        {
+          "claim": {
+            "domain": "authorship",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "authored_by",
+              "value": "Studio_S",
+              "polarity": true
+            },
+            "span": [
+              44,
+              81
+            ],
+            "surface": "Studio S may have authored the image.",
+            "stance": "hedged",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "selection_record",
+                "anchor": "entry"
+              }
+            ]
+          },
+          "status": "UNVERIFIABLE",
+          "evidence_used": [],
+          "pointer_problems": [
+            "evidence_scope_mismatch"
+          ]
+        }
+      ],
+      "scope": "Supplied symbolic/manual annotations only; not evidence that a model read an image correctly."
+    },
+    {
+      "case": "lower_confidence_without_license_source",
+      "classification": "STANCE_OR_CONFIDENCE_ONLY",
+      "input_manifest_sha256": "121b1b1d072f9697ea09d2402cfb5519d3e1618bc4bb19c2d3f4cbe6ff23f85a",
+      "labels": [
+        "AI production studio",
+        "unknown supplier"
+      ],
+      "before": {
+        "claims": 1,
+        "active_claims": 1,
+        "active_by_domain_status": {
+          "authorship": {},
+          "frame": {},
+          "rights": {
+            "UNVERIFIABLE": 1
+          },
+          "selection": {}
+        },
+        "scope_mismatches": 1
+      },
+      "after": {
+        "claims": 1,
+        "active_claims": 1,
+        "active_by_domain_status": {
+          "authorship": {},
+          "frame": {},
+          "rights": {
+            "UNVERIFIABLE": 1
+          },
+          "selection": {}
+        },
+        "scope_mismatches": 1
+      },
+      "propositions_changed": false,
+      "removed": [],
+      "added": [],
+      "stance_changes": [
+        [
+          "rights",
+          "image_1",
+          "license",
+          "CC0",
+          true
+        ]
+      ],
+      "confidence_changes": [
+        [
+          "rights",
+          "image_1",
+          "license",
+          "CC0",
+          true
+        ]
+      ],
+      "support_changes": [],
+      "supported_replacements": [],
+      "claim_results_before": [
+        {
+          "claim": {
+            "domain": "rights",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "license",
+              "value": "CC0",
+              "polarity": true
+            },
+            "span": [
+              0,
+              34
+            ],
+            "surface": "The image is CC0 (90% confidence).",
+            "stance": "asserted",
+            "reported_confidence": 0.9,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ],
+            "confidence_span": [
+              18,
+              21
+            ]
+          },
+          "status": "UNVERIFIABLE",
+          "evidence_used": [],
+          "pointer_problems": [
+            "evidence_scope_mismatch"
+          ]
+        }
+      ],
+      "claim_results_after": [
+        {
+          "claim": {
+            "domain": "rights",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "license",
+              "value": "CC0",
+              "polarity": true
+            },
+            "span": [
+              0,
+              43
+            ],
+            "surface": "The image is probably CC0 (40% confidence).",
+            "stance": "hedged",
+            "reported_confidence": 0.4,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ],
+            "confidence_span": [
+              27,
+              30
+            ]
+          },
+          "status": "UNVERIFIABLE",
+          "evidence_used": [],
+          "pointer_problems": [
+            "evidence_scope_mismatch"
+          ]
+        }
+      ],
+      "scope": "Supplied symbolic/manual annotations only; not evidence that a model read an image correctly."
+    },
+    {
+      "case": "supported_appearance_replacement",
+      "classification": "SUPPORTED_REPLACEMENT_IN_ANNOTATIONS",
+      "input_manifest_sha256": "121b1b1d072f9697ea09d2402cfb5519d3e1618bc4bb19c2d3f4cbe6ff23f85a",
+      "labels": [
+        "AI production studio",
+        "furniture retailer"
+      ],
+      "before": {
+        "claims": 2,
+        "active_claims": 2,
+        "active_by_domain_status": {
+          "authorship": {},
+          "frame": {
+            "SUPPORTED": 1,
+            "CONTRADICTED": 1
+          },
+          "rights": {},
+          "selection": {}
+        },
+        "scope_mismatches": 0
+      },
+      "after": {
+        "claims": 2,
+        "active_claims": 2,
+        "active_by_domain_status": {
+          "authorship": {},
+          "frame": {
+            "SUPPORTED": 2
+          },
+          "rights": {},
+          "selection": {}
+        },
+        "scope_mismatches": 0
+      },
+      "propositions_changed": true,
+      "removed": [
+        [
+          "frame",
+          "chair_1",
+          "surface_appearance",
+          "mirrorlike_chrome",
+          true
+        ]
+      ],
+      "added": [
+        [
+          "frame",
+          "chair_1",
+          "surface_appearance",
+          "matte_brown",
+          true
+        ]
+      ],
+      "stance_changes": [],
+      "confidence_changes": [],
+      "support_changes": [],
+      "supported_replacements": [
+        {
+          "old": [
+            "frame",
+            "chair_1",
+            "surface_appearance",
+            "mirrorlike_chrome",
+            true
+          ],
+          "new": [
+            "frame",
+            "chair_1",
+            "surface_appearance",
+            "matte_brown",
+            true
+          ]
+        }
+      ],
+      "claim_results_before": [
+        {
+          "claim": {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          "status": "SUPPORTED",
+          "evidence_used": [
+            {
+              "id": "declared_frame",
+              "anchor": "layout",
+              "relation": "supports"
+            }
+          ],
+          "pointer_problems": []
+        },
+        {
+          "claim": {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "surface_appearance",
+              "value": "mirrorlike_chrome",
+              "polarity": true
+            },
+            "span": [
+              32,
+              74
+            ],
+            "surface": "The chair has a mirrorlike chrome surface.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "chair_surface"
+              }
+            ]
+          },
+          "status": "CONTRADICTED",
+          "evidence_used": [
+            {
+              "id": "declared_frame",
+              "anchor": "chair_surface",
+              "relation": "contradicts"
+            }
+          ],
+          "pointer_problems": []
+        }
+      ],
+      "claim_results_after": [
+        {
+          "claim": {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          "status": "SUPPORTED",
+          "evidence_used": [
+            {
+              "id": "declared_frame",
+              "anchor": "layout",
+              "relation": "supports"
+            }
+          ],
+          "pointer_problems": []
+        },
+        {
+          "claim": {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "surface_appearance",
+              "value": "matte_brown",
+              "polarity": true
+            },
+            "span": [
+              32,
+              68
+            ],
+            "surface": "The chair has a matte brown surface.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "chair_surface"
+              }
+            ]
+          },
+          "status": "SUPPORTED",
+          "evidence_used": [
+            {
+              "id": "declared_frame",
+              "anchor": "chair_surface",
+              "relation": "supports"
+            }
+          ],
+          "pointer_problems": []
+        }
+      ],
+      "scope": "Supplied symbolic/manual annotations only; not evidence that a model read an image correctly."
+    },
+    {
+      "case": "delete_bad_claim_only",
+      "classification": "WITHDRAWAL_WITHOUT_NEW_GROUNDING",
+      "input_manifest_sha256": "121b1b1d072f9697ea09d2402cfb5519d3e1618bc4bb19c2d3f4cbe6ff23f85a",
+      "labels": [
+        "AI production studio",
+        "unknown supplier"
+      ],
+      "before": {
+        "claims": 2,
+        "active_claims": 2,
+        "active_by_domain_status": {
+          "authorship": {},
+          "frame": {
+            "SUPPORTED": 1,
+            "CONTRADICTED": 1
+          },
+          "rights": {},
+          "selection": {}
+        },
+        "scope_mismatches": 0
+      },
+      "after": {
+        "claims": 1,
+        "active_claims": 1,
+        "active_by_domain_status": {
+          "authorship": {},
+          "frame": {
+            "SUPPORTED": 1
+          },
+          "rights": {},
+          "selection": {}
+        },
+        "scope_mismatches": 0
+      },
+      "propositions_changed": true,
+      "removed": [
+        [
+          "frame",
+          "chair_1",
+          "surface_appearance",
+          "mirrorlike_chrome",
+          true
+        ]
+      ],
+      "added": [],
+      "stance_changes": [],
+      "confidence_changes": [],
+      "support_changes": [],
+      "supported_replacements": [],
+      "claim_results_before": [
+        {
+          "claim": {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          "status": "SUPPORTED",
+          "evidence_used": [
+            {
+              "id": "declared_frame",
+              "anchor": "layout",
+              "relation": "supports"
+            }
+          ],
+          "pointer_problems": []
+        },
+        {
+          "claim": {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "surface_appearance",
+              "value": "mirrorlike_chrome",
+              "polarity": true
+            },
+            "span": [
+              32,
+              74
+            ],
+            "surface": "The chair has a mirrorlike chrome surface.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "chair_surface"
+              }
+            ]
+          },
+          "status": "CONTRADICTED",
+          "evidence_used": [
+            {
+              "id": "declared_frame",
+              "anchor": "chair_surface",
+              "relation": "contradicts"
+            }
+          ],
+          "pointer_problems": []
+        }
+      ],
+      "claim_results_after": [
+        {
+          "claim": {
+            "domain": "frame",
+            "proposition": {
+              "subject": "chair_1",
+              "predicate": "beside",
+              "value": "window_1",
+              "polarity": true
+            },
+            "span": [
+              0,
+              31
+            ],
+            "surface": "A chair stands beside a window.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "declared_frame",
+                "anchor": "layout"
+              }
+            ]
+          },
+          "status": "SUPPORTED",
+          "evidence_used": [
+            {
+              "id": "declared_frame",
+              "anchor": "layout",
+              "relation": "supports"
+            }
+          ],
+          "pointer_problems": []
+        }
+      ],
+      "scope": "Supplied symbolic/manual annotations only; not evidence that a model read an image correctly."
+    },
+    {
+      "case": "changed_input_blocks_comparison",
+      "classification": "BLOCKED",
+      "reason": "controlled_input changed; this is not a label-only comparison"
+    },
+    {
+      "case": "source_scope_repaired_without_word_change",
+      "classification": "EVIDENCE_SUPPORT_CHANGED",
+      "input_manifest_sha256": "c702b7b8595e59ecda40fa9d3ccd7dbd2aa2597baf1c6be57bfe655d826cbfc7",
+      "labels": [
+        "AI production studio",
+        "unknown supplier"
+      ],
+      "before": {
+        "claims": 1,
+        "active_claims": 1,
+        "active_by_domain_status": {
+          "authorship": {
+            "UNVERIFIABLE": 1
+          },
+          "frame": {},
+          "rights": {},
+          "selection": {}
+        },
+        "scope_mismatches": 1
+      },
+      "after": {
+        "claims": 1,
+        "active_claims": 1,
+        "active_by_domain_status": {
+          "authorship": {
+            "SUPPORTED": 1
+          },
+          "frame": {},
+          "rights": {},
+          "selection": {}
+        },
+        "scope_mismatches": 0
+      },
+      "propositions_changed": false,
+      "removed": [],
+      "added": [],
+      "stance_changes": [],
+      "confidence_changes": [],
+      "support_changes": [
+        {
+          "proposition": [
+            "authorship",
+            "image_1",
+            "authored_by",
+            "Studio_S",
+            true
+          ],
+          "before": "UNVERIFIABLE",
+          "after": "SUPPORTED"
+        }
+      ],
+      "supported_replacements": [],
+      "claim_results_before": [
+        {
+          "claim": {
+            "domain": "authorship",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "authored_by",
+              "value": "Studio_S",
+              "polarity": true
+            },
+            "span": [
+              0,
+              28
+            ],
+            "surface": "Studio S authored the image.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "selection_record",
+                "anchor": "entry"
+              }
+            ]
+          },
+          "status": "UNVERIFIABLE",
+          "evidence_used": [],
+          "pointer_problems": [
+            "evidence_scope_mismatch"
+          ]
+        }
+      ],
+      "claim_results_after": [
+        {
+          "claim": {
+            "domain": "authorship",
+            "proposition": {
+              "subject": "image_1",
+              "predicate": "authored_by",
+              "value": "Studio_S",
+              "polarity": true
+            },
+            "span": [
+              0,
+              28
+            ],
+            "surface": "Studio S authored the image.",
+            "stance": "asserted",
+            "reported_confidence": null,
+            "evidence": [
+              {
+                "id": "credit_record",
+                "anchor": "credit"
+              }
+            ]
+          },
+          "status": "SUPPORTED",
+          "evidence_used": [
+            {
+              "id": "credit_record",
+              "anchor": "credit",
+              "relation": "supports"
+            }
+          ],
+          "pointer_problems": []
+        }
+      ],
+      "scope": "Supplied symbolic/manual annotations only; not evidence that a model read an image correctly."
+    },
+    {
+      "case": "incorrect_quote_span_blocks_comparison",
+      "classification": "BLOCKED",
+      "reason": "claim span does not match the supplied output"
+    }
+  ],
+  "verification": {
+    "cases": 8,
+    "passed": 8,
+    "failures": []
+  }
+}
