@@ -1,0 +1,131 @@
+{
+  "role": "36.5",
+  "experiment": "premultiplied-alpha-border-hidden-feature-v1",
+  "runtime": "v24.22.1",
+  "executed_at": "2026-11-10T00:45:26.820226+00:00",
+  "source_sha256": "87ced57f38c28b5e3f5bf52bac532f50f87237791a6837da30d82eb8a5bc4a4e",
+  "exit_code": 0,
+  "root_independent_replay": true,
+  "command": [
+    "node",
+    "ops/role36/agent_native/fixtures/premultiplied_alpha_warp_control_v1.js"
+  ],
+  "result": {
+    "scope": "synthetic encoded-sRGB numerical sampling and compositing; no artwork, browser runtime, animation, CPU or cleanup validation",
+    "alphaControl": {
+      "premultipliedMidpoint": [
+        255,
+        0,
+        0,
+        127.5
+      ],
+      "straightMidpoint": [
+        127.5,
+        0,
+        127.5,
+        127.5
+      ],
+      "premultipliedOverWhite": [
+        255,
+        127.5,
+        127.5,
+        255
+      ],
+      "straightOverWhite": [
+        191.25,
+        127.5,
+        191.25,
+        255
+      ],
+      "straightBlackMidpoint": [
+        127.5,
+        0,
+        0,
+        127.5
+      ],
+      "straightBlackOverWhite": [
+        191.25,
+        127.5,
+        127.5,
+        255
+      ],
+      "alphaZeroRgbInvariant": true,
+      "unequalAlphaMidpoint": [
+        191.25,
+        0,
+        63.75,
+        170
+      ]
+    },
+    "borderControl": {
+      "policy": "transparent outside individual taps, no renormalization",
+      "halfTexelRgba": [
+        255,
+        0,
+        0,
+        127.5
+      ],
+      "clampComparisonRgba": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "edgesChecked": 4,
+      "fullyOutsideRgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "identityControl": {
+      "width": 640,
+      "height": 212,
+      "pixels": 135680,
+      "edgePixels": 1700,
+      "changedPixels": 0,
+      "alphaZeroRgb": "canonical zero; hidden RGB bytes are not a visual identity criterion"
+    },
+    "hiddenFeatureControl": {
+      "restA": [
+        80,
+        80,
+        80,
+        255
+      ],
+      "restB": [
+        80,
+        80,
+        80,
+        255
+      ],
+      "revealedA": [
+        255,
+        0,
+        0,
+        255
+      ],
+      "revealedB": [
+        0,
+        0,
+        255,
+        255
+      ],
+      "conclusion": "UNKNOWN: identical flattened rest pixels do not identify the covered texel"
+    },
+    "result": "all numerical controls passed"
+  },
+  "canvas_execution": {
+    "status": "NOT_RUN",
+    "reason": "Installed headless Chromium aborted during launch before page creation: socket operation denied; no bypass or new installation attempted.",
+    "reported_installed_version": "Chromium156.0.8078.79"
+  },
+  "limits": [
+    "Original source illustration and renderer were not supplied or inspected",
+    "No actualCanvaspixel/FPS/CPU/cleanup/pause/reduced-motion/DPI test",
+    "Encoded-sRGB numeric alpha control, notlinear-light or color-managed rendering",
+    "Reference sampler allocates per sample and is notperformance implementation",
+    "Rest-posecounterexample doesnotrecover hidden artwork"
+  ]
+}
