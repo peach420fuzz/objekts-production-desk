@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-11-10T02:04:39.808002+00:00",
+  "source_record_sha256": "bdd3c8c809b194814e1b08f1990abf60f33a3614f0958a265cdeb7120c7d65c6",
+  "plot_type": "Matplotlib 3.10.8 scatter of exact saved pixel coordinates, no image render",
+  "root_visual_check": "Viewed the full 1440x1440 PNG; point labels, axis convention, two off-plane arrows and no-visibility qualification are readable.",
+  "files": {
+    "projected_points.png": "2ddbb5c9443eebecfb354e68186fd3f0f6b6f6dd9d0a4104df03ba239f32dd9d",
+    "projected_points.svg": "e4327a0a1ee9421a006795cbf2de65c886f2cbba576cb8d7ddcaca976f6560ac"
+  }
+}

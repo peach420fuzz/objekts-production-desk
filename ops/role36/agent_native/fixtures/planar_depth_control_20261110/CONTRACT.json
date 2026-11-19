@@ -1,0 +1,68 @@
+{
+  "schema": "objekts.synthetic-planar-depth-control.v1",
+  "purpose": "Compare two fixed camera hypotheses on one plane and on independently declared off-plane points; no camera fit.",
+  "world": {
+    "length_unit": "metre",
+    "blender_units_per_metre": 1,
+    "right": "+X",
+    "camera_forward": "+Y",
+    "up": "+Z",
+    "facade_plane_y": 0,
+    "ground_plane_z": 0,
+    "camera_height": 2
+  },
+  "image": {
+    "width": 512,
+    "height": 512,
+    "percentage": 100,
+    "pixel_aspect_x": 1,
+    "pixel_aspect_y": 1,
+    "sensor_width_mm": 36,
+    "sensor_height_mm": 36,
+    "sensor_fit": "HORIZONTAL",
+    "shift_x": 0,
+    "shift_y": 0,
+    "clip_start_m": 0.01,
+    "clip_end_m": 100,
+    "pixel_convention": "continuous image-edge coordinates, top-left origin, centre (256,256); not raster-index centres"
+  },
+  "cameras": [
+    {"id": "A", "distance_to_facade_m": 5, "lens_mm": 35, "location": [0, -5, 2]},
+    {"id": "B", "distance_to_facade_m": 10, "lens_mm": 70, "location": [0, -10, 2]}
+  ],
+  "points": [
+    {"id": "facade_bottom_left", "set": "facade_four", "world": [-2, 0, 0]},
+    {"id": "facade_bottom_right", "set": "facade_four", "world": [2, 0, 0]},
+    {"id": "facade_top_right", "set": "facade_four", "world": [2, 0, 4]},
+    {"id": "facade_top_left", "set": "facade_four", "world": [-2, 0, 4]},
+    {"id": "same_plane_heldout_centre", "set": "same_plane_heldout", "world": [0, 0, 2]},
+    {"id": "same_plane_heldout_lower_right", "set": "same_plane_heldout", "world": [1, 0, 1]},
+    {"id": "ground_offset_3m", "set": "off_plane_heldout", "world": [-1.5, 3, 0]},
+    {"id": "ground_offset_5m", "set": "off_plane_heldout", "world": [1, 5, 0]}
+  ],
+  "predeclared_checks": {
+    "absolute_pixel_tolerance": 0.001,
+    "absolute_camera_depth_tolerance_m": 0.00001,
+    "minimum_off_plane_hypothesis_separation_px": 30,
+    "facade_expected_equal_exact_rational": true,
+    "all_points_expected_in_front_and_in_frame": true
+  },
+  "oracle": {
+    "method": "Independent rational pinhole calculation from these declared scalar parameters, without Blender matrices or view_frame.",
+    "depth": "D + Y",
+    "focal_scale_px": "width * lens_mm / sensor_width_mm",
+    "u": "width/2 + focal_scale_px * X / (D+Y)",
+    "v": "height/2 - focal_scale_px * (Z-camera_height) / (D+Y)"
+  },
+  "interpretation": {
+    "intrinsics_status": "focal length deliberately unknown between the two hypotheses",
+    "point_provenance": "Own synthetic coordinates fixed before execution; no real survey or image measurements.",
+    "same_plane_holdout_meaning": "Labels excluded from the four facade corners; no fitting is performed on either set.",
+    "off_plane_holdout_meaning": "Coordinates never used to choose or fit the cameras; illustrative independently declared controls.",
+    "occlusion": "NOT_TESTED; no opaque facade mesh or ray test; real visibility would need separate evidence.",
+    "real_plate_solve": "NOT_RUN",
+    "homography_fit": "NOT_RUN",
+    "render": "NOT_RUN",
+    "general_calibrated_pnp_claim": false
+  }
+}

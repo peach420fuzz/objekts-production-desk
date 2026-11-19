@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-11-10T01:29:38.380681+00:00",
+  "finished_utc": "2026-11-10T01:29:39.152221+00:00",
+  "command": [
+    "/usr/bin/blender",
+    "--background",
+    "--factory-startup",
+    "--python-exit-code",
+    "1",
+    "--python",
+    "/workspace/scratch/1ff91a3a20c2/planar_depth_blender_work/planar_depth_control.py"
+  ],
+  "exit_code": 0,
+  "stdout_sha256": "56771d72f6a35a7226305ebd40175af4adb75949513706f9ad5439527912705d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "pre_execution_sha256": "716bd23ce6c0d6cbd914e37a4f0549627c52d492a619c508ca5e8b679adedf05"
+}

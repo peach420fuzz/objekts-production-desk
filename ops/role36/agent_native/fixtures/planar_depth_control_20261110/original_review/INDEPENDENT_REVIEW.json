@@ -1,0 +1,186 @@
+{
+  "schema": "objekts.independent-planar-depth-review.v1",
+  "reviewed_at": "2026-11-10T01:40:40.343819+00:00",
+  "reviewer": "/root/platform_inventory",
+  "verdict": "PASS_WITH_EXPLICIT_SCOPE",
+  "scientific_or_numeric_blockers": [],
+  "source_package": "/workspace/scratch/1ff91a3a20c2/planar_depth_blender_work",
+  "scope": "Independent code and retained-record audit of one synthetic numerical camera example, not a second Blender experiment.",
+  "reviewed_files": [
+    "HANDOFF.json",
+    "planar_depth_control.py",
+    "CONTRACT.json",
+    "README.md",
+    "outputs/RESULTS.json",
+    "PRE_EXECUTION.json",
+    "PROCESS_RECEIPT.json",
+    "MANIFEST.json",
+    "PRIMARY_SOURCE_MAP.json",
+    "SELF_REVIEW.json",
+    "candidate_reply.txt",
+    "CANDIDATE_METADATA.json",
+    "BLENDER_STDOUT.txt",
+    "BLENDER_STDERR.txt"
+  ],
+  "evidence_hashes": {
+    "BLENDER_STDERR.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "BLENDER_STDOUT.txt": "56771d72f6a35a7226305ebd40175af4adb75949513706f9ad5439527912705d",
+    "CANDIDATE_METADATA.json": "213995e2a3338ecdc9726a9f8f4cb248f4e62ec33292f15e2136229a309cf184",
+    "CONTRACT.json": "04ed5b28f42c17073be299192ce9eec91539fcd29547c1678bc7aee714eaf363",
+    "HANDOFF.json": "5c7fa4e9486d97d076e95ca1b28e730affa64fa1a807c784fcf8c73b18d6ceb5",
+    "MANIFEST.json": "92d8ed6a3d9ce506bc98f35c112779016f78b2a8e90705f320c2d8c203ae8ad3",
+    "PRE_EXECUTION.json": "716bd23ce6c0d6cbd914e37a4f0549627c52d492a619c508ca5e8b679adedf05",
+    "PRIMARY_SOURCE_MAP.json": "c4dac0e653a010ae6e8ef4fe16ac8ffcf34b4b52ecac17c543230874b152e8bb",
+    "PROCESS_RECEIPT.json": "ee009826f9dd1cdcbca0b6891f25fa2631a9dad3c08f5203a70ff7b15705059c",
+    "README.md": "65c4953a54787994542d98c44c90ece845e10eb0e27c2077bda189a66671c7cc",
+    "SELF_REVIEW.json": "1758a92eabad4acb680dd10350abb35888b63f9505916a4fe87d7c959b8a2769",
+    "candidate_reply.txt": "7bfff4ddf2f2c97f02e4ebefac159920c7660b4a8a3f96b8fff00087ea8236b3",
+    "outputs/RESULTS.json": "bdd3c8c809b194814e1b08f1990abf60f33a3614f0958a265cdeb7120c7d65c6",
+    "outputs/synthetic_cameras.blend": "fcc15f86e5c9fb21aa13269b8d5623494035b92ba179dde2a1b2e0a1b5aefa42",
+    "planar_depth_control.py": "fe2da173f6e1faa866797af0e621d289c642903d13c7b5823c401541946dbe2a"
+  },
+  "independent_method": "Separate stdlib Python code; full 4x4 inverse of saved actual matrices plus actual recorded intrinsics, and separate Fraction ideal geometry from contract camera locations. Producer script never imported or executed; no bpy or Blender invocation.",
+  "summary": {
+    "projections_recomputed": 16,
+    "maximum_saved_vs_matrix_component_error_px": 1.5248780471210921e-05,
+    "maximum_saved_vs_matrix_axis_depth_error_m": 8.742280499518529e-08,
+    "maximum_saved_vs_exact_ideal_component_error_px": 5.764431423926908e-05,
+    "maximum_saved_vs_exact_ideal_axis_depth_error_m": 0.0,
+    "maximum_planar_saved_separation_px": 3.0517578125e-05,
+    "off_plane_saved_separations_px": [
+      35.89744262695705,
+      37.10217355310415
+    ]
+  },
+  "conditions_checked": 164,
+  "conditions_note": "164 record, matrix and numeric assertions across 16 projections; not 164 different experimental scenes.",
+  "all_conditions_passed": true,
+  "tolerances_used": {
+    "absolute_pixel_tolerance": 0.001,
+    "absolute_camera_depth_tolerance_m": 1e-05,
+    "minimum_off_plane_hypothesis_separation_px": 30,
+    "facade_expected_equal_exact_rational": true,
+    "all_points_expected_in_front_and_in_frame": true
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "status": "PASS",
+      "subject": "Saved actual camera matrices and calibration",
+      "finding": "A separate binary64 Gauss-Jordan inverse of each saved 4x4 camera matrix, followed by pinhole projection using the recorded lens/sensor values, reproduces all 16 saved projections within the original numerical tolerances.",
+      "evidence": [
+        "outputs/RESULTS.json#/camera_states",
+        "outputs/RESULTS.json#/projections",
+        "INDEPENDENT_RECOMPUTATION.json#/projections"
+      ]
+    },
+    {
+      "id": "F2",
+      "status": "PASS",
+      "subject": "Exact ideal geometry is checked separately",
+      "finding": "Independent Fraction arithmetic uses world points minus declared camera locations, not the producer oracle function or its saved output. All exact coordinates, six planar equalities, two off-plane deltas and stored error summaries agree.",
+      "evidence": [
+        "CONTRACT.json#/cameras",
+        "CONTRACT.json#/points",
+        "INDEPENDENT_RECOMPUTATION.json#/comparisons"
+      ]
+    },
+    {
+      "id": "F3",
+      "status": "PASS_WITH_RECORD_LIMIT",
+      "subject": "Tolerances and provenance",
+      "finding": "The current contract, script and installed Blender helper match the recorded pre-execution hashes. The process receipt binds the pre-execution record; its time ordering is consistent. Pixel 0.001 px, depth 0.00001 m and off-plane separation>30 px are unchanged. These are consistent retained local records, not independently timestamped preregistration.",
+      "evidence": [
+        "PRE_EXECUTION.json",
+        "PROCESS_RECEIPT.json",
+        "MANIFEST.json",
+        "INDEPENDENT_RECOMPUTATION.json#/checks"
+      ]
+    },
+    {
+      "id": "F4",
+      "status": "PASS_WITH_EXPLICIT_SCOPE",
+      "subject": "Unknown intrinsics and planar ambiguity",
+      "finding": "The two hypotheses intentionally vary focal length 35/70 mm with distance 5/10 m. Their shared f/D gives exact planar agreement in the ideal model. The package explicitly limits the ambiguity to unknown focal length; calibrated intrinsics could exclude this pair. It does not claim general non-identifiability of calibrated planar PnP.",
+      "evidence": [
+        "CONTRACT.json#/interpretation",
+        "README.md#claim-boundary",
+        "candidate_reply.txt"
+      ]
+    },
+    {
+      "id": "F5",
+      "status": "PASS_WITH_EXPLICIT_SCOPE",
+      "subject": "Meaning of held-out points and no fitting",
+      "finding": "The source constructs both cameras directly from contract values and performs no optimizer, parameter search, homography fit or plate solve. The two extra planar labels are withheld only from the named four-corner set. All eight points and both hypotheses were declared together; this is a constructed illustrative control, not a blind statistical holdout or external measured dataset. README and draft communicate the no-fit synthetic scope.",
+      "evidence": [
+        "planar_depth_control.py#create_camera",
+        "CONTRACT.json#/interpretation",
+        "README.md#declared-setup",
+        "candidate_reply.txt"
+      ]
+    },
+    {
+      "id": "F6",
+      "status": "PASS_WITH_EXPLICIT_SCOPE",
+      "subject": "Occlusion and real image evidence",
+      "finding": "Positive depth and in-frame projection are correctly separated from visibility. The source creates landmark Empties, not an opaque facade, and performs no render or ray test. If one added an opaque rectangle spanning the four facade corners, the rays to these ground controls would cross that rectangle: this geometric inference is a reason not to call the controls actually visible. The current text already states that real observable off-plane image measurements are needed.",
+      "evidence": [
+        "CONTRACT.json#/interpretation/occlusion",
+        "planar_depth_control.py#main",
+        "README.md#claim-boundary",
+        "candidate_reply.txt"
+      ]
+    },
+    {
+      "id": "F7",
+      "status": "PASS_WITH_PRECISION_NOTE",
+      "subject": "Reported zero depth residual",
+      "finding": "Saved Blender-axis depths equal the ideal integer depths at captured precision, giving the reported 0.0 m error. Binary64 inversion of the retained finite-precision matrices gives a maximum 8.742280499518529e-08 m difference from the saved values. Both are below 1e-5 m; README's 'at captured precision' qualification is necessary and correct.",
+      "evidence": [
+        "outputs/RESULTS.json#/checks/1",
+        "README.md#observed-result",
+        "INDEPENDENT_RECOMPUTATION.json#/summary"
+      ]
+    },
+    {
+      "id": "F8",
+      "status": "PASS",
+      "subject": "Context and candidate text",
+      "finding": "The retained Tantive 3620 body concerns depth variation of held-out image landmarks. The candidate answers that point using its own synthetic control, disclaims author-plate/field-data claims and retains the need for actual visible off-plane measurements. Its pending public-source placeholder must still be replaced before any permitted send; this review does not publish or authorize an external action.",
+      "evidence": [
+        "PRIMARY_SOURCE_MAP.json",
+        "candidate_reply.txt",
+        "CANDIDATE_METADATA.json"
+      ]
+    }
+  ],
+  "scope_required_in_any_public_claim": [
+    "Two fixed frontoparallel camera hypotheses with different, deliberately unknown focal lengths.",
+    "Own synthetic points; no survey or measurement of the author's house plate.",
+    "Additional same-plane labels are declared controls, not a fitted model's independent test dataset.",
+    "Numerical projection only; no render, ray/visibility test, camera calibration, homography estimation or real plate solve.",
+    "The 0.001 px tolerance checks numerical agreement; it is not a production measurement or acceptance threshold.",
+    "A real off-plane control needs independently known coordinates and an identifiable, observable corresponding image point."
+  ],
+  "release_precondition": "Replace SOURCE_URL_PENDING_ROOT_REVIEW with the actual approved public source URL before any root-operated send. The numeric/source review itself has no blocking issue.",
+  "review_limitations": [
+    "The matrix recomputation is binary64 and will not reproduce Blender's single-precision intermediate rounding bit for bit.",
+    "The captured camera rotation is orthonormal within 1e-12, so direct inversion is adequate at the predeclared tolerance; no Blender view_frame or helper called.",
+    "Only the captured record, local source and retained log/hash chain are independently checked. No separate Blender process replay or blend-file object deserialization occurred.",
+    "Local timestamps and hashes form a consistent record; they are not external preregistration or a tamper-proof timestamp.",
+    "No ray casting, visibility, render, plate solve, intrinsics estimation, numerical camera fit or homography estimation is claimed."
+  ],
+  "actions": {
+    "new_blender_runs": 0,
+    "producer_imports_or_executions": 0,
+    "producer_files_modified": 0,
+    "network_calls": 0,
+    "remote_writes": 0,
+    "installs": 0
+  },
+  "recomputation_file": "INDEPENDENT_RECOMPUTATION.json",
+  "recomputation_sha256": "884965ade4d866c8aa9afc339d351ec6bbb6469d6f8639d77940339267918c5a",
+  "independent_script": "independent_readback.py",
+  "independent_script_sha256": "f5538042cac6397466df0a262503f927f14dc5c2d877163991593921d8200b49"
+}
